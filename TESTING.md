@@ -292,7 +292,7 @@ While we don't enforce strict coverage percentages, aim for:
 - **Utilities/helpers**: High coverage (90%+)
 - **Edge cases**: Test error boundaries and failure states
 
-Run `npm run test:coverage` to see current coverage.
+Run `pnpm run test:coverage` to see current coverage.
 
 ## Debugging Tests
 
@@ -300,13 +300,13 @@ Run `npm run test:coverage` to see current coverage.
 
 ```bash
 # Run tests matching a pattern
-npm test -- index.test
+pnpm test -- index.test
 
 # Run tests in a specific file
-npm test -- app/__tests__/index.test.tsx
+pnpm test -- app/__tests__/index.test.tsx
 
 # Run tests in watch mode
-npm run test:watch
+pnpm run test:watch
 ```
 
 ### Console Logging

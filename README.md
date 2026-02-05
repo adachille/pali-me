@@ -8,19 +8,19 @@ App to learn the Pali language
 
 1. Install dependencies:
    ```bash
-   npm install --legacy-peer-deps
+   pnpm install
    ```
 
 2. Start the development server:
    ```bash
-   npm start
+   pnpm start
    ```
 
 3. Run on specific platforms:
    ```bash
-   npm run android  # Android emulator/device
-   npm run ios      # iOS simulator/device
-   npm run web      # Web browser
+   pnpm run android  # Android emulator/device
+   pnpm run ios      # iOS simulator/device
+   pnpm run web      # Web browser
    ```
 
 ## Testing
@@ -31,13 +31,13 @@ This project uses Jest and React Testing Library for testing.
 
 ```bash
 # Run all tests
-npm test
+pnpm test
 
 # Run tests in watch mode (useful during development)
-npm run test:watch
+pnpm run test:watch
 
 # Generate coverage report
-npm run test:coverage
+pnpm run test:coverage
 ```
 
 ### Writing Tests
@@ -85,7 +85,7 @@ See `TESTING.md` for more detailed testing guidelines and patterns.
 
 ## Development
 
-- **Linting**: Run `npm run lint` to check code style
+- **Linting**: Run `pnpm run lint` to check code style
 - **TypeScript**: Strict mode enabled for type safety
 - **React Compiler**: Enabled for automatic optimizations
 
