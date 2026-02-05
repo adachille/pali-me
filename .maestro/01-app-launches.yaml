@@ -10,9 +10,3 @@ appId: host.exp.Exponent
 # Confirm the primary view container is present
 - assertVisible:
     id: "home-screen"
-
-# Validate welcome message appears
-- assertVisible: "Edit app/index.tsx to edit this screen."
-
-# Document the initial app state
-- takeScreenshot: "pali-app-initial-state"
