@@ -48,11 +48,17 @@ jobs:
           xcrun simctl boot "iPhone 15" || true
           xcrun simctl list devices | grep iPhone
 
-      - name: Initialize Expo development server
+      - name: Start Expo and open in iOS simulator
         run: |
+          # Start Expo server in background
           pnpm start &
-          echo "Waiting for Expo server initialization..."
-          sleep 15
+          sleep 10
+          
+          # Open the app in iOS simulator (this installs Expo Go if needed)
+          pnpm run ios --non-interactive &
+          
+          # Wait for app to fully load
+          sleep 30
 
       - name: Execute Maestro test suite
         run: |

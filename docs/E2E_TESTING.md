@@ -131,12 +131,14 @@ Place test flows in `.maestro/` directory with descriptive names:
 # Description: What this test validates
 # Platform: iOS, Android, Web
 
-appId: host.exp.Exponent
 ---
 # Test steps go here
-- launchApp
+# Note: App is already running when tests start (pre-launched by Expo CLI)
 - assertVisible: "Expected text"
+- tapOn: "Button"
 ```
+
+**Important:** The Pali-Me E2E tests assume the app is already running. We don't use `launchApp` or `appId` in the flows because the app is pre-launched via Expo CLI before Maestro tests execute.
 
 ### Element Selection Strategies
 
