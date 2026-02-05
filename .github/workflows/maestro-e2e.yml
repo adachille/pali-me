@@ -13,6 +13,10 @@ jobs:
     runs-on: macos-14
     continue-on-error: true  # Non-blocking informational check
     
+    permissions:
+      contents: read
+      actions: read
+    
     steps:
       - name: Retrieve codebase
         uses: actions/checkout@v4
@@ -72,6 +76,10 @@ jobs:
     name: Android E2E Tests
     runs-on: ubuntu-latest
     continue-on-error: true  # Non-blocking informational check
+    
+    permissions:
+      contents: read
+      actions: read
     
     steps:
       - name: Retrieve codebase
