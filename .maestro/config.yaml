@@ -1,0 +1,11 @@
+# Maestro configuration for pali-me Expo app
+# This configuration supports both Expo Go and custom development builds
+
+# For Expo Go (development)
+appId: host.exp.Exponent
+
+# For custom development builds, use:
+# appId: com.adachille.palime
+
+# App scheme for deep linking
+# scheme: palime

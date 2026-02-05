@@ -10,7 +10,10 @@
     "lint": "expo lint",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "maestro": "maestro test .maestro",
+    "maestro:ios": "maestro test .maestro --format junit --output maestro-results-ios.xml",
+    "maestro:android": "maestro test .maestro --format junit --output maestro-results-android.xml"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",

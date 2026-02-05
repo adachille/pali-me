@@ -1,6 +1,7 @@
 # pali-me
 
 ![Tests](https://github.com/adachille/pali-me/actions/workflows/test.yml/badge.svg)
+![E2E Tests](https://github.com/adachille/pali-me/actions/workflows/maestro-e2e.yml/badge.svg)
 
 App to learn the Pali language
 
@@ -76,6 +77,62 @@ const mockRouter = createMockRouter({
 ```
 
 See `TESTING.md` for more detailed testing guidelines and patterns.
+
+## End-to-End Testing
+
+This project uses Maestro for E2E testing to validate user flows across iOS, Android, and Web platforms.
+
+### Prerequisites
+
+- **Maestro CLI**: Install via `curl -Ls "https://get.maestro.mobile.dev" | bash`
+- **Simulators/Emulators**: 
+  - iOS: Xcode with iOS Simulator (macOS only)
+  - Android: Android Studio with Android Virtual Device
+
+### Running E2E Tests
+
+```bash
+# 1. Start the Expo development server
+pnpm start
+
+# 2. In another terminal, launch your platform
+pnpm run ios      # For iOS simulator
+pnpm run android  # For Android emulator
+
+# 3. Run Maestro tests
+pnpm run maestro
+
+# Run with JUnit output for CI integration
+pnpm run maestro:ios      # iOS with JUnit format
+pnpm run maestro:android  # Android with JUnit format
+```
+
+### Test Flows
+
+Current E2E test coverage includes:
+
+- **Application Launch** (`01-app-launches.yaml`) - Validates app initialization and home screen rendering
+- **Navigation** (`02-navigation-flow.yaml`) - Tests screen transitions and routing
+- **User Interactions** (`03-basic-interaction.yaml`) - Validates gestures, taps, and scrolling
+
+### Debugging E2E Tests
+
+Use Maestro Studio for interactive debugging:
+
+```bash
+maestro studio
+```
+
+This allows you to:
+- Inspect UI element hierarchy
+- Test selectors before adding to flows
+- Record interactions to generate test commands
+
+For comprehensive E2E testing documentation, see [`E2E_TESTING.md`](./E2E_TESTING.md).
+
+### CI/CD Integration
+
+E2E tests run automatically on every pull request via GitHub Actions on both iOS and Android platforms. These tests are informational and won't block PR merges. Test results and screenshots are available as workflow artifacts.
 
 ## Project Structure
 
