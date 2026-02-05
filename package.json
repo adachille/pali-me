@@ -10,7 +10,8 @@
     "lint": "expo lint",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "claude-update-agent-md": "claude-code --prompt 'Check a git diff to see the last time AGENT.md was updated and see if there is anything we should add to the docs to reflect changes we've made should since then. Keep updates concise and strictly what we traditionally keep in a CLAUDE.md file' --auto-accept"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
