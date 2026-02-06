@@ -52,16 +52,14 @@ export function createMockSearchParams(params: Record<string, string> = {}) {
 /**
  * Helpers for async testing with proper waiting
  */
-export const waitForAsync = (ms = 0) => 
-  new Promise(resolve => setTimeout(resolve, ms));
+export const waitForAsync = (ms = 0) => new Promise((resolve) => setTimeout(resolve, ms));
 
 /**
  * Common test data fixtures
  */
 export const testFixtures = {
-  sampleText: 'Test content for pali-me',
+  sampleText: "Test content for pali-me",
   navigationPaths: {
-    home: '/',
+    home: "/",
   },
 };
-

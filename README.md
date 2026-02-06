@@ -110,4 +110,3 @@ E2E tests run automatically on every pull request via GitHub Actions for iOS. Th
 ## Contributing
 
 Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on code style, formatting, linting, and the pull request process.
-

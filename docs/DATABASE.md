@@ -49,7 +49,7 @@ CREATE INDEX idx_items_pali ON items(pali);
 **TypeScript Types**:
 
 ```typescript
-type ItemType = 'word' | 'prefix' | 'suffix' | 'root' | 'particle';
+type ItemType = "word" | "prefix" | "suffix" | "root" | "particle";
 
 type ItemRow = {
   id: string;
@@ -125,7 +125,7 @@ These are tracked separately because proficiency often differs by direction.
 **TypeScript Types**:
 
 ```typescript
-type StudyDirection = 'pali_to_meaning' | 'meaning_to_pali';
+type StudyDirection = "pali_to_meaning" | "meaning_to_pali";
 
 type StudyStateRow = {
   id: string;
@@ -275,22 +275,20 @@ import {
   type StudyState,
   type Deck,
   type ItemType,
-  type StudyDirection
-} from '@/db';
+  type StudyDirection,
+} from "@/db";
 ```
 
 ### Using the Database Hook
 
 ```typescript
-import { useSQLiteContext } from '@/db';
+import { useSQLiteContext } from "@/db";
 
 function MyComponent() {
   const db = useSQLiteContext();
 
   async function fetchItems() {
-    const items = await db.getAllAsync<ItemRow>(
-      'SELECT * FROM items ORDER BY pali'
-    );
+    const items = await db.getAllAsync<ItemRow>("SELECT * FROM items ORDER BY pali");
     return items;
   }
 }
@@ -308,7 +306,7 @@ function rowToItem(row: ItemRow): Item {
     pali: row.pali,
     meaning: row.meaning,
     notes: row.notes,
-    createdAt: new Date(row.created_at + 'Z'),
+    createdAt: new Date(row.created_at + "Z"),
   };
 }
 
@@ -344,10 +342,10 @@ To add a migration (e.g., version 1 → 2):
 
    ```typescript
    if (version === 1) {
-     console.log('[DB] Running migration 1 -> 2: Add example field');
-     await db.execAsync('ALTER TABLE items ADD COLUMN example TEXT');
+     console.log("[DB] Running migration 1 -> 2: Add example field");
+     await db.execAsync("ALTER TABLE items ADD COLUMN example TEXT");
      version = 2;
-     console.log('[DB] Migration 1 -> 2 completed');
+     console.log("[DB] Migration 1 -> 2 completed");
    }
    ```
 

@@ -1,6 +1,6 @@
 // Database initialization and migration logic
 
-import type { SQLiteDatabase } from 'expo-sqlite';
+import type { SQLiteDatabase } from "expo-sqlite";
 import {
   CREATE_DECKS_TABLE,
   CREATE_DECK_ITEMS_TABLE,
@@ -9,7 +9,7 @@ import {
   CREATE_STUDY_STATES_TABLE,
   INSERT_DEFAULT_DECK,
   SCHEMA_VERSION,
-} from './schema';
+} from "./schema";
 
 /**
  * Migrates the database to the current schema version
@@ -19,20 +19,18 @@ import {
  */
 export async function migrateDbIfNeeded(db: SQLiteDatabase): Promise<void> {
   try {
-    console.log('[DB] Starting database migration check...');
+    console.log("[DB] Starting database migration check...");
 
     // Enable foreign key constraints (must be done for each connection)
-    await db.execAsync('PRAGMA foreign_keys = ON');
-    console.log('[DB] Foreign keys enabled');
+    await db.execAsync("PRAGMA foreign_keys = ON");
+    console.log("[DB] Foreign keys enabled");
 
     // Enable WAL mode for better concurrency
-    await db.execAsync('PRAGMA journal_mode = WAL');
-    console.log('[DB] WAL mode enabled');
+    await db.execAsync("PRAGMA journal_mode = WAL");
+    console.log("[DB] WAL mode enabled");
 
     // Check current database version
-    const result = await db.getFirstAsync<{ user_version: number }>(
-      'PRAGMA user_version'
-    );
+    const result = await db.getFirstAsync<{ user_version: number }>("PRAGMA user_version");
     const currentVersion = result?.user_version ?? 0;
 
     console.log(`[DB] Current database version: ${currentVersion}`);
@@ -42,12 +40,12 @@ export async function migrateDbIfNeeded(db: SQLiteDatabase): Promise<void> {
     if (currentVersion < SCHEMA_VERSION) {
       await runMigrations(db, currentVersion);
     } else {
-      console.log('[DB] Database is up to date, no migration needed');
+      console.log("[DB] Database is up to date, no migration needed");
     }
 
-    console.log('[DB] Database initialization complete');
+    console.log("[DB] Database initialization complete");
   } catch (error) {
-    console.error('[DB] Migration failed:', error);
+    console.error("[DB] Migration failed:", error);
     throw error; // Prevent app from loading with broken database
   }
 }
@@ -58,15 +56,12 @@ export async function migrateDbIfNeeded(db: SQLiteDatabase): Promise<void> {
  * @param db - The SQLite database instance
  * @param currentVersion - The current database version
  */
-async function runMigrations(
-  db: SQLiteDatabase,
-  currentVersion: number
-): Promise<void> {
+async function runMigrations(db: SQLiteDatabase, currentVersion: number): Promise<void> {
   let version = currentVersion;
 
   // Migration from version 0 (empty database) to version 1
   if (version === 0) {
-    console.log('[DB] Running migration 0 -> 1: Initial schema');
+    console.log("[DB] Running migration 0 -> 1: Initial schema");
 
     await db.execAsync(`
       ${CREATE_ITEMS_TABLE};
@@ -78,7 +73,7 @@ async function runMigrations(
     `);
 
     version = 1;
-    console.log('[DB] Migration 0 -> 1 completed');
+    console.log("[DB] Migration 0 -> 1 completed");
   }
 
   // Future migrations go here:

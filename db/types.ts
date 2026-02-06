@@ -7,7 +7,7 @@
 /**
  * Valid item types for Pali learning items
  */
-export type ItemType = 'word' | 'prefix' | 'suffix' | 'root' | 'particle';
+export type ItemType = "word" | "prefix" | "suffix" | "root" | "particle";
 
 /**
  * Raw row structure from the items table (as stored in SQLite)
@@ -51,7 +51,7 @@ export type ItemInsert = {
 /**
  * Study direction for spaced repetition
  */
-export type StudyDirection = 'pali_to_meaning' | 'meaning_to_pali';
+export type StudyDirection = "pali_to_meaning" | "meaning_to_pali";
 
 /**
  * Raw row structure from the study_states table (as stored in SQLite)

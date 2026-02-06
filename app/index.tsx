@@ -16,12 +16,12 @@ export default function Index() {
         );
 
         // Get default deck
-        const deck = await db.getFirstAsync<DeckRow>(
-          "SELECT * FROM decks WHERE id = 'all'"
-        );
+        const deck = await db.getFirstAsync<DeckRow>("SELECT * FROM decks WHERE id = 'all'");
 
         setDefaultDeck(deck);
-        setDbStatus(`Database initialized successfully!\nTables: ${tables.map((t) => t.name).join(", ")}`);
+        setDbStatus(
+          `Database initialized successfully!\nTables: ${tables.map((t) => t.name).join(", ")}`
+        );
       } catch (error) {
         const errorMessage = error instanceof Error ? error.message : String(error);
         console.error("Database initialization error:", error);

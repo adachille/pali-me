@@ -87,6 +87,7 @@ When you open a pull request, GitHub Actions will automatically:
 **Your PR must pass all checks before it can be merged.**
 
 If the format/lint check fails:
+
 1. Run `pnpm format` to fix formatting issues
 2. Run `pnpm lint` to fix linting issues
 3. Commit and push the changes
@@ -132,6 +133,7 @@ If the format/lint check fails:
 ## Questions?
 
 If you have questions about contributing, feel free to:
+
 - Open an issue for discussion
 - Review existing documentation in the `docs/` directory
 - Check the README.md for basic project information

@@ -225,7 +225,7 @@ Add testID to React Native components:
 
 # Wait/Timing
 - waitForAnimationToEnd
-- wait: 2000  # milliseconds
+- wait: 2000 # milliseconds
 ```
 
 ### Handling Platform Differences
@@ -240,7 +240,7 @@ Use conditional execution for platform-specific behavior:
     commands:
       - pressKey: Back
 
-# Android-specific action  
+# Android-specific action
 - runFlow:
     when:
       platform: Android
