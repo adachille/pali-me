@@ -36,7 +36,7 @@
 Via makefile:
 
 ```bash
-make sync-docs
+make claude-sync-docs
 ```
 
 Or invoke with `/sync-docs` in Claude Code.
