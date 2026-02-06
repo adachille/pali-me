@@ -10,6 +10,8 @@ jobs:
   format-and-lint:
     name: Check Formatting and Linting
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
 
     strategy:
       matrix:
