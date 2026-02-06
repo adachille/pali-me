@@ -113,9 +113,10 @@ These are tracked separately because proficiency often differs by direction.
   - Lower ease = intervals grow slower (hard cards)
   - Adjusted based on review performance
 
-- **`due`** (TEXT): ISO 8601 timestamp when card should be reviewed
-  - Format: `2026-02-05T14:30:00.000Z`
-  - Cards are "due" when `due <= current_time`
+- **`due`** (TEXT): SQLite datetime string when the card should be reviewed
+  - Format: `YYYY-MM-DD HH:MM:SS` (e.g., `2026-02-05 14:30:00`)
+  - Cards are "due" when `due <= datetime('now')` in SQLite queries
+  - **Note**: SQLite stores times in UTC. When converting to JavaScript Date, use `new Date(row.due + 'Z')` to preserve UTC interpretation
 
 - **`suspended`** (INTEGER): User can pause cards temporarily
   - `0` = Active (show in reviews)
@@ -307,7 +308,7 @@ function rowToItem(row: ItemRow): Item {
     pali: row.pali,
     meaning: row.meaning,
     notes: row.notes,
-    createdAt: new Date(row.created_at),
+    createdAt: new Date(row.created_at + 'Z'),
   };
 }
 

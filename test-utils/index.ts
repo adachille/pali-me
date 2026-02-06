@@ -3,6 +3,8 @@ export { render, renderWithProviders, screen, fireEvent, waitFor } from './rende
 export {
   createMockRouter,
   createMockSearchParams,
+  createMockSQLiteContext,
+  mockSQLiteContext,
   waitForAsync,
   testFixtures,
 } from './mocks';

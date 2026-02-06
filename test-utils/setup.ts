@@ -1,5 +1,12 @@
 // Test environment setup for pali-me
 import '@testing-library/react-native/extend-expect';
+import { mockSQLiteContext } from './mocks';
+
+// Mock expo-sqlite module for all tests
+jest.mock('expo-sqlite', () => ({
+  useSQLiteContext: () => mockSQLiteContext,
+  SQLiteProvider: ({ children }: { children: React.ReactNode }) => children,
+}));
 
 // Silence console warnings during tests
 const originalWarn = console.warn;

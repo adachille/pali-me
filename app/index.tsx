@@ -23,7 +23,9 @@ export default function Index() {
         setDefaultDeck(deck);
         setDbStatus(`Database initialized successfully!\nTables: ${tables.map((t) => t.name).join(", ")}`);
       } catch (error) {
-        setDbStatus(`Database error: ${error}`);
+        const errorMessage = error instanceof Error ? error.message : String(error);
+        console.error("Database initialization error:", error);
+        setDbStatus(`Database error: ${errorMessage}`);
       }
     }
 
