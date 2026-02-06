@@ -2,6 +2,8 @@
 # Validates successful application startup and home view rendering
 # Tested on: iOS Simulator, Android Emulator
 
+appId: host.exp.Exponent
+
 ---
 # Verify the app is running and home screen is visible
 - assertVisible:
@@ -10,5 +12,3 @@
 # Validate welcome message appears
 - assertVisible: "Edit app/index.tsx to edit this screen."
 
-# Document the initial app state
-- takeScreenshot: "pali-app-initial-state"

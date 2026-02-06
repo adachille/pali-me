@@ -17,6 +17,7 @@ This guide covers E2E testing for the Pali language learning application using M
 Pali-Me uses Maestro for end-to-end testing to ensure the application works correctly from a user's perspective across iOS, Android, and Web platforms.
 
 **Current Test Coverage:**
+
 - Application launch and initialization
 - Screen navigation and routing
 - Basic user interactions (tap, scroll, gestures)
@@ -37,12 +38,14 @@ Before running E2E tests, ensure you have:
 ### Install Maestro CLI
 
 **macOS/Linux:**
+
 ```bash
 curl -Ls "https://get.maestro.mobile.dev" | bash
 export PATH="$PATH:$HOME/.maestro/bin"
 ```
 
 **Verify installation:**
+
 ```bash
 maestro --version
 ```
@@ -50,6 +53,7 @@ maestro --version
 ### Setup Simulators/Emulators
 
 **iOS Simulator (macOS):**
+
 ```bash
 # List available simulators
 xcrun simctl list devices
@@ -59,6 +63,7 @@ xcrun simctl boot "iPhone 15"
 ```
 
 **Android Emulator:**
+
 ```bash
 # List available AVDs
 emulator -list-avds
@@ -82,12 +87,14 @@ Wait for the QR code and metro bundler to appear.
 Choose your platform:
 
 **iOS:**
+
 ```bash
 # Press 'i' in the Expo terminal, or:
 pnpm run ios
 ```
 
 **Android:**
+
 ```bash
 # Press 'a' in the Expo terminal, or:
 pnpm run android
@@ -145,6 +152,7 @@ Place test flows in `.maestro/` directory with descriptive names:
 Maestro offers multiple ways to select elements:
 
 **1. Using testID (Recommended):**
+
 ```yaml
 - tapOn:
     id: "lesson-button"
@@ -153,6 +161,7 @@ Maestro offers multiple ways to select elements:
 ```
 
 Add testID to React Native components:
+
 ```tsx
 <TouchableOpacity testID="lesson-button">
   <Text>Start Lesson</Text>
@@ -160,18 +169,21 @@ Add testID to React Native components:
 ```
 
 **2. Using visible text:**
+
 ```yaml
 - assertVisible: "Welcome to Pali"
 - tapOn: "Start Learning"
 ```
 
 **3. Using accessibility labels:**
+
 ```yaml
 - tapOn:
     accessibilityLabel: "Navigate to vocabulary"
 ```
 
 **4. Using point coordinates (last resort):**
+
 ```yaml
 - tapOn:
     point: "50%,80%"
@@ -327,6 +339,7 @@ appId: host.exp.Exponent
 **Problem:** `Unable to launch app with appId: host.exp.Exponent`
 
 **Solutions:**
+
 1. Ensure Expo dev server is running (`pnpm start`)
 2. Verify simulator/emulator is booted and visible
 3. Check that app is already open in Expo Go
@@ -337,6 +350,7 @@ appId: host.exp.Exponent
 **Problem:** `Element with id 'home-screen' not found`
 
 **Solutions:**
+
 1. Verify `testID` prop is correctly added to component
 2. Wait for screen to render: Add `waitForAnimationToEnd`
 3. Check element is actually visible (not hidden or off-screen)
@@ -347,6 +361,7 @@ appId: host.exp.Exponent
 **Problem:** Tests pass locally but fail in CI
 
 **Solutions:**
+
 1. Increase wait times for slower CI environments
 2. Use `waitForAnimationToEnd` instead of fixed waits
 3. Add `scrollUntilVisible` for elements that might load async
@@ -360,6 +375,7 @@ maestro studio
 ```
 
 This opens a UI where you can:
+
 - See the current screen hierarchy
 - Test selectors before adding them to flows
 - Record interactions to generate flow commands
@@ -368,11 +384,13 @@ This opens a UI where you can:
 
 **iOS Simulator Keyboard:**
 If keyboard doesn't appear:
+
 - Toggle simulator keyboard: `Cmd + K`
 - Enable software keyboard in simulator settings
 
 **Android Emulator Performance:**
 If tests are slow:
+
 - Use hardware acceleration (HAXM/KVM)
 - Increase emulator RAM in AVD settings
 - Use x86_64 images instead of ARM
@@ -382,15 +400,18 @@ If tests are slow:
 The E2E tests run automatically on every pull request via GitHub Actions.
 
 **Workflow Files:**
+
 - `.github/workflows/maestro-e2e.yml`
 
 **Behavior:**
+
 - Tests run on both iOS (macOS) and Android (Linux) runners
 - Tests are **informational only** - they won't block PR merges
 - Test results and screenshots are uploaded as artifacts
 - Artifacts are retained for 14 days
 
 **Viewing Results:**
+
 1. Go to the PR "Checks" tab
 2. Find "E2E Maestro Validation"
 3. Click on job (iOS or Android)

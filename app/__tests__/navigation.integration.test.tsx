@@ -1,8 +1,7 @@
 // Integration test demonstrating navigation flow testing
+import { createMockRouter, fireEvent, render } from '@/test-utils';
 import React from 'react';
-import { render, screen, fireEvent } from '@/test-utils';
 import { Text, TouchableOpacity, View } from 'react-native';
-import { createMockRouter } from '@/test-utils';
 
 // Sample navigable component for integration testing
 function NavigableComponent() {

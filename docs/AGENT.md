@@ -16,15 +16,20 @@ This is a React Native application built with Expo for learning the Pali languag
 
 ```bash
 # Start development server
-npm start
+pnpm start
 
 # Start on specific platform
-npm run android  # Android emulator/device
-npm run ios      # iOS simulator/device
-npm run web      # Web browser
+pnpm android  # Android emulator/device
+pnpm ios      # iOS simulator/device
+pnpm web      # Web browser
+
+# Testing
+pnpm test              # Run tests
+pnpm test:watch        # Run tests in watch mode
+pnpm test:coverage     # Run tests with coverage
 
 # Linting
-npm run lint
+pnpm lint
 ```
 
 ## Architecture
@@ -40,6 +45,27 @@ The router is configured with:
 
 - Typed routes enabled (`typedRoutes: true`)
 - Custom URL scheme: `palime://`
+
+### Database
+
+The app uses SQLite via `expo-sqlite` for local data storage:
+
+- **db/schema.ts** - Database schema definitions with 4 main tables:
+  - `items` - Pali learning items (words, prefixes, suffixes)
+  - `study_states` - Spaced repetition state per item/direction
+  - `decks` - Named collections of items
+  - `deck_items` - Many-to-many join table
+- **db/database.ts** - Database initialization and migrations
+- **db/types.ts** - TypeScript types for database entities
+- See `docs/DATABASE.md` for detailed database documentation
+
+### Testing
+
+Jest testing infrastructure with React Native Testing Library:
+
+- Test files in `app/__tests__/` directory
+- Test utilities in `test-utils/` for mocks and helpers
+- See `docs/TESTING.md` for detailed testing guide
 
 ### Configuration
 
@@ -59,7 +85,10 @@ The router is configured with:
 
 - **Navigation**: `expo-router`, `@react-navigation/native`, `@react-navigation/bottom-tabs`
 - **UI/Gestures**: `react-native-reanimated`, `react-native-gesture-handler`, `react-native-worklets`
+- **Database**: `expo-sqlite` for local SQLite database
+- **Testing**: `jest`, `jest-expo`, `@testing-library/react-native`, `@testing-library/jest-native`
 - **Expo modules**: Font, Haptics, Image, Linking, System UI, Web Browser, etc.
+- **Package Manager**: pnpm
 
 ## Development Notes
 
