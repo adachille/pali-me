@@ -49,15 +49,11 @@ jobs:
 
       - name: Start Expo and open in iOS simulator
         run: |
-          # Start Expo server in background
-          pnpm start &
-          sleep 10
-          
-          # Open the app in iOS simulator (this installs Expo Go if needed)
-          pnpm run ios --non-interactive &
+          # Start Expo server and open in iOS simulator (installs Expo Go if needed)
+          pnpm run ios &
           
           # Wait for app to fully load
-          sleep 30
+          sleep 45
 
       - name: Execute Maestro test suite
         run: |
