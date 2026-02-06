@@ -159,7 +159,7 @@ CREATE TABLE decks (
 );
 
 -- Default deck created on initialization
-INSERT INTO decks (id, name) VALUES ('all', 'All');
+INSERT OR IGNORE INTO decks (id, name) VALUES ('all', 'All');
 ```
 
 ### `deck_items`
