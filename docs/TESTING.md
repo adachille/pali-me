@@ -52,13 +52,13 @@ app/
 ### Basic Component Test
 
 ```tsx
-import { render, screen } from '@/test-utils';
-import MyComponent from '../MyComponent';
+import { render, screen } from "@/test-utils";
+import MyComponent from "../MyComponent";
 
-describe('MyComponent', () => {
-  it('displays the correct text', () => {
+describe("MyComponent", () => {
+  it("displays the correct text", () => {
     render(<MyComponent />);
-    expect(screen.getByText('Expected Text')).toBeTruthy();
+    expect(screen.getByText("Expected Text")).toBeTruthy();
   });
 });
 ```
@@ -66,16 +66,16 @@ describe('MyComponent', () => {
 ### Testing User Interactions
 
 ```tsx
-import { render, fireEvent } from '@/test-utils';
-import Button from '../Button';
+import { render, fireEvent } from "@/test-utils";
+import Button from "../Button";
 
-describe('Button', () => {
-  it('calls handler when pressed', () => {
+describe("Button", () => {
+  it("calls handler when pressed", () => {
     const handlePress = jest.fn();
     const { getByText } = render(<Button onPress={handlePress} title="Click Me" />);
-    
-    fireEvent.press(getByText('Click Me'));
-    
+
+    fireEvent.press(getByText("Click Me"));
+
     expect(handlePress).toHaveBeenCalledTimes(1);
   });
 });
@@ -84,15 +84,15 @@ describe('Button', () => {
 ### Testing Async Behavior
 
 ```tsx
-import { render, waitFor } from '@/test-utils';
-import AsyncComponent from '../AsyncComponent';
+import { render, waitFor } from "@/test-utils";
+import AsyncComponent from "../AsyncComponent";
 
-describe('AsyncComponent', () => {
-  it('loads data asynchronously', async () => {
+describe("AsyncComponent", () => {
+  it("loads data asynchronously", async () => {
     const { getByText } = render(<AsyncComponent />);
-    
+
     await waitFor(() => {
-      expect(getByText('Loaded Data')).toBeTruthy();
+      expect(getByText("Loaded Data")).toBeTruthy();
     });
   });
 });
@@ -106,14 +106,14 @@ For components that use Expo Router hooks:
 
 ```tsx
 // At the top of your test file
-jest.mock('expo-router', () => ({
+jest.mock("expo-router", () => ({
   useRouter: () => ({
     push: jest.fn(),
     back: jest.fn(),
     replace: jest.fn(),
   }),
   useLocalSearchParams: () => ({
-    id: '123',
+    id: "123",
   }),
 }));
 ```
@@ -121,7 +121,7 @@ jest.mock('expo-router', () => ({
 Or use the provided utility:
 
 ```tsx
-import { createMockRouter } from '@/test-utils';
+import { createMockRouter } from "@/test-utils";
 
 const mockRouter = createMockRouter({
   push: jest.fn(),
@@ -133,25 +133,25 @@ const mockRouter = createMockRouter({
 #### expo-image
 
 ```tsx
-jest.mock('expo-image', () => ({
-  Image: 'Image',
+jest.mock("expo-image", () => ({
+  Image: "Image",
 }));
 ```
 
 #### @expo/vector-icons
 
 ```tsx
-jest.mock('@expo/vector-icons', () => ({
-  Ionicons: 'Ionicons',
-  MaterialIcons: 'MaterialIcons',
+jest.mock("@expo/vector-icons", () => ({
+  Ionicons: "Ionicons",
+  MaterialIcons: "MaterialIcons",
 }));
 ```
 
 #### react-native-reanimated
 
 ```tsx
-jest.mock('react-native-reanimated', () => {
-  const Reanimated = require('react-native-reanimated/mock');
+jest.mock("react-native-reanimated", () => {
+  const Reanimated = require("react-native-reanimated/mock");
   Reanimated.default.call = () => {};
   return Reanimated;
 });
@@ -162,22 +162,24 @@ jest.mock('react-native-reanimated', () => {
 ### Do's ✅
 
 - **Test behavior, not implementation**
+
   ```tsx
   // Good
-  expect(screen.getByText('Welcome')).toBeTruthy();
-  
+  expect(screen.getByText("Welcome")).toBeTruthy();
+
   // Avoid
   expect(component.state.isLoaded).toBe(true);
   ```
 
 - **Use accessible queries**
+
   ```tsx
   // Good - accessible and resilient
-  screen.getByLabelText('Username');
-  screen.getByRole('button', { name: 'Submit' });
-  
+  screen.getByLabelText("Username");
+  screen.getByRole("button", { name: "Submit" });
+
   // Less ideal - brittle
-  screen.getByTestId('username-input');
+  screen.getByTestId("username-input");
   ```
 
 - **Clean up after tests**
@@ -199,20 +201,20 @@ jest.mock('react-native-reanimated', () => {
 ### Testing Navigation Flows
 
 ```tsx
-import { render, fireEvent } from '@/test-utils';
-import NavigationScreen from '../NavigationScreen';
+import { render, fireEvent } from "@/test-utils";
+import NavigationScreen from "../NavigationScreen";
 
-jest.mock('expo-router');
+jest.mock("expo-router");
 
-describe('Navigation Flow', () => {
-  it('navigates to details on button press', () => {
+describe("Navigation Flow", () => {
+  it("navigates to details on button press", () => {
     const mockRouter = { push: jest.fn() };
-    require('expo-router').useRouter = () => mockRouter;
-    
+    require("expo-router").useRouter = () => mockRouter;
+
     const { getByText } = render(<NavigationScreen />);
-    fireEvent.press(getByText('View Details'));
-    
-    expect(mockRouter.push).toHaveBeenCalledWith('/details');
+    fireEvent.press(getByText("View Details"));
+
+    expect(mockRouter.push).toHaveBeenCalledWith("/details");
   });
 });
 ```
@@ -220,23 +222,21 @@ describe('Navigation Flow', () => {
 ### Testing Forms
 
 ```tsx
-import { render, fireEvent } from '@/test-utils';
-import LoginForm from '../LoginForm';
+import { render, fireEvent } from "@/test-utils";
+import LoginForm from "../LoginForm";
 
-describe('LoginForm', () => {
-  it('submits form with valid data', () => {
+describe("LoginForm", () => {
+  it("submits form with valid data", () => {
     const handleSubmit = jest.fn();
-    const { getByPlaceholderText, getByText } = render(
-      <LoginForm onSubmit={handleSubmit} />
-    );
-    
-    fireEvent.changeText(getByPlaceholderText('Email'), 'user@example.com');
-    fireEvent.changeText(getByPlaceholderText('Password'), 'password123');
-    fireEvent.press(getByText('Login'));
-    
+    const { getByPlaceholderText, getByText } = render(<LoginForm onSubmit={handleSubmit} />);
+
+    fireEvent.changeText(getByPlaceholderText("Email"), "user@example.com");
+    fireEvent.changeText(getByPlaceholderText("Password"), "password123");
+    fireEvent.press(getByText("Login"));
+
     expect(handleSubmit).toHaveBeenCalledWith({
-      email: 'user@example.com',
-      password: 'password123',
+      email: "user@example.com",
+      password: "password123",
     });
   });
 });
@@ -245,19 +245,19 @@ describe('LoginForm', () => {
 ### Testing Lists
 
 ```tsx
-import { render } from '@/test-utils';
-import ItemList from '../ItemList';
+import { render } from "@/test-utils";
+import ItemList from "../ItemList";
 
-describe('ItemList', () => {
+describe("ItemList", () => {
   const items = [
-    { id: '1', title: 'Item 1' },
-    { id: '2', title: 'Item 2' },
+    { id: "1", title: "Item 1" },
+    { id: "2", title: "Item 2" },
   ];
-  
-  it('renders all items', () => {
+
+  it("renders all items", () => {
     const { getByText } = render(<ItemList items={items} />);
-    
-    items.forEach(item => {
+
+    items.forEach((item) => {
       expect(getByText(item.title)).toBeTruthy();
     });
   });
@@ -276,11 +276,7 @@ The `test-utils/` directory provides:
 Example:
 
 ```tsx
-import { 
-  render, 
-  createMockRouter, 
-  testFixtures 
-} from '@/test-utils';
+import { render, createMockRouter, testFixtures } from "@/test-utils";
 ```
 
 ## Coverage Goals
@@ -312,9 +308,9 @@ pnpm run test:watch
 ### Console Logging
 
 ```tsx
-import { debug } from '@/test-utils';
+import { debug } from "@/test-utils";
 
-it('debugs component output', () => {
+it("debugs component output", () => {
   const { debug } = render(<MyComponent />);
   debug(); // Prints the rendered component tree
 });

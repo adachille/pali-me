@@ -25,25 +25,31 @@
 
    ```markdown
    ## Summary
+
    [Brief 1-2 sentence overview of the PR]
 
    ## Changes
+
    - [List key changes organized by category]
    - [Be specific but concise]
    - [Link to related issues if applicable]
 
    ## Why
+
    [Explain the motivation for these changes]
 
    ## Testing
+
    - [Describe how changes were tested]
    - [List any new tests added]
    - [Note if manual testing was performed]
 
    ## Screenshots/Demo
+
    [If UI changes, include screenshots or GIFs]
 
    ## Notes for Reviewers
+
    - [Any specific areas that need attention]
    - [Known limitations or follow-up work needed]
    - [Deployment considerations if any]

@@ -1,7 +1,7 @@
 // Main database exports - single import point for all database functionality
 
 // Export migration function
-export { migrateDbIfNeeded } from './database';
+export { migrateDbIfNeeded } from "./database";
 
 // Export all TypeScript types
 export type {
@@ -18,10 +18,10 @@ export type {
   DeckInsert,
   DeckItemRow,
   DeckItem,
-} from './types';
+} from "./types";
 
 // Export schema version
-export { SCHEMA_VERSION } from './schema';
+export { SCHEMA_VERSION } from "./schema";
 
 // Re-export useSQLiteContext hook for convenience
-export { useSQLiteContext } from 'expo-sqlite';
+export { useSQLiteContext } from "expo-sqlite";

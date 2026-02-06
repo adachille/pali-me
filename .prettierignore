@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+.expo/
+.next/
+build/
+
+# Generated files
+coverage/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+
+# Expo
+.expo-shared/
+
+# iOS
+ios/Pods/
+*.xcworkspace/
+*.xcodeproj/
+
+# Android
+android/build/
+android/app/build/
+*.apk
+
+# Misc
+*.tsbuildinfo
