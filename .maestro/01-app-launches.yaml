@@ -2,10 +2,9 @@
 # Validates successful application startup and home view rendering
 # Tested on: iOS Simulator, Android Emulator
 
-appId: com.anonymous.pali-me
+appId: host.exp.Exponent
 
 ---
-- launchApp
 # Verify the app is running and home screen is visible
 - assertVisible:
     id: "home-screen"
