@@ -62,6 +62,8 @@
    - Link to relevant documentation
    - Call out any areas that need special attention
 
+6. **Write the PR description to `PR_DESCRIPTION.md`** in the root of the repository.
+
 ## Usage
 
 Via makefile:
