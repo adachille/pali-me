@@ -50,3 +50,6 @@ coverage/
 .maestro/tests/
 maestro-*.xml
 maestro-results/
+
+# Claude write location for AI generated PR description
+PR_DESCRIPTION.md

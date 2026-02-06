@@ -6,7 +6,7 @@
 
 ## Steps
 
-1. **Check git diff**: Run `git log -p --follow CLAUDE.md` or `git diff` to see when AGENT.md was last updated and what changes have been made to the codebase since then
+1. **Check git diff**: Run `git log -p --follow docs/AGENT.md` or `git diff` to see when AGENT.md was last updated and what changes have been made to the codebase since then
 
 2. **Identify relevant changes**: Look for:
    - New dependencies or package changes
@@ -17,7 +17,7 @@
    - New testing infrastructure or patterns
    - Database schema or migration changes
 
-3. **Update CLAUDE.md**: Add concise updates to the relevant sections:
+3. **Update docs/AGENT.md**: Add concise updates to the relevant sections:
    - Project Overview (for architecture changes)
    - Development Commands (for new scripts)
    - Key Dependencies (for package changes)
@@ -35,8 +35,7 @@
 Run this skill via the pnpm script:
 
 ```bash
-pnpm claude-update-agent-md
+make claude-update-agent-md
 ```
 
-Or invoke directly in Claude Code with the prompt:
-> Check a git diff to see the last time AGENT.md was updated and see if there is anything we should add to the docs to reflect changes we've made should since then. Keep updates concise and strictly what we traditionally keep in a CLAUDE.md file
+Or invoke with `/update-agent-md` in Claude Code.
