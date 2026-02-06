@@ -11,9 +11,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "claude-update-agent-md": "claude-code --prompt 'Check a git diff to see the last time AGENT.md was updated and see if there is anything we should add to the docs to reflect changes we've made should since then. Keep updates concise and strictly what we traditionally keep in a CLAUDE.md file' --auto-accept",
-    "sync-docs": "claude-code --prompt 'Review the git diff for this branch against main and update any documentation in /docs that needs to reflect the code changes. Focus on DATABASE.md, TESTING.md, and AGENT.md.' --auto-accept",
-    "claude-create-pr-description": "claude-code --prompt 'Generate a comprehensive pull request description based on the git diff and commit history for this branch against main. Follow the PR description template with sections for Summary, Changes, Why, Testing, and Notes for Reviewers.' --auto-accept"
+    "maestro": "maestro test .maestro",
+    "maestro:ios": "maestro test .maestro --format junit --output maestro-results-ios.xml"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",

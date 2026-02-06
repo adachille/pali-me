@@ -1,6 +1,6 @@
-import { Text, View, StyleSheet } from "react-native";
-import { useEffect, useState } from "react";
 import { useSQLiteContext, type DeckRow } from "@/db";
+import { useEffect, useState } from "react";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   const db = useSQLiteContext();
@@ -31,7 +31,7 @@ export default function Index() {
   }, [db]);
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container} testID="home-screen">
       <Text style={styles.title}>Pali Learning App</Text>
       <Text style={styles.status}>{dbStatus}</Text>
       {defaultDeck && (
@@ -42,6 +42,7 @@ export default function Index() {
           <Text>Created: {defaultDeck.created_at}</Text>
         </View>
       )}
+      <Text testID="welcome-text">Edit app/index.tsx to edit this screen.</Text>
     </View>
   );
 }

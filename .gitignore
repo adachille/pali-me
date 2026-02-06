@@ -45,3 +45,8 @@ app-example
 
 # test coverage
 coverage/
+
+# Maestro E2E test artifacts
+.maestro/tests/
+maestro-*.xml
+maestro-results/
