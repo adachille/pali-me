@@ -1,22 +1,26 @@
 # pali-me
 
 ![Tests](https://github.com/adachille/pali-me/actions/workflows/test.yml/badge.svg)
+![E2E Tests](https://github.com/adachille/pali-me/actions/workflows/maestro-e2e.yml/badge.svg)
 
 App to learn the Pali language
 
 ## Getting Started
 
 1. Install dependencies:
+
    ```bash
    pnpm install
    ```
 
 2. Start the development server:
+
    ```bash
    pnpm start
    ```
 
 3. Run on specific platforms:
+
    ```bash
    pnpm run android  # Android emulator/device
    pnpm run ios      # iOS simulator/device
@@ -40,42 +44,55 @@ pnpm run test:watch
 pnpm run test:coverage
 ```
 
-### Writing Tests
+See `docs/TESTING.md` for detailed testing guidelines and patterns.
 
-Tests are located in `__tests__` directories next to the code they test. For example:
-- `app/__tests__/index.test.tsx` - Tests for the home screen
-- `app/__tests__/_layout.test.tsx` - Tests for the root layout
+## End-to-End Testing
 
-#### Test Utilities
+This project uses Maestro for E2E testing to validate user flows across iOS, Android, and Web platforms.
 
-Import test utilities from `@/test-utils`:
+### Prerequisites
 
-```tsx
-import { render, screen, fireEvent } from '@/test-utils';
-import MyComponent from '../MyComponent';
+- **Maestro CLI**: Install via `curl -Ls "https://get.maestro.mobile.dev" | bash`
+- **Simulators/Emulators**:
+  - iOS: Xcode with iOS Simulator (macOS only)
+  - Android: Android Studio with Android Virtual Device
 
-describe('MyComponent', () => {
-  it('renders correctly', () => {
-    render(<MyComponent />);
-    expect(screen.getByText('Hello')).toBeTruthy();
-  });
-});
+### Running E2E Tests
+
+```bash
+# 1. Start the Expo development server
+pnpm start
+
+# 2. In another terminal, launch your platform
+pnpm run ios      # For iOS simulator
+pnpm run android  # For Android emulator
+
+# 3. Run Maestro tests
+pnpm run maestro
+
+# Run with JUnit output for CI integration
+pnpm run maestro:ios      # iOS with JUnit format
 ```
 
-#### Mocking Navigation
+### Debugging E2E Tests
 
-Use the provided mock utilities for Expo Router:
+Use Maestro Studio for interactive debugging:
 
-```tsx
-import { createMockRouter } from '@/test-utils';
-
-// In your test
-const mockRouter = createMockRouter({
-  push: jest.fn(),
-});
+```bash
+maestro studio
 ```
 
-See `TESTING.md` for more detailed testing guidelines and patterns.
+This allows you to:
+
+- Inspect UI element hierarchy
+- Test selectors before adding to flows
+- Record interactions to generate test commands
+
+For comprehensive E2E testing documentation, see [`E2E_TESTING.md`](docs/E2E_TESTING.md).
+
+### CI/CD Integration
+
+E2E tests run automatically on every pull request via GitHub Actions for iOS. These tests are informational and won't block PR merges. Test results and screenshots are available as workflow artifacts.
 
 ## Project Structure
 
@@ -88,4 +105,3 @@ See `TESTING.md` for more detailed testing guidelines and patterns.
 - **Linting**: Run `pnpm run lint` to check code style
 - **TypeScript**: Strict mode enabled for type safety
 - **React Compiler**: Enabled for automatic optimizations
-
