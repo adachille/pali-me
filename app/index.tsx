@@ -15,8 +15,8 @@ export default function Index() {
           "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name"
         );
 
-        // Get default deck
-        const deck = await db.getFirstAsync<DeckRow>("SELECT * FROM decks WHERE id = 'all'");
+        // Get default deck (id=1 is the "All" deck)
+        const deck = await db.getFirstAsync<DeckRow>("SELECT * FROM decks WHERE id = 1");
 
         setDefaultDeck(deck);
         setDbStatus(

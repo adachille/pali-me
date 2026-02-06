@@ -20,8 +20,8 @@ export type {
   DeckItem,
 } from "./types";
 
-// Export schema version
-export { SCHEMA_VERSION } from "./schema";
+// Export schema version and constants
+export { SCHEMA_VERSION, DEFAULT_DECK_ID } from "./schema";
 
 // Re-export useSQLiteContext hook for convenience
 export { useSQLiteContext } from "expo-sqlite";
