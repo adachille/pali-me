@@ -49,22 +49,17 @@ jobs:
 
       - name: Start Expo and open in iOS simulator
         run: |
-          # Start Expo server in background
-          pnpm start &
-          sleep 10
-          
-          # Open the app in iOS simulator (this installs Expo Go if needed)
-          pnpm run ios --non-interactive &
+          # Temporarily disable CI mode to allow Expo to open simulator
+          CI=false pnpm run ios &
           
           # Wait for app to fully load
-          sleep 30
+          sleep 60
 
       - name: Execute Maestro test suite
         run: |
           maestro test .maestro \
             --format junit \
             --output maestro-ios-results.xml
-        continue-on-error: true
 
       - name: Archive test artifacts
         if: always()
