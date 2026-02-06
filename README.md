@@ -102,6 +102,12 @@ E2E tests run automatically on every pull request via GitHub Actions for iOS. Th
 
 ## Development
 
-- **Linting**: Run `pnpm run lint` to check code style
+- **Formatting**: Run `pnpm format` to format code with Prettier
+- **Linting**: Run `pnpm lint` to check and fix code style with ESLint
 - **TypeScript**: Strict mode enabled for type safety
 - **React Compiler**: Enabled for automatic optimizations
+
+## Contributing
+
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on code style, formatting, linting, and the pull request process.
+
