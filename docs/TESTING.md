@@ -159,18 +159,16 @@ const mockDb = createMockSQLiteContext();
 
 // Create with specific overrides
 const mockDb = createMockSQLiteContext({
-  getAllAsync: jest
-    .fn()
-    .mockResolvedValue([
-      {
-        id: 1,
-        type: "word",
-        pali: "dhamma",
-        meaning: "teaching",
-        notes: null,
-        created_at: "2024-01-01T00:00:00.000Z",
-      },
-    ]),
+  getAllAsync: jest.fn().mockResolvedValue([
+    {
+      id: 1,
+      type: "word",
+      pali: "dhamma",
+      meaning: "teaching",
+      notes: null,
+      created_at: "2024-01-01T00:00:00.000Z",
+    },
+  ]),
 });
 
 // Mock the expo-sqlite module

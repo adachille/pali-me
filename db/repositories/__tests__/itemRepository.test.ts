@@ -239,4 +239,59 @@ describe("itemRepository", () => {
       expect(result).toHaveLength(1);
     });
   });
+
+  describe("updateItemDecks", () => {
+    it("removes existing assignments and adds new ones", async () => {
+      mockDb.runAsync.mockResolvedValue({ changes: 1, lastInsertRowId: 0 });
+
+      await itemRepository.updateItemDecks(mockDb, 1, [1, 2]);
+
+      // Should use transaction
+      expect(mockDb.withTransactionAsync).toHaveBeenCalled();
+
+      // Should delete existing assignments
+      expect(mockDb.runAsync).toHaveBeenCalledWith("DELETE FROM deck_items WHERE item_id = ?", [1]);
+
+      // Should insert new assignments
+      expect(mockDb.runAsync).toHaveBeenCalledWith(
+        "INSERT INTO deck_items (deck_id, item_id) VALUES (?, ?)",
+        [1, 1]
+      );
+      expect(mockDb.runAsync).toHaveBeenCalledWith(
+        "INSERT INTO deck_items (deck_id, item_id) VALUES (?, ?)",
+        [2, 1]
+      );
+    });
+
+    it("ensures default deck is always included", async () => {
+      mockDb.runAsync.mockResolvedValue({ changes: 1, lastInsertRowId: 0 });
+
+      // Pass only deck 2 (not the default deck 1)
+      await itemRepository.updateItemDecks(mockDb, 1, [2]);
+
+      // Should insert default deck (1) first, then deck 2
+      expect(mockDb.runAsync).toHaveBeenCalledWith(
+        "INSERT INTO deck_items (deck_id, item_id) VALUES (?, ?)",
+        [1, 1]
+      );
+      expect(mockDb.runAsync).toHaveBeenCalledWith(
+        "INSERT INTO deck_items (deck_id, item_id) VALUES (?, ?)",
+        [2, 1]
+      );
+    });
+
+    it("does not duplicate default deck if already included", async () => {
+      mockDb.runAsync.mockResolvedValue({ changes: 1, lastInsertRowId: 0 });
+
+      await itemRepository.updateItemDecks(mockDb, 1, [1]);
+
+      // Should only insert once for default deck
+      const insertCalls = mockDb.runAsync.mock.calls.filter(
+        (call) =>
+          call[0] === "INSERT INTO deck_items (deck_id, item_id) VALUES (?, ?)" &&
+          (call[1] as number[])[0] === 1
+      );
+      expect(insertCalls).toHaveLength(1);
+    });
+  });
 });

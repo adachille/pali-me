@@ -14,6 +14,9 @@ export function createMockSQLiteContext(overrides = {}) {
     getFirstAsync: jest.fn().mockResolvedValue(null),
     runAsync: jest.fn().mockResolvedValue({ changes: 0, lastInsertRowId: 0 }),
     execAsync: jest.fn().mockResolvedValue(undefined),
+    withTransactionAsync: jest.fn().mockImplementation(async (callback: () => Promise<void>) => {
+      await callback();
+    }),
     ...overrides,
   };
 }

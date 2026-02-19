@@ -76,33 +76,38 @@ export async function create(
   // Ensure we always include the default deck
   const allDeckIds = deckIds.includes(DEFAULT_DECK_ID) ? deckIds : [DEFAULT_DECK_ID, ...deckIds];
 
-  // Insert the item
-  const result = await db.runAsync(
-    `INSERT INTO items (type, pali, meaning, notes) VALUES (?, ?, ?, ?)`,
-    [item.type, item.pali, item.meaning, item.notes ?? null]
-  );
+  let createdItemId: number;
 
-  const itemId = result.lastInsertRowId;
+  // Wrap all inserts in a transaction for atomicity
+  await db.withTransactionAsync(async () => {
+    // Insert the item
+    const result = await db.runAsync(
+      `INSERT INTO items (type, pali, meaning, notes) VALUES (?, ?, ?, ?)`,
+      [item.type, item.pali, item.meaning, item.notes ?? null]
+    );
 
-  // Create study states for both directions
-  const directions: StudyDirection[] = ["pali_to_meaning", "meaning_to_pali"];
-  for (const direction of directions) {
-    await db.runAsync("INSERT INTO study_states (item_id, direction) VALUES (?, ?)", [
-      itemId,
-      direction,
-    ]);
-  }
+    createdItemId = result.lastInsertRowId;
 
-  // Add item to decks
-  for (const deckId of allDeckIds) {
-    await db.runAsync("INSERT OR IGNORE INTO deck_items (deck_id, item_id) VALUES (?, ?)", [
-      deckId,
-      itemId,
-    ]);
-  }
+    // Create study states for both directions
+    const directions: StudyDirection[] = ["pali_to_meaning", "meaning_to_pali"];
+    for (const direction of directions) {
+      await db.runAsync("INSERT INTO study_states (item_id, direction) VALUES (?, ?)", [
+        createdItemId,
+        direction,
+      ]);
+    }
+
+    // Add item to decks
+    for (const deckId of allDeckIds) {
+      await db.runAsync("INSERT OR IGNORE INTO deck_items (deck_id, item_id) VALUES (?, ?)", [
+        deckId,
+        createdItemId,
+      ]);
+    }
+  });
 
   // Fetch and return the created item
-  const created = await getById(db, itemId);
+  const created = await getById(db, createdItemId!);
   if (!created) {
     throw new Error("Failed to retrieve created item");
   }
@@ -204,11 +209,14 @@ export async function updateItemDecks(
   // Ensure we always include the default deck
   const allDeckIds = deckIds.includes(DEFAULT_DECK_ID) ? deckIds : [DEFAULT_DECK_ID, ...deckIds];
 
-  // Remove existing deck assignments
-  await db.runAsync("DELETE FROM deck_items WHERE item_id = ?", [itemId]);
+  // Wrap in transaction for atomicity
+  await db.withTransactionAsync(async () => {
+    // Remove existing deck assignments
+    await db.runAsync("DELETE FROM deck_items WHERE item_id = ?", [itemId]);
 
-  // Add new deck assignments
-  for (const deckId of allDeckIds) {
-    await db.runAsync("INSERT INTO deck_items (deck_id, item_id) VALUES (?, ?)", [deckId, itemId]);
-  }
+    // Add new deck assignments
+    for (const deckId of allDeckIds) {
+      await db.runAsync("INSERT INTO deck_items (deck_id, item_id) VALUES (?, ?)", [deckId, itemId]);
+    }
+  });
 }

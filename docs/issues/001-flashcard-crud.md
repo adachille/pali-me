@@ -65,15 +65,6 @@ Form fields:
 - Confirm deletes the item (cascade removes study_states and deck_items)
 - Cancel dismisses the dialog
 
-### UUID Generation
-
-Use a UUID library or `expo-crypto` for generating item IDs:
-
-```typescript
-import * as Crypto from "expo-crypto";
-const id = Crypto.randomUUID();
-```
-
 ## Acceptance Criteria
 
 - [ ] Bottom tab navigator with Home and Library tabs

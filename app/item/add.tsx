@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { StyleSheet, View } from "react-native";
+import { Alert, StyleSheet, View } from "react-native";
 import { useRouter } from "expo-router";
 import { useSQLiteContext, itemRepository, type ItemInsert } from "@/db";
 import { ItemForm } from "@/components/items";
@@ -16,6 +16,7 @@ export default function AddItemScreen() {
       router.back();
     } catch (error) {
       console.error("Failed to create item:", error);
+      Alert.alert("Error", "Failed to create item. Please try again.");
       setIsSubmitting(false);
     }
   };

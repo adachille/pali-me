@@ -1,9 +1,9 @@
+import { ItemList } from "@/components/items";
+import { itemRepository, useSQLiteContext, type Item } from "@/db";
+import { useFocusEffect } from "@react-navigation/native";
+import { useRouter } from "expo-router";
 import { useCallback, useEffect, useState } from "react";
 import { ActivityIndicator, Pressable, StyleSheet, Text, View } from "react-native";
-import { useRouter } from "expo-router";
-import { useFocusEffect } from "@react-navigation/native";
-import { useSQLiteContext, itemRepository, type Item } from "@/db";
-import { ItemList } from "@/components/items";
 
 export default function LibraryScreen() {
   const db = useSQLiteContext();
