@@ -51,15 +51,27 @@ jobs:
         run: |
           # Temporarily disable CI mode to allow Expo to open simulator
           CI=false pnpm run ios &
-          
-          # Wait for app to fully load
+
+          # Wait for Metro bundler to be ready (starts in ~40s in CI)
+          echo "Waiting for Metro bundler..."
+          timeout 300 bash -c 'until curl -s "http://localhost:8081/status" 2>/dev/null | grep -q "running"; do sleep 5; done'
+          echo "Metro bundler is ready!"
+
+          # Wait for bundle compilation and app to fully render in simulator
           sleep 60
 
       - name: Execute Maestro test suite
         run: |
-          maestro test .maestro \
+          # Run flows sequentially to prevent simulator state conflicts when both
+          # flows call launchApp concurrently on the same iOS simulator
+          TESTS_FAILED=0
+          maestro test .maestro/01-launch-app.yaml \
             --format junit \
-            --output maestro-ios-results.xml
+            --output maestro-ios-results-01.xml || TESTS_FAILED=1
+          maestro test .maestro/02-flashcard-crud.yaml \
+            --format junit \
+            --output maestro-ios-results-02.xml || TESTS_FAILED=1
+          exit $TESTS_FAILED
 
       - name: Archive test artifacts
         if: always()
@@ -67,6 +79,7 @@ jobs:
         with:
           name: maestro-ios-artifacts
           path: |
-            maestro-ios-results.xml
+            maestro-ios-results-01.xml
+            maestro-ios-results-02.xml
             ~/.maestro/tests/**/*.png
           retention-days: 14
