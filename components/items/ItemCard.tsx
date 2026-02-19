@@ -1,5 +1,5 @@
-import { Pressable, StyleSheet, Text, View } from "react-native";
 import type { Item } from "@/db";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 
 type ItemCardProps = {
   item: Item;
@@ -21,7 +21,7 @@ export function ItemCard({ item, onPress }: ItemCardProps) {
     <Pressable
       style={({ pressed }) => [styles.container, pressed && styles.pressed]}
       onPress={() => onPress(item)}
-      testID={`item-card-${item.id}`}
+      testID={`item-card-${item.pali}`}
     >
       <View style={styles.content}>
         <Text style={styles.pali}>{item.pali}</Text>

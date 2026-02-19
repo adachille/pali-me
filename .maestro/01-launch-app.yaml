@@ -1,11 +1,17 @@
 # Pali-Me App Initialization Test
 # Validates successful application startup and home view rendering
-# Tested on: iOS Simulator, Android Emulator
+# Tested on: iOS Simulator
 
 appId: host.exp.Exponent
 
 ---
 # Verify the app is running and home screen is visible
+- launchApp
+- runFlow:
+    when:
+      visible: "pali-me"
+    commands:
+      - tapOn: "pali-me"
 - assertVisible:
     id: "home-screen"
 
