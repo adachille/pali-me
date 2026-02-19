@@ -166,7 +166,7 @@ describe("itemRepository", () => {
 
       expect(mockDb.runAsync).toHaveBeenCalledWith("UPDATE items SET meaning = ? WHERE id = ?", [
         "updated meaning",
-        "1",
+        1,
       ]);
       expect(result?.meaning).toBe("updated meaning");
     });

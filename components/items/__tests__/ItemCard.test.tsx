@@ -35,7 +35,7 @@ describe("ItemCard", () => {
     const onPress = jest.fn();
     render(<ItemCard item={mockItem} onPress={onPress} />);
 
-    fireEvent.press(screen.getByTestId("item-card-1"));
+    fireEvent.press(screen.getByTestId("item-card-dhamma"));
 
     expect(onPress).toHaveBeenCalledWith(mockItem);
   });
