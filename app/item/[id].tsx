@@ -44,6 +44,7 @@ export default function EditItemScreen() {
       router.back();
     } catch (err) {
       console.error("Failed to update item:", err);
+      Alert.alert("Error", "Failed to save changes. Please try again.");
       setIsSubmitting(false);
     }
   };
@@ -61,6 +62,7 @@ export default function EditItemScreen() {
             router.back();
           } catch (err) {
             console.error("Failed to delete item:", err);
+            Alert.alert("Error", "Failed to delete item. Please try again.");
           }
         },
       },

@@ -124,7 +124,7 @@ export async function update(
 ): Promise<Item | null> {
   // Build dynamic update query based on provided fields
   const fields: string[] = [];
-  const values: (string | null)[] = [];
+  const values: (string | number | null)[] = [];
 
   if (item.type !== undefined) {
     fields.push("type = ?");
@@ -148,7 +148,7 @@ export async function update(
     return getById(db, id);
   }
 
-  values.push(String(id));
+  values.push(id);
   await db.runAsync(`UPDATE items SET ${fields.join(", ")} WHERE id = ?`, values);
 
   return getById(db, id);
