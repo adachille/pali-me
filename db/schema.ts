@@ -14,7 +14,7 @@ export const SCHEMA_VERSION = 1;
  */
 export const CREATE_ITEMS_TABLE = `
   CREATE TABLE IF NOT EXISTS items (
-    id TEXT PRIMARY KEY NOT NULL,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     type TEXT NOT NULL,
     pali TEXT NOT NULL,
     meaning TEXT NOT NULL,
@@ -43,8 +43,8 @@ export const CREATE_ITEMS_PALI_INDEX = `
  */
 export const CREATE_STUDY_STATES_TABLE = `
   CREATE TABLE IF NOT EXISTS study_states (
-    id TEXT PRIMARY KEY NOT NULL,
-    item_id TEXT NOT NULL,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    item_id INTEGER NOT NULL,
     direction TEXT NOT NULL,
     interval INTEGER NOT NULL DEFAULT 0,
     ease REAL NOT NULL DEFAULT 2.5,
@@ -64,7 +64,7 @@ export const CREATE_STUDY_STATES_TABLE = `
  */
 export const CREATE_DECKS_TABLE = `
   CREATE TABLE IF NOT EXISTS decks (
-    id TEXT PRIMARY KEY NOT NULL,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
     created_at TEXT NOT NULL DEFAULT (datetime('now'))
   )
@@ -80,8 +80,8 @@ export const CREATE_DECKS_TABLE = `
  */
 export const CREATE_DECK_ITEMS_TABLE = `
   CREATE TABLE IF NOT EXISTS deck_items (
-    deck_id TEXT NOT NULL,
-    item_id TEXT NOT NULL,
+    deck_id INTEGER NOT NULL,
+    item_id INTEGER NOT NULL,
     PRIMARY KEY (deck_id, item_id),
     FOREIGN KEY (deck_id) REFERENCES decks(id) ON DELETE CASCADE,
     FOREIGN KEY (item_id) REFERENCES items(id) ON DELETE CASCADE
@@ -94,7 +94,13 @@ export const CREATE_DECK_ITEMS_TABLE = `
 
 /**
  * Insert default "All" deck that contains all items
+ * Uses id=1 as the default deck ID
  */
 export const INSERT_DEFAULT_DECK = `
-  INSERT OR IGNORE INTO decks (id, name) VALUES ('all', 'All')
+  INSERT OR IGNORE INTO decks (id, name) VALUES (1, 'All')
 `;
+
+/**
+ * Default deck ID constant
+ */
+export const DEFAULT_DECK_ID = 1;

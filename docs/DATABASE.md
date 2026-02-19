@@ -35,7 +35,7 @@ Stores all Pali learning items (words, grammatical elements, etc.).
 
 ```sql
 CREATE TABLE items (
-  id TEXT PRIMARY KEY NOT NULL,
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
   type TEXT NOT NULL,              -- word, prefix, suffix, root, particle
   pali TEXT NOT NULL,
   meaning TEXT NOT NULL,
@@ -52,7 +52,7 @@ CREATE INDEX idx_items_pali ON items(pali);
 type ItemType = "word" | "prefix" | "suffix" | "root" | "particle";
 
 type ItemRow = {
-  id: string;
+  id: number;
   type: string;
   pali: string;
   meaning: string;
@@ -61,7 +61,7 @@ type ItemRow = {
 };
 
 type Item = {
-  id: string;
+  id: number;
   type: ItemType;
   pali: string;
   meaning: string;
@@ -76,8 +76,8 @@ Tracks spaced repetition state for each item in each study direction.
 
 ```sql
 CREATE TABLE study_states (
-  id TEXT PRIMARY KEY NOT NULL,
-  item_id TEXT NOT NULL,
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  item_id INTEGER NOT NULL,
   direction TEXT NOT NULL,         -- pali_to_meaning | meaning_to_pali
   interval INTEGER NOT NULL DEFAULT 0,  -- days until next review
   ease REAL NOT NULL DEFAULT 2.5,       -- difficulty multiplier
@@ -128,8 +128,8 @@ These are tracked separately because proficiency often differs by direction.
 type StudyDirection = "pali_to_meaning" | "meaning_to_pali";
 
 type StudyStateRow = {
-  id: string;
-  item_id: string;
+  id: number;
+  item_id: number;
   direction: string;
   interval: number;
   ease: number;
@@ -138,8 +138,8 @@ type StudyStateRow = {
 };
 
 type StudyState = {
-  id: string;
-  itemId: string;
+  id: number;
+  itemId: number;
   direction: StudyDirection;
   interval: number;
   ease: number;
@@ -154,13 +154,19 @@ Named collections for organizing items.
 
 ```sql
 CREATE TABLE decks (
-  id TEXT PRIMARY KEY NOT NULL,
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT NOT NULL,
   created_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
 
--- Default deck created on initialization
-INSERT OR IGNORE INTO decks (id, name) VALUES ('all', 'All');
+-- Default deck created on initialization (id=1)
+INSERT OR IGNORE INTO decks (id, name) VALUES (1, 'All');
+```
+
+**Constants**:
+
+```typescript
+export const DEFAULT_DECK_ID = 1;
 ```
 
 ### `deck_items`
@@ -169,8 +175,8 @@ Join table creating many-to-many relationship between decks and items.
 
 ```sql
 CREATE TABLE deck_items (
-  deck_id TEXT NOT NULL,
-  item_id TEXT NOT NULL,
+  deck_id INTEGER NOT NULL,
+  item_id INTEGER NOT NULL,
   PRIMARY KEY (deck_id, item_id),
   FOREIGN KEY (deck_id) REFERENCES decks(id) ON DELETE CASCADE,
   FOREIGN KEY (item_id) REFERENCES items(id) ON DELETE CASCADE
@@ -232,7 +238,7 @@ LIMIT 20;
 SELECT items.*
 FROM items
 JOIN deck_items ON items.id = deck_items.item_id
-WHERE deck_items.deck_id = 'basics'
+WHERE deck_items.deck_id = 2
 ORDER BY items.pali ASC;
 ```
 
@@ -270,6 +276,8 @@ GROUP BY direction;
 ```typescript
 import {
   useSQLiteContext,
+  itemRepository,
+  DEFAULT_DECK_ID,
   type Item,
   type ItemRow,
   type StudyState,
@@ -279,7 +287,40 @@ import {
 } from "@/db";
 ```
 
-### Using the Database Hook
+### Using the Repository Layer
+
+The recommended way to interact with items is through the repository layer in `db/repositories/`:
+
+```typescript
+import { useSQLiteContext, itemRepository } from "@/db";
+
+function MyComponent() {
+  const db = useSQLiteContext();
+
+  // Fetch all items
+  const items = await itemRepository.getAll(db);
+
+  // Search items
+  const results = await itemRepository.search(db, "dhamma");
+
+  // Create item (auto-creates study states and adds to default deck)
+  const newItem = await itemRepository.create(db, {
+    type: "word",
+    pali: "dhamma",
+    meaning: "teaching",
+  });
+
+  // Update item
+  const updated = await itemRepository.update(db, 1, { meaning: "truth" });
+
+  // Delete item (cascades to study_states and deck_items)
+  const deleted = await itemRepository.deleteItem(db, 1);
+}
+```
+
+### Direct Database Access
+
+For queries not covered by the repository, use `useSQLiteContext` directly:
 
 ```typescript
 import { useSQLiteContext } from "@/db";
@@ -296,7 +337,7 @@ function MyComponent() {
 
 ### Type Conversions
 
-Convert between database rows and application types:
+The repository layer handles row-to-model conversion internally. For manual conversion:
 
 ```typescript
 function rowToItem(row: ItemRow): Item {
@@ -306,18 +347,7 @@ function rowToItem(row: ItemRow): Item {
     pali: row.pali,
     meaning: row.meaning,
     notes: row.notes,
-    createdAt: new Date(row.created_at + "Z"),
-  };
-}
-
-function itemToRow(item: Item): ItemRow {
-  return {
-    id: item.id,
-    type: item.type,
-    pali: item.pali,
-    meaning: item.meaning,
-    notes: item.notes,
-    created_at: item.createdAt.toISOString(),
+    createdAt: new Date(row.created_at),
   };
 }
 ```
@@ -362,16 +392,19 @@ To add a migration (e.g., version 1 → 2):
 
 ```
 db/
-├── index.ts       # Main exports, single import point
-├── types.ts       # TypeScript type definitions
-├── schema.ts      # SQL schema definitions as constants
-└── database.ts    # Migration logic and initialization
+├── index.ts              # Main exports, single import point
+├── types.ts              # TypeScript type definitions
+├── schema.ts             # SQL schema definitions and constants (DEFAULT_DECK_ID)
+├── database.ts           # Migration logic and initialization
+└── repositories/
+    ├── index.ts           # Repository exports
+    └── itemRepository.ts  # Item CRUD with auto study state creation
 
 app/
-└── _layout.tsx    # SQLiteProvider setup
+└── _layout.tsx           # SQLiteProvider setup
 ```
 
 ---
 
 **Schema Version**: 1
-**Last Updated**: 2026-02-05
+**Last Updated**: 2026-02-18

@@ -16,7 +16,11 @@ export default function RootLayout() {
   return (
     <Suspense fallback={<LoadingView />}>
       <SQLiteProvider databaseName="pali.db" onInit={migrateDbIfNeeded}>
-        <Stack />
+        <Stack screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="(tabs)" />
+          <Stack.Screen name="item/add" options={{ headerShown: true, title: "Add Item" }} />
+          <Stack.Screen name="item/[id]" options={{ headerShown: true, title: "Edit Item" }} />
+        </Stack>
       </SQLiteProvider>
     </Suspense>
   );

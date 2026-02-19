@@ -2,7 +2,7 @@ import { useSQLiteContext, type DeckRow } from "@/db";
 import { useEffect, useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-export default function Index() {
+export default function HomeScreen() {
   const db = useSQLiteContext();
   const [dbStatus, setDbStatus] = useState<string>("Checking database...");
   const [defaultDeck, setDefaultDeck] = useState<DeckRow | null>(null);
@@ -15,8 +15,8 @@ export default function Index() {
           "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name"
         );
 
-        // Get default deck
-        const deck = await db.getFirstAsync<DeckRow>("SELECT * FROM decks WHERE id = 'all'");
+        // Get default deck (id=1 is the "All" deck)
+        const deck = await db.getFirstAsync<DeckRow>("SELECT * FROM decks WHERE id = 1");
 
         setDefaultDeck(deck);
         setDbStatus(
@@ -44,7 +44,6 @@ export default function Index() {
           <Text>Created: {defaultDeck.created_at}</Text>
         </View>
       )}
-      <Text testID="welcome-text">Edit app/index.tsx to edit this screen.</Text>
     </View>
   );
 }

@@ -1,0 +1,61 @@
+# Flashcard CRUD Operations Test
+# Validates user can add, update, search, and delete flashcard items
+
+appId: host.exp.Exponent
+
+---
+- runFlow:
+    01-launch-app.yaml
+
+# Navigate to Library tab
+- tapOn:
+    id: "tab-library"
+
+# TEST 1: Add a new flashcard
+- tapOn:
+    id: "add-item-fab"
+- tapOn:
+    id: "pali-input"
+- inputText: "metta"
+- tapOn:
+    id: "meaning-input"
+- inputText: "loving-kindness"
+- hideKeyboard
+- tapOn:
+    id: "submit-button"
+- assertVisible:
+    id: "item-card-metta"
+
+# TEST 2: Search for flashcard
+- tapOn:
+    id: "search-input"
+- inputText: "metta"
+- assertVisible: "metta"
+- eraseText
+- inputText: "xyz123notfound"
+- assertNotVisible: 
+    id: "item-card-metta"
+- eraseText
+- hideKeyboard
+
+# TEST 3: Update flashcard
+- tapOn:
+    id: "item-card-metta"
+- tapOn:
+    id: "meaning-input"
+- eraseText
+- inputText: "loving-kindness, benevolence"
+- hideKeyboard
+- tapOn:
+    id: "submit-button"
+- assertVisible: 
+    id: "item-card-metta"
+
+# TEST 4: Delete flashcard
+- tapOn:
+    id: "item-card-metta"
+- tapOn:
+    id: "delete-button"
+- tapOn: "Delete"
+- assertNotVisible:
+    id: "item-card-metta"
