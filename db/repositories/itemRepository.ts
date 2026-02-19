@@ -216,7 +216,10 @@ export async function updateItemDecks(
 
     // Add new deck assignments
     for (const deckId of allDeckIds) {
-      await db.runAsync("INSERT INTO deck_items (deck_id, item_id) VALUES (?, ?)", [deckId, itemId]);
+      await db.runAsync("INSERT INTO deck_items (deck_id, item_id) VALUES (?, ?)", [
+        deckId,
+        itemId,
+      ]);
     }
   });
 }
