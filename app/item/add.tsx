@@ -1,10 +1,28 @@
-import { StyleSheet, Text, View } from "react-native";
+import { useState } from "react";
+import { StyleSheet, View } from "react-native";
+import { useRouter } from "expo-router";
+import { useSQLiteContext, itemRepository, type ItemInsert } from "@/db";
+import { ItemForm } from "@/components/items";
 
 export default function AddItemScreen() {
+  const db = useSQLiteContext();
+  const router = useRouter();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (values: ItemInsert) => {
+    setIsSubmitting(true);
+    try {
+      await itemRepository.create(db, values);
+      router.back();
+    } catch (error) {
+      console.error("Failed to create item:", error);
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <View style={styles.container} testID="add-item-screen">
-      <Text style={styles.title}>Add Item</Text>
-      <Text style={styles.subtitle}>Form will be implemented in Phase 4</Text>
+      <ItemForm onSubmit={handleSubmit} submitLabel="Add Item" isSubmitting={isSubmitting} />
     </View>
   );
 }
@@ -12,19 +30,6 @@ export default function AddItemScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    padding: 20,
-    backgroundColor: "#fff",
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: "bold",
-    marginBottom: 10,
-  },
-  subtitle: {
-    fontSize: 16,
-    color: "#666",
-    textAlign: "center",
+    backgroundColor: "#f5f5f5",
   },
 });
