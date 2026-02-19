@@ -23,5 +23,8 @@ export type {
 // Export schema version and constants
 export { SCHEMA_VERSION, DEFAULT_DECK_ID } from "./schema";
 
+// Export repositories
+export { itemRepository } from "./repositories";
+
 // Re-export useSQLiteContext hook for convenience
 export { useSQLiteContext } from "expo-sqlite";
