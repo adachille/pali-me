@@ -28,8 +28,14 @@ pnpm test              # Run tests
 pnpm test:watch        # Run tests in watch mode
 pnpm test:coverage     # Run tests with coverage
 
-# Linting
+# Linting & Formatting
 pnpm lint
+pnpm format              # Format with Prettier
+pnpm format:check        # Check formatting
+
+# E2E Testing (Maestro)
+pnpm maestro             # Run all Maestro flows
+pnpm maestro:ios         # Run Maestro on iOS with JUnit output
 ```
 
 ## Architecture
@@ -38,8 +44,13 @@ pnpm lint
 
 The app uses Expo Router with file-based routing. Routes are defined in the `app/` directory:
 
-- `app/_layout.tsx` - Root layout component using Stack navigation
-- `app/index.tsx` - Home screen
+- `app/_layout.tsx` - Root layout with Stack navigation
+- `app/(tabs)/_layout.tsx` - Tab navigation (Home, Library)
+- `app/(tabs)/index.tsx` - Home screen
+- `app/(tabs)/library.tsx` - Library screen (item list with search)
+- `app/item/_layout.tsx` - Item stack layout
+- `app/item/add.tsx` - Add new item screen
+- `app/item/[id].tsx` - Edit/view item screen
 
 The router is configured with:
 
@@ -57,15 +68,18 @@ The app uses SQLite via `expo-sqlite` for local data storage:
   - `deck_items` - Many-to-many join table
 - **db/database.ts** - Database initialization and migrations
 - **db/types.ts** - TypeScript types for database entities
+- **db/repositories/itemRepository.ts** - CRUD operations for items (search, create, update, delete)
 - See `docs/DATABASE.md` for detailed database documentation
 
 ### Testing
 
 Jest testing infrastructure with React Native Testing Library:
 
-- Test files in `app/__tests__/` directory
+- Test files colocated in `__tests__/` directories next to source files
 - Test utilities in `test-utils/` for mocks and helpers
-- See `docs/TESTING.md` for detailed testing guide
+- E2E tests with Maestro in `.maestro/` directory
+- See `docs/TESTING.md` for unit testing guide
+- See `docs/E2E_TESTING.md` for Maestro E2E testing guide
 
 ### Configuration
 
@@ -81,12 +95,23 @@ Jest testing infrastructure with React Native Testing Library:
 - Strict mode enabled
 - Uses Expo's TypeScript base configuration
 
+### Components
+
+Reusable UI components in `components/items/`:
+
+- **ItemCard** - Display card for an item in the library list
+- **ItemForm** - Form for creating/editing items (used by add and edit screens)
+- **ItemList** - Scrollable list of items with search
+- **ItemTypePicker** - Picker for item type (word, prefix, suffix)
+- **EmptyState** - Placeholder when no items exist
+
 ## Key Dependencies
 
 - **Navigation**: `expo-router`, `@react-navigation/native`, `@react-navigation/bottom-tabs`
 - **UI/Gestures**: `react-native-reanimated`, `react-native-gesture-handler`, `react-native-worklets`
 - **Database**: `expo-sqlite` for local SQLite database
 - **Testing**: `jest`, `jest-expo`, `@testing-library/react-native`, `@testing-library/jest-native`
+- **Formatting**: `prettier`, `eslint-config-prettier`, `eslint-plugin-prettier`
 - **Expo modules**: Font, Haptics, Image, Linking, System UI, Web Browser, etc.
 - **Package Manager**: pnpm
 

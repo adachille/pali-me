@@ -29,21 +29,40 @@ We use the following testing tools:
 
 ## Test Structure
 
-Tests are organized using the `__tests__` directory pattern:
+Tests are organized using the `__tests__` directory pattern, colocated with the code they test:
 
 ```
 app/
-├── __tests__/
-│   ├── index.test.tsx
-│   ├── _layout.test.tsx
-│   └── navigation.integration.test.tsx
-├── index.tsx
-└── _layout.tsx
+├── (tabs)/
+│   └── __tests__/
+│       ├── index.test.tsx          # Home screen tests
+│       └── library.test.tsx        # Library screen tests
+├── item/
+│   └── __tests__/
+│       ├── [id].test.tsx           # Edit item screen tests
+│       └── add.test.tsx            # Add item screen tests
+components/
+└── items/
+    └── __tests__/
+        ├── EmptyState.test.tsx
+        ├── ItemCard.test.tsx
+        ├── ItemForm.test.tsx
+        └── ItemTypePicker.test.tsx
+db/
+└── repositories/
+    └── __tests__/
+        └── itemRepository.test.ts  # Repository unit tests
+test-utils/
+├── index.ts                        # Exports all test utilities
+├── mocks.ts                        # Mock factories
+├── render.tsx                      # Custom render with providers
+└── setup.ts                        # Global test setup
 ```
 
 ### File Naming Conventions
 
 - Unit tests: `ComponentName.test.tsx`
+- Repository tests: `repositoryName.test.ts`
 - Integration tests: `feature.integration.test.tsx`
 - Test utilities: `test-utils/`
 
@@ -126,6 +145,29 @@ import { createMockRouter } from "@/test-utils";
 const mockRouter = createMockRouter({
   push: jest.fn(),
 });
+```
+
+### Mocking SQLite
+
+For components and repositories that use the database:
+
+```tsx
+import { createMockSQLiteContext } from "@/test-utils";
+
+// Create a mock with default empty responses
+const mockDb = createMockSQLiteContext();
+
+// Create with specific overrides
+const mockDb = createMockSQLiteContext({
+  getAllAsync: jest.fn().mockResolvedValue([
+    { id: 1, type: "word", pali: "dhamma", meaning: "teaching", notes: null, created_at: "2024-01-01T00:00:00.000Z" },
+  ]),
+});
+
+// Mock the expo-sqlite module
+jest.mock("expo-sqlite", () => ({
+  useSQLiteContext: () => mockDb,
+}));
 ```
 
 ### Mocking Expo Modules
@@ -264,12 +306,63 @@ describe("ItemList", () => {
 });
 ```
 
+### Testing Repositories
+
+Repository tests use `createMockSQLiteContext` to mock the database and verify SQL queries:
+
+```tsx
+import { createMockSQLiteContext } from "@/test-utils";
+import * as itemRepository from "../itemRepository";
+
+describe("itemRepository", () => {
+  let mockDb: ReturnType<typeof createMockSQLiteContext>;
+
+  beforeEach(() => {
+    mockDb = createMockSQLiteContext();
+    jest.clearAllMocks();
+  });
+
+  it("creates item with study states and deck assignment", async () => {
+    mockDb.runAsync.mockResolvedValue({ changes: 1, lastInsertRowId: 1 });
+    mockDb.getFirstAsync.mockResolvedValue({
+      id: 1, type: "word", pali: "dhamma", meaning: "teaching",
+      notes: null, created_at: "2024-01-01T00:00:00.000Z",
+    });
+
+    const result = await itemRepository.create(mockDb, {
+      type: "word", pali: "dhamma", meaning: "teaching",
+    });
+
+    // Verify item insert, study state creation, and deck assignment
+    expect(mockDb.runAsync).toHaveBeenCalledWith(
+      expect.stringContaining("INSERT INTO items"), expect.any(Array)
+    );
+    expect(result.pali).toBe("dhamma");
+  });
+});
+```
+
+### Testing Screens with Navigation
+
+Screens that use `useFocusEffect` need a `NavigationContainer` wrapper:
+
+```tsx
+import { NavigationContainer } from "@react-navigation/native";
+
+function TestWrapper({ children }: { children: React.ReactNode }) {
+  return <NavigationContainer>{children}</NavigationContainer>;
+}
+
+render(<LibraryScreen />, { wrapper: TestWrapper });
+```
+
 ## Test Utilities
 
 The `test-utils/` directory provides:
 
 - **render**: Custom render function with providers
 - **createMockRouter**: Mock router factory for navigation tests
+- **createMockSQLiteContext**: Mock SQLite database context factory
 - **waitForAsync**: Helper for async operations
 - **testFixtures**: Common test data
 
