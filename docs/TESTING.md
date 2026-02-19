@@ -159,9 +159,18 @@ const mockDb = createMockSQLiteContext();
 
 // Create with specific overrides
 const mockDb = createMockSQLiteContext({
-  getAllAsync: jest.fn().mockResolvedValue([
-    { id: 1, type: "word", pali: "dhamma", meaning: "teaching", notes: null, created_at: "2024-01-01T00:00:00.000Z" },
-  ]),
+  getAllAsync: jest
+    .fn()
+    .mockResolvedValue([
+      {
+        id: 1,
+        type: "word",
+        pali: "dhamma",
+        meaning: "teaching",
+        notes: null,
+        created_at: "2024-01-01T00:00:00.000Z",
+      },
+    ]),
 });
 
 // Mock the expo-sqlite module
@@ -325,17 +334,24 @@ describe("itemRepository", () => {
   it("creates item with study states and deck assignment", async () => {
     mockDb.runAsync.mockResolvedValue({ changes: 1, lastInsertRowId: 1 });
     mockDb.getFirstAsync.mockResolvedValue({
-      id: 1, type: "word", pali: "dhamma", meaning: "teaching",
-      notes: null, created_at: "2024-01-01T00:00:00.000Z",
+      id: 1,
+      type: "word",
+      pali: "dhamma",
+      meaning: "teaching",
+      notes: null,
+      created_at: "2024-01-01T00:00:00.000Z",
     });
 
     const result = await itemRepository.create(mockDb, {
-      type: "word", pali: "dhamma", meaning: "teaching",
+      type: "word",
+      pali: "dhamma",
+      meaning: "teaching",
     });
 
     // Verify item insert, study state creation, and deck assignment
     expect(mockDb.runAsync).toHaveBeenCalledWith(
-      expect.stringContaining("INSERT INTO items"), expect.any(Array)
+      expect.stringContaining("INSERT INTO items"),
+      expect.any(Array)
     );
     expect(result.pali).toBe("dhamma");
   });

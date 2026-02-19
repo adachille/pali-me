@@ -33,9 +33,7 @@ function rowToDeck(row: DeckRow): Deck {
  * Fetches all items ordered by pali text
  */
 export async function getAll(db: SQLiteDatabase): Promise<Item[]> {
-  const rows = await db.getAllAsync<ItemRow>(
-    "SELECT * FROM items ORDER BY pali COLLATE NOCASE"
-  );
+  const rows = await db.getAllAsync<ItemRow>("SELECT * FROM items ORDER BY pali COLLATE NOCASE");
   return rows.map(rowToItem);
 }
 
@@ -43,10 +41,7 @@ export async function getAll(db: SQLiteDatabase): Promise<Item[]> {
  * Fetches a single item by ID
  */
 export async function getById(db: SQLiteDatabase, id: number): Promise<Item | null> {
-  const row = await db.getFirstAsync<ItemRow>(
-    "SELECT * FROM items WHERE id = ?",
-    [id]
-  );
+  const row = await db.getFirstAsync<ItemRow>("SELECT * FROM items WHERE id = ?", [id]);
   return row ? rowToItem(row) : null;
 }
 
@@ -79,9 +74,7 @@ export async function create(
   deckIds: number[] = [DEFAULT_DECK_ID]
 ): Promise<Item> {
   // Ensure we always include the default deck
-  const allDeckIds = deckIds.includes(DEFAULT_DECK_ID)
-    ? deckIds
-    : [DEFAULT_DECK_ID, ...deckIds];
+  const allDeckIds = deckIds.includes(DEFAULT_DECK_ID) ? deckIds : [DEFAULT_DECK_ID, ...deckIds];
 
   // Insert the item
   const result = await db.runAsync(
@@ -94,18 +87,18 @@ export async function create(
   // Create study states for both directions
   const directions: StudyDirection[] = ["pali_to_meaning", "meaning_to_pali"];
   for (const direction of directions) {
-    await db.runAsync(
-      "INSERT INTO study_states (item_id, direction) VALUES (?, ?)",
-      [itemId, direction]
-    );
+    await db.runAsync("INSERT INTO study_states (item_id, direction) VALUES (?, ?)", [
+      itemId,
+      direction,
+    ]);
   }
 
   // Add item to decks
   for (const deckId of allDeckIds) {
-    await db.runAsync(
-      "INSERT OR IGNORE INTO deck_items (deck_id, item_id) VALUES (?, ?)",
-      [deckId, itemId]
-    );
+    await db.runAsync("INSERT OR IGNORE INTO deck_items (deck_id, item_id) VALUES (?, ?)", [
+      deckId,
+      itemId,
+    ]);
   }
 
   // Fetch and return the created item
@@ -156,10 +149,7 @@ export async function update(
   }
 
   values.push(String(id));
-  await db.runAsync(
-    `UPDATE items SET ${fields.join(", ")} WHERE id = ?`,
-    values
-  );
+  await db.runAsync(`UPDATE items SET ${fields.join(", ")} WHERE id = ?`, values);
 
   return getById(db, id);
 }
@@ -195,9 +185,7 @@ export async function getDecksForItem(db: SQLiteDatabase, itemId: number): Promi
  * Gets all available decks (for picker)
  */
 export async function getAllDecks(db: SQLiteDatabase): Promise<Deck[]> {
-  const rows = await db.getAllAsync<DeckRow>(
-    "SELECT * FROM decks ORDER BY name COLLATE NOCASE"
-  );
+  const rows = await db.getAllAsync<DeckRow>("SELECT * FROM decks ORDER BY name COLLATE NOCASE");
   return rows.map(rowToDeck);
 }
 
@@ -214,18 +202,13 @@ export async function updateItemDecks(
   deckIds: number[]
 ): Promise<void> {
   // Ensure we always include the default deck
-  const allDeckIds = deckIds.includes(DEFAULT_DECK_ID)
-    ? deckIds
-    : [DEFAULT_DECK_ID, ...deckIds];
+  const allDeckIds = deckIds.includes(DEFAULT_DECK_ID) ? deckIds : [DEFAULT_DECK_ID, ...deckIds];
 
   // Remove existing deck assignments
   await db.runAsync("DELETE FROM deck_items WHERE item_id = ?", [itemId]);
 
   // Add new deck assignments
   for (const deckId of allDeckIds) {
-    await db.runAsync(
-      "INSERT INTO deck_items (deck_id, item_id) VALUES (?, ?)",
-      [deckId, itemId]
-    );
+    await db.runAsync("INSERT INTO deck_items (deck_id, item_id) VALUES (?, ?)", [deckId, itemId]);
   }
 }

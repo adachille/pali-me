@@ -13,6 +13,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
+    "prepare": "pnpm format && pnpm lint",
     "maestro": "maestro test .maestro",
     "maestro:ios": "maestro test .maestro --format junit --output maestro-results-ios.xml"
   },

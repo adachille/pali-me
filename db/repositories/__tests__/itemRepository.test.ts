@@ -64,10 +64,7 @@ describe("itemRepository", () => {
 
       const result = await itemRepository.getById(mockDb, 1);
 
-      expect(mockDb.getFirstAsync).toHaveBeenCalledWith(
-        "SELECT * FROM items WHERE id = ?",
-        [1]
-      );
+      expect(mockDb.getFirstAsync).toHaveBeenCalledWith("SELECT * FROM items WHERE id = ?", [1]);
       expect(result).not.toBeNull();
       expect(result?.pali).toBe("dhamma");
     });
@@ -124,10 +121,12 @@ describe("itemRepository", () => {
       });
 
       // Should insert item
-      expect(mockDb.runAsync).toHaveBeenCalledWith(
-        expect.stringContaining("INSERT INTO items"),
-        ["word", "dhamma", "teaching", null]
-      );
+      expect(mockDb.runAsync).toHaveBeenCalledWith(expect.stringContaining("INSERT INTO items"), [
+        "word",
+        "dhamma",
+        "teaching",
+        null,
+      ]);
 
       // Should create both study states
       expect(mockDb.runAsync).toHaveBeenCalledWith(
@@ -165,10 +164,10 @@ describe("itemRepository", () => {
         meaning: "updated meaning",
       });
 
-      expect(mockDb.runAsync).toHaveBeenCalledWith(
-        "UPDATE items SET meaning = ? WHERE id = ?",
-        ["updated meaning", "1"]
-      );
+      expect(mockDb.runAsync).toHaveBeenCalledWith("UPDATE items SET meaning = ? WHERE id = ?", [
+        "updated meaning",
+        "1",
+      ]);
       expect(result?.meaning).toBe("updated meaning");
     });
 
@@ -195,10 +194,7 @@ describe("itemRepository", () => {
 
       const result = await itemRepository.deleteItem(mockDb, 1);
 
-      expect(mockDb.runAsync).toHaveBeenCalledWith(
-        "DELETE FROM items WHERE id = ?",
-        [1]
-      );
+      expect(mockDb.runAsync).toHaveBeenCalledWith("DELETE FROM items WHERE id = ?", [1]);
       expect(result).toBe(true);
     });
 
@@ -231,9 +227,7 @@ describe("itemRepository", () => {
 
   describe("getDecksForItem", () => {
     it("fetches decks for a specific item", async () => {
-      const mockRows = [
-        { id: 1, name: "All", created_at: "2024-01-01T00:00:00.000Z" },
-      ];
+      const mockRows = [{ id: 1, name: "All", created_at: "2024-01-01T00:00:00.000Z" }];
       mockDb.getAllAsync.mockResolvedValue(mockRows);
 
       const result = await itemRepository.getDecksForItem(mockDb, 1);

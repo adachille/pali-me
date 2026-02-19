@@ -44,13 +44,13 @@ A searchable list view displaying all items from the `items` table.
 
 Form fields:
 
-| Field   | Type          | Required | Notes                                        |
-| ------- | ------------- | -------- | -------------------------------------------- |
-| Pali    | Text input    | Yes      | The Pali word/element                        |
-| Meaning | Text input    | Yes      | English meaning                              |
-| Type    | Picker/Select | No       | word, prefix, suffix, root, particle, other (user-defined)  |
-| Notes   | Text area     | No       | Optional notes (etymology, usage, etc.)      |
-| Decks   | Multi-select  | No       | Defaults to "All" deck, allow adding to more |
+| Field   | Type          | Required | Notes                                                      |
+| ------- | ------------- | -------- | ---------------------------------------------------------- |
+| Pali    | Text input    | Yes      | The Pali word/element                                      |
+| Meaning | Text input    | Yes      | English meaning                                            |
+| Type    | Picker/Select | No       | word, prefix, suffix, root, particle, other (user-defined) |
+| Notes   | Text area     | No       | Optional notes (etymology, usage, etc.)                    |
+| Decks   | Multi-select  | No       | Defaults to "All" deck, allow adding to more               |
 
 **Behavior:**
 
@@ -70,7 +70,7 @@ Form fields:
 Use a UUID library or `expo-crypto` for generating item IDs:
 
 ```typescript
-import * as Crypto from 'expo-crypto';
+import * as Crypto from "expo-crypto";
 const id = Crypto.randomUUID();
 ```
 
@@ -130,12 +130,12 @@ Set up bottom tab navigation with Home and Library tabs.
 
 Files to create:
 
-app/(tabs)/_layout.tsx - Tab navigator with Home and Library tabs
+app/(tabs)/\_layout.tsx - Tab navigator with Home and Library tabs
 app/(tabs)/index.tsx - Home tab (content moved from app/index.tsx)
 app/(tabs)/library.tsx - Placeholder Library screen
 Files to modify:
 
-app/_layout.tsx - Update Stack to include (tabs) group
+app/\_layout.tsx - Update Stack to include (tabs) group
 Implementation:
 
 Create tab layout with Ionicons (home, library icons)
@@ -170,10 +170,10 @@ getAllDecks() - Get all decks for picker
 Auto-create study states on item creation:
 
 for (const direction of ['pali_to_meaning', 'meaning_to_pali']) {
-  await db.runAsync(
-    'INSERT INTO study_states (item_id, direction) VALUES (?, ?)',
-    [itemId, direction]
-  );
+await db.runAsync(
+'INSERT INTO study_states (item_id, direction) VALUES (?, ?)',
+[itemId, direction]
+);
 }
 Checkpoint: Repository tests pass, can create/read/update/delete items.
 
@@ -202,7 +202,7 @@ Build form screens for creating and editing items.
 
 Files to create:
 
-app/item/_layout.tsx - Stack layout for item routes
+app/item/\_layout.tsx - Stack layout for item routes
 app/item/add.tsx - Add new item screen
 app/item/[id].tsx - Edit existing item screen
 components/items/ItemForm.tsx - Reusable form component
@@ -219,8 +219,8 @@ Decks Multi-select No ['all']
 Delete confirmation:
 
 Alert.alert('Delete Item', 'Delete this item? This cannot be undone.', [
-  { text: 'Cancel', style: 'cancel' },
-  { text: 'Delete', style: 'destructive', onPress: handleDelete },
+{ text: 'Cancel', style: 'cancel' },
+{ text: 'Delete', style: 'destructive', onPress: handleDelete },
 ]);
 Checkpoint: Can add, edit, and delete items. All CRUD operations work end-to-end.
 
