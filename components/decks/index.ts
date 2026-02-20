@@ -1,3 +1,4 @@
+export { AddItemsModal } from "./AddItemsModal";
 export { DeckCard } from "./DeckCard";
 export { DeckEmptyState } from "./DeckEmptyState";
 export { DeckFormModal } from "./DeckFormModal";

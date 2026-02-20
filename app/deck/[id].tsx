@@ -1,4 +1,4 @@
-import { DeckFormModal, DeckItemList } from "@/components/decks";
+import { AddItemsModal, DeckFormModal, DeckItemList } from "@/components/decks";
 import { deckRepository, useSQLiteContext, type Item } from "@/db";
 import type { DeckWithCount } from "@/db/repositories/deckRepository";
 import { useFocusEffect } from "@react-navigation/native";
@@ -167,6 +167,13 @@ export default function DeckDetailScreen() {
         deckId={deck.id}
         onSave={loadDeck}
         onClose={() => setEditModalVisible(false)}
+      />
+
+      <AddItemsModal
+        visible={addItemsModalVisible}
+        deckId={deck.id}
+        onClose={() => setAddItemsModalVisible(false)}
+        onItemsAdded={loadDeck}
       />
     </View>
   );
