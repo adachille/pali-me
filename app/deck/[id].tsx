@@ -1,10 +1,11 @@
-import { DeckFormModal } from "@/components/decks";
-import { deckRepository, useSQLiteContext } from "@/db";
+import { DeckFormModal, DeckItemList } from "@/components/decks";
+import { deckRepository, useSQLiteContext, type Item } from "@/db";
 import type { DeckWithCount } from "@/db/repositories/deckRepository";
 import { useFocusEffect } from "@react-navigation/native";
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { useCallback, useState } from "react";
 import { ActivityIndicator, Alert, Pressable, StyleSheet, Text, View } from "react-native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 const DEFAULT_DECK_ID = 1;
 
@@ -13,8 +14,10 @@ export default function DeckDetailScreen() {
   const router = useRouter();
   const { id } = useLocalSearchParams<{ id: string }>();
   const [deck, setDeck] = useState<DeckWithCount | null>(null);
+  const [items, setItems] = useState<Item[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [editModalVisible, setEditModalVisible] = useState(false);
+  const [addItemsModalVisible, setAddItemsModalVisible] = useState(false);
 
   const loadDeck = useCallback(async () => {
     if (!id) return;
@@ -33,6 +36,9 @@ export default function DeckDetailScreen() {
       }
 
       setDeck(result);
+
+      const deckItems = await deckRepository.getItemsInDeck(db, deckId);
+      setItems(deckItems);
     } catch (error) {
       console.error("Failed to load deck:", error);
       router.back();
@@ -62,6 +68,26 @@ export default function DeckDetailScreen() {
       },
     ]);
   };
+
+  const handleItemPress = useCallback(
+    (item: Item) => {
+      router.push(`/item/${item.id}` as const);
+    },
+    [router]
+  );
+
+  const handleRemoveItem = useCallback(
+    async (item: Item) => {
+      if (!deck) return;
+      await deckRepository.removeItemFromDeck(db, deck.id, item.id);
+      loadDeck();
+    },
+    [db, deck, loadDeck]
+  );
+
+  const handleAddItemsPress = useCallback(() => {
+    setAddItemsModalVisible(true);
+  }, []);
 
   const isDefaultDeck = deck?.id === DEFAULT_DECK_ID;
 
@@ -114,10 +140,26 @@ export default function DeckDetailScreen() {
         </View>
         <Text style={styles.itemCount}>{itemCountText}</Text>
       </View>
-      <View style={styles.placeholder}>
-        <Text style={styles.placeholderText}>Deck items will appear here</Text>
-        <Text style={styles.placeholderSubtext}>Full implementation in Phase 5</Text>
-      </View>
+
+      <GestureHandlerRootView style={styles.listContainer}>
+        <DeckItemList
+          items={items}
+          onItemPress={handleItemPress}
+          onRemoveItem={handleRemoveItem}
+          onAddPress={handleAddItemsPress}
+          isDefaultDeck={isDefaultDeck}
+        />
+      </GestureHandlerRootView>
+
+      {!isDefaultDeck && (
+        <Pressable
+          style={({ pressed }) => [styles.fab, pressed && styles.fabPressed]}
+          onPress={handleAddItemsPress}
+          testID="add-items-fab"
+        >
+          <Text style={styles.fabText}>+</Text>
+        </Pressable>
+      )}
 
       <DeckFormModal
         visible={editModalVisible}
@@ -199,19 +241,32 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#666",
   },
-  placeholder: {
+  listContainer: {
     flex: 1,
+  },
+  fab: {
+    position: "absolute",
+    right: 20,
+    bottom: 20,
+    width: 56,
+    height: 56,
+    borderRadius: 28,
+    backgroundColor: "#4CAF50",
     justifyContent: "center",
     alignItems: "center",
-    padding: 32,
+    elevation: 4,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
   },
-  placeholderText: {
-    fontSize: 18,
-    color: "#999",
-    marginBottom: 8,
+  fabPressed: {
+    backgroundColor: "#388E3C",
   },
-  placeholderSubtext: {
-    fontSize: 14,
-    color: "#bbb",
+  fabText: {
+    fontSize: 28,
+    color: "#fff",
+    fontWeight: "300",
+    marginTop: -2,
   },
 });
