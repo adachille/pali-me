@@ -1,9 +1,12 @@
+import { DeckFormModal } from "@/components/decks";
 import { deckRepository, useSQLiteContext } from "@/db";
 import type { DeckWithCount } from "@/db/repositories/deckRepository";
 import { useFocusEffect } from "@react-navigation/native";
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { useCallback, useState } from "react";
-import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
+import { ActivityIndicator, Alert, Pressable, StyleSheet, Text, View } from "react-native";
+
+const DEFAULT_DECK_ID = 1;
 
 export default function DeckDetailScreen() {
   const db = useSQLiteContext();
@@ -11,6 +14,7 @@ export default function DeckDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const [deck, setDeck] = useState<DeckWithCount | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [editModalVisible, setEditModalVisible] = useState(false);
 
   const loadDeck = useCallback(async () => {
     if (!id) return;
@@ -43,6 +47,24 @@ export default function DeckDetailScreen() {
     }, [loadDeck])
   );
 
+  const handleDelete = () => {
+    if (!deck || deck.id === DEFAULT_DECK_ID) return;
+
+    Alert.alert("Delete Deck", "Delete this deck? Items will remain in your library.", [
+      { text: "Cancel", style: "cancel" },
+      {
+        text: "Delete",
+        style: "destructive",
+        onPress: async () => {
+          await deckRepository.deleteDeck(db, deck.id);
+          router.back();
+        },
+      },
+    ]);
+  };
+
+  const isDefaultDeck = deck?.id === DEFAULT_DECK_ID;
+
   if (isLoading) {
     return (
       <View style={styles.loadingContainer} testID="deck-detail-screen">
@@ -65,13 +87,45 @@ export default function DeckDetailScreen() {
     <View style={styles.container} testID="deck-detail-screen">
       <Stack.Screen options={{ title: deck.name }} />
       <View style={styles.header}>
-        <Text style={styles.title}>{deck.name}</Text>
+        <View style={styles.headerTop}>
+          <Text style={styles.title}>{deck.name}</Text>
+          <View style={styles.headerActions}>
+            <Pressable
+              style={({ pressed }) => [styles.headerButton, pressed && styles.headerButtonPressed]}
+              onPress={() => setEditModalVisible(true)}
+              testID="edit-deck-button"
+            >
+              <Text style={styles.headerButtonText}>Edit</Text>
+            </Pressable>
+            {!isDefaultDeck && (
+              <Pressable
+                style={({ pressed }) => [
+                  styles.headerButton,
+                  styles.deleteButton,
+                  pressed && styles.headerButtonPressed,
+                ]}
+                onPress={handleDelete}
+                testID="delete-deck-button"
+              >
+                <Text style={styles.deleteButtonText}>Delete</Text>
+              </Pressable>
+            )}
+          </View>
+        </View>
         <Text style={styles.itemCount}>{itemCountText}</Text>
       </View>
       <View style={styles.placeholder}>
         <Text style={styles.placeholderText}>Deck items will appear here</Text>
         <Text style={styles.placeholderSubtext}>Full implementation in Phase 5</Text>
       </View>
+
+      <DeckFormModal
+        visible={editModalVisible}
+        initialName={deck.name}
+        deckId={deck.id}
+        onSave={loadDeck}
+        onClose={() => setEditModalVisible(false)}
+      />
     </View>
   );
 }
@@ -102,11 +156,44 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: "#e0e0e0",
   },
+  headerTop: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    marginBottom: 4,
+  },
+  headerActions: {
+    flexDirection: "row",
+    gap: 8,
+  },
+  headerButton: {
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 6,
+    backgroundColor: "#f5f5f5",
+  },
+  headerButtonPressed: {
+    opacity: 0.7,
+  },
+  headerButtonText: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#4CAF50",
+  },
+  deleteButton: {
+    backgroundColor: "#ffebee",
+  },
+  deleteButtonText: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#f44336",
+  },
   title: {
     fontSize: 24,
     fontWeight: "bold",
     color: "#333",
-    marginBottom: 4,
+    flex: 1,
+    marginRight: 12,
   },
   itemCount: {
     fontSize: 16,
