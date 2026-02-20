@@ -53,8 +53,17 @@ jobs:
           CI=false pnpm run ios &
 
           # Wait for Metro bundler to be ready (starts in ~40s in CI)
+          # Note: 'timeout' is not available on macOS runners, so use a manual loop
           echo "Waiting for Metro bundler..."
-          timeout 300 bash -c 'until curl -s "http://localhost:8081/status" 2>/dev/null | grep -q "running"; do sleep 5; done'
+          ATTEMPTS=0
+          until curl -s "http://localhost:8081/status" 2>/dev/null | grep -q "running"; do
+            ATTEMPTS=$((ATTEMPTS + 1))
+            if [ "$ATTEMPTS" -ge 60 ]; then
+              echo "Timed out waiting for Metro bundler after 300s"
+              exit 1
+            fi
+            sleep 5
+          done
           echo "Metro bundler is ready!"
 
           # Wait for bundle compilation and app to fully render in simulator
