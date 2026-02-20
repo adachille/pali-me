@@ -115,28 +115,15 @@ export default function DeckDetailScreen() {
       <View style={styles.header}>
         <View style={styles.headerTop}>
           <Text style={styles.title}>{deck.name}</Text>
-          <View style={styles.headerActions}>
+          {!isDefaultDeck && (
             <Pressable
-              style={({ pressed }) => [styles.headerButton, pressed && styles.headerButtonPressed]}
+              style={({ pressed }) => [styles.editButton, pressed && styles.editButtonPressed]}
               onPress={() => setEditModalVisible(true)}
               testID="edit-deck-button"
             >
-              <Text style={styles.headerButtonText}>Edit</Text>
+              <Text style={styles.editButtonText}>✏️</Text>
             </Pressable>
-            {!isDefaultDeck && (
-              <Pressable
-                style={({ pressed }) => [
-                  styles.headerButton,
-                  styles.deleteButton,
-                  pressed && styles.headerButtonPressed,
-                ]}
-                onPress={handleDelete}
-                testID="delete-deck-button"
-              >
-                <Text style={styles.deleteButtonText}>Delete</Text>
-              </Pressable>
-            )}
-          </View>
+          )}
         </View>
         <Text style={styles.itemCount}>{itemCountText}</Text>
       </View>
@@ -167,6 +154,7 @@ export default function DeckDetailScreen() {
         deckId={deck.id}
         onSave={loadDeck}
         onClose={() => setEditModalVisible(false)}
+        onDelete={handleDelete}
       />
 
       <AddItemsModal
@@ -208,41 +196,23 @@ const styles = StyleSheet.create({
   headerTop: {
     flexDirection: "row",
     justifyContent: "space-between",
-    alignItems: "flex-start",
+    alignItems: "center",
     marginBottom: 4,
   },
-  headerActions: {
-    flexDirection: "row",
-    gap: 8,
+  editButton: {
+    padding: 8,
   },
-  headerButton: {
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 6,
-    backgroundColor: "#f5f5f5",
-  },
-  headerButtonPressed: {
+  editButtonPressed: {
     opacity: 0.7,
   },
-  headerButtonText: {
-    fontSize: 14,
-    fontWeight: "600",
-    color: "#4CAF50",
-  },
-  deleteButton: {
-    backgroundColor: "#ffebee",
-  },
-  deleteButtonText: {
-    fontSize: 14,
-    fontWeight: "600",
-    color: "#f44336",
+  editButtonText: {
+    fontSize: 20,
   },
   title: {
     fontSize: 24,
     fontWeight: "bold",
     color: "#333",
     flex: 1,
-    marginRight: 12,
   },
   itemCount: {
     fontSize: 16,

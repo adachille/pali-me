@@ -18,6 +18,7 @@ type DeckFormModalProps = {
   deckId?: number;
   onSave: () => void;
   onClose: () => void;
+  onDelete?: () => void;
 };
 
 export function DeckFormModal({
@@ -26,6 +27,7 @@ export function DeckFormModal({
   deckId,
   onSave,
   onClose,
+  onDelete,
 }: DeckFormModalProps) {
   const db = useSQLiteContext();
   const [name, setName] = useState("");
@@ -151,6 +153,17 @@ export function DeckFormModal({
               )}
             </Pressable>
           </View>
+
+          {isEditMode && onDelete && (
+            <Pressable
+              style={({ pressed }) => [styles.deleteButton, pressed && styles.pressed]}
+              onPress={onDelete}
+              disabled={isSaving}
+              testID="deck-form-delete"
+            >
+              <Text style={styles.deleteButtonText}>Delete Deck</Text>
+            </Pressable>
+          )}
         </View>
       </KeyboardAvoidingView>
     </Modal>
@@ -245,5 +258,18 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "600",
     color: "#fff",
+  },
+  deleteButton: {
+    marginTop: 16,
+    paddingVertical: 14,
+    borderRadius: 8,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#ffebee",
+  },
+  deleteButtonText: {
+    fontSize: 16,
+    fontWeight: "600",
+    color: "#f44336",
   },
 });

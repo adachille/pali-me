@@ -157,6 +157,7 @@ const styles = StyleSheet.create({
   buttons: {
     flexDirection: "row",
     gap: 12,
+    paddingBottom: 20,
   },
   button: {
     flex: 1,
