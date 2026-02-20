@@ -10,9 +10,7 @@ export function EmptyState({ onAddPress, isSearching = false }: EmptyStateProps)
     return (
       <View style={styles.container} testID="empty-state">
         <Text style={styles.title}>No flash cards found</Text>
-        <Text style={styles.subtitle}>
-          Try a different search term or add a new flash card.
-        </Text>
+        <Text style={styles.subtitle}>Try a different search term or add a new flash card.</Text>
       </View>
     );
   }

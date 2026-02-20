@@ -82,9 +82,7 @@ export type ImportResult = {
  * @param db - The SQLite database instance
  * @returns Import statistics or null if cancelled
  */
-export async function importDatabaseFromJson(
-  db: SQLiteDatabase
-): Promise<ImportResult | null> {
+export async function importDatabaseFromJson(db: SQLiteDatabase): Promise<ImportResult | null> {
   // Open file picker
   const result = await DocumentPicker.getDocumentAsync({
     type: "application/json",
