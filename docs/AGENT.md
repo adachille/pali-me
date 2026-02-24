@@ -92,6 +92,16 @@ Jest testing infrastructure with React Native Testing Library:
 - See `docs/TESTING.md` for unit testing guide
 - See `docs/E2E_TESTING.md` for Maestro E2E testing guide
 
+**Running Jest tests**: Jest output is very verbose. To minimize context usage, use flags like `--verbose=false` and pipe to `head` or `tail` to limit output:
+
+```bash
+# Run specific tests with minimal output
+pnpm test --testPathPattern="path/to/tests" --verbose=false 2>&1 | head -80
+
+# Check just pass/fail summary
+pnpm test --testPathPattern="path/to/tests" 2>&1 | tail -15
+```
+
 ### Configuration
 
 - **app.json** - Expo configuration including:
