@@ -16,14 +16,14 @@ export default function AddItemScreen() {
       router.back();
     } catch (error) {
       console.error("Failed to create item:", error);
-      Alert.alert("Error", "Failed to create item. Please try again.");
+      Alert.alert("Error", "Failed to create card. Please try again.");
       setIsSubmitting(false);
     }
   };
 
   return (
     <View style={styles.container} testID="add-item-screen">
-      <ItemForm onSubmit={handleSubmit} submitLabel="Add Item" isSubmitting={isSubmitting} />
+      <ItemForm onSubmit={handleSubmit} submitLabel="Add Card" isSubmitting={isSubmitting} />
     </View>
   );
 }

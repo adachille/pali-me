@@ -21,11 +21,11 @@ export default function EditItemScreen() {
       if (result) {
         setItem(result);
       } else {
-        setError("Item not found");
+        setError("Card not found");
       }
     } catch (err) {
       console.error("Failed to load item:", err);
-      setError("Failed to load item");
+      setError("Failed to load card");
     } finally {
       setIsLoading(false);
     }
@@ -50,7 +50,7 @@ export default function EditItemScreen() {
   };
 
   const handleDelete = () => {
-    Alert.alert("Delete Item", "Delete this item? This cannot be undone.", [
+    Alert.alert("Delete Card", "Delete this card? This cannot be undone.", [
       { text: "Cancel", style: "cancel" },
       {
         text: "Delete",
@@ -62,7 +62,7 @@ export default function EditItemScreen() {
             router.back();
           } catch (err) {
             console.error("Failed to delete item:", err);
-            Alert.alert("Error", "Failed to delete item. Please try again.");
+            Alert.alert("Error", "Failed to delete card. Please try again.");
           }
         },
       },
@@ -80,7 +80,7 @@ export default function EditItemScreen() {
   if (error || !item) {
     return (
       <View style={styles.centerContainer} testID="edit-item-screen">
-        <Text style={styles.errorText}>{error ?? "Item not found"}</Text>
+        <Text style={styles.errorText}>{error ?? "Card not found"}</Text>
       </View>
     );
   }

@@ -132,7 +132,7 @@ export function ItemForm({
             onPress={onDelete}
             testID="delete-button"
           >
-            <Text style={styles.deleteButtonText}>Delete Item</Text>
+            <Text style={styles.deleteButtonText}>Delete Card</Text>
           </Pressable>
         )}
       </ScrollView>

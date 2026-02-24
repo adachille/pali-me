@@ -151,7 +151,7 @@ export function AddItemsModal({ visible, deckId, onClose, onItemsAdded }: AddIte
     <Modal visible={visible} animationType="slide" onRequestClose={onClose}>
       <View style={styles.container} testID="add-items-modal">
         <View style={styles.header}>
-          <Text style={styles.title}>Add Items to Deck</Text>
+          <Text style={styles.title}>Add Cards to Deck</Text>
           <Pressable
             style={({ pressed }) => [styles.closeButton, pressed && styles.closeButtonPressed]}
             onPress={onClose}
@@ -164,7 +164,7 @@ export function AddItemsModal({ visible, deckId, onClose, onItemsAdded }: AddIte
         <View style={styles.searchContainer}>
           <TextInput
             style={styles.searchInput}
-            placeholder="Search items..."
+            placeholder="Search cards..."
             placeholderTextColor="#999"
             value={searchQuery}
             onChangeText={setSearchQuery}
@@ -181,12 +181,12 @@ export function AddItemsModal({ visible, deckId, onClose, onItemsAdded }: AddIte
         ) : filteredItems.length === 0 ? (
           <View style={styles.emptyContainer}>
             <Text style={styles.emptyTitle}>
-              {searchQuery.trim() ? "No matching items" : "All items already in deck"}
+              {searchQuery.trim() ? "No matching cards" : "All cards already in deck"}
             </Text>
             <Text style={styles.emptySubtitle}>
               {searchQuery.trim()
                 ? "Try a different search term"
-                : "Add more items to your library first"}
+                : "Add more cards to your library first"}
             </Text>
           </View>
         ) : (

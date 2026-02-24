@@ -56,7 +56,7 @@ export default function DeckDetailScreen() {
   const handleDelete = () => {
     if (!deck || deck.id === DEFAULT_DECK_ID) return;
 
-    Alert.alert("Delete Deck", "Delete this deck? Items will remain in your library.", [
+    Alert.alert("Delete Deck", "Delete this deck? Cards will remain in your library.", [
       { text: "Cancel", style: "cancel" },
       {
         text: "Delete",
@@ -107,7 +107,7 @@ export default function DeckDetailScreen() {
     );
   }
 
-  const itemCountText = deck.itemCount === 1 ? "1 item" : `${deck.itemCount} items`;
+  const itemCountText = deck.itemCount === 1 ? "1 card" : `${deck.itemCount} cards`;
 
   return (
     <View style={styles.container} testID="deck-detail-screen">

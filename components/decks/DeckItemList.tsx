@@ -113,9 +113,9 @@ function DeckEmptyItems({
   if (isDefaultDeck) {
     return (
       <View style={styles.emptyContainer} testID="deck-empty-items">
-        <Text style={styles.emptyTitle}>No items in your library</Text>
+        <Text style={styles.emptyTitle}>No cards in your library</Text>
         <Text style={styles.emptySubtitle}>
-          Add items from the Library tab to start building your vocabulary.
+          Add cards from the Library tab to start building your vocabulary.
         </Text>
       </View>
     );
@@ -123,14 +123,14 @@ function DeckEmptyItems({
 
   return (
     <View style={styles.emptyContainer} testID="deck-empty-items">
-      <Text style={styles.emptyTitle}>No items in this deck</Text>
-      <Text style={styles.emptySubtitle}>Add items from your library to start studying.</Text>
+      <Text style={styles.emptyTitle}>No cards in this deck</Text>
+      <Text style={styles.emptySubtitle}>Add cards from your library to start studying.</Text>
       <Pressable
         style={({ pressed }) => [styles.addButton, pressed && styles.addButtonPressed]}
         onPress={onAddPress}
         testID="add-items-button"
       >
-        <Text style={styles.addButtonText}>Add Items</Text>
+        <Text style={styles.addButtonText}>Add Cards</Text>
       </Pressable>
     </View>
   );
