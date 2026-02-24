@@ -50,7 +50,7 @@ jest.mock("@/components/decks", () => {
       onItemPress,
       onAddPress,
     }: {
-      items: Array<{ id: number; pali: string }>;
+      items: { id: number; pali: string }[];
       onItemPress: (item: { id: number }) => void;
       onAddPress: () => void;
     }) => (
