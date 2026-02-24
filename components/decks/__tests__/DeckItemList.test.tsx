@@ -5,7 +5,7 @@ import { DeckItemList } from "../DeckItemList";
 
 // Mock react-native-gesture-handler
 jest.mock("react-native-gesture-handler", () => {
-  const View = require("react-native").View;
+  const { View } = jest.requireActual("react-native");
   return {
     GestureHandlerRootView: View,
     GestureDetector: ({ children }: { children: React.ReactNode }) => children,
@@ -23,12 +23,14 @@ jest.mock("react-native-gesture-handler", () => {
 
 // Mock react-native-reanimated
 jest.mock("react-native-reanimated", () => {
-  const { View } = require("react-native");
-  const React = require("react");
+  const { View } = jest.requireActual("react-native");
+  const React = jest.requireActual("react");
+  const AnimatedView = React.forwardRef((props: object, ref: React.Ref<unknown>) =>
+    React.createElement(View, { ...props, ref })
+  );
+  AnimatedView.displayName = "AnimatedView";
   const Animated = {
-    View: React.forwardRef((props: object, ref: React.Ref<unknown>) =>
-      React.createElement(View, { ...props, ref })
-    ),
+    View: AnimatedView,
   };
   return {
     __esModule: true,
