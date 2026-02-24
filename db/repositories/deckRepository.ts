@@ -213,11 +213,7 @@ export async function create(db: SQLiteDatabase, name: string): Promise<Deck> {
  * @returns The updated deck, or null if not found
  * @throws Error if validation fails
  */
-export async function update(
-  db: SQLiteDatabase,
-  id: number,
-  name: string
-): Promise<Deck | null> {
+export async function update(db: SQLiteDatabase, id: number, name: string): Promise<Deck | null> {
   // Cannot update the default deck name
   if (id === DEFAULT_DECK_ID) {
     throw new Error('Cannot rename the "All" deck');
@@ -335,9 +331,9 @@ export async function removeItemFromDeck(
     throw new Error('Cannot remove items from the "All" deck');
   }
 
-  const result = await db.runAsync(
-    "DELETE FROM deck_items WHERE deck_id = ? AND item_id = ?",
-    [deckId, itemId]
-  );
+  const result = await db.runAsync("DELETE FROM deck_items WHERE deck_id = ? AND item_id = ?", [
+    deckId,
+    itemId,
+  ]);
   return result.changes > 0;
 }

@@ -38,9 +38,9 @@ A searchable, sortable list view displaying all decks.
 
 **Deck Card:**
 
-| Element    | Description                              |
-| ---------- | ---------------------------------------- |
-| Name       | Deck name (e.g., "Verbs", "Daily Study") |
+| Element    | Description                                |
+| ---------- | ------------------------------------------ |
+| Name       | Deck name (e.g., "Verbs", "Daily Study")   |
 | Item count | Number of items in deck (e.g., "24 items") |
 | Created    | Relative date (e.g., "Created 3 days ago") |
 
@@ -77,8 +77,8 @@ View and manage items within a specific deck.
 
 Simple modal dialog for deck name entry.
 
-| Field | Type       | Required | Notes                         |
-| ----- | ---------- | -------- | ----------------------------- |
+| Field | Type       | Required | Notes                             |
+| ----- | ---------- | -------- | --------------------------------- |
 | Name  | Text input | Yes      | Max 50 characters, must be unique |
 
 **Validation:**
@@ -327,8 +327,8 @@ Transform the Home tab into the deck management hub.
 ```typescript
 // State
 const [decks, setDecks] = useState<DeckWithCount[]>([]);
-const [searchQuery, setSearchQuery] = useState('');
-const [sortOption, setSortOption] = useState<SortOption>('name_asc');
+const [searchQuery, setSearchQuery] = useState("");
+const [sortOption, setSortOption] = useState<SortOption>("name_asc");
 const [isLoading, setIsLoading] = useState(true);
 
 // Load decks on focus
@@ -373,8 +373,8 @@ Build modal for deck name entry.
 ```typescript
 type DeckFormModalProps = {
   visible: boolean;
-  initialName?: string;  // For edit mode
-  deckId?: number;       // For edit mode
+  initialName?: string; // For edit mode
+  deckId?: number; // For edit mode
   onSave: (name: string) => Promise<void>;
   onClose: () => void;
 };
@@ -433,14 +433,10 @@ app/deck/
 **Delete Confirmation:**
 
 ```typescript
-Alert.alert(
-  'Delete Deck',
-  'Delete this deck? Items will remain in your library.',
-  [
-    { text: 'Cancel', style: 'cancel' },
-    { text: 'Delete', style: 'destructive', onPress: handleDelete },
-  ]
-);
+Alert.alert("Delete Deck", "Delete this deck? Items will remain in your library.", [
+  { text: "Cancel", style: "cancel" },
+  { text: "Delete", style: "destructive", onPress: handleDelete },
+]);
 ```
 
 **Remove Item from Deck:**
@@ -487,7 +483,7 @@ type AddItemsModalProps = {
 const [selectedIds, setSelectedIds] = useState<Set<number>>(new Set());
 
 const toggleItem = (id: number) => {
-  setSelectedIds(prev => {
+  setSelectedIds((prev) => {
     const next = new Set(prev);
     if (next.has(id)) next.delete(id);
     else next.add(id);
@@ -543,14 +539,14 @@ app/deck/__tests__/[id].test.tsx
 
 ### Key Design Decisions
 
-| Decision | Choice | Rationale |
-| -------- | ------ | --------- |
-| Deck list location | Home tab | Decks are primary organization; repurposes underutilized screen |
-| Sort implementation | In-memory | Dataset small enough; avoids complex SQL |
-| Create/Edit UI | Modal | Minimal form (just name); modal is quicker than full screen |
-| Remove item UX | Swipe gesture | Consistent with iOS patterns; discoverable |
-| Add items UI | Modal with multi-select | Efficient for adding many items at once |
-| "All" deck protection | Hidden delete button | Prevents accidental deletion of default deck |
+| Decision              | Choice                  | Rationale                                                       |
+| --------------------- | ----------------------- | --------------------------------------------------------------- |
+| Deck list location    | Home tab                | Decks are primary organization; repurposes underutilized screen |
+| Sort implementation   | In-memory               | Dataset small enough; avoids complex SQL                        |
+| Create/Edit UI        | Modal                   | Minimal form (just name); modal is quicker than full screen     |
+| Remove item UX        | Swipe gesture           | Consistent with iOS patterns; discoverable                      |
+| Add items UI          | Modal with multi-select | Efficient for adding many items at once                         |
+| "All" deck protection | Hidden delete button    | Prevents accidental deletion of default deck                    |
 
 ---
 

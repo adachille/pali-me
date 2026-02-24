@@ -55,9 +55,10 @@ describe("deckRepository", () => {
 
       const result = await deckRepository.getById(mockDb, 2);
 
-      expect(mockDb.getFirstAsync).toHaveBeenCalledWith(expect.stringContaining("WHERE d.id = ?"), [
-        2,
-      ]);
+      expect(mockDb.getFirstAsync).toHaveBeenCalledWith(
+        expect.stringContaining("WHERE d.id = ?"),
+        [2]
+      );
       expect(result).not.toBeNull();
       expect(result?.name).toBe("Verbs");
       expect(result?.itemCount).toBe(5);
@@ -111,10 +112,10 @@ describe("deckRepository", () => {
 
       await deckRepository.nameExists(mockDb, "Verbs", 2);
 
-      expect(mockDb.getFirstAsync).toHaveBeenCalledWith(
-        expect.stringContaining("AND id != ?"),
-        ["Verbs", 2]
-      );
+      expect(mockDb.getFirstAsync).toHaveBeenCalledWith(expect.stringContaining("AND id != ?"), [
+        "Verbs",
+        2,
+      ]);
     });
   });
 
@@ -267,10 +268,7 @@ describe("deckRepository", () => {
 
       const result = await deckRepository.getItemsNotInDeck(mockDb, 2);
 
-      expect(mockDb.getAllAsync).toHaveBeenCalledWith(
-        expect.stringContaining("NOT IN"),
-        [2]
-      );
+      expect(mockDb.getAllAsync).toHaveBeenCalledWith(expect.stringContaining("NOT IN"), [2]);
       expect(result).toHaveLength(1);
       expect(result[0].pali).toBe("a-");
     });
