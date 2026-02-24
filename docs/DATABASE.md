@@ -395,7 +395,7 @@ function MyComponent() {
 The repository layer handles row-to-model conversion internally using `parseSqliteDate()` from `db/utils.ts`:
 
 ```typescript
-import { parseSqliteDate } from "../utils";
+import { parseSqliteDate } from "@/db/utils";
 
 function rowToItem(row: ItemRow): Item {
   return {

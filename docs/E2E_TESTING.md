@@ -125,9 +125,8 @@ Place test flows in `.maestro/` directory with descriptive names:
 
 ```
 .maestro/
-├── config.yaml
-├── 01-app-launches.yaml
-├── 02-navigation-flow.yaml
+├── 01-launch-app.yaml
+├── 02-flashcard-crud.yaml
 ├── 03-deck-management.yaml
 └── 04-your-new-flow.yaml
 ```
