@@ -42,16 +42,22 @@ app/
 │       ├── [id].test.tsx           # Edit item screen tests
 │       └── add.test.tsx            # Add item screen tests
 components/
-└── items/
+├── items/
+│   └── __tests__/
+│       ├── EmptyState.test.tsx
+│       ├── ItemCard.test.tsx
+│       ├── ItemForm.test.tsx
+│       └── ItemTypePicker.test.tsx
+└── decks/
     └── __tests__/
-        ├── EmptyState.test.tsx
-        ├── ItemCard.test.tsx
-        ├── ItemForm.test.tsx
-        └── ItemTypePicker.test.tsx
+        ├── DeckCard.test.tsx       # Deck card component tests
+        ├── DeckFormModal.test.tsx   # Deck create/edit modal tests
+        └── DeckList.test.tsx        # Deck list component tests
 db/
 └── repositories/
     └── __tests__/
-        └── itemRepository.test.ts  # Repository unit tests
+        ├── itemRepository.test.ts  # Item repository unit tests
+        └── deckRepository.test.ts  # Deck repository unit tests
 test-utils/
 ├── index.ts                        # Exports all test utilities
 ├── mocks.ts                        # Mock factories

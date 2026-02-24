@@ -277,6 +277,7 @@ GROUP BY direction;
 import {
   useSQLiteContext,
   itemRepository,
+  deckRepository,
   DEFAULT_DECK_ID,
   type Item,
   type ItemRow,
@@ -289,7 +290,9 @@ import {
 
 ### Using the Repository Layer
 
-The recommended way to interact with items is through the repository layer in `db/repositories/`:
+The recommended way to interact with the database is through the repository layer in `db/repositories/`:
+
+#### Item Repository
 
 ```typescript
 import { useSQLiteContext, itemRepository } from "@/db";
@@ -317,6 +320,58 @@ function MyComponent() {
   const deleted = await itemRepository.deleteItem(db, 1);
 }
 ```
+
+#### Deck Repository
+
+```typescript
+import { useSQLiteContext, deckRepository } from "@/db";
+
+function MyComponent() {
+  const db = useSQLiteContext();
+
+  // Fetch all decks with item counts (sortable)
+  const decks = await deckRepository.getAll(db, "name_asc");
+
+  // Get a single deck by ID
+  const deck = await deckRepository.getById(db, 2);
+
+  // Search decks by name
+  const results = await deckRepository.search(db, "verbs");
+
+  // Check if a deck name already exists
+  const exists = await deckRepository.nameExists(db, "Verbs");
+
+  // Create a deck (validates name uniqueness, rejects reserved "All" name)
+  const newDeck = await deckRepository.create(db, "Vocabulary");
+
+  // Update a deck name
+  const updated = await deckRepository.update(db, 2, "New Name");
+
+  // Delete a deck (cascade deletes deck_items; items remain)
+  const deleted = await deckRepository.deleteDeck(db, 2);
+
+  // Get items in a deck
+  const items = await deckRepository.getItemsInDeck(db, 2);
+
+  // Get items NOT in a deck (for add-items modal)
+  const available = await deckRepository.getItemsNotInDeck(db, 2);
+
+  // Add items to a deck (uses INSERT OR IGNORE, wrapped in transaction)
+  await deckRepository.addItemsToDeck(db, 2, [1, 2, 3]);
+
+  // Remove a single item from a deck
+  const removed = await deckRepository.removeItemFromDeck(db, 2, 1);
+}
+```
+
+**Sort Options** (`SortOption`): `name_asc`, `name_desc`, `date_asc`, `date_desc`, `count_asc`, `count_desc`
+
+**Validation Rules**:
+
+- Deck names cannot be empty or whitespace-only
+- The reserved name "All" (case-insensitive) cannot be used
+- Deck names must be unique (case-insensitive)
+- The default "All" deck (id=1) cannot be renamed, deleted, or have items removed
 
 ### Direct Database Access
 
@@ -446,6 +501,7 @@ db/
 └── repositories/
     ├── index.ts           # Repository exports
     ├── itemRepository.ts  # Item CRUD with auto study state creation
+    ├── deckRepository.ts  # Deck CRUD and deck-item management
     └── exportRepository.ts # JSON export/import of full database
 
 app/
@@ -455,4 +511,4 @@ app/
 ---
 
 **Schema Version**: 1
-**Last Updated**: 2026-02-20
+**Last Updated**: 2026-02-24
