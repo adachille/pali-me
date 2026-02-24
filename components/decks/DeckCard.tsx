@@ -45,7 +45,7 @@ export function DeckCard({ deck, onPress }: DeckCardProps) {
     >
       <View style={styles.content}>
         <View style={styles.nameRow}>
-          {isAllDeck && <Text style={styles.pinIcon}>*</Text>}
+          {isAllDeck && <Text style={styles.pinIcon}>📌</Text>}
           <Text style={[styles.name, isAllDeck && styles.allDeckName]}>{deck.name}</Text>
         </View>
         <Text style={styles.date}>{formatRelativeDate(deck.createdAt)}</Text>
