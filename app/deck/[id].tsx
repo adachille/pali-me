@@ -41,6 +41,7 @@ export default function DeckDetailScreen() {
       setItems(deckItems);
     } catch (error) {
       console.error("Failed to load deck:", error);
+      Alert.alert("Error", "Failed to load deck. Returning to deck list.");
       router.back();
     } finally {
       setIsLoading(false);
