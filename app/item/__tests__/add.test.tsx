@@ -1,7 +1,7 @@
-import React from "react";
+import { createMockRouter, createMockSQLiteContext } from "@/test-utils";
 import { render, screen } from "@testing-library/react-native";
+import React from "react";
 import AddItemScreen from "../add";
-import { createMockSQLiteContext, createMockRouter } from "@/test-utils";
 
 // Mock expo-router
 const mockRouter = createMockRouter();
@@ -36,6 +36,6 @@ describe("AddItemScreen", () => {
   it("shows Add Item button", () => {
     render(<AddItemScreen />);
 
-    expect(screen.getByText("Add Item")).toBeTruthy();
+    expect(screen.getByText("Add Card")).toBeTruthy();
   });
 });
