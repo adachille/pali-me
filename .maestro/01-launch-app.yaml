@@ -1,25 +1,12 @@
 # Pali-Me App Initialization Test
 # Validates successful application startup and home view rendering
 # Tested on: iOS Simulator
+# Note: App is pre-launched via Expo CLI before tests run; no launchApp needed.
 
 appId: host.exp.Exponent
 
 ---
 # Verify the app is running and home screen is visible
-- launchApp
-# Dismiss Expo developer menu if launchApp triggered it (known Maestro/RN dev-build issue)
-- runFlow:
-    when:
-      visible: "Reload"
-    commands:
-      - tapOn:
-          point: "50%,20%"
-      - waitForAnimationToEnd
-- runFlow:
-    when:
-      visible: "pali-me"
-    commands:
-      - tapOn: "pali-me"
 - assertVisible:
     id: "home-screen"
 

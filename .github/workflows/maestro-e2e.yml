@@ -49,8 +49,10 @@ jobs:
 
       - name: Start Expo and open in iOS simulator
         run: |
-          # Temporarily disable CI mode to allow Expo to open simulator
-          CI=false pnpm run ios &
+          # Use --go to explicitly force Expo Go mode (prevents Expo CLI from
+          # auto-detecting packages like react-native-worklets and switching to
+          # --dev-client mode, which skips Expo Go installation entirely)
+          CI=false pnpm exec expo start --ios --go &
 
           # Wait for Metro bundler to be ready (starts in ~40s in CI)
           # Note: 'timeout' is not available on macOS runners, so use a manual loop
@@ -66,17 +68,8 @@ jobs:
           done
           echo "Metro bundler is ready!"
 
-          # Wait for bundle compilation and app to fully render in simulator
-          sleep 60
-
-      - name: Open pali-me app in Expo Go
-        run: |
-          # Open the app directly via Expo deep link so the bundle is already
-          # loaded and in the foreground before Maestro starts. This avoids the
-          # cold-start delay (~30s) that occurs when the flow's launchApp causes
-          # Expo Go to show its project selector screen in CI.
-          xcrun simctl openurl booted "exp://localhost:8081" || true
-          sleep 15
+          # Wait for Expo Go installation, bundle compilation, and app render
+          sleep 90
 
       - name: Execute Maestro test suite
         run: |
