@@ -39,7 +39,7 @@ jest.mock("@/db", () => ({
 
 // Mock deck components
 jest.mock("@/components/decks", () => {
-  const { View, Pressable, Text } = require("react-native");
+  const { View, Pressable, Text } = jest.requireActual("react-native");
   return {
     AddItemsModal: ({ visible }: { visible: boolean }) =>
       visible ? <View testID="add-items-modal" /> : null,
@@ -70,7 +70,7 @@ jest.mock("@/components/decks", () => {
 
 // Mock react-native-gesture-handler
 jest.mock("react-native-gesture-handler", () => {
-  const { View } = require("react-native");
+  const { View } = jest.requireActual("react-native");
   return {
     GestureHandlerRootView: ({ children }: { children: React.ReactNode }) => (
       <View>{children}</View>
