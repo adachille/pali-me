@@ -69,6 +69,15 @@ jobs:
           # Wait for bundle compilation and app to fully render in simulator
           sleep 60
 
+      - name: Open pali-me app in Expo Go
+        run: |
+          # Open the app directly via Expo deep link so the bundle is already
+          # loaded and in the foreground before Maestro starts. This avoids the
+          # cold-start delay (~30s) that occurs when the flow's launchApp causes
+          # Expo Go to show its project selector screen in CI.
+          xcrun simctl openurl booted "exp://localhost:8081" || true
+          sleep 15
+
       - name: Execute Maestro test suite
         run: |
           # Run flows sequentially to prevent simulator state conflicts when both
