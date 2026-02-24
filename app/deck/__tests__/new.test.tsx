@@ -3,6 +3,8 @@ import { fireEvent, render, screen, waitFor } from "@testing-library/react-nativ
 import React from "react";
 import NewDeckScreen from "../new";
 
+import { Alert } from "react-native";
+
 // Mock expo-router
 const mockRouter = createMockRouter();
 jest.mock("expo-router", () => ({
@@ -23,8 +25,6 @@ jest.mock("@/db", () => ({
   },
   useSQLiteContext: () => mockDb,
 }));
-
-import { Alert } from "react-native";
 
 // Mock Alert
 const mockAlert = jest.spyOn(Alert, "alert").mockImplementation(jest.fn());

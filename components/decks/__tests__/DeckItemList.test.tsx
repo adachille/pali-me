@@ -60,7 +60,6 @@ const mockItems: Item[] = [
   },
 ];
 
-
 describe("DeckItemList", () => {
   const defaultProps = {
     items: mockItems,
@@ -74,27 +73,27 @@ describe("DeckItemList", () => {
   });
 
   it("renders the item list", () => {
-    render(<DeckItemList {...defaultProps} />, );
+    render(<DeckItemList {...defaultProps} />);
 
     expect(screen.getByTestId("deck-item-list")).toBeTruthy();
   });
 
   it("renders all items", () => {
-    render(<DeckItemList {...defaultProps} />, );
+    render(<DeckItemList {...defaultProps} />);
 
     expect(screen.getByText("dhamma")).toBeTruthy();
     expect(screen.getByText("buddha")).toBeTruthy();
   });
 
   it("renders item meanings", () => {
-    render(<DeckItemList {...defaultProps} />, );
+    render(<DeckItemList {...defaultProps} />);
 
     expect(screen.getByText("teaching, truth, law")).toBeTruthy();
     expect(screen.getByText("awakened one")).toBeTruthy();
   });
 
   it("renders item type badges", () => {
-    render(<DeckItemList {...defaultProps} />, );
+    render(<DeckItemList {...defaultProps} />);
 
     const wordBadges = screen.getAllByText("word");
     expect(wordBadges.length).toBe(2);
@@ -102,7 +101,7 @@ describe("DeckItemList", () => {
 
   it("calls onItemPress when item is pressed", () => {
     const onItemPress = jest.fn();
-    render(<DeckItemList {...defaultProps} onItemPress={onItemPress} />, );
+    render(<DeckItemList {...defaultProps} onItemPress={onItemPress} />);
 
     fireEvent.press(screen.getByTestId("deck-item-1"));
 
@@ -110,7 +109,7 @@ describe("DeckItemList", () => {
   });
 
   it("shows empty state when no items", () => {
-    render(<DeckItemList {...defaultProps} items={[]} />, );
+    render(<DeckItemList {...defaultProps} items={[]} />);
 
     expect(screen.getByTestId("deck-empty-items")).toBeTruthy();
     expect(screen.getByText("No cards in this deck")).toBeTruthy();
@@ -144,7 +143,7 @@ describe("DeckItemList", () => {
       { ...mockItems[0], type: "prefix" },
       { ...mockItems[1], type: "suffix" },
     ];
-    render(<DeckItemList {...defaultProps} items={mixedItems} />, );
+    render(<DeckItemList {...defaultProps} items={mixedItems} />);
 
     expect(screen.getByText("prefix")).toBeTruthy();
     expect(screen.getByText("suffix")).toBeTruthy();
