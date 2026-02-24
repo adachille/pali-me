@@ -1,7 +1,7 @@
-import React from "react";
+import { createMockRouter, createMockSQLiteContext } from "@/test-utils";
 import { render, screen, waitFor } from "@testing-library/react-native";
+import React from "react";
 import EditItemScreen from "../[id]";
-import { createMockSQLiteContext, createMockRouter } from "@/test-utils";
 
 // Mock expo-router
 const mockRouter = createMockRouter();
@@ -105,7 +105,7 @@ describe("EditItemScreen", () => {
     render(<EditItemScreen />);
 
     await waitFor(() => {
-      expect(screen.getByText("Item not found")).toBeTruthy();
+      expect(screen.getByText("Card not found")).toBeTruthy();
     });
   });
 });

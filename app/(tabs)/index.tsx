@@ -1,49 +1,108 @@
-import { useSQLiteContext, type DeckRow } from "@/db";
-import { useEffect, useState } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { DeckList } from "@/components/decks";
+import { deckRepository, useSQLiteContext } from "@/db";
+import type { DeckWithCount, SortOption } from "@/db/repositories/deckRepository";
+import { useFocusEffect } from "@react-navigation/native";
+import { useRouter } from "expo-router";
+import { useCallback, useEffect, useState } from "react";
+import { ActivityIndicator, Pressable, StyleSheet, Text, View } from "react-native";
 
 export default function HomeScreen() {
   const db = useSQLiteContext();
-  const [dbStatus, setDbStatus] = useState<string>("Checking database...");
-  const [defaultDeck, setDefaultDeck] = useState<DeckRow | null>(null);
+  const router = useRouter();
+  const [decks, setDecks] = useState<DeckWithCount[]>([]);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [sortOption, setSortOption] = useState<SortOption>("name_asc");
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadError, setLoadError] = useState(false);
 
-  useEffect(() => {
-    async function checkDatabase() {
-      try {
-        // Check tables exist
-        const tables = await db.getAllAsync<{ name: string }>(
-          "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name"
-        );
-
-        // Get default deck (id=1 is the "All" deck)
-        const deck = await db.getFirstAsync<DeckRow>("SELECT * FROM decks WHERE id = 1");
-
-        setDefaultDeck(deck);
-        setDbStatus(
-          `Database initialized successfully!\nTables: ${tables.map((t) => t.name).join(", ")}`
-        );
-      } catch (error) {
-        const errorMessage = error instanceof Error ? error.message : String(error);
-        console.error("Database initialization error:", error);
-        setDbStatus(`Database error: ${errorMessage}`);
-      }
+  const loadDecks = useCallback(async () => {
+    try {
+      setLoadError(false);
+      const result = searchQuery.trim()
+        ? await deckRepository.search(db, searchQuery.trim(), sortOption)
+        : await deckRepository.getAll(db, sortOption);
+      setDecks(result);
+    } catch (error) {
+      console.error("Failed to load decks:", error);
+      setLoadError(true);
+    } finally {
+      setIsLoading(false);
     }
+  }, [db, searchQuery, sortOption]);
 
-    checkDatabase();
-  }, [db]);
+  // Reload decks when screen comes into focus
+  useFocusEffect(
+    useCallback(() => {
+      loadDecks();
+    }, [loadDecks])
+  );
+
+  // Also reload when search query or sort option changes
+  useEffect(() => {
+    loadDecks();
+  }, [loadDecks]);
+
+  const handleSearchChange = useCallback((query: string) => {
+    setSearchQuery(query);
+  }, []);
+
+  const handleSortChange = useCallback((sort: SortOption) => {
+    setSortOption(sort);
+  }, []);
+
+  const handleDeckPress = useCallback(
+    (deck: DeckWithCount) => {
+      router.push(`/deck/${deck.id}`);
+    },
+    [router]
+  );
+
+  const handleCreatePress = useCallback(() => {
+    router.push("/deck/new");
+  }, [router]);
+
+  if (isLoading) {
+    return (
+      <View style={styles.loadingContainer} testID="home-screen">
+        <ActivityIndicator size="large" color="#4CAF50" />
+      </View>
+    );
+  }
+
+  if (loadError) {
+    return (
+      <View style={styles.errorContainer} testID="home-screen">
+        <Text style={styles.errorTitle}>Failed to load decks</Text>
+        <Text style={styles.errorSubtitle}>Please try again</Text>
+        <Pressable
+          style={({ pressed }) => [styles.retryButton, pressed && styles.retryButtonPressed]}
+          onPress={loadDecks}
+          testID="retry-load-decks"
+        >
+          <Text style={styles.retryButtonText}>Retry</Text>
+        </Pressable>
+      </View>
+    );
+  }
 
   return (
     <View style={styles.container} testID="home-screen">
-      <Text style={styles.title}>Pali Learning App</Text>
-      <Text style={styles.status}>{dbStatus}</Text>
-      {defaultDeck && (
-        <View style={styles.deckInfo}>
-          <Text style={styles.subtitle}>Default Deck:</Text>
-          <Text>ID: {defaultDeck.id}</Text>
-          <Text>Name: {defaultDeck.name}</Text>
-          <Text>Created: {defaultDeck.created_at}</Text>
-        </View>
-      )}
+      <DeckList
+        decks={decks}
+        searchQuery={searchQuery}
+        sortOption={sortOption}
+        onSearchChange={handleSearchChange}
+        onSortChange={handleSortChange}
+        onDeckPress={handleDeckPress}
+        onCreatePress={handleCreatePress}
+      />
+      <Pressable
+        style={({ pressed }) => [styles.fab, pressed && styles.fabPressed]}
+        onPress={handleCreatePress}
+        testID="create-deck-fab"
+      >
+        <Text style={styles.fabText}>+</Text>
+      </Pressable>
     </View>
   );
 }
@@ -51,31 +110,70 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    padding: 20,
     backgroundColor: "#fff",
   },
-  title: {
-    fontSize: 24,
-    fontWeight: "bold",
-    marginBottom: 20,
+  loadingContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#fff",
   },
-  status: {
+  errorContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#fff",
+    padding: 32,
+  },
+  errorTitle: {
+    fontSize: 18,
+    fontWeight: "600",
+    color: "#333",
+    marginBottom: 8,
+  },
+  errorSubtitle: {
     fontSize: 14,
     color: "#666",
     textAlign: "center",
-    marginBottom: 20,
+    marginBottom: 16,
   },
-  deckInfo: {
-    backgroundColor: "#f0f0f0",
-    padding: 15,
+  retryButton: {
+    backgroundColor: "#4CAF50",
+    paddingHorizontal: 24,
+    paddingVertical: 10,
     borderRadius: 8,
-    marginTop: 10,
   },
-  subtitle: {
-    fontSize: 16,
-    fontWeight: "bold",
-    marginBottom: 8,
+  retryButtonPressed: {
+    backgroundColor: "#388E3C",
+  },
+  retryButtonText: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#fff",
+  },
+  fab: {
+    position: "absolute",
+    right: 20,
+    bottom: 20,
+    width: 56,
+    height: 56,
+    borderRadius: 28,
+    backgroundColor: "#4CAF50",
+    justifyContent: "center",
+    alignItems: "center",
+    elevation: 4,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+  },
+  fabPressed: {
+    backgroundColor: "#388E3C",
+  },
+  fabText: {
+    fontSize: 28,
+    color: "#fff",
+    fontWeight: "300",
+    marginTop: -2,
   },
 });
