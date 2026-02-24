@@ -1,7 +1,7 @@
-import React from "react";
-import { render, screen, fireEvent } from "@testing-library/react-native";
-import { DeckCard } from "../DeckCard";
 import type { DeckWithCount } from "@/db/repositories/deckRepository";
+import { fireEvent, render, screen } from "@testing-library/react-native";
+import React from "react";
+import { DeckCard } from "../DeckCard";
 
 const mockDeck: DeckWithCount = {
   id: 2,
@@ -56,12 +56,12 @@ describe("DeckCard", () => {
   it('shows pin icon for "All" deck', () => {
     render(<DeckCard deck={mockAllDeck} onPress={jest.fn()} />);
 
-    expect(screen.getByText("*")).toBeTruthy();
+    expect(screen.getByText("📌")).toBeTruthy();
   });
 
   it("does not show pin icon for regular deck", () => {
     render(<DeckCard deck={mockDeck} onPress={jest.fn()} />);
 
-    expect(screen.queryByText("*")).toBeNull();
+    expect(screen.queryByText("📌")).toBeNull();
   });
 });

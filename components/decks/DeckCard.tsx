@@ -51,7 +51,7 @@ export function DeckCard({ deck, onPress }: DeckCardProps) {
     >
       <View style={styles.content}>
         <View style={styles.nameRow}>
-          {isAllDeck && <Text style={styles.pinIcon}>*</Text>}
+          {isAllDeck && <Text style={styles.pinIcon}>📌</Text>}
           <Text style={[styles.name, isAllDeck && styles.allDeckName]} testID={deckNameTestId}>
             {deck.name}
           </Text>

@@ -2,6 +2,7 @@ import { deckRepository, useSQLiteContext, type Item } from "@/db";
 import { useCallback, useEffect, useState } from "react";
 import {
   ActivityIndicator,
+  Alert,
   FlatList,
   Modal,
   Pressable,
@@ -72,15 +73,18 @@ export function AddItemsModal({ visible, deckId, onClose, onItemsAdded }: AddIte
   const [searchQuery, setSearchQuery] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [isSaving, setIsSaving] = useState(false);
+  const [loadError, setLoadError] = useState(false);
 
   const loadAvailableItems = useCallback(async () => {
     try {
       setIsLoading(true);
+      setLoadError(false);
       const items = await deckRepository.getItemsNotInDeck(db, deckId);
       setAvailableItems(items);
       setFilteredItems(items);
     } catch (error) {
       console.error("Failed to load available items:", error);
+      setLoadError(true);
     } finally {
       setIsLoading(false);
     }
@@ -130,6 +134,7 @@ export function AddItemsModal({ visible, deckId, onClose, onItemsAdded }: AddIte
       onClose();
     } catch (error) {
       console.error("Failed to add items:", error);
+      Alert.alert("Error", "Failed to add items. Please try again.");
     } finally {
       setIsSaving(false);
     }
@@ -177,6 +182,18 @@ export function AddItemsModal({ visible, deckId, onClose, onItemsAdded }: AddIte
         {isLoading ? (
           <View style={styles.loadingContainer}>
             <ActivityIndicator size="large" color="#4CAF50" />
+          </View>
+        ) : loadError ? (
+          <View style={styles.emptyContainer}>
+            <Text style={styles.emptyTitle}>Failed to load items</Text>
+            <Text style={styles.emptySubtitle}>Please try again</Text>
+            <Pressable
+              style={({ pressed }) => [styles.retryButton, pressed && styles.retryButtonPressed]}
+              onPress={loadAvailableItems}
+              testID="retry-load-items"
+            >
+              <Text style={styles.retryButtonText}>Retry</Text>
+            </Pressable>
           </View>
         ) : filteredItems.length === 0 ? (
           <View style={styles.emptyContainer}>
@@ -376,5 +393,20 @@ const styles = StyleSheet.create({
   },
   addButtonTextDisabled: {
     color: "#999",
+  },
+  retryButton: {
+    marginTop: 16,
+    backgroundColor: "#4CAF50",
+    paddingHorizontal: 24,
+    paddingVertical: 10,
+    borderRadius: 8,
+  },
+  retryButtonPressed: {
+    backgroundColor: "#388E3C",
+  },
+  retryButtonText: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#fff",
   },
 });
