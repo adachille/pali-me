@@ -21,6 +21,7 @@ Pali-Me uses Maestro for end-to-end testing to ensure the application works corr
 - Application launch and initialization
 - Screen navigation and routing
 - Basic user interactions (tap, scroll, gestures)
+- Deck management (create, rename, delete decks; add/remove items)
 
 ## Prerequisites
 
@@ -127,7 +128,7 @@ Place test flows in `.maestro/` directory with descriptive names:
 ├── config.yaml
 ├── 01-app-launches.yaml
 ├── 02-navigation-flow.yaml
-├── 03-basic-interaction.yaml
+├── 03-deck-management.yaml
 └── 04-your-new-flow.yaml
 ```
 

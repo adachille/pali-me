@@ -392,9 +392,11 @@ function MyComponent() {
 
 ### Type Conversions
 
-The repository layer handles row-to-model conversion internally. For manual conversion:
+The repository layer handles row-to-model conversion internally using `parseSqliteDate()` from `db/utils.ts`:
 
 ```typescript
+import { parseSqliteDate } from "../utils";
+
 function rowToItem(row: ItemRow): Item {
   return {
     id: row.id,
@@ -402,10 +404,12 @@ function rowToItem(row: ItemRow): Item {
     pali: row.pali,
     meaning: row.meaning,
     notes: row.notes,
-    createdAt: new Date(row.created_at),
+    createdAt: parseSqliteDate(row.created_at),
   };
 }
 ```
+
+**Important**: Always use `parseSqliteDate()` instead of `new Date()` for SQLite datetime strings. SQLite's `datetime('now')` returns UTC without a timezone indicator (e.g., `"2026-02-24 14:30:00"`), so the utility appends `'Z'` to ensure JavaScript parses it as UTC.
 
 ## Migration System
 
@@ -498,6 +502,7 @@ db/
 ├── types.ts              # TypeScript type definitions
 ├── schema.ts             # SQL schema definitions and constants (DEFAULT_DECK_ID)
 ├── database.ts           # Migration logic and initialization
+├── utils.ts              # Utilities (parseSqliteDate for UTC datetime handling)
 └── repositories/
     ├── index.ts           # Repository exports
     ├── itemRepository.ts  # Item CRUD with auto study state creation
