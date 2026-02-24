@@ -1,13 +1,11 @@
 import { AddItemsModal, DeckFormModal, DeckItemList } from "@/components/decks";
-import { deckRepository, useSQLiteContext, type Item } from "@/db";
+import { DEFAULT_DECK_ID, deckRepository, useSQLiteContext, type Item } from "@/db";
 import type { DeckWithCount } from "@/db/repositories/deckRepository";
 import { useFocusEffect } from "@react-navigation/native";
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { useCallback, useState } from "react";
 import { ActivityIndicator, Alert, Pressable, StyleSheet, Text, View } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-
-const DEFAULT_DECK_ID = 1;
 
 export default function DeckDetailScreen() {
   const db = useSQLiteContext();
@@ -63,8 +61,13 @@ export default function DeckDetailScreen() {
         text: "Delete",
         style: "destructive",
         onPress: async () => {
-          await deckRepository.deleteDeck(db, deck.id);
-          router.back();
+          try {
+            await deckRepository.deleteDeck(db, deck.id);
+            router.back();
+          } catch (error) {
+            console.error("Failed to delete deck:", error);
+            Alert.alert("Error", "Failed to delete deck. Please try again.");
+          }
         },
       },
     ]);

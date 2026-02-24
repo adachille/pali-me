@@ -2,6 +2,7 @@ import { deckRepository, useSQLiteContext, type Item } from "@/db";
 import { useCallback, useEffect, useState } from "react";
 import {
   ActivityIndicator,
+  Alert,
   FlatList,
   Modal,
   Pressable,
@@ -133,6 +134,7 @@ export function AddItemsModal({ visible, deckId, onClose, onItemsAdded }: AddIte
       onClose();
     } catch (error) {
       console.error("Failed to add items:", error);
+      Alert.alert("Error", "Failed to add items. Please try again.");
     } finally {
       setIsSaving(false);
     }
