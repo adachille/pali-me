@@ -1,4 +1,6 @@
 import { deckRepository, useSQLiteContext, type Item } from "@/db";
+import type { ThemeColors } from "@/constants/theme";
+import { useThemeColors } from "@/hooks/useThemeColors";
 import { useCallback, useEffect, useState } from "react";
 import {
   ActivityIndicator,
@@ -20,13 +22,16 @@ type AddItemsModalProps = {
   onItemsAdded: () => void;
 };
 
-const TYPE_COLORS: Record<string, string> = {
-  word: "#4CAF50",
-  prefix: "#2196F3",
-  suffix: "#9C27B0",
-  root: "#FF9800",
-  particle: "#607D8B",
-};
+function getTypeColor(colors: ThemeColors, type: string): string {
+  const map: Record<string, string> = {
+    word: colors.itemTypeWord,
+    prefix: colors.itemTypePrefix,
+    suffix: colors.itemTypeSuffix,
+    root: colors.itemTypeRoot,
+    particle: colors.itemTypeParticle,
+  };
+  return map[type] ?? colors.disabled;
+}
 
 function SelectableItemCard({
   item,
@@ -37,7 +42,9 @@ function SelectableItemCard({
   isSelected: boolean;
   onToggle: (item: Item) => void;
 }) {
-  const badgeColor = TYPE_COLORS[item.type] ?? "#999";
+  const colors = useThemeColors();
+  const styles = createStyles(colors);
+  const badgeColor = getTypeColor(colors, item.type);
 
   return (
     <Pressable
@@ -67,6 +74,9 @@ function SelectableItemCard({
 
 export function AddItemsModal({ visible, deckId, onClose, onItemsAdded }: AddItemsModalProps) {
   const db = useSQLiteContext();
+  const colors = useThemeColors();
+  const styles = createStyles(colors);
+
   const [availableItems, setAvailableItems] = useState<Item[]>([]);
   const [filteredItems, setFilteredItems] = useState<Item[]>([]);
   const [selectedIds, setSelectedIds] = useState<Set<number>>(new Set());
@@ -170,7 +180,7 @@ export function AddItemsModal({ visible, deckId, onClose, onItemsAdded }: AddIte
           <TextInput
             style={styles.searchInput}
             placeholder="Search cards..."
-            placeholderTextColor="#999"
+            placeholderTextColor={colors.textHint}
             value={searchQuery}
             onChangeText={setSearchQuery}
             autoCapitalize="none"
@@ -181,7 +191,7 @@ export function AddItemsModal({ visible, deckId, onClose, onItemsAdded }: AddIte
 
         {isLoading ? (
           <View style={styles.loadingContainer}>
-            <ActivityIndicator size="large" color="#4CAF50" />
+            <ActivityIndicator size="large" color={colors.primary} />
           </View>
         ) : loadError ? (
           <View style={styles.emptyContainer}>
@@ -227,7 +237,7 @@ export function AddItemsModal({ visible, deckId, onClose, onItemsAdded }: AddIte
             testID="add-selected-button"
           >
             {isSaving ? (
-              <ActivityIndicator size="small" color="#fff" />
+              <ActivityIndicator size="small" color={colors.textOnPrimary} />
             ) : (
               <Text
                 style={[styles.addButtonText, selectedCount === 0 && styles.addButtonTextDisabled]}
@@ -242,171 +252,173 @@ export function AddItemsModal({ visible, deckId, onClose, onItemsAdded }: AddIte
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-  },
-  header: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: "#e0e0e0",
-    paddingTop: 60,
-  },
-  title: {
-    fontSize: 18,
-    fontWeight: "600",
-    color: "#333",
-  },
-  closeButton: {
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-  },
-  closeButtonPressed: {
-    opacity: 0.7,
-  },
-  closeButtonText: {
-    fontSize: 16,
-    color: "#4CAF50",
-    fontWeight: "500",
-  },
-  searchContainer: {
-    padding: 12,
-    backgroundColor: "#f5f5f5",
-    borderBottomWidth: 1,
-    borderBottomColor: "#e0e0e0",
-  },
-  searchInput: {
-    backgroundColor: "#fff",
-    paddingHorizontal: 16,
-    paddingVertical: 10,
-    borderRadius: 8,
-    fontSize: 16,
-    borderWidth: 1,
-    borderColor: "#e0e0e0",
-  },
-  loadingContainer: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  emptyContainer: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    padding: 32,
-  },
-  emptyTitle: {
-    fontSize: 18,
-    fontWeight: "600",
-    color: "#333",
-    marginBottom: 8,
-  },
-  emptySubtitle: {
-    fontSize: 14,
-    color: "#666",
-    textAlign: "center",
-  },
-  itemCard: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: "#fff",
-    padding: 12,
-    borderBottomWidth: 1,
-    borderBottomColor: "#e0e0e0",
-  },
-  itemCardSelected: {
-    backgroundColor: "#E8F5E9",
-  },
-  itemCardPressed: {
-    backgroundColor: "#f5f5f5",
-  },
-  checkbox: {
-    width: 24,
-    height: 24,
-    borderRadius: 4,
-    borderWidth: 2,
-    borderColor: "#ccc",
-    marginRight: 12,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  checkboxSelected: {
-    backgroundColor: "#4CAF50",
-    borderColor: "#4CAF50",
-  },
-  checkmark: {
-    color: "#fff",
-    fontSize: 14,
-    fontWeight: "bold",
-  },
-  itemContent: {
-    flex: 1,
-    marginRight: 12,
-  },
-  pali: {
-    fontSize: 16,
-    fontWeight: "600",
-    color: "#333",
-    marginBottom: 2,
-  },
-  meaning: {
-    fontSize: 13,
-    color: "#666",
-  },
-  badge: {
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-    borderRadius: 10,
-  },
-  badgeText: {
-    fontSize: 11,
-    color: "#fff",
-    fontWeight: "500",
-  },
-  footer: {
-    padding: 16,
-    borderTopWidth: 1,
-    borderTopColor: "#e0e0e0",
-    paddingBottom: 32,
-  },
-  addButton: {
-    backgroundColor: "#4CAF50",
-    paddingVertical: 14,
-    borderRadius: 8,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  addButtonDisabled: {
-    backgroundColor: "#e0e0e0",
-  },
-  addButtonPressed: {
-    backgroundColor: "#388E3C",
-  },
-  addButtonText: {
-    fontSize: 16,
-    fontWeight: "600",
-    color: "#fff",
-  },
-  addButtonTextDisabled: {
-    color: "#999",
-  },
-  retryButton: {
-    marginTop: 16,
-    backgroundColor: "#4CAF50",
-    paddingHorizontal: 24,
-    paddingVertical: 10,
-    borderRadius: 8,
-  },
-  retryButtonPressed: {
-    backgroundColor: "#388E3C",
-  },
-  retryButtonText: {
-    fontSize: 14,
-    fontWeight: "600",
-    color: "#fff",
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: colors.background,
+    },
+    header: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+      alignItems: "center",
+      padding: 16,
+      borderBottomWidth: 1,
+      borderBottomColor: colors.border,
+      paddingTop: 60,
+    },
+    title: {
+      fontSize: 18,
+      fontWeight: "600",
+      color: colors.textPrimary,
+    },
+    closeButton: {
+      paddingHorizontal: 12,
+      paddingVertical: 6,
+    },
+    closeButtonPressed: {
+      opacity: 0.7,
+    },
+    closeButtonText: {
+      fontSize: 16,
+      color: colors.primary,
+      fontWeight: "500",
+    },
+    searchContainer: {
+      padding: 12,
+      backgroundColor: colors.surface,
+      borderBottomWidth: 1,
+      borderBottomColor: colors.border,
+    },
+    searchInput: {
+      backgroundColor: colors.background,
+      paddingHorizontal: 16,
+      paddingVertical: 10,
+      borderRadius: 8,
+      fontSize: 16,
+      borderWidth: 1,
+      borderColor: colors.border,
+    },
+    loadingContainer: {
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    emptyContainer: {
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center",
+      padding: 32,
+    },
+    emptyTitle: {
+      fontSize: 18,
+      fontWeight: "600",
+      color: colors.textPrimary,
+      marginBottom: 8,
+    },
+    emptySubtitle: {
+      fontSize: 14,
+      color: colors.textSecondary,
+      textAlign: "center",
+    },
+    itemCard: {
+      flexDirection: "row",
+      alignItems: "center",
+      backgroundColor: colors.background,
+      padding: 12,
+      borderBottomWidth: 1,
+      borderBottomColor: colors.border,
+    },
+    itemCardSelected: {
+      backgroundColor: colors.primaryLight,
+    },
+    itemCardPressed: {
+      backgroundColor: colors.surface,
+    },
+    checkbox: {
+      width: 24,
+      height: 24,
+      borderRadius: 4,
+      borderWidth: 2,
+      borderColor: colors.surfaceVariant,
+      marginRight: 12,
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    checkboxSelected: {
+      backgroundColor: colors.primary,
+      borderColor: colors.primary,
+    },
+    checkmark: {
+      color: colors.textOnPrimary,
+      fontSize: 14,
+      fontWeight: "bold",
+    },
+    itemContent: {
+      flex: 1,
+      marginRight: 12,
+    },
+    pali: {
+      fontSize: 16,
+      fontWeight: "600",
+      color: colors.textPrimary,
+      marginBottom: 2,
+    },
+    meaning: {
+      fontSize: 13,
+      color: colors.textSecondary,
+    },
+    badge: {
+      paddingHorizontal: 8,
+      paddingVertical: 3,
+      borderRadius: 10,
+    },
+    badgeText: {
+      fontSize: 11,
+      color: colors.textOnPrimary,
+      fontWeight: "500",
+    },
+    footer: {
+      padding: 16,
+      borderTopWidth: 1,
+      borderTopColor: colors.border,
+      paddingBottom: 32,
+    },
+    addButton: {
+      backgroundColor: colors.primary,
+      paddingVertical: 14,
+      borderRadius: 8,
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    addButtonDisabled: {
+      backgroundColor: colors.surfaceVariant,
+    },
+    addButtonPressed: {
+      backgroundColor: colors.primaryPressed,
+    },
+    addButtonText: {
+      fontSize: 16,
+      fontWeight: "600",
+      color: colors.textOnPrimary,
+    },
+    addButtonTextDisabled: {
+      color: colors.textHint,
+    },
+    retryButton: {
+      marginTop: 16,
+      backgroundColor: colors.primary,
+      paddingHorizontal: 24,
+      paddingVertical: 10,
+      borderRadius: 8,
+    },
+    retryButtonPressed: {
+      backgroundColor: colors.primaryPressed,
+    },
+    retryButtonText: {
+      fontSize: 14,
+      fontWeight: "600",
+      color: colors.textOnPrimary,
+    },
+  });
+}

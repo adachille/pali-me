@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Modal, Pressable, StyleSheet, Text, View } from "react-native";
 import type { SortOption } from "@/db/repositories/deckRepository";
+import type { ThemeColors } from "@/constants/theme";
+import { useThemeColors } from "@/hooks/useThemeColors";
 
 type DeckSortPickerProps = {
   value: SortOption;
@@ -21,6 +23,8 @@ function getSortLabel(value: SortOption): string {
 }
 
 export function DeckSortPicker({ value, onChange }: DeckSortPickerProps) {
+  const colors = useThemeColors();
+  const styles = createStyles(colors);
   const [modalVisible, setModalVisible] = useState(false);
 
   const handleSelect = (sort: SortOption) => {
@@ -74,75 +78,77 @@ export function DeckSortPicker({ value, onChange }: DeckSortPickerProps) {
   );
 }
 
-const styles = StyleSheet.create({
-  trigger: {
-    flexDirection: "row",
-    alignItems: "center",
-    paddingHorizontal: 12,
-    paddingVertical: 8,
-    backgroundColor: "#fff",
-    borderRadius: 8,
-    borderWidth: 1,
-    borderColor: "#e0e0e0",
-  },
-  triggerPressed: {
-    backgroundColor: "#f5f5f5",
-  },
-  triggerText: {
-    fontSize: 14,
-    color: "#333",
-    marginRight: 6,
-  },
-  chevron: {
-    fontSize: 10,
-    color: "#666",
-  },
-  overlay: {
-    flex: 1,
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  modalContent: {
-    backgroundColor: "#fff",
-    borderRadius: 12,
-    width: "80%",
-    maxWidth: 300,
-    paddingVertical: 8,
-  },
-  modalTitle: {
-    fontSize: 16,
-    fontWeight: "600",
-    color: "#333",
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    borderBottomWidth: 1,
-    borderBottomColor: "#e0e0e0",
-  },
-  option: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    paddingHorizontal: 16,
-    paddingVertical: 14,
-  },
-  optionPressed: {
-    backgroundColor: "#f5f5f5",
-  },
-  optionSelected: {
-    backgroundColor: "#E8F5E9",
-  },
-  optionText: {
-    fontSize: 15,
-    color: "#333",
-  },
-  optionTextSelected: {
-    color: "#4CAF50",
-    fontWeight: "600",
-  },
-  checkmark: {
-    fontSize: 16,
-    color: "#4CAF50",
-    fontWeight: "600",
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    trigger: {
+      flexDirection: "row",
+      alignItems: "center",
+      paddingHorizontal: 12,
+      paddingVertical: 8,
+      backgroundColor: colors.background,
+      borderRadius: 8,
+      borderWidth: 1,
+      borderColor: colors.border,
+    },
+    triggerPressed: {
+      backgroundColor: colors.surface,
+    },
+    triggerText: {
+      fontSize: 14,
+      color: colors.textPrimary,
+      marginRight: 6,
+    },
+    chevron: {
+      fontSize: 10,
+      color: colors.textSecondary,
+    },
+    overlay: {
+      flex: 1,
+      backgroundColor: colors.overlay,
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    modalContent: {
+      backgroundColor: colors.background,
+      borderRadius: 12,
+      width: "80%",
+      maxWidth: 300,
+      paddingVertical: 8,
+    },
+    modalTitle: {
+      fontSize: 16,
+      fontWeight: "600",
+      color: colors.textPrimary,
+      paddingHorizontal: 16,
+      paddingVertical: 12,
+      borderBottomWidth: 1,
+      borderBottomColor: colors.border,
+    },
+    option: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-between",
+      paddingHorizontal: 16,
+      paddingVertical: 14,
+    },
+    optionPressed: {
+      backgroundColor: colors.surface,
+    },
+    optionSelected: {
+      backgroundColor: colors.primaryLight,
+    },
+    optionText: {
+      fontSize: 15,
+      color: colors.textPrimary,
+    },
+    optionTextSelected: {
+      color: colors.primary,
+      fontWeight: "600",
+    },
+    checkmark: {
+      fontSize: 16,
+      color: colors.primary,
+      fontWeight: "600",
+    },
+  });
+}

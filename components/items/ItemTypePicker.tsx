@@ -1,5 +1,7 @@
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import type { ItemType } from "@/db";
+import type { ThemeColors } from "@/constants/theme";
+import { useThemeColors } from "@/hooks/useThemeColors";
 
 type ItemTypePickerProps = {
   value: ItemType;
@@ -15,6 +17,9 @@ const ITEM_TYPES: { value: ItemType; label: string }[] = [
 ];
 
 export function ItemTypePicker({ value, onChange }: ItemTypePickerProps) {
+  const colors = useThemeColors();
+  const styles = createStyles(colors);
+
   return (
     <View style={styles.container} testID="item-type-picker">
       <Text style={styles.label}>Type</Text>
@@ -36,39 +41,41 @@ export function ItemTypePicker({ value, onChange }: ItemTypePickerProps) {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    marginBottom: 16,
-  },
-  label: {
-    fontSize: 16,
-    fontWeight: "500",
-    color: "#333",
-    marginBottom: 8,
-  },
-  options: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    gap: 8,
-  },
-  option: {
-    paddingHorizontal: 16,
-    paddingVertical: 8,
-    borderRadius: 20,
-    backgroundColor: "#f0f0f0",
-    borderWidth: 1,
-    borderColor: "#e0e0e0",
-  },
-  optionSelected: {
-    backgroundColor: "#4CAF50",
-    borderColor: "#4CAF50",
-  },
-  optionText: {
-    fontSize: 14,
-    color: "#666",
-  },
-  optionTextSelected: {
-    color: "#fff",
-    fontWeight: "500",
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    container: {
+      marginBottom: 16,
+    },
+    label: {
+      fontSize: 16,
+      fontWeight: "500",
+      color: colors.textPrimary,
+      marginBottom: 8,
+    },
+    options: {
+      flexDirection: "row",
+      flexWrap: "wrap",
+      gap: 8,
+    },
+    option: {
+      paddingHorizontal: 16,
+      paddingVertical: 8,
+      borderRadius: 20,
+      backgroundColor: colors.surface,
+      borderWidth: 1,
+      borderColor: colors.border,
+    },
+    optionSelected: {
+      backgroundColor: colors.primary,
+      borderColor: colors.primary,
+    },
+    optionText: {
+      fontSize: 14,
+      color: colors.textSecondary,
+    },
+    optionTextSelected: {
+      color: colors.textOnPrimary,
+      fontWeight: "500",
+    },
+  });
+}

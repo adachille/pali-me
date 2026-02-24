@@ -1,4 +1,6 @@
 import type { Item } from "@/db";
+import type { ThemeColors } from "@/constants/theme";
+import { useThemeColors } from "@/hooks/useThemeColors";
 import { useCallback } from "react";
 import { FlatList, Pressable, StyleSheet, Text, View, type ListRenderItem } from "react-native";
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
@@ -18,13 +20,16 @@ type DeckItemListProps = {
   isDefaultDeck?: boolean;
 };
 
-const TYPE_COLORS: Record<string, string> = {
-  word: "#4CAF50",
-  prefix: "#2196F3",
-  suffix: "#9C27B0",
-  root: "#FF9800",
-  particle: "#607D8B",
-};
+function getTypeColor(colors: ThemeColors, type: string): string {
+  const map: Record<string, string> = {
+    word: colors.itemTypeWord,
+    prefix: colors.itemTypePrefix,
+    suffix: colors.itemTypeSuffix,
+    root: colors.itemTypeRoot,
+    particle: colors.itemTypeParticle,
+  };
+  return map[type] ?? colors.disabled;
+}
 
 const SWIPE_THRESHOLD = -80;
 
@@ -39,8 +44,10 @@ function SwipeableItemCard({
   onRemove: (item: Item) => void;
   canRemove: boolean;
 }) {
+  const colors = useThemeColors();
+  const styles = createStyles(colors);
   const translateX = useSharedValue(0);
-  const badgeColor = TYPE_COLORS[item.type] ?? "#999";
+  const badgeColor = getTypeColor(colors, item.type);
 
   const handleRemove = useCallback(() => {
     onRemove(item);
@@ -110,6 +117,9 @@ function DeckEmptyItems({
   onAddPress: () => void;
   isDefaultDeck: boolean;
 }) {
+  const colors = useThemeColors();
+  const styles = createStyles(colors);
+
   if (isDefaultDeck) {
     return (
       <View style={styles.emptyContainer} testID="deck-empty-items">
@@ -143,6 +153,9 @@ export function DeckItemList({
   onAddPress,
   isDefaultDeck = false,
 }: DeckItemListProps) {
+  const colors = useThemeColors();
+  const styles = createStyles(colors);
+
   const renderItem: ListRenderItem<Item> = useCallback(
     ({ item }) => (
       <SwipeableItemCard
@@ -169,95 +182,97 @@ export function DeckItemList({
   );
 }
 
-const styles = StyleSheet.create({
-  swipeContainer: {
-    position: "relative",
-    backgroundColor: "#f44336",
-  },
-  deleteBackground: {
-    position: "absolute",
-    right: 0,
-    top: 0,
-    bottom: 0,
-    width: 100,
-    backgroundColor: "#f44336",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  deleteText: {
-    color: "#fff",
-    fontWeight: "600",
-    fontSize: 14,
-  },
-  itemCard: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: "#fff",
-    padding: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: "#e0e0e0",
-  },
-  itemCardPressed: {
-    backgroundColor: "#f5f5f5",
-  },
-  itemContent: {
-    flex: 1,
-    marginRight: 12,
-  },
-  pali: {
-    fontSize: 18,
-    fontWeight: "600",
-    color: "#333",
-    marginBottom: 4,
-  },
-  meaning: {
-    fontSize: 14,
-    color: "#666",
-  },
-  badge: {
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    borderRadius: 12,
-  },
-  badgeText: {
-    fontSize: 12,
-    color: "#fff",
-    fontWeight: "500",
-  },
-  emptyListContainer: {
-    flex: 1,
-  },
-  emptyContainer: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    padding: 32,
-  },
-  emptyTitle: {
-    fontSize: 20,
-    fontWeight: "600",
-    color: "#333",
-    marginBottom: 8,
-  },
-  emptySubtitle: {
-    fontSize: 16,
-    color: "#666",
-    textAlign: "center",
-    marginBottom: 24,
-    lineHeight: 24,
-  },
-  addButton: {
-    backgroundColor: "#4CAF50",
-    paddingHorizontal: 24,
-    paddingVertical: 12,
-    borderRadius: 8,
-  },
-  addButtonPressed: {
-    backgroundColor: "#388E3C",
-  },
-  addButtonText: {
-    color: "#fff",
-    fontSize: 16,
-    fontWeight: "600",
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    swipeContainer: {
+      position: "relative",
+      backgroundColor: colors.error,
+    },
+    deleteBackground: {
+      position: "absolute",
+      right: 0,
+      top: 0,
+      bottom: 0,
+      width: 100,
+      backgroundColor: colors.error,
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    deleteText: {
+      color: colors.textOnPrimary,
+      fontWeight: "600",
+      fontSize: 14,
+    },
+    itemCard: {
+      flexDirection: "row",
+      alignItems: "center",
+      backgroundColor: colors.background,
+      padding: 16,
+      borderBottomWidth: 1,
+      borderBottomColor: colors.border,
+    },
+    itemCardPressed: {
+      backgroundColor: colors.surface,
+    },
+    itemContent: {
+      flex: 1,
+      marginRight: 12,
+    },
+    pali: {
+      fontSize: 18,
+      fontWeight: "600",
+      color: colors.textPrimary,
+      marginBottom: 4,
+    },
+    meaning: {
+      fontSize: 14,
+      color: colors.textSecondary,
+    },
+    badge: {
+      paddingHorizontal: 10,
+      paddingVertical: 4,
+      borderRadius: 12,
+    },
+    badgeText: {
+      fontSize: 12,
+      color: colors.textOnPrimary,
+      fontWeight: "500",
+    },
+    emptyListContainer: {
+      flex: 1,
+    },
+    emptyContainer: {
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center",
+      padding: 32,
+    },
+    emptyTitle: {
+      fontSize: 20,
+      fontWeight: "600",
+      color: colors.textPrimary,
+      marginBottom: 8,
+    },
+    emptySubtitle: {
+      fontSize: 16,
+      color: colors.textSecondary,
+      textAlign: "center",
+      marginBottom: 24,
+      lineHeight: 24,
+    },
+    addButton: {
+      backgroundColor: colors.primary,
+      paddingHorizontal: 24,
+      paddingVertical: 12,
+      borderRadius: 8,
+    },
+    addButtonPressed: {
+      backgroundColor: colors.primaryPressed,
+    },
+    addButtonText: {
+      color: colors.textOnPrimary,
+      fontSize: 16,
+      fontWeight: "600",
+    },
+  });
+}

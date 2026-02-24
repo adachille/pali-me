@@ -1,4 +1,6 @@
 import type { Item } from "@/db";
+import type { ThemeColors } from "@/constants/theme";
+import { useThemeColors } from "@/hooks/useThemeColors";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 type ItemCardProps = {
@@ -6,16 +8,21 @@ type ItemCardProps = {
   onPress: (item: Item) => void;
 };
 
-const TYPE_COLORS: Record<string, string> = {
-  word: "#4CAF50",
-  prefix: "#2196F3",
-  suffix: "#9C27B0",
-  root: "#FF9800",
-  particle: "#607D8B",
-};
+function getTypeColor(colors: ThemeColors, type: string): string {
+  const map: Record<string, string> = {
+    word: colors.itemTypeWord,
+    prefix: colors.itemTypePrefix,
+    suffix: colors.itemTypeSuffix,
+    root: colors.itemTypeRoot,
+    particle: colors.itemTypeParticle,
+  };
+  return map[type] ?? colors.disabled;
+}
 
 export function ItemCard({ item, onPress }: ItemCardProps) {
-  const badgeColor = TYPE_COLORS[item.type] ?? "#999";
+  const colors = useThemeColors();
+  const styles = createStyles(colors);
+  const badgeColor = getTypeColor(colors, item.type);
 
   return (
     <Pressable
@@ -36,40 +43,42 @@ export function ItemCard({ item, onPress }: ItemCardProps) {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: "#fff",
-    padding: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: "#e0e0e0",
-  },
-  pressed: {
-    backgroundColor: "#f5f5f5",
-  },
-  content: {
-    flex: 1,
-    marginRight: 12,
-  },
-  pali: {
-    fontSize: 18,
-    fontWeight: "600",
-    color: "#333",
-    marginBottom: 4,
-  },
-  meaning: {
-    fontSize: 14,
-    color: "#666",
-  },
-  badge: {
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    borderRadius: 12,
-  },
-  badgeText: {
-    fontSize: 12,
-    color: "#fff",
-    fontWeight: "500",
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    container: {
+      flexDirection: "row",
+      alignItems: "center",
+      backgroundColor: colors.background,
+      padding: 16,
+      borderBottomWidth: 1,
+      borderBottomColor: colors.border,
+    },
+    pressed: {
+      backgroundColor: colors.surface,
+    },
+    content: {
+      flex: 1,
+      marginRight: 12,
+    },
+    pali: {
+      fontSize: 18,
+      fontWeight: "600",
+      color: colors.textPrimary,
+      marginBottom: 4,
+    },
+    meaning: {
+      fontSize: 14,
+      color: colors.textSecondary,
+    },
+    badge: {
+      paddingHorizontal: 10,
+      paddingVertical: 4,
+      borderRadius: 12,
+    },
+    badgeText: {
+      fontSize: 12,
+      color: colors.textOnPrimary,
+      fontWeight: "500",
+    },
+  });
+}

@@ -1,5 +1,7 @@
 import { DEFAULT_DECK_ID } from "@/db";
 import type { DeckWithCount } from "@/db/repositories/deckRepository";
+import type { ThemeColors } from "@/constants/theme";
+import { useThemeColors } from "@/hooks/useThemeColors";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 type DeckCardProps = {
@@ -34,6 +36,9 @@ function formatRelativeDate(date: Date): string {
 }
 
 export function DeckCard({ deck, onPress }: DeckCardProps) {
+  const colors = useThemeColors();
+  const styles = createStyles(colors);
+
   const isAllDeck = deck.id === DEFAULT_DECK_ID;
   const itemCountText = deck.itemCount === 1 ? "1 item" : `${deck.itemCount} items`;
   const normalizedName = deck.name
@@ -65,57 +70,59 @@ export function DeckCard({ deck, onPress }: DeckCardProps) {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: "#fff",
-    padding: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: "#e0e0e0",
-  },
-  pressed: {
-    backgroundColor: "#f5f5f5",
-  },
-  content: {
-    flex: 1,
-    marginRight: 12,
-  },
-  nameRow: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  pinIcon: {
-    fontSize: 14,
-    color: "#4CAF50",
-    marginRight: 6,
-    fontWeight: "bold",
-  },
-  name: {
-    fontSize: 18,
-    fontWeight: "600",
-    color: "#333",
-    marginBottom: 4,
-  },
-  allDeckName: {
-    color: "#4CAF50",
-  },
-  date: {
-    fontSize: 13,
-    color: "#999",
-  },
-  badge: {
-    backgroundColor: "#e0e0e0",
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 16,
-  },
-  allDeckBadge: {
-    backgroundColor: "#E8F5E9",
-  },
-  badgeText: {
-    fontSize: 13,
-    color: "#666",
-    fontWeight: "500",
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    container: {
+      flexDirection: "row",
+      alignItems: "center",
+      backgroundColor: colors.background,
+      padding: 16,
+      borderBottomWidth: 1,
+      borderBottomColor: colors.border,
+    },
+    pressed: {
+      backgroundColor: colors.surface,
+    },
+    content: {
+      flex: 1,
+      marginRight: 12,
+    },
+    nameRow: {
+      flexDirection: "row",
+      alignItems: "center",
+    },
+    pinIcon: {
+      fontSize: 14,
+      color: colors.primary,
+      marginRight: 6,
+      fontWeight: "bold",
+    },
+    name: {
+      fontSize: 18,
+      fontWeight: "600",
+      color: colors.textPrimary,
+      marginBottom: 4,
+    },
+    allDeckName: {
+      color: colors.primary,
+    },
+    date: {
+      fontSize: 13,
+      color: colors.textHint,
+    },
+    badge: {
+      backgroundColor: colors.surfaceVariant,
+      paddingHorizontal: 12,
+      paddingVertical: 6,
+      borderRadius: 16,
+    },
+    allDeckBadge: {
+      backgroundColor: colors.primaryLight,
+    },
+    badgeText: {
+      fontSize: 13,
+      color: colors.textSecondary,
+      fontWeight: "500",
+    },
+  });
+}
