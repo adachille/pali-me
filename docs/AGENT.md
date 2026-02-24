@@ -76,6 +76,7 @@ The app uses SQLite via `expo-sqlite` for local data storage:
 - **db/repositories/itemRepository.ts** - CRUD operations for items (search, create, update, delete)
 - **db/repositories/deckRepository.ts** - CRUD for decks and deck-item associations (create, update, delete decks; add/remove cards)
 - **db/repositories/exportRepository.ts** - JSON export/import of all database tables (used by Settings screen)
+- **db/utils.ts** - Utility for parsing SQLite datetime strings into JS Date objects (handles UTC timezone)
 - See `docs/DATABASE.md` for detailed database documentation
 
 ### Testing
@@ -84,7 +85,10 @@ Jest testing infrastructure with React Native Testing Library:
 
 - Test files colocated in `__tests__/` directories next to source files
 - Test utilities in `test-utils/` for mocks and helpers
-- E2E tests with Maestro in `.maestro/` directory
+- E2E tests with Maestro in `.maestro/` directory:
+  - `01-launch-app.yaml` - App launch flow (reusable)
+  - `02-flashcard-crud.yaml` - Flashcard CRUD operations
+  - `03-deck-management.yaml` - Deck create, rename, add items, and delete
 - See `docs/TESTING.md` for unit testing guide
 - See `docs/E2E_TESTING.md` for Maestro E2E testing guide
 

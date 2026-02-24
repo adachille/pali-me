@@ -1,6 +1,6 @@
-import { Pressable, StyleSheet, Text, View } from "react-native";
-import type { DeckWithCount } from "@/db/repositories/deckRepository";
 import { DEFAULT_DECK_ID } from "@/db";
+import type { DeckWithCount } from "@/db/repositories/deckRepository";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 
 type DeckCardProps = {
   deck: DeckWithCount;
@@ -36,6 +36,12 @@ function formatRelativeDate(date: Date): string {
 export function DeckCard({ deck, onPress }: DeckCardProps) {
   const isAllDeck = deck.id === DEFAULT_DECK_ID;
   const itemCountText = deck.itemCount === 1 ? "1 item" : `${deck.itemCount} items`;
+  const normalizedName = deck.name
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  const deckNameTestId = `deck-card-name-${normalizedName || "unnamed"}`;
 
   return (
     <Pressable
@@ -46,7 +52,9 @@ export function DeckCard({ deck, onPress }: DeckCardProps) {
       <View style={styles.content}>
         <View style={styles.nameRow}>
           {isAllDeck && <Text style={styles.pinIcon}>📌</Text>}
-          <Text style={[styles.name, isAllDeck && styles.allDeckName]}>{deck.name}</Text>
+          <Text style={[styles.name, isAllDeck && styles.allDeckName]} testID={deckNameTestId}>
+            {deck.name}
+          </Text>
         </View>
         <Text style={styles.date}>{formatRelativeDate(deck.createdAt)}</Text>
       </View>

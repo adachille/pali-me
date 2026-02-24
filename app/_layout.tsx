@@ -18,7 +18,8 @@ export default function RootLayout() {
       <SQLiteProvider databaseName="pali.db" onInit={migrateDbIfNeeded}>
         <Stack screenOptions={{ headerShown: false }}>
           <Stack.Screen name="(tabs)" />
-          <Stack.Screen name="item" options={{ headerShown: false }} />
+          <Stack.Screen name="item" />
+          <Stack.Screen name="deck" />
         </Stack>
       </SQLiteProvider>
     </Suspense>
