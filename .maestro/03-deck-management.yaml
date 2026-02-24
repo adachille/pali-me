@@ -1,0 +1,87 @@
+# Deck Management Test
+# Validates user can create, rename, delete decks and manage deck items
+
+appId: host.exp.Exponent
+
+---
+- runFlow:
+    01-launch-app.yaml
+
+# TEST 1: Create a new deck
+- tapOn:
+    id: "create-deck-fab"
+- tapOn:
+    id: "deck-name-input"
+- inputText: "Test Verbs"
+- tapOn: "return"
+- tapOn:
+    id: "save-button"
+- assertVisible:
+    id: "deck-detail-screen"
+
+# TEST 2: Open deck and rename it
+- tapOn:
+    id: "edit-deck-button"
+- tapOn:
+    id: "deck-name-input"
+- eraseText
+- inputText: "Renamed Deck"
+- tapOn: "return"
+- tapOn:
+    id: "deck-form-save"
+- assertVisible: "Renamed Deck"
+
+
+# TEST 3: Add item to deck (requires existing item)
+# First create an item in Library
+- tapOn: # Go back to home screen
+    id: "back-button"
+- tapOn:
+    id: "tab-library"
+- tapOn:
+    id: "add-item-fab"
+- tapOn:
+    id: "pali-input"
+- inputText: "testitem"
+- tapOn:
+    id: "meaning-input"
+- inputText: "test meaning"
+- hideKeyboard
+- tapOn:
+    id: "submit-button"
+
+# Go back to deck and add item
+- tapOn:
+    id: "tab-home"
+- tapOn:
+    id: "deck-card-name-renamed-deck"
+- assertVisible:
+    id: "deck-detail-screen"
+- tapOn:
+    id: "add-items-fab"
+- assertVisible:
+    id: "add-items-modal"
+- tapOn:
+    id: "selectable-item-.*"
+- tapOn:
+    id: "add-selected-button"
+- assertVisible: "1 card"
+
+# TEST 4: Delete deck
+- tapOn:
+    id: "edit-deck-button"
+- tapOn:
+    id: "deck-form-delete"
+- tapOn: "Delete"
+- assertVisible:
+    id: "home-screen"
+- assertNotVisible: "Renamed Deck"
+
+# Cleanup: delete the test item
+- tapOn:
+    id: "tab-library"
+- tapOn:
+    id: "item-card-testitem"
+- tapOn:
+    id: "delete-button"
+- tapOn: "Delete"
