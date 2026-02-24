@@ -10,7 +10,7 @@ export default function ItemLayout() {
       screenOptions={{
         headerShown: true,
         headerLeft: () => (
-          <Pressable onPress={() => router.back()} hitSlop={8}>
+          <Pressable onPress={() => router.back()} hitSlop={8} testID="back-button">
             <Ionicons name="chevron-back" size={28} color="#007AFF" />
           </Pressable>
         ),
