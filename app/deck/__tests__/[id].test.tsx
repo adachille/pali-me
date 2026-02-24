@@ -1,6 +1,6 @@
 import { createMockRouter, createMockSQLiteContext } from "@/test-utils";
-import { fireEvent, render, screen, waitFor } from "@testing-library/react-native";
 import { NavigationContainer } from "@react-navigation/native";
+import { fireEvent, render, screen, waitFor } from "@testing-library/react-native";
 import React from "react";
 import DeckDetailScreen from "../[id]";
 
