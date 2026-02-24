@@ -2,21 +2,31 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 
 type EmptyStateProps = {
   onAddPress: () => void;
+  isSearching?: boolean;
 };
 
-export function EmptyState({ onAddPress }: EmptyStateProps) {
+export function EmptyState({ onAddPress, isSearching = false }: EmptyStateProps) {
+  if (isSearching) {
+    return (
+      <View style={styles.container} testID="empty-state">
+        <Text style={styles.title}>No flash cards found</Text>
+        <Text style={styles.subtitle}>Try a different search term or add a new flash card.</Text>
+      </View>
+    );
+  }
+
   return (
     <View style={styles.container} testID="empty-state">
-      <Text style={styles.title}>No items yet</Text>
+      <Text style={styles.title}>No flash cards yet</Text>
       <Text style={styles.subtitle}>
-        Start building your Pali vocabulary library by adding your first item.
+        Start building your Pali vocabulary library by adding your first flash card.
       </Text>
       <Pressable
         style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]}
         onPress={onAddPress}
         testID="add-first-item-button"
       >
-        <Text style={styles.buttonText}>Add your first item</Text>
+        <Text style={styles.buttonText}>Add your first flash card</Text>
       </Pressable>
     </View>
   );

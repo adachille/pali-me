@@ -26,6 +26,8 @@ export function ItemList({
 
   const keyExtractor = useCallback((item: Item) => String(item.id), []);
 
+  const isSearching = searchQuery.trim().length > 0;
+
   return (
     <View style={styles.container}>
       <View style={styles.searchContainer}>
@@ -45,7 +47,7 @@ export function ItemList({
         renderItem={renderItem}
         keyExtractor={keyExtractor}
         contentContainerStyle={items.length === 0 ? styles.emptyContainer : undefined}
-        ListEmptyComponent={<EmptyState onAddPress={onAddPress} />}
+        ListEmptyComponent={<EmptyState onAddPress={onAddPress} isSearching={isSearching} />}
         testID="item-list"
       />
     </View>

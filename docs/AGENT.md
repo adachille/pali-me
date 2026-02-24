@@ -20,7 +20,8 @@ pnpm start
 
 # Start on specific platform
 pnpm android  # Android emulator/device
-pnpm ios      # iOS simulator/device
+pnpm ios      # iOS simulator/device (dev client)
+pnpm ios-rebuild  # Rebuild native iOS project
 pnpm web      # Web browser
 
 # Testing
@@ -45,9 +46,10 @@ pnpm maestro:ios         # Run Maestro on iOS with JUnit output
 The app uses Expo Router with file-based routing. Routes are defined in the `app/` directory:
 
 - `app/_layout.tsx` - Root layout with Stack navigation
-- `app/(tabs)/_layout.tsx` - Tab navigation (Home, Library)
+- `app/(tabs)/_layout.tsx` - Tab navigation (Home, Library, Settings)
 - `app/(tabs)/index.tsx` - Home screen
 - `app/(tabs)/library.tsx` - Library screen (item list with search)
+- `app/(tabs)/settings.tsx` - Settings screen (export/import data)
 - `app/item/_layout.tsx` - Item stack layout
 - `app/item/add.tsx` - Add new item screen
 - `app/item/[id].tsx` - Edit/view item screen
@@ -69,6 +71,7 @@ The app uses SQLite via `expo-sqlite` for local data storage:
 - **db/database.ts** - Database initialization and migrations
 - **db/types.ts** - TypeScript types for database entities
 - **db/repositories/itemRepository.ts** - CRUD operations for items (search, create, update, delete)
+- **db/repositories/exportRepository.ts** - JSON export/import of all database tables (used by Settings screen)
 - See `docs/DATABASE.md` for detailed database documentation
 
 ### Testing
@@ -103,13 +106,14 @@ Reusable UI components in `components/items/`:
 - **ItemForm** - Form for creating/editing items (used by add and edit screens)
 - **ItemList** - Scrollable list of items with search
 - **ItemTypePicker** - Picker for item type (word, prefix, suffix)
-- **EmptyState** - Placeholder when no items exist
+- **EmptyState** - Placeholder when no items exist or search returns no results
 
 ## Key Dependencies
 
 - **Navigation**: `expo-router`, `@react-navigation/native`, `@react-navigation/bottom-tabs`
 - **UI/Gestures**: `react-native-reanimated`, `react-native-gesture-handler`, `react-native-worklets`
 - **Database**: `expo-sqlite` for local SQLite database
+- **File/Sharing**: `expo-file-system`, `expo-document-picker`, `expo-sharing` for data export/import
 - **Testing**: `jest`, `jest-expo`, `@testing-library/react-native`, `@testing-library/jest-native`
 - **Formatting**: `prettier`, `eslint-config-prettier`, `eslint-plugin-prettier`
 - **Expo modules**: Font, Haptics, Image, Linking, System UI, Web Browser, etc.

@@ -388,6 +388,53 @@ To add a migration (e.g., version 1 → 2):
 - Log each migration step for debugging
 - Keep migrations idempotent when possible (use `IF NOT EXISTS`, etc.)
 
+## Export/Import
+
+The app supports full database export and import via JSON files, accessible from the Settings tab.
+
+### Export (`exportDatabaseAsJson`)
+
+Exports all 4 tables (`items`, `study_states`, `decks`, `deck_items`) as a JSON file and opens the system share dialog.
+
+```typescript
+import { exportDatabaseAsJson } from "@/db/repositories/exportRepository";
+
+const filepath = await exportDatabaseAsJson(db);
+```
+
+**Export format** (`ExportData`):
+
+```json
+{
+  "exportedAt": "2026-02-20T12:00:00.000Z",
+  "schemaVersion": 1,
+  "data": {
+    "items": [...],
+    "studyStates": [...],
+    "decks": [...],
+    "deckItems": [...]
+  }
+}
+```
+
+### Import (`importDatabaseFromJson`)
+
+Opens a document picker for the user to select a JSON export file, validates the schema version, then replaces all existing data.
+
+```typescript
+import { importDatabaseFromJson } from "@/db/repositories/exportRepository";
+
+const result = await importDatabaseFromJson(db);
+// result: { itemsImported, studyStatesImported, decksImported, deckItemsImported } | null
+```
+
+**Import behavior**:
+
+- Validates that the file's `schemaVersion` is not newer than the app's current version
+- Clears all existing data (preserves the default "All" deck with id=1)
+- Inserts data in dependency order: items → study_states → decks → deck_items
+- Returns `null` if the user cancels the file picker
+
 ## File Structure
 
 ```
@@ -398,7 +445,8 @@ db/
 ├── database.ts           # Migration logic and initialization
 └── repositories/
     ├── index.ts           # Repository exports
-    └── itemRepository.ts  # Item CRUD with auto study state creation
+    ├── itemRepository.ts  # Item CRUD with auto study state creation
+    └── exportRepository.ts # JSON export/import of full database
 
 app/
 └── _layout.tsx           # SQLiteProvider setup
@@ -407,4 +455,4 @@ app/
 ---
 
 **Schema Version**: 1
-**Last Updated**: 2026-02-18
+**Last Updated**: 2026-02-20
