@@ -13,15 +13,18 @@ export default function HomeScreen() {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOption, setSortOption] = useState<SortOption>("name_asc");
   const [isLoading, setIsLoading] = useState(true);
+  const [loadError, setLoadError] = useState(false);
 
   const loadDecks = useCallback(async () => {
     try {
+      setLoadError(false);
       const result = searchQuery.trim()
         ? await deckRepository.search(db, searchQuery.trim(), sortOption)
         : await deckRepository.getAll(db, sortOption);
       setDecks(result);
     } catch (error) {
       console.error("Failed to load decks:", error);
+      setLoadError(true);
     } finally {
       setIsLoading(false);
     }
@@ -66,6 +69,22 @@ export default function HomeScreen() {
     );
   }
 
+  if (loadError) {
+    return (
+      <View style={styles.errorContainer} testID="home-screen">
+        <Text style={styles.errorTitle}>Failed to load decks</Text>
+        <Text style={styles.errorSubtitle}>Please try again</Text>
+        <Pressable
+          style={({ pressed }) => [styles.retryButton, pressed && styles.retryButtonPressed]}
+          onPress={loadDecks}
+          testID="retry-load-decks"
+        >
+          <Text style={styles.retryButtonText}>Retry</Text>
+        </Pressable>
+      </View>
+    );
+  }
+
   return (
     <View style={styles.container} testID="home-screen">
       <DeckList
@@ -98,6 +117,39 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#fff",
+  },
+  errorContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#fff",
+    padding: 32,
+  },
+  errorTitle: {
+    fontSize: 18,
+    fontWeight: "600",
+    color: "#333",
+    marginBottom: 8,
+  },
+  errorSubtitle: {
+    fontSize: 14,
+    color: "#666",
+    textAlign: "center",
+    marginBottom: 16,
+  },
+  retryButton: {
+    backgroundColor: "#4CAF50",
+    paddingHorizontal: 24,
+    paddingVertical: 10,
+    borderRadius: 8,
+  },
+  retryButtonPressed: {
+    backgroundColor: "#388E3C",
+  },
+  retryButtonText: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#fff",
   },
   fab: {
     position: "absolute",
