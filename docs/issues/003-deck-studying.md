@@ -119,7 +119,7 @@ Accessible via gear icon in study screen header.
    - Pali First: only `pali_to_meaning` states
    - Meaning First: only `meaning_to_pali` states
    - Random: both directions
-3. Order by `due` (oldest first) or shuffle for variety
+3. Randomize the order (to avoid predictable sequences based on card creation order)
 4. Present cards one at a time
 
 **Endless Mode:**
@@ -290,7 +290,7 @@ WHERE di.deck_id = ?
   AND ss.due <= datetime('now')
   AND ss.suspended = 0
   AND (? IS NULL OR ss.direction = ?)
-ORDER BY ss.due ASC
+ORDER BY RANDOM()
 ```
 
 **Checkpoint:** Repository functions work correctly. Can query due cards and record reviews.

@@ -407,7 +407,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   inputContainer: {
-    paddingBottom: Platform.OS === "ios" ? 24 : 16,
+    paddingBottom: Platform.OS === "ios" ? 48 : 32,
   },
   emptyContainer: {
     flex: 1,

@@ -52,7 +52,7 @@ export default function HomeScreen() {
 
   const handleDeckPress = useCallback(
     (deck: DeckWithCount) => {
-      router.push(`/deck/${deck.id}`);
+      router.push(`/study/${deck.id}` as `/study/${string}`);
     },
     [router]
   );

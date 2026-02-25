@@ -49,7 +49,7 @@ function getDirectionFilter(deckDirection: DeckStudyDirection): StudyDirection |
  * @param db - SQLite database instance
  * @param deckId - Deck ID to get cards for
  * @param direction - Optional direction preference to filter by
- * @returns Array of study cards ordered by due date (oldest first)
+ * @returns Array of study cards in random order
  */
 export async function getDueCardsForDeck(
   db: SQLiteDatabase,
@@ -76,7 +76,7 @@ export async function getDueCardsForDeck(
       AND ss.due <= datetime('now')
       AND ss.suspended = 0
       AND (? IS NULL OR ss.direction = ?)
-    ORDER BY ss.due ASC`,
+    ORDER BY RANDOM()`,
     [deckId, directionFilter, directionFilter]
   );
 
