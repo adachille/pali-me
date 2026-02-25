@@ -48,9 +48,14 @@ export type ItemInsert = {
 // ============================================================================
 
 /**
- * Study direction for spaced repetition
+ * Study direction for spaced repetition (per study state)
  */
 export type StudyDirection = "pali_to_meaning" | "meaning_to_pali";
+
+/**
+ * Study direction preference for a deck
+ */
+export type DeckStudyDirection = "pali_first" | "meaning_first" | "random";
 
 /**
  * Raw row structure from the study_states table (as stored in SQLite)
@@ -101,6 +106,7 @@ export type DeckRow = {
   id: number;
   name: string;
   created_at: string;
+  study_direction: string | null;
 };
 
 /**
@@ -110,6 +116,7 @@ export type Deck = {
   id: number;
   name: string;
   createdAt: Date;
+  studyDirection: DeckStudyDirection;
 };
 
 /**
@@ -137,4 +144,38 @@ export type DeckItemRow = {
 export type DeckItem = {
   deckId: number;
   itemId: number;
+};
+
+// ============================================================================
+// Study Card Types (for study session)
+// ============================================================================
+
+/**
+ * A card prepared for study, combining item data with study state
+ */
+export type StudyCard = {
+  studyStateId: number;
+  itemId: number;
+  direction: StudyDirection;
+  pali: string;
+  meaning: string;
+  type: ItemType;
+  interval: number;
+  ease: number;
+  due: Date;
+};
+
+/**
+ * Raw row structure for study card query
+ */
+export type StudyCardRow = {
+  study_state_id: number;
+  item_id: number;
+  direction: string;
+  pali: string;
+  meaning: string;
+  type: string;
+  interval: number;
+  ease: number;
+  due: string;
 };

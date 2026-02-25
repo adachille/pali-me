@@ -8,6 +8,7 @@ const mockDeck: DeckWithCount = {
   name: "Verbs",
   itemCount: 5,
   createdAt: new Date(),
+  studyDirection: "random",
 };
 
 const mockAllDeck: DeckWithCount = {
@@ -15,6 +16,7 @@ const mockAllDeck: DeckWithCount = {
   name: "All",
   itemCount: 10,
   createdAt: new Date("2024-01-01"),
+  studyDirection: "random",
 };
 
 describe("DeckCard", () => {

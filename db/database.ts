@@ -8,6 +8,7 @@ import {
   CREATE_ITEMS_TABLE,
   CREATE_STUDY_STATES_TABLE,
   INSERT_DEFAULT_DECK,
+  MIGRATION_ADD_STUDY_DIRECTION,
   SCHEMA_VERSION,
 } from "./schema";
 
@@ -76,13 +77,13 @@ async function runMigrations(db: SQLiteDatabase, currentVersion: number): Promis
     console.log("[DB] Migration 0 -> 1 completed");
   }
 
-  // Future migrations go here:
-  // if (version === 1) {
-  //   console.log('[DB] Running migration 1 -> 2: Add new feature');
-  //   await db.execAsync('ALTER TABLE items ADD COLUMN example TEXT');
-  //   version = 2;
-  //   console.log('[DB] Migration 1 -> 2 completed');
-  // }
+  // Migration from version 1 to version 2: Add study_direction to decks
+  if (version === 1) {
+    console.log("[DB] Running migration 1 -> 2: Add study_direction column");
+    await db.execAsync(MIGRATION_ADD_STUDY_DIRECTION);
+    version = 2;
+    console.log("[DB] Migration 1 -> 2 completed");
+  }
 
   // Update the database version
   await db.execAsync(`PRAGMA user_version = ${version}`);
