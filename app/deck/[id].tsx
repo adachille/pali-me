@@ -6,10 +6,14 @@ import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { useCallback, useState } from "react";
 import { ActivityIndicator, Alert, Pressable, StyleSheet, Text, View } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
+import { useThemeColors } from "@/hooks/useThemeColors";
+import type { ThemeColors } from "@/constants/theme";
 
 export default function DeckDetailScreen() {
   const db = useSQLiteContext();
   const router = useRouter();
+  const colors = useThemeColors();
+  const styles = createStyles(colors);
   const { id } = useLocalSearchParams<{ id: string }>();
   const [deck, setDeck] = useState<DeckWithCount | null>(null);
   const [items, setItems] = useState<Item[]>([]);
@@ -98,7 +102,7 @@ export default function DeckDetailScreen() {
   if (isLoading) {
     return (
       <View style={styles.loadingContainer} testID="deck-detail-screen">
-        <ActivityIndicator size="large" color="#4CAF50" />
+        <ActivityIndicator size="large" color={colors.primary} />
       </View>
     );
   }
@@ -171,83 +175,85 @@ export default function DeckDetailScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-  },
-  loadingContainer: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#fff",
-  },
-  errorContainer: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#fff",
-  },
-  errorText: {
-    fontSize: 16,
-    color: "#666",
-  },
-  header: {
-    padding: 20,
-    borderBottomWidth: 1,
-    borderBottomColor: "#e0e0e0",
-  },
-  headerTop: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginBottom: 4,
-  },
-  editButton: {
-    padding: 8,
-  },
-  editButtonPressed: {
-    opacity: 0.7,
-  },
-  editButtonText: {
-    fontSize: 20,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: "bold",
-    color: "#333",
-    flex: 1,
-  },
-  itemCount: {
-    fontSize: 16,
-    color: "#666",
-  },
-  listContainer: {
-    flex: 1,
-  },
-  fab: {
-    position: "absolute",
-    right: 20,
-    bottom: 20,
-    width: 56,
-    height: 56,
-    borderRadius: 28,
-    backgroundColor: "#4CAF50",
-    justifyContent: "center",
-    alignItems: "center",
-    elevation: 4,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.25,
-    shadowRadius: 4,
-  },
-  fabPressed: {
-    backgroundColor: "#388E3C",
-  },
-  fabText: {
-    fontSize: 28,
-    color: "#fff",
-    fontWeight: "300",
-    marginTop: -2,
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: colors.background,
+    },
+    loadingContainer: {
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center",
+      backgroundColor: colors.background,
+    },
+    errorContainer: {
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center",
+      backgroundColor: colors.background,
+    },
+    errorText: {
+      fontSize: 16,
+      color: colors.textSecondary,
+    },
+    header: {
+      padding: 20,
+      borderBottomWidth: 1,
+      borderBottomColor: colors.border,
+    },
+    headerTop: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+      alignItems: "center",
+      marginBottom: 4,
+    },
+    editButton: {
+      padding: 8,
+    },
+    editButtonPressed: {
+      opacity: 0.7,
+    },
+    editButtonText: {
+      fontSize: 20,
+    },
+    title: {
+      fontSize: 24,
+      fontWeight: "bold",
+      color: colors.textPrimary,
+      flex: 1,
+    },
+    itemCount: {
+      fontSize: 16,
+      color: colors.textSecondary,
+    },
+    listContainer: {
+      flex: 1,
+    },
+    fab: {
+      position: "absolute",
+      right: 20,
+      bottom: 20,
+      width: 56,
+      height: 56,
+      borderRadius: 28,
+      backgroundColor: colors.primary,
+      justifyContent: "center",
+      alignItems: "center",
+      elevation: 4,
+      shadowColor: colors.shadow,
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.25,
+      shadowRadius: 4,
+    },
+    fabPressed: {
+      backgroundColor: colors.primaryPressed,
+    },
+    fabText: {
+      fontSize: 28,
+      color: colors.textOnPrimary,
+      fontWeight: "300",
+      marginTop: -2,
+    },
+  });
+}
