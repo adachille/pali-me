@@ -9,6 +9,7 @@ import {
 import { deckRepository, studyRepository, useSQLiteContext } from "@/db";
 import type { DeckStudyDirection, StudyCard as StudyCardType } from "@/db/types";
 import { Ionicons } from "@expo/vector-icons";
+import * as Haptics from "expo-haptics";
 import { useLocalSearchParams, useNavigation, useRouter } from "expo-router";
 import { useCallback, useEffect, useState } from "react";
 import {
@@ -169,6 +170,13 @@ export default function StudyScreen() {
       const correct = checkAnswer(answer, correctAnswer);
       setIsCorrect(correct);
       setShowFeedback(true);
+
+      // Haptic feedback
+      if (correct) {
+        Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+      } else {
+        Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
+      }
 
       // Update stats
       setStats((prev) => ({
