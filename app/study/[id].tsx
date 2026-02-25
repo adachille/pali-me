@@ -75,6 +75,7 @@ export default function StudyScreen() {
   // Session state
   const [isComplete, setIsComplete] = useState(false);
   const [stats, setStats] = useState({ total: 0, correct: 0 });
+  const [totalCards, setTotalCards] = useState(0); // Original card count for progress
 
   // Settings state
   const [direction, setDirection] = useState<DeckStudyDirection>("random");
@@ -99,6 +100,7 @@ export default function StudyScreen() {
           : await studyRepository.getDueCardsForDeck(db, deckId, deck.studyDirection);
 
         setCards(loadedCards);
+        setTotalCards(loadedCards.length);
         setCurrentIndex(0);
         setShowFeedback(false);
         setUserAnswer("");
@@ -226,12 +228,35 @@ export default function StudyScreen() {
       }
       setCurrentIndex(nextIndex);
     } else {
-      // Standard mode: check if complete
-      if (currentIndex + 1 >= cards.length) {
+      // Standard mode
+      const remainingCards = cards.filter((_, i) => i !== currentIndex);
+
+      // Correct with no cards left: complete the session.
+      if (isCorrect && remainingCards.length === 0) {
         setIsComplete(true);
-      } else {
-        setCurrentIndex(currentIndex + 1);
+        return;
       }
+
+      // Incorrect with a single card: keep showing the same card.
+      if (!isCorrect && remainingCards.length === 0) {
+        setCurrentIndex(0);
+        return;
+      }
+
+      let nextCards = remainingCards;
+      if (!isCorrect) {
+        // Reinsert incorrect card at a random position in the queue.
+        const insertPosition = Math.floor(Math.random() * (remainingCards.length + 1));
+        nextCards = [
+          ...remainingCards.slice(0, insertPosition),
+          currentCard,
+          ...remainingCards.slice(insertPosition),
+        ];
+      }
+
+      setCards(nextCards);
+      // Keep same index (next card shifts into this position), wrapping if needed.
+      setCurrentIndex(currentIndex >= nextCards.length ? 0 : currentIndex);
     }
   }, [db, currentCard, isCorrect, userAnswer, endlessMode, currentIndex, cards]);
 
@@ -351,7 +376,11 @@ export default function StudyScreen() {
     >
       {/* Progress */}
       <View style={styles.progressContainer}>
-        <StudyProgress current={currentIndex + 1} total={cards.length} endlessMode={endlessMode} />
+        <StudyProgress
+          current={totalCards - cards.length + 1}
+          total={totalCards}
+          endlessMode={endlessMode}
+        />
       </View>
 
       {/* Card */}
