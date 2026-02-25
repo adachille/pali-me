@@ -503,10 +503,10 @@ Migrations run automatically on app startup via `migrateDbIfNeeded()` in [db/dat
 
 ### Migration History
 
-| Version | Change | SQL |
-|---------|--------|-----|
-| 0 → 1 | Initial schema (items, study_states, decks, deck_items) | `CREATE TABLE ...` |
-| 1 → 2 | Add study direction preference to decks | `ALTER TABLE decks ADD COLUMN study_direction TEXT DEFAULT 'random'` |
+| Version | Change                                                  | SQL                                                                  |
+| ------- | ------------------------------------------------------- | -------------------------------------------------------------------- |
+| 0 → 1   | Initial schema (items, study_states, decks, deck_items) | `CREATE TABLE ...`                                                   |
+| 1 → 2   | Add study direction preference to decks                 | `ALTER TABLE decks ADD COLUMN study_direction TEXT DEFAULT 'random'` |
 
 ### Adding New Migrations
 

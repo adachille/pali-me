@@ -102,7 +102,11 @@ export default function StudyScreen() {
 
         // Check if deck has any cards at all (for empty deck vs no cards due)
         if (!endlessMode) {
-          const allCards = await studyRepository.getAllCardsForDeck(db, deckId, deck.studyDirection);
+          const allCards = await studyRepository.getAllCardsForDeck(
+            db,
+            deckId,
+            deck.studyDirection
+          );
           setDeckHasCards(allCards.length > 0);
         } else {
           setDeckHasCards(loadedCards.length > 0);
@@ -137,7 +141,7 @@ export default function StudyScreen() {
           onPress={() => setSettingsVisible(true)}
           hitSlop={8}
           testID="study-settings-button"
-          style={{alignItems: "center", width: 48, height: 24}}
+          style={{ alignItems: "center", width: 48, height: 24 }}
         >
           <Ionicons name="settings-outline" size={24} color="#007AFF" />
         </Pressable>

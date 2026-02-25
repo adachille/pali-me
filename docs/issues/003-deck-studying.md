@@ -82,10 +82,10 @@ A focused flashcard study interface.
 
 Accessible via gear icon in study screen header.
 
-| Setting | Type | Default | Options |
-|---------|------|---------|---------|
-| Study Direction | Picker | Random | Pali First, Meaning First, Random |
-| Endless Mode | Toggle | Off | On/Off |
+| Setting         | Type   | Default | Options                           |
+| --------------- | ------ | ------- | --------------------------------- |
+| Study Direction | Picker | Random  | Pali First, Meaning First, Random |
+| Endless Mode    | Toggle | Off     | On/Off                            |
 
 **Behavior:**
 
@@ -311,8 +311,8 @@ Update deck cards to show study and edit action icons.
 type DeckCardProps = {
   deck: DeckWithCount;
   onPress: (deck: DeckWithCount) => void;
-  onStudyPress: (deck: DeckWithCount) => void;  // New
-  onEditPress: (deck: DeckWithCount) => void;   // New
+  onStudyPress: (deck: DeckWithCount) => void; // New
+  onEditPress: (deck: DeckWithCount) => void; // New
 };
 ```
 
@@ -366,7 +366,7 @@ components/study/
 ```typescript
 type StudyCardProps = {
   card: StudyCard;
-  showAnswer: boolean;  // Whether to reveal the answer side
+  showAnswer: boolean; // Whether to reveal the answer side
 };
 ```
 
@@ -386,7 +386,7 @@ type FeedbackDisplayProps = {
   userAnswer: string;
   correctAnswer: string;
   isCorrect: boolean;
-  onMarkCorrect: () => void;  // Override button
+  onMarkCorrect: () => void; // Override button
   onNext: () => void;
 };
 ```
@@ -396,7 +396,7 @@ type FeedbackDisplayProps = {
 ```typescript
 type StudySettingsModalProps = {
   visible: boolean;
-  direction: 'pali_first' | 'meaning_first' | 'random';
+  direction: "pali_first" | "meaning_first" | "random";
   endlessMode: boolean;
   onDirectionChange: (direction: string) => void;
   onEndlessModeChange: (enabled: boolean) => void;
@@ -425,11 +425,11 @@ app/study/
 ```typescript
 const [cards, setCards] = useState<StudyCard[]>([]);
 const [currentIndex, setCurrentIndex] = useState(0);
-const [userAnswer, setUserAnswer] = useState('');
+const [userAnswer, setUserAnswer] = useState("");
 const [showFeedback, setShowFeedback] = useState(false);
 const [isCorrect, setIsCorrect] = useState(false);
 const [isComplete, setIsComplete] = useState(false);
-const [direction, setDirection] = useState<string>('random');
+const [direction, setDirection] = useState<string>("random");
 const [endlessMode, setEndlessMode] = useState(false);
 const [settingsVisible, setSettingsVisible] = useState(false);
 
@@ -441,10 +441,7 @@ const [stats, setStats] = useState({ total: 0, correct: 0 });
 
 ```typescript
 const normalizeAnswer = (text: string): string => {
-  return text
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, ' ');
+  return text.toLowerCase().trim().replace(/\s+/g, " ");
 };
 
 const checkAnswer = (userAnswer: string, correctAnswer: string): boolean => {
@@ -466,17 +463,13 @@ const checkAnswer = (userAnswer: string, correctAnswer: string): boolean => {
 
 ```typescript
 useEffect(() => {
-  const unsubscribe = navigation.addListener('beforeRemove', (e) => {
+  const unsubscribe = navigation.addListener("beforeRemove", (e) => {
     if (!showFeedback && currentIndex > 0) {
       e.preventDefault();
-      Alert.alert(
-        'Leave Study Session?',
-        'Your progress will be saved.',
-        [
-          { text: 'Stay', style: 'cancel' },
-          { text: 'Leave', style: 'destructive', onPress: () => navigation.dispatch(e.data.action) }
-        ]
-      );
+      Alert.alert("Leave Study Session?", "Your progress will be saved.", [
+        { text: "Stay", style: "cancel" },
+        { text: "Leave", style: "destructive", onPress: () => navigation.dispatch(e.data.action) },
+      ]);
     }
   });
   return unsubscribe;
@@ -507,7 +500,7 @@ const handleNextCard = async () => {
   }
 
   // Reset for next card
-  setUserAnswer('');
+  setUserAnswer("");
   setShowFeedback(false);
 };
 ```
@@ -531,7 +524,7 @@ useEffect(() => {
   const loadDeck = async () => {
     const deck = await deckRepository.getById(db, deckId);
     if (deck) {
-      setDirection(deck.studyDirection || 'random');
+      setDirection(deck.studyDirection || "random");
     }
   };
   loadDeck();
@@ -592,14 +585,14 @@ app/study/__tests__/[id].test.tsx
 
 ### Key Design Decisions
 
-| Decision | Choice | Rationale |
-|----------|--------|-----------|
-| Answer input | Text input (not multiple choice) | More rigorous learning; matches user request |
-| Override capability | "Mark as Correct" button | Gives user flexibility for partial matches |
-| Interval cap | 30 days max | Prevents cards from disappearing too long |
-| Endless mode | Session-only | Keeps default behavior simple |
-| Direction preference | Per-deck persistence | Different decks may need different study styles |
-| Progress indicator | Simple "3/12" format | Clean, non-distracting |
+| Decision             | Choice                           | Rationale                                       |
+| -------------------- | -------------------------------- | ----------------------------------------------- |
+| Answer input         | Text input (not multiple choice) | More rigorous learning; matches user request    |
+| Override capability  | "Mark as Correct" button         | Gives user flexibility for partial matches      |
+| Interval cap         | 30 days max                      | Prevents cards from disappearing too long       |
+| Endless mode         | Session-only                     | Keeps default behavior simple                   |
+| Direction preference | Per-deck persistence             | Different decks may need different study styles |
+| Progress indicator   | Simple "3/12" format             | Clean, non-distracting                          |
 
 ---
 

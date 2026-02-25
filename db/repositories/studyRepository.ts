@@ -1,7 +1,13 @@
 // Repository for study session operations
 
 import type { SQLiteDatabase } from "expo-sqlite";
-import type { DeckStudyDirection, ItemType, StudyCard, StudyCardRow, StudyDirection } from "../types";
+import type {
+  DeckStudyDirection,
+  ItemType,
+  StudyCard,
+  StudyCardRow,
+  StudyDirection,
+} from "../types";
 import { parseSqliteDate } from "../utils";
 
 // ============================================================================
