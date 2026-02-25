@@ -101,4 +101,30 @@ export const DarkColors = {
   overlay: "rgba(0, 0, 0, 0.7)",
 } as const;
 
-export type ThemeColors = typeof LightColors;
+export type ThemeColors = {
+  background: string;
+  surface: string;
+  surfaceVariant: string;
+  border: string;
+  textPrimary: string;
+  textSecondary: string;
+  textHint: string;
+  textOnPrimary: string;
+  primary: string;
+  primaryPressed: string;
+  primaryLight: string;
+  primaryDisabled: string;
+  secondary: string;
+  secondaryPressed: string;
+  error: string;
+  errorBackground: string;
+  disabled: string;
+  shadow: string;
+  tabBarActive: string;
+  itemTypeWord: string;
+  itemTypePrefix: string;
+  itemTypeSuffix: string;
+  itemTypeRoot: string;
+  itemTypeParticle: string;
+  overlay: string;
+};
