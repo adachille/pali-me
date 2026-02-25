@@ -4,7 +4,7 @@ SQLite database schema for the Pali Learning App using `expo-sqlite`.
 
 ## Overview
 
-**Database**: `pali.db` (Schema v1)
+**Database**: `pali.db` (Schema v2)
 
 The database provides offline-first storage for:
 
@@ -24,7 +24,7 @@ The database provides offline-first storage for:
 ```sql
 PRAGMA foreign_keys = ON;       -- Enforce foreign key constraints
 PRAGMA journal_mode = WAL;      -- Write-Ahead Logging for better concurrency
-PRAGMA user_version = 1;        -- Current schema version
+PRAGMA user_version = 2;        -- Current schema version
 ```
 
 ## Schema
@@ -150,23 +150,50 @@ type StudyState = {
 
 ### `decks`
 
-Named collections for organizing items.
+Named collections for organizing items, with per-deck study direction preference.
 
 ```sql
 CREATE TABLE decks (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT NOT NULL,
-  created_at TEXT NOT NULL DEFAULT (datetime('now'))
+  created_at TEXT NOT NULL DEFAULT (datetime('now')),
+  study_direction TEXT DEFAULT 'random'  -- pali_first | meaning_first | random
 );
 
 -- Default deck created on initialization (id=1)
 INSERT OR IGNORE INTO decks (id, name) VALUES (1, 'All');
 ```
 
+**Study Direction** (`study_direction`): Controls which card direction is shown during study sessions:
+
+- `random` (default) — Both `pali_to_meaning` and `meaning_to_pali` cards are included
+- `pali_first` — Only `pali_to_meaning` cards (show Pali, recall meaning)
+- `meaning_first` — Only `meaning_to_pali` cards (show meaning, recall Pali)
+
 **Constants**:
 
 ```typescript
 export const DEFAULT_DECK_ID = 1;
+```
+
+**TypeScript Types**:
+
+```typescript
+type DeckStudyDirection = "pali_first" | "meaning_first" | "random";
+
+type DeckRow = {
+  id: number;
+  name: string;
+  created_at: string;
+  study_direction: string | null;
+};
+
+type Deck = {
+  id: number;
+  name: string;
+  createdAt: Date;
+  studyDirection: DeckStudyDirection;
+};
 ```
 
 ### `deck_items`
@@ -211,25 +238,47 @@ CREATE TABLE deck_items (
 - **Delete an item**: Automatically deletes all `study_states` and `deck_items` for that item
 - **Delete a deck**: Automatically deletes all `deck_items` for that deck (items remain)
 
+### Study Cards (Derived Type)
+
+The `StudyCard` type combines item data with study state for use in study sessions. It is not a database table but a query result type.
+
+```typescript
+type StudyCard = {
+  studyStateId: number;
+  itemId: number;
+  direction: StudyDirection;
+  pali: string;
+  meaning: string;
+  type: ItemType;
+  interval: number;
+  ease: number;
+  due: Date;
+};
+```
+
 ## Common Queries
 
-### Get All Due Cards for Review
+### Get Due Cards for a Deck
 
 ```sql
 SELECT
-  items.*,
-  study_states.direction,
-  study_states.interval,
-  study_states.ease,
-  study_states.due
-FROM items
-JOIN study_states ON items.id = study_states.item_id
-WHERE
-  study_states.direction = 'pali_to_meaning'
-  AND study_states.due <= datetime('now')
-  AND study_states.suspended = 0
-ORDER BY study_states.due ASC
-LIMIT 20;
+  ss.id as study_state_id,
+  ss.item_id,
+  ss.direction,
+  i.pali,
+  i.meaning,
+  i.type,
+  ss.interval,
+  ss.ease,
+  ss.due
+FROM study_states ss
+JOIN items i ON ss.item_id = i.id
+JOIN deck_items di ON i.id = di.item_id
+WHERE di.deck_id = ?
+  AND ss.due <= datetime('now')
+  AND ss.suspended = 0
+  AND (? IS NULL OR ss.direction = ?)  -- Optional direction filter
+ORDER BY RANDOM();
 ```
 
 ### Get All Items in a Deck
@@ -278,13 +327,16 @@ import {
   useSQLiteContext,
   itemRepository,
   deckRepository,
+  studyRepository,
   DEFAULT_DECK_ID,
   type Item,
   type ItemRow,
   type StudyState,
+  type StudyCard,
   type Deck,
   type ItemType,
   type StudyDirection,
+  type DeckStudyDirection,
 } from "@/db";
 ```
 
@@ -364,6 +416,13 @@ function MyComponent() {
 }
 ```
 
+**Additional Deck Operations**:
+
+```typescript
+// Update a deck's study direction preference
+await deckRepository.updateStudyDirection(db, 2, "pali_first");
+```
+
 **Sort Options** (`SortOption`): `name_asc`, `name_desc`, `date_asc`, `date_desc`, `count_asc`, `count_desc`
 
 **Validation Rules**:
@@ -372,6 +431,31 @@ function MyComponent() {
 - The reserved name "All" (case-insensitive) cannot be used
 - Deck names must be unique (case-insensitive)
 - The default "All" deck (id=1) cannot be renamed, deleted, or have items removed
+
+#### Study Repository
+
+```typescript
+import { useSQLiteContext, studyRepository } from "@/db";
+
+function MyComponent() {
+  const db = useSQLiteContext();
+
+  // Get due cards for a deck (filtered by due date, respects direction preference)
+  const dueCards = await studyRepository.getDueCardsForDeck(db, deckId, "random");
+
+  // Get all cards for a deck (endless mode, ignores due date)
+  const allCards = await studyRepository.getAllCardsForDeck(db, deckId, "pali_first");
+
+  // Record a review result (updates interval, ease, and due date)
+  await studyRepository.recordReview(db, studyStateId, true); // correct
+  await studyRepository.recordReview(db, studyStateId, false); // incorrect
+}
+```
+
+**Review Algorithm**:
+
+- **Correct**: `interval = min(max(1, interval * ease), 30)`, due date advanced by new interval
+- **Incorrect**: `interval = 0`, `ease = max(ease - 0.2, 1.3)`, due date set to now
 
 ### Direct Database Access
 
@@ -413,32 +497,47 @@ function rowToItem(row: ItemRow): Item {
 
 ## Migration System
 
-**Current Version**: 1
+**Current Version**: 2
 
 Migrations run automatically on app startup via `migrateDbIfNeeded()` in [db/database.ts](../db/database.ts).
 
+### Migration History
+
+| Version | Change | SQL |
+|---------|--------|-----|
+| 0 → 1 | Initial schema (items, study_states, decks, deck_items) | `CREATE TABLE ...` |
+| 1 → 2 | Add study direction preference to decks | `ALTER TABLE decks ADD COLUMN study_direction TEXT DEFAULT 'random'` |
+
 ### Adding New Migrations
 
-To add a migration (e.g., version 1 → 2):
+To add a migration (e.g., version 2 → 3):
 
 1. **Update schema version** in [db/schema.ts](../db/schema.ts):
 
    ```typescript
-   export const SCHEMA_VERSION = 2;
+   export const SCHEMA_VERSION = 3;
    ```
 
-2. **Add migration logic** in [db/database.ts](../db/database.ts):
+2. **Add migration SQL** in [db/schema.ts](../db/schema.ts):
 
    ```typescript
-   if (version === 1) {
-     console.log("[DB] Running migration 1 -> 2: Add example field");
-     await db.execAsync("ALTER TABLE items ADD COLUMN example TEXT");
-     version = 2;
-     console.log("[DB] Migration 1 -> 2 completed");
+   export const MIGRATION_ADD_NEW_FIELD = `
+     ALTER TABLE items ADD COLUMN example TEXT
+   `;
+   ```
+
+3. **Add migration logic** in [db/database.ts](../db/database.ts):
+
+   ```typescript
+   if (version === 2) {
+     console.log("[DB] Running migration 2 -> 3: Add example field");
+     await db.execAsync(MIGRATION_ADD_NEW_FIELD);
+     version = 3;
+     console.log("[DB] Migration 2 -> 3 completed");
    }
    ```
 
-3. **Update types** in [db/types.ts](../db/types.ts) if schema changed
+4. **Update types** in [db/types.ts](../db/types.ts) if schema changed
 
 ### Migration Best Practices
 
@@ -466,7 +565,7 @@ const filepath = await exportDatabaseAsJson(db);
 ```json
 {
   "exportedAt": "2026-02-20T12:00:00.000Z",
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "data": {
     "items": [...],
     "studyStates": [...],
@@ -500,13 +599,14 @@ const result = await importDatabaseFromJson(db);
 db/
 ├── index.ts              # Main exports, single import point
 ├── types.ts              # TypeScript type definitions
-├── schema.ts             # SQL schema definitions and constants (DEFAULT_DECK_ID)
+├── schema.ts             # SQL schema definitions, constants, and migration SQL
 ├── database.ts           # Migration logic and initialization
 ├── utils.ts              # Utilities (parseSqliteDate for UTC datetime handling)
 └── repositories/
     ├── index.ts           # Repository exports
     ├── itemRepository.ts  # Item CRUD with auto study state creation
-    ├── deckRepository.ts  # Deck CRUD and deck-item management
+    ├── deckRepository.ts  # Deck CRUD, deck-item management, study direction
+    ├── studyRepository.ts # Study session queries and review recording
     └── exportRepository.ts # JSON export/import of full database
 
 app/
@@ -515,5 +615,5 @@ app/
 
 ---
 
-**Schema Version**: 1
-**Last Updated**: 2026-02-24
+**Schema Version**: 2
+**Last Updated**: 2026-02-25

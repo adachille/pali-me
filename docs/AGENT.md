@@ -56,6 +56,8 @@ The app uses Expo Router with file-based routing. Routes are defined in the `app
 - `app/deck/_layout.tsx` - Deck stack layout
 - `app/deck/new.tsx` - Create new deck screen
 - `app/deck/[id].tsx` - Deck detail screen (view/manage cards in a deck)
+- `app/study/_layout.tsx` - Study session stack layout
+- `app/study/[id].tsx` - Study session screen (flashcard review with spaced repetition)
 
 The router is configured with:
 
@@ -75,6 +77,7 @@ The app uses SQLite via `expo-sqlite` for local data storage:
 - **db/types.ts** - TypeScript types for database entities
 - **db/repositories/itemRepository.ts** - CRUD operations for items (search, create, update, delete)
 - **db/repositories/deckRepository.ts** - CRUD for decks and deck-item associations (create, update, delete decks; add/remove cards)
+- **db/repositories/studyRepository.ts** - Study session logic (get due/all cards for a deck, record reviews, update spaced repetition state)
 - **db/repositories/exportRepository.ts** - JSON export/import of all database tables (used by Settings screen)
 - **db/utils.ts** - Utility for parsing SQLite datetime strings into JS Date objects (handles UTC timezone)
 - See `docs/DATABASE.md` for detailed database documentation
@@ -135,6 +138,15 @@ Reusable UI components in `components/decks/`:
 - **DeckItemList** - List of cards in a deck with swipe-to-remove
 - **DeckSortPicker** - Picker for deck sort order
 - **AddItemsModal** - Modal for searching and adding items to a deck
+
+Reusable UI components in `components/study/`:
+
+- **StudyCard** - Displays the current flashcard (prompt and answer)
+- **AnswerInput** - Text input for typing study answers
+- **FeedbackDisplay** - Shows correct/incorrect feedback with "Mark as Correct" override
+- **StudyProgress** - Progress indicator for the study session
+- **StudyCompletion** - Session completion summary with stats
+- **StudySettingsModal** - Modal for study direction and endless mode settings
 
 ## Key Dependencies
 
