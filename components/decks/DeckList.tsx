@@ -12,6 +12,8 @@ type DeckListProps = {
   onSearchChange: (query: string) => void;
   onSortChange: (sort: SortOption) => void;
   onDeckPress: (deck: DeckWithCount) => void;
+  onStudyPress?: (deck: DeckWithCount) => void;
+  onEditPress?: (deck: DeckWithCount) => void;
   onCreatePress: () => void;
 };
 
@@ -22,11 +24,20 @@ export function DeckList({
   onSearchChange,
   onSortChange,
   onDeckPress,
+  onStudyPress,
+  onEditPress,
   onCreatePress,
 }: DeckListProps) {
   const renderItem: ListRenderItem<DeckWithCount> = useCallback(
-    ({ item }) => <DeckCard deck={item} onPress={onDeckPress} />,
-    [onDeckPress]
+    ({ item }) => (
+      <DeckCard
+        deck={item}
+        onPress={onDeckPress}
+        onStudyPress={onStudyPress}
+        onEditPress={onEditPress}
+      />
+    ),
+    [onDeckPress, onStudyPress, onEditPress]
   );
 
   const keyExtractor = useCallback((item: DeckWithCount) => String(item.id), []);

@@ -57,6 +57,21 @@ export default function HomeScreen() {
     [router]
   );
 
+  const handleStudyPress = useCallback(
+    (deck: DeckWithCount) => {
+      // Route will be created in Phase 4
+      router.push(`/study/${deck.id}` as `/deck/${number}`);
+    },
+    [router]
+  );
+
+  const handleEditPress = useCallback(
+    (deck: DeckWithCount) => {
+      router.push(`/deck/${deck.id}`);
+    },
+    [router]
+  );
+
   const handleCreatePress = useCallback(() => {
     router.push("/deck/new");
   }, [router]);
@@ -94,6 +109,8 @@ export default function HomeScreen() {
         onSearchChange={handleSearchChange}
         onSortChange={handleSortChange}
         onDeckPress={handleDeckPress}
+        onStudyPress={handleStudyPress}
+        onEditPress={handleEditPress}
         onCreatePress={handleCreatePress}
       />
       <Pressable
