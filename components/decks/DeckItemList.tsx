@@ -1,6 +1,7 @@
 import type { Item } from "@/db";
 import type { ThemeColors } from "@/constants/theme";
 import { useThemeColors } from "@/hooks/useThemeColors";
+import { getTypeColor } from "@/components/getTypeColor";
 import { useCallback } from "react";
 import { FlatList, Pressable, StyleSheet, Text, View, type ListRenderItem } from "react-native";
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
@@ -19,17 +20,6 @@ type DeckItemListProps = {
   onAddPress: () => void;
   isDefaultDeck?: boolean;
 };
-
-function getTypeColor(colors: ThemeColors, type: string): string {
-  const map: Record<string, string> = {
-    word: colors.itemTypeWord,
-    prefix: colors.itemTypePrefix,
-    suffix: colors.itemTypeSuffix,
-    root: colors.itemTypeRoot,
-    particle: colors.itemTypeParticle,
-  };
-  return map[type] ?? colors.disabled;
-}
 
 const SWIPE_THRESHOLD = -80;
 

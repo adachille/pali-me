@@ -1,6 +1,7 @@
 import { deckRepository, useSQLiteContext, type Item } from "@/db";
 import type { ThemeColors } from "@/constants/theme";
 import { useThemeColors } from "@/hooks/useThemeColors";
+import { getTypeColor } from "@/components/getTypeColor";
 import { useCallback, useEffect, useState } from "react";
 import {
   ActivityIndicator,
@@ -21,17 +22,6 @@ type AddItemsModalProps = {
   onClose: () => void;
   onItemsAdded: () => void;
 };
-
-function getTypeColor(colors: ThemeColors, type: string): string {
-  const map: Record<string, string> = {
-    word: colors.itemTypeWord,
-    prefix: colors.itemTypePrefix,
-    suffix: colors.itemTypeSuffix,
-    root: colors.itemTypeRoot,
-    particle: colors.itemTypeParticle,
-  };
-  return map[type] ?? colors.disabled;
-}
 
 function SelectableItemCard({
   item,

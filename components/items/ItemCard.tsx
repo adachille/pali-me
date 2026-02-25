@@ -1,6 +1,7 @@
 import type { Item } from "@/db";
 import type { ThemeColors } from "@/constants/theme";
 import { useThemeColors } from "@/hooks/useThemeColors";
+import { getTypeColor } from "@/components/getTypeColor";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 type ItemCardProps = {
@@ -8,22 +9,10 @@ type ItemCardProps = {
   onPress: (item: Item) => void;
 };
 
-function getTypeColor(colors: ThemeColors, type: string): string {
-  const map: Record<string, string> = {
-    word: colors.itemTypeWord,
-    prefix: colors.itemTypePrefix,
-    suffix: colors.itemTypeSuffix,
-    root: colors.itemTypeRoot,
-    particle: colors.itemTypeParticle,
-  };
-  return map[type] ?? colors.disabled;
-}
-
 export function ItemCard({ item, onPress }: ItemCardProps) {
   const colors = useThemeColors();
   const styles = createStyles(colors);
   const badgeColor = getTypeColor(colors, item.type);
-
   return (
     <Pressable
       style={({ pressed }) => [styles.container, pressed && styles.pressed]}
