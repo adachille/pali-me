@@ -76,6 +76,7 @@ export default function StudyScreen() {
   const [isComplete, setIsComplete] = useState(false);
   const [stats, setStats] = useState({ total: 0, correct: 0 });
   const [totalCards, setTotalCards] = useState(0); // Original card count for progress
+  const [deckHasCards, setDeckHasCards] = useState(true); // Whether deck has any cards at all
 
   // Settings state
   const [direction, setDirection] = useState<DeckStudyDirection>("random");
@@ -98,6 +99,14 @@ export default function StudyScreen() {
         const loadedCards = endlessMode
           ? await studyRepository.getAllCardsForDeck(db, deckId, deck.studyDirection)
           : await studyRepository.getDueCardsForDeck(db, deckId, deck.studyDirection);
+
+        // Check if deck has any cards at all (for empty deck vs no cards due)
+        if (!endlessMode) {
+          const allCards = await studyRepository.getAllCardsForDeck(db, deckId, deck.studyDirection);
+          setDeckHasCards(allCards.length > 0);
+        } else {
+          setDeckHasCards(loadedCards.length > 0);
+        }
 
         setCards(loadedCards);
         setTotalCards(loadedCards.length);
@@ -309,41 +318,45 @@ export default function StudyScreen() {
     );
   }
 
-  // No cards due
+  // No cards in deck - show empty deck message
+  if (!deckHasCards) {
+    return (
+      <View style={styles.emptyContainer} testID="study-screen-empty-deck">
+        <Text style={styles.emptyEmoji}>📚</Text>
+        <Text style={styles.emptyTitle}>No cards yet</Text>
+        <Text style={styles.emptySubtitle}>Add some cards to this deck to start studying.</Text>
+        <Pressable
+          style={({ pressed }) => [styles.emptyButton, pressed && styles.emptyButtonPressed]}
+          onPress={handleBackToHome}
+          testID="empty-back-button"
+        >
+          <Text style={styles.emptyButtonText}>Back to Home</Text>
+        </Pressable>
+      </View>
+    );
+  }
+
+  // No cards due - show "all caught up" message
   if (cards.length === 0 && !isComplete) {
     return (
       <View style={styles.emptyContainer} testID="study-screen-empty">
         <Text style={styles.emptyEmoji}>✨</Text>
         <Text style={styles.emptyTitle}>All caught up!</Text>
-        <Text style={styles.emptySubtitle}>
-          {endlessMode ? "No cards in this deck yet." : "No cards are due for review right now."}
-        </Text>
+        <Text style={styles.emptySubtitle}>No cards are due for review right now.</Text>
         <Pressable
           style={({ pressed }) => [styles.emptyButton, pressed && styles.emptyButtonPressed]}
-          onPress={() => setSettingsVisible(true)}
-          testID="empty-settings-button"
+          onPress={() => handleEndlessModeChange(true)}
+          testID="empty-endless-button"
         >
-          <Text style={styles.emptyButtonText}>
-            {endlessMode ? "Back to Home" : "Try Endless Mode"}
-          </Text>
+          <Text style={styles.emptyButtonText}>Try Endless Mode</Text>
         </Pressable>
-        {!endlessMode && (
-          <Pressable
-            style={({ pressed }) => [styles.backLink, pressed && styles.backLinkPressed]}
-            onPress={handleBackToHome}
-            testID="empty-back-button"
-          >
-            <Text style={styles.backLinkText}>Back to Home</Text>
-          </Pressable>
-        )}
-        <StudySettingsModal
-          visible={settingsVisible}
-          direction={direction}
-          endlessMode={endlessMode}
-          onDirectionChange={handleDirectionChange}
-          onEndlessModeChange={handleEndlessModeChange}
-          onClose={() => setSettingsVisible(false)}
-        />
+        <Pressable
+          style={({ pressed }) => [styles.backLink, pressed && styles.backLinkPressed]}
+          onPress={handleBackToHome}
+          testID="empty-back-button"
+        >
+          <Text style={styles.backLinkText}>Back to Home</Text>
+        </Pressable>
       </View>
     );
   }
@@ -377,7 +390,7 @@ export default function StudyScreen() {
       {/* Progress */}
       <View style={styles.progressContainer}>
         <StudyProgress
-          current={totalCards - cards.length + 1}
+          current={Math.min(stats.correct + 1, totalCards)}
           total={totalCards}
           endlessMode={endlessMode}
         />
