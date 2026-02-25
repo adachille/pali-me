@@ -20,6 +20,16 @@ function rowToItem(row: ItemRow): Item {
 }
 
 /**
+ * Parses study direction from database, defaulting to 'random'
+ */
+function parseStudyDirection(value: string | null): "pali_first" | "meaning_first" | "random" {
+  if (value === "pali_first" || value === "meaning_first" || value === "random") {
+    return value;
+  }
+  return "random";
+}
+
+/**
  * Converts a raw database row to an application-level Deck
  */
 function rowToDeck(row: DeckRow): Deck {
@@ -27,6 +37,7 @@ function rowToDeck(row: DeckRow): Deck {
     id: row.id,
     name: row.name,
     createdAt: parseSqliteDate(row.created_at),
+    studyDirection: parseStudyDirection(row.study_direction),
   };
 }
 

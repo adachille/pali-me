@@ -59,8 +59,7 @@ export default function HomeScreen() {
 
   const handleStudyPress = useCallback(
     (deck: DeckWithCount) => {
-      // Route will be created in Phase 4
-      router.push(`/study/${deck.id}` as `/deck/${number}`);
+      router.push(`/study/${deck.id}` as `/study/${string}`);
     },
     [router]
   );
