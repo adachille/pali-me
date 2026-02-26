@@ -1,4 +1,7 @@
 import type { DeckStudyDirection } from "@/db/types";
+import { useTheme } from "@/theme";
+import type { AppColors } from "@/theme";
+import { useMemo } from "react";
 import { Modal, Pressable, StyleSheet, Switch, Text, View } from "react-native";
 
 type StudySettingsModalProps = {
@@ -28,6 +31,9 @@ export function StudySettingsModal({
   onEndlessModeChange,
   onClose,
 }: StudySettingsModalProps) {
+  const { colors } = useTheme();
+  const styles = useMemo(() => makeStyles(colors), [colors]);
+
   return (
     <Modal visible={visible} transparent animationType="fade" onRequestClose={onClose}>
       <View style={styles.overlay}>
@@ -70,8 +76,8 @@ export function StudySettingsModal({
               <Switch
                 value={endlessMode}
                 onValueChange={onEndlessModeChange}
-                trackColor={{ false: "#e0e0e0", true: "#A5D6A7" }}
-                thumbColor={endlessMode ? "#4CAF50" : "#f5f5f5"}
+                trackColor={{ false: colors.border, true: colors.primaryLight }}
+                thumbColor={endlessMode ? colors.primary : colors.surfaceVariant}
                 testID="endless-mode-toggle"
               />
             </View>
@@ -90,108 +96,110 @@ export function StudySettingsModal({
   );
 }
 
-const styles = StyleSheet.create({
-  overlay: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  overlayBackground: {
-    ...StyleSheet.absoluteFillObject,
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
-  },
-  modalContent: {
-    backgroundColor: "#fff",
-    borderRadius: 16,
-    width: "85%",
-    maxWidth: 400,
-    padding: 24,
-  },
-  modalTitle: {
-    fontSize: 20,
-    fontWeight: "600",
-    color: "#333",
-    marginBottom: 20,
-  },
-  section: {
-    marginBottom: 24,
-  },
-  sectionTitle: {
-    fontSize: 14,
-    fontWeight: "600",
-    color: "#333",
-    marginBottom: 12,
-  },
-  optionRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    paddingVertical: 12,
-    paddingHorizontal: 12,
-    borderRadius: 8,
-    marginBottom: 4,
-  },
-  optionRowSelected: {
-    backgroundColor: "#E8F5E9",
-  },
-  optionRowPressed: {
-    backgroundColor: "#f5f5f5",
-  },
-  optionContent: {
-    flex: 1,
-  },
-  optionLabel: {
-    fontSize: 16,
-    fontWeight: "500",
-    color: "#333",
-  },
-  optionDescription: {
-    fontSize: 13,
-    color: "#666",
-    marginTop: 2,
-  },
-  radio: {
-    width: 20,
-    height: 20,
-    borderRadius: 10,
-    borderWidth: 2,
-    borderColor: "#ccc",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  radioSelected: {
-    borderColor: "#4CAF50",
-  },
-  radioInner: {
-    width: 10,
-    height: 10,
-    borderRadius: 5,
-    backgroundColor: "#4CAF50",
-  },
-  toggleRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    paddingVertical: 8,
-  },
-  toggleContent: {
-    flex: 1,
-  },
-  toggleDescription: {
-    fontSize: 13,
-    color: "#666",
-    marginTop: 2,
-  },
-  closeButton: {
-    backgroundColor: "#4CAF50",
-    borderRadius: 12,
-    paddingVertical: 14,
-    alignItems: "center",
-  },
-  closeButtonPressed: {
-    opacity: 0.8,
-  },
-  closeButtonText: {
-    fontSize: 16,
-    fontWeight: "600",
-    color: "#fff",
-  },
-});
+function makeStyles(colors: AppColors) {
+  return StyleSheet.create({
+    overlay: {
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    overlayBackground: {
+      ...StyleSheet.absoluteFillObject,
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+    },
+    modalContent: {
+      backgroundColor: colors.background,
+      borderRadius: 16,
+      width: "85%",
+      maxWidth: 400,
+      padding: 24,
+    },
+    modalTitle: {
+      fontSize: 20,
+      fontWeight: "600",
+      color: colors.text,
+      marginBottom: 20,
+    },
+    section: {
+      marginBottom: 24,
+    },
+    sectionTitle: {
+      fontSize: 14,
+      fontWeight: "600",
+      color: colors.text,
+      marginBottom: 12,
+    },
+    optionRow: {
+      flexDirection: "row",
+      alignItems: "center",
+      paddingVertical: 12,
+      paddingHorizontal: 12,
+      borderRadius: 8,
+      marginBottom: 4,
+    },
+    optionRowSelected: {
+      backgroundColor: colors.primarySurface,
+    },
+    optionRowPressed: {
+      backgroundColor: colors.surface,
+    },
+    optionContent: {
+      flex: 1,
+    },
+    optionLabel: {
+      fontSize: 16,
+      fontWeight: "500",
+      color: colors.text,
+    },
+    optionDescription: {
+      fontSize: 13,
+      color: colors.textSecondary,
+      marginTop: 2,
+    },
+    radio: {
+      width: 20,
+      height: 20,
+      borderRadius: 10,
+      borderWidth: 2,
+      borderColor: colors.borderSubtle,
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    radioSelected: {
+      borderColor: colors.primary,
+    },
+    radioInner: {
+      width: 10,
+      height: 10,
+      borderRadius: 5,
+      backgroundColor: colors.primary,
+    },
+    toggleRow: {
+      flexDirection: "row",
+      alignItems: "center",
+      paddingVertical: 8,
+    },
+    toggleContent: {
+      flex: 1,
+    },
+    toggleDescription: {
+      fontSize: 13,
+      color: colors.textSecondary,
+      marginTop: 2,
+    },
+    closeButton: {
+      backgroundColor: colors.primary,
+      borderRadius: 12,
+      paddingVertical: 14,
+      alignItems: "center",
+    },
+    closeButtonPressed: {
+      opacity: 0.8,
+    },
+    closeButtonText: {
+      fontSize: 16,
+      fontWeight: "600",
+      color: colors.background,
+    },
+  });
+}

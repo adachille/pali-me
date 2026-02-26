@@ -1,5 +1,8 @@
 import { DEFAULT_DECK_ID } from "@/db";
 import type { DeckWithCount } from "@/db/repositories/deckRepository";
+import { useTheme } from "@/theme";
+import type { AppColors } from "@/theme";
+import { useMemo } from "react";
 import type { GestureResponderEvent } from "react-native";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
@@ -37,6 +40,8 @@ function formatRelativeDate(date: Date): string {
 }
 
 export function DeckCard({ deck, onPress, onStudyPress, onEditPress }: DeckCardProps) {
+  const { colors } = useTheme();
+  const styles = useMemo(() => makeStyles(colors), [colors]);
   const isAllDeck = deck.id === DEFAULT_DECK_ID;
   const itemCountText = deck.itemCount === 1 ? "1 item" : `${deck.itemCount} items`;
   const normalizedName = deck.name
@@ -108,86 +113,88 @@ export function DeckCard({ deck, onPress, onStudyPress, onEditPress }: DeckCardP
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: "#fff",
-    padding: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: "#e0e0e0",
-  },
-  pressed: {
-    backgroundColor: "#f5f5f5",
-  },
-  content: {
-    flex: 1,
-    marginRight: 12,
-  },
-  nameRow: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  metaRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    marginTop: 2,
-  },
-  pinIcon: {
-    fontSize: 14,
-    color: "#4CAF50",
-    marginRight: 6,
-    fontWeight: "bold",
-  },
-  name: {
-    fontSize: 18,
-    fontWeight: "600",
-    color: "#333",
-    marginBottom: 4,
-  },
-  allDeckName: {
-    color: "#4CAF50",
-  },
-  itemCount: {
-    fontSize: 13,
-    color: "#666",
-  },
-  metaSeparator: {
-    fontSize: 13,
-    color: "#999",
-    marginHorizontal: 6,
-  },
-  date: {
-    fontSize: 13,
-    color: "#999",
-  },
-  actions: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 4,
-  },
-  actionButton: {
-    padding: 8,
-    borderRadius: 8,
-  },
-  actionButtonPressed: {
-    backgroundColor: "#f0f0f0",
-  },
-  actionIcon: {
-    fontSize: 20,
-  },
-  badge: {
-    backgroundColor: "#e0e0e0",
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 16,
-  },
-  allDeckBadge: {
-    backgroundColor: "#E8F5E9",
-  },
-  badgeText: {
-    fontSize: 13,
-    color: "#666",
-    fontWeight: "500",
-  },
-});
+function makeStyles(colors: AppColors) {
+  return StyleSheet.create({
+    container: {
+      flexDirection: "row",
+      alignItems: "center",
+      backgroundColor: colors.background,
+      padding: 16,
+      borderBottomWidth: 1,
+      borderBottomColor: colors.border,
+    },
+    pressed: {
+      backgroundColor: colors.surface,
+    },
+    content: {
+      flex: 1,
+      marginRight: 12,
+    },
+    nameRow: {
+      flexDirection: "row",
+      alignItems: "center",
+    },
+    metaRow: {
+      flexDirection: "row",
+      alignItems: "center",
+      marginTop: 2,
+    },
+    pinIcon: {
+      fontSize: 14,
+      color: colors.primary,
+      marginRight: 6,
+      fontWeight: "bold",
+    },
+    name: {
+      fontSize: 18,
+      fontWeight: "600",
+      color: colors.text,
+      marginBottom: 4,
+    },
+    allDeckName: {
+      color: colors.primary,
+    },
+    itemCount: {
+      fontSize: 13,
+      color: colors.textSecondary,
+    },
+    metaSeparator: {
+      fontSize: 13,
+      color: colors.textTertiary,
+      marginHorizontal: 6,
+    },
+    date: {
+      fontSize: 13,
+      color: colors.textTertiary,
+    },
+    actions: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 4,
+    },
+    actionButton: {
+      padding: 8,
+      borderRadius: 8,
+    },
+    actionButtonPressed: {
+      backgroundColor: colors.surfaceVariant,
+    },
+    actionIcon: {
+      fontSize: 20,
+    },
+    badge: {
+      backgroundColor: colors.border,
+      paddingHorizontal: 12,
+      paddingVertical: 6,
+      borderRadius: 16,
+    },
+    allDeckBadge: {
+      backgroundColor: colors.primarySurface,
+    },
+    badgeText: {
+      fontSize: 13,
+      color: colors.textSecondary,
+      fontWeight: "500",
+    },
+  });
+}

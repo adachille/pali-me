@@ -1,6 +1,8 @@
-import { useCallback } from "react";
+import { useCallback, useMemo } from "react";
 import { FlatList, StyleSheet, TextInput, View, type ListRenderItem } from "react-native";
 import type { Item } from "@/db";
+import { useTheme } from "@/theme";
+import type { AppColors } from "@/theme";
 import { ItemCard } from "./ItemCard";
 import { EmptyState } from "./EmptyState";
 
@@ -19,6 +21,9 @@ export function ItemList({
   onItemPress,
   onAddPress,
 }: ItemListProps) {
+  const { colors } = useTheme();
+  const styles = useMemo(() => makeStyles(colors), [colors]);
+
   const renderItem: ListRenderItem<Item> = useCallback(
     ({ item }) => <ItemCard item={item} onPress={onItemPress} />,
     [onItemPress]
@@ -34,7 +39,7 @@ export function ItemList({
         <TextInput
           style={styles.searchInput}
           placeholder="Search by Pali or meaning..."
-          placeholderTextColor="#999"
+          placeholderTextColor={colors.placeholder}
           value={searchQuery}
           onChangeText={onSearchChange}
           autoCapitalize="none"
@@ -54,27 +59,29 @@ export function ItemList({
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-  },
-  searchContainer: {
-    padding: 12,
-    backgroundColor: "#f5f5f5",
-    borderBottomWidth: 1,
-    borderBottomColor: "#e0e0e0",
-  },
-  searchInput: {
-    backgroundColor: "#fff",
-    paddingHorizontal: 16,
-    paddingVertical: 10,
-    borderRadius: 8,
-    fontSize: 16,
-    borderWidth: 1,
-    borderColor: "#e0e0e0",
-  },
-  emptyContainer: {
-    flex: 1,
-  },
-});
+function makeStyles(colors: AppColors) {
+  return StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: colors.background,
+    },
+    searchContainer: {
+      padding: 12,
+      backgroundColor: colors.surface,
+      borderBottomWidth: 1,
+      borderBottomColor: colors.border,
+    },
+    searchInput: {
+      backgroundColor: colors.background,
+      paddingHorizontal: 16,
+      paddingVertical: 10,
+      borderRadius: 8,
+      fontSize: 16,
+      borderWidth: 1,
+      borderColor: colors.border,
+    },
+    emptyContainer: {
+      flex: 1,
+    },
+  });
+}

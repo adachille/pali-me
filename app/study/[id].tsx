@@ -8,10 +8,12 @@ import {
 } from "@/components/study";
 import { deckRepository, studyRepository, useSQLiteContext } from "@/db";
 import type { DeckStudyDirection, StudyCard as StudyCardType } from "@/db/types";
+import { useTheme } from "@/theme";
+import type { AppColors } from "@/theme";
 import { Ionicons } from "@expo/vector-icons";
 import * as Haptics from "expo-haptics";
 import { useLocalSearchParams, useNavigation, useRouter } from "expo-router";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   ActivityIndicator,
   Alert,
@@ -58,6 +60,8 @@ export default function StudyScreen() {
   const db = useSQLiteContext();
   const router = useRouter();
   const navigation = useNavigation();
+  const { colors } = useTheme();
+  const styles = useMemo(() => makeStyles(colors), [colors]);
 
   // Deck info
   const [deckName, setDeckName] = useState("");
@@ -144,11 +148,11 @@ export default function StudyScreen() {
           testID="study-settings-button"
           style={{ alignItems: "center", width: 48, height: 24 }}
         >
-          <Ionicons name="settings-outline" size={24} color="#007AFF" />
+          <Ionicons name="settings-outline" size={24} color={colors.tabBarActive} />
         </Pressable>
       ),
     });
-  }, [navigation, deckName]);
+  }, [navigation, deckName, colors]);
 
   // Back button confirmation
   useEffect(() => {
@@ -327,7 +331,7 @@ export default function StudyScreen() {
   if (isLoading) {
     return (
       <View style={styles.loadingContainer} testID="study-screen-loading">
-        <ActivityIndicator size="large" color="#4CAF50" />
+        <ActivityIndicator size="large" color={colors.primary} />
       </View>
     );
   }
@@ -443,74 +447,76 @@ export default function StudyScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#f5f5f5",
-  },
-  loadingContainer: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#f5f5f5",
-  },
-  progressContainer: {
-    paddingVertical: 16,
-    alignItems: "center",
-  },
-  cardContainer: {
-    flex: 1,
-    justifyContent: "center",
-  },
-  inputContainer: {
-    paddingBottom: Platform.OS === "ios" ? 48 : 32,
-  },
-  emptyContainer: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#f5f5f5",
-    padding: 32,
-  },
-  emptyEmoji: {
-    fontSize: 64,
-    marginBottom: 16,
-  },
-  emptyTitle: {
-    fontSize: 24,
-    fontWeight: "700",
-    color: "#333",
-    marginBottom: 8,
-  },
-  emptySubtitle: {
-    fontSize: 16,
-    color: "#666",
-    textAlign: "center",
-    marginBottom: 24,
-  },
-  emptyButton: {
-    backgroundColor: "#4CAF50",
-    paddingHorizontal: 24,
-    paddingVertical: 14,
-    borderRadius: 12,
-  },
-  emptyButtonPressed: {
-    opacity: 0.8,
-  },
-  emptyButtonText: {
-    fontSize: 16,
-    fontWeight: "600",
-    color: "#fff",
-  },
-  backLink: {
-    marginTop: 16,
-    padding: 8,
-  },
-  backLinkPressed: {
-    opacity: 0.6,
-  },
-  backLinkText: {
-    fontSize: 14,
-    color: "#4CAF50",
-  },
-});
+function makeStyles(colors: AppColors) {
+  return StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: colors.surface,
+    },
+    loadingContainer: {
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center",
+      backgroundColor: colors.surface,
+    },
+    progressContainer: {
+      paddingVertical: 16,
+      alignItems: "center",
+    },
+    cardContainer: {
+      flex: 1,
+      justifyContent: "center",
+    },
+    inputContainer: {
+      paddingBottom: Platform.OS === "ios" ? 48 : 32,
+    },
+    emptyContainer: {
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center",
+      backgroundColor: colors.surface,
+      padding: 32,
+    },
+    emptyEmoji: {
+      fontSize: 64,
+      marginBottom: 16,
+    },
+    emptyTitle: {
+      fontSize: 24,
+      fontWeight: "700",
+      color: colors.text,
+      marginBottom: 8,
+    },
+    emptySubtitle: {
+      fontSize: 16,
+      color: colors.textSecondary,
+      textAlign: "center",
+      marginBottom: 24,
+    },
+    emptyButton: {
+      backgroundColor: colors.primary,
+      paddingHorizontal: 24,
+      paddingVertical: 14,
+      borderRadius: 12,
+    },
+    emptyButtonPressed: {
+      opacity: 0.8,
+    },
+    emptyButtonText: {
+      fontSize: 16,
+      fontWeight: "600",
+      color: colors.background,
+    },
+    backLink: {
+      marginTop: 16,
+      padding: 8,
+    },
+    backLinkPressed: {
+      opacity: 0.6,
+    },
+    backLinkText: {
+      fontSize: 14,
+      color: colors.primary,
+    },
+  });
+}

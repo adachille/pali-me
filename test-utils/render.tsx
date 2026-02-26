@@ -5,6 +5,9 @@ import { render, RenderOptions } from "@testing-library/react-native";
 /**
  * Custom render function that wraps components with necessary providers
  * Extend this as the app grows to include theme providers, state management, etc.
+ *
+ * Note: useTheme() uses useColorScheme() from react-native, which works in tests without
+ * any additional wrapper. The test environment defaults to light mode.
  */
 interface CustomRenderOptions extends Omit<RenderOptions, "wrapper"> {
   // Add custom options here as needed
@@ -15,7 +18,6 @@ export function renderWithProviders(ui: ReactElement, options?: CustomRenderOpti
   // Example: <ThemeProvider><NavigationContainer>{ui}</NavigationContainer></ThemeProvider>
   return render(ui, options);
 }
-
 // Re-export everything from React Testing Library
 export * from "@testing-library/react-native";
 
