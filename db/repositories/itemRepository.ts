@@ -3,7 +3,7 @@
 import type { SQLiteDatabase } from "expo-sqlite";
 import type { Item, ItemInsert, ItemRow, Deck, DeckRow, StudyDirection } from "../types";
 import { DEFAULT_DECK_ID } from "../schema";
-import { parseSqliteDate } from "../utils";
+import { parseSqliteDate, parseStudyDirection } from "../utils";
 
 /**
  * Converts a raw database row to an application-level Item
@@ -17,16 +17,6 @@ function rowToItem(row: ItemRow): Item {
     notes: row.notes,
     createdAt: parseSqliteDate(row.created_at),
   };
-}
-
-/**
- * Parses study direction from database, defaulting to 'random'
- */
-function parseStudyDirection(value: string | null): "pali_first" | "meaning_first" | "random" {
-  if (value === "pali_first" || value === "meaning_first" || value === "random") {
-    return value;
-  }
-  return "random";
 }
 
 /**

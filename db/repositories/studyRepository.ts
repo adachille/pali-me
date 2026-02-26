@@ -136,7 +136,7 @@ export async function getAllCardsForDeck(
  * Records a review result and updates the study state
  *
  * Interval calculation:
- * - Correct: interval = max(1, interval * ease), capped at 30 days
+ * - Correct: new_interval = interval * ease (or 1 if interval is 0), capped at 30 days
  * - Incorrect: interval = 0, ease decreased by 0.2 (min 1.3)
  *
  * @param db - SQLite database instance
@@ -149,14 +149,22 @@ export async function recordReview(
   correct: boolean
 ): Promise<void> {
   if (correct) {
-    // Correct answer: increase interval
+    // Correct answer: increase interval using CTE to calculate new_interval once
     await db.runAsync(
-      `UPDATE study_states
+      `WITH new_values AS (
+         SELECT MIN(
+           CASE WHEN interval = 0 THEN 1 ELSE CAST(interval * ease AS INTEGER) END,
+           30
+         ) AS new_interval
+         FROM study_states
+         WHERE id = ?
+       )
+       UPDATE study_states
        SET
-         interval = MIN(CASE WHEN interval = 0 THEN 1 ELSE CAST(interval * ease AS INTEGER) END, 30),
-         due = datetime('now', '+' || MIN(CASE WHEN interval = 0 THEN 1 ELSE CAST(interval * ease AS INTEGER) END, 30) || ' days')
+         interval = (SELECT new_interval FROM new_values),
+         due = datetime('now', '+' || (SELECT new_interval FROM new_values) || ' days')
        WHERE id = ?`,
-      [studyStateId]
+      [studyStateId, studyStateId]
     );
   } else {
     // Incorrect answer: reset interval, decrease ease

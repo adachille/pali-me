@@ -3,7 +3,7 @@
 import type { SQLiteDatabase } from "expo-sqlite";
 import { DEFAULT_DECK_ID } from "../schema";
 import type { Deck, DeckRow, DeckStudyDirection, Item, ItemRow } from "../types";
-import { parseSqliteDate } from "../utils";
+import { parseSqliteDate, parseStudyDirection } from "../utils";
 
 // ============================================================================
 // Types
@@ -33,16 +33,6 @@ export type SortOption =
 // ============================================================================
 // Helpers
 // ============================================================================
-
-/**
- * Parses study direction from database, defaulting to 'random'
- */
-function parseStudyDirection(value: string | null): DeckStudyDirection {
-  if (value === "pali_first" || value === "meaning_first" || value === "random") {
-    return value;
-  }
-  return "random";
-}
 
 /**
  * Converts a raw database row to an application-level DeckWithCount

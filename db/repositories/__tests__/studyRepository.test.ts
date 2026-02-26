@@ -125,9 +125,10 @@ describe("studyRepository", () => {
 
       expect(mockDb.runAsync).toHaveBeenCalledWith(
         expect.stringContaining("UPDATE study_states"),
-        [1]
+        [1, 1]
       );
       const sql = mockDb.runAsync.mock.calls[0][0];
+      expect(sql).toContain("WITH new_values AS");
       expect(sql).toContain("interval * ease");
       expect(sql).toContain("MIN");
     });

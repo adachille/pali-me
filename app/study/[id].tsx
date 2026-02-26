@@ -71,6 +71,7 @@ export default function StudyScreen() {
   const [userAnswer, setUserAnswer] = useState("");
   const [showFeedback, setShowFeedback] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
+  const [reviewRecorded, setReviewRecorded] = useState(false);
 
   // Session state
   const [isComplete, setIsComplete] = useState(false);
@@ -209,6 +210,7 @@ export default function StudyScreen() {
 
     // Record as correct in database
     await studyRepository.recordReview(db, currentCard.studyStateId, true);
+    setReviewRecorded(true);
 
     // Update stats to reflect the override
     setStats((prev) => ({
@@ -223,8 +225,8 @@ export default function StudyScreen() {
   const handleNext = useCallback(async () => {
     if (!currentCard) return;
 
-    // Record review to database (if not already marked correct via override)
-    if (!isCorrect || userAnswer) {
+    // Record review to database (if not already recorded via "Mark as Correct")
+    if (!reviewRecorded) {
       await studyRepository.recordReview(db, currentCard.studyStateId, isCorrect);
     }
 
@@ -232,15 +234,19 @@ export default function StudyScreen() {
     setUserAnswer("");
     setShowFeedback(false);
     setIsCorrect(false);
+    setReviewRecorded(false);
 
     if (endlessMode) {
       // Endless mode: wrap around and reshuffle when needed
       const nextIndex = (currentIndex + 1) % cards.length;
       if (nextIndex === 0) {
-        // Reshuffle when looping
-        setCards(shuffleArray(cards));
+        // Reshuffle when looping, then start from the first card
+        const shuffled = shuffleArray(cards);
+        setCards(shuffled);
+        setCurrentIndex(0);
+      } else {
+        setCurrentIndex(nextIndex);
       }
-      setCurrentIndex(nextIndex);
     } else {
       // Standard mode
       const remainingCards = cards.filter((_, i) => i !== currentIndex);
@@ -272,7 +278,7 @@ export default function StudyScreen() {
       // Keep same index (next card shifts into this position), wrapping if needed.
       setCurrentIndex(currentIndex >= nextCards.length ? 0 : currentIndex);
     }
-  }, [db, currentCard, isCorrect, userAnswer, endlessMode, currentIndex, cards]);
+  }, [db, currentCard, isCorrect, reviewRecorded, endlessMode, currentIndex, cards]);
 
   // Handle direction change
   const handleDirectionChange = useCallback(
@@ -284,9 +290,11 @@ export default function StudyScreen() {
         ? await studyRepository.getAllCardsForDeck(db, deckId, newDirection)
         : await studyRepository.getDueCardsForDeck(db, deckId, newDirection);
       setCards(loadedCards);
+      setTotalCards(loadedCards.length);
       setCurrentIndex(0);
       setShowFeedback(false);
       setUserAnswer("");
+      setStats({ total: 0, correct: 0 });
     },
     [db, deckId, endlessMode]
   );
@@ -300,6 +308,7 @@ export default function StudyScreen() {
         ? await studyRepository.getAllCardsForDeck(db, deckId, direction)
         : await studyRepository.getDueCardsForDeck(db, deckId, direction);
       setCards(loadedCards);
+      setTotalCards(loadedCards.length);
       setCurrentIndex(0);
       setShowFeedback(false);
       setUserAnswer("");
@@ -333,7 +342,7 @@ export default function StudyScreen() {
         <Pressable
           style={({ pressed }) => [styles.emptyButton, pressed && styles.emptyButtonPressed]}
           onPress={handleBackToHome}
-          testID="empty-back-button"
+          testID="empty-deck-back-button"
         >
           <Text style={styles.emptyButtonText}>Back to Home</Text>
         </Pressable>
@@ -358,7 +367,7 @@ export default function StudyScreen() {
         <Pressable
           style={({ pressed }) => [styles.backLink, pressed && styles.backLinkPressed]}
           onPress={handleBackToHome}
-          testID="empty-back-button"
+          testID="no-due-cards-back-button"
         >
           <Text style={styles.backLinkText}>Back to Home</Text>
         </Pressable>

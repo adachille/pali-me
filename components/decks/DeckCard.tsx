@@ -1,5 +1,6 @@
 import { DEFAULT_DECK_ID } from "@/db";
 import type { DeckWithCount } from "@/db/repositories/deckRepository";
+import type { GestureResponderEvent } from "react-native";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 type DeckCardProps = {
@@ -74,7 +75,10 @@ export function DeckCard({ deck, onPress, onStudyPress, onEditPress }: DeckCardP
           {onStudyPress && (
             <Pressable
               style={({ pressed }) => [styles.actionButton, pressed && styles.actionButtonPressed]}
-              onPress={() => onStudyPress(deck)}
+              onPress={(e?: GestureResponderEvent) => {
+                e?.stopPropagation();
+                onStudyPress(deck);
+              }}
               testID={`deck-study-${deck.id}`}
               hitSlop={8}
             >
@@ -84,7 +88,10 @@ export function DeckCard({ deck, onPress, onStudyPress, onEditPress }: DeckCardP
           {onEditPress && (
             <Pressable
               style={({ pressed }) => [styles.actionButton, pressed && styles.actionButtonPressed]}
-              onPress={() => onEditPress(deck)}
+              onPress={(e?: GestureResponderEvent) => {
+                e?.stopPropagation();
+                onEditPress(deck);
+              }}
               testID={`deck-edit-${deck.id}`}
               hitSlop={8}
             >
