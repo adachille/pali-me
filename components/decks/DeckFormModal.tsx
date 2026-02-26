@@ -262,7 +262,7 @@ function makeStyles(colors: AppColors) {
     saveButtonText: {
       fontSize: 16,
       fontWeight: "600",
-      color: colors.background,
+      color: "#fff",
     },
     deleteButton: {
       marginTop: 16,

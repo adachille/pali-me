@@ -106,7 +106,7 @@ function makeStyles(colors: AppColors) {
     buttonText: {
       fontSize: 18,
       fontWeight: "600",
-      color: colors.background,
+      color: "#fff",
     },
     buttonTextDisabled: {
       color: colors.textTertiary,

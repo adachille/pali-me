@@ -505,7 +505,7 @@ function makeStyles(colors: AppColors) {
     emptyButtonText: {
       fontSize: 16,
       fontWeight: "600",
-      color: colors.background,
+      color: "#fff",
     },
     backLink: {
       marginTop: 16,

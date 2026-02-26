@@ -346,7 +346,7 @@ function makeStyles(colors: AppColors) {
       borderColor: colors.primary,
     },
     checkmark: {
-      color: colors.background,
+      color: "#fff",
       fontSize: 14,
       fontWeight: "bold",
     },
@@ -396,7 +396,7 @@ function makeStyles(colors: AppColors) {
     addButtonText: {
       fontSize: 16,
       fontWeight: "600",
-      color: colors.background,
+      color: "#fff",
     },
     addButtonTextDisabled: {
       color: colors.textTertiary,
@@ -414,7 +414,7 @@ function makeStyles(colors: AppColors) {
     retryButtonText: {
       fontSize: 14,
       fontWeight: "600",
-      color: colors.background,
+      color: "#fff",
     },
   });
 }

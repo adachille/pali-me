@@ -251,7 +251,7 @@ function makeStyles(colors: AppColors) {
     },
     fabText: {
       fontSize: 28,
-      color: colors.background,
+      color: "#fff",
       fontWeight: "300",
       marginTop: -2,
     },

@@ -160,7 +160,7 @@ function makeStyles(colors: AppColors) {
       backgroundColor: colors.textTertiary,
     },
     buttonText: {
-      color: colors.background,
+      color: "#fff",
       fontSize: 16,
       fontWeight: "600",
     },

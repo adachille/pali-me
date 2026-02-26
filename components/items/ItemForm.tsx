@@ -200,7 +200,7 @@ function makeStyles(colors: AppColors) {
       backgroundColor: colors.textTertiary,
     },
     submitButtonText: {
-      color: colors.background,
+      color: "#fff",
       fontSize: 18,
       fontWeight: "600",
     },

@@ -170,7 +170,7 @@ function makeStyles(colors: AppColors) {
     nextButtonText: {
       fontSize: 16,
       fontWeight: "600",
-      color: colors.background,
+      color: "#fff",
     },
   });
 }

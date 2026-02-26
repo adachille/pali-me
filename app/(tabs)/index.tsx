@@ -170,7 +170,7 @@ function makeStyles(colors: AppColors) {
     retryButtonText: {
       fontSize: 14,
       fontWeight: "600",
-      color: colors.background,
+      color: "#fff",
     },
     fab: {
       position: "absolute",
@@ -193,7 +193,7 @@ function makeStyles(colors: AppColors) {
     },
     fabText: {
       fontSize: 28,
-      color: colors.background,
+      color: "#fff",
       fontWeight: "300",
       marginTop: -2,
     },

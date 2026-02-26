@@ -75,7 +75,7 @@ function makeStyles(colors: AppColors) {
       color: colors.textSecondary,
     },
     optionTextSelected: {
-      color: colors.background,
+      color: "#fff",
       fontWeight: "500",
     },
   });

@@ -69,7 +69,7 @@ function makeStyles(colors: AppColors) {
       backgroundColor: colors.primaryDark,
     },
     buttonText: {
-      color: colors.background,
+      color: "#fff",
       fontSize: 16,
       fontWeight: "600",
     },

@@ -267,7 +267,7 @@ function makeStyles(colors: AppColors) {
       backgroundColor: colors.primaryDark,
     },
     addButtonText: {
-      color: colors.background,
+      color: "#fff",
       fontSize: 16,
       fontWeight: "600",
     },
