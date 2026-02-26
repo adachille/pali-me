@@ -3,7 +3,7 @@
 import type { SQLiteDatabase } from "expo-sqlite";
 import type { Item, ItemInsert, ItemRow, Deck, DeckRow, StudyDirection } from "../types";
 import { DEFAULT_DECK_ID } from "../schema";
-import { parseSqliteDate } from "../utils";
+import { parseSqliteDate, parseStudyDirection } from "../utils";
 
 /**
  * Converts a raw database row to an application-level Item
@@ -27,6 +27,7 @@ function rowToDeck(row: DeckRow): Deck {
     id: row.id,
     name: row.name,
     createdAt: parseSqliteDate(row.created_at),
+    studyDirection: parseStudyDirection(row.study_direction),
   };
 }
 

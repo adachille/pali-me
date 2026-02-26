@@ -1,9 +1,9 @@
 // Repository for deck CRUD operations and deck-item management
 
 import type { SQLiteDatabase } from "expo-sqlite";
-import type { Deck, DeckRow, Item, ItemRow } from "../types";
 import { DEFAULT_DECK_ID } from "../schema";
-import { parseSqliteDate } from "../utils";
+import type { Deck, DeckRow, DeckStudyDirection, Item, ItemRow } from "../types";
+import { parseSqliteDate, parseStudyDirection } from "../utils";
 
 // ============================================================================
 // Types
@@ -17,7 +17,7 @@ export type DeckWithCount = Deck & { itemCount: number };
 /**
  * Raw row from deck query with item count
  */
-type DeckRowWithCount = DeckRow & { item_count: number };
+type DeckRowWithCount = DeckRow & { item_count: number; study_direction: string | null };
 
 /**
  * Sort options for deck list
@@ -42,6 +42,7 @@ function rowToDeckWithCount(row: DeckRowWithCount): DeckWithCount {
     id: row.id,
     name: row.name,
     createdAt: parseSqliteDate(row.created_at),
+    studyDirection: parseStudyDirection(row.study_direction),
     itemCount: row.item_count,
   };
 }
@@ -54,6 +55,7 @@ function rowToDeck(row: DeckRow): Deck {
     id: row.id,
     name: row.name,
     createdAt: parseSqliteDate(row.created_at),
+    studyDirection: parseStudyDirection(row.study_direction),
   };
 }
 
@@ -255,6 +257,21 @@ export async function deleteDeck(db: SQLiteDatabase, id: number): Promise<boolea
 
   const result = await db.runAsync("DELETE FROM decks WHERE id = ?", [id]);
   return result.changes > 0;
+}
+
+/**
+ * Updates a deck's study direction preference
+ *
+ * @param db - SQLite database instance
+ * @param id - Deck ID to update
+ * @param direction - New study direction preference
+ */
+export async function updateStudyDirection(
+  db: SQLiteDatabase,
+  id: number,
+  direction: DeckStudyDirection
+): Promise<void> {
+  await db.runAsync("UPDATE decks SET study_direction = ? WHERE id = ?", [direction, id]);
 }
 
 // ============================================================================

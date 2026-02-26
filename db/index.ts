@@ -24,7 +24,7 @@ export type {
 export { SCHEMA_VERSION, DEFAULT_DECK_ID } from "./schema";
 
 // Export repositories
-export { itemRepository, deckRepository } from "./repositories";
+export { itemRepository, deckRepository, studyRepository } from "./repositories";
 
 // Re-export useSQLiteContext hook for convenience
 export { useSQLiteContext } from "expo-sqlite";

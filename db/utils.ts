@@ -1,3 +1,5 @@
+import type { DeckStudyDirection } from "./types";
+
 /**
  * Parses a SQLite datetime string (UTC) into a JavaScript Date.
  * SQLite's datetime('now') returns UTC without a timezone indicator,
@@ -19,4 +21,14 @@ export function parseSqliteDate(dateStr: string): Date {
   // SQLite datetime format: "YYYY-MM-DD HH:MM:SS" optionally with fractional seconds.
   // Append 'Z' to indicate UTC timezone
   return new Date(trimmed.replace(" ", "T") + "Z");
+}
+
+/**
+ * Parses study direction from database, defaulting to 'random'
+ */
+export function parseStudyDirection(value: string | null): DeckStudyDirection {
+  if (value === "pali_first" || value === "meaning_first" || value === "random") {
+    return value;
+  }
+  return "random";
 }

@@ -1,10 +1,13 @@
 import { DEFAULT_DECK_ID } from "@/db";
 import type { DeckWithCount } from "@/db/repositories/deckRepository";
+import type { GestureResponderEvent } from "react-native";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 type DeckCardProps = {
   deck: DeckWithCount;
   onPress: (deck: DeckWithCount) => void;
+  onStudyPress?: (deck: DeckWithCount) => void;
+  onEditPress?: (deck: DeckWithCount) => void;
 };
 
 /**
@@ -33,7 +36,7 @@ function formatRelativeDate(date: Date): string {
   }
 }
 
-export function DeckCard({ deck, onPress }: DeckCardProps) {
+export function DeckCard({ deck, onPress, onStudyPress, onEditPress }: DeckCardProps) {
   const isAllDeck = deck.id === DEFAULT_DECK_ID;
   const itemCountText = deck.itemCount === 1 ? "1 item" : `${deck.itemCount} items`;
   const normalizedName = deck.name
@@ -42,6 +45,7 @@ export function DeckCard({ deck, onPress }: DeckCardProps) {
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
   const deckNameTestId = `deck-card-name-${normalizedName || "unnamed"}`;
+  const hasActions = onStudyPress || onEditPress;
 
   return (
     <Pressable
@@ -56,11 +60,50 @@ export function DeckCard({ deck, onPress }: DeckCardProps) {
             {deck.name}
           </Text>
         </View>
-        <Text style={styles.date}>{formatRelativeDate(deck.createdAt)}</Text>
+        {hasActions ? (
+          <View style={styles.metaRow}>
+            <Text style={styles.itemCount}>{itemCountText}</Text>
+            <Text style={styles.metaSeparator}>·</Text>
+            <Text style={styles.date}>{formatRelativeDate(deck.createdAt)}</Text>
+          </View>
+        ) : (
+          <Text style={styles.date}>{formatRelativeDate(deck.createdAt)}</Text>
+        )}
       </View>
-      <View style={[styles.badge, isAllDeck && styles.allDeckBadge]}>
-        <Text style={styles.badgeText}>{itemCountText}</Text>
-      </View>
+      {hasActions ? (
+        <View style={styles.actions}>
+          {onStudyPress && (
+            <Pressable
+              style={({ pressed }) => [styles.actionButton, pressed && styles.actionButtonPressed]}
+              onPress={(e?: GestureResponderEvent) => {
+                e?.stopPropagation();
+                onStudyPress(deck);
+              }}
+              testID={`deck-study-${deck.id}`}
+              hitSlop={8}
+            >
+              <Text style={styles.actionIcon}>▶️</Text>
+            </Pressable>
+          )}
+          {onEditPress && (
+            <Pressable
+              style={({ pressed }) => [styles.actionButton, pressed && styles.actionButtonPressed]}
+              onPress={(e?: GestureResponderEvent) => {
+                e?.stopPropagation();
+                onEditPress(deck);
+              }}
+              testID={`deck-edit-${deck.id}`}
+              hitSlop={8}
+            >
+              <Text style={styles.actionIcon}>✏️</Text>
+            </Pressable>
+          )}
+        </View>
+      ) : (
+        <View style={[styles.badge, isAllDeck && styles.allDeckBadge]}>
+          <Text style={styles.badgeText}>{itemCountText}</Text>
+        </View>
+      )}
     </Pressable>
   );
 }
@@ -85,6 +128,11 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
   },
+  metaRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginTop: 2,
+  },
   pinIcon: {
     fontSize: 14,
     color: "#4CAF50",
@@ -100,9 +148,33 @@ const styles = StyleSheet.create({
   allDeckName: {
     color: "#4CAF50",
   },
+  itemCount: {
+    fontSize: 13,
+    color: "#666",
+  },
+  metaSeparator: {
+    fontSize: 13,
+    color: "#999",
+    marginHorizontal: 6,
+  },
   date: {
     fontSize: 13,
     color: "#999",
+  },
+  actions: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 4,
+  },
+  actionButton: {
+    padding: 8,
+    borderRadius: 8,
+  },
+  actionButtonPressed: {
+    backgroundColor: "#f0f0f0",
+  },
+  actionIcon: {
+    fontSize: 20,
   },
   badge: {
     backgroundColor: "#e0e0e0",

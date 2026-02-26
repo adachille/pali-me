@@ -50,7 +50,7 @@ const mockItems: Item[] = [
     meaning: "teaching, truth, law",
     type: "word",
     createdAt: new Date(),
-    updatedAt: new Date(),
+    notes: null,
   },
   {
     id: 2,
@@ -58,7 +58,7 @@ const mockItems: Item[] = [
     meaning: "awakened one",
     type: "word",
     createdAt: new Date(),
-    updatedAt: new Date(),
+    notes: null,
   },
 ];
 

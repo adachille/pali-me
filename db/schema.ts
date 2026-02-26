@@ -3,7 +3,7 @@
 /**
  * Current database schema version
  */
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 
 // ============================================================================
 // Items Table
@@ -104,3 +104,15 @@ export const INSERT_DEFAULT_DECK = `
  * Default deck ID constant
  */
 export const DEFAULT_DECK_ID = 1;
+
+// ============================================================================
+// Migrations
+// ============================================================================
+
+/**
+ * Migration 1 -> 2: Add study_direction column to decks table
+ * Stores user's preferred study direction per deck
+ */
+export const MIGRATION_ADD_STUDY_DIRECTION = `
+  ALTER TABLE decks ADD COLUMN study_direction TEXT DEFAULT 'random'
+`;

@@ -8,6 +8,7 @@ const mockDeck: DeckWithCount = {
   name: "Verbs",
   itemCount: 5,
   createdAt: new Date(),
+  studyDirection: "random",
 };
 
 const mockAllDeck: DeckWithCount = {
@@ -15,6 +16,7 @@ const mockAllDeck: DeckWithCount = {
   name: "All",
   itemCount: 10,
   createdAt: new Date("2024-01-01"),
+  studyDirection: "random",
 };
 
 describe("DeckCard", () => {
@@ -63,5 +65,67 @@ describe("DeckCard", () => {
     render(<DeckCard deck={mockDeck} onPress={jest.fn()} />);
 
     expect(screen.queryByText("📌")).toBeNull();
+  });
+
+  it("renders study and edit action buttons when handlers provided", () => {
+    render(
+      <DeckCard
+        deck={mockDeck}
+        onPress={jest.fn()}
+        onStudyPress={jest.fn()}
+        onEditPress={jest.fn()}
+      />
+    );
+
+    expect(screen.getByTestId("deck-study-2")).toBeTruthy();
+    expect(screen.getByTestId("deck-edit-2")).toBeTruthy();
+  });
+
+  it("calls onStudyPress when study button is pressed", () => {
+    const onStudyPress = jest.fn();
+    render(
+      <DeckCard
+        deck={mockDeck}
+        onPress={jest.fn()}
+        onStudyPress={onStudyPress}
+        onEditPress={jest.fn()}
+      />
+    );
+
+    fireEvent.press(screen.getByTestId("deck-study-2"));
+
+    expect(onStudyPress).toHaveBeenCalledWith(mockDeck);
+  });
+
+  it("calls onEditPress when edit button is pressed", () => {
+    const onEditPress = jest.fn();
+    render(
+      <DeckCard
+        deck={mockDeck}
+        onPress={jest.fn()}
+        onStudyPress={jest.fn()}
+        onEditPress={onEditPress}
+      />
+    );
+
+    fireEvent.press(screen.getByTestId("deck-edit-2"));
+
+    expect(onEditPress).toHaveBeenCalledWith(mockDeck);
+  });
+
+  it("shows item count in meta row when action buttons are present", () => {
+    render(
+      <DeckCard
+        deck={mockDeck}
+        onPress={jest.fn()}
+        onStudyPress={jest.fn()}
+        onEditPress={jest.fn()}
+      />
+    );
+
+    // Item count should be visible in meta row
+    expect(screen.getByText("5 items")).toBeTruthy();
+    // Badge should not be visible
+    expect(screen.queryByText("·")).toBeTruthy();
   });
 });

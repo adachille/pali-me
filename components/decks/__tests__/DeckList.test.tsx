@@ -4,8 +4,20 @@ import { DeckList } from "../DeckList";
 import type { DeckWithCount } from "@/db/repositories/deckRepository";
 
 const mockDecks: DeckWithCount[] = [
-  { id: 1, name: "All", itemCount: 10, createdAt: new Date("2024-01-01") },
-  { id: 2, name: "Verbs", itemCount: 5, createdAt: new Date("2024-01-02") },
+  {
+    id: 1,
+    name: "All",
+    itemCount: 10,
+    createdAt: new Date("2024-01-01"),
+    studyDirection: "random",
+  },
+  {
+    id: 2,
+    name: "Verbs",
+    itemCount: 5,
+    createdAt: new Date("2024-01-02"),
+    studyDirection: "random",
+  },
 ];
 
 const defaultProps = {

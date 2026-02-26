@@ -48,16 +48,26 @@ components/
 │       ├── ItemCard.test.tsx
 │       ├── ItemForm.test.tsx
 │       └── ItemTypePicker.test.tsx
-└── decks/
+├── decks/
+│   └── __tests__/
+│       ├── DeckCard.test.tsx       # Deck card component tests
+│       ├── DeckFormModal.test.tsx   # Deck create/edit modal tests
+│       ├── DeckItemList.test.tsx    # Deck item list tests
+│       └── DeckList.test.tsx        # Deck list component tests
+└── study/
     └── __tests__/
-        ├── DeckCard.test.tsx       # Deck card component tests
-        ├── DeckFormModal.test.tsx   # Deck create/edit modal tests
-        └── DeckList.test.tsx        # Deck list component tests
+        ├── AnswerInput.test.tsx     # Answer input component tests
+        ├── FeedbackDisplay.test.tsx # Correct/incorrect feedback tests
+        ├── StudyCard.test.tsx       # Study card display tests
+        ├── StudyCompletion.test.tsx # Session completion screen tests
+        ├── StudyProgress.test.tsx   # Progress bar tests
+        └── StudySettingsModal.test.tsx # Study settings modal tests
 db/
 └── repositories/
     └── __tests__/
         ├── itemRepository.test.ts  # Item repository unit tests
-        └── deckRepository.test.ts  # Deck repository unit tests
+        ├── deckRepository.test.ts  # Deck repository unit tests
+        └── studyRepository.test.ts # Study session repository tests
 test-utils/
 ├── index.ts                        # Exports all test utilities
 ├── mocks.ts                        # Mock factories
