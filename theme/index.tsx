@@ -59,11 +59,7 @@ interface ThemeContextValue {
 
 const ThemeContext = createContext<ThemeContextValue | null>(null);
 
-export function ThemeProvider({
-  children,
-}: {
-  children: ReactNode;
-}): ReactNode {
+export function ThemeProvider({ children }: { children: ReactNode }): ReactNode {
   const systemColorScheme = useColorScheme();
   const [themeMode, setThemeModeState] = useState<ThemeMode>("system");
   const [isLoaded, setIsLoaded] = useState(false);
@@ -82,8 +78,7 @@ export function ThemeProvider({
     AsyncStorage.setItem(THEME_STORAGE_KEY, mode);
   }, []);
 
-  const effectiveColorScheme =
-    themeMode === "system" ? systemColorScheme : themeMode;
+  const effectiveColorScheme = themeMode === "system" ? systemColorScheme : themeMode;
   const colors = effectiveColorScheme === "dark" ? darkColors : lightColors;
 
   if (!isLoaded) {

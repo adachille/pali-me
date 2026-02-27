@@ -104,6 +104,7 @@ function makeStyles(colors: AppColors) {
       paddingVertical: 10,
       borderRadius: 8,
       fontSize: 16,
+      color: colors.text,
       borderWidth: 1,
       borderColor: colors.border,
     },
