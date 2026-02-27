@@ -2,16 +2,29 @@ import { useMemo, useState } from "react";
 import { ActivityIndicator, Alert, Pressable, StyleSheet, Text, View } from "react-native";
 import { useSQLiteContext } from "expo-sqlite";
 import { useTheme } from "@/theme";
-import type { AppColors } from "@/theme";
+import type { AppColors, ThemeMode } from "@/theme";
 
 import { exportDatabaseAsJson, importDatabaseFromJson } from "@/db/repositories/exportRepository";
 
 export default function SettingsScreen() {
   const db = useSQLiteContext();
-  const { colors } = useTheme();
+  const { colors, themeMode, setThemeMode } = useTheme();
   const styles = useMemo(() => makeStyles(colors), [colors]);
   const [isExporting, setIsExporting] = useState(false);
   const [isImporting, setIsImporting] = useState(false);
+
+  const themeModeLabels: Record<ThemeMode, string> = {
+    light: "Light",
+    dark: "Dark",
+    system: "System",
+  };
+
+  const cycleThemeMode = () => {
+    const modes: ThemeMode[] = ["system", "light", "dark"];
+    const currentIndex = modes.indexOf(themeMode);
+    const nextIndex = (currentIndex + 1) % modes.length;
+    setThemeMode(modes[nextIndex]);
+  };
 
   const handleExport = async () => {
     setIsExporting(true);
@@ -61,6 +74,20 @@ export default function SettingsScreen() {
       <Text style={styles.title}>Settings</Text>
 
       <View style={styles.section}>
+        <Text style={styles.sectionTitle}>Appearance</Text>
+        <Text style={styles.sectionDescription}>Choose your preferred color theme.</Text>
+
+        <Pressable
+          style={({ pressed }) => [styles.themeButton, pressed && styles.themeButtonPressed]}
+          onPress={cycleThemeMode}
+          testID="theme-toggle-button"
+        >
+          <Text style={styles.themeButtonLabel}>Theme</Text>
+          <Text style={styles.themeButtonValue}>{themeModeLabels[themeMode]}</Text>
+        </Pressable>
+      </View>
+
+      <View style={[styles.section, styles.sectionSpacing]}>
         <Text style={styles.sectionTitle}>Data Management</Text>
         <Text style={styles.sectionDescription}>
           Export or import your flashcards and study progress as a JSON file.
@@ -118,21 +145,47 @@ function makeStyles(colors: AppColors) {
       fontSize: 24,
       fontWeight: "bold",
       marginBottom: 24,
+      color: colors.text,
     },
     section: {
       backgroundColor: colors.surface,
       padding: 16,
       borderRadius: 12,
     },
+    sectionSpacing: {
+      marginTop: 16,
+    },
     sectionTitle: {
       fontSize: 18,
       fontWeight: "600",
       marginBottom: 8,
+      color: colors.text,
     },
     sectionDescription: {
       fontSize: 14,
       color: colors.textSecondary,
       marginBottom: 16,
+    },
+    themeButton: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+      alignItems: "center",
+      backgroundColor: colors.surfaceVariant,
+      paddingVertical: 14,
+      paddingHorizontal: 16,
+      borderRadius: 8,
+    },
+    themeButtonPressed: {
+      backgroundColor: colors.border,
+    },
+    themeButtonLabel: {
+      fontSize: 16,
+      color: colors.text,
+    },
+    themeButtonValue: {
+      fontSize: 16,
+      color: colors.primary,
+      fontWeight: "600",
     },
     buttonRow: {
       flexDirection: "row",

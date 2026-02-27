@@ -3,7 +3,7 @@ import { Stack } from "expo-router";
 import { SQLiteProvider } from "expo-sqlite";
 import { View, Text, StyleSheet } from "react-native";
 import { migrateDbIfNeeded } from "@/db";
-import { useTheme } from "@/theme";
+import { useTheme, ThemeProvider } from "@/theme";
 import type { AppColors } from "@/theme";
 
 function LoadingView() {
@@ -18,15 +18,17 @@ function LoadingView() {
 
 export default function RootLayout() {
   return (
-    <Suspense fallback={<LoadingView />}>
-      <SQLiteProvider databaseName="pali.db" onInit={migrateDbIfNeeded}>
-        <Stack screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="(tabs)" />
-          <Stack.Screen name="item" />
-          <Stack.Screen name="deck" />
-        </Stack>
-      </SQLiteProvider>
-    </Suspense>
+    <ThemeProvider>
+      <Suspense fallback={<LoadingView />}>
+        <SQLiteProvider databaseName="pali.db" onInit={migrateDbIfNeeded}>
+          <Stack screenOptions={{ headerShown: false }}>
+            <Stack.Screen name="(tabs)" />
+            <Stack.Screen name="item" />
+            <Stack.Screen name="deck" />
+          </Stack>
+        </SQLiteProvider>
+      </Suspense>
+    </ThemeProvider>
   );
 }
 
