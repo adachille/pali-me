@@ -13,17 +13,11 @@ export default function SettingsScreen() {
   const [isExporting, setIsExporting] = useState(false);
   const [isImporting, setIsImporting] = useState(false);
 
+  const themeModes: ThemeMode[] = ["light", "dark", "system"];
   const themeModeLabels: Record<ThemeMode, string> = {
     light: "Light",
     dark: "Dark",
     system: "System",
-  };
-
-  const cycleThemeMode = () => {
-    const modes: ThemeMode[] = ["system", "light", "dark"];
-    const currentIndex = modes.indexOf(themeMode);
-    const nextIndex = (currentIndex + 1) % modes.length;
-    setThemeMode(modes[nextIndex]);
   };
 
   const handleExport = async () => {
@@ -77,14 +71,24 @@ export default function SettingsScreen() {
         <Text style={styles.sectionTitle}>Appearance</Text>
         <Text style={styles.sectionDescription}>Choose your preferred color theme.</Text>
 
-        <Pressable
-          style={({ pressed }) => [styles.themeButton, pressed && styles.themeButtonPressed]}
-          onPress={cycleThemeMode}
-          testID="theme-toggle-button"
-        >
-          <Text style={styles.themeButtonLabel}>Theme</Text>
-          <Text style={styles.themeButtonValue}>{themeModeLabels[themeMode]}</Text>
-        </Pressable>
+        <View style={styles.segmentedControl} testID="theme-toggle-button">
+          {themeModes.map((mode, index) => (
+            <Pressable
+              key={mode}
+              style={[
+                styles.segment,
+                index === themeModes.length - 1 && styles.segmentLast,
+                themeMode === mode && styles.segmentSelected,
+              ]}
+              onPress={() => setThemeMode(mode)}
+              testID={`theme-segment-${mode}`}
+            >
+              <Text style={[styles.segmentText, themeMode === mode && styles.segmentTextSelected]}>
+                {themeModeLabels[mode]}
+              </Text>
+            </Pressable>
+          ))}
+        </View>
       </View>
 
       <View style={[styles.section, styles.sectionSpacing]}>
@@ -166,25 +170,34 @@ function makeStyles(colors: AppColors) {
       color: colors.textSecondary,
       marginBottom: 16,
     },
-    themeButton: {
+    segmentedControl: {
       flexDirection: "row",
-      justifyContent: "space-between",
-      alignItems: "center",
       backgroundColor: colors.surfaceVariant,
-      paddingVertical: 14,
-      paddingHorizontal: 16,
       borderRadius: 8,
+      padding: 4,
     },
-    themeButtonPressed: {
-      backgroundColor: colors.border,
+    segment: {
+      flex: 1,
+      paddingVertical: 10,
+      paddingHorizontal: 12,
+      borderRadius: 6,
+      alignItems: "center",
+      borderRightWidth: 1,
+      borderRightColor: colors.border,
     },
-    themeButtonLabel: {
-      fontSize: 16,
-      color: colors.text,
+    segmentLast: {
+      borderRightWidth: 0,
     },
-    themeButtonValue: {
-      fontSize: 16,
-      color: colors.primary,
+    segmentSelected: {
+      backgroundColor: colors.primary,
+    },
+    segmentText: {
+      fontSize: 14,
+      fontWeight: "500",
+      color: colors.textSecondary,
+    },
+    segmentTextSelected: {
+      color: "#fff",
       fontWeight: "600",
     },
     buttonRow: {
