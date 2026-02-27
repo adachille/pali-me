@@ -1,6 +1,7 @@
 import { Suspense, useMemo } from "react";
 import { Stack } from "expo-router";
 import { SQLiteProvider } from "expo-sqlite";
+import { StatusBar } from "expo-status-bar";
 import { View, Text, StyleSheet } from "react-native";
 import { migrateDbIfNeeded } from "@/db";
 import { useTheme, ThemeProvider } from "@/theme";
@@ -16,9 +17,11 @@ function LoadingView() {
   );
 }
 
-export default function RootLayout() {
+function RootLayoutContent() {
+  const { colorScheme } = useTheme();
   return (
-    <ThemeProvider>
+    <>
+      <StatusBar style={colorScheme === "dark" ? "light" : "dark"} />
       <Suspense fallback={<LoadingView />}>
         <SQLiteProvider databaseName="pali.db" onInit={migrateDbIfNeeded}>
           <Stack screenOptions={{ headerShown: false }}>
@@ -28,6 +31,14 @@ export default function RootLayout() {
           </Stack>
         </SQLiteProvider>
       </Suspense>
+    </>
+  );
+}
+
+export default function RootLayout() {
+  return (
+    <ThemeProvider>
+      <RootLayoutContent />
     </ThemeProvider>
   );
 }
