@@ -1,4 +1,7 @@
 import type { Item } from "@/db";
+import { useTheme } from "@/theme";
+import type { AppColors } from "@/theme";
+import { useMemo } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 type ItemCardProps = {
@@ -15,6 +18,8 @@ const TYPE_COLORS: Record<string, string> = {
 };
 
 export function ItemCard({ item, onPress }: ItemCardProps) {
+  const { colors } = useTheme();
+  const styles = useMemo(() => makeStyles(colors), [colors]);
   const badgeColor = TYPE_COLORS[item.type] ?? "#999";
 
   return (
@@ -36,40 +41,42 @@ export function ItemCard({ item, onPress }: ItemCardProps) {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: "#fff",
-    padding: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: "#e0e0e0",
-  },
-  pressed: {
-    backgroundColor: "#f5f5f5",
-  },
-  content: {
-    flex: 1,
-    marginRight: 12,
-  },
-  pali: {
-    fontSize: 18,
-    fontWeight: "600",
-    color: "#333",
-    marginBottom: 4,
-  },
-  meaning: {
-    fontSize: 14,
-    color: "#666",
-  },
-  badge: {
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    borderRadius: 12,
-  },
-  badgeText: {
-    fontSize: 12,
-    color: "#fff",
-    fontWeight: "500",
-  },
-});
+function makeStyles(colors: AppColors) {
+  return StyleSheet.create({
+    container: {
+      flexDirection: "row",
+      alignItems: "center",
+      backgroundColor: colors.background,
+      padding: 16,
+      borderBottomWidth: 1,
+      borderBottomColor: colors.border,
+    },
+    pressed: {
+      backgroundColor: colors.surface,
+    },
+    content: {
+      flex: 1,
+      marginRight: 12,
+    },
+    pali: {
+      fontSize: 18,
+      fontWeight: "600",
+      color: colors.text,
+      marginBottom: 4,
+    },
+    meaning: {
+      fontSize: 14,
+      color: colors.textSecondary,
+    },
+    badge: {
+      paddingHorizontal: 10,
+      paddingVertical: 4,
+      borderRadius: 12,
+    },
+    badgeText: {
+      fontSize: 12,
+      color: "#fff",
+      fontWeight: "500",
+    },
+  });
+}

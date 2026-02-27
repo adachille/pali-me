@@ -1,6 +1,8 @@
 import { deckRepository, useSQLiteContext } from "@/db";
+import { useTheme } from "@/theme";
+import type { AppColors } from "@/theme";
 import { useRouter } from "expo-router";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import {
   ActivityIndicator,
   Alert,
@@ -19,6 +21,8 @@ export default function NewDeckScreen() {
   const [name, setName] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [isSaving, setIsSaving] = useState(false);
+  const { colors } = useTheme();
+  const styles = useMemo(() => makeStyles(colors), [colors]);
 
   const handleSave = async () => {
     const trimmedName = name.trim();
@@ -70,7 +74,7 @@ export default function NewDeckScreen() {
         <TextInput
           style={[styles.input, error && styles.inputError]}
           placeholder="e.g., Verbs, Daily Study"
-          placeholderTextColor="#999"
+          placeholderTextColor={colors.placeholder}
           value={name}
           onChangeText={(text) => {
             setName(text);
@@ -115,77 +119,79 @@ export default function NewDeckScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    padding: 20,
-  },
-  form: {
-    flex: 1,
-  },
-  label: {
-    fontSize: 16,
-    fontWeight: "600",
-    color: "#333",
-    marginBottom: 8,
-  },
-  input: {
-    backgroundColor: "#f5f5f5",
-    borderWidth: 1,
-    borderColor: "#e0e0e0",
-    borderRadius: 8,
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    fontSize: 16,
-    color: "#333",
-  },
-  inputError: {
-    borderColor: "#f44336",
-  },
-  errorText: {
-    color: "#f44336",
-    fontSize: 14,
-    marginTop: 8,
-  },
-  hint: {
-    color: "#999",
-    fontSize: 12,
-    marginTop: 8,
-    textAlign: "right",
-  },
-  buttons: {
-    flexDirection: "row",
-    gap: 12,
-    paddingBottom: 20,
-  },
-  button: {
-    flex: 1,
-    paddingVertical: 14,
-    borderRadius: 8,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  cancelButton: {
-    backgroundColor: "#f5f5f5",
-  },
-  saveButton: {
-    backgroundColor: "#4CAF50",
-  },
-  pressed: {
-    opacity: 0.8,
-  },
-  disabled: {
-    backgroundColor: "#a5d6a7",
-  },
-  cancelButtonText: {
-    fontSize: 16,
-    fontWeight: "600",
-    color: "#666",
-  },
-  saveButtonText: {
-    fontSize: 16,
-    fontWeight: "600",
-    color: "#fff",
-  },
-});
+function makeStyles(colors: AppColors) {
+  return StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: colors.background,
+      padding: 20,
+    },
+    form: {
+      flex: 1,
+    },
+    label: {
+      fontSize: 16,
+      fontWeight: "600",
+      color: colors.text,
+      marginBottom: 8,
+    },
+    input: {
+      backgroundColor: colors.surface,
+      borderWidth: 1,
+      borderColor: colors.border,
+      borderRadius: 8,
+      paddingHorizontal: 16,
+      paddingVertical: 12,
+      fontSize: 16,
+      color: colors.text,
+    },
+    inputError: {
+      borderColor: colors.error,
+    },
+    errorText: {
+      color: colors.error,
+      fontSize: 14,
+      marginTop: 8,
+    },
+    hint: {
+      color: colors.textTertiary,
+      fontSize: 12,
+      marginTop: 8,
+      textAlign: "right",
+    },
+    buttons: {
+      flexDirection: "row",
+      gap: 12,
+      paddingBottom: 20,
+    },
+    button: {
+      flex: 1,
+      paddingVertical: 14,
+      borderRadius: 8,
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    cancelButton: {
+      backgroundColor: colors.surface,
+    },
+    saveButton: {
+      backgroundColor: colors.primary,
+    },
+    pressed: {
+      opacity: 0.8,
+    },
+    disabled: {
+      backgroundColor: colors.primaryLight,
+    },
+    cancelButtonText: {
+      fontSize: 16,
+      fontWeight: "600",
+      color: colors.textSecondary,
+    },
+    saveButtonText: {
+      fontSize: 16,
+      fontWeight: "600",
+      color: "#fff",
+    },
+  });
+}

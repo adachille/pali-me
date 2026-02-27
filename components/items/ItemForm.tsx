@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import {
   KeyboardAvoidingView,
   Platform,
@@ -10,6 +10,8 @@ import {
   View,
 } from "react-native";
 import type { Item, ItemInsert, ItemType } from "@/db";
+import { useTheme } from "@/theme";
+import type { AppColors } from "@/theme";
 import { ItemTypePicker } from "./ItemTypePicker";
 
 type ItemFormProps = {
@@ -27,6 +29,8 @@ export function ItemForm({
   submitLabel,
   isSubmitting,
 }: ItemFormProps) {
+  const { colors } = useTheme();
+  const styles = useMemo(() => makeStyles(colors), [colors]);
   const [pali, setPali] = useState(initialValues?.pali ?? "");
   const [meaning, setMeaning] = useState(initialValues?.meaning ?? "");
   const [type, setType] = useState<ItemType>(initialValues?.type ?? "word");
@@ -75,7 +79,7 @@ export function ItemForm({
             value={pali}
             onChangeText={setPali}
             placeholder="Enter Pali text"
-            placeholderTextColor="#999"
+            placeholderTextColor={colors.placeholder}
             autoCapitalize="none"
             autoCorrect={false}
             testID="pali-input"
@@ -90,7 +94,7 @@ export function ItemForm({
             value={meaning}
             onChangeText={setMeaning}
             placeholder="Enter English meaning"
-            placeholderTextColor="#999"
+            placeholderTextColor={colors.placeholder}
             testID="meaning-input"
           />
           {errors.meaning && <Text style={styles.errorText}>{errors.meaning}</Text>}
@@ -105,7 +109,7 @@ export function ItemForm({
             value={notes}
             onChangeText={setNotes}
             placeholder="Etymology, usage examples, etc."
-            placeholderTextColor="#999"
+            placeholderTextColor={colors.placeholder}
             multiline
             numberOfLines={4}
             textAlignVertical="top"
@@ -140,79 +144,81 @@ export function ItemForm({
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  scrollView: {
-    flex: 1,
-  },
-  content: {
-    padding: 16,
-  },
-  field: {
-    marginBottom: 16,
-  },
-  label: {
-    fontSize: 16,
-    fontWeight: "500",
-    color: "#333",
-    marginBottom: 8,
-  },
-  input: {
-    backgroundColor: "#fff",
-    borderWidth: 1,
-    borderColor: "#e0e0e0",
-    borderRadius: 8,
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    fontSize: 16,
-    color: "#333",
-  },
-  inputError: {
-    borderColor: "#f44336",
-  },
-  notesInput: {
-    minHeight: 100,
-    paddingTop: 12,
-  },
-  errorText: {
-    color: "#f44336",
-    fontSize: 14,
-    marginTop: 4,
-  },
-  submitButton: {
-    backgroundColor: "#4CAF50",
-    paddingVertical: 16,
-    borderRadius: 8,
-    alignItems: "center",
-    marginTop: 8,
-  },
-  submitButtonPressed: {
-    backgroundColor: "#388E3C",
-  },
-  submitButtonDisabled: {
-    backgroundColor: "#9E9E9E",
-  },
-  submitButtonText: {
-    color: "#fff",
-    fontSize: 18,
-    fontWeight: "600",
-  },
-  deleteButton: {
-    paddingVertical: 16,
-    borderRadius: 8,
-    alignItems: "center",
-    marginTop: 16,
-    borderWidth: 1,
-    borderColor: "#f44336",
-  },
-  deleteButtonPressed: {
-    backgroundColor: "#ffebee",
-  },
-  deleteButtonText: {
-    color: "#f44336",
-    fontSize: 16,
-    fontWeight: "500",
-  },
-});
+function makeStyles(colors: AppColors) {
+  return StyleSheet.create({
+    container: {
+      flex: 1,
+    },
+    scrollView: {
+      flex: 1,
+    },
+    content: {
+      padding: 16,
+    },
+    field: {
+      marginBottom: 16,
+    },
+    label: {
+      fontSize: 16,
+      fontWeight: "500",
+      color: colors.text,
+      marginBottom: 8,
+    },
+    input: {
+      backgroundColor: colors.background,
+      borderWidth: 1,
+      borderColor: colors.border,
+      borderRadius: 8,
+      paddingHorizontal: 16,
+      paddingVertical: 12,
+      fontSize: 16,
+      color: colors.text,
+    },
+    inputError: {
+      borderColor: colors.error,
+    },
+    notesInput: {
+      minHeight: 100,
+      paddingTop: 12,
+    },
+    errorText: {
+      color: colors.error,
+      fontSize: 14,
+      marginTop: 4,
+    },
+    submitButton: {
+      backgroundColor: colors.primary,
+      paddingVertical: 16,
+      borderRadius: 8,
+      alignItems: "center",
+      marginTop: 8,
+    },
+    submitButtonPressed: {
+      backgroundColor: colors.primaryDark,
+    },
+    submitButtonDisabled: {
+      backgroundColor: colors.textTertiary,
+    },
+    submitButtonText: {
+      color: "#fff",
+      fontSize: 18,
+      fontWeight: "600",
+    },
+    deleteButton: {
+      paddingVertical: 16,
+      borderRadius: 8,
+      alignItems: "center",
+      marginTop: 16,
+      borderWidth: 1,
+      borderColor: colors.error,
+    },
+    deleteButtonPressed: {
+      backgroundColor: colors.errorSurface,
+    },
+    deleteButtonText: {
+      color: colors.error,
+      fontSize: 16,
+      fontWeight: "500",
+    },
+  });
+}

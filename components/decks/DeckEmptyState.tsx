@@ -1,4 +1,7 @@
+import { useMemo } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
+import { useTheme } from "@/theme";
+import type { AppColors } from "@/theme";
 
 type DeckEmptyStateProps = {
   isSearching: boolean;
@@ -6,6 +9,9 @@ type DeckEmptyStateProps = {
 };
 
 export function DeckEmptyState({ isSearching, onCreatePress }: DeckEmptyStateProps) {
+  const { colors } = useTheme();
+  const styles = useMemo(() => makeStyles(colors), [colors]);
+
   if (isSearching) {
     return (
       <View style={styles.container} testID="deck-empty-state">
@@ -32,38 +38,40 @@ export function DeckEmptyState({ isSearching, onCreatePress }: DeckEmptyStatePro
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    padding: 32,
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: "600",
-    color: "#333",
-    marginBottom: 8,
-  },
-  subtitle: {
-    fontSize: 16,
-    color: "#666",
-    textAlign: "center",
-    marginBottom: 24,
-    lineHeight: 24,
-  },
-  button: {
-    backgroundColor: "#4CAF50",
-    paddingHorizontal: 24,
-    paddingVertical: 12,
-    borderRadius: 8,
-  },
-  buttonPressed: {
-    backgroundColor: "#388E3C",
-  },
-  buttonText: {
-    color: "#fff",
-    fontSize: 16,
-    fontWeight: "600",
-  },
-});
+function makeStyles(colors: AppColors) {
+  return StyleSheet.create({
+    container: {
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center",
+      padding: 32,
+    },
+    title: {
+      fontSize: 20,
+      fontWeight: "600",
+      color: colors.text,
+      marginBottom: 8,
+    },
+    subtitle: {
+      fontSize: 16,
+      color: colors.textSecondary,
+      textAlign: "center",
+      marginBottom: 24,
+      lineHeight: 24,
+    },
+    button: {
+      backgroundColor: colors.primary,
+      paddingHorizontal: 24,
+      paddingVertical: 12,
+      borderRadius: 8,
+    },
+    buttonPressed: {
+      backgroundColor: colors.primaryDark,
+    },
+    buttonText: {
+      color: "#fff",
+      fontSize: 16,
+      fontWeight: "600",
+    },
+  });
+}

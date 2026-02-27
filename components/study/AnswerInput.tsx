@@ -1,5 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Keyboard, Pressable, StyleSheet, Text, TextInput, View } from "react-native";
+import { useTheme } from "@/theme";
+import type { AppColors } from "@/theme";
 
 type AnswerInputProps = {
   onSubmit: (answer: string) => void;
@@ -11,6 +13,8 @@ type AnswerInputProps = {
  * Auto-focuses when enabled.
  */
 export function AnswerInput({ onSubmit, disabled }: AnswerInputProps) {
+  const { colors } = useTheme();
+  const styles = useMemo(() => makeStyles(colors), [colors]);
   const [value, setValue] = useState("");
   const inputRef = useRef<TextInput>(null);
 
@@ -38,7 +42,7 @@ export function AnswerInput({ onSubmit, disabled }: AnswerInputProps) {
         ref={inputRef}
         style={[styles.input, disabled && styles.inputDisabled]}
         placeholder="Type your answer..."
-        placeholderTextColor="#999"
+        placeholderTextColor={colors.placeholder}
         value={value}
         onChangeText={setValue}
         onSubmitEditing={handleSubmit}
@@ -66,44 +70,46 @@ export function AnswerInput({ onSubmit, disabled }: AnswerInputProps) {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    gap: 12,
-  },
-  input: {
-    backgroundColor: "#fff",
-    borderWidth: 1,
-    borderColor: "#e0e0e0",
-    borderRadius: 12,
-    paddingHorizontal: 16,
-    paddingVertical: 14,
-    fontSize: 18,
-    color: "#333",
-  },
-  inputDisabled: {
-    backgroundColor: "#f5f5f5",
-    color: "#999",
-  },
-  button: {
-    backgroundColor: "#4CAF50",
-    borderRadius: 12,
-    paddingVertical: 14,
-    alignItems: "center",
-  },
-  buttonPressed: {
-    opacity: 0.8,
-  },
-  buttonDisabled: {
-    backgroundColor: "#e0e0e0",
-  },
-  buttonText: {
-    fontSize: 18,
-    fontWeight: "600",
-    color: "#fff",
-  },
-  buttonTextDisabled: {
-    color: "#999",
-  },
-});
+function makeStyles(colors: AppColors) {
+  return StyleSheet.create({
+    container: {
+      paddingHorizontal: 16,
+      paddingVertical: 12,
+      gap: 12,
+    },
+    input: {
+      backgroundColor: colors.background,
+      borderWidth: 1,
+      borderColor: colors.border,
+      borderRadius: 12,
+      paddingHorizontal: 16,
+      paddingVertical: 14,
+      fontSize: 18,
+      color: colors.text,
+    },
+    inputDisabled: {
+      backgroundColor: colors.surface,
+      color: colors.textTertiary,
+    },
+    button: {
+      backgroundColor: colors.primary,
+      borderRadius: 12,
+      paddingVertical: 14,
+      alignItems: "center",
+    },
+    buttonPressed: {
+      opacity: 0.8,
+    },
+    buttonDisabled: {
+      backgroundColor: colors.border,
+    },
+    buttonText: {
+      fontSize: 18,
+      fontWeight: "600",
+      color: "#fff",
+    },
+    buttonTextDisabled: {
+      color: colors.textTertiary,
+    },
+  });
+}
