@@ -1,5 +1,6 @@
 import { DEFAULT_DECK_ID } from "@/db";
 import type { DeckWithCount } from "@/db/repositories/deckRepository";
+import { Icon } from "@/components/common/Icon";
 import { useTheme } from "@/theme";
 import type { AppColors } from "@/theme";
 import { useMemo } from "react";
@@ -87,7 +88,7 @@ export function DeckCard({ deck, onPress, onStudyPress, onEditPress }: DeckCardP
               testID={`deck-study-${deck.id}`}
               hitSlop={8}
             >
-              <Text style={styles.actionIcon}>▶️</Text>
+              <Icon name="cards-stacked-bare" size={20} color={colors.text} />
             </Pressable>
           )}
           {onEditPress && (

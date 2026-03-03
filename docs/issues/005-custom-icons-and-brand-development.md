@@ -155,11 +155,11 @@ pnpm add -D react-native-svg-transformer
 
 ### Icon 2: Play/Study (▶️) — Study Button
 
-- [ ] Set up comparison view in DeckCard
-- [ ] Claude generates SVG variations
+- [x] Set up comparison view in DeckCard
+- [x] Claude generates SVG variations (`play-traingle`, `audio-on`)
 - [ ] Generate variations with other AI tools
-- [ ] Pick winner
-- [ ] Final implementation
+- [x] Pick winner (`cards-stacked-bare`)
+- [x] Final implementation (replaced `▶️` in `DeckCard` study action)
 - [ ] Commit
 
 ### Icon 3: Edit (✏️) — Edit Button

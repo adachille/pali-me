@@ -10,6 +10,7 @@ module.exports = {
   // Module resolution matching tsconfig paths
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/$1",
+    "\\.svg$": "<rootDir>/test-utils/svgMock.tsx",
   },
 
   // Test file patterns
