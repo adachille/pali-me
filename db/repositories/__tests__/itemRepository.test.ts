@@ -33,9 +33,7 @@ describe("itemRepository", () => {
 
       const result = await itemRepository.getAll(mockDb);
 
-      expect(mockDb.getAllAsync).toHaveBeenCalledWith(
-        "SELECT * FROM items ORDER BY pali COLLATE NOCASE"
-      );
+      expect(mockDb.getAllAsync).toHaveBeenCalledWith("SELECT * FROM items");
       expect(result).toHaveLength(2);
       expect(result[0].pali).toBe("dhamma");
       expect(result[0].createdAt).toBeInstanceOf(Date);

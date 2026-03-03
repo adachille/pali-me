@@ -26,5 +26,8 @@ export { SCHEMA_VERSION, DEFAULT_DECK_ID } from "./schema";
 // Export repositories
 export { itemRepository, deckRepository, studyRepository } from "./repositories";
 
+// Export utility functions
+export { comparePali, normalizeForSort } from "./utils/sortUtils";
+
 // Re-export useSQLiteContext hook for convenience
 export { useSQLiteContext } from "expo-sqlite";
