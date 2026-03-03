@@ -25,9 +25,27 @@ export default function AddItemScreen() {
     }
   };
 
+  const handleSubmitAndContinue = async (values: ItemInsert) => {
+    setIsSubmitting(true);
+    try {
+      await itemRepository.create(db, values);
+      // Don't navigate back - form will be cleared by ItemForm
+    } catch (error) {
+      console.error("Failed to create item:", error);
+      Alert.alert("Error", "Failed to create card. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <View style={styles.container} testID="add-item-screen">
-      <ItemForm onSubmit={handleSubmit} submitLabel="Add Card" isSubmitting={isSubmitting} />
+      <ItemForm
+        onSubmit={handleSubmit}
+        onSubmitAndContinue={handleSubmitAndContinue}
+        submitLabel="Add Card"
+        isSubmitting={isSubmitting}
+      />
     </View>
   );
 }

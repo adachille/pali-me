@@ -1,6 +1,5 @@
 import { itemRepository, useSQLiteContext, type ItemInsert } from "@/db";
 import { useTheme } from "@/theme";
-import type { AppColors } from "@/theme";
 import { useState } from "react";
 import { Alert, Modal, Pressable, StyleSheet, Text, View } from "react-native";
 import { ItemForm } from "./ItemForm";
@@ -30,6 +29,20 @@ export function CreateItemModal({ visible, onClose, onItemCreated }: CreateItemM
     }
   };
 
+  const handleSubmitAndContinue = async (values: ItemInsert) => {
+    setIsSubmitting(true);
+    try {
+      const item = await itemRepository.create(db, values);
+      onItemCreated(item.id);
+      // Don't close the modal - form will be cleared by ItemForm
+    } catch (error) {
+      console.error("Failed to create item:", error);
+      Alert.alert("Error", "Failed to create card. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <Modal visible={visible} animationType="slide" onRequestClose={onClose}>
       <View style={[styles.container, { backgroundColor: colors.surface }]} testID="create-item-modal">
@@ -43,7 +56,12 @@ export function CreateItemModal({ visible, onClose, onItemCreated }: CreateItemM
             <Text style={[styles.closeButtonText, { color: colors.primary }]}>Cancel</Text>
           </Pressable>
         </View>
-        <ItemForm onSubmit={handleSubmit} submitLabel="Create Card" isSubmitting={isSubmitting} />
+        <ItemForm
+          onSubmit={handleSubmit}
+          onSubmitAndContinue={handleSubmitAndContinue}
+          submitLabel="Create Card"
+          isSubmitting={isSubmitting}
+        />
       </View>
     </Modal>
   );
