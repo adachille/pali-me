@@ -34,41 +34,57 @@ The app currently uses 6 emoji characters for UI elements including action butto
 3. **v0.dev by Vercel** - React-ready components, seeing icons in context
 4. **Figma AI** - Fine-tuning, creating variations (if you have access)
 
-### Icon Creation Process
+### Icon Creation Process (Iterative, One-at-a-Time)
 
-1. **Mood Exploration (1-2 hours)**
-   - Create 3-5 style variations for ONE icon (e.g., the 📚 books icon)
-   - Try different levels of Buddhist symbolism:
-     - Subtle: Clean, minimal book icon with serene proportions
-     - Light: Book with lotus petal detail or soft glow
-   - Select winning style direction
+**Philosophy:** Replace icons iteratively - design, implement, and test each icon before moving to the next. This allows the style to evolve naturally and ensures each icon works well in context.
 
-2. **Style Guidelines (30 mins)**
-   - Document: Line weight, corner radius, level of detail
-   - Define: Icon grid size (24x24 recommended), safe area padding
-   - Capture: Buddhist elements to use (lotus, light rays, mandala patterns)
-   - Color approach: Start with single color, plan for palette expansion
+**For Each Icon:**
 
-3. **Generate Full Set in Batches (2-3 hours)**
-   - **Batch 1 - Action buttons (priority 1):**
-     - Study/Play (▶️) → Right-pointing design (arrow, path, or flow)
-     - Edit (✏️) → Pen or brush with Buddhist simplicity
+1. **Design 3-5 variations** (20-30 mins per icon)
+   - Use AI tools (Recraft, Claude Artifacts, etc.) to generate style options
+   - Try different levels of Buddhist symbolism (subtle to light)
+   - Consider context: size, surrounding elements, user action
 
-   - **Batch 2 - Empty states (priority 2):**
-     - Books (📚) → Stack of texts or palm leaf manuscripts
-     - Sparkles (✨) → Soft light, enlightenment glow
-     - Party/Success (🎉) → Lotus bloom, peaceful celebration
+2. **Add to Icon component** (5 mins)
+   - Add SVG string to `Icon.tsx` with descriptive name
+   - Optimize: Remove metadata, ensure consistent viewBox (24x24)
+   - Use relative units, avoid hardcoded colors
 
-   - **Batch 3 - Status indicators (priority 3):**
-     - Pin (📌) → Bookmark or marker design
-     - Checkmark (✓) → Confident, clear approval
-     - X mark (✗) → Gentle negative indicator
+3. **Replace emoji in code** (10 mins)
+   - Import Icon component
+   - Replace emoji with `<Icon name="..." size={N} color={colors.text} />`
+   - Adjust size to match or improve upon emoji
 
-4. **Optimize SVGs (30 mins per batch)**
-   - Run through SVGO or manual cleanup
-   - Remove unnecessary attributes (metadata, comments)
-   - Ensure consistent viewBox (24 24 recommended)
-   - Use relative units, avoid hardcoded colors where possible
+4. **Test in app** (10 mins)
+   - Rebuild if needed (first time only for react-native-svg)
+   - View icon in context on iOS/Android
+   - Check at different sizes, with different text
+
+5. **Iterate or approve** (5-10 mins)
+   - If icon doesn't feel right, generate new variations
+   - Once approved, document any style decisions
+   - Move to next icon
+
+**Icon Replacement Order (Priority):**
+
+1. **Books (📚)** - Empty deck state - [app/study/[id].tsx:345](app/study/[id].tsx#L345) ✅ *Phase 1 POC done*
+2. **Play/Study (▶️)** - Study button - [components/decks/DeckCard.tsx:90](components/decks/DeckCard.tsx#L90)
+3. **Edit (✏️)** - Edit button - [components/decks/DeckCard.tsx:103](components/decks/DeckCard.tsx#L103)
+4. **Sparkles (✨)** - All caught up state - [app/study/[id].tsx:363](app/study/[id].tsx#L363)
+5. **Party (🎉)** - Session complete - [components/study/StudyCompletion.tsx:23](components/study/StudyCompletion.tsx#L23)
+6. **Pin (📌)** - Default deck marker - [components/decks/DeckCard.tsx:63](components/decks/DeckCard.tsx#L63)
+7. **Check (✓)** - Correct answer - [components/study/StudyCompletion.tsx:41](components/study/StudyCompletion.tsx#L41)
+8. **X (✗)** - Incorrect answer - [components/study/StudyCompletion.tsx:41](components/study/StudyCompletion.tsx#L41)
+
+**Style Guidelines (Develop as you go):**
+
+After first 2-3 icons, document emerging patterns:
+
+- Line weight consistency
+- Corner radius preference
+- Level of detail and Buddhist symbolism
+- Icon grid size and padding
+- Color usage approach
 
 ## Brand Identity Development (Parallel Track)
 
