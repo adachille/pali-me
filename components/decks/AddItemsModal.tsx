@@ -157,7 +157,10 @@ export function AddItemsModal({ visible, deckId, onClose, onItemsAdded }: AddIte
       onItemsAdded();
     } catch (error) {
       console.error("Failed to add created item to deck:", error);
-      Alert.alert("Error", "Card created but failed to add to deck. Please try adding it manually.");
+      Alert.alert(
+        "Error",
+        "Card created but failed to add to deck. Please try adding it manually."
+      );
     }
   };
 
@@ -202,10 +205,7 @@ export function AddItemsModal({ visible, deckId, onClose, onItemsAdded }: AddIte
 
         <View style={styles.createButtonContainer}>
           <Pressable
-            style={({ pressed }) => [
-              styles.createButton,
-              pressed && styles.createButtonPressed,
-            ]}
+            style={({ pressed }) => [styles.createButton, pressed && styles.createButtonPressed]}
             onPress={() => setShowCreateModal(true)}
             testID="create-new-card-button"
           >
