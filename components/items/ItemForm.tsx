@@ -17,6 +17,7 @@ import { ItemTypePicker } from "./ItemTypePicker";
 type ItemFormProps = {
   initialValues?: Partial<Item>;
   onSubmit: (values: ItemInsert) => Promise<void>;
+  onSubmitAndContinue?: (values: ItemInsert) => Promise<void>;
   onDelete?: () => void;
   submitLabel: string;
   isSubmitting: boolean;
@@ -25,6 +26,7 @@ type ItemFormProps = {
 export function ItemForm({
   initialValues,
   onSubmit,
+  onSubmitAndContinue,
   onDelete,
   submitLabel,
   isSubmitting,
@@ -60,6 +62,24 @@ export function ItemForm({
       type,
       notes: notes.trim() || null,
     });
+  };
+
+  const handleSubmitAndContinue = async () => {
+    if (!validate() || !onSubmitAndContinue) return;
+
+    await onSubmitAndContinue({
+      pali: pali.trim(),
+      meaning: meaning.trim(),
+      type,
+      notes: notes.trim() || null,
+    });
+
+    // Clear the form for the next entry
+    setPali("");
+    setMeaning("");
+    setType("word");
+    setNotes("");
+    setErrors({});
   };
 
   return (
@@ -129,6 +149,23 @@ export function ItemForm({
         >
           <Text style={styles.submitButtonText}>{isSubmitting ? "Saving..." : submitLabel}</Text>
         </Pressable>
+
+        {onSubmitAndContinue && (
+          <Pressable
+            style={({ pressed }) => [
+              styles.submitAndContinueButton,
+              pressed && styles.submitAndContinueButtonPressed,
+              isSubmitting && styles.submitButtonDisabled,
+            ]}
+            onPress={handleSubmitAndContinue}
+            disabled={isSubmitting}
+            testID="submit-and-continue-button"
+          >
+            <Text style={styles.submitAndContinueButtonText}>
+              {isSubmitting ? "Saving..." : "Save & Add Another"}
+            </Text>
+          </Pressable>
+        )}
 
         {onDelete && (
           <Pressable
@@ -202,6 +239,23 @@ function makeStyles(colors: AppColors) {
     submitButtonText: {
       color: "#fff",
       fontSize: 18,
+      fontWeight: "600",
+    },
+    submitAndContinueButton: {
+      backgroundColor: colors.background,
+      paddingVertical: 16,
+      borderRadius: 8,
+      alignItems: "center",
+      marginTop: 12,
+      borderWidth: 2,
+      borderColor: colors.primary,
+    },
+    submitAndContinueButtonPressed: {
+      backgroundColor: colors.surface,
+    },
+    submitAndContinueButtonText: {
+      color: colors.primary,
+      fontSize: 16,
       fontWeight: "600",
     },
     deleteButton: {

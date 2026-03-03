@@ -4,6 +4,7 @@ import type { SQLiteDatabase } from "expo-sqlite";
 import type { Item, ItemInsert, ItemRow, Deck, DeckRow, StudyDirection } from "../types";
 import { DEFAULT_DECK_ID } from "../schema";
 import { parseSqliteDate, parseStudyDirection } from "../utils";
+import { comparePali } from "../utils/sortUtils";
 
 /**
  * Converts a raw database row to an application-level Item
@@ -32,11 +33,11 @@ function rowToDeck(row: DeckRow): Deck {
 }
 
 /**
- * Fetches all items ordered by pali text
+ * Fetches all items ordered by pali text (with proper diacritic handling)
  */
 export async function getAll(db: SQLiteDatabase): Promise<Item[]> {
-  const rows = await db.getAllAsync<ItemRow>("SELECT * FROM items ORDER BY pali COLLATE NOCASE");
-  return rows.map(rowToItem);
+  const rows = await db.getAllAsync<ItemRow>("SELECT * FROM items");
+  return rows.map(rowToItem).sort((a, b) => comparePali(a.pali, b.pali));
 }
 
 /**
@@ -48,18 +49,17 @@ export async function getById(db: SQLiteDatabase, id: number): Promise<Item | nu
 }
 
 /**
- * Searches items by pali text or meaning (case-insensitive)
+ * Searches items by pali text or meaning (case-insensitive, with proper diacritic handling)
  */
 export async function search(db: SQLiteDatabase, query: string): Promise<Item[]> {
   const pattern = `%${query}%`;
   const rows = await db.getAllAsync<ItemRow>(
     `SELECT * FROM items
      WHERE pali LIKE ? COLLATE NOCASE
-        OR meaning LIKE ? COLLATE NOCASE
-     ORDER BY pali COLLATE NOCASE`,
+        OR meaning LIKE ? COLLATE NOCASE`,
     [pattern, pattern]
   );
-  return rows.map(rowToItem);
+  return rows.map(rowToItem).sort((a, b) => comparePali(a.pali, b.pali));
 }
 
 /**

@@ -4,6 +4,7 @@ import type { SQLiteDatabase } from "expo-sqlite";
 import { DEFAULT_DECK_ID } from "../schema";
 import type { Deck, DeckRow, DeckStudyDirection, Item, ItemRow } from "../types";
 import { parseSqliteDate, parseStudyDirection } from "../utils";
+import { comparePali } from "../utils/sortUtils";
 
 // ============================================================================
 // Types
@@ -279,32 +280,30 @@ export async function updateStudyDirection(
 // ============================================================================
 
 /**
- * Gets all items in a specific deck
+ * Gets all items in a specific deck (with proper diacritic handling)
  */
 export async function getItemsInDeck(db: SQLiteDatabase, deckId: number): Promise<Item[]> {
   const rows = await db.getAllAsync<ItemRow>(
     `SELECT i.* FROM items i
      INNER JOIN deck_items di ON i.id = di.item_id
-     WHERE di.deck_id = ?
-     ORDER BY i.pali COLLATE NOCASE`,
+     WHERE di.deck_id = ?`,
     [deckId]
   );
-  return rows.map(rowToItem);
+  return rows.map(rowToItem).sort((a, b) => comparePali(a.pali, b.pali));
 }
 
 /**
- * Gets all items NOT in a specific deck (for add items modal)
+ * Gets all items NOT in a specific deck (for add items modal, with proper diacritic handling)
  */
 export async function getItemsNotInDeck(db: SQLiteDatabase, deckId: number): Promise<Item[]> {
   const rows = await db.getAllAsync<ItemRow>(
     `SELECT * FROM items
      WHERE id NOT IN (
        SELECT item_id FROM deck_items WHERE deck_id = ?
-     )
-     ORDER BY pali COLLATE NOCASE`,
+     )`,
     [deckId]
   );
-  return rows.map(rowToItem);
+  return rows.map(rowToItem).sort((a, b) => comparePali(a.pali, b.pali));
 }
 
 /**

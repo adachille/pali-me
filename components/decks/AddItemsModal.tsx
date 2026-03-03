@@ -14,6 +14,7 @@ import {
   View,
   type ListRenderItem,
 } from "react-native";
+import { CreateItemModal } from "@/components/items";
 
 type AddItemsModalProps = {
   visible: boolean;
@@ -80,6 +81,7 @@ export function AddItemsModal({ visible, deckId, onClose, onItemsAdded }: AddIte
   const [isLoading, setIsLoading] = useState(true);
   const [isSaving, setIsSaving] = useState(false);
   const [loadError, setLoadError] = useState(false);
+  const [showCreateModal, setShowCreateModal] = useState(false);
 
   const loadAvailableItems = useCallback(async () => {
     try {
@@ -146,6 +148,22 @@ export function AddItemsModal({ visible, deckId, onClose, onItemsAdded }: AddIte
     }
   };
 
+  const handleItemCreated = async (itemId: number) => {
+    try {
+      // Add the newly created item to the deck
+      await deckRepository.addItemsToDeck(db, deckId, [itemId]);
+      // Reload available items
+      await loadAvailableItems();
+      onItemsAdded();
+    } catch (error) {
+      console.error("Failed to add created item to deck:", error);
+      Alert.alert(
+        "Error",
+        "Card created but failed to add to deck. Please try adding it manually."
+      );
+    }
+  };
+
   const renderItem: ListRenderItem<Item> = useCallback(
     ({ item }) => (
       <SelectableItemCard item={item} isSelected={selectedIds.has(item.id)} onToggle={toggleItem} />
@@ -183,6 +201,16 @@ export function AddItemsModal({ visible, deckId, onClose, onItemsAdded }: AddIte
             autoCorrect={false}
             testID="add-items-search"
           />
+        </View>
+
+        <View style={styles.createButtonContainer}>
+          <Pressable
+            style={({ pressed }) => [styles.createButton, pressed && styles.createButtonPressed]}
+            onPress={() => setShowCreateModal(true)}
+            testID="create-new-card-button"
+          >
+            <Text style={styles.createButtonText}>+ Create New Card</Text>
+          </Pressable>
         </View>
 
         {isLoading ? (
@@ -244,6 +272,12 @@ export function AddItemsModal({ visible, deckId, onClose, onItemsAdded }: AddIte
           </Pressable>
         </View>
       </View>
+
+      <CreateItemModal
+        visible={showCreateModal}
+        onClose={() => setShowCreateModal(false)}
+        onItemCreated={handleItemCreated}
+      />
     </Modal>
   );
 }
@@ -295,6 +329,27 @@ function makeStyles(colors: AppColors) {
       color: colors.text,
       borderWidth: 1,
       borderColor: colors.border,
+    },
+    createButtonContainer: {
+      padding: 12,
+      backgroundColor: colors.surface,
+      borderBottomWidth: 1,
+      borderBottomColor: colors.border,
+    },
+    createButton: {
+      backgroundColor: colors.primary,
+      paddingVertical: 12,
+      paddingHorizontal: 16,
+      borderRadius: 8,
+      alignItems: "center",
+    },
+    createButtonPressed: {
+      backgroundColor: colors.primaryDark,
+    },
+    createButtonText: {
+      color: "#fff",
+      fontSize: 15,
+      fontWeight: "600",
     },
     loadingContainer: {
       flex: 1,

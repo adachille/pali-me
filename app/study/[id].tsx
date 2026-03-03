@@ -318,6 +318,8 @@ export default function StudyScreen() {
       setUserAnswer("");
       setStats({ total: 0, correct: 0 });
       setIsComplete(false);
+      // Close the settings modal after changing endless mode
+      setSettingsVisible(false);
     },
     [db, deckId, direction]
   );

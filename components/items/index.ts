@@ -3,3 +3,4 @@ export { EmptyState } from "./EmptyState";
 export { ItemList } from "./ItemList";
 export { ItemForm } from "./ItemForm";
 export { ItemTypePicker } from "./ItemTypePicker";
+export { CreateItemModal } from "./CreateItemModal";
