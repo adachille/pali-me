@@ -1,3 +1,4 @@
+import { Icon } from "@/components/common/Icon";
 import {
   AnswerInput,
   FeedbackDisplay,
@@ -8,8 +9,8 @@ import {
 } from "@/components/study";
 import { deckRepository, studyRepository, useSQLiteContext } from "@/db";
 import type { DeckStudyDirection, StudyCard as StudyCardType } from "@/db/types";
-import { useTheme } from "@/theme";
 import type { AppColors } from "@/theme";
+import { useTheme } from "@/theme";
 import { Ionicons } from "@expo/vector-icons";
 import * as Haptics from "expo-haptics";
 import { useLocalSearchParams, useNavigation, useRouter } from "expo-router";
@@ -342,7 +343,9 @@ export default function StudyScreen() {
   if (!deckHasCards) {
     return (
       <View style={styles.emptyContainer} testID="study-screen-empty-deck">
-        <Text style={styles.emptyEmoji}>📚</Text>
+        <View style={styles.emptyIcon}>
+          <Icon name="books-open" size={128} color={colors.textSecondary} />
+        </View>
         <Text style={styles.emptyTitle}>No cards yet</Text>
         <Text style={styles.emptySubtitle}>Add some cards to this deck to start studying.</Text>
         <Pressable
@@ -478,6 +481,9 @@ function makeStyles(colors: AppColors) {
       alignItems: "center",
       backgroundColor: colors.surface,
       padding: 32,
+    },
+    emptyIcon: {
+      marginBottom: 16,
     },
     emptyEmoji: {
       fontSize: 64,
