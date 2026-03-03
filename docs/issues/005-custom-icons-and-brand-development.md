@@ -193,39 +193,91 @@ export const Icon = ({ name, size = 24, color = '#000' }: IconProps) => {
    - Update test assertions to look for Icon component instead of emoji text
    - May need to add test-id props to Icon component
 
-## Implementation Order
+## Implementation Order (Iterative Approach)
 
-### Phase 1: Proof of Concept (1-2 days)
+### Phase 1: Proof of Concept ✅ COMPLETE
 
-- [ ] Generate 1-2 icons in different styles (books or play button)
-- [ ] Install react-native-svg
-- [ ] Create Icon component with SvgXml
-- [ ] Replace ONE emoji in ONE component
-- [ ] Test on iOS and Android simulators
-- [ ] Validate approach and gather feedback
+- [x] Generate 5 icon style variations for books icon
+- [x] Install react-native-svg
+- [x] Create Icon component with SvgXml
+- [x] Replace books emoji in empty deck state
+- [x] Test on iOS simulator
+- [x] Validate approach and select style direction
 
-### Phase 2: Priority Icons (2-3 days)
+### Phase 2: Action Buttons (One at a time)
 
-- [ ] Finalize style direction based on Phase 1 feedback
-- [ ] Generate action button icons (play, edit)
-- [ ] Generate empty state icons (books, sparkles, party)
-- [ ] Optimize SVGs
-- [ ] Replace emojis in DeckCard.tsx and app/study/[id].tsx
-- [ ] Test on both platforms
+**Icon 2: Play/Study Button**
 
-### Phase 3: Remaining Icons & Polish (1-2 days)
+- [ ] Generate 3-5 variations for play/study icon (▶️ → arrow, path, or flow)
+- [ ] Add winning variation to Icon component
+- [ ] Replace emoji in DeckCard.tsx:90
+- [ ] Test in app (view deck list, click study button)
+- [ ] Refine if needed
 
-- [ ] Generate status indicator icons (pin, check, x)
-- [ ] Replace remaining emojis in StudyCompletion.tsx
-- [ ] Update all tests
-- [ ] Create icon style guide documentation
-- [ ] Document color palette decisions
+**Icon 3: Edit Button**
 
-### Phase 4: Brand Guidelines (1 day - async)
+- [ ] Generate 3-5 variations for edit icon (✏️ → pen, brush, or pencil)
+- [ ] Add winning variation to Icon component
+- [ ] Replace emoji in DeckCard.tsx:103
+- [ ] Test in app (view deck list, click edit button)
+- [ ] Refine if needed
 
-- [ ] Finalize color palette
-- [ ] Create design system documentation
-- [ ] Export icon source files to version control
+### Phase 3: Empty States (One at a time)
+
+**Icon 4: Sparkles (All Caught Up)**
+
+- [ ] Generate 3-5 variations for sparkles icon (✨ → light, enlightenment glow)
+- [ ] Add winning variation to Icon component
+- [ ] Replace emoji in app/study/[id].tsx:363
+- [ ] Test in app (complete all cards in a deck)
+- [ ] Refine if needed
+
+**Icon 5: Party (Session Complete)**
+
+- [ ] Generate 3-5 variations for celebration icon (🎉 → lotus bloom, peaceful celebration)
+- [ ] Add winning variation to Icon component
+- [ ] Replace emoji in StudyCompletion.tsx:23
+- [ ] Test in app (complete a study session)
+- [ ] Refine if needed
+
+### Phase 4: Status Indicators (One at a time)
+
+**Icon 6: Pin (Default Deck)**
+
+- [ ] Generate 3-5 variations for pin/bookmark icon (📌)
+- [ ] Add winning variation to Icon component
+- [ ] Replace emoji in DeckCard.tsx:63
+- [ ] Test in app (view deck list with "All" deck)
+- [ ] Refine if needed
+
+**Icon 7: Checkmark (Correct Answer)**
+
+- [ ] Generate 3-5 variations for check icon (✓)
+- [ ] Add winning variation to Icon component
+- [ ] Replace emoji in StudyCompletion.tsx:41
+- [ ] Test in app (complete session, view stats)
+- [ ] Refine if needed
+
+**Icon 8: X Mark (Incorrect Answer)**
+
+- [ ] Generate 3-5 variations for X icon (✗)
+- [ ] Add winning variation to Icon component
+- [ ] Replace emoji in StudyCompletion.tsx:41
+- [ ] Test in app (complete session, view stats)
+- [ ] Refine if needed
+
+### Phase 5: Polish & Documentation
+
+- [ ] Update DeckCard.test.tsx to recognize Icon components
+- [ ] Run full test suite: `pnpm test`
+- [ ] Create `/docs/design/ICON_STYLE_GUIDE.md` documenting:
+  - Line weight, corner radius, level of detail
+  - Buddhist symbolism usage guidelines
+  - Icon grid size and padding rules
+  - Color usage approach
+- [ ] Document color palette in style guide
+- [ ] Finalize brand color palette
+- [ ] Export all icon SVG source files
 - [ ] Consider: Update app icon to match new style (future)
 
 ## Testing & Verification
