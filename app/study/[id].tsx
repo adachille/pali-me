@@ -330,6 +330,14 @@ export default function StudyScreen() {
     router.back();
   }, [router]);
 
+  // Jump to deck detail and open add-items modal
+  const handleAddCards = useCallback(() => {
+    router.replace({
+      pathname: "/deck/[id]",
+      params: { id: deckId.toString(), addItems: "1" },
+    });
+  }, [deckId, router]);
+
   // Loading state
   if (isLoading) {
     return (
@@ -350,10 +358,17 @@ export default function StudyScreen() {
         <Text style={styles.emptySubtitle}>Add some cards to this deck to start studying.</Text>
         <Pressable
           style={({ pressed }) => [styles.emptyButton, pressed && styles.emptyButtonPressed]}
+          onPress={handleAddCards}
+          testID="empty-deck-add-cards-button"
+        >
+          <Text style={styles.emptyButtonText}>Add Cards</Text>
+        </Pressable>
+        <Pressable
+          style={({ pressed }) => [styles.backLink, pressed && styles.backLinkPressed]}
           onPress={handleBackToHome}
           testID="empty-deck-back-button"
         >
-          <Text style={styles.emptyButtonText}>Back to Home</Text>
+          <Text style={styles.backLinkText}>Back to Home</Text>
         </Pressable>
       </View>
     );
