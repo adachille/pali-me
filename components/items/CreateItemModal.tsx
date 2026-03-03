@@ -45,7 +45,10 @@ export function CreateItemModal({ visible, onClose, onItemCreated }: CreateItemM
 
   return (
     <Modal visible={visible} animationType="slide" onRequestClose={onClose}>
-      <View style={[styles.container, { backgroundColor: colors.surface }]} testID="create-item-modal">
+      <View
+        style={[styles.container, { backgroundColor: colors.surface }]}
+        testID="create-item-modal"
+      >
         <View style={[styles.header, { borderBottomColor: colors.border }]}>
           <Text style={[styles.title, { color: colors.text }]}>Create New Card</Text>
           <Pressable

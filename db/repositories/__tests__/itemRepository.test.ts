@@ -35,8 +35,9 @@ describe("itemRepository", () => {
 
       expect(mockDb.getAllAsync).toHaveBeenCalledWith("SELECT * FROM items");
       expect(result).toHaveLength(2);
-      expect(result[0].pali).toBe("dhamma");
+      expect(result[0].pali).toBe("a-");
       expect(result[0].createdAt).toBeInstanceOf(Date);
+      expect(result[1].pali).toBe("dhamma");
     });
 
     it("returns empty array when no items exist", async () => {
