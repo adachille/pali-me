@@ -101,7 +101,7 @@ export function DeckCard({ deck, onPress, onStudyPress, onEditPress }: DeckCardP
               testID={`deck-edit-${deck.id}`}
               hitSlop={8}
             >
-              <Text style={styles.actionIcon}>✏️</Text>
+              <Icon name="edit-pencil-soft" size={20} color={colors.text} />
             </Pressable>
           )}
         </View>
@@ -179,9 +179,6 @@ function makeStyles(colors: AppColors) {
     },
     actionButtonPressed: {
       backgroundColor: colors.surfaceVariant,
-    },
-    actionIcon: {
-      fontSize: 20,
     },
     badge: {
       backgroundColor: colors.border,
