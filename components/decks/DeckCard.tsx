@@ -10,7 +10,6 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 type DeckCardProps = {
   deck: DeckWithCount;
   onPress: (deck: DeckWithCount) => void;
-  onStudyPress?: (deck: DeckWithCount) => void;
   onEditPress?: (deck: DeckWithCount) => void;
 };
 
@@ -40,7 +39,7 @@ function formatRelativeDate(date: Date): string {
   }
 }
 
-export function DeckCard({ deck, onPress, onStudyPress, onEditPress }: DeckCardProps) {
+export function DeckCard({ deck, onPress, onEditPress }: DeckCardProps) {
   const { colors } = useTheme();
   const styles = useMemo(() => makeStyles(colors), [colors]);
   const isAllDeck = deck.id === DEFAULT_DECK_ID;
@@ -53,7 +52,7 @@ export function DeckCard({ deck, onPress, onStudyPress, onEditPress }: DeckCardP
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
   const deckNameTestId = `deck-card-name-${normalizedName || "unnamed"}`;
-  const hasActions = Boolean(onStudyPress) || canEditDeck;
+  const hasActions = canEditDeck;
 
   return (
     <Pressable
@@ -75,24 +74,11 @@ export function DeckCard({ deck, onPress, onStudyPress, onEditPress }: DeckCardP
             <Text style={styles.date}>{formatRelativeDate(deck.createdAt)}</Text>
           </View>
         ) : (
-          <Text style={styles.date}>{formatRelativeDate(deck.createdAt)}</Text>
+            <Text style={styles.itemCount}>{itemCountText}</Text>
         )}
       </View>
-      {hasActions ? (
+      {hasActions && (
         <View style={styles.actions}>
-          {onStudyPress && (
-            <Pressable
-              style={({ pressed }) => [styles.actionButton, pressed && styles.actionButtonPressed]}
-              onPress={(e?: GestureResponderEvent) => {
-                e?.stopPropagation();
-                onStudyPress(deck);
-              }}
-              testID={`deck-study-${deck.id}`}
-              hitSlop={8}
-            >
-              <Icon name="cards-stacked-bare" size={30} color={colors.primary} />
-            </Pressable>
-          )}
           {canEditDeck && onEditPress && (
             <Pressable
               style={({ pressed }) => [styles.actionButton, pressed && styles.actionButtonPressed]}
@@ -106,10 +92,6 @@ export function DeckCard({ deck, onPress, onStudyPress, onEditPress }: DeckCardP
               <Icon name="edit-pencil-soft" size={30} color={colors.primary} />
             </Pressable>
           )}
-        </View>
-      ) : (
-        <View style={[styles.badge, isAllDeck && styles.allDeckBadge]}>
-          <Text style={styles.badgeText}>{itemCountText}</Text>
         </View>
       )}
     </Pressable>

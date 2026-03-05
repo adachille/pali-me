@@ -1,5 +1,5 @@
 import { useCallback, useMemo } from "react";
-import { FlatList, StyleSheet, TextInput, View, type ListRenderItem } from "react-native";
+import { FlatList, StyleSheet, Text, TextInput, View, type ListRenderItem } from "react-native";
 import type { DeckWithCount, SortOption } from "@/db/repositories/deckRepository";
 import { useTheme } from "@/theme";
 import type { AppColors } from "@/theme";
@@ -14,7 +14,6 @@ type DeckListProps = {
   onSearchChange: (query: string) => void;
   onSortChange: (sort: SortOption) => void;
   onDeckPress: (deck: DeckWithCount) => void;
-  onStudyPress?: (deck: DeckWithCount) => void;
   onEditPress?: (deck: DeckWithCount) => void;
   onCreatePress: () => void;
 };
@@ -26,7 +25,6 @@ export function DeckList({
   onSearchChange,
   onSortChange,
   onDeckPress,
-  onStudyPress,
   onEditPress,
   onCreatePress,
 }: DeckListProps) {
@@ -38,11 +36,10 @@ export function DeckList({
       <DeckCard
         deck={item}
         onPress={onDeckPress}
-        onStudyPress={onStudyPress}
         onEditPress={onEditPress}
       />
     ),
-    [onDeckPress, onStudyPress, onEditPress]
+    [onDeckPress, onEditPress]
   );
 
   const keyExtractor = useCallback((item: DeckWithCount) => String(item.id), []);
@@ -52,19 +49,22 @@ export function DeckList({
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <View style={styles.searchContainer}>
-          <TextInput
-            style={styles.searchInput}
-            placeholder="Search decks..."
-            placeholderTextColor={colors.placeholder}
-            value={searchQuery}
-            onChangeText={onSearchChange}
-            autoCapitalize="none"
-            autoCorrect={false}
-            testID="deck-search-input"
-          />
+        <View style={styles.headerControls}>
+          <View style={styles.searchContainer}>
+            <TextInput
+              style={styles.searchInput}
+              placeholder="Search decks..."
+              placeholderTextColor={colors.placeholder}
+              value={searchQuery}
+              onChangeText={onSearchChange}
+              autoCapitalize="none"
+              autoCorrect={false}
+              testID="deck-search-input"
+            />
+          </View>
+          <DeckSortPicker value={sortOption} onChange={onSortChange} />
         </View>
-        <DeckSortPicker value={sortOption} onChange={onSortChange} />
+        <Text style={styles.helperText}>Tap any deck to start studying.</Text>
       </View>
       <FlatList
         data={decks}
@@ -87,12 +87,16 @@ function makeStyles(colors: AppColors) {
       backgroundColor: colors.background,
     },
     header: {
-      flexDirection: "row",
-      alignItems: "center",
+      alignItems: "stretch",
       padding: 12,
       backgroundColor: colors.surface,
       borderBottomWidth: 1,
       borderBottomColor: colors.border,
+      gap: 8,
+    },
+    headerControls: {
+      flexDirection: "row",
+      alignItems: "center",
       gap: 12,
     },
     searchContainer: {
@@ -107,6 +111,12 @@ function makeStyles(colors: AppColors) {
       color: colors.text,
       borderWidth: 1,
       borderColor: colors.border,
+    },
+    helperText: {
+      fontSize: 13,
+      color: colors.textSecondary,
+      textAlign: "center",
+      alignSelf: "center",
     },
     emptyContainer: {
       flex: 1,

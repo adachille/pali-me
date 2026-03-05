@@ -41,6 +41,12 @@ describe("DeckList", () => {
     expect(screen.getByTestId("deck-search-input")).toBeTruthy();
   });
 
+  it("renders study helper text", () => {
+    render(<DeckList {...defaultProps} />);
+
+    expect(screen.getByText("Tap any deck to start studying.")).toBeTruthy();
+  });
+
   it("renders deck cards", () => {
     render(<DeckList {...defaultProps} />);
 

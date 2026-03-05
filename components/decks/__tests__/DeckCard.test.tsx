@@ -73,34 +73,18 @@ describe("DeckCard", () => {
     expect(screen.queryByText("📌")).toBeNull();
   });
 
-  it("renders study and edit action buttons when handlers provided", () => {
+  it("renders edit action button when handler provided", () => {
     render(
-      <DeckCard
-        deck={mockDeck}
-        onPress={jest.fn()}
-        onStudyPress={jest.fn()}
-        onEditPress={jest.fn()}
-      />
+      <DeckCard deck={mockDeck} onPress={jest.fn()} onEditPress={jest.fn()} />
     );
 
-    expect(screen.getByTestId("deck-study-2")).toBeTruthy();
     expect(screen.getByTestId("deck-edit-2")).toBeTruthy();
   });
 
-  it("calls onStudyPress when study button is pressed", () => {
-    const onStudyPress = jest.fn();
-    render(
-      <DeckCard
-        deck={mockDeck}
-        onPress={jest.fn()}
-        onStudyPress={onStudyPress}
-        onEditPress={jest.fn()}
-      />
-    );
+  it("does not render study action button", () => {
+    render(<DeckCard deck={mockDeck} onPress={jest.fn()} onEditPress={jest.fn()} />);
 
-    fireEvent.press(screen.getByTestId("deck-study-2"));
-
-    expect(onStudyPress).toHaveBeenCalledWith(mockDeck);
+    expect(screen.queryByTestId("deck-study-2")).toBeNull();
   });
 
   it("calls onEditPress when edit button is pressed", () => {
@@ -109,7 +93,6 @@ describe("DeckCard", () => {
       <DeckCard
         deck={mockDeck}
         onPress={jest.fn()}
-        onStudyPress={jest.fn()}
         onEditPress={onEditPress}
       />
     );
@@ -124,24 +107,15 @@ describe("DeckCard", () => {
       <DeckCard
         deck={mockAllDeck}
         onPress={jest.fn()}
-        onStudyPress={jest.fn()}
         onEditPress={jest.fn()}
       />
     );
 
     expect(screen.queryByTestId("deck-edit-1")).toBeNull();
-    expect(screen.getByTestId("deck-study-1")).toBeTruthy();
   });
 
-  it("shows item count in meta row when action buttons are present", () => {
-    render(
-      <DeckCard
-        deck={mockDeck}
-        onPress={jest.fn()}
-        onStudyPress={jest.fn()}
-        onEditPress={jest.fn()}
-      />
-    );
+  it("shows item count in meta row when edit action is present", () => {
+    render(<DeckCard deck={mockDeck} onPress={jest.fn()} onEditPress={jest.fn()} />);
 
     // Item count should be visible in meta row
     expect(screen.getByText("5 items")).toBeTruthy();

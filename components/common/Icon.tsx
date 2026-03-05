@@ -1,7 +1,8 @@
-import BooksOpen from "@/assets/icons/svg/books-open.svg";
 import AudioOn from "@/assets/icons/svg/audio-on.svg";
+import BooksOpen from "@/assets/icons/svg/books-open.svg";
 import CardsStackedBare from "@/assets/icons/svg/cards-stacked-bare.svg";
 import EditPencilSoft from "@/assets/icons/svg/edit-pencil-soft.svg";
+import LotusIcon from "@/assets/icons/svg/lotus.svg";
 import PlayTraingle from "@/assets/icons/svg/play-traingle.svg";
 import type { SvgProps } from "react-native-svg";
 
@@ -10,6 +11,7 @@ const SVG_ICONS: Record<string, React.FC<SvgProps>> = {
   "books-open": BooksOpen,
   "cards-stacked-bare": CardsStackedBare,
   "edit-pencil-soft": EditPencilSoft,
+  "lotus": LotusIcon,
   "play-traingle": PlayTraingle,
 };
 
