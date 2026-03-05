@@ -4,6 +4,8 @@ import CardsStackedBare from "@/assets/icons/svg/cards-stacked-bare.svg";
 import EditPencilSoft from "@/assets/icons/svg/edit-pencil-soft.svg";
 import LotusIcon from "@/assets/icons/svg/lotus.svg";
 import PlayTraingle from "@/assets/icons/svg/play-traingle.svg";
+import SparkleLotusLight from "@/assets/icons/svg/sparkle-lotus-light.svg";
+import SparkleThreeStars from "@/assets/icons/svg/sparkle-three-stars.svg";
 import type { SvgProps } from "react-native-svg";
 
 const SVG_ICONS: Record<string, React.FC<SvgProps>> = {
@@ -13,6 +15,8 @@ const SVG_ICONS: Record<string, React.FC<SvgProps>> = {
   "edit-pencil-soft": EditPencilSoft,
   "lotus": LotusIcon,
   "play-traingle": PlayTraingle,
+  "sparkle-lotus-light": SparkleLotusLight,
+  "sparkle-three-stars": SparkleThreeStars,
 };
 
 type IconName = keyof typeof SVG_ICONS;

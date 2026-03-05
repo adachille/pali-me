@@ -378,7 +378,9 @@ export default function StudyScreen() {
   if (cards.length === 0 && !isComplete) {
     return (
       <View style={styles.emptyContainer} testID="study-screen-empty">
-        <Text style={styles.emptyEmoji}>✨</Text>
+        <View style={styles.emptyIcon}>
+          <Icon name="sparkle-lotus-light" size={128} color={colors.textSecondary} />
+        </View>
         <Text style={styles.emptyTitle}>All caught up!</Text>
         <Text style={styles.emptySubtitle}>No cards are due for review right now.</Text>
         <Pressable
@@ -540,6 +542,21 @@ function makeStyles(colors: AppColors) {
     backLinkText: {
       fontSize: 14,
       color: colors.primary,
+    },
+    comparisonRow: {
+      flexDirection: "row",
+      justifyContent: "center",
+      gap: 24,
+      marginBottom: 24,
+    },
+    comparisonItem: {
+      alignItems: "center",
+      gap: 8,
+    },
+    comparisonLabel: {
+      fontSize: 11,
+      color: colors.textSecondary,
+      textAlign: "center",
     },
   });
 }
