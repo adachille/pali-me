@@ -1,6 +1,11 @@
 import AudioOn from "@/assets/icons/svg/audio-on.svg";
 import BooksOpen from "@/assets/icons/svg/books-open.svg";
 import CardsStackedBare from "@/assets/icons/svg/cards-stacked-bare.svg";
+import CelebrateBodhiLeaf from "@/assets/icons/svg/celebrate-bodhi-leaf.svg";
+import CelebrateBodhiLeafHeart from "@/assets/icons/svg/celebrate-bodhi-leaf-heart.svg";
+import CelebrateLotusBloom from "@/assets/icons/svg/celebrate-lotus-bloom.svg";
+import CelebrateSunrise from "@/assets/icons/svg/celebrate-sunrise.svg";
+import CelebrateSunrise2 from "@/assets/icons/svg/celebrate-sunrise-2.svg";
 import EditPencilSoft from "@/assets/icons/svg/edit-pencil-soft.svg";
 import LotusIcon from "@/assets/icons/svg/lotus.svg";
 import PlayTraingle from "@/assets/icons/svg/play-traingle.svg";
@@ -12,6 +17,11 @@ const SVG_ICONS: Record<string, React.FC<SvgProps>> = {
   "audio-on": AudioOn,
   "books-open": BooksOpen,
   "cards-stacked-bare": CardsStackedBare,
+  "celebrate-bodhi-leaf": CelebrateBodhiLeaf,
+  "celebrate-bodhi-leaf-heart": CelebrateBodhiLeafHeart,
+  "celebrate-lotus-bloom": CelebrateLotusBloom,
+  "celebrate-sunrise": CelebrateSunrise,
+  "celebrate-sunrise-2": CelebrateSunrise2,
   "edit-pencil-soft": EditPencilSoft,
   "lotus": LotusIcon,
   "play-traingle": PlayTraingle,
