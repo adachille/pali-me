@@ -1,8 +1,8 @@
+import { Icon } from "@/components/common/Icon";
 import { DEFAULT_DECK_ID } from "@/db";
 import type { DeckWithCount } from "@/db/repositories/deckRepository";
-import { Icon } from "@/components/common/Icon";
-import { useTheme } from "@/theme";
 import type { AppColors } from "@/theme";
+import { useTheme } from "@/theme";
 import { useMemo } from "react";
 import type { GestureResponderEvent } from "react-native";
 import { Pressable, StyleSheet, Text, View } from "react-native";
@@ -44,14 +44,16 @@ export function DeckCard({ deck, onPress, onStudyPress, onEditPress }: DeckCardP
   const { colors } = useTheme();
   const styles = useMemo(() => makeStyles(colors), [colors]);
   const isAllDeck = deck.id === DEFAULT_DECK_ID;
+  const displayDeckName = isAllDeck ? "All cards" : deck.name;
+  const canEditDeck = Boolean(onEditPress) && !isAllDeck;
   const itemCountText = deck.itemCount === 1 ? "1 item" : `${deck.itemCount} items`;
-  const normalizedName = deck.name
+  const normalizedName = displayDeckName
     .trim()
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
   const deckNameTestId = `deck-card-name-${normalizedName || "unnamed"}`;
-  const hasActions = onStudyPress || onEditPress;
+  const hasActions = Boolean(onStudyPress) || canEditDeck;
 
   return (
     <Pressable
@@ -63,7 +65,7 @@ export function DeckCard({ deck, onPress, onStudyPress, onEditPress }: DeckCardP
         <View style={styles.nameRow}>
           {isAllDeck && <Text style={styles.pinIcon}>📌</Text>}
           <Text style={[styles.name, isAllDeck && styles.allDeckName]} testID={deckNameTestId}>
-            {deck.name}
+            {displayDeckName}
           </Text>
         </View>
         {hasActions ? (
@@ -88,10 +90,10 @@ export function DeckCard({ deck, onPress, onStudyPress, onEditPress }: DeckCardP
               testID={`deck-study-${deck.id}`}
               hitSlop={8}
             >
-              <Icon name="cards-stacked-bare" size={20} color={colors.text} />
+              <Icon name="cards-stacked-bare" size={30} color={colors.primary} />
             </Pressable>
           )}
-          {onEditPress && (
+          {canEditDeck && onEditPress && (
             <Pressable
               style={({ pressed }) => [styles.actionButton, pressed && styles.actionButtonPressed]}
               onPress={(e?: GestureResponderEvent) => {
@@ -101,7 +103,7 @@ export function DeckCard({ deck, onPress, onStudyPress, onEditPress }: DeckCardP
               testID={`deck-edit-${deck.id}`}
               hitSlop={8}
             >
-              <Icon name="edit-pencil-soft" size={20} color={colors.text} />
+              <Icon name="edit-pencil-soft" size={30} color={colors.primary} />
             </Pressable>
           )}
         </View>

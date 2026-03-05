@@ -44,7 +44,7 @@ describe("DeckList", () => {
   it("renders deck cards", () => {
     render(<DeckList {...defaultProps} />);
 
-    expect(screen.getByText("All")).toBeTruthy();
+    expect(screen.getByText("All cards")).toBeTruthy();
     expect(screen.getByText("Verbs")).toBeTruthy();
   });
 

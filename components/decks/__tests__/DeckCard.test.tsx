@@ -61,6 +61,12 @@ describe("DeckCard", () => {
     expect(screen.getByText("📌")).toBeTruthy();
   });
 
+  it('renders "All cards" label for default deck', () => {
+    render(<DeckCard deck={mockAllDeck} onPress={jest.fn()} />);
+
+    expect(screen.getByText("All cards")).toBeTruthy();
+  });
+
   it("does not show pin icon for regular deck", () => {
     render(<DeckCard deck={mockDeck} onPress={jest.fn()} />);
 
@@ -111,6 +117,20 @@ describe("DeckCard", () => {
     fireEvent.press(screen.getByTestId("deck-edit-2"));
 
     expect(onEditPress).toHaveBeenCalledWith(mockDeck);
+  });
+
+  it('does not render edit button for default "All" deck', () => {
+    render(
+      <DeckCard
+        deck={mockAllDeck}
+        onPress={jest.fn()}
+        onStudyPress={jest.fn()}
+        onEditPress={jest.fn()}
+      />
+    );
+
+    expect(screen.queryByTestId("deck-edit-1")).toBeNull();
+    expect(screen.getByTestId("deck-study-1")).toBeTruthy();
   });
 
   it("shows item count in meta row when action buttons are present", () => {
