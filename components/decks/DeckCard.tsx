@@ -62,7 +62,11 @@ export function DeckCard({ deck, onPress, onEditPress }: DeckCardProps) {
     >
       <View style={styles.content}>
         <View style={styles.nameRow}>
-          {isAllDeck && <Text style={styles.pinIcon}>📌</Text>}
+          {isAllDeck && (
+            <View style={styles.pinIcon}>
+              <Icon name="pin-simple" size={24} color={colors.primary} />
+            </View>
+          )}
           <Text style={[styles.name, isAllDeck && styles.allDeckName]} testID={deckNameTestId}>
             {displayDeckName}
           </Text>
@@ -125,19 +129,16 @@ function makeStyles(colors: AppColors) {
       marginTop: 2,
     },
     pinIcon: {
-      fontSize: 14,
-      color: colors.primary,
       marginRight: 6,
-      fontWeight: "bold",
     },
     name: {
       fontSize: 18,
-      fontWeight: "600",
+      fontWeight: "500",
       color: colors.text,
       marginBottom: 4,
     },
     allDeckName: {
-      color: colors.primary,
+      fontWeight: "600",
     },
     itemCount: {
       fontSize: 13,

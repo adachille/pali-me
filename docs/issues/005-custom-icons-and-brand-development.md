@@ -48,9 +48,9 @@ For each icon, follow this workflow:
 1. **Books (📚)** — Empty deck state — ✅ Done
 2. **Play/Study (▶️)** — Study button — [components/decks/DeckCard.tsx:90](components/decks/DeckCard.tsx#L90)
 3. **Edit (✏️)** — Edit button — [components/decks/DeckCard.tsx:103](components/decks/DeckCard.tsx#L103)
-4. **Sparkles (✨)** — All caught up state — [app/study/[id].tsx:366](app/study/[id].tsx#L366)
-5. **Party (🎉)** — Session complete — [components/study/StudyCompletion.tsx:23](components/study/StudyCompletion.tsx#L23)
-6. **Pin (📌)** — Default deck marker — [components/decks/DeckCard.tsx:63](components/decks/DeckCard.tsx#L63)
+4. **Sparkles (✨)** — All caught up state — ✅ Done
+5. **Party (🎉)** — Session complete — ✅ Done
+6. **Pin (📌)** — Default deck marker — ✅ Done
 7. **Check (✓)** — Correct answer — [components/study/StudyCompletion.tsx:41](components/study/StudyCompletion.tsx#L41)
 8. **X (✗)** — Incorrect answer — [components/study/StudyCompletion.tsx:41](components/study/StudyCompletion.tsx#L41)
 
@@ -128,16 +128,16 @@ pnpm add -D react-native-svg-transformer
 ### Files to Modify (Per Icon)
 
 1. **components/decks/DeckCard.tsx** (lines 63, 90, 103)
-   - Replace `📌` with `<Icon name="pin" size={16} />`
-   - Replace `▶️` with `<Icon name="play" size={16} />`
-   - Replace `✏️` with `<Icon name="edit" size={16} />`
+   - ~~Replace `📌` with `<Icon name="pin-simple" size={18} />`~~ ✅ Done
+   - ~~Replace `▶️` with `<Icon name="cards-stacked-bare" />`~~ ✅ Done
+   - ~~Replace `✏️` with `<Icon name="edit-pencil-soft" />`~~ ✅ Done
 
 2. **app/study/[id].tsx** (lines 345, 366)
    - ~~Replace `📚` with `<Icon name="books-open" />`~~ ✅ Done
-   - Replace `✨` with `<Icon name="sparkles" size={48} />`
+   - ~~Replace `✨` with `<Icon name="sparkle-lotus-light" size={128} />`~~ ✅ Done
 
 3. **components/study/StudyCompletion.tsx** (lines 23, 41)
-   - Replace `🎉` with `<Icon name="party" size={64} />`
+   - ~~Replace `🎉` with `<Icon name="celebrate-sunrise-2" size={128} />`~~ ✅ Done
    - Replace `✓` with `<Icon name="check" size={20} />`
    - Replace `✗` with `<Icon name="x" size={20} />`
 
@@ -171,31 +171,32 @@ pnpm add -D react-native-svg-transformer
 - [x] Final implementation (replaced `✏️` in `DeckCard` edit action)
 - [x] Commit
 
-### Icon 4: Sparkles (✨) — All Caught Up
+### Icon 4: Sparkles (✨) — All Caught Up ✅ COMPLETE
 
-- [ ] Set up comparison view in study screen
-- [ ] Claude generates SVG variations
-- [ ] Generate variations with other AI tools
-- [ ] Pick winner
-- [ ] Final implementation
-- [ ] Commit
+- [x] Set up comparison view in study screen
+- [x] Claude generates SVG variations (`sparkle-three-stars`, `sparkle-radiant`, `sparkle-lotus-light`)
+- [x] Generate variations with other AI tools
+- [x] Pick winner (`sparkle-lotus-light`) — lotus-inspired petal rays radiating from center
+- [x] Final implementation (replaced `✨` in `app/study/[id].tsx` all caught up state)
+- [x] Commit
 
-### Icon 5: Party (🎉) — Session Complete
+### Icon 5: Party (🎉) — Session Complete ✅ COMPLETE
 
-- [ ] Set up comparison view in StudyCompletion
-- [ ] Claude generates SVG variations
-- [ ] Generate variations with other AI tools
-- [ ] Pick winner
-- [ ] Final implementation
-- [ ] Commit
+- [x] Set up comparison view in StudyCompletion
+- [x] Claude generates SVG variations (`celebrate-lotus-bloom`, `celebrate-sunrise`, `celebrate-bodhi-leaf`)
+- [x] Additional variations (`celebrate-bodhi-leaf-heart`, `celebrate-sunrise-2`)
+- [x] Pick winner (`celebrate-sunrise-2`) — rising sun with evenly spaced rays at 35° intervals
+- [x] Final implementation (replaced `🎉` in `StudyCompletion.tsx`)
+- [x] Commit
 
-### Icon 6: Pin (📌) — Default Deck Marker
+### Icon 6: Pin (📌) — Default Deck Marker ✅ COMPLETE
 
-- [ ] Set up comparison view in DeckCard
-- [ ] Claude generates SVG variations
-- [ ] Generate variations with other AI tools
-- [ ] Pick winner
-- [ ] Final implementation
+- [x] Set up comparison view in DeckCard
+- [x] Claude generates SVG variations (`pin-simple`, `pin-lotus`, `pin-bodhi-leaf`)
+- [x] AI-generated variation (`svg-ai-pin`)
+- [x] Pick winner (`pin-simple`) — AI-generated pushpin icon, rendered in dark grey
+- [x] Final implementation (replaced `📌` in `DeckCard.tsx` all-deck marker)
+- [x] Cleaned up rejected candidates
 - [ ] Commit
 
 ### Icon 7: Check (✓) — Correct Answer
