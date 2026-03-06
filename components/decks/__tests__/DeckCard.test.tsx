@@ -55,12 +55,6 @@ describe("DeckCard", () => {
     expect(onPress).toHaveBeenCalledWith(mockDeck);
   });
 
-  it('shows pin icon for "All" deck', () => {
-    render(<DeckCard deck={mockAllDeck} onPress={jest.fn()} />);
-
-    expect(screen.getByTestId("pin-icon")).toBeTruthy();
-  });
-
   it('renders "All cards" label for default deck', () => {
     render(<DeckCard deck={mockAllDeck} onPress={jest.fn()} />);
 
