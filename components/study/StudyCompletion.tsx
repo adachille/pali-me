@@ -22,7 +22,7 @@ export function StudyCompletion({ totalCards, correctCount, onBackToHome }: Stud
     <View style={styles.container} testID="study-completion">
       <View style={styles.content}>
         <View style={styles.iconContainer}>
-          <Icon name="celebrate-sunrise-2" size={128} color={colors.textSecondary} />
+          <Icon name="celebrate-sunrise" size={128} color={colors.textSecondary} />
         </View>
         <Text style={styles.title}>Great job!</Text>
         <Text style={styles.subtitle}>You&apos;ve completed this study session.</Text>

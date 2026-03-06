@@ -136,7 +136,10 @@ pnpm add -D react-native-svg-transformer
    - ~~Replace `📚` with `<Icon name="books-open" />`~~ ✅ Done
    - ~~Replace `✨` with `<Icon name="sparkle-lotus-light" size={128} />`~~ ✅ Done
 
-3. **components/study/StudyCompletion.tsx** (lines 23, 41)
+3. **app/(tabs)/_layout.tsx** (line 33)
+   - ~~Replace Ionicons `home` with `<Icon name="lotus" />`~~ ✅ Done
+
+4. **components/study/StudyCompletion.tsx** (lines 23, 41)
    - ~~Replace `🎉` with `<Icon name="celebrate-sunrise-2" size={128} />`~~ ✅ Done
    - ~~`✓` — Keeping as-is~~
    - ~~`✗` — Keeping as-is~~
@@ -202,6 +205,11 @@ pnpm add -D react-native-svg-transformer
 ### Icon 7 & 8: Check (✓) and X (✗) — Skipped
 
 Keeping existing text characters — they work well as-is.
+
+### Lotus — Home Tab Icon ✅ COMPLETE
+
+- [x] Replaced Ionicons `home` with `<Icon name="lotus" />` in `app/(tabs)/_layout.tsx`
+- [x] Updated `lotus.svg` to use `currentColor` instead of hardcoded `rgb(0,0,0)`
 
 ### Polish & Documentation ✅ COMPLETE
 

@@ -9,9 +9,9 @@ Calm, mindful, and understated — appropriate for Theravadan Buddhist students 
 | Name | Usage | Source | Size (in use) |
 |------|-------|--------|---------------|
 | `books-open` | Empty deck state | AI-generated (Recraft) | 128px |
-| `cards-stacked-bare` | Study button | Claude SVG | 30px |
-| `celebrate-sunrise-2` | Session complete | Claude SVG | 128px |
+| `celebrate-sunrise` | Session complete | Claude SVG | 128px |
 | `edit-pencil-soft` | Edit button | Claude SVG | 30px |
+| `lotus` | Home tab icon | AI-generated | 28px (tab bar) |
 | `pin-simple` | Default deck marker | AI-generated | 24px |
 | `sparkle-lotus-light` | All caught up state | Claude SVG | 128px |
 
