@@ -1,3 +1,4 @@
+import { Icon } from "@/components/common/Icon";
 import {
   AnswerInput,
   FeedbackDisplay,
@@ -8,8 +9,8 @@ import {
 } from "@/components/study";
 import { deckRepository, studyRepository, useSQLiteContext } from "@/db";
 import type { DeckStudyDirection, StudyCard as StudyCardType } from "@/db/types";
-import { useTheme } from "@/theme";
 import type { AppColors } from "@/theme";
+import { useTheme } from "@/theme";
 import { Ionicons } from "@expo/vector-icons";
 import * as Haptics from "expo-haptics";
 import { useLocalSearchParams, useNavigation, useRouter } from "expo-router";
@@ -329,6 +330,14 @@ export default function StudyScreen() {
     router.back();
   }, [router]);
 
+  // Jump to deck detail and open add-items modal
+  const handleAddCards = useCallback(() => {
+    router.replace({
+      pathname: "/deck/[id]",
+      params: { id: deckId.toString(), addItems: "1" },
+    });
+  }, [deckId, router]);
+
   // Loading state
   if (isLoading) {
     return (
@@ -342,15 +351,24 @@ export default function StudyScreen() {
   if (!deckHasCards) {
     return (
       <View style={styles.emptyContainer} testID="study-screen-empty-deck">
-        <Text style={styles.emptyEmoji}>📚</Text>
+        <View style={styles.emptyIcon}>
+          <Icon name="books-open" size={128} color={colors.textSecondary} />
+        </View>
         <Text style={styles.emptyTitle}>No cards yet</Text>
         <Text style={styles.emptySubtitle}>Add some cards to this deck to start studying.</Text>
         <Pressable
           style={({ pressed }) => [styles.emptyButton, pressed && styles.emptyButtonPressed]}
+          onPress={handleAddCards}
+          testID="empty-deck-add-cards-button"
+        >
+          <Text style={styles.emptyButtonText}>Add Cards</Text>
+        </Pressable>
+        <Pressable
+          style={({ pressed }) => [styles.backLink, pressed && styles.backLinkPressed]}
           onPress={handleBackToHome}
           testID="empty-deck-back-button"
         >
-          <Text style={styles.emptyButtonText}>Back to Home</Text>
+          <Text style={styles.backLinkText}>Back to Home</Text>
         </Pressable>
       </View>
     );
@@ -360,7 +378,9 @@ export default function StudyScreen() {
   if (cards.length === 0 && !isComplete) {
     return (
       <View style={styles.emptyContainer} testID="study-screen-empty">
-        <Text style={styles.emptyEmoji}>✨</Text>
+        <View style={styles.emptyIcon}>
+          <Icon name="sparkle-lotus-light" size={128} color={colors.textSecondary} />
+        </View>
         <Text style={styles.emptyTitle}>All caught up!</Text>
         <Text style={styles.emptySubtitle}>No cards are due for review right now.</Text>
         <Pressable
@@ -478,6 +498,9 @@ function makeStyles(colors: AppColors) {
       alignItems: "center",
       backgroundColor: colors.surface,
       padding: 32,
+    },
+    emptyIcon: {
+      marginBottom: 16,
     },
     emptyEmoji: {
       fontSize: 64,

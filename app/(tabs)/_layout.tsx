@@ -1,3 +1,4 @@
+import { Icon } from "@/components/common/Icon";
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import { useTheme } from "@/theme";
@@ -30,7 +31,7 @@ export default function TabLayout() {
           title: "Home",
           tabBarButtonTestID: "tab-home",
           tabBarAccessibilityLabel: "tab-home",
-          tabBarIcon: ({ color, size }) => <Ionicons name="home" size={size} color={color} />,
+          tabBarIcon: ({ color, size }) => <Icon name="lotus" size={size} color={color} />,
         }}
       />
       <Tabs.Screen

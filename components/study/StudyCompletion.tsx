@@ -1,7 +1,8 @@
+import { Icon } from "@/components/common/Icon";
+import type { AppColors } from "@/theme";
+import { useTheme } from "@/theme";
 import { useMemo } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
-import { useTheme } from "@/theme";
-import type { AppColors } from "@/theme";
 
 type StudyCompletionProps = {
   totalCards: number;
@@ -20,7 +21,9 @@ export function StudyCompletion({ totalCards, correctCount, onBackToHome }: Stud
   return (
     <View style={styles.container} testID="study-completion">
       <View style={styles.content}>
-        <Text style={styles.emoji}>🎉</Text>
+        <View style={styles.iconContainer}>
+          <Icon name="celebrate-sunrise" size={128} color={colors.textSecondary} />
+        </View>
         <Text style={styles.title}>Great job!</Text>
         <Text style={styles.subtitle}>You&apos;ve completed this study session.</Text>
 
@@ -65,8 +68,7 @@ function makeStyles(colors: AppColors) {
       alignItems: "center",
       marginBottom: 32,
     },
-    emoji: {
-      fontSize: 64,
+    iconContainer: {
       marginBottom: 16,
     },
     title: {
