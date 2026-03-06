@@ -130,10 +130,12 @@ function exportWeb(jsonString: string) {
 
 function pickFileWeb(): Promise<string | null> {
   return new Promise((resolve) => {
+    let resolved = false;
     const input = document.createElement("input");
     input.type = "file";
     input.accept = ".json,application/json";
     input.onchange = () => {
+      resolved = true;
       const file = input.files?.[0];
       if (!file) {
         resolve(null);
@@ -144,6 +146,17 @@ function pickFileWeb(): Promise<string | null> {
       reader.onerror = () => resolve(null);
       reader.readAsText(file);
     };
+    // Handle cancel: browsers don't fire "change" on cancel, so detect
+    // when focus returns to the window without a file being selected.
+    const onFocus = () => {
+      window.removeEventListener("focus", onFocus);
+      setTimeout(() => {
+        if (!resolved) {
+          resolve(null);
+        }
+      }, 300);
+    };
+    window.addEventListener("focus", onFocus);
     input.click();
   });
 }
