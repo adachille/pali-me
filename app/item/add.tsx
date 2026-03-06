@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
-import { Alert, StyleSheet, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import { showAlert } from "@/utils/alert";
 import { useRouter } from "expo-router";
 import { useSQLiteContext, itemRepository, type ItemInsert } from "@/db";
 import { ItemForm } from "@/components/items";
@@ -20,7 +21,7 @@ export default function AddItemScreen() {
       router.back();
     } catch (error) {
       console.error("Failed to create item:", error);
-      Alert.alert("Error", "Failed to create card. Please try again.");
+      showAlert("Error", "Failed to create card. Please try again.");
       setIsSubmitting(false);
     }
   };
@@ -32,7 +33,7 @@ export default function AddItemScreen() {
       // Don't navigate back - form will be cleared by ItemForm
     } catch (error) {
       console.error("Failed to create item:", error);
-      Alert.alert("Error", "Failed to create card. Please try again.");
+      showAlert("Error", "Failed to create card. Please try again.");
     } finally {
       setIsSubmitting(false);
     }

@@ -1,13 +1,6 @@
 import { useMemo, useState } from "react";
-import {
-  ActivityIndicator,
-  Alert,
-  Platform,
-  Pressable,
-  StyleSheet,
-  Text,
-  View,
-} from "react-native";
+import { ActivityIndicator, Pressable, StyleSheet, Text, View } from "react-native";
+import { showAlert, showConfirm } from "@/utils/alert";
 import { useSQLiteContext } from "expo-sqlite";
 import { useTheme } from "@/theme";
 import type { AppColors, ThemeMode } from "@/theme";
@@ -28,14 +21,6 @@ export default function SettingsScreen() {
     system: "System",
   };
 
-  const showAlert = (title: string, message: string) => {
-    if (Platform.OS === "web") {
-      window.alert(`${title}\n\n${message}`);
-    } else {
-      Alert.alert(title, message);
-    }
-  };
-
   const handleExport = async () => {
     setIsExporting(true);
     try {
@@ -48,7 +33,15 @@ export default function SettingsScreen() {
     }
   };
 
-  const doImport = async () => {
+  const handleImport = async () => {
+    const confirmed = await showConfirm(
+      "Import Data",
+      "This will replace all existing data with the imported data. Are you sure?",
+      "Import",
+      "destructive"
+    );
+    if (!confirmed) return;
+
     setIsImporting(true);
     try {
       const result = await importDatabaseFromJson(db);
@@ -63,25 +56,6 @@ export default function SettingsScreen() {
       showAlert("Import Failed", message);
     } finally {
       setIsImporting(false);
-    }
-  };
-
-  const handleImport = async () => {
-    if (Platform.OS === "web") {
-      if (
-        window.confirm("This will replace all existing data with the imported data. Are you sure?")
-      ) {
-        await doImport();
-      }
-    } else {
-      Alert.alert(
-        "Import Data",
-        "This will replace all existing data with the imported data. Are you sure?",
-        [
-          { text: "Cancel", style: "cancel" },
-          { text: "Import", style: "destructive", onPress: doImport },
-        ]
-      );
     }
   };
 

@@ -16,7 +16,6 @@ import { useLocalSearchParams, useNavigation, useRouter } from "expo-router";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   ActivityIndicator,
-  Alert,
   KeyboardAvoidingView,
   Platform,
   Pressable,
@@ -24,6 +23,7 @@ import {
   Text,
   View,
 } from "react-native";
+import { showConfirm } from "@/utils/alert";
 
 /**
  * Normalizes an answer for comparison
@@ -164,14 +164,14 @@ export default function StudyScreen() {
 
       e.preventDefault();
 
-      Alert.alert("Leave Study Session?", "Your progress has been saved.", [
-        { text: "Stay", style: "cancel" },
-        {
-          text: "Leave",
-          style: "destructive",
-          onPress: () => navigation.dispatch(e.data.action),
-        },
-      ]);
+      showConfirm(
+        "Leave Study Session?",
+        "Your progress has been saved.",
+        "Leave",
+        "destructive"
+      ).then((confirmed) => {
+        if (confirmed) navigation.dispatch(e.data.action);
+      });
     });
 
     return unsubscribe;
