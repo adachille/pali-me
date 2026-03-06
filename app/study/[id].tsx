@@ -543,20 +543,5 @@ function makeStyles(colors: AppColors) {
       fontSize: 14,
       color: colors.primary,
     },
-    comparisonRow: {
-      flexDirection: "row",
-      justifyContent: "center",
-      gap: 24,
-      marginBottom: 24,
-    },
-    comparisonItem: {
-      alignItems: "center",
-      gap: 8,
-    },
-    comparisonLabel: {
-      fontSize: 11,
-      color: colors.textSecondary,
-      textAlign: "center",
-    },
   });
 }

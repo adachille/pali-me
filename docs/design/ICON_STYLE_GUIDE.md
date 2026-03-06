@@ -12,7 +12,6 @@ Calm, mindful, and understated — appropriate for Theravadan Buddhist students 
 | `celebrate-sunrise`   | Session complete    | Claude SVG             | 128px          |
 | `edit-pencil-soft`    | Edit button         | Claude SVG             | 30px           |
 | `lotus`               | Home tab icon       | AI-generated           | 28px (tab bar) |
-| `pin-simple`          | Default deck marker | AI-generated           | 24px           |
 | `sparkle-lotus-light` | All caught up state | Claude SVG             | 128px          |
 
 ## SVG Specifications
@@ -21,7 +20,7 @@ Calm, mindful, and understated — appropriate for Theravadan Buddhist students 
 
 - **Small icons** (action buttons): `viewBox="0 0 24 24"`, rendered at 24-30px
 - **Large icons** (empty states, celebrations): `viewBox="0 0 24 24"` or `viewBox="0 0 2048 2048"`, rendered at 128px
-- All SVGs include `width="256" height="256"` as a default intrinsic size; actual size is controlled by the `Icon` component's `size` prop
+- New and updated SVGs should include `width="256" height="256"` as the default intrinsic size; actual render size is controlled by the `Icon` component's `size` prop
 
 ### Coloring
 
@@ -42,7 +41,7 @@ Calm, mindful, and understated — appropriate for Theravadan Buddhist students 
 
 - Small action icons: stroke-based line art (edit-pencil-soft, cards-stacked-bare)
 - Large decorative icons: stroke-based with occasional filled accents (sparkle center dot)
-- AI-generated icons (books-open, pin-simple): filled paths — acceptable when paths use `currentColor`
+- AI-generated icons (books-open): filled paths — acceptable when paths use `currentColor`
 
 ### Buddhist Motifs
 

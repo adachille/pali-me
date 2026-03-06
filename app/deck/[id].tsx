@@ -1,3 +1,4 @@
+import { Icon } from "@/components/common/Icon";
 import { AddItemsModal, DeckFormModal, DeckItemList } from "@/components/decks";
 import { DEFAULT_DECK_ID, deckRepository, useSQLiteContext, type Item } from "@/db";
 import type { DeckWithCount } from "@/db/repositories/deckRepository";
@@ -138,7 +139,7 @@ export default function DeckDetailScreen() {
               onPress={() => setEditModalVisible(true)}
               testID="edit-deck-button"
             >
-              <Text style={styles.editButtonText}>✏️</Text>
+              <Icon name="edit-pencil-soft" size={30} color={colors.primary} />
             </Pressable>
           )}
         </View>
@@ -222,9 +223,6 @@ function makeStyles(colors: AppColors) {
     },
     editButtonPressed: {
       opacity: 0.7,
-    },
-    editButtonText: {
-      fontSize: 20,
     },
     title: {
       fontSize: 24,

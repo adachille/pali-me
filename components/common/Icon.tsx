@@ -6,14 +6,14 @@ import PinSimple from "@/assets/icons/svg/pin-simple.svg";
 import SparkleLotusLight from "@/assets/icons/svg/sparkle-lotus-light.svg";
 import type { SvgProps } from "react-native-svg";
 
-const SVG_ICONS: Record<string, React.FC<SvgProps>> = {
+const SVG_ICONS = {
   "books-open": BooksOpen,
   "celebrate-sunrise": CelebrateSunrise,
   "edit-pencil-soft": EditPencilSoft,
   lotus: LotusIcon,
   "pin-simple": PinSimple,
   "sparkle-lotus-light": SparkleLotusLight,
-};
+} satisfies Record<string, React.FC<SvgProps>>;
 
 type IconName = keyof typeof SVG_ICONS;
 

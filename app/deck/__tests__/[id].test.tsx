@@ -6,9 +6,10 @@ import DeckDetailScreen from "../[id]";
 
 // Mock expo-router
 const mockRouter = createMockRouter();
+let mockSearchParams: Record<string, string> = { id: "2" };
 jest.mock("expo-router", () => ({
   useRouter: () => mockRouter,
-  useLocalSearchParams: () => ({ id: "2" }),
+  useLocalSearchParams: () => mockSearchParams,
   Stack: {
     Screen: () => null,
   },
@@ -111,6 +112,7 @@ function TestWrapper({ children }: { children: React.ReactNode }) {
 describe("DeckDetailScreen", () => {
   beforeEach(() => {
     jest.clearAllMocks();
+    mockSearchParams = { id: "2" };
     mockGetById.mockResolvedValue(mockDeck);
     mockGetItemsInDeck.mockResolvedValue(mockItems);
   });
@@ -236,6 +238,15 @@ describe("DeckDetailScreen", () => {
 
     await waitFor(() => {
       expect(mockRouter.back).toHaveBeenCalled();
+    });
+  });
+
+  it("auto-opens add items modal when addItems=1 param is set", async () => {
+    mockSearchParams = { id: "2", addItems: "1" };
+    render(<DeckDetailScreen />, { wrapper: TestWrapper });
+
+    await waitFor(() => {
+      expect(screen.getByTestId("add-items-modal")).toBeTruthy();
     });
   });
 });

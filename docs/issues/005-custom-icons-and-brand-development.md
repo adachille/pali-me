@@ -128,8 +128,8 @@ pnpm add -D react-native-svg-transformer
 ### Files to Modify (Per Icon)
 
 1. **components/decks/DeckCard.tsx** (lines 63, 90, 103)
-   - ~~Replace `📌` with `<Icon name="pin-simple" size={18} />`~~ ✅ Done
-   - ~~Replace `▶️` with `<Icon name="cards-stacked-bare" />`~~ ✅ Done
+   - ~~Replace `📌` — Pin icon removed from DeckCard~~ ✅ Done
+   - ~~Replace `▶️` — Study button removed from DeckCard~~ ✅ Done
    - ~~Replace `✏️` with `<Icon name="edit-pencil-soft" />`~~ ✅ Done
 
 2. **app/study/[id].tsx** (lines 345, 366)
@@ -140,7 +140,7 @@ pnpm add -D react-native-svg-transformer
    - ~~Replace Ionicons `home` with `<Icon name="lotus" />`~~ ✅ Done
 
 4. **components/study/StudyCompletion.tsx** (lines 23, 41)
-   - ~~Replace `🎉` with `<Icon name="celebrate-sunrise-2" size={128} />`~~ ✅ Done
+   - ~~Replace `🎉` with `<Icon name="celebrate-sunrise" size={128} />`~~ ✅ Done
    - ~~`✓` — Keeping as-is~~
    - ~~`✗` — Keeping as-is~~
 
