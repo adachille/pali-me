@@ -39,8 +39,8 @@ describe("DeckCard", () => {
     expect(screen.getByText("1 item")).toBeTruthy();
   });
 
-  it("renders relative date", () => {
-    render(<DeckCard deck={mockDeck} onPress={jest.fn()} />);
+  it("renders relative date when edit action is present", () => {
+    render(<DeckCard deck={mockDeck} onPress={jest.fn()} onEditPress={jest.fn()} />);
 
     // Should show "Created today" since createdAt is new Date()
     expect(screen.getByText("Created today")).toBeTruthy();
@@ -58,7 +58,7 @@ describe("DeckCard", () => {
   it('shows pin icon for "All" deck', () => {
     render(<DeckCard deck={mockAllDeck} onPress={jest.fn()} />);
 
-    expect(screen.getByText("📌")).toBeTruthy();
+    expect(screen.getByTestId("pin-icon")).toBeTruthy();
   });
 
   it('renders "All cards" label for default deck', () => {
@@ -70,7 +70,7 @@ describe("DeckCard", () => {
   it("does not show pin icon for regular deck", () => {
     render(<DeckCard deck={mockDeck} onPress={jest.fn()} />);
 
-    expect(screen.queryByText("📌")).toBeNull();
+    expect(screen.queryByTestId("pin-icon")).toBeNull();
   });
 
   it("renders edit action button when handler provided", () => {

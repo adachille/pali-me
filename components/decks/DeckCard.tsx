@@ -63,7 +63,7 @@ export function DeckCard({ deck, onPress, onEditPress }: DeckCardProps) {
       <View style={styles.content}>
         <View style={styles.nameRow}>
           {isAllDeck && (
-            <View style={styles.pinIcon}>
+            <View style={styles.pinIcon} testID="pin-icon">
               <Icon name="pin-simple" size={24} color={colors.primary} />
             </View>
           )}

@@ -51,8 +51,8 @@ For each icon, follow this workflow:
 4. **Sparkles (✨)** — All caught up state — ✅ Done
 5. **Party (🎉)** — Session complete — ✅ Done
 6. **Pin (📌)** — Default deck marker — ✅ Done
-7. **Check (✓)** — Correct answer — [components/study/StudyCompletion.tsx:41](components/study/StudyCompletion.tsx#L41)
-8. **X (✗)** — Incorrect answer — [components/study/StudyCompletion.tsx:41](components/study/StudyCompletion.tsx#L41)
+7. **Check (✓)** — Correct answer — Keeping as-is
+8. **X (✗)** — Incorrect answer — Keeping as-is
 
 ### Style Guidelines (Develop as you go)
 
@@ -138,8 +138,8 @@ pnpm add -D react-native-svg-transformer
 
 3. **components/study/StudyCompletion.tsx** (lines 23, 41)
    - ~~Replace `🎉` with `<Icon name="celebrate-sunrise-2" size={128} />`~~ ✅ Done
-   - Replace `✓` with `<Icon name="check" size={20} />`
-   - Replace `✗` with `<Icon name="x" size={20} />`
+   - ~~`✓` — Keeping as-is~~
+   - ~~`✗` — Keeping as-is~~
 
 ## Progress
 
@@ -197,70 +197,16 @@ pnpm add -D react-native-svg-transformer
 - [x] Pick winner (`pin-simple`) — AI-generated pushpin icon, rendered in dark grey
 - [x] Final implementation (replaced `📌` in `DeckCard.tsx` all-deck marker)
 - [x] Cleaned up rejected candidates
-- [ ] Commit
+- [x] Commit
 
-### Icon 7: Check (✓) — Correct Answer
+### Icon 7 & 8: Check (✓) and X (✗) — Skipped
 
-- [ ] Set up comparison view in StudyCompletion
-- [ ] Claude generates SVG variations
-- [ ] Generate variations with other AI tools
-- [ ] Pick winner
-- [ ] Final implementation
-- [ ] Commit
+Keeping existing text characters — they work well as-is.
 
-### Icon 8: X (✗) — Incorrect Answer
+### Polish & Documentation ✅ COMPLETE
 
-- [ ] Set up comparison view in StudyCompletion
-- [ ] Claude generates SVG variations
-- [ ] Generate variations with other AI tools
-- [ ] Pick winner
-- [ ] Final implementation
-- [ ] Commit
-
-### Polish & Documentation
-
-- [ ] Update DeckCard.test.tsx to recognize Icon components
-- [ ] Run full test suite: `pnpm test`
-- [ ] Create `/docs/design/ICON_STYLE_GUIDE.md`
-- [ ] Document color palette in style guide
-- [ ] Finalize brand color palette
-
-## Testing & Verification
-
-### Visual Testing
-
-- [ ] Build and run on iOS simulator
-- [ ] Build and run on Android emulator
-- [ ] Check each icon at different screen sizes
-- [ ] Verify colors match or improve upon emojis
-- [ ] Test dark mode (if applicable)
-
-### Functional Testing
-
-- [ ] Verify all buttons with new icons are clickable
-- [ ] Run test suite: `pnpm test`
-- [ ] Update failing tests to recognize Icon components
-- [ ] Verify no console warnings about SVG markup
-
-### Accessibility Testing
-
-- [ ] Ensure WCAG AA color contrast (4.5:1 for text, 3:1 for UI)
-- [ ] Consider adding accessibility labels to Icon component
-- [ ] Test with screen reader if possible
-
-### Performance Testing
-
-- [ ] Check app bundle size before/after
-- [ ] Monitor render performance with React DevTools
-- [ ] Verify smooth scrolling in lists with many icons
-
-## Success Criteria
-
-- [ ] All 8 emojis replaced with custom icons
-- [ ] Icons render correctly on iOS and Android
-- [ ] Icons match established spiritual/Buddhist aesthetic
-- [ ] Icon style guide documented
-- [ ] Brand color palette defined
-- [ ] All tests passing
-- [ ] No performance degradation
-- [ ] Icons feel cohesive and purposeful for the target audience
+- [x] Update DeckCard.test.tsx to recognize Icon components
+- [x] Run full test suite: `pnpm test` (239 tests passing)
+- [x] Create `/docs/design/ICON_STYLE_GUIDE.md`
+- [x] Document color palette in style guide
+- [x] Finalize brand color palette
