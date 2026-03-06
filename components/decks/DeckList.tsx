@@ -32,13 +32,7 @@ export function DeckList({
   const styles = useMemo(() => makeStyles(colors), [colors]);
 
   const renderItem: ListRenderItem<DeckWithCount> = useCallback(
-    ({ item }) => (
-      <DeckCard
-        deck={item}
-        onPress={onDeckPress}
-        onEditPress={onEditPress}
-      />
-    ),
+    ({ item }) => <DeckCard deck={item} onPress={onDeckPress} onEditPress={onEditPress} />,
     [onDeckPress, onEditPress]
   );
 

@@ -78,7 +78,7 @@ export function DeckCard({ deck, onPress, onEditPress }: DeckCardProps) {
             <Text style={styles.date}>{formatRelativeDate(deck.createdAt)}</Text>
           </View>
         ) : (
-            <Text style={styles.itemCount}>{itemCountText}</Text>
+          <Text style={styles.itemCount}>{itemCountText}</Text>
         )}
       </View>
       {hasActions && (

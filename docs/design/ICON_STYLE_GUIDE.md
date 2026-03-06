@@ -6,14 +6,14 @@ Calm, mindful, and understated — appropriate for Theravadan Buddhist students 
 
 ## Icon Inventory
 
-| Name | Usage | Source | Size (in use) |
-|------|-------|--------|---------------|
-| `books-open` | Empty deck state | AI-generated (Recraft) | 128px |
-| `celebrate-sunrise` | Session complete | Claude SVG | 128px |
-| `edit-pencil-soft` | Edit button | Claude SVG | 30px |
-| `lotus` | Home tab icon | AI-generated | 28px (tab bar) |
-| `pin-simple` | Default deck marker | AI-generated | 24px |
-| `sparkle-lotus-light` | All caught up state | Claude SVG | 128px |
+| Name                  | Usage               | Source                 | Size (in use)  |
+| --------------------- | ------------------- | ---------------------- | -------------- |
+| `books-open`          | Empty deck state    | AI-generated (Recraft) | 128px          |
+| `celebrate-sunrise`   | Session complete    | Claude SVG             | 128px          |
+| `edit-pencil-soft`    | Edit button         | Claude SVG             | 30px           |
+| `lotus`               | Home tab icon       | AI-generated           | 28px (tab bar) |
+| `pin-simple`          | Default deck marker | AI-generated           | 24px           |
+| `sparkle-lotus-light` | All caught up state | Claude SVG             | 128px          |
 
 ## SVG Specifications
 
@@ -58,39 +58,39 @@ Motifs are subtle and non-literal:
 
 Represents growth, nature, and the calm of forest monasteries.
 
-| Token | Light | Dark | Usage |
-|-------|-------|------|-------|
-| `primary` | `#4CAF50` | `#4CAF50` | Interactive elements, icon color, buttons |
-| `primaryDark` | `#388E3C` | `#388E3C` | Pressed states |
-| `primaryLight` | `#A5D6A7` | `#A5D6A7` | Subtle highlights |
-| `primarySurface` | `#E8F5E9` | `#1B3A1F` | Background tints |
+| Token            | Light     | Dark      | Usage                                     |
+| ---------------- | --------- | --------- | ----------------------------------------- |
+| `primary`        | `#4CAF50` | `#4CAF50` | Interactive elements, icon color, buttons |
+| `primaryDark`    | `#388E3C` | `#388E3C` | Pressed states                            |
+| `primaryLight`   | `#A5D6A7` | `#A5D6A7` | Subtle highlights                         |
+| `primarySurface` | `#E8F5E9` | `#1B3A1F` | Background tints                          |
 
 ### Secondary — Blue
 
 Used sparingly for links and secondary actions.
 
-| Token | Light | Dark |
-|-------|-------|------|
-| `secondary` | `#2196F3` | `#42A5F5` |
+| Token           | Light     | Dark      |
+| --------------- | --------- | --------- |
+| `secondary`     | `#2196F3` | `#42A5F5` |
 | `secondaryDark` | `#1976D2` | `#1E88E5` |
 
 ### Neutrals
 
-| Token | Light | Dark | Usage |
-|-------|-------|------|-------|
-| `background` | `#FFFFFF` | `#121212` | Page background |
-| `surface` | `#F5F5F5` | `#1E1E1E` | Cards, elevated surfaces |
-| `text` | `#333333` | `#F0F0F0` | Primary text, icon default |
-| `textSecondary` | `#666666` | `#AAAAAA` | Supporting text |
-| `textTertiary` | `#999999` | `#666666` | Metadata, timestamps |
-| `border` | `#E0E0E0` | `#333333` | Dividers |
+| Token           | Light     | Dark      | Usage                      |
+| --------------- | --------- | --------- | -------------------------- |
+| `background`    | `#FFFFFF` | `#121212` | Page background            |
+| `surface`       | `#F5F5F5` | `#1E1E1E` | Cards, elevated surfaces   |
+| `text`          | `#333333` | `#F0F0F0` | Primary text, icon default |
+| `textSecondary` | `#666666` | `#AAAAAA` | Supporting text            |
+| `textTertiary`  | `#999999` | `#666666` | Metadata, timestamps       |
+| `border`        | `#E0E0E0` | `#333333` | Dividers                   |
 
 ### Semantic
 
-| Token | Light | Dark | Usage |
-|-------|-------|------|-------|
-| `error` | `#F44336` | `#EF5350` | Incorrect answers, destructive actions |
-| `errorSurface` | `#FFEBEE` | `#3B1515` | Error backgrounds |
+| Token          | Light     | Dark      | Usage                                  |
+| -------------- | --------- | --------- | -------------------------------------- |
+| `error`        | `#F44336` | `#EF5350` | Incorrect answers, destructive actions |
+| `errorSurface` | `#FFEBEE` | `#3B1515` | Error backgrounds                      |
 
 ## Adding New Icons
 

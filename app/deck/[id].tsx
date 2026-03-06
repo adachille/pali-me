@@ -99,8 +99,7 @@ export default function DeckDetailScreen() {
   }, []);
 
   useEffect(() => {
-    const shouldAutoOpen =
-      addItems === "1" || (Array.isArray(addItems) && addItems.includes("1"));
+    const shouldAutoOpen = addItems === "1" || (Array.isArray(addItems) && addItems.includes("1"));
     if (!shouldAutoOpen || hasAutoOpenedAddItemsModal.current) return;
 
     hasAutoOpenedAddItemsModal.current = true;

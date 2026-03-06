@@ -10,7 +10,7 @@ const SVG_ICONS: Record<string, React.FC<SvgProps>> = {
   "books-open": BooksOpen,
   "celebrate-sunrise": CelebrateSunrise,
   "edit-pencil-soft": EditPencilSoft,
-  "lotus": LotusIcon,
+  lotus: LotusIcon,
   "pin-simple": PinSimple,
   "sparkle-lotus-light": SparkleLotusLight,
 };

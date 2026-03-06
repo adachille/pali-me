@@ -136,7 +136,7 @@ pnpm add -D react-native-svg-transformer
    - ~~Replace `📚` with `<Icon name="books-open" />`~~ ✅ Done
    - ~~Replace `✨` with `<Icon name="sparkle-lotus-light" size={128} />`~~ ✅ Done
 
-3. **app/(tabs)/_layout.tsx** (line 33)
+3. **app/(tabs)/\_layout.tsx** (line 33)
    - ~~Replace Ionicons `home` with `<Icon name="lotus" />`~~ ✅ Done
 
 4. **components/study/StudyCompletion.tsx** (lines 23, 41)

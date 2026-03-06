@@ -74,9 +74,7 @@ describe("DeckCard", () => {
   });
 
   it("renders edit action button when handler provided", () => {
-    render(
-      <DeckCard deck={mockDeck} onPress={jest.fn()} onEditPress={jest.fn()} />
-    );
+    render(<DeckCard deck={mockDeck} onPress={jest.fn()} onEditPress={jest.fn()} />);
 
     expect(screen.getByTestId("deck-edit-2")).toBeTruthy();
   });
@@ -89,13 +87,7 @@ describe("DeckCard", () => {
 
   it("calls onEditPress when edit button is pressed", () => {
     const onEditPress = jest.fn();
-    render(
-      <DeckCard
-        deck={mockDeck}
-        onPress={jest.fn()}
-        onEditPress={onEditPress}
-      />
-    );
+    render(<DeckCard deck={mockDeck} onPress={jest.fn()} onEditPress={onEditPress} />);
 
     fireEvent.press(screen.getByTestId("deck-edit-2"));
 
@@ -103,13 +95,7 @@ describe("DeckCard", () => {
   });
 
   it('does not render edit button for default "All" deck', () => {
-    render(
-      <DeckCard
-        deck={mockAllDeck}
-        onPress={jest.fn()}
-        onEditPress={jest.fn()}
-      />
-    );
+    render(<DeckCard deck={mockAllDeck} onPress={jest.fn()} onEditPress={jest.fn()} />);
 
     expect(screen.queryByTestId("deck-edit-1")).toBeNull();
   });
