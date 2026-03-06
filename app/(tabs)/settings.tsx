@@ -1,5 +1,13 @@
 import { useMemo, useState } from "react";
-import { ActivityIndicator, Alert, Pressable, StyleSheet, Text, View } from "react-native";
+import {
+  ActivityIndicator,
+  Alert,
+  Platform,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import { useSQLiteContext } from "expo-sqlite";
 import { useTheme } from "@/theme";
 import type { AppColors, ThemeMode } from "@/theme";
@@ -20,47 +28,61 @@ export default function SettingsScreen() {
     system: "System",
   };
 
+  const showAlert = (title: string, message: string) => {
+    if (Platform.OS === "web") {
+      window.alert(`${title}\n\n${message}`);
+    } else {
+      Alert.alert(title, message);
+    }
+  };
+
   const handleExport = async () => {
     setIsExporting(true);
     try {
       await exportDatabaseAsJson(db);
     } catch (error) {
       const message = error instanceof Error ? error.message : "Unknown error occurred";
-      Alert.alert("Export Failed", message);
+      showAlert("Export Failed", message);
     } finally {
       setIsExporting(false);
     }
   };
 
+  const doImport = async () => {
+    setIsImporting(true);
+    try {
+      const result = await importDatabaseFromJson(db);
+      if (result) {
+        showAlert(
+          "Import Successful",
+          `Imported ${result.itemsImported} items, ${result.studyStatesImported} study states, ${result.decksImported} decks.`
+        );
+      }
+    } catch (error) {
+      const message = error instanceof Error ? error.message : "Unknown error occurred";
+      showAlert("Import Failed", message);
+    } finally {
+      setIsImporting(false);
+    }
+  };
+
   const handleImport = async () => {
-    Alert.alert(
-      "Import Data",
-      "This will replace all existing data with the imported data. Are you sure?",
-      [
-        { text: "Cancel", style: "cancel" },
-        {
-          text: "Import",
-          style: "destructive",
-          onPress: async () => {
-            setIsImporting(true);
-            try {
-              const result = await importDatabaseFromJson(db);
-              if (result) {
-                Alert.alert(
-                  "Import Successful",
-                  `Imported ${result.itemsImported} items, ${result.studyStatesImported} study states, ${result.decksImported} decks.`
-                );
-              }
-            } catch (error) {
-              const message = error instanceof Error ? error.message : "Unknown error occurred";
-              Alert.alert("Import Failed", message);
-            } finally {
-              setIsImporting(false);
-            }
-          },
-        },
-      ]
-    );
+    if (Platform.OS === "web") {
+      if (
+        window.confirm("This will replace all existing data with the imported data. Are you sure?")
+      ) {
+        await doImport();
+      }
+    } else {
+      Alert.alert(
+        "Import Data",
+        "This will replace all existing data with the imported data. Are you sure?",
+        [
+          { text: "Cancel", style: "cancel" },
+          { text: "Import", style: "destructive", onPress: doImport },
+        ]
+      );
+    }
   };
 
   return (
