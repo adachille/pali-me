@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
-import { ActivityIndicator, Alert, Pressable, StyleSheet, Text, View } from "react-native";
+import { ActivityIndicator, Pressable, StyleSheet, Text, View } from "react-native";
+import { showAlert, showConfirm } from "@/utils/alert";
 import { useSQLiteContext } from "expo-sqlite";
 import { useTheme } from "@/theme";
 import type { AppColors, ThemeMode } from "@/theme";
@@ -26,41 +27,36 @@ export default function SettingsScreen() {
       await exportDatabaseAsJson(db);
     } catch (error) {
       const message = error instanceof Error ? error.message : "Unknown error occurred";
-      Alert.alert("Export Failed", message);
+      showAlert("Export Failed", message);
     } finally {
       setIsExporting(false);
     }
   };
 
   const handleImport = async () => {
-    Alert.alert(
+    const confirmed = await showConfirm(
       "Import Data",
       "This will replace all existing data with the imported data. Are you sure?",
-      [
-        { text: "Cancel", style: "cancel" },
-        {
-          text: "Import",
-          style: "destructive",
-          onPress: async () => {
-            setIsImporting(true);
-            try {
-              const result = await importDatabaseFromJson(db);
-              if (result) {
-                Alert.alert(
-                  "Import Successful",
-                  `Imported ${result.itemsImported} items, ${result.studyStatesImported} study states, ${result.decksImported} decks.`
-                );
-              }
-            } catch (error) {
-              const message = error instanceof Error ? error.message : "Unknown error occurred";
-              Alert.alert("Import Failed", message);
-            } finally {
-              setIsImporting(false);
-            }
-          },
-        },
-      ]
+      "Import",
+      "destructive"
     );
+    if (!confirmed) return;
+
+    setIsImporting(true);
+    try {
+      const result = await importDatabaseFromJson(db);
+      if (result) {
+        showAlert(
+          "Import Successful",
+          `Imported ${result.itemsImported} items, ${result.studyStatesImported} study states, ${result.decksImported} decks.`
+        );
+      }
+    } catch (error) {
+      const message = error instanceof Error ? error.message : "Unknown error occurred";
+      showAlert("Import Failed", message);
+    } finally {
+      setIsImporting(false);
+    }
   };
 
   return (

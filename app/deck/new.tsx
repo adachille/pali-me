@@ -5,7 +5,6 @@ import { useRouter } from "expo-router";
 import { useMemo, useState } from "react";
 import {
   ActivityIndicator,
-  Alert,
   KeyboardAvoidingView,
   Platform,
   Pressable,
@@ -14,6 +13,7 @@ import {
   TextInput,
   View,
 } from "react-native";
+import { showConfirm } from "@/utils/alert";
 
 export default function NewDeckScreen() {
   const db = useSQLiteContext();
@@ -54,10 +54,14 @@ export default function NewDeckScreen() {
 
   const handleCancel = () => {
     if (name.trim()) {
-      Alert.alert("Discard changes?", "Your deck will not be saved.", [
-        { text: "Keep Editing", style: "cancel" },
-        { text: "Discard", style: "destructive", onPress: () => router.back() },
-      ]);
+      showConfirm(
+        "Discard changes?",
+        "Your deck will not be saved.",
+        "Discard",
+        "destructive"
+      ).then((confirmed) => {
+        if (confirmed) router.back();
+      });
     } else {
       router.back();
     }

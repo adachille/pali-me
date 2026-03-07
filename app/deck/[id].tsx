@@ -7,7 +7,8 @@ import type { AppColors } from "@/theme";
 import { useFocusEffect } from "@react-navigation/native";
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ActivityIndicator, Alert, Pressable, StyleSheet, Text, View } from "react-native";
+import { ActivityIndicator, Pressable, StyleSheet, Text, View } from "react-native";
+import { showAlert, showConfirm } from "@/utils/alert";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 export default function DeckDetailScreen() {
@@ -45,7 +46,7 @@ export default function DeckDetailScreen() {
       setItems(deckItems);
     } catch (error) {
       console.error("Failed to load deck:", error);
-      Alert.alert("Error", "Failed to load deck. Returning to deck list.");
+      showAlert("Error", "Failed to load deck. Returning to deck list.");
       router.back();
     } finally {
       setIsLoading(false);
@@ -61,22 +62,21 @@ export default function DeckDetailScreen() {
   const handleDelete = () => {
     if (!deck || deck.id === DEFAULT_DECK_ID) return;
 
-    Alert.alert("Delete Deck", "Delete this deck? Cards will remain in your library.", [
-      { text: "Cancel", style: "cancel" },
-      {
-        text: "Delete",
-        style: "destructive",
-        onPress: async () => {
-          try {
-            await deckRepository.deleteDeck(db, deck.id);
-            router.back();
-          } catch (error) {
-            console.error("Failed to delete deck:", error);
-            Alert.alert("Error", "Failed to delete deck. Please try again.");
-          }
-        },
-      },
-    ]);
+    showConfirm(
+      "Delete Deck",
+      "Delete this deck? Cards will remain in your library.",
+      "Delete",
+      "destructive"
+    ).then(async (confirmed) => {
+      if (!confirmed) return;
+      try {
+        await deckRepository.deleteDeck(db, deck.id);
+        router.back();
+      } catch (error) {
+        console.error("Failed to delete deck:", error);
+        showAlert("Error", "Failed to delete deck. Please try again.");
+      }
+    });
   };
 
   const handleItemPress = useCallback(

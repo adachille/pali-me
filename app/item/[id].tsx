@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { ActivityIndicator, Alert, StyleSheet, Text, View } from "react-native";
+import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
+import { showAlert, showConfirm } from "@/utils/alert";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { useSQLiteContext, itemRepository, type Item, type ItemInsert } from "@/db";
 import { ItemForm } from "@/components/items";
@@ -48,29 +49,27 @@ export default function EditItemScreen() {
       router.back();
     } catch (err) {
       console.error("Failed to update item:", err);
-      Alert.alert("Error", "Failed to save changes. Please try again.");
+      showAlert("Error", "Failed to save changes. Please try again.");
       setIsSubmitting(false);
     }
   };
 
   const handleDelete = () => {
-    Alert.alert("Delete Card", "Delete this card? This cannot be undone.", [
-      { text: "Cancel", style: "cancel" },
-      {
-        text: "Delete",
-        style: "destructive",
-        onPress: async () => {
-          if (!id) return;
-          try {
-            await itemRepository.deleteItem(db, Number(id));
-            router.back();
-          } catch (err) {
-            console.error("Failed to delete item:", err);
-            Alert.alert("Error", "Failed to delete card. Please try again.");
-          }
-        },
-      },
-    ]);
+    showConfirm(
+      "Delete Card",
+      "Delete this card? This cannot be undone.",
+      "Delete",
+      "destructive"
+    ).then(async (confirmed) => {
+      if (!confirmed || !id) return;
+      try {
+        await itemRepository.deleteItem(db, Number(id));
+        router.back();
+      } catch (err) {
+        console.error("Failed to delete item:", err);
+        showAlert("Error", "Failed to delete card. Please try again.");
+      }
+    });
   };
 
   if (isLoading) {
