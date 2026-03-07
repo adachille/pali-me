@@ -1,0 +1,21 @@
+<svg width="256" height="256" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Central dot -->
+  <circle cx="12" cy="12" r="1.5" fill="currentColor" />
+  <!-- Petal-shaped rays radiating outward (lotus-inspired) -->
+  <!-- Top petal -->
+  <path d="M12 3C10.5 6 10.5 8.5 12 9.5C13.5 8.5 13.5 6 12 3Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Bottom petal -->
+  <path d="M12 21C10.5 18 10.5 15.5 12 14.5C13.5 15.5 13.5 18 12 21Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Right petal -->
+  <path d="M21 12C18 10.5 15.5 10.5 14.5 12C15.5 13.5 18 13.5 21 12Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Left petal -->
+  <path d="M3 12C6 10.5 8.5 10.5 9.5 12C8.5 13.5 6 13.5 3 12Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Top-right petal -->
+  <path d="M18.36 5.64C16.2 6.9 14.8 8.3 14.8 9.2C15.7 9.2 17.1 7.8 18.36 5.64Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Bottom-left petal -->
+  <path d="M5.64 18.36C7.8 17.1 9.2 15.7 9.2 14.8C8.3 14.8 6.9 16.2 5.64 18.36Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Top-left petal -->
+  <path d="M5.64 5.64C6.9 7.8 8.3 9.2 9.2 9.2C9.2 8.3 7.8 6.9 5.64 5.64Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Bottom-right petal -->
+  <path d="M18.36 18.36C17.1 16.2 15.7 14.8 14.8 14.8C14.8 15.7 16.2 17.1 18.36 18.36Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

@@ -1,3 +1,4 @@
+import { Icon } from "@/components/common/Icon";
 import { AddItemsModal, DeckFormModal, DeckItemList } from "@/components/decks";
 import { DEFAULT_DECK_ID, deckRepository, useSQLiteContext, type Item } from "@/db";
 import type { DeckWithCount } from "@/db/repositories/deckRepository";
@@ -5,7 +6,7 @@ import { useTheme } from "@/theme";
 import type { AppColors } from "@/theme";
 import { useFocusEffect } from "@react-navigation/native";
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ActivityIndicator, Pressable, StyleSheet, Text, View } from "react-native";
 import { showAlert, showConfirm } from "@/utils/alert";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
@@ -13,7 +14,7 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 export default function DeckDetailScreen() {
   const db = useSQLiteContext();
   const router = useRouter();
-  const { id } = useLocalSearchParams<{ id: string }>();
+  const { id, addItems } = useLocalSearchParams<{ id: string; addItems?: string }>();
   const { colors } = useTheme();
   const styles = useMemo(() => makeStyles(colors), [colors]);
   const [deck, setDeck] = useState<DeckWithCount | null>(null);
@@ -21,6 +22,7 @@ export default function DeckDetailScreen() {
   const [isLoading, setIsLoading] = useState(true);
   const [editModalVisible, setEditModalVisible] = useState(false);
   const [addItemsModalVisible, setAddItemsModalVisible] = useState(false);
+  const hasAutoOpenedAddItemsModal = useRef(false);
 
   const loadDeck = useCallback(async () => {
     if (!id) return;
@@ -97,6 +99,14 @@ export default function DeckDetailScreen() {
     setAddItemsModalVisible(true);
   }, []);
 
+  useEffect(() => {
+    const shouldAutoOpen = addItems === "1" || (Array.isArray(addItems) && addItems.includes("1"));
+    if (!shouldAutoOpen || hasAutoOpenedAddItemsModal.current) return;
+
+    hasAutoOpenedAddItemsModal.current = true;
+    setAddItemsModalVisible(true);
+  }, [addItems]);
+
   const isDefaultDeck = deck?.id === DEFAULT_DECK_ID;
 
   if (isLoading) {
@@ -129,7 +139,7 @@ export default function DeckDetailScreen() {
               onPress={() => setEditModalVisible(true)}
               testID="edit-deck-button"
             >
-              <Text style={styles.editButtonText}>✏️</Text>
+              <Icon name="edit-pencil-soft" size={30} color={colors.primary} />
             </Pressable>
           )}
         </View>
@@ -213,9 +223,6 @@ function makeStyles(colors: AppColors) {
     },
     editButtonPressed: {
       opacity: 0.7,
-    },
-    editButtonText: {
-      fontSize: 20,
     },
     title: {
       fontSize: 24,

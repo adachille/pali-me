@@ -1,7 +1,8 @@
+import { Icon } from "@/components/common/Icon";
 import { DEFAULT_DECK_ID } from "@/db";
 import type { DeckWithCount } from "@/db/repositories/deckRepository";
-import { useTheme } from "@/theme";
 import type { AppColors } from "@/theme";
+import { useTheme } from "@/theme";
 import { useMemo } from "react";
 import type { GestureResponderEvent } from "react-native";
 import { Pressable, StyleSheet, Text, View } from "react-native";
@@ -9,7 +10,6 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 type DeckCardProps = {
   deck: DeckWithCount;
   onPress: (deck: DeckWithCount) => void;
-  onStudyPress?: (deck: DeckWithCount) => void;
   onEditPress?: (deck: DeckWithCount) => void;
 };
 
@@ -39,18 +39,20 @@ function formatRelativeDate(date: Date): string {
   }
 }
 
-export function DeckCard({ deck, onPress, onStudyPress, onEditPress }: DeckCardProps) {
+export function DeckCard({ deck, onPress, onEditPress }: DeckCardProps) {
   const { colors } = useTheme();
   const styles = useMemo(() => makeStyles(colors), [colors]);
   const isAllDeck = deck.id === DEFAULT_DECK_ID;
+  const displayDeckName = isAllDeck ? "All cards" : deck.name;
+  const canEditDeck = Boolean(onEditPress) && !isAllDeck;
   const itemCountText = deck.itemCount === 1 ? "1 item" : `${deck.itemCount} items`;
-  const normalizedName = deck.name
+  const normalizedName = displayDeckName
     .trim()
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
   const deckNameTestId = `deck-card-name-${normalizedName || "unnamed"}`;
-  const hasActions = onStudyPress || onEditPress;
+  const hasActions = canEditDeck;
 
   return (
     <Pressable
@@ -60,9 +62,8 @@ export function DeckCard({ deck, onPress, onStudyPress, onEditPress }: DeckCardP
     >
       <View style={styles.content}>
         <View style={styles.nameRow}>
-          {isAllDeck && <Text style={styles.pinIcon}>📌</Text>}
           <Text style={[styles.name, isAllDeck && styles.allDeckName]} testID={deckNameTestId}>
-            {deck.name}
+            {displayDeckName}
           </Text>
         </View>
         {hasActions ? (
@@ -72,25 +73,12 @@ export function DeckCard({ deck, onPress, onStudyPress, onEditPress }: DeckCardP
             <Text style={styles.date}>{formatRelativeDate(deck.createdAt)}</Text>
           </View>
         ) : (
-          <Text style={styles.date}>{formatRelativeDate(deck.createdAt)}</Text>
+          <Text style={styles.itemCount}>{itemCountText}</Text>
         )}
       </View>
-      {hasActions ? (
+      {hasActions && (
         <View style={styles.actions}>
-          {onStudyPress && (
-            <Pressable
-              style={({ pressed }) => [styles.actionButton, pressed && styles.actionButtonPressed]}
-              onPress={(e?: GestureResponderEvent) => {
-                e?.stopPropagation();
-                onStudyPress(deck);
-              }}
-              testID={`deck-study-${deck.id}`}
-              hitSlop={8}
-            >
-              <Text style={styles.actionIcon}>▶️</Text>
-            </Pressable>
-          )}
-          {onEditPress && (
+          {canEditDeck && onEditPress && (
             <Pressable
               style={({ pressed }) => [styles.actionButton, pressed && styles.actionButtonPressed]}
               onPress={(e?: GestureResponderEvent) => {
@@ -100,13 +88,9 @@ export function DeckCard({ deck, onPress, onStudyPress, onEditPress }: DeckCardP
               testID={`deck-edit-${deck.id}`}
               hitSlop={8}
             >
-              <Text style={styles.actionIcon}>✏️</Text>
+              <Icon name="edit-pencil-soft" size={30} color={colors.primary} />
             </Pressable>
           )}
-        </View>
-      ) : (
-        <View style={[styles.badge, isAllDeck && styles.allDeckBadge]}>
-          <Text style={styles.badgeText}>{itemCountText}</Text>
         </View>
       )}
     </Pressable>
@@ -140,19 +124,16 @@ function makeStyles(colors: AppColors) {
       marginTop: 2,
     },
     pinIcon: {
-      fontSize: 14,
-      color: colors.primary,
       marginRight: 6,
-      fontWeight: "bold",
     },
     name: {
       fontSize: 18,
-      fontWeight: "600",
+      fontWeight: "500",
       color: colors.text,
       marginBottom: 4,
     },
     allDeckName: {
-      color: colors.primary,
+      fontWeight: "600",
     },
     itemCount: {
       fontSize: 13,
@@ -178,9 +159,6 @@ function makeStyles(colors: AppColors) {
     },
     actionButtonPressed: {
       backgroundColor: colors.surfaceVariant,
-    },
-    actionIcon: {
-      fontSize: 20,
     },
     badge: {
       backgroundColor: colors.border,
