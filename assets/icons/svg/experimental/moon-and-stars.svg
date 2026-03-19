@@ -1,0 +1,14 @@
+<svg width="256" height="256" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Crescent moon -->
+  <path
+    d="M19 14C18 17 15.5 19.5 12 19.5C7.9 19.5 4.5 16.1 4.5 12C4.5 8.5 7 6 10 5C8.8 7 8.5 10 10.5 12.5C12.5 15 15.5 15.5 19 14Z"
+    stroke="currentColor"
+    stroke-width="1.8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <!-- Small stars -->
+  <circle cx="15.6" cy="9.2" r="1" fill="currentColor" />
+  <circle cx="20.5" cy="9" r="0.75" fill="currentColor" />
+  <circle cx="15" cy="3.5" r="0.625" fill="currentColor" />
+</svg>

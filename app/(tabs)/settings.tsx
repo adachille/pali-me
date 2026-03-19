@@ -4,6 +4,7 @@ import { showAlert, showConfirm } from "@/utils/alert";
 import { useSQLiteContext } from "expo-sqlite";
 import { useTheme } from "@/theme";
 import type { AppColors, ThemeMode } from "@/theme";
+import { Icon } from "@/components/common/Icon";
 
 import { exportDatabaseAsJson, importDatabaseFromJson } from "@/db/repositories/exportRepository";
 
@@ -79,6 +80,15 @@ export default function SettingsScreen() {
               onPress={() => setThemeMode(mode)}
               testID={`theme-segment-${mode}`}
             >
+              {mode === "light" && (
+                <Icon name="lotus-sun" size={20} color={themeMode === mode ? "#fff" : colors.textSecondary} />
+              )}
+              {mode === "dark" && (
+                <Icon name="moon-and-clouds" size={20} color={themeMode === mode ? "#fff" : colors.textSecondary} />
+              )}
+              {mode === "system" && (
+                <Icon name="auto-theme-icon" size={20} color={themeMode === mode ? "#fff" : colors.textSecondary} />
+              )}
               <Text style={[styles.segmentText, themeMode === mode && styles.segmentTextSelected]}>
                 {themeModeLabels[mode]}
               </Text>
@@ -166,7 +176,7 @@ function makeStyles(colors: AppColors) {
       color: colors.textSecondary,
       marginBottom: 16,
     },
-    segmentedControl: {
+segmentedControl: {
       flexDirection: "row",
       backgroundColor: colors.surfaceVariant,
       borderRadius: 8,
@@ -177,6 +187,7 @@ function makeStyles(colors: AppColors) {
       paddingVertical: 10,
       paddingHorizontal: 12,
       borderRadius: 6,
+      gap: 4,
       alignItems: "center",
       borderRightWidth: 1,
       borderRightColor: colors.border,
