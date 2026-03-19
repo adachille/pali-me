@@ -81,17 +81,14 @@ export default function SettingsScreen() {
               testID={`theme-segment-${mode}`}
             >
               {mode === "light" && (
-                <Icon name="lotus-sun" size={20} color={themeMode === mode ? "#fff" : colors.textSecondary} />
+                <Icon name="lotus-sun" size={25} color={themeMode === mode ? "#fff" : colors.textSecondary} />
               )}
               {mode === "dark" && (
-                <Icon name="moon-and-clouds" size={20} color={themeMode === mode ? "#fff" : colors.textSecondary} />
+                <Icon name="moon-and-clouds" size={25} color={themeMode === mode ? "#fff" : colors.textSecondary} />
               )}
               {mode === "system" && (
-                <Icon name="auto-theme-icon" size={20} color={themeMode === mode ? "#fff" : colors.textSecondary} />
+                <Icon name="auto-theme-icon" size={25} color={themeMode === mode ? "#fff" : colors.textSecondary} />
               )}
-              <Text style={[styles.segmentText, themeMode === mode && styles.segmentTextSelected]}>
-                {themeModeLabels[mode]}
-              </Text>
             </Pressable>
           ))}
         </View>
