@@ -4,6 +4,7 @@ import { showAlert, showConfirm } from "@/utils/alert";
 import { useSQLiteContext } from "expo-sqlite";
 import { useTheme } from "@/theme";
 import type { AppColors, ThemeMode } from "@/theme";
+import { Icon } from "@/components/common/Icon";
 
 import { exportDatabaseAsJson, importDatabaseFromJson } from "@/db/repositories/exportRepository";
 
@@ -73,15 +74,35 @@ export default function SettingsScreen() {
               key={mode}
               style={[
                 styles.segment,
+                index === 0 && styles.segmentFirst,
+                index > 0 && index < themeModes.length - 1 && styles.segmentMiddle,
                 index === themeModes.length - 1 && styles.segmentLast,
                 themeMode === mode && styles.segmentSelected,
               ]}
               onPress={() => setThemeMode(mode)}
               testID={`theme-segment-${mode}`}
             >
-              <Text style={[styles.segmentText, themeMode === mode && styles.segmentTextSelected]}>
-                {themeModeLabels[mode]}
-              </Text>
+              {mode === "light" && (
+                <Icon
+                  name="lotus-sun"
+                  size={25}
+                  color={themeMode === mode ? "#fff" : colors.textSecondary}
+                />
+              )}
+              {mode === "dark" && (
+                <Icon
+                  name="moon-and-clouds"
+                  size={25}
+                  color={themeMode === mode ? "#fff" : colors.textSecondary}
+                />
+              )}
+              {mode === "system" && (
+                <Icon
+                  name="auto-theme-icon"
+                  size={25}
+                  color={themeMode === mode ? "#fff" : colors.textSecondary}
+                />
+              )}
             </Pressable>
           ))}
         </View>
@@ -168,21 +189,27 @@ function makeStyles(colors: AppColors) {
     },
     segmentedControl: {
       flexDirection: "row",
-      backgroundColor: colors.surfaceVariant,
-      borderRadius: 8,
-      padding: 4,
     },
     segment: {
       flex: 1,
       paddingVertical: 10,
       paddingHorizontal: 12,
-      borderRadius: 6,
+      gap: 4,
       alignItems: "center",
       borderRightWidth: 1,
       borderRightColor: colors.border,
     },
+    segmentFirst: {
+      borderTopLeftRadius: 6,
+      borderBottomLeftRadius: 6,
+    },
+    segmentMiddle: {
+      borderRadius: 0,
+    },
     segmentLast: {
       borderRightWidth: 0,
+      borderTopRightRadius: 6,
+      borderBottomRightRadius: 6,
     },
     segmentSelected: {
       backgroundColor: colors.primary,

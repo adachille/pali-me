@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { StyleSheet, View } from "react-native";
+import { KeyboardAvoidingView, Platform, StyleSheet, View } from "react-native";
 import { showAlert } from "@/utils/alert";
 import { useRouter } from "expo-router";
 import { useSQLiteContext, itemRepository, type ItemInsert } from "@/db";
@@ -40,14 +40,18 @@ export default function AddItemScreen() {
   };
 
   return (
-    <View style={styles.container} testID="add-item-screen">
+    <KeyboardAvoidingView
+      style={styles.container}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      testID="add-item-screen"
+    >
       <ItemForm
         onSubmit={handleSubmit}
         onSubmitAndContinue={handleSubmitAndContinue}
         submitLabel="Add Card"
         isSubmitting={isSubmitting}
       />
-    </View>
+    </KeyboardAvoidingView>
   );
 }
 

@@ -1,5 +1,12 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
+import {
+  ActivityIndicator,
+  KeyboardAvoidingView,
+  Platform,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import { showAlert, showConfirm } from "@/utils/alert";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { useSQLiteContext, itemRepository, type Item, type ItemInsert } from "@/db";
@@ -89,7 +96,11 @@ export default function EditItemScreen() {
   }
 
   return (
-    <View style={styles.container} testID="edit-item-screen">
+    <KeyboardAvoidingView
+      style={styles.container}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      testID="edit-item-screen"
+    >
       <ItemForm
         initialValues={item}
         onSubmit={handleSubmit}
@@ -97,7 +108,7 @@ export default function EditItemScreen() {
         submitLabel="Save Changes"
         isSubmitting={isSubmitting}
       />
-    </View>
+    </KeyboardAvoidingView>
   );
 }
 

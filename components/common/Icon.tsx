@@ -3,6 +3,9 @@ import CelebrateSunrise from "@/assets/icons/svg/celebrate-sunrise.svg";
 import EditPencilSoft from "@/assets/icons/svg/edit-pencil-soft.svg";
 import LotusIcon from "@/assets/icons/svg/lotus.svg";
 import SparkleLotusLight from "@/assets/icons/svg/sparkle-lotus-light.svg";
+import LotusSun from "@/assets/icons/svg/lotus-sun.svg";
+import MoonAndClouds from "@/assets/icons/svg/moon-and-clouds.svg";
+import AutoThemeIcon from "@/assets/icons/svg/auto-theme-icon.svg";
 import type { SvgProps } from "react-native-svg";
 
 const SVG_ICONS = {
@@ -11,6 +14,9 @@ const SVG_ICONS = {
   "edit-pencil-soft": EditPencilSoft,
   lotus: LotusIcon,
   "sparkle-lotus-light": SparkleLotusLight,
+  "lotus-sun": LotusSun,
+  "moon-and-clouds": MoonAndClouds,
+  "auto-theme-icon": AutoThemeIcon,
 } satisfies Record<string, React.FC<SvgProps>>;
 
 type IconName = keyof typeof SVG_ICONS;
