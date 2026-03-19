@@ -83,13 +83,25 @@ export default function SettingsScreen() {
               testID={`theme-segment-${mode}`}
             >
               {mode === "light" && (
-                <Icon name="lotus-sun" size={25} color={themeMode === mode ? "#fff" : colors.textSecondary} />
+                <Icon
+                  name="lotus-sun"
+                  size={25}
+                  color={themeMode === mode ? "#fff" : colors.textSecondary}
+                />
               )}
               {mode === "dark" && (
-                <Icon name="moon-and-clouds" size={25} color={themeMode === mode ? "#fff" : colors.textSecondary} />
+                <Icon
+                  name="moon-and-clouds"
+                  size={25}
+                  color={themeMode === mode ? "#fff" : colors.textSecondary}
+                />
               )}
               {mode === "system" && (
-                <Icon name="auto-theme-icon" size={25} color={themeMode === mode ? "#fff" : colors.textSecondary} />
+                <Icon
+                  name="auto-theme-icon"
+                  size={25}
+                  color={themeMode === mode ? "#fff" : colors.textSecondary}
+                />
               )}
             </Pressable>
           ))}
@@ -175,7 +187,7 @@ function makeStyles(colors: AppColors) {
       color: colors.textSecondary,
       marginBottom: 16,
     },
-segmentedControl: {
+    segmentedControl: {
       flexDirection: "row",
     },
     segment: {
