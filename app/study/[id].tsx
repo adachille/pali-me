@@ -490,7 +490,7 @@ function makeStyles(colors: AppColors) {
       justifyContent: "center",
     },
     inputContainer: {
-      paddingBottom: Platform.OS === "ios" ? 48 : 32,
+      paddingBottom: Platform.OS === "ios" ? 64 : 48,
     },
     emptyContainer: {
       flex: 1,
