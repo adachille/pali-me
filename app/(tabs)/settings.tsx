@@ -74,6 +74,8 @@ export default function SettingsScreen() {
               key={mode}
               style={[
                 styles.segment,
+                index === 0 && styles.segmentFirst,
+                index > 0 && index < themeModes.length - 1 && styles.segmentMiddle,
                 index === themeModes.length - 1 && styles.segmentLast,
                 themeMode === mode && styles.segmentSelected,
               ]}
@@ -175,22 +177,27 @@ function makeStyles(colors: AppColors) {
     },
 segmentedControl: {
       flexDirection: "row",
-      backgroundColor: colors.surfaceVariant,
-      borderRadius: 8,
-      padding: 4,
     },
     segment: {
       flex: 1,
       paddingVertical: 10,
       paddingHorizontal: 12,
-      borderRadius: 6,
       gap: 4,
       alignItems: "center",
       borderRightWidth: 1,
       borderRightColor: colors.border,
     },
+    segmentFirst: {
+      borderTopLeftRadius: 6,
+      borderBottomLeftRadius: 6,
+    },
+    segmentMiddle: {
+      borderRadius: 0,
+    },
     segmentLast: {
       borderRightWidth: 0,
+      borderTopRightRadius: 6,
+      borderBottomRightRadius: 6,
     },
     segmentSelected: {
       backgroundColor: colors.primary,
