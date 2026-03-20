@@ -1,4 +1,4 @@
-// Custom render utilities for testing pali-me components
+// Custom render utilities for testing Pocket Pali components
 import React, { ReactElement } from "react";
 import { render, RenderOptions } from "@testing-library/react-native";
 

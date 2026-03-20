@@ -1,4 +1,4 @@
-# End-to-End Testing Guide for Pali-Me
+# End-to-End Testing Guide for Pocket Pali
 
 This guide covers E2E testing for the Pali language learning application using Maestro.
 
@@ -14,7 +14,7 @@ This guide covers E2E testing for the Pali language learning application using M
 
 ## Overview
 
-Pali-Me uses Maestro for end-to-end testing to ensure the application works correctly from a user's perspective across iOS, Android, and Web platforms.
+Pocket Pali uses Maestro for end-to-end testing to ensure the application works correctly from a user's perspective across iOS, Android, and Web platforms.
 
 **Current Test Coverage:**
 
@@ -145,7 +145,7 @@ Place test flows in `.maestro/` directory with descriptive names:
 - tapOn: "Button"
 ```
 
-**Important:** The Pali-Me E2E tests assume the app is already running. We don't use `launchApp` or `appId` in the flows because the app is pre-launched via Expo CLI before Maestro tests execute.
+**Important:** The Pocket Pali E2E tests assume the app is already running. We don't use `launchApp` or `appId` in the flows because the app is pre-launched via Expo CLI before Maestro tests execute.
 
 ### Element Selection Strategies
 
@@ -426,7 +426,7 @@ The E2E tests run automatically on every pull request via GitHub Actions.
 
 ## Contributing
 
-When adding new features to Pali-Me:
+When adding new features to Pocket Pali:
 
 1. Add `testID` props to new components
 2. Create corresponding test flows in `.maestro/`

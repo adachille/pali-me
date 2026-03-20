@@ -1,4 +1,4 @@
-// Custom Jest configuration for pali-me Expo app
+// Custom Jest configuration for Pocket Pali Expo app
 module.exports = {
   preset: "jest-expo",
 

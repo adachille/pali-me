@@ -1,4 +1,4 @@
-// Test environment setup for pali-me
+// Test environment setup for Pocket Pali
 import "@testing-library/react-native/extend-expect";
 import { mockSQLiteContext } from "./mocks";
 

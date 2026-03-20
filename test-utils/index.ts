@@ -1,4 +1,4 @@
-// Test utilities index - centralizes all testing helpers for pali-me
+// Test utilities index - centralizes all testing helpers for Pocket Pali
 export { render, renderWithProviders, screen, fireEvent, waitFor } from "./render";
 export {
   createMockRouter,

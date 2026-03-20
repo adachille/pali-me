@@ -1,4 +1,4 @@
-# Pali-Me App Initialization Test
+# Pocket Pali App Initialization Test
 # Validates successful application startup and home view rendering
 # Tested on: iOS Simulator
 
@@ -9,9 +9,9 @@ appId: host.exp.Exponent
 - launchApp
 - runFlow:
     when:
-      visible: "pali-me"
+      visible: "Pocket Pali"
     commands:
-      - tapOn: "pali-me"
+      - tapOn: "Pocket Pali"
 - assertVisible:
     id: "home-screen"
 

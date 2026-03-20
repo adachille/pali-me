@@ -1,4 +1,4 @@
-// Babel configuration for pali-me Expo app
+// Babel configuration for Pocket Pali Expo app
 module.exports = function (api) {
   api.cache(true);
   return {
