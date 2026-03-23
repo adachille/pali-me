@@ -53,3 +53,5 @@ maestro-results/
 
 # Claude write location for AI generated PR description
 PR_DESCRIPTION.md
+
+.env
