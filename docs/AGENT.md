@@ -62,7 +62,7 @@ The app uses Expo Router with file-based routing. Routes are defined in the `app
 The router is configured with:
 
 - Typed routes enabled (`typedRoutes: true`)
-- Custom URL scheme: `palime://`
+- Custom URL scheme: `pocketpali://`
 
 ### Database
 

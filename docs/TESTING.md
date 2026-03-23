@@ -1,6 +1,6 @@
-# Testing Guide for pali-me
+# Testing Guide for Pocket Pali
 
-This guide covers testing philosophy, best practices, and common patterns for the pali-me Expo application.
+This guide covers testing philosophy, best practices, and common patterns for the Pocket Pali Expo application.
 
 ## Table of Contents
 

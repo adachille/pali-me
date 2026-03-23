@@ -1,6 +1,6 @@
-# Contributing to Pali-Me
+# Contributing to Pocket Pali
 
-Thank you for your interest in contributing to Pali-Me! This document provides guidelines and instructions for contributing to the project.
+Thank you for your interest in contributing to Pocket Pali! This document provides guidelines and instructions for contributing to the project.
 
 ## Getting Started
 
@@ -138,4 +138,4 @@ If you have questions about contributing, feel free to:
 - Review existing documentation in the `docs/` directory
 - Check the README.md for basic project information
 
-Thank you for contributing to Pali-Me! 🙏
+Thank you for contributing to Pocket Pali! 🙏

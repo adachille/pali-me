@@ -1,7 +1,7 @@
-# pali-me
+# Pocket Pali
 
-![Tests](https://github.com/adachille/pali-me/actions/workflows/test.yml/badge.svg)
-![E2E Tests](https://github.com/adachille/pali-me/actions/workflows/maestro-e2e.yml/badge.svg)
+![Tests](https://github.com/adachille/pocket-pali/actions/workflows/test.yml/badge.svg)
+![E2E Tests](https://github.com/adachille/pocket-pali/actions/workflows/maestro-e2e.yml/badge.svg)
 
 App to learn the Pali language
 

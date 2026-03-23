@@ -121,7 +121,7 @@ function exportWeb(jsonString: string) {
   const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
   const a = document.createElement("a");
   a.href = url;
-  a.download = `pali-me-export-${timestamp}.json`;
+  a.download = `pocket-pali-export-${timestamp}.json`;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -168,7 +168,7 @@ async function exportNative(jsonString: string) {
   const Sharing = await import("expo-sharing");
 
   const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
-  const filename = `pali-me-export-${timestamp}.json`;
+  const filename = `pocket-pali-export-${timestamp}.json`;
   const filepath = FileSystem.cacheDirectory + filename;
 
   await FileSystem.writeAsStringAsync(filepath, jsonString);
@@ -176,7 +176,7 @@ async function exportNative(jsonString: string) {
   if (await Sharing.isAvailableAsync()) {
     await Sharing.shareAsync(filepath, {
       mimeType: "application/json",
-      dialogTitle: "Export Pali-Me Data",
+      dialogTitle: "Export Pocket Pali Data",
     });
   }
 }

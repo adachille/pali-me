@@ -1,4 +1,4 @@
-// Mock utilities for Expo Router, SQLite, and common modules in pali-me
+// Mock utilities for Expo Router, SQLite, and common modules in pocket-pali
 
 // ============================================================================
 // SQLite Mocks
@@ -61,7 +61,7 @@ export const waitForAsync = (ms = 0) => new Promise((resolve) => setTimeout(reso
  * Common test data fixtures
  */
 export const testFixtures = {
-  sampleText: "Test content for pali-me",
+  sampleText: "Test content for pocket-pali",
   navigationPaths: {
     home: "/",
   },
