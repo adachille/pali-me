@@ -1,0 +1,110 @@
+{
+  "lesson_number": 16,
+  "title": "Lesson 16",
+  "topic": "Imperative mood",
+  "grammar": {
+    "explanations": [
+      "The imperative mood expresses a command, benediction, prayer or wish.",
+      "The imperative is formed from the verb base. For example, from the base 'paca' (to cook), the imperative forms are as follows.",
+      "It should be observed that the second person plural and first person singular and plural have the same forms as in the present tense.",
+      "The prohibitive particle 'mā' is also used with the imperative to express negative commands or prohibitions."
+    ],
+    "tables": [
+      {
+        "title": "Imperative mood - Base: paca (to cook)",
+        "rows": [
+          [
+            "",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "3rd person",
+            "(So) pacatu = Let him cook",
+            "(Te) pacantu = Let them cook"
+          ],
+          [
+            "2nd person",
+            "(Tvaṃ) paca / pacāhi = You cook",
+            "(Tumhe) pacatha = You cook"
+          ],
+          [
+            "1st person",
+            "(Ahaṃ) pacāmi = Let me cook",
+            "(Mayaṃ) pacāma = Let us cook"
+          ]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "So vāṇijānaṃ bhattaṃ pacatu.",
+        "english": "Let him cook rice for the merchants."
+      },
+      {
+        "pali": "Tvaṃ rathena nagaraṃ gaccha / gacchāhi.",
+        "english": "You go to the city in the vehicle."
+      },
+      {
+        "pali": "Ahaṃ dhammaṃ uggaṇhāmi.",
+        "english": "Let me learn the dhamma."
+      },
+      {
+        "pali": "Te vāṇijānaṃ bhattaṃ pacantu.",
+        "english": "Let them cook rice for the merchants."
+      },
+      {
+        "pali": "Tumhe rathena nagaraṃ gacchatha.",
+        "english": "You go to the city in the vehicle."
+      },
+      {
+        "pali": "Mayaṃ dhammaṃ uggaṇhāma.",
+        "english": "Let us learn the dhamma."
+      },
+      {
+        "pali": "Mā tumhe saccaṃ parivajjetha.",
+        "english": "You do not avoid the truth."
+      },
+      {
+        "pali": "Mā te uyyānamhi pupphāni ocinantu.",
+        "english": "Let them not pick flowers in the park."
+      }
+    ]
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Bhūpālā dhammena dīpaṃ pālentu.",
+      "Mā manusso bhāyatu, sace so saccaṃ jānāti, bhāsatu.",
+      "Tumhe pāpaṃ karonte putte ovadatha.",
+      "Sugato dhammaṃ desetu, sāvakā ca upāsakā ca vihārasmiṃ nisīdanti.",
+      "Mā te pāpakammāni katvā manussalokamhā cavitvā narake uppajjantu.",
+      "Mā corā kassakānaṃ goṇe mārentu.",
+      "Mā tvaṃ sunakhaṃ āmasāhi, so taṃ ḍaseyya.",
+      "Tumhe dīpe jāletvā vihārasmiṃ rūpāni oloketha.",
+      "Tumhe asappurise āmantetvā dhammena jīvituṃ anusāsatha.",
+      "Putta, mā tvaṃ pāpamitte upasaṅkama.",
+      "Sace tumhe saccam bhāsituṃ ussaheyyātha, tumhe sappurisā bhaveyyātha.",
+      "Sace tvaṃ pāsāṇe khipeyyāsi, kākā ca sakuṇā ca ākāsaṃ uppateyyuṃ.",
+      "Mā dāraka pānīyaṃ pivitvā pattaṃ bhinda.",
+      "Mā suvaṇṇaṃ coretvā gacchantā corā samuddaṃ tarantu.",
+      "Upāsaka, mā putte akkosāhi, samaṇehi saddhiṃ mantetvā putte anusāsāhi."
+    ],
+    "english_to_pali": [
+      "May the king ruling the island protect the people righteously.",
+      "Let the children playing in the park collect falling leaves.",
+      "Let the farmers and merchants assemble in the king's park.",
+      "Let the sons climb the mountain to see lions, deer and birds.",
+      "Do not cut trees in forests if you wish to protect deer.",
+      "Let the child not come down the stairway, he will fall.",
+      "Let the farmer plough the fields and sow seeds, let him not kill goats.",
+      "Let the parrots fly taking fruits with their beaks.",
+      "Sons, do not commit sins, live righteously.",
+      "May the disciples of the Buddha get alms and robes.",
+      "Let the children come out of the house and see the moon rising from the mountain.",
+      "Boys, do not go and kill deer in the forest with the hunter.",
+      "You (pl.) run home and bring water for the farmers ploughing the field.",
+      "Do not ask questions from the king's messenger.",
+      "You lay devotees should try to avoid evil and do good deeds."
+    ]
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "lesson_number": 31,
+  "title": "Lesson 31",
+  "topic": "Personal pronouns",
+  "grammar": {
+    "explanations": [
+      "The first personal pronoun is based on the stem 'amha'. It declines differently in singular and plural forms across all cases.",
+      "The second personal pronoun is based on the stem 'tumha'. It likewise has distinct singular and plural forms across all cases.",
+      "Several cases of these pronouns have multiple alternative forms (e.g., Dative singular of amha: mama, mayhaṃ, mamaṃ, me). The shorter forms (me, no, te, vo) are enclitic and typically cannot stand at the beginning of a sentence."
+    ],
+    "tables": [
+      {
+        "title": "First personal pronoun (amha) - Singular",
+        "rows": [
+          [
+            "Nominative",
+            "ahaṃ (= I)"
+          ],
+          [
+            "Accusative",
+            "maṃ, mamaṃ (= me)"
+          ],
+          [
+            "Instrumental",
+            "mayā, me"
+          ],
+          [
+            "Ablative",
+            "mayā"
+          ],
+          [
+            "Dative",
+            "mama, mayhaṃ, mamaṃ, me"
+          ],
+          [
+            "Genitive",
+            "mama, mayhaṃ, mamaṃ, me"
+          ],
+          [
+            "Locative",
+            "mayi"
+          ]
+        ]
+      },
+      {
+        "title": "First personal pronoun (amha) - Plural",
+        "rows": [
+          [
+            "Nominative",
+            "mayaṃ, amhe (= we)"
+          ],
+          [
+            "Accusative",
+            "amhe, amhākaṃ, no (= us)"
+          ],
+          [
+            "Instrumental",
+            "amhehi, no"
+          ],
+          [
+            "Ablative",
+            "amhehi"
+          ],
+          [
+            "Dative",
+            "amhaṃ, amhākaṃ, no"
+          ],
+          [
+            "Genitive",
+            "amhaṃ, amhākaṃ, no"
+          ],
+          [
+            "Locative",
+            "amhesu"
+          ]
+        ]
+      },
+      {
+        "title": "Second personal pronoun (tumha) - Singular",
+        "rows": [
+          [
+            "Nominative",
+            "tvaṃ, tuvaṃ (= you)"
+          ],
+          [
+            "Accusative",
+            "taṃ, tavaṃ, tuvaṃ"
+          ],
+          [
+            "Instrumental",
+            "tvayā, tayā, te"
+          ],
+          [
+            "Ablative",
+            "tvayā, tayā"
+          ],
+          [
+            "Dative",
+            "tava, tuyhaṃ, te"
+          ],
+          [
+            "Genitive",
+            "tava, tuyhaṃ, te"
+          ],
+          [
+            "Locative",
+            "tvayi, tayi"
+          ]
+        ]
+      },
+      {
+        "title": "Second personal pronoun (tumha) - Plural",
+        "rows": [
+          [
+            "Nominative",
+            "tumhe (= you)"
+          ],
+          [
+            "Accusative",
+            "tumhe, tumhākaṃ, vo"
+          ],
+          [
+            "Instrumental",
+            "tumhehi, vo"
+          ],
+          [
+            "Ablative",
+            "tumhehi, vo"
+          ],
+          [
+            "Dative",
+            "tumhaṃ, tumhākaṃ, vo"
+          ],
+          [
+            "Genitive",
+            "tumhaṃ, tumhākaṃ, vo"
+          ],
+          [
+            "Locative",
+            "tumhesu"
+          ]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Mama ācariyo maṃ vācento potthakaṃ (book) likhi (wrote).",
+      "Mayhaṃ bhaginī gilānaṃ (sick) pitaraṃ posesi.",
+      "Dātāro bhikkhūnaṃ dānaṃ dentā amhe pi bhojāpesuṃ.",
+      "Tumhākaṃ dhītaro kuhiṃ (where) gamissanti?",
+      "Amhākaṃ dhītaro satthāraṃ namassituṃ Veḷuvanaṃ gamissanti.",
+      "Amhaṃ kammāni karontā dāsā (servants) pi sappurisā bhavanti.",
+      "Amhehi katāni puññāni ca pāpāni ca amhe anubandhanti.",
+      "Tayā kītāni bhaṇḍāni tava dhītā mañjūsāsu pakkhipitvā ṭhapesi.",
+      "Kulavantā ca caṇḍālā (outcasts) ca amhesu bhikkhūsu pabbajanti.",
+      "Amhākaṃ uyyāne phalavantesu tarūsu vaṇṇavantā pakkhino caranti.",
+      "Uyyānaṃ āgantvā tiṇāni khādantā migā amhe passitvā bhāyitvā aṭaviṃ dhāviṃsu.",
+      "Amhākaṃ bhattāro nāvāya udadhiṃ taritvā dīpaṃ pāpuṇiṃsu.",
+      "Amhaṃ bhūpatayo balavantā jetāro bhavanti.",
+      "Tumhākaṃ nattāro ca mama bhātaro ca sahayakā abhaviṃsu / ahesuṃ.",
+      "Tumhehi āhaṭāni cīvarāni mama mātā bhikkhūnaṃ pūjesi.",
+      "Uyyāne nisinno ahaṃ nattārehi kīḷantaṃ tavaṃ apassiṃ.",
+      "Dhaññaṃ minanto ahaṃ tayā saddhiṃ kathetuṃ na sakkomi.",
+      "Ahaṃ tava na kujjhāmi, tvam me kujjhasi.",
+      "Mama dhanavanto bandhavo viññū viduno bhavanti.",
+      "Dīpassa accinā ahaṃ tava chāyaṃ passituṃ sakkomi.",
+      "Amhākaṃ bhūpatayo jetāro hutvā pāsādesu ketavo ussāpesum (hoisted).",
+      "Bhātuno puttā mama gehe viharantā sippaṃ uggaṇhiṃsu.",
+      "Tava duhitā bhikkhuno ovāde ṭhatvā patino kāruṇikā sakhī (friend) ahosi.",
+      "Kusalaṃ karontā netāro saggaṃ gantāro bhavissanti.",
+      "Sace coro gehaṃ pavisati sīsaṃ bhinditvā nāsetabbo hoti.",
+      "Amhākaṃ sattuno hatthesu ca pādesu ca daddu atthi.",
+      "Sīlavantā buddhimantehi saddhim loke manussānaṃ hitasukhāya (for welfare and happiness) nānā kammāni karonti.",
+      "Sace susūnaṃ vinetā kāruniko hoti, te sotavantā susavo gunavantā bhavissanti.",
+      "Mayaṃ khīramhā dadhi ca dadhimhā sappiṃ ca labhāma.",
+      "Mayaṃ sappiṃ ca madhuṃ ca sammissetvā bhojanaṃ paṭiyādetvā bhuñjissāma."
+    ],
+    "english_to_pali": [
+      "May our sons and grandsons live long and happily.",
+      "Trees should not be cut by us or by you.",
+      "Your king went to the island with the ministers and defeated the enemy.",
+      "I picked up the seeds which were scattered on the ground by you.",
+      "Our teacher who was wise and famous taught us the doctrine.",
+      "A bird taking a fruit by the beak was seen by you.",
+      "My grandson wishes to become a doctor.",
+      "You (pl.) saw sages living in caves in the Himalaya mountain.",
+      "May our sons and daughters become rich and virtuous.",
+      "My grandson will become a disciple of yours.",
+      "May you be rich and famous.",
+      "The bee (madhukara) is standing on the lotus born (jāta) in the water.",
+      "The devoted lay devotee gave a flower to the young girl of good family.",
+      "The famous young girl has a colourful gem in her hand.",
+      "The radiant sun illuminates the world."
+    ]
+  }
+}

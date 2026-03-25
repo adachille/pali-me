@@ -1,0 +1,114 @@
+{
+  "lesson_number": 15,
+  "title": "Lesson 15",
+  "topic": "Optative / Potential mood",
+  "grammar": {
+    "explanations": [
+      "The optative expresses mainly probability and advice, and ideas such as those conveyed by if, might, would, etc. It is formed by adding -eyya to the verbal base before terminations.",
+      "It should be observed that the terminations of the second and first persons are similar to those of the present tense."
+    ],
+    "tables": [
+      {
+        "title": "Optative conjugation of base 'paca' (to cook)",
+        "rows": [
+          [
+            "Singular 3rd",
+            "(So) paceyya = If he would cook"
+          ],
+          [
+            "Singular 2nd",
+            "(Tvaṃ) paceyyāsi = If you would cook"
+          ],
+          [
+            "Singular 1st",
+            "(Ahaṃ) paceyyāmi = If I would cook"
+          ],
+          [
+            "Plural 3rd",
+            "(Te) paceyyuṃ = If they would cook"
+          ],
+          [
+            "Plural 2nd",
+            "(Tumhe) paceyyātha = If you would cook"
+          ],
+          [
+            "Plural 1st",
+            "(Mayaṃ) paceyyāma = If we would cook"
+          ]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Sace so bhattaṃ paceyya, ahaṃ bhuñjeyyāmi.",
+        "english": "If he would cook rice I will eat."
+      },
+      {
+        "pali": "Sace tvaṃ iccheyyāsi, ahaṃ coraṃ puccheyyāmi.",
+        "english": "If you would like, I will question the thief."
+      },
+      {
+        "pali": "Yadi ahaṃ nagare vihareyyāmi, so pi nagaraṃ āgaccheyya.",
+        "english": "If I dwell in the city, he too would come to the city."
+      },
+      {
+        "pali": "Sace te bhattaṃ paceyyuṃ, mayaṃ bhuñjeyyāma.",
+        "english": "If they cook rice we will eat."
+      },
+      {
+        "pali": "Sace tumhe iccheyyātha, mayaṃ core puccheyyāma.",
+        "english": "If you so wish, we will question the thieves."
+      },
+      {
+        "pali": "Yadi mayaṃ nagare vihareyyāma, te pi nagaraṃ āgaccheyyuṃ.",
+        "english": "If we dwell in the city, they too will come to the city."
+      }
+    ]
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Sace tvaṃ dhammaṃ suṇeyyāsi, addhā (certainly) tvaṃ Buddhassa sāvako bhaveyyāsi.",
+      "Yadi te gītāni gāyituṃ uggaṇheyyuṃ, ahaṃ pi uggaṇheyyāmi.",
+      "Sace tvaṃ bījāni pahiṇeyyāsi, kassako tāni (them) khette vapeyya.",
+      "Sace tumhe padumāni ocineyyātha, kumārā tāni Buddhassa pūjeyyuṃ.",
+      "Sace tvaṃ mūlaṃ gaṇheyyāsi, ahaṃ dussaṃ ādadeyyāmi.",
+      "Yadi mayaṃ bhūpālena saha manteyyāma amaccā na āgaccheyyuṃ.",
+      "Sace tumhe rukkhe ropeyyātha dārakā phalāni bhuñjeyyuṃ.",
+      "Sace mayaṃ sappurisā bhaveyyāma, puttā pi sappurisā bhaveyyuṃ.",
+      "Sace bhūpālā dhammena dīpe pāleyyuṃ, mayaṃ bhūpālesu pasīdeyyāma.",
+      "Sace kassako goṇaṃ vikkiṇeyya, vāṇijo taṃ kiṇeyya.",
+      "Sace manusse pīḷentā asappurisā gāmaṃ āgaccheyyuṃ ahaṃ te ovadeyyāmi.",
+      "Yadi amaccā pāpaṃ parivajeyyuṃ, manussā pāpaṃ na kareyyuṃ.",
+      "Sace tumhe pabbataṃ āruheyyātha, āhiṇḍante mige ca rukkhesu carante makkaṭe ca uḍḍente sakuṇe ca passeyyātha.",
+      "Sace tvaṃ pattena pānīyaṃ āneyyāsi pipāsito (thirsty) so piveyya.",
+      "Kusalakammāni katvā tumhe manussaloke uppajituṃ ussaheyyātha.",
+      "Sace so vejjo bhaveyya, ahaṃ taṃ (him) rodantaṃ dārakaṃ passituṃ āneyyāmi.",
+      "Yadi putto pāpaṃ kareyya ahaṃ taṃ (him) ovadeyyāmi.",
+      "Sace amacco paṇḍitaṃ ācariyaṃ āneyya mayaṃ dhammaṃ uggaṇheyyāma.",
+      "Sace ahaṃ hatthena suvaṃ phusituṃ ussaheyyāmi so gehā uppateyya.",
+      "Yadi so vejjaṃ pakkosituṃ iccheyya ahaṃ taṃ (him) āneyyāmi."
+    ],
+    "english_to_pali": [
+      "If you cover the evil deeds your sons do, they will become thieves.",
+      "If you (pl.) want to become virtuous men avoid evil.",
+      "If we look with our eyes we will see objects in the world, if we look with our minds we will see good and evil.",
+      "If you (sg.) start singing a song, the children will start dancing.",
+      "If we depart from the human world we will not fear to be born in the human world.",
+      "If gods are born in the human world they will do meritorious deeds.",
+      "If you search for the truth you will approach the Buddha living in the monastery.",
+      "If you admonish the merchant he will become a virtuous man.",
+      "If I invite the monk he will come home to preach the dhamma.",
+      "If you are a good man you will not kill oxen roaming in the forest.",
+      "If you do work in the field you will get wealth and corn.",
+      "If the king wishes to govern the island righteously he will discuss with wise men and ministers.",
+      "If you work in the field you will see farmers ploughing.",
+      "I see boys playing in the park with a monkey.",
+      "If they want to see birds singing they will go to the park.",
+      "If you listen to the dhamma you will be able to live righteously.",
+      "If you avoid evil friends (pāpamitte) you will become a good man.",
+      "If the minister is not a good man we will not approach him.",
+      "If there are fruits on the tree I will climb to pick them (tāni).",
+      "If I pick fruits you will eat them with friends."
+    ]
+  }
+}

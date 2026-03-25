@@ -1,0 +1,240 @@
+{
+  "lesson_number": 13,
+  "title": "Lesson 13",
+  "topic": "Present tense (continued)",
+  "grammar": {
+    "explanations": [
+      "Verbs which have the base ending in -e are conjugated somewhat differently from what has been learnt so far. They can have two verbal bases, one ending in -e, the other ending in -aya, as in coreti and corayati.",
+      "Gerunds and infinitives from verbs with bases ending in -e are formed retaining the -e in the base. For example, gerunds: desetvā, cintetvā, pūjetvā, pūretvā, etc.; infinitives: desetuṃ, cintetuṃ, pūjetuṃ, pūretuṃ, etc.",
+      "Verbs which have the base ending in -nā are conjugated as shown with the base kiṇā (to buy). Some verbs similarly conjugated are: vikkiṇāti, suṇāti, mināti, gaṇhāti, uggaṇhāti, jānāti, jināti, pāpuṇāti/pappoti, ocināti, pahiṇāti.",
+      "It should be observed that the present tense verbal terminations remain constant. Only the vikaraṇa suffix, or the conjugational sign in between the root and the termination, shows variation.",
+      "Special attention should be paid to the gerunds and infinitives of jānāti, suṇāti, pāpuṇāti/pappoti, and gaṇhāti, which have irregular forms.",
+      "The two verbs bhavati/hoti (to be) and karoti (to do) occur frequently in the language. Their gerunds are bhavitvā/hutvā and katvā respectively; their infinitives are bhavituṃ/hotuṃ and kātuṃ respectively.",
+      "The verb atthi (to be, from root as) and karoti (to do, from root kṛ) are special verbs of frequent occurrence and are conjugated as shown in the tables."
+    ],
+    "tables": [
+      {
+        "title": "Present Tense Active Voice: base core (to steal) - coreti",
+        "rows": [
+          [
+            "",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "3rd",
+            "(So) coreti",
+            "(Te) corenti"
+          ],
+          [
+            "2nd",
+            "(Tvaṃ) coresi",
+            "(Tumhe) coretha"
+          ],
+          [
+            "1st",
+            "(Ahaṃ) coremi",
+            "(Mayaṃ) corema"
+          ]
+        ]
+      },
+      {
+        "title": "Present Tense Active Voice: base coraya (to steal) - corayati",
+        "rows": [
+          [
+            "",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "3rd",
+            "(So) corayati",
+            "(Te) corayanti"
+          ],
+          [
+            "2nd",
+            "(Tvaṃ) corayasi",
+            "(Tumhe) corayatha"
+          ],
+          [
+            "1st",
+            "(Ahaṃ) corayāmi",
+            "(Mayaṃ) corayāma"
+          ]
+        ]
+      },
+      {
+        "title": "Present Tense Active Voice: base kiṇā (to buy)",
+        "rows": [
+          [
+            "",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "3rd",
+            "(So) kiṇāti",
+            "(Te) kiṇanti"
+          ],
+          [
+            "2nd",
+            "(Tvaṃ) kiṇāsi",
+            "(Tumhe) kiṇātha"
+          ],
+          [
+            "1st",
+            "(Ahaṃ) kiṇāmi",
+            "(Mayaṃ) kiṇāma"
+          ]
+        ]
+      },
+      {
+        "title": "Special forms: gerunds and infinitives",
+        "rows": [
+          [
+            "Present Tense",
+            "Gerund/Absolutive",
+            "Infinitive"
+          ],
+          [
+            "jānāti",
+            "ñatvā / jānitvā",
+            "ñātuṃ"
+          ],
+          [
+            "suṇāti",
+            "sutvā / suṇitvā",
+            "sotuṃ / suṇituṃ"
+          ],
+          [
+            "pāpuṇāti / pappoti",
+            "patvā / pāpuṇitvā",
+            "pāpuṇituṃ / pappotuṃ"
+          ],
+          [
+            "gaṇhāti",
+            "gahetvā / gaṇhitvā",
+            "gahetuṃ / gaṇhituṃ"
+          ]
+        ]
+      },
+      {
+        "title": "Conjugation of atthi (to be)",
+        "rows": [
+          [
+            "",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "3rd",
+            "atthi",
+            "santi"
+          ],
+          [
+            "2nd",
+            "asi",
+            "attha"
+          ],
+          [
+            "1st",
+            "asmi / amhi",
+            "asma / amha"
+          ]
+        ]
+      },
+      {
+        "title": "Conjugation of karoti (to do)",
+        "rows": [
+          [
+            "",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "3rd",
+            "karoti",
+            "karonti"
+          ],
+          [
+            "2nd",
+            "karosi",
+            "karotha"
+          ],
+          [
+            "1st",
+            "karomi",
+            "karoma"
+          ]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Buddho vihārasmiṃ sannipatantānaṃ manussānaṃ dhammaṃ deseti.",
+      "Buddhassa pūjetuṃ cintento upāsako pupphāni ocināti.",
+      "Te patte udakena pūrentā gītaṃ gāyanti.",
+      "Tumhe araññe vasante mige pīḷetvā asappurisā hotha.",
+      "Mayaṃ āpaṇaṃ gantvā vāṇijehi saddhiṃ kathetvā dhaññaṃ vikkiṇāma.",
+      "Tvaṃ uḍḍentaṃ sukaṃ disvā gaṇhituṃ icchasi.",
+      "Pabbatamhā udentaṃ candaṃ passituṃ kumāro gharamhā dhāvati.",
+      "Ahaṃ kassakehi saha khettasmiṃ rukkhe ropemi.",
+      "Mayaṃ amaccehi saha mantentā pāsādasmiṃ āsanesu nisīdāma.",
+      "Tumhe Tathāgatassa sāvake nimantetvā dānaṃ detha.",
+      "Upāsakā vihāraṃ gantvā dīpe jāletvā dhammaṃ sotuṃ nisīdanti.",
+      "Luddako sīsaṃ (head) dussena chādetvā nisīditvā sakuṇe maretuṃ ussahati.",
+      "So vane āhiṇḍante goṇe gāmaṃ ānetvā vāṇijānaṃ vikkiṇāti.",
+      "Tvaṃ āpaṇehi bhaṇḍāni kiṇitvā sakaṭena ānetvā gehe ṭhapesi.",
+      "Tumhe kakacehi rukkhe chinditvā pabbatamhā pātetha.",
+      "Dhammena manusse pālentā bhūpālā akusalaṃ parivajjenti.",
+      "Saccaṃ ñātuṃ icchanto ahaṃ samaṇehi pañhe pucchāmi.",
+      "Dānaṃ datvā sīlaṃ rakkhantā sappurisā saggalokaṃ pāpuṇanti.",
+      "Dhaññaṃ minanto kassako āpaṇaṃ netvā dhaññaṃ vikkiṇituṃ cinteti.",
+      "Ahaṃ pattena pānīyaṃ pivanto dvārasmiṃ ṭhatvā maggaṃ olokemi.",
+      "So āpaṇamhā khīraṃ kiṇituṃ puttaṃ pahiṇāti.",
+      "Mayaṃ dhammaṃ uggaṇhituṃ ussahantā paṇḍitena saha mantema.",
+      "Corehi saddhiṃ gehe bhinditvā manusse pīḷentā tumhe asappurisā hotha.",
+      "Ahaṃ suvaṇṇaṃ pariyesamāne dīpamhā āgacchante vāṇije jānāmi.",
+      "Ahaṃ ācariyo homi, tvaṃ vejjo hosi.",
+      "Tvaṃ asappurisa, Buddhena desentaṃ dhammaṃ sutvā sappuriso bhavituṃ ussahasi.",
+      "Ahaṃ paṇḍitehi saddhiṃ mantento dhammena dīpaṃ pālento bhūpālo asmi.",
+      "Varāhe mārentā corā kassake pīḷentā pāpakammāni karonti.",
+      "Sīlaṃ rakkhantā puññakammāni karontā manussā saggaṃ pappotuṃ ākaṅkhanti.",
+      "Akusalaṃ pahāya pāpaṃ parivajjetvā viharantā narā sappurisā bhavanti."
+    ],
+    "english_to_pali": [
+      "Having picked fruits from the trees you send (them) to the market.",
+      "Having heard the Buddha preach the doctrine I become glad.",
+      "Thinking of collecting corn I go to the field with the farmer.",
+      "Singing songs you (pl.) look at the birds flying in the sky.",
+      "I advise the wicked man who oppresses the farmers in the village.",
+      "We dig pits to plant trees in the park.",
+      "We know the man who is lighting lamps in the monastery.",
+      "You (pl.) cross the sea with sailors to reach the island.",
+      "The king governing the island wins.",
+      "We begin to learn the dhamma from recluses living in the village.",
+      "Searching for the truth the wise man goes from city to city.",
+      "Avoiding the sleeping dog with his foot the child runs home.",
+      "Wishing to be born in heaven wise men fear to do evil.",
+      "Departing from the human world wicked men are born in hell (narake).",
+      "Having invited the hermit from the mountain the king gives him a robe.",
+      "Trying to understand the truth lay devotees become recluses.",
+      "Expecting to hear the monk preaching the dhamma lay devotees assemble in the monastery.",
+      "We see with our eyes, hear with our ears (sotehi), touch with our bodies.",
+      "I am the king governing the islands.",
+      "You (pl.) are wicked men who take counsel with thieves.",
+      "Good men begin to plant trees to protect the world.",
+      "Having heard the dhamma, the thief wishes to avoid evil.",
+      "Merchants keep clothes in shops to sell (them) to farmers coming from the villages.",
+      "The sick man (gilāna) is a messenger of the gods in the human world.",
+      "There are good men in the world who admonish wicked men.",
+      "Having picked lotuses from the water, the doctor goes to the monastery to listen to the dhamma.",
+      "Seeing the Buddha and being pleased the thief throws away the arrows.",
+      "Wishing to avoid evil I practise virtue.",
+      "We cook rice to give alms to the monks coming from the monastery.",
+      "You (pl.) go from island to island searching for gold with merchants."
+    ]
+  }
+}

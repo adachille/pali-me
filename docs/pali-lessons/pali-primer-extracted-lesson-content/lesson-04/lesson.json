@@ -1,0 +1,135 @@
+{
+  "lesson_number": 4,
+  "title": "Lesson 4",
+  "topic": "Ablative case",
+  "grammar": {
+    "explanations": [
+      "This lesson continues the declension of masculine nouns ending in -a, focusing on the ablative case.",
+      "Case endings -ā, -mhā, or -smā are added to the nominal base to form the ablative singular.",
+      "Case ending -ehi is added to the nominal base to form the ablative plural. The ending -ebhi is an archaic form that is also used."
+    ],
+    "tables": [
+      {
+        "title": "Ablative case singular",
+        "rows": [
+          [
+            "nara + ā / mhā / smā",
+            "narā / naramhā / narasmā (From the man)"
+          ],
+          [
+            "mātula + ā / mhā / smā",
+            "mātulā / mātulamhā / mātulasmā (From the uncle)"
+          ],
+          [
+            "kassaka + ā / mhā / smā",
+            "kassakā / kassakamhā / kassakasmā (From the farmer)"
+          ]
+        ]
+      },
+      {
+        "title": "Ablative case plural",
+        "rows": [
+          [
+            "nara + ehi",
+            "narehi (narebhi) (From men)"
+          ],
+          [
+            "mātula + ehi",
+            "mātulehi (mātulebhi) (From uncles)"
+          ],
+          [
+            "kassaka + ehi",
+            "kassakehi (kassakebhi) (From farmers)"
+          ]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Yācako naramhā bhattaṃ yācati.",
+        "english": "The beggar asks for rice from the man."
+      },
+      {
+        "pali": "Putto mātulamhā pañhaṃ pucchati.",
+        "english": "The son asks a question from the uncle."
+      },
+      {
+        "pali": "Kassako rukkhasmā patati.",
+        "english": "The farmer falls from the tree."
+      },
+      {
+        "pali": "Yācakā narehi bhattaṃ yācanti.",
+        "english": "Beggars ask for rice from men."
+      },
+      {
+        "pali": "Puttā mātulehi pañhe pucchanti.",
+        "english": "Sons ask questions from uncles."
+      },
+      {
+        "pali": "Kassakā rukkhehi patanti.",
+        "english": "Farmers fall from trees."
+      }
+    ]
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Corā gāmamhā pabbataṃ dhāvanti.",
+      "Dārako mātulasmā odanaṃ yācati.",
+      "Kumāro sopānamhā patati.",
+      "Mātulā sāṭake dhovanti.",
+      "Dhīvarā piṭakehi macche āharanti.",
+      "Upāsakā samaṇehi saddhiṃ vihārasmā nikkhamanti.",
+      "Brāhmaṇo kakacena rukkhaṃ chindati.",
+      "Kumārā mittehi saha bhūpālaṃ passanti.",
+      "Vāṇijo assena saddhiṃ pabbatasmā oruhati.",
+      "Yācako kassakasmā soṇaṃ yācati.",
+      "Sappā pabbatehi gāmaṃ otaranti.",
+      "Amaccā sarehi mige vijjhanti.",
+      "Coro gāmamhā sakaṭena sāṭake harati.",
+      "Bhūpālo amaccehi saddhiṃ rathena pāsādaṃ āgacchati.",
+      "Sūkarā pādehi āvāṭe khaṇanti.",
+      "Kumāro sahāyakehi saha sāṭake dhovati.",
+      "Samaṇā gāmamhā upāsakehi saddhiṃ nikkhamanti.",
+      "Kukkuro piṭakamhā macchaṃ khādati.",
+      "Mitto puttamhā sunakhaṃ yācati.",
+      "Buddho sāvake pucchati.",
+      "Amaccā paṇḍitehi pañhe pucchanti.",
+      "Rajako sahāyena saha sāṭakaṃ dhovati.",
+      "Macchā piṭakamhā patanti.",
+      "Corā pāsāṇehi varāhe paharanti.",
+      "Amacco pāsādamhā suvaṃ āharati."
+    ],
+    "english_to_pali": [
+      "Horses run from the village to the mountain.",
+      "Merchants come from the island to the monastery with lay devotees.",
+      "Thieves shoot pigs with arrows.",
+      "The lay devotee questions (about) the dhamma from the recluse.",
+      "The child falls from the rock with a friend.",
+      "The dog bites the child.",
+      "Ministers set out from the palace with the king.",
+      "The man brings a deer from the island.",
+      "The farmer gets down from the tree.",
+      "Dogs run along the road with horses.",
+      "Boys take away lamps from merchants.",
+      "The thief gets down from the stairway.",
+      "Merchants bring parrots from mountains.",
+      "The horse hits the serpent with its foot.",
+      "The uncle, with his friends, sees recluses from the mountains.",
+      "Merchants bring horses to the palace from the island.",
+      "The minister questions the thief.",
+      "The farmer eats rice with the washerman.",
+      "The child falls from the stairway.",
+      "The fisherman climbs the mountain with his uncle.",
+      "The beggar, together with his dog, sleeps.",
+      "Kings protect islands with their ministers.",
+      "The king worships the Buddha from his palace.",
+      "The man kills a serpent with a sword.",
+      "Fishermen bring fish to the village in carts.",
+      "Pigs run from the village to the mountain.",
+      "Lay devotees ask questions from the wise man.",
+      "The son brings a parrot from the tree.",
+      "Wise men go to the monastery.",
+      "Disciples go along the road to the village."
+    ]
+  }
+}

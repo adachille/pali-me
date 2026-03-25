@@ -1,0 +1,257 @@
+{
+  "lesson_number": 19,
+  "title": "Lesson 19",
+  "topic": "Past participle",
+  "grammar": {
+    "explanations": [
+      "Past participles are mostly formed by adding -ta to the root with or without the connecting vowel -i-. Examples: pacati → pac + i + ta = pacita (cooked); bhāsati → bhās + i + ta = bhāsita (spoken); yācati → yāc + i + ta = yācita (begged); deseti → dis' + i + ta = desita (preached); pūjeti → pūj + i + ta = pūjita (honoured); gacchati → gam + ta = gata (gone); hanati → han + ta = hata (killed); nayati/neti → nī + ta = nīta (led).",
+      "The past participle is also formed from some roots by adding -na. Examples: chindati → chid + na = chinna (cut); bhindati → bhid + na = bhinna (broken); nisīdati → ni + sad + na = nisinna (seated); tarati → tṛ + na = tiṇṇa (crossed).",
+      "Past participles have a passive meaning when they are formed from transitive verbs, but from intransitive verbs they have an active meaning. They are declined in the three genders, as -a ending nouns in the masculine and the neuter, and -ā ending nouns in the feminine.",
+      "Pacati, chindati, nimanteti are transitive verbs. Therefore: pacito odano = the rice that is cooked (passive meaning); chinnaṃ paṇṇaṃ = the leaf that is cut (passive meaning); nimantitā kaññā = the girl who is invited (passive meaning).",
+      "But gacchati, patati, tiṭṭhati are intransitive verbs. Therefore: manusso gato (hoti) = the man has gone (active meaning); pupphaṃ patitaṃ (hoti) = the flower has fallen (active meaning); kaññā ṭhitā (hoti) = the girl has stood (active meaning)."
+    ],
+    "tables": [
+      {
+        "title": "Past participle forms",
+        "rows": [
+          [
+            "kasati",
+            "kasita, kaṭṭha"
+          ],
+          [
+            "pucchati",
+            "pucchita, puṭṭha"
+          ],
+          [
+            "pacati",
+            "pacita, pakka"
+          ],
+          [
+            "ḍasati",
+            "daṭṭha"
+          ],
+          [
+            "phusati",
+            "phuṭṭha"
+          ],
+          [
+            "pavisati",
+            "paviṭṭha"
+          ],
+          [
+            "āmasati",
+            "āmasita, āmaṭṭha"
+          ],
+          [
+            "labhati",
+            "laddha, labhita"
+          ],
+          [
+            "ārabhati",
+            "āraddha"
+          ],
+          [
+            "bhavati",
+            "bhūta"
+          ],
+          [
+            "bhuñjati",
+            "bhuñjita, bhutta"
+          ],
+          [
+            "vapati",
+            "vutta"
+          ],
+          [
+            "vasati",
+            "vuttha"
+          ],
+          [
+            "āsiñcati",
+            "āsitta"
+          ],
+          [
+            "khipati",
+            "khitta"
+          ],
+          [
+            "dhovati",
+            "dhovita, dhota"
+          ],
+          [
+            "pajahati",
+            "pahīna"
+          ],
+          [
+            "vivarati",
+            "vivaṭa"
+          ],
+          [
+            "pivati",
+            "pīta"
+          ],
+          [
+            "cavati",
+            "cuta"
+          ],
+          [
+            "hanati",
+            "hata"
+          ],
+          [
+            "nikkhamati",
+            "nikkhanta"
+          ],
+          [
+            "jānāti",
+            "ñāta"
+          ],
+          [
+            "suṇāti",
+            "suta"
+          ],
+          [
+            "mināti",
+            "mita"
+          ],
+          [
+            "gaṇhāti",
+            "gahita"
+          ],
+          [
+            "kiṇāti",
+            "kīta"
+          ],
+          [
+            "pāpuṇāti",
+            "patta"
+          ],
+          [
+            "karoti",
+            "kata"
+          ],
+          [
+            "tiṭṭhati",
+            "ṭhita"
+          ],
+          [
+            "harati",
+            "haṭa"
+          ],
+          [
+            "kujjhati",
+            "kuddha"
+          ],
+          [
+            "dadāti",
+            "dinna"
+          ],
+          [
+            "pasīdati",
+            "pasanna"
+          ],
+          [
+            "passati",
+            "diṭṭha"
+          ],
+          [
+            "muñcati",
+            "mutta"
+          ]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Upāsakehi vihāraṃ paviṭṭho Buddho diṭṭho hoti.",
+        "english": "The Buddha who entered the monastery was seen by the lay devotees."
+      },
+      {
+        "pali": "Te Buddhena desitaṃ dhammaṃ suṇiṃsu.",
+        "english": "They listened to the dhamma preached by the Buddha."
+      },
+      {
+        "pali": "Dārikāya āhaṭāni bhaṇḍāni ammā piṭakesu pakkhipi.",
+        "english": "The mother put in baskets the goods brought by the girl."
+      },
+      {
+        "pali": "Vānijo patitassa rukkhassa sākhāyo chindi.",
+        "english": "The merchant cut the branches of the fallen tree."
+      },
+      {
+        "pali": "Mayaṃ udakena āsittehi pupphehi Buddhaṃ pūjema.",
+        "english": "We may worship the Buddha with flowers sprinkled with water."
+      },
+      {
+        "pali": "Kassakena kasite khette sūkaro sayati.",
+        "english": "A pig sleeps in the field ploughed by the farmer."
+      }
+    ]
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Ammāya mañjūsāyaṃ pakkhittaṃ suvaṇṇaṃ dārikā na gaṇhi.",
+      "Dhotāni vatthāni gahetvā bhariyā udakamhā uttari.",
+      "Kassakehi uyyāne ropitesu rukkhesu phalāni bhaviṃsu.",
+      "Buddhā devehi ca narehi ca pūjitā honti.",
+      "Udakena pūritaṃ pattaṃ gahetvā vanitā gehaṃ āgatā hoti.",
+      "Adhammena dīpaṃ pālentena bhūpālena pīḷitā manussā kuddhā honti.",
+      "Pakkaṃ phalaṃ tuṇḍena gahetvā uḍḍentaṃ suvaṃ ahaṃ apassiṃ.",
+      "Udento suriyo brāhmaṇena namassito hoti.",
+      "Ammāya jālitaṃ dīpaṃ ādaya putto vihāraṃ paviṭṭho hoti.",
+      "Vanitāya dussena chādite āsane samaṇo nisīditvā sannipatitāya parisāya dhammaṃ desesi.",
+      "Kassakena khettaṃ ānītā goṇā tiṇaṃ khādantā āhiṇḍiṃsu.",
+      "Vāṇijā mañjūsāsu ṭhapitāni dussāni na vikkiṇiṃsu.",
+      "Sace tvaṃ saccaṃ jāneyyāsi mā puttaṃ akkosa.",
+      "Nāvāya nikkhantā narā samuddaṃ taritvā dīpaṃ pāpuṇitvā bhariyāhi saddhiṃ kathentā modanti.",
+      "Magge ṭhite vāṇijassa sakaṭe ahaṃ kaññāya ānītāni bhaṇḍāni ṭhapesiṃ.",
+      "Dhammena laddhena dhanena putte posetvā jīvantā manussā devatāhi rakkhitā honti.",
+      "Sāvakehi ca upāsakehi ca parivārito Buddho vihārassa chāyāya nisinno hoti.",
+      "Ammāya pāpehi nivāritā puttā sappurisā hutvā dhammaṃ suṇanti.",
+      "Kassake pīḷentā corā paṇḍitena anusāsitā sappurisā bhavituṃ vāyamantā upāsakehi saddhiṃ uyyāne rukkhe ropenti.",
+      "Vanitā puttāya paṭiyāditamhā bhattamhā khudāya pīḷitassa yācakassa thokaṃ datvā pānīyaṃ ca dadi / adāsi.",
+      "Sabhāyaṃ nisīditvā dārikāya gāyitaṃ gītaṃ sutvā kaññāyo modiṃsu.",
+      "Amaccena nimantitā purisā sālāyaṃ nisīdituṃ asakkontā uyyāne sannipatiṃsu.",
+      "Kassakehi khettesu vuttehi bījehi thokaṃ sakuṇā khādiṃsu.",
+      "Kumārehi rukkhamūle nilīyitvā sayanto sappo diṭṭho hoti.",
+      "Vāṇijena dīpamhā āhaṭāni vatthāni kiṇituṃ vanitāyo icchanti.",
+      "Sace bhūpālo dhammena manusse rakkheyya te kammāni katvā dārake posentā sukhaṃ vindeyyuṃ.",
+      "Puttena yācitā ammā mittānaṃ odanaṃ paṭiyādesi.",
+      "Amaccena puṭṭhaṃ pañhaṃ adhigantuṃ asakkonto corānaṃ dūto cintetuṃ ārabhi.",
+      "Corehi guhāyaṃ nilīyitāni bhaṇḍāni passitvā vānarā tāni ādāya rukkhe āruhiṃsu.",
+      "Ahaṃ pariyesitaṃ dhammaṃ adhigantvā modāmi."
+    ],
+    "english_to_pali": [
+      "The man who came to the assembly could not speak with the ministers.",
+      "The child ran to the shop taking the money given by the mother.",
+      "The king is seated in the chariot drawn by horses.",
+      "Having discussed with the wise man the farmers sent a messenger to the king.",
+      "The children went out of the open door.",
+      "The women who got down to the water washed clothes and bathed.",
+      "Buddhas and their disciples are worshipped by gods and men.",
+      "The merchant sold the clothes sewn by women.",
+      "I did not take the flowers and fruits brought by the girl from the forest.",
+      "Being chased by the dog, the girls quickly (sīghaṃ) ran home.",
+      "The teacher having seen the evil deed done by the girl advised her.",
+      "We did not light the lamps prepared by the women.",
+      "You do not drag the branches cut by the farmer from the mountain.",
+      "Without getting the pay for the work done, the woman is angry.",
+      "Do not ask for fruits from the boy sitting on the branch.",
+      "The woman who is scolded by the brahmin cries, seated at the door.",
+      "The girl being called by the mother ran home to eat rice.",
+      "The men who tried to cut the creepers started pulling the branches.",
+      "The farmer who makes a living righteously, ploughing his fields experiences happiness with his wife and children.",
+      "Deities who have departed from the world of gods and are born in the human world rejoice listening to the dhamma preached by the Buddha.",
+      "The thieves who were instructed by the monk became good men.",
+      "There were no fruits on the trees planted by the farmer.",
+      "Bitten by the dog the girl ran home and cried.",
+      "The minister is not known to the doctor.",
+      "Seated under the tree the girls played with sand.",
+      "Sons, do not drink liquor.",
+      "Mothers prevent children from evil.",
+      "I gave water to the dog oppressed with thirst.",
+      "Seeing the hunter coming we hid among the trees.",
+      "We prepared alms with faith and gave to the monks."
+    ]
+  }
+}

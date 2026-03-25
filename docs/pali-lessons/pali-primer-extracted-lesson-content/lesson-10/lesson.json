@@ -1,0 +1,122 @@
+{
+  "lesson_number": 10,
+  "title": "Lesson 10",
+  "topic": "The Infinitive",
+  "grammar": {
+    "explanations": [
+      "The suffix -tuṃ is added to the root of the verb or the verbal base with or sometimes without the connecting vowel -i- to form the infinitive.",
+      "Examples of infinitive formation: pac + i + tuṃ = pacituṃ (to cook); khād + i + tuṃ = khādituṃ (to eat); gam + tuṃ = gantuṃ (to go); dā + tuṃ = dātuṃ (to give); ṭhā + tuṃ = ṭhātuṃ (to stand); pā + tuṃ = pātuṃ / pivituṃ (to drink)."
+    ],
+    "tables": [
+      {
+        "title": "Infinitive Formation Examples",
+        "rows": [
+          [
+            "pac + i + tuṃ",
+            "pacituṃ",
+            "to cook"
+          ],
+          [
+            "khād + i + tuṃ",
+            "khādituṃ",
+            "to eat"
+          ],
+          [
+            "gam + tuṃ",
+            "gantuṃ",
+            "to go"
+          ],
+          [
+            "dā + tuṃ",
+            "dātuṃ",
+            "to give"
+          ],
+          [
+            "ṭhā + tuṃ",
+            "ṭhātuṃ",
+            "to stand"
+          ],
+          [
+            "pā + tuṃ",
+            "pātuṃ / pivituṃ",
+            "to drink"
+          ]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Kassako khettaṃ kasituṃ icchati.",
+        "english": "The farmer wishes to plough the field."
+      },
+      {
+        "pali": "Dārako phalāni khādituṃ rukkhaṃ āruhati.",
+        "english": "The child climbs the tree to eat fruits."
+      },
+      {
+        "pali": "Manussā samaṇehi pañhe pucchituṃ vihāraṃ āgacchanti.",
+        "english": "Men come to the monastery to ask questions from the recluses."
+      },
+      {
+        "pali": "Kumārā kīḷituṃ mittehi saha samuddaṃ gacchanti.",
+        "english": "Boys go to the sea with friends to play."
+      }
+    ]
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Kumārā vanamhi mittehi saha kīḷitvā bhattaṃ bhuñjituṃ gehaṃ dhāvanti.",
+      "Migā tiṇaṃ khāditvā udakaṃ pātuṃ pabbatamhā uyyānaṃ āgacchanti.",
+      "Vāṇijassa putto bhaṇḍāni āharituṃ rathena nagaraṃ gacchati.",
+      "Yācako mātulassa kuddālena āvāṭaṃ khaṇituṃ icchati.",
+      "Amaccā bhūpālaṃ passituṃ pāsādamhi sannipatanti.",
+      "Goṇā uyyāne āhiṇḍitvā kassakassa khettaṃ āgacchanti.",
+      "Upāsakā samaṇānaṃ dānaṃ dātuṃ vihāraṃ pavisanti.",
+      "Rathena nagaraṃ gantuṃ puriso gehasmā nikkhamati.",
+      "Brāhmaṇo vejjena saddhiṃ nahāyituṃ udakaṃ otarati.",
+      "Coro amaccassa gehaṃ pavisituṃ uyyāne āhiṇḍati.",
+      "Sīho pabbatamhi sayitvā uṭṭhāya migaṃ hantuṃ oruhati.",
+      "Udakaṃ otaritvā vatthāni dhovituṃ rajako puttaṃ pakkosati.",
+      "Tathāgataṃ passitvā vandituṃ upāsako vihāraṃ pavisati.",
+      "Khettaṃ kasituṃ kassako kuddālaṃ ādāya gehā nikkhamati.",
+      "Sarehi mige vijjhituṃ luddakā sunakhehi saha araññaṃ pavisanti.",
+      "Narā gāmamhā nikkhamitvā nagare vasituṃ icchanti.",
+      "Sakuṇe passituṃ amaccā kumārehi saha pabbataṃ āruhanti.",
+      "Pabbatasmā rukkhaṃ ākaḍḍhituṃ vāṇijena saha kassako gacchati.",
+      "Phalāni khādituṃ makkaṭā rukkhesu caranti.",
+      "Paṇḍito sugatassa sāvakehi saddhiṃ bhāsituṃ icchati.",
+      "Samuddaṃ taritvā dīpaṃ gantvā vatthāni āharituṃ vāṇijā icchanti.",
+      "Pupphāni saṃharitvā udakena āsiñcituṃ upāsako kumāre ovadati.",
+      "Ajassa kāyaṃ hatthehi phusituṃ dārako icchati.",
+      "Brāhmaṇassa gehe āsanesu nisīdituṃ rajakassa puttā icchanti.",
+      "Pātuṃ udakaṃ yācitvā dārako rodati."
+    ],
+    "english_to_pali": [
+      "Goats roam in the park to eat leaves and drink water.",
+      "The wicked man wishes to hit the dog with his foot.",
+      "Friends go to the park to play with their dogs.",
+      "The lay devotee wishes to come home and instruct his sons.",
+      "The deity wishes to go to the monastery and speak to the Buddha.",
+      "The good man wishes to protect virtues and give alms.",
+      "Pigs run from the village to enter the forest.",
+      "The farmer asks for a hoe from the merchant to dig pits in his field.",
+      "Lay devotees assemble in the monastery to worship the Buddha.",
+      "The uncle comes out of the house to call the fisherman.",
+      "Farmers wish to get oxen; merchants wish to get horses.",
+      "The king wishes to abandon his palace.",
+      "Men take baskets and go to the forest to collect fruits for their children.",
+      "The farmer wanders in the forest to cut grass for his oxen.",
+      "Men wish to live in houses in the city with their sons.",
+      "Having stood on the rock, the child sees flowers on the trees.",
+      "Having received a garment from the teacher the doctor is pleased.",
+      "The hunter calls a friend to drag a goat from the forest.",
+      "The sailor calls merchants to cross the sea.",
+      "Having risen from the seat the good man wishes to speak with the monk.",
+      "Children wish to get down to the water and bathe.",
+      "The minister mounts the horse to go to the forest to shoot deer.",
+      "The boy wishes to cook rice for his uncle's friends.",
+      "Jackals leave the forest to enter the farmers' fields.",
+      "Men wish to see objects with their eyes by the light of the sun."
+    ]
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "lesson_number": 14,
+  "title": "Lesson 14",
+  "topic": "The Future Tense",
+  "grammar": {
+    "explanations": [
+      "The future tense is formed by adding -ssa to the root or verbal base with, or in some cases without, the connecting vowel -i-. The terminations are the same as those in the present tense.",
+      "Attention may be paid to the following irregular future forms: gacchati → gamissati (he will go), āgacchati → āgamissati (he will come), dadāti → dadissati / dassati (he will give), tiṭṭhati → ṭhassati (he will stand), karoti → karissati (he will do)."
+    ],
+    "tables": [
+      {
+        "title": "Future Tense - Base paca (to cook)",
+        "rows": [
+          [
+            "Singular 3rd",
+            "(So) pacissati = He will cook"
+          ],
+          [
+            "Singular 2nd",
+            "(Tvaṃ) pacissasi = You will cook"
+          ],
+          [
+            "Singular 1st",
+            "(Ahaṃ) pacissāmi = I will cook"
+          ],
+          [
+            "Plural 3rd",
+            "(Te) pacissanti = They will cook"
+          ],
+          [
+            "Plural 2nd",
+            "(Tumhe) pacissatha = You will cook"
+          ],
+          [
+            "Plural 1st",
+            "(Mayaṃ) pacissāma = We will cook"
+          ]
+        ]
+      },
+      {
+        "title": "Future Tense - Base kiṇā (to buy)",
+        "rows": [
+          [
+            "Singular 3rd",
+            "(So) kiṇissati"
+          ],
+          [
+            "Singular 2nd",
+            "(Tvaṃ) kiṇissasi"
+          ],
+          [
+            "Singular 1st",
+            "(Ahaṃ) kiṇissāmi"
+          ],
+          [
+            "Plural 3rd",
+            "(Te) kiṇissanti"
+          ],
+          [
+            "Plural 2nd",
+            "(Tumhe) kiṇissatha"
+          ],
+          [
+            "Plural 1st",
+            "(Mayaṃ) kiṇissāma"
+          ]
+        ]
+      },
+      {
+        "title": "Future Tense - Base core (to steal)",
+        "rows": [
+          [
+            "Singular 3rd",
+            "(So) coressati"
+          ],
+          [
+            "Singular 2nd",
+            "(Tvaṃ) coressasi"
+          ],
+          [
+            "Singular 1st",
+            "(Ahaṃ) coressāmi"
+          ],
+          [
+            "Plural 3rd",
+            "(Te) coressanti"
+          ],
+          [
+            "Plural 2nd",
+            "(Tumhe) coressatha"
+          ],
+          [
+            "Plural 1st",
+            "(Mayaṃ) coressāma"
+          ]
+        ]
+      },
+      {
+        "title": "Irregular Future Forms",
+        "rows": [
+          [
+            "gacchati",
+            "gamissati = he will go"
+          ],
+          [
+            "āgacchati",
+            "āgamissati = he will come"
+          ],
+          [
+            "dadāti",
+            "dadissati / dassati = he will give"
+          ],
+          [
+            "tiṭṭhati",
+            "ṭhassati = he will stand"
+          ],
+          [
+            "karoti",
+            "karissati = he will do"
+          ]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "exercises": {
+    "pali_to_english": [
+      "So pabbatamhā udentaṃ candaṃ passituṃ pāsādaṃ āruhissati.",
+      "Bhūpālo corehi dīpaṃ rakkhituṃ amaccehi saha mantessati.",
+      "Ahaṃ samuddaṃ taritvā dīpaṃ pāpuṇitvā bhaṇḍāni vikkiṇissāmi.",
+      "Tumhe vihāraṃ upasaṅkamantā magge pupphāni vikkiṇante manusse passissatha.",
+      "Udakaṃ otaritvā vatthāni dhovanto kassako nahāyitvā gehaṃ āgamissati.",
+      "Gāme viharanto tvaṃ nagaraṃ gantvā rathaṃ ānessasi.",
+      "Puññaṃ kātuṃ icchantā tumhe sappurisā pāpamitte ovadissatha.",
+      "Dhammaṃ sotuṃ uyyāne nisīdantānaṃ upāsakānaṃ ahaṃ pānīyaṃ dassāmi.",
+      "Mayaṃ bhūpālā dhammena dīpe pālessāma.",
+      "Rukkhaṃ pātetvā phalāni khādituṃ icchantaṃ asappurisaṃ ahaṃ akkosāmi.",
+      "Dānaṃ dadamānā sīlaṃ rakkhantā mayaṃ samaṇehi dhammaṃ uggaṇhissāma.",
+      "Dhāvantamhā sakaṭamhā patantaṃ dārakaṃ disvā tvaṃ vejjaṃ ānesi.",
+      "Saccaṃ adhigantuṃ ussahanto tāpaso Tathāgataṃ passituṃ ākaṅkhati.",
+      "Buddhe pasīditvā upāsako devaputto hutvā saggaloke uppajjati.",
+      "Udentaṃ suriyaṃ disvā brāhmaṇo gehā nikkhamma vandati.",
+      "Dīpaṃ pappotuṃ ākaṅkhamānā mayaṃ samuddaṃ tarituṃ nāvikaṃ pariyesāma.",
+      "Amaccassa dūtaṃ pahiṇituṃ icchanto bhūpālo ahaṃ asmi.",
+      "Puññakammāni karontānaṃ vāṇijānaṃ dhanaṃ atthi.",
+      "Mayaṃ gītāni gāyante naccante kumāre olokessāma.",
+      "Pāpaṃ parivajjetvā kusalaṃ karonte sappurise devā pūjessanti.",
+      "Saccaṃ bhāsantā asappurise anusāsantā paṇḍitā upāsakā bhavissanti.",
+      "Tvaṃ dhaññena pattaṃ pūretvā ācariyassa dassasi.",
+      "Rukkhamūle nisīditvā cīvaraṃ sibbantaṃ samaṇaṃ ahaṃ upasaṅkamissāmi.",
+      "Ahaṃ sayantassa puttassa kāyaṃ āmasanto mañcasmiṃ nisīdāmi.",
+      "Uyyānesu rukkhe ropetuṃ samaṇā manusse anusāsanti."
+    ],
+    "english_to_pali": [
+      "Having learnt the dhamma from the Buddha I will live righteously (dhammena) in the world.",
+      "I will advise the king to rule the island righteously with his ministers.",
+      "Keeping the garment on the seat the child will enter the water to bathe.",
+      "Having heard the doctrine you (pl.) will become pleased with the Tathāgata.",
+      "They who are walking in the forest collecting fruits will desire to drink water.",
+      "Farmers approaching the city will look at vehicles running on the road.",
+      "The rising sun will illuminate the world.",
+      "The trees in the park will bathe in the light of the moon.",
+      "You (sg.) will be pleased seeing your sons asking questions from the wise man.",
+      "The children will like to see the parrots eating fruits on the trees.",
+      "We are doctors coming from the island, you are teachers going to the island.",
+      "He will take money and go to the shop to buy goods.",
+      "Having filled the bowl with drinking water the child will give it to the beggar eating rice.",
+      "Men wishing to get merit will plant trees for people in the world.",
+      "Searching for wealth wicked men will oppress farmers living righteously in villages.",
+      "There are fruits on the trees in the mountains.",
+      "Good men doing meritorious deeds will learn the dhamma from monks.",
+      "Wise men instruct kings governing the islands.",
+      "You will buy fish from fishermen coming from the sea.",
+      "Wishing to learn the dhamma we approach the Buddha.",
+      "Seeing the jackal coming to the park the children will get frightened.",
+      "They will go to see the king coming to the village with the ministers.",
+      "You are a good man who lives righteously.",
+      "I see a parrot picking a fruit with its beak.",
+      "We will become good men practising virtue."
+    ]
+  }
+}

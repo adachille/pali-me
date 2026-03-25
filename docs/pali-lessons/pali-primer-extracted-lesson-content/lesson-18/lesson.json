@@ -1,0 +1,113 @@
+{
+  "lesson_number": 18,
+  "title": "Lesson 18",
+  "topic": "Feminine nouns ending in -ā",
+  "grammar": {
+    "explanations": [
+      "Feminine nouns ending in -ā are declined according to the pattern of vanitā (woman). Most nouns ending in -ā are feminine.",
+      "In the singular, the nominative ends in -ā, the vocative in -e, the accusative in -aṃ, and the instrumental, ablative, dative, genitive, and locative all share the ending -āya (with an optional -āyaṃ for the locative).",
+      "In the plural, the nominative/vocative takes -ā or -āyo, the accusative takes -ā or -āyo, the instrumental takes -āhi (or -ābhi), the dative/genitive takes -ānaṃ, and the locative takes -āsu."
+    ],
+    "tables": [
+      {
+        "title": "Declension of vanitā (woman) - Singular",
+        "rows": [
+          [
+            "Nom.",
+            "vanitā"
+          ],
+          [
+            "Voc.",
+            "vanite"
+          ],
+          [
+            "Acc.",
+            "vanitaṃ"
+          ],
+          [
+            "Ins.",
+            "vanitāya"
+          ],
+          [
+            "Abl.",
+            "vanitāya"
+          ],
+          [
+            "Dat.",
+            "vanitāya"
+          ],
+          [
+            "Gen.",
+            "vanitāya"
+          ],
+          [
+            "Loc.",
+            "vanitāya, vanitāyaṃ"
+          ]
+        ]
+      },
+      {
+        "title": "Declension of vanitā (woman) - Plural",
+        "rows": [
+          [
+            "Nom./Voc.",
+            "vanitā, vanitāyo"
+          ],
+          [
+            "Acc.",
+            "vanitā, vanitāyo"
+          ],
+          [
+            "Ins.",
+            "vanitāhi (vanitābhi)"
+          ],
+          [
+            "Dat./Gen.",
+            "vanitānaṃ"
+          ],
+          [
+            "Loc.",
+            "vanitāsu"
+          ]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Sace sabhāyaṃ kaññāyo katheyyuṃ aham pi kathessāmi.",
+      "Dārikāyo pupphāni ocinitvā sālāyaṃ nisīditvā mālāyo kariṃsu.",
+      "Vanitā rukkhassa sākhāyo chinditvā ākaḍḍhi.",
+      "Bhariyā mañjūsāsu vatthāni ca suvaṇṇaṃ ca ṭhapesi.",
+      "Dārikā pāsādassa chāyāyaṃ nisīditvā vālukāya kīḷiṃsu.",
+      "Bhariyāya kathaṃ sutvā pasīditvā kassako sappuriso abhavi.",
+      "Devatāyo puññāni karonte dhammena jīvante manusse rakkhantu.",
+      "Pabbatasmiṃ guhāsu vasantā sīhā vālukāya kīḷante mige māresuṃ.",
+      "Ammā dārikāya kujjhitvā hatthena pahari.",
+      "Vanitāyo saddhāya bhattaṃ pacitvā vihāraṃ netvā samaṇānaṃ pūjesuṃ.",
+      "Tumhe mā suraṃ pivatha, mā gilānā (sick) bhavituṃ ussahatha.",
+      "Dhammena dhanaṃ saṃharamānā paññāya putte posentā narā manussaloke sukhaṃ vindanti.",
+      "Sace tumhe nāvāya gaṅgaṃ tareyyātha dīpasmiṃ vasante tāpase disvā āgantuṃ sakkissatha.",
+      "Parisaṃ parivāretvā pāsādamhā nikkhamantaṃ bhūpālaṃ disvā vanitāyo modanti.",
+      "Kaññāyo sālāyaṃ sannipatitvā kumārehi saddhiṃ sallapiṃsu.",
+      "Khudāya pīḷentaṃ gilānaṃ yācakaṃ disvā ammā bhattaṃ adadi / adāsi.",
+      "Guhāyaṃ nilīyitvā suraṃ pivantā corā sīhaṃ passitvā bhāyiṃsu.",
+      "Varāhe māretvā jīvanto naro gilāno hutvā dukkhaṃ vindati.",
+      "Vāṇijassa āpaṇe mañjūsāyaṃ mūlaṃ (money) atthi.",
+      "Samaṇā manusse pāpā nivāretvā sappurese kātuṃ vāyamanti."
+    ],
+    "english_to_pali": [
+      "The man stood on the road asking my mother the way to go to the monastery.",
+      "Having prepared rice with faith for the monks, the woman took it to the monastery.",
+      "You can live righteously and seek wealth.",
+      "Sitting in the shade of the house the girls cut branches from the creeper.",
+      "Wicked men did not advise their sons who drink liquor.",
+      "Taking the basket and money the girl went to the market to buy corn.",
+      "If you light lamps the lay devotees will see the objects in the monastery.",
+      "O good men, you learn the dhamma and try to live righteously.",
+      "If you try, you can avoid evil and do good.",
+      "Having seen the lion sleeping in the cave the woman ran."
+    ]
+  }
+}

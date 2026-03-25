@@ -1,0 +1,204 @@
+{
+  "lesson_number": 9,
+  "title": "Lesson 9",
+  "topic": "Gerund / Absolutive",
+  "grammar": {
+    "explanations": [
+      "The suffix -tvā is added to the root of the verb or verbal base with or sometimes without the connecting vowel -i- to form the gerund, absolutive or the indeclinable participle. Examples: pac + i + tvā = pacitvā (having cooked); khād + i + tvā = khāditvā (having eaten); gam + tvā = gantvā (having gone); han + tvā = hantvā (having killed).",
+      "The suffix -ya is sometimes added to roots with a prefix. Examples: ā + gam + ya = āgamma (with assimilation) = having come; ā + dā + ya = ādāya = having taken; ā + ruh + ya = āruyha (with metathesis) = having climbed; ava + ruh + ya = oruyha (with metathesis) = having descended.",
+      "The root is the simplest element of a verb without prefixes, suffixes or terminations. These are normally given in Sanskrit in grammars by Western scholars. The base is formed by adding a suffix to the root before a termination. E.g. pac is the root; paca is the base. khād is the root; khāda is the base. bhuj is the root; bhuñja is the base. gam is the root; gaccha is the base.",
+      "Attention may be paid to the following irregular or alternative gerund forms: bhuñjati - bhuñjitvā, bhutvā; āgacchati - āgantvā, āgamma; hanati - hanitvā, hantvā; dadāti - daditvā, datvā; nahāyati - nahāyitvā, nahātvā; tiṭṭhati - ṭhatvā; nikkhamati - nikkhamitvā, nikkhamma; pajahati - pajahitvā, pahāya; passati - passitvā; but disvā is more commonly used from the root dṛś to see, instead of passitvā; uṭṭhahati - uṭṭhahitvā, uṭṭhāya."
+    ],
+    "tables": [
+      {
+        "title": "Gerund formation with -tvā",
+        "rows": [
+          [
+            "pac + i + tvā",
+            "pacitvā",
+            "having cooked"
+          ],
+          [
+            "khād + i + tvā",
+            "khāditvā",
+            "having eaten"
+          ],
+          [
+            "gam + tvā",
+            "gantvā",
+            "having gone"
+          ],
+          [
+            "han + tvā",
+            "hantvā",
+            "having killed"
+          ]
+        ]
+      },
+      {
+        "title": "Gerund formation with -ya (prefixed roots)",
+        "rows": [
+          [
+            "ā + gam + ya",
+            "āgamma (with assimilation)",
+            "having come"
+          ],
+          [
+            "ā + dā + ya",
+            "ādāya",
+            "having taken"
+          ],
+          [
+            "ā + ruh + ya",
+            "āruyha (with metathesis)",
+            "having climbed"
+          ],
+          [
+            "ava + ruh + ya",
+            "oruyha (with metathesis)",
+            "having descended"
+          ]
+        ]
+      },
+      {
+        "title": "Alternative gerund forms",
+        "rows": [
+          [
+            "bhuñjati",
+            "bhuñjitvā, bhutvā",
+            "having eaten"
+          ],
+          [
+            "āgacchati",
+            "āgantvā, āgamma",
+            "having come"
+          ],
+          [
+            "hanati",
+            "hanitvā, hantvā",
+            "having killed"
+          ],
+          [
+            "dadāti",
+            "daditvā, datvā",
+            "having given"
+          ],
+          [
+            "nahāyati",
+            "nahāyitvā, nahātvā",
+            "having bathed"
+          ],
+          [
+            "tiṭṭhati",
+            "ṭhatvā",
+            "having stood"
+          ],
+          [
+            "nikkhamati",
+            "nikkhamitvā, nikkhamma",
+            "having gone out"
+          ],
+          [
+            "pajahati",
+            "pajahitvā, pahāya",
+            "having abandoned"
+          ],
+          [
+            "passati",
+            "passitvā; disvā (more common)",
+            "having seen"
+          ],
+          [
+            "uṭṭhahati",
+            "uṭṭhahitvā, uṭṭhāya",
+            "having risen"
+          ]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Kassako khettamhā āgantvā bhattaṃ bhuñjati.",
+        "english": "The farmer, having come from the field, eats rice."
+      },
+      {
+        "pali": "Vānarā rukkhaṃ āruyha phalāni khādanti.",
+        "english": "Having climbed the tree, monkeys eat fruits."
+      },
+      {
+        "pali": "Dārako bhattaṃ yācitvā rodati.",
+        "english": "Having asked for rice, the child cries."
+      },
+      {
+        "pali": "Samaṇo Buddhaṃ passitvā vandati.",
+        "english": "Having seen the Buddha, the recluse worships (him)."
+      }
+    ]
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Upāsako vihāraṃ gantvā samaṇānaṃ dānaṃ dadāti.",
+      "Sāvako āsanamhi nisīditvā pāde dhovati.",
+      "Dārakā pupphāni saṃharitvā mātulassa datvā hasanti.",
+      "Yācakā uyyānamhā āgamma kassakasmā odanaṃ yācanti.",
+      "Luddako hatthena sare ādāya araññaṃ pavisati.",
+      "Kumārā kukkurena saddhiṃ kīḷitvā samuddaṃ gantvā nahāyanti.",
+      "Vāṇijo pāsāṇasmiṃ ṭhatvā kuddālena sappaṃ paharati.",
+      "Sappuriso yācakassa putte pakkositvā vatthāni dadāti.",
+      "Dārako āvāṭamhi patitvā rodati.",
+      "Bhūpālo pāsādamhā nikkhamitvā amaccena saddhiṃ bhāsati.",
+      "Sunakho udakaṃ pivitvā gehamhā nikkhamma magge sayati.",
+      "Samaṇā bhūpālassa uyyāne sannipatitvā dhammaṃ bhāsanti.",
+      "Putto nahātvā bhattaṃ bhutvā mañcaṃ āruyha sayati.",
+      "Vāṇijā dīpamhā nagaraṃ āgamma ācariyassa gehe vasanti.",
+      "Rajako vatthāni dhovitvā puttaṃ pakkosati.",
+      "Vānarā rukkhehi oruyha uyyāne āhiṇḍanti.",
+      "Migā vanamhi āhiṇḍitvā paṇṇāni khādanti.",
+      "Kumāro nayanāni dhovitvā suriyaṃ passati.",
+      "Nāvikassa mittā nagarasmā bhaṇḍāni ādāya gāmaṃ āgacchanti.",
+      "Dārako khīraṃ pivitvā gehamhā nikkhamma hasati.",
+      "Sappurisā dānāni datvā sīlāni rakkhitvā saggaṃ gacchanti.",
+      "Sūkaro udakamhā uttaritvā āvāṭaṃ oruyha sayati.",
+      "Tāpaso Tathāgatassa sāvakaṃ disvā vanditvā pañhaṃ pucchati.",
+      "Asappuriso yācakassa pattaṃ bhinditvā akkositvā gehaṃ gacchati.",
+      "Sakuṇā gāme rukkhehi uppatitvā araññaṃ otaranti.",
+      "Paṇḍito āsanamhā uṭṭhahitvā tāpasena saddhiṃ bhāsati.",
+      "Dārako gehā nikkhamma mātulaṃ pakkositvā gehaṃ pavisati.",
+      "Devā sappurisesu pasīditvā te (them) rakkhanti.",
+      "Kumārassa sahāyakā pāsādaṃ āruyha āsanesu nisīdanti.",
+      "Goṇā khettamhi āhiṇḍitvā tiṇaṃ khāditvā sayanti."
+    ],
+    "english_to_pali": [
+      "Having gone out of the house the farmer enters the field.",
+      "Having preached (deseti) the doctrine, the Buddha enters the monastery.",
+      "The king having been pleased with the Buddha, abandons the palace and goes to the monastery.",
+      "Having climbed down from the stairway, the child laughs.",
+      "Having hit the serpent with a stone the boy runs into the house.",
+      "Having gone to the forest the man climbs a tree and eats fruits.",
+      "Having washed the clothes in the water, the washerman brings (them) home.",
+      "The lion having killed a goat, eats having sat on a rock.",
+      "The doctor having seen the merchants' goods leaves the city.",
+      "Having broken (into) the house thieves run to the forest.",
+      "Having roamed in the field the pig falls into a pit.",
+      "The fisherman brings fish from the sea for farmers.",
+      "Having taken goods from the city, the teacher comes home.",
+      "Having stood on a mountain, the hunter shoots birds with arrows.",
+      "The oxen having eaten grass in the park, sleep on the road.",
+      "The king having got down from the chariot speaks with the farmers.",
+      "The man having given up his house enters the monastery.",
+      "Fishermen give fish to merchants and receive profits.",
+      "The lay devotee having asked a question from the monk sits on his seat.",
+      "The disciples of the Buddha, having seen the wicked men, admonish.",
+      "The brahmin, having scolded the child, hits (him).",
+      "The deities, having asked questions from the Buddha, become glad.",
+      "The dog, having bitten the teacher's foot, runs into the house.",
+      "The monkey, having played with the goat on the road, climbs a tree.",
+      "The hermit, having come from the forest, receives a cloth from the good man.",
+      "Having drunk water, the child breaks the bowl.",
+      "Having advised the farmers' sons, and having risen from the seats, the monks go to the monastery.",
+      "The sailor, having crossed the sea, goes to the island.",
+      "The child calls the uncles and dances in the house.",
+      "Having washed clothes and bathed, the farmer gets out of water."
+    ]
+  }
+}

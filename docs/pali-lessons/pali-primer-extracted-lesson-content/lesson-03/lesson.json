@@ -1,0 +1,129 @@
+{
+  "lesson_number": 3,
+  "title": "Lesson 3",
+  "topic": "Instrumental case",
+  "grammar": {
+    "explanations": [
+      "The instrumental case is formed by adding the case ending -ena to the nominal base to produce the instrumental singular. The case ending -ehi is added to form the instrumental plural; -ebhi is another archaic case ending that is sometimes used instead. A noun inflected in the instrumental case expresses the idea 'by', 'with', or 'through'.",
+      "The indeclinables saddhiṃ and saha, both meaning 'with', are also used with the instrumental case. They are not normally used with nouns denoting things."
+    ],
+    "tables": [
+      {
+        "title": "Instrumental case singular",
+        "rows": [
+          [
+            "nara + ena",
+            "narena (by means of the man)"
+          ],
+          [
+            "mātula + ena",
+            "mātulena (with the uncle)"
+          ],
+          [
+            "kassaka + ena",
+            "kassakena (through the farmer)"
+          ]
+        ]
+      },
+      {
+        "title": "Instrumental case plural",
+        "rows": [
+          [
+            "nara + ehi",
+            "narehi (narebhi)"
+          ],
+          [
+            "mātula + ehi",
+            "mātulehi (mātulebhi)"
+          ],
+          [
+            "kassaka + ehi",
+            "kassakehi (kassakebhi)"
+          ]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Samaṇo narena saddhiṃ gāmaṃ gacchati.",
+        "english": "The monk goes to the village with the man."
+      },
+      {
+        "pali": "Putto mātulena saha candaṃ passati.",
+        "english": "The son sees the moon with his uncle."
+      },
+      {
+        "pali": "Kassako kakacena rukkhaṃ chindati.",
+        "english": "The farmer cuts the tree with a saw."
+      },
+      {
+        "pali": "Samaṇā narehi saddhiṃ gāmaṃ gacchanti.",
+        "english": "Monks go to the village with men."
+      },
+      {
+        "pali": "Puttā mātulehi saha candaṃ passanti.",
+        "english": "Sons see the moon with uncles."
+      },
+      {
+        "pali": "Kassakā kakacehi rukkhe chindanti.",
+        "english": "Farmers cut trees with saws."
+      }
+    ]
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Buddho sāvakehi saddhiṃ vihāraṃ gacchati.",
+      "Puriso puttena saha dīpaṃ dhāvati.",
+      "Kassako sarena sigālaṃ vijjhati.",
+      "Brāhmaṇā mātulena saha pabbataṃ āruhanti.",
+      "Puttā pādehi kukkure paharanti.",
+      "Mātulo puttehi saddhiṃ rathena gāmaṃ āgacchati.",
+      "Kumārā hatthehi patte āharanti.",
+      "Coro maggena assaṃ harati.",
+      "Kassako āvāṭaṃ oruhati.",
+      "Bhūpālā paṇḍitehi saha samaṇe passanti.",
+      "Paṇḍito bhūpālena saha Tathāgataṃ vandati.",
+      "Puttā sahāyena saddhiṃ odanaṃ bhuñjanti.",
+      "Vāṇijo pāsāṇena migaṃ paharati.",
+      "Sunakhā pādehi āvāṭe khaṇanti.",
+      "Brāhmaṇo puttena saha suriyaṃ vandati.",
+      "Kassako soṇehi saddhiṃ rukkhe rakkhati.",
+      "Sugato sāvakehi saha vihāraṃ āgacchati.",
+      "Yācako pattena bhattaṃ āharati.",
+      "Paṇḍitā saggaṃ gacchanti.",
+      "Kumārā assehi saddhiṃ gāmaṃ dhāvanti.",
+      "Coro khaggena naraṃ paharati.",
+      "Vāṇijo sakaṭena dīpe āharati.",
+      "Assā maggena dhāvanti.",
+      "Sigālā migehi saddhiṃ pabbataṃ dhāvanti.",
+      "Bhūpālo paṇḍitena saha manusse rakkhati."
+    ],
+    "english_to_pali": [
+      "The recluse sees the Buddha with his friend.",
+      "Disciples go to the monastery with the Buddha.",
+      "The horse runs to the mountain with the dogs.",
+      "The boy hits the lamp with a stone.",
+      "Merchants shoot deer with arrows.",
+      "Farmers dig pits with their hands.",
+      "Boys go to the monastery by chariot with their uncle.",
+      "The brahmin cooks rice with his friend.",
+      "The king protects the island with wise men.",
+      "Kings worship monks with their sons.",
+      "Thieves bring horses to the island.",
+      "Disciples climb mountains with men.",
+      "Merchants cut trees with farmers.",
+      "The beggar digs a pit with a friend.",
+      "The brahmin sees the moon with his uncles.",
+      "The thief hits the horse with a sword.",
+      "The son brings rice in a bowl.",
+      "Boys run to the mountain with their dogs.",
+      "Merchants come to the village by carts with farmers.",
+      "Uncles come to the monastery by chariots with their sons.",
+      "Jackals run to the mountain along the road.",
+      "Dogs dig pits with their feet.",
+      "The man carries a saw in his hand.",
+      "Recluses go to heaven.",
+      "The Buddha comes to the village with his disciples."
+    ]
+  }
+}
