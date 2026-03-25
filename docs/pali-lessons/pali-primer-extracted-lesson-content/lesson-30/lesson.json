@@ -1,0 +1,102 @@
+{
+  "lesson_number": 30,
+  "title": "Lesson 30",
+  "topic": "Adjectives ending in -vantu/-mantu",
+  "grammar": {
+    "explanations": [
+      "Attributive adjectives ending in -vantu and -mantu can be declined in all three genders. They agree with the nouns they qualify in gender, number and case.",
+      "In the masculine gender, the adjective guṇavantu (virtuous) is declined as follows. Note the similarities of this declension to the declension of the present participle masculine gender ending in -nta. Adjectives ending in -mantu are declined as cakkhumā, cakkhumanto etc.",
+      "In the neuter gender, only the nominative and accusative forms differ from the masculine: singular ojavantaṃ and plural ojavantāni. The rest is similar to the declension of masculine adjectives ending in -vantu and -mantu.",
+      "The feminine forms of adjectives ending in -vantu are guṇavatī / guṇavantī, and for -mantu they are cakkhumatī / cakkhumantī. These feminine forms are declined like kumārī, i.e. feminine nouns ending in -ī."
+    ],
+    "tables": [
+      {
+        "title": "Masculine Gender: guṇavantu (virtuous) - Singular",
+        "rows": [
+          ["Nom.", "guṇavā, guṇavanto"],
+          ["Voc.", "guṇavā, guṇava, guṇavanta"],
+          ["Acc.", "guṇavantaṃ"],
+          ["Ins.", "guṇavatā, guṇavantena"],
+          ["Abl.", "guṇavatā, guṇavantamhā, guṇavantasmā"],
+          ["Dat.", "guṇavato, guṇavantassa"],
+          ["Gen.", "guṇavato, guṇavantassa"],
+          ["Loc.", "guṇavati, guṇavante, guṇavantamhi, guṇavantasmiṃ"]
+        ]
+      },
+      {
+        "title": "Masculine Gender: guṇavantu (virtuous) - Plural",
+        "rows": [
+          ["Nom.", "guṇavanto, guṇavantā"],
+          ["Voc.", "guṇavanto, guṇavantā"],
+          ["Acc.", "guṇavanto, guṇavante"],
+          ["Ins.", "guṇavantehi (guṇavantebhi)"],
+          ["Abl.", "guṇavantehi (guṇavantebhi)"],
+          ["Dat.", "guṇavataṃ, guṇavantānaṃ"],
+          ["Gen.", "guṇavataṃ, guṇavantānaṃ"],
+          ["Loc.", "guṇavantesu"]
+        ]
+      },
+      {
+        "title": "Neuter Gender: ojavantu (nourishing) - Singular and Plural",
+        "rows": [
+          ["Nom. Sg.", "ojavantaṃ"],
+          ["Acc. Sg.", "ojavantaṃ"],
+          ["Nom. Pl.", "ojavantāni"],
+          ["Acc. Pl.", "ojavantāni"]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Balavantehi bhūpatīhi arayo parājitā honti.",
+      "Mayaṃ cakkhūhi bhānumantassa suriyassa rasmiyo oloketuṃ na sakkoma.",
+      "Bhikkhavo Bhagavatā desitaṃ dhammaṃ sutvā satimantā bhavituṃ vāyamiṃsu.",
+      "Sīlavantā upāsakā Bhagavantaṃ vanditvā dhammaṃ sutvā satimantā bhavituṃ vāyamiṃsu.",
+      "Paññavantehi icchitaṃ patthitaṃ samijjhissati.",
+      "Kulavato bhātā Bhagavatā saha mantento bhūmiyaṃ pattharitāya kilañjāyaṃ nisinno ahosi.",
+      "Phalavantesu tarūsu nisinnā pakkhino phalāni khāditvā aṭṭhīni bhūmiyaṃ pātesuṃ.",
+      "Himavati bahū pasavo ca pakkhī ca uragā ca vasanti.",
+      "Sīlavantā dhammaṃ sutvā cakkhumantā bhavituṃ ussahissanti.",
+      "Guṇavato bandhu sīlavatiṃ pañhaṃ pucchi.",
+      "Guṇavatī yuvati sīlaṃ rakkhantī mātaraṃ posesi.",
+      "Yasavatiyā bandhavo balavanto pabhuno abhaviṃsu.",
+      "Dhanavantassa sappurisassa bhariyā puññavatī ahosi.",
+      "Sīlavantesu vasantā asappurisā pi guṇavantā bhaveyyuṃ.",
+      "Silavatiyo mātaro putte guṇavante kātuṃ ussahanti.",
+      "Buddhimā puriso pāpaṃ karonte putte anusāsituṃ paññavantaṃ bhikkhuṃ pakkosi.",
+      "Kulavato nattā sīlavatā bhikkhunā dhammaṃ sutvā pasīditvā gehaṃ pahāya bhikkhūsu pabbaji.",
+      "Balavantā pabhuno guṇavanto bhavantu.",
+      "Dhanavantā balavantā kadāci karahaci guṇavantā bhavanti.",
+      "Himavantasmā āgato paññavā isi sīlavatiyā mātuyā uyyāne atithi ahosi.",
+      "Dubbalaṃ sīlavatiṃ itthiṃ disvā anukampamānā dhanavatī taṃ posesi.",
+      "Himavati phalavantā taravo na chinditabbā honti.",
+      "Dhammassa viññātāro yasavantā bhavituṃ na ussahanti.",
+      "Bandhumā balavā hoti, dhanavā bandhumā hoti.",
+      "Sīlavatī rājinī guṇavatīhi itthīhi saddhiṃ sālāyaṃ nisīditvā yasavatiyā kaññāya kathaṃ suṇi.",
+      "Guṇavā puriso rukkhamhā ojavantāni phalāni ocinitvā vihāre vasantānaṃ silavantānaṃ bhikkhūnaṃ vibhaji.",
+      "Balavatiyā rājiniyā amaccā dhammena dīpe manusse pālesuṃ.",
+      "Yasavantīnaṃ nārīnaṃ dhītaro pi yasavantiyo bhavissanti.",
+      "Paññavantiyā yuvatiyā puṭṭho dhanavā pañhaṃ vyākātuṃ asakkonto sabhāyaṃ nisīdi.",
+      "Bhānumā suriyo manussānaṃ ālokaṃ deti."
+    ],
+    "english_to_pali": [
+      "Sages living in the Himalaya sometimes come to towns.",
+      "Mindful monks preached the doctrine to wise lay devotees.",
+      "Fortunate people have virtuous friends and relations.",
+      "Rich merchants go from village to village selling goods.",
+      "The virtuous girl was the wife of the rich teacher.",
+      "The intelligent monk answered the question asked by the powerful eminent person.",
+      "There are garlands in the hand of the virtuous girl.",
+      "The rich are famous, the wise are virtuous.",
+      "You (pl.) do not avoid virtuous and wise men.",
+      "The Fortunate One is living in the famous island ruled by the powerful king.",
+      "If a wise monk lives in the village, people will become virtuous.",
+      "May men of good families become virtuous and wise.",
+      "People will follow the rich and powerful.",
+      "The famous king defeated the powerful enemy who has many relations.",
+      "People with eyes see the radiant sun."
+    ]
+  }
+}

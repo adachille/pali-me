@@ -1,0 +1,75 @@
+{
+  "lesson_number": 27,
+  "title": "Lesson 27",
+  "topic": "Masculine nouns ending in -u/-ū",
+  "grammar": {
+    "explanations": [
+      "Masculine nouns ending in -u are declined according to the pattern of 'garu' (teacher). The nominative, vocative, and accusative singular all take the base form 'garu', while the accusative singular adds -ṃ. The instrumental and ablative singular take -nā. The dative and genitive singular have two forms: -no and -ssa. The locative singular takes -mhi or -smiṃ. In the plural, the nominative, vocative, and accusative take -ū or -avo. The instrumental and ablative plural take -ūhi (or -ūbhi). The dative and genitive plural take -ūnaṃ. The locative plural takes -ūsu.",
+      "Masculine nouns ending in -ū are declined similarly to the -u declension. Using 'vidū' (wise man) as a model, the nominative, vocative, and accusative singular all take the base form 'vidū', while the accusative singular adds -ṃ (viduṃ). The plural nominative, vocative, and accusative take -ū or -uno. The remaining cases follow the same pattern as the garu declension."
+    ],
+    "tables": [
+      {
+        "title": "Declension of garu (teacher) - masculine noun ending in -u",
+        "rows": [
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "garu", "garū, garavo"],
+          ["Voc.", "garu", "garū, garavo"],
+          ["Acc.", "garuṃ", "garū, garavo"],
+          ["Ins.", "garunā", "garūhi (garūbhi)"],
+          ["Abl.", "garunā", "garūhi (garūbhi)"],
+          ["Dat.", "garuno, garussa", "garūnaṃ"],
+          ["Gen.", "garuno, garussa", "garūnaṃ"],
+          ["Loc.", "garumhi, garusmiṃ", "garūsu"]
+        ]
+      },
+      {
+        "title": "Declension of vidū (wise man) - masculine noun ending in -ū",
+        "rows": [
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "vidū", "vidū, viduno"],
+          ["Voc.", "vidū", "vidū, viduno"],
+          ["Acc.", "viduṃ", "vidū, viduno"]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Bhikkhavo Tathāgatassa sāvakā honti.",
+      "Bandhavo ammaṃ passituṃ nagaramhā gāmaṃ āgamiṃsu.",
+      "Coro āraññe taravo chindituṃ pharasuṃ ādāya gacchi / agami.",
+      "Sīhā ca dīpayo ca aṃaviyaṃ vasante pasavo māretvā khādanti.",
+      "Sappurisā viññuno bhavanti.",
+      "Bhūpati mantīhi saddhiṃ sindhuṃ taritvā sattavo paharitvā jinituṃ ussahi.",
+      "Ammā kaṃacchunā dārikaṃ odanaṃ bhojāpesi.",
+      "Hatthino ca kaṇeruyo ca ucchavo ākaḍḍhitvā khādiṃsu.",
+      "Bhūpatissa mantino sattūnaṃ ketavo āhariṃsu.",
+      "Setumhi nisinno bandhu taruno sākhaṃ hatthena ākaḍḍhi.",
+      "Uyyāne ropitesu veḷūsu pakkhino nisīditvā gāyanti.",
+      "Sace pabhuno atthaññū honti manussā sukhino gāme viharituṃ sakkonti.",
+      "Sabbaññū Tathāgato dhammena manusse anusāsati.",
+      "Mattaññū sappurisā dīghajīvino ca sukhino ca bhaveyyuṃ.",
+      "Viññūhi anusāsitā mayaṃ kumārā sappurisā bhavituṃ ussahimha.",
+      "Mayaṃ ravino ālokena ākāse uḍḍente pakkhino passituṃ sakkoma.",
+      "Tumhe pabhuno hutvā dhammena jīvituṃ vāyameyyātha.",
+      "Ahaṃ dhammaṃ desentaṃ bhikkhuṃ jānāmi.",
+      "Ahayo ākhavo khādantā aṃaviyā vammikesu vasanti.",
+      "Vanitāya sassu bhaginiyā ucchavo ca padumāni ca adadi / adāsi."
+    ],
+    "english_to_pali": [
+      "Crossing the bridge the enemy has entered the island.",
+      "You shall not cut bamboos with axes, you may with saws.",
+      "King's ministers tied banners on the bridge and on trees.",
+      "The beasts fed the young ones with rats.",
+      "Wise men became eminent people.",
+      "The monk was a relation of the king who rules the island.",
+      "The trees cut by the enemy fell into the sea.",
+      "With the fist the mother hit the dog which was trying to bite the girl.",
+      "Kings protect recluses, brahmins, men and beasts living in the island.",
+      "Mother's sister killed a rat with a bamboo.",
+      "The teacher sent sugar-cane to the tuskers' young ones.",
+      "Seeing a monkey trying to enter the house the husband closed the door."
+    ]
+  }
+}

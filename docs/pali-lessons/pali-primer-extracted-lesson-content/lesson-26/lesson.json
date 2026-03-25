@@ -1,0 +1,81 @@
+{
+  "lesson_number": 26,
+  "title": "Lesson 26",
+  "topic": "Masculine nouns ending in -ī",
+  "grammar": {
+    "explanations": [
+      "Masculine nouns ending in -ī are declined as shown by the paradigm 'pakkhī' (bird).",
+      "This declension differs from the aggi declension only in the nominative, vocative and accusative cases. The rest agrees with it, the only exception being 'pakkhini' in the locative singular, for which there is no corresponding form in the aggi declension."
+    ],
+    "tables": [
+      {
+        "title": "Declension of pakkhī (bird) - Singular",
+        "rows": [
+          ["Nom.", "pakkhī"],
+          ["Voc.", "pakkhī"],
+          ["Acc.", "pakkhinaṃ / pakkhiṃ"],
+          ["Ins.", "pakkhinā"],
+          ["Abl.", "pakkhinā / pakkhimhā / pakkhismā"],
+          ["Dat.", "pakkhino / pakkhissa"],
+          ["Gen.", "pakkhino / pakkhissa"],
+          ["Loc.", "pakkhini / pakkhimhi / pakkhismiṃ"]
+        ]
+      },
+      {
+        "title": "Declension of pakkhī (bird) - Plural",
+        "rows": [
+          ["Nom.", "pakkhī / pakkhino"],
+          ["Voc.", "pakkhī / pakkhino"],
+          ["Acc.", "pakkhī / pakkhino"],
+          ["Ins.", "pakkhīhi (pakkhībhi)"],
+          ["Abl.", "pakkhīhi (pakkhībhi)"],
+          ["Dat.", "pakkhīnaṃ"],
+          ["Gen.", "pakkhīnaṃ"],
+          ["Loc.", "pakkhīsu"]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Pakkhī gāyanto sākhāyaṃ nisīdati.",
+      "Gāviṃ rajjuyā muñcamānā ammā khette ṭhitā hoti.",
+      "Kaññāyo sabhāyaṃ naccantiyo gāyiṃsu.",
+      "Seṭṭhī mahantaṃ dhanaṃ vissajjetvā samaṇānaṃ vihāraṃ kārāpesi.",
+      "Hatthino ca kaṇeruyo ca aṭaviyaṃ āhiṇḍanti.",
+      "Pāpakārī pāpāni paṭicchādetvā sappuriso viya sabhāyaṃ nisinno seṭṭhinā saddhiṃ kathesi.",
+      "Sappurisā dīghajīvino hontu, puttā sukhino bhavantu.",
+      "Vāṇijo nagaramhā bhaṇḍāni kiṇitvā piṭakesu pakkhipitvā rajjuyā bandhitvā āpaṇaṃ pesesi.",
+      "Sārathinā āhaṭe rathe vaḍḍhakī nisinno hoti.",
+      "Sabbe pāṇino dīghajīvino na bhavanti / honti.",
+      "Ammā vaḍḍhakinā gehaṃ kārāpetvā dārikāhi saha tattha vasi.",
+      "Mayaṃ maṇayo vatthena veṭhetvā mañjūsāyaṃ nikkhipitvā bhariyānaṃ pesayimha.",
+      "Muni pāpakāriṃ pakkosāpetvā dhammaṃ desetvā ovadi.",
+      "Balinā bhūpatino dinnaṃ kariṃ oloketuṃ tumhe sannipatittha.",
+      "Ahaṃ seṭṭhī kuṭṭhiṃ pakkosāpetvā bhojanaṃ dāpesiṃ.",
+      "Sace girimhi sikhino vasanti, te passituṃ ahaṃ giriṃ āruhituṃ ussahissāmi.",
+      "Bhūpati sappuriso abhavi / ahosi; mantino pāpakārino abhaviṃsu / ahesuṃ.",
+      "Balinā kārāpitesu pāsādesu seṭṭhino puttā na vasiṃsu.",
+      "Sabbe pāṇino sukhaṃ pariyesamānā jīvanti, kammāni karonti.",
+      "Sāmī maṇayo ca suvaṇṇaṃ ca kiṇitvā bhariyāya adadi / adāsi.",
+      "Asanisaddaṃ sutvā girimhi sikhino naccituṃ ārabhiṃsu.",
+      "Mā balino pāpakārī hontu / bhavantu.",
+      "Sappurisā kusalaṃ karontā, manussehi puññaṃ kārentā, sukhino bhavanti.",
+      "Kavi asinā ariṃ pahari; kaviṃ paharituṃ asakkonto ari kuddho ahosi.",
+      "Kapayo rukkhesu carantā pupphāni ca chindiṃsu."
+    ],
+    "english_to_pali": [
+      "Followed by the evil hunter the elephants ran in the forest.",
+      "The leper took the garments given by the husband.",
+      "Leopards living in the forest do not fear lions living in the caves.",
+      "Singing a song, the boys danced with the girls in the hall.",
+      "Mothers with their daughters spread lotuses on the flower altar (pupphāsane).",
+      "If the boys drink liquor, the girls will become angry and will not sing.",
+      "The farmer got angry with the evil doer (use gen.) who harassed the cows grazing in the field.",
+      "The banker got the carpenter to build a mansion for his sons.",
+      "May the deities protect the good king governing the island righteously.",
+      "May all (sabbe) living beings live long happily."
+    ]
+  }
+}

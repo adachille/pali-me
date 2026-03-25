@@ -1,0 +1,104 @@
+{
+  "lesson_number": 12,
+  "title": "Lesson 12",
+  "topic": "Verb conjugation - Present tense",
+  "grammar": {
+    "explanations": [
+      "So far only the present tense, active voice, third person singular and plural have been introduced. This lesson gives the conjugation in full.",
+      "The present tense active voice is conjugated as follows. In the singular: third person (So) pacati = He cooks; second person (Tvaṃ) pacasi = You cook; first person (Ahaṃ) pacāmi = I cook. In the plural: third person (Te) pacanti = They cook; second person (Tumhe) pacatha = You cook; first person (Mayaṃ) pacāma = We cook."
+    ],
+    "tables": [
+      {
+        "title": "Present Tense, Active Voice - pacati (to cook)",
+        "rows": [
+          ["Person", "Singular", "Plural"],
+          ["3rd", "(So) pacati = He cooks", "(Te) pacanti = They cook"],
+          ["2nd", "(Tvaṃ) pacasi = You cook", "(Tumhe) pacatha = You cook"],
+          ["1st", "(Ahaṃ) pacāmi = I cook", "(Mayaṃ) pacāma = We cook"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "So bhattaṃ pacati",
+        "english": "He cooks rice."
+      },
+      {
+        "pali": "Tvaṃ bhattaṃ pacasi",
+        "english": "You (sg.) cook rice."
+      },
+      {
+        "pali": "Ahaṃ bhattaṃ pacāmi",
+        "english": "I cook rice."
+      },
+      {
+        "pali": "Te bhattaṃ pacanti",
+        "english": "They cook rice."
+      },
+      {
+        "pali": "Tumhe bhattaṃ pacatha",
+        "english": "You (pl.) cook rice."
+      },
+      {
+        "pali": "Mayaṃ bhattaṃ pacāma",
+        "english": "We cook rice."
+      }
+    ]
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Tvaṃ mittehi saddhiṃ rathena āpaṇamhā bhaṇḍāni āharasi.",
+      "Ahaṃ udakamhā padumāni āharitvā vāṇijassa dadāmi.",
+      "Tumhe samaṇānaṃ dātuṃ cīvarāni pariyesatha.",
+      "Mayaṃ sagge uppajjituṃ ākaṅkhamānā sīlāni rakkhāma.",
+      "Te dhammaṃ adhigantuṃ ussahantānaṃ samaṇānaṃ dānaṃ dadanti.",
+      "So araññamhi uppatante sakuṇe passituṃ pabbataṃ āruhati.",
+      "Mayaṃ sugatassa sāvake vandituṃ vihārasmiṃ sannipatāma.",
+      "Āgacchantaṃ tāpasaṃ disvā so bhattaṃ āharituṃ gehaṃ pavisati.",
+      "Ahaṃ udakaṃ oruyha brāhmaṇassa dussāni dhovāmi.",
+      "Tvaṃ gehassa dvāraṃ vivaritvā pānīyaṃ pattamhā ādāya pivasi.",
+      "Ahaṃ hiraññaṃ pariyesanto dīpamhi āvāṭe khaṇāmi.",
+      "Phalāni khādantā tumhe rukkhehi oruhatha.",
+      "Pāsāṇasmiṃ ṭhatvā tvaṃ candaṃ passituṃ ussahasi.",
+      "Mayaṃ manussalokamhā cavitvā sagge uppajjituṃ ākaṅkhāma.",
+      "Tumhe araññe vasante mige sarehi vijjhituṃ icchatha.",
+      "Mayaṃ uyyāne carantā sunakhehi saddhiṃ kīḷante dārake passāma.",
+      "Tvaṃ rukkhamūle nisīditvā ācariyassa dātuṃ vatthaṃ sibbasi.",
+      "Mayaṃ puññaṃ icchantā samaṇānaṃ dānaṃ dadāma.",
+      "Tumhe saccaṃ adhigantuṃ ārabhatha.",
+      "Tvaṃ gītaṃ gāyanto rodantaṃ dārakaṃ rakkhasi.",
+      "Mayaṃ hasantehi kumārehi saha uyyāne naccāma.",
+      "So pānīyaṃ pivitvā pattaṃ bhinditvā mātulamhā bhāyati.",
+      "Pāsādaṃ upasaṅkamantaṃ samaṇaṃ disvā bhūpālassa cittaṃ pasīdati.",
+      "Mayaṃ araññaṃ pavisitvā ajānaṃ paṇṇāni saṃharāma.",
+      "Khettaṃ rakkhanto so āvāṭe khaṇante varāhe disvā pāsāṇehi paharati."
+    ],
+    "english_to_pali": [
+      "I call the child who is stroking the dog's body.",
+      "We try to learn the truth speaking with the monks who assemble in the monastery.",
+      "Sitting in the park you (pl.) eat fruits with friends.",
+      "You drink milk seated on a chair.",
+      "We set out from home to go and see the deer roaming in the forest.",
+      "I wish to understand the doctrine.",
+      "Standing on the mountain we see the moonlight falling on the sea.",
+      "I drag the farmer's cart away from the road.",
+      "You (pl.) sit on the seats, I bring drinking water from the house.",
+      "We wander in the fields looking at the birds eating seeds.",
+      "I advise the wicked man who kills pigs.",
+      "You (sg.) get frightened seeing the snake approaching the house.",
+      "I ask questions from the men who come out of the forest.",
+      "Seeing the crying child we call the doctor going on the road.",
+      "I protect virtues, give alms to the monks and live in the house with children.",
+      "Good men who fear evil deeds are born in heaven.",
+      "Expecting to get profit we bring goods from the city.",
+      "We stand under the tree and sprinkle water on the flowers.",
+      "I wash the bowls with water and give (them) to the doctor.",
+      "Searching for the truth I give up the house and enter the monastery.",
+      "Wishing to see the monks you (pl.) assemble in the park.",
+      "I see a fruit falling from the crow's beak.",
+      "You (sg.) cross the sea and bring a horse from the island.",
+      "I set out from home to bring a lamp from the market.",
+      "Having taken a basket I go to the field to collect corn."
+    ]
+  }
+}

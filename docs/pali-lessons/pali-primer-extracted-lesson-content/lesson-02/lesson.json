@@ -1,0 +1,113 @@
+{
+  "lesson_number": 2,
+  "title": "Lesson 2",
+  "topic": "Accusative case",
+  "grammar": {
+    "explanations": [
+      "Declension of masculine nouns ending in -a (continued): Accusative case.",
+      "The case ending -ṃ is added to the nominal base to form the accusative singular number.",
+      "The case ending -e is added to the nominal base to form the accusative plural number.",
+      "A noun thus inflected is used as the object of a sentence. The goal of motion is also expressed by the accusative case."
+    ],
+    "tables": [
+      {
+        "title": "Accusative case - Singular",
+        "rows": [
+          ["nara + ṃ", "naraṃ"],
+          ["mātula + ṃ", "mātulaṃ"],
+          ["kassaka + ṃ", "kassakaṃ"]
+        ]
+      },
+      {
+        "title": "Accusative case - Plural",
+        "rows": [
+          ["nara + e", "nare"],
+          ["mātula + e", "mātule"],
+          ["kassaka + e", "kassake"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Putto naraṃ passati.",
+        "english": "The son sees the man."
+      },
+      {
+        "pali": "Brāhmaṇo mātulaṃ rakkhati.",
+        "english": "The brahmin protects the uncle."
+      },
+      {
+        "pali": "Vāṇijo kassakaṃ paharati.",
+        "english": "The merchant hits the farmer."
+      },
+      {
+        "pali": "Puttā nare passanti.",
+        "english": "Sons see men."
+      },
+      {
+        "pali": "Brāhmaṇā mātule rakkhanti.",
+        "english": "Brahmins protect uncles."
+      },
+      {
+        "pali": "Vāṇijā kassake paharanti.",
+        "english": "Merchants hit farmers."
+      }
+    ]
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Tathāgato dhammaṃ bhāsati.",
+      "Brāhmaṇā odanaṃ bhuñjanti.",
+      "Manusso suriyaṃ passati.",
+      "Kumārā sigāle paharanti.",
+      "Yācakā bhattaṃ yācanti.",
+      "Kassakā āvāṭe khaṇanti.",
+      "Mitto gāmaṃ āgacchati.",
+      "Bhūpālo manusse rakkhati.",
+      "Puttā pabbataṃ gacchanti.",
+      "Kumāro Buddhaṃ vandati.",
+      "Vāṇijā patte āharanti.",
+      "Puriso vihāraṃ gacchati.",
+      "Kukkurā pabbataṃ dhāvanti.",
+      "Sigālā gāmaṃ āgacchanti.",
+      "Brāhmaṇā sahāyake āharanti.",
+      "Bhūpālā sugataṃ vandanti.",
+      "Yācakā sayanti.",
+      "Mittā sunakhe haranti.",
+      "Putto candaṃ passati.",
+      "Kassako gāmaṃ dhāvati.",
+      "Vāṇijā rukkhe chindanti.",
+      "Naro sigālaṃ vijjhati.",
+      "Kumāro odanaṃ bhuñjati.",
+      "Yācako soṇaṃ paharati.",
+      "Sahāyakā pabbate āruhanti."
+    ],
+    "english_to_pali": [
+      "Men go to the monastery.",
+      "Farmers climb mountains.",
+      "The brahmin eats rice.",
+      "The Buddha sees the boys.",
+      "Uncles take away bowls.",
+      "The son protects the dog.",
+      "The king worships the Buddha.",
+      "The merchant brings a boy.",
+      "Friends salute the brahmin.",
+      "Beggars beg rice.",
+      "Merchants shoot jackals.",
+      "Boys climb the mountain.",
+      "The farmer runs to the village.",
+      "The merchant cooks rice.",
+      "Sons worship the uncle.",
+      "Kings protect men.",
+      "The Buddha comes to the monastery.",
+      "The men descend.",
+      "Farmers dig pits.",
+      "The merchant runs.",
+      "The dog sees the moon.",
+      "Boys climb trees.",
+      "The brahmin brings the bowl.",
+      "The beggar sleeps.",
+      "The king sees the Buddha."
+    ]
+  }
+}

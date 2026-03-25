@@ -1,0 +1,68 @@
+{
+  "lesson_number": 24,
+  "title": "Lesson 24",
+  "topic": "Feminine nouns ending in -u",
+  "grammar": {
+    "explanations": [
+      "Feminine nouns ending in -u are declined similarly to the noun 'dhenu' (cow). The declension shows distinct singular and plural forms across all cases.",
+      "In the singular, the nominative and vocative are 'dhenu'; the accusative adds -ṃ to give 'dhenuṃ'; the instrumental, ablative, dative, genitive, and locative all take the suffix -yā, giving 'dhenuyā', with the locative also allowing the form 'dhenuyaṃ'.",
+      "In the plural, the nominative, vocative, and accusative take either -ū or -yo, giving 'dhenū' or 'dhenuyo'; the instrumental and ablative take -hi (or optionally -bhi), giving 'dhenūhi' or 'dhenūbhi'; the dative and genitive take -naṃ, giving 'dhenūnaṃ'; and the locative takes -su, giving 'dhenūsu'.",
+      "Other feminine nouns declined in the same pattern include: yāgu (gruel), kāsu (pit), vijju (lightning), rajju (rope), daddu (eczema), kaṇeru (cow-elephant), dhātu (element, relic), sassu (mother-in-law), and vadhu (daughter-in-law)."
+    ],
+    "tables": [
+      {
+        "title": "Declension of dhenu (cow) - Feminine noun ending in -u",
+        "rows": [
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "dhenu", "dhenū, dhenuyo"],
+          ["Voc.", "dhenu", "dhenū, dhenuyo"],
+          ["Acc.", "dhenuṃ", "dhenū, dhenuyo"],
+          ["Ins.", "dhenuyā", "dhenūhi, (dhenūbhi)"],
+          ["Abl.", "dhenuyā", "dhenūhi, (dhenūbhi)"],
+          ["Dat.", "dhenuyā", "dhenūnaṃ"],
+          ["Gen.", "dhenuyā", "dhenūnaṃ"],
+          ["Loc.", "dhenuyā, dhenuyaṃ", "dhenūsu"]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Vadhū sassuyā dhenuṃ rajjuyā bandhitvā khettaṃ nesi.",
+      "Ammā yāguṃ pacitvā dārakānaṃ datvā mañce nisīdi.",
+      "Yuvatiyā hattesu ca aṇgulīsu ca daddu atthi.",
+      "Mayaṃ aṭaviyaṃ carantiyo kaṇeruyo apassimha.",
+      "Itthī yuvatiyā bhattaṃ pacāpetvā dārikānaṃ thokaṃ thokaṃ vibhaji.",
+      "Tumhe vijjuyā ālokena guhāyam sayantam sīhaṃ passittha.",
+      "Yuvatiyā hatthesu kumārehi dinnā mālāyo santi.",
+      "Vadhū khette kāsūsu patitāni phalāni saṃhari.",
+      "Brāhmaṇo Buddhassa dhātuyo vibhajitvā bhūpālānaṃ adadi / adāsi.",
+      "Vadhū sassuyā pāde vandi.",
+      "Yuvatiyā geham sammajjitabbaṃ hoti.",
+      "Devatāyo sakalaṃ (entire) vihāraṃ obhāsentiyo Buddhaṃ upasaṅkamiṃsu.",
+      "Aṭavīsu vasantiyo kaṇeruyo sākhāyo bhañjitvā khādanti.",
+      "Ahaṃ rukkhassa chāyāyaṃ nisinnānaṃ dhenūnaṃ ca goṇānaṃ ca tiṇāni adadiṃ / adāsiṃ.",
+      "Itthī magge gacchantiṃ ammaṃ passitvā rathamhā oruyha taṃ vanditvā rathasmiṃ āropetvā gehaṃ nesi.",
+      "Vadhū gehassa dvāram thaketvā nahāyituṃ nadiṃ upasaṅkamitvā yuvatīhi saddhiṃ sallapantī nadiyā tīre aṭṭhāsi.",
+      "Bhūpālo manusse vihiṃsante core nāsetvā dipaṃ pālesi.",
+      "Ammā asappurise bhajamāne putte samaṇehi ovādāpesi.",
+      "Sappurisena kiṇitvā āhaṭehi bhaṇḍehi chaḍḍetabbaṃ natthi.",
+      "Mā tumhe gāme vasante kassake vihiṃsatha."
+    ],
+    "english_to_pali": [
+      "The mother took the gold kept in the box and gave it to the daughter.",
+      "The daughter-in-law honoured the gods with garlands and fruits.",
+      "If you dig holes, I will plant trees.",
+      "You (pl.) go to the field and bring the corn home.",
+      "Cow-elephants wandered in the forest eating plantain trees.",
+      "I looked at the girls crossing the river by boat.",
+      "Young women pulled the branches fallen in the pit.",
+      "The rays of the sun illuminate the world.",
+      "Singing songs the sisters went to the tank to bathe.",
+      "The woman tied the cow with a rope and brought it to the field.",
+      "The daughter-in-law went to Anurādhapura with the mother-in-law to honour the relics of the Buddha.",
+      "May virtue and wisdom illuminate the minds of men in the world."
+    ]
+  }
+}

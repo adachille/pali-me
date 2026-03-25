@@ -1,0 +1,95 @@
+{
+  "lesson_number": 25,
+  "title": "Lesson 25",
+  "topic": "Masculine nouns ending in -i",
+  "grammar": {
+    "explanations": [
+      "This lesson introduces the declension of masculine nouns ending in -i, using 'aggi' (fire) as the model.",
+      "In the singular, the nominative and vocative are both 'aggi'. The accusative adds -ṃ to give 'aggiṃ'. The instrumental and ablative share the form 'agginā', though the ablative also has alternative forms 'aggimhā' and 'aggismā'. The dative and genitive share the forms 'aggino' or 'aggissa'. The locative is 'aggimhi' or 'aggismiṃ'.",
+      "In the plural, the nominative, vocative, and accusative all share the forms 'aggī' or 'aggayo'. The instrumental and ablative share 'aggīhi' (with an alternative 'aggībhi'). The dative and genitive share 'aggīnaṃ'. The locative is 'aggīsu'."
+    ],
+    "tables": [
+      {
+        "title": "Declension of aggi (fire) - Masculine noun ending in -i",
+        "rows": [
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "aggi", "aggī / aggayo"],
+          ["Voc.", "aggi", "aggī / aggayo"],
+          ["Acc.", "aggiṃ", "aggī / aggayo"],
+          ["Ins.", "agginā", "aggīhi (aggībhi)"],
+          ["Abl.", "agginā / aggimhā / aggismā", "aggīhi (aggībhi)"],
+          ["Dat.", "aggino / aggissa", "aggīnaṃ"],
+          ["Gen.", "aggino / aggissa", "aggīnaṃ"],
+          ["Loc.", "aggimhi / aggismiṃ", "aggīsu"]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Munayo sīlaṃ rakkhantā girimhi guhāsu vasiṃsu",
+      "Ācariyena saddhiṃ viharanto kavi isi hoti.",
+      "Bhūpati asinā ariṃ paharitvā māresi.",
+      "Pati bhariyāya paṭiyāditaṃ odanaṃ bhuñjitvā khettaṃ agami.",
+      "Sappurisā gahapatayo bhariyāhi ca puttehi ca gehesu vasantā sukhaṃ vindanti.",
+      "Nidhiṃ pariyesanto adhipati sahāyakehi saddhiṃ dīpaṃ agacchi.",
+      "Atithīnaṃ odanaṃ pacantī itthī aggiṃ jālesi.",
+      "Vyādhinā pīḷito naro mañce sayati.",
+      "Gahapati vīhīnaṃ rāsiṃ minanto bhariyāya saddhiṃ kathesi.",
+      "Dārikā girimhā udentaṃ raviṃ olokentī hasanti.",
+      "Bhūpatino muṭṭhimhi maṇayo bhavanti.",
+      "Ari kavino soṇaṃ yaṭṭhiyā paharitvā dhāvi.",
+      "Kavi patinā dinnaṃ maṇiṃ pāṇinā gaṇhi.",
+      "Nāriyo patīhi saddhiṃ udadhiṃ gantvā nahāyituṃ ārabhiṃsu.",
+      "Adhipati atithiṃ khādanīyehi ca bhojanīyehi ca bhojāpesi.",
+      "Bhūpatinā kattabbāni kammāni adhipatayo na karissanti.",
+      "Munīhi pariyesitabbaṃ dhammaṃ aham pi uggaṇhituṃ icchāmi.",
+      "Ahaṃ dīpaṃ jāletvā udakena āsittāni padumāni Buddhassa pūjemi.",
+      "Tvaṃ girimhi vasante dīpayo oloketuṃ luddakena saha giriṃ āruhasi.",
+      "Devī parisāya saha sabhāyaṃ nisinnā hoti.",
+      "Gahapatayo pañhe pucchituṃ ākaṅkhamānā isiṃ upasaṅkamiṃsu.",
+      "Gahapatīhi puṭṭho isi pañhe vyākari.",
+      "Nāriyā dhotāni vatthāni gaṇhante kapayo disvā kumārā pāsāṇehi te (them) pahariṃsu.",
+      "Uyyāne āhiṇḍitvā tiṇaṃ khādantiyo gāviyo ca goṇā ca ajā ca aṭaviṃ pavisitvā dīpiṃ disvā bhāyiṃsu.",
+      "Gahapatīhi munayo ca atithayo ca bhojetabbā honti.",
+      "Ammā mañjūsāya pakkhipitvā rakkhite maṇayo dārikāya ca vadhuyā ca adadi / adāsi.",
+      "Yadi tumhe bhūpatiṃ upasankameyyātha mayaṃ rathaṃ paṭiyādessāma.",
+      "Gahapati coraṃ gīvāya gahetvā pādena kucchiṃ pahari.",
+      "Sakuṇehi katāni kulāvakāni (nests) mā tumhe bhindatha.",
+      "Gītaṃ gāyantī yuvati gāviṃ upasaṅkamma khīraṃ duhituṃ (to milk) ārabhi.",
+      "Buddhassa dhātuyo vandituṃ mayaṃ vihāraṃ gamimha.",
+      "Mayaṃ kaññāyo dhammasālaṃ sammajjitvā kilañjāsu (on mats) nisīditvā dhammaṃ suṇimha.",
+      "Mayaṃ locanehi rūpāni passāma, sotehi (with ears) saddaṃ (sound) suṇāma, jivhāya rasaṃ sādiyāma (we taste)",
+      "Te aṭaviyā āhiṇḍantiyo gāviyo rajjūhi bandhitvā khettam ānesuṃ.",
+      "Bhariyā vyādhinā pīḷitassa patino hatthaṃ āmasantī taṃ (him) samassāsesi (comforted).",
+      "Gahapati atithinā saddhiṃ sallapanto sālāya nisinno hoti.",
+      "Muni saccaṃ adhigantvā manussānaṃ dhammaṃ desetuṃ pabbatamhā oruyha gāme vihāre vasati.",
+      "Rajjuyā bandhitā gāvī tattha tattha (here and there) āhiṇḍituṃ asakkontī rukkhamūle tiṇaṃ khādati.",
+      "Devī bhūpatinā saddhiṃ rathena gacchantī antararāmagge (on the way) kasante kassake passi.",
+      "Mā tumhe akusalaṃ karotha, sace kareyyātha sukhaṃ vindituṃ na labhissatha."
+    ],
+    "english_to_pali": [
+      "The husbands brought gems from the island for their wives.",
+      "Sicknesses oppress people living in the world.",
+      "Sitting on the ground the woman measured paddy with a nāḷi.",
+      "Householders who do evil do not worship sages.",
+      "If you dig up the treasure you will get gems.",
+      "I washed the clothes which were to be washed by the wife.",
+      "We drank the gruel which was prepared by our mother.",
+      "You kindle the fire to cook rice and gruel for the guests coming from the city.",
+      "The householder hit with a sword the thief who entered the house.",
+      "The young girl gave grass to the cows standing in the shade of the tree.",
+      "Monkeys dwell on trees, lions sleep in caves, serpents move on the ground.",
+      "If you buy goods from the city and bring, I will sell them (tāni) to farmers.",
+      "O wicked man, if you do merit you will experience happiness.",
+      "There are gems and gold in the boxes in my mother's house.",
+      "The sage preached the doctrine to the king's retinue seated on the ground.",
+      "Recluses, sages and poets are honoured by virtuous men.",
+      "We will get the treasure which is protected by the leader.",
+      "Do not cut branches of the trees planted in the park.",
+      "Being released from the cage the birds flew into the sky.",
+      "We did not see sages crossing the river through psychic power."
+    ]
+  }
+}

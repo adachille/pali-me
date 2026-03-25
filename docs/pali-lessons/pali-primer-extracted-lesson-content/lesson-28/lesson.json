@@ -1,0 +1,116 @@
+{
+  "lesson_number": 28,
+  "title": "Lesson 28",
+  "topic": "Agent nouns, relationship nouns",
+  "grammar": {
+    "explanations": [
+      "Some masculine nouns have two bases ending in -u and -ar. They express the agent or a relationship. An example is satthu / satthar meaning 'teacher' (lit., he who admonishes).",
+      "Though bhattu (husband) and nattu (grandson) are nouns expressing relationships, they are declined like agent nouns such as satthā, as in Sanskrit.",
+      "Masculine nouns expressing relationships such as pitu (father) and bhātu (brother) are declined somewhat differently from agent nouns.",
+      "Dhītu (daughter) and duhitu (daughter) are declined similarly to pitu and bhātu.",
+      "Feminine nouns expressing relationships such as mātu / mātar (mother) have their own declension pattern with additional alternative forms in several cases."
+    ],
+    "tables": [
+      {
+        "title": "Declension of satthu / satthar (teacher) - masculine agent noun",
+        "rows": [
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "satthā", "satthāro"],
+          ["Voc.", "satthā, sattha", "satthāro"],
+          ["Acc.", "satthāraṃ", "satthāro"],
+          ["Ins.", "satthārā", "satthārehi, satthūhi"],
+          ["Abl.", "satthārā", "satthārehi, satthūhi"],
+          ["Dat.", "satthu, satthuno, satthussa", "satthārānaṃ, satthūnaṃ"],
+          ["Gen.", "satthu, satthuno, satthussa", "satthārānaṃ, satthūnaṃ"],
+          ["Loc.", "satthari", "satthāresu, satthūsu"]
+        ]
+      },
+      {
+        "title": "Declension of pitu / pitar (father) - masculine relationship noun",
+        "rows": [
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "pitā", "pitaro"],
+          ["Voc.", "pitā, pita", "pitaro"],
+          ["Acc.", "pitaraṃ", "pitaro"],
+          ["Ins.", "pitarā", "pitarehi, pitūhi"],
+          ["Abl.", "pitarā", "pitarehi, pitūhi"],
+          ["Dat.", "pitu, pituno", "pitarānaṃ, pitūnaṃ"],
+          ["Gen.", "pitussa", "pitarānaṃ, pitūnaṃ"],
+          ["Loc.", "pitari", "pitaresu, pitūsu"]
+        ]
+      },
+      {
+        "title": "Declension of bhātu / bhātar (brother) - masculine relationship noun",
+        "rows": [
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "bhātā", "bhātaro"],
+          ["Voc.", "bhātā, bhāta", "bhātaro"],
+          ["Acc.", "bhātaraṃ", "bhātaro"],
+          ["Ins.", "bhātarā", "bhātarehi, bhātūhi"],
+          ["Abl.", "bhātarā", "bhātarehi, bhātūhi"],
+          ["Dat.", "bhātu, bhātuno", "bhātarānaṃ, bhātūnaṃ"],
+          ["Gen.", "bhātussa", "bhātarānaṃ, bhātūnaṃ"],
+          ["Loc.", "bhātari", "bhātaresu, bhātūsu"]
+        ]
+      },
+      {
+        "title": "Declension of mātu / mātar (mother) - feminine relationship noun",
+        "rows": [
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "mātā", "mātaro"],
+          ["Voc.", "mātā, māta, māte", "mātaro"],
+          ["Acc.", "mātaraṃ", "mātaro"],
+          ["Ins.", "mātarā, mātuyā", "mātarehi, mātūhi"],
+          ["Abl.", "mātarā, mātuyā", "mātarehi, mātūhi"],
+          ["Dat.", "mātu, mātuyā, mātāya", "mātarānaṃ, mātūnaṃ, mātānaṃ"],
+          ["Gen.", "mātu, mātuyā, mātāya", "mātarānaṃ, mātūnaṃ, mātānaṃ"],
+          ["Loc.", "mātari, mātuyā, mātuyaṃ", "mātaresu, mātūsu"]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Satthā bhikkhūnaṃ dhammaṃ desento rukkhassa chāyāya nisinno hoti.",
+      "Puññāni kattāro bhikkhūnaṃ ca tāpasānaṃ ca dānaṃ denti.",
+      "Sace satthā dhammaṃ deseyya viññātāro bhavissanti.",
+      "Bhūpati dīpasmiṃ jetā bhavatu.",
+      "Pitā dhītaraṃ ādāya vihāraṃ gantvā satthāraṃ vandāpesi.",
+      "Viññātāro loke manussānaṃ netāro hontu / bhavantu.",
+      "Bhātā pitarā saddhiṃ mātuyā pacitaṃ yāguṃ bhuñji.",
+      "Bhattā nattārehi saha kīḷantaṃ kapiṃ disvā hasanto aṭṭhāsi (stood).",
+      "Setuṃ kattāro veḷavo bandhitvā nadiyā tīre ṭhapesuṃ.",
+      "Sindhuṃ taritvā dīpaṃ gantāro sattūhi hatā honti.",
+      "Bhariyā bhattu sāṭake rajakena dhovāpesi.",
+      "Netuno kathaṃ sotāro uyyāne nisinnā suriyena pīḷitā honti.",
+      "Dātārehi dinnāni vatthāni yācakehi na vikkiṇitabbāni honti.",
+      "Rodantassa nattussa kujjhitvā vanitā taṃ (him) hatthena pahari.",
+      "Vinetuno ovādaṃ (advice) sutvā bandhavo sappurisā abhaviṃsu / ahesuṃ.",
+      "Gehesu ca aṭavīsu ca vasante ākhavo ahayo khādanti.",
+      "Nattā mātaraṃ yāguṃ yācanto bhūmiyaṃ patitvā rodati.",
+      "Tumhe bhātarānaṃ ca bhaginīnaṃ ca mā kujjhatha.",
+      "Dīpaṃ gantārehi nāvāya sindhu taritabbo hoti.",
+      "Pubbakā (ancient) isayo mantānaṃ (magic spells) kattāro ca mantānaṃ pavattāro (reciters) ca abhaviṃsu / ahesuṃ.",
+      "Mattaññū dātā nattārānaṃ thokaṃ thokaṃ modake (sweets) dadiṃsu / adaṃsu.",
+      "Atthaññū netāro manusse sappurise karontā vinetāro bhavanti.",
+      "Mātā dhītaraṃ ovadantī sīsaṃ (head) cumbitvā (kissed) bāhuṃ āmasitvā samassāsesi.",
+      "Vadaññū brāhmaṇo khudāya pīḷente yācake disvā pahūtaṃ (much) bhojanaṃ (food) dāpesi.",
+      "Sārathinā āhaṭe veḷavo gahetvā vaḍḍhakī sālaṃ māpesi."
+    ],
+    "english_to_pali": [
+      "Father and mother went with the brother to see the sister.",
+      "Evil doers will not live long happily.",
+      "May the king, together with his retinue, become victorious.",
+      "Mother's brother is the uncle.",
+      "The enemies of my brothers tied banners on trees and bamboos.",
+      "The house builder gave bamboos to the grandsons.",
+      "Brother gave food to (my) daughter with a spoon.",
+      "The Buddha is the teacher of gods and men.",
+      "May you (pl.) be speakers of the truth.",
+      "Good husbands are kind (kāruṇikā) to their wives like gods.",
+      "Let good men become powerful ministers to govern the island.",
+      "The powerful kings were victorious."
+    ]
+  }
+}

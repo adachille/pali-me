@@ -1,0 +1,244 @@
+{
+  "lesson_number": 32,
+  "title": "Lesson 32",
+  "topic": "Pronouns (relative, demonstrative, interrogative)",
+  "grammar": {
+    "explanations": [
+      "There are relative pronouns, demonstrative pronouns and interrogative pronouns of all three genders. They are declined in all cases except the vocative. They become adjectives when they qualify other nouns.",
+      "The indefinite particle ci (Sanskrit: cid) is appended to the case forms of the interrogative pronoun, expressing ideas such as anyone, whichever, whoever. For example: masculine - koci puriso = some man; kenaci purisena = by some man. Neuter - kiñci phalaṃ = some fruit; kenaci phalena = by some fruit. Feminine - kāci itthi = some woman; kāyaci itthiyā = by, to, of, on some woman.",
+      "Pronominal adverbs are formed from relative, demonstrative, and interrogative bases: yattha/tattha/kattha (where/there/where), yatra/tatra/kutra (where/there/where), yato/tato/kuto (whence/thence/whence), yathā/tathā/kathaṃ (how, in what manner/in that manner/how), yasmā/tasmā/kasmā (because/therefore/why), yadā/tadā/kadā (when/then/when), yena/tena (where/there), yāva/tāva (how long/so long)."
+    ],
+    "tables": [
+      {
+        "title": "Masculine gender, singular number",
+        "rows": [
+          ["Case", "Relative", "Demonstrative", "Interrogative"],
+          ["Nom.", "yo (= he who)", "so (= he, that)", "ko (= who)"],
+          ["Acc.", "yaṃ", "taṃ", "kaṃ"],
+          ["Ins.", "yena", "tena", "kena"],
+          ["Abl.", "yamhā, yasmā", "tamhā, tasmā", "kasmā, kismā"],
+          ["Dat.", "yassa", "tassa", "kassa, kissa"],
+          ["Gen.", "yassa", "tassa", "kassa, kissa"],
+          ["Loc.", "yamhi, yasmiṃ", "tamhi, tasmiṃ", "kamhi, kasmiṃ, kimhi, kismiṃ"]
+        ]
+      },
+      {
+        "title": "Neuter gender, singular number",
+        "rows": [
+          ["Case", "Relative", "Demonstrative", "Interrogative"],
+          ["Nom.", "yaṃ (= that which)", "taṃ (= it, that)", "kim (= which)"],
+          ["Acc.", "yaṃ", "taṃ", "kim"]
+        ]
+      },
+      {
+        "title": "Feminine gender, singular number",
+        "rows": [
+          ["Case", "Relative", "Demonstrative", "Interrogative"],
+          ["Nom.", "yā (= she, who)", "sā (= she, that)", "kā (= who)"],
+          ["Acc.", "yaṃ", "taṃ", "kaṃ"],
+          ["Ins.", "yāya", "tāya", "kāya"],
+          ["Abl.", "yāya", "tāya", "kāya"],
+          ["Dat.", "yassā, yāya", "tassā, tāya", "kassā, kāya"],
+          ["Gen.", "yassā, yāya", "tassā, tāya", "kassā, kāya"],
+          ["Loc.", "yassaṃ, yāyaṃ", "tassaṃ, tāyaṃ", "kassaṃ, kāyaṃ"]
+        ]
+      },
+      {
+        "title": "Masculine gender, plural number",
+        "rows": [
+          ["Case", "Relative", "Demonstrative", "Interrogative"],
+          ["Nom.", "ye (= they, who)", "te (= they, those)", "ke (= who)"],
+          ["Acc.", "ye", "te", "ke"],
+          ["Ins.", "yehi", "tehi", "kehi"],
+          ["Abl.", "yehi", "tehi", "kehi"],
+          ["Dat.", "yesaṃ (yesānaṃ)", "tesaṃ (tesānaṃ)", "kesaṃ (kesānaṃ)"],
+          ["Gen.", "yesaṃ (yesānaṃ)", "tesaṃ (tesānaṃ)", "kesaṃ (kesānaṃ)"],
+          ["Loc.", "yesu", "tesu", "kesu"]
+        ]
+      },
+      {
+        "title": "Neuter gender, plural number",
+        "rows": [
+          ["Case", "Relative", "Demonstrative", "Interrogative"],
+          ["Nom.", "yāni, ye (= those, which)", "tāni, te (= those)", "kāni, ke (= which)"],
+          ["Acc.", "yāni, ye", "tāni, te", "kāni, ke"]
+        ]
+      },
+      {
+        "title": "Feminine gender, plural number",
+        "rows": [
+          ["Case", "Relative", "Demonstrative", "Interrogative"],
+          ["Nom.", "yā, yāyo (= they, who)", "tā, tāyo (= they, those)", "kā, kāyo (= who)"],
+          ["Acc.", "yā, yāyo", "tā, tāyo", "kā, kāyo"],
+          ["Ins.", "yāhi", "tāhi", "kāhi"],
+          ["Abl.", "yāhi", "tāhi", "kāhi"],
+          ["Dat.", "yāsaṃ (yāsānaṃ)", "tāsaṃ (tāsānaṃ)", "kāsaṃ (kāsānaṃ)"],
+          ["Gen.", "yāsaṃ (yāsānaṃ)", "tāsaṃ (tāsānaṃ)", "kāsaṃ (kāsānaṃ)"],
+          ["Loc.", "yāsu", "tāsu", "kāsu"]
+        ]
+      },
+      {
+        "title": "Pronominal Adverbs",
+        "rows": [
+          ["Relative", "Demonstrative", "Interrogative", "Meaning"],
+          ["yattha", "tattha", "kattha", "where / there / where"],
+          ["yatra", "tatra", "kutra", "where / there / where"],
+          ["yato", "tato", "kuto", "whence / thence / whence"],
+          ["yathā", "tathā", "kathaṃ", "how, in what manner / in that manner / how"],
+          ["yasmā", "tasmā", "kasmā", "because / therefore / why"],
+          ["yadā", "tadā", "kadā", "when / then / when"],
+          ["yena", "tena", "", "where / there"],
+          ["yāva", "tāva", "", "how long / so long"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Yo atthaññu hoti so kumāre anusāsituṃ āgacchatu.",
+        "english": "May he who is benevolent come to admonish the boys."
+      },
+      {
+        "pali": "Yaṃ ahaṃ ākaṅkhamāno ahosiṃ so āgato hoti.",
+        "english": "He whom I was expecting has come."
+      },
+      {
+        "pali": "Yena maggena so āgato tena gantuṃ ahaṃ icchāmi.",
+        "english": "By which road he came, I wish to go by the same."
+      },
+      {
+        "pali": "Yassa sā bhariyā hoti so bhattā puññavanto hoti.",
+        "english": "He is a fortunate husband whose wife she is."
+      },
+      {
+        "pali": "Yasmiṃ hatthe daddu atthi tena hatthena patto na gaṇhitabbo hoti.",
+        "english": "The bowl should not be taken by the hand which has eczema on it."
+      },
+      {
+        "pali": "Yāni kammāni sukhaṃ āvahanti tāni puññāni honti.",
+        "english": "Those actions which bring happiness are meritorious."
+      },
+      {
+        "pali": "Yā bhariyā sīlavatī hoti sā bhattuno piyāyati.",
+        "english": "The wife who is virtuous is dear to the husband."
+      },
+      {
+        "pali": "Yāya rājiniyā sā vāpī kārāpitā taṃ ahaṃ na anussarāmi.",
+        "english": "I do not remember the queen by whom that tank was built."
+      },
+      {
+        "pali": "Yassaṃ sabhāyaṃ so kathaṃ pavattesi tattha bahū manussā sannipatitā abhaviṃsu / ahesuṃ.",
+        "english": "The meeting where he made a speech, there many people gathered."
+      },
+      {
+        "pali": "Yāsaṃ itthīnaṃ mañjūsāsu suvaṇṇaṃ atthi tāyo dvārāni thaketvā gehehi nikkhamanti.",
+        "english": "Those women in whose boxes there is gold close the doors and go out."
+      },
+      {
+        "pali": "Yāsu itthīsu kodho natthi tāyo vinītā bhariyāyo ca mātaro ca bhavanti.",
+        "english": "Women in whom there is no anger become disciplined wives and mothers."
+      },
+      {
+        "pali": "Yattha bhūpatayo dhammikā honti tattha manussā sukhaṃ vindanti.",
+        "english": "Where kings are righteous, there the men enjoy happiness."
+      },
+      {
+        "pali": "Yato bhānumā ravi lokaṃ obhāseti tato cakkhumantā rūpāni passanti.",
+        "english": "Since the radiant sun illuminates the world, (therefore) those who have eyes see objects."
+      },
+      {
+        "pali": "Yathā Bhagavā dhammaṃ deseti, tathā tumhehi paṭipajjitabbaṃ.",
+        "english": "Just as the Blessed One preaches the doctrine, so should you conduct yourselves."
+      },
+      {
+        "pali": "Yasmā pitaro rukkhe ropesuṃ, tasmā mayaṃ phalāni bhuñjāma.",
+        "english": "Because fathers planted trees, (therefore) we enjoy fruits."
+      },
+      {
+        "pali": "Yadā amhehi icchitaṃ patthitaṃ samijjhati tadā amhe modāma.",
+        "english": "When our wishes and aspirations are fulfilled, then we are happy."
+      },
+      {
+        "pali": "Ko tvaṃ asi? Ke tumhe hotha?",
+        "english": "Who are you (sg.)? Who are you (pl.)?"
+      },
+      {
+        "pali": "Kena dhenu aṭaviyā ānītā?",
+        "english": "By whom was the cow brought from the forest?"
+      },
+      {
+        "pali": "Kassa bhūpatinā pāsādo kārāpito?",
+        "english": "For whom was the palace built by the king?"
+      },
+      {
+        "pali": "Kasmā amhehi saccaṃ bhāsitabbaṃ?",
+        "english": "Why should we speak the truth?"
+      },
+      {
+        "pali": "Asappurisehi pālite dīpe kuto mayaṃ dhammikaṃ vinetāraṃ labhissāma?",
+        "english": "In an island governed by wicked men where will we get a righteous disciplinarian?"
+      },
+      {
+        "pali": "Kehi kataṃ kammaṃ disvā tumhe kujjhatha?",
+        "english": "Seeing whose work (lit. done by whom) do you get angry?"
+      },
+      {
+        "pali": "Kesaṃ nattāro tuyhaṃ ovāde ṭhassanti?",
+        "english": "Whose grandsons will stand by your advice?"
+      },
+      {
+        "pali": "Kehi ropitāsu latāsu pupphāni ca phalāni ca bhavanti?",
+        "english": "On the creepers planted by whom are there flowers and fruits?"
+      },
+      {
+        "pali": "Kāya itthiyā pādesu daddu atthi?",
+        "english": "On the feet of which woman is there eczema?"
+      }
+    ]
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Yassā so putto hoti sā mātā puññavatī hoti.",
+      "Yo taṃ dīpaṃ pāleti so dhammiko bhūpati hoti.",
+      "Kena ajja navaṃ jīvitamaggaṃ na pariyesitabbaṃ?",
+      "Sace tumhe asappurisā lokaṃ dūseyyātha kattha puttadhītarehi saddhiṃ tumhe vasatha?",
+      "Yadā bhikkhavo sannipatitvā sālāyaṃ kilañjāsu nisīdiṃsu tadā Buddho pāvisi.",
+      "Yasmiṃ padese Buddho viharati tattha gantuṃ ahaṃ icchāmi.",
+      "Yāyaṃ guhāyaṃ sīhā vasanti taṃ pasavo na upasaṅkamanti.",
+      "Yo dhanavā hoti, tena sīlavatā bhavitabbaṃ.",
+      "Sace tumhe maṃ pañhaṃ pucchissatha ahaṃ vissajjetuṃ ussahissāmi.",
+      "Yattha sīlavantā bhikkhavo vasanti tattha manussā sappurisā honti.",
+      "Kadā tvaṃ mātaraṃ passituṃ bhariyāya saddhiṃ gacchasi?",
+      "Yāhi rukkhā chinnā tāyo pucchituṃ kassako āgato hoti.",
+      "Kathaṃ tumhe udadhiṃ tarituṃ ākaṅkhatha?",
+      "Kuto tā itthiyo maṇayo āhariṃsu?",
+      "Yāsu mañjūsāsu ahaṃ suvaṇṇaṃ nikkhipiṃ tā corā coresuṃ.",
+      "Yo ajja nagaraṃ gacchati so tarūsu ketavo passissati.",
+      "Yassa mayā yāgu pūjitā so bhikkhu tava putto hoti.",
+      "Kuto ahaṃ dhammassa viññātāraṃ paññavantaṃ bhikkhuṃ labhissāmi?",
+      "Yasmā so bhikkhūsu pabbaji, tasmā sā pi pabbajituṃ icchati.",
+      "Yaṃ ahaṃ jānāmi tumhe pi taṃ jānātha.",
+      "Yāsaṃ itthīnaṃ dhanaṃ so icchati tāhi taṃ labhituṃ so na sakkoti.",
+      "Yato amhākaṃ bhūpati arayo parājesi tasmā mayaṃ tarūsu ketavo bandhimha.",
+      "Kadā amhākaṃ patthanā samijjhanti?",
+      "Sabbe te sappurisā tesaṃ pañhe vissajjetuṃ vāyamantā sālāya nisinnā honti.",
+      "Sace tvaṃ dvāraṃ thakesi ahaṃ pavisituṃ na sakkomi.",
+      "Amhehi katāni kammāni chāyāyo viya amhe anubandhanti.",
+      "Susavo mātaraṃ rakkhanti.",
+      "Ahaṃ sāminā saddhiṃ gehe viharantī modāmi.",
+      "Tumhākaṃ puttā ca dhītaro ca udadhiṃ taritvā bhaṇḍāni vikkiṇantā mūlaṃ pariyesituṃ icchanti.",
+      "Tvaṃ suraṃ pivasi, tasmā sā tava kujjhati."
+    ],
+    "english_to_pali": [
+      "He who is virtuous will defeat the enemy.",
+      "The girl who spoke at the meeting is not a relation of mine.",
+      "When the mother comes home the daughter will give the gems.",
+      "The dog to whom I gave rice is my brother's.",
+      "Why did you not come home today to worship the monks?",
+      "From where did you get the robes which you offered to the monks?",
+      "Whom did you give the gold which I gave you?",
+      "Eat what you like.",
+      "I will sit on the rock until you bathe in the river.",
+      "Where intelligent people live there I wish to dwell."
+    ]
+  }
+}

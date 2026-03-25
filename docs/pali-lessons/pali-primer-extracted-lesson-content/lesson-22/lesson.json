@@ -1,0 +1,78 @@
+{
+  "lesson_number": 22,
+  "title": "Lesson 22",
+  "topic": "Future passive participle",
+  "grammar": {
+    "explanations": [
+      "The future passive participle, or the potential participle as it is sometimes called, is formed by adding -tabba / -anīya to the base of the verb; -tabba is mostly added with the connecting vowel -i-. These participles are declined like a-ending nouns in the masculine and neuter genders, and like ā-ending nouns in the feminine. They express ideas such as 'must,' 'should be' and 'fit to be.'",
+      "Examples of formation: pacati → pacitabba / pacanīya; bhuñjati → bhuñjitabba / bhojanīya; karoti → kātabba / karaṇīya."
+    ],
+    "tables": [
+      {
+        "title": "Future Passive Participle Formation",
+        "rows": [
+          ["pacati", "pacitabba / pacanīya"],
+          ["bhuñjati", "bhuñjitabba / bhojanīya"],
+          ["karoti", "kātabba / karaṇīya"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Ammā pacitabbaṃ / pacanīyaṃ taṇḍulaṃ piṭake ṭhapesi.",
+        "english": "The mother kept the (raw) rice which is to be cooked in the basket."
+      },
+      {
+        "pali": "Dārikāya bhuñjitabbaṃ / bhojanīyaṃ odanaṃ ahaṃ na bhuñjissāmi.",
+        "english": "I will not eat the rice which should be eaten by the girl."
+      },
+      {
+        "pali": "Kassakena kātabbaṃ / karaṇīyaṃ kammaṃ kātuṃ tvaṃ icchasi.",
+        "english": "You wish to do the work that should be done by the farmer."
+      }
+    ]
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Upāsakehi samaṇā vanditabbā honti.",
+      "Mañjūsāyaṃ nikkhipitabbaṃ suvaṇṇaṃ mā mañcasmiṃ ṭhapehi.",
+      "Sappurisā pūjanīye pūjenti, asappurisā tathā na karonti.",
+      "Bhūpālena rakkhitabbaṃ dīpaṃ amaccā na sammā pālenti.",
+      "Manussehi dhammo uggaṇhitabbo, saccaṃ adhigantabbaṃ hoti.",
+      "Kumārīhi āhaṭāni pupphāni udakena āsiñcitabbāni honti.",
+      "Corena gahitaṃ bhaginiyā dhanaṃ pariyesitabbaṃ hoti.",
+      "Uyyāne ropitā rukkhā na chinditabbā honti.",
+      "Dhotabbāni dussāni gahetvā yuvatiyo hasamānā pokkharaṇiṃ otariṃsu.",
+      "Samaṇehi ovaditabbā kumārā vihāram na gamiṃsu.",
+      "Kassakena kasitabbaṃ khettaṃ vikkiṇituṃ vāṇijo ussahi.",
+      "Āpaṇesu ṭhapitāni vikkiṇitabbāni bhaṇḍāni kiṇituṃ te na icchiṃsu.",
+      "Ammā khādanīyāni ca bhojanīyāni ca paṭiyādetvā dārakānaṃ deti.",
+      "Manussehi dānāni dātabbāni, sīlāni rakkhitabbāni, puññāni kātabbāni.",
+      "Goṇānaṃ dātabbāni tiṇāni kassako khettamhā āhari.",
+      "Migā pānīyaṃ udakaṃ pariyesantā aṭaviyaṃ āhiṇḍiṃsu.",
+      "Darikāya dātuṃ phalāni āpaṇāya vā khettamhā vā āharitabbāni honti.",
+      "Kathetabbaṃ vā akathetabbaṃ vā ajānanto asappuriso mā sabhāyaṃ nisīdatu.",
+      "Tumhe bhūpālā amaccehi ca paṇḍitehi ca samaṇehi ca anusāsitabbā hotha.",
+      "Upāsakena puṭṭho pañho paṇḍitena vyākātabbo hoti.",
+      "Bhūpālassa uyyāne vasantā migā ca sakunā ca luddakehi na hantabbā honti.",
+      "Kusalaṃ ajānitvā pāpaṃ karontā kumārā na akkositabbā, te samaṇehi ca paṇḍitehi ca sappurisehi ca anusāsitabbā.",
+      "Asappurisā parivajjetabbā, mā tumhe tehi saddhiṃ gāme āhiṇḍatha.",
+      "Surā na pātabbā, sace piveyyātha tumhe gilānā bhavissatha.",
+      "Dhammena jīvantā manussā devehi rakkhitabbā honti."
+    ],
+    "english_to_pali": [
+      "At night people should light lamps.",
+      "The merchant brought horses to be sold to the farmers.",
+      "Objects should be seen with eyes, tastes (rasāni) should be enjoyed with the tongue.",
+      "The dog should not be hit with sticks and stones.",
+      "People in the island should be protected by the king and his ministers.",
+      "Flowers should not be picked by men walking in the park.",
+      "The corn should be measured by the farmer with his wife.",
+      "Men should not do evil.",
+      "Grass and water should be given to oxen and goats.",
+      "The assembly should be addressed by the teacher's sister.",
+      "The lions sleeping in the caves should not be approached by men.",
+      "The mother's clothes should be washed by the girl."
+    ]
+  }
+}

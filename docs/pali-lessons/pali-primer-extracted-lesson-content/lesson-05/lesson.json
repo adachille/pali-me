@@ -1,0 +1,123 @@
+{
+  "lesson_number": 5,
+  "title": "Lesson 5",
+  "topic": "Dative case",
+  "grammar": {
+    "explanations": [
+      "This lesson continues the declension of masculine nouns ending in -a, covering the dative case.",
+      "The dative case expresses the meaning 'for' or 'to' in relation to the noun.",
+      "The case endings -āya or -ssa are added to the nominal base to form the dative singular.",
+      "The case ending -ānaṃ is added to the nominal base to form the dative plural."
+    ],
+    "tables": [
+      {
+        "title": "Dative case singular",
+        "rows": [
+          ["nara + āya / ssa", "narāya / narassa (for or to the man)"],
+          ["mātula + āya / ssa", "mātulāya / mātulassa (for or to the uncle)"],
+          ["kassaka + āya / ssa", "kassakāya / kassakassa (for or to the farmer)"]
+        ]
+      },
+      {
+        "title": "Dative case plural",
+        "rows": [
+          ["nara + ānaṃ", "narānaṃ (for or to men)"],
+          ["mātula + ānaṃ", "mātulānaṃ (for or to uncles)"],
+          ["kassaka + ānaṃ", "kassakānaṃ (for or to farmers)"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Dhīvaro narāya macchaṃ āharati.",
+        "english": "The fisherman brings a fish for the man."
+      },
+      {
+        "pali": "Putto mātulassa odanaṃ dadāti.",
+        "english": "The son gives rice to the uncle."
+      },
+      {
+        "pali": "Vāṇijo kassakassa ajaṃ dadāti.",
+        "english": "The merchant gives a goat to the farmer."
+      },
+      {
+        "pali": "Dhīvarā narānaṃ macche āharanti.",
+        "english": "Fishermen bring fish for men."
+      },
+      {
+        "pali": "Puttā mātulānaṃ odanaṃ dadanti.",
+        "english": "Sons give rice to uncles."
+      },
+      {
+        "pali": "Vāṇijā kassakānaṃ aje dadanti.",
+        "english": "Merchants give goats to farmers."
+      }
+    ]
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Vāṇijo rajakassa sāṭakaṃ dadāti.",
+      "Vejjo ācariyassa dīpaṃ āharati.",
+      "Migā pāsāṇamhā pabbataṃ dhāvanti.",
+      "Manussā Buddhehi dhammaṃ labhanti.",
+      "Puriso vejjāya sakaṭaṃ ākaḍḍhati.",
+      "Dārako hatthena yācakassa bhattaṃ āharati.",
+      "Yācako ācariyāya āvāṭaṃ khaṇati.",
+      "Rajako amaccānaṃ sāṭake dadāti.",
+      "Brāhmaṇo sāvakānaṃ mañce āharati.",
+      "Vānaro rukkhamhā patati, kukkuro vānaraṃ ḍasati.",
+      "Dhīvarā piṭakehi amaccānaṃ macche āharanti.",
+      "Kassako vāṇijāya rukkhaṃ chindati.",
+      "Coro kuddālena ācariyāya āvāṭaṃ khaṇati.",
+      "Vejjo puttānaṃ bhattaṃ pacati.",
+      "Tāpaso luddakena saddhiṃ bhāsati.",
+      "Luddako tāpasassa dīpaṃ dadāti.",
+      "Sīhā mige hananti.",
+      "Makkaṭo puttena saha rukkhaṃ āruhati.",
+      "Samaṇā upāsakehi odanaṃ labhanti.",
+      "Dārakā rodanti, kumāro hasati, mātulo kumāraṃ paharati.",
+      "Vānarā pabbatamhā oruhanti, rukkhe āruhanti.",
+      "Corā rathaṃ pavisanti, amacco rathaṃ pajahati.",
+      "Ācariyo dārakāya rukkhamhā sukaṃ āharati.",
+      "Luddako pabbatasmā ajaṃ ākaḍḍhati.",
+      "Tāpaso pabbatamhā sīhaṃ passati.",
+      "Vāṇijā kassakehi lābhaṃ labhanti.",
+      "Luddako vāṇijānaṃ varāhe hanati.",
+      "Tāpaso ācariyamhā pañhe pucchati.",
+      "Putto mañcamhā patati.",
+      "Kumārā sahāyakehi saddhiṃ nahāyanti."
+    ],
+    "english_to_pali": [
+      "Merchants bring horses for ministers.",
+      "The hunter kills a goat for the merchant.",
+      "The man cuts trees with a saw for the farmer.",
+      "Deer run away from the lion.",
+      "The king worships the Buddha along with lay devotees.",
+      "Thieves run from villages to the mountains.",
+      "The washerman washes garments for the king.",
+      "The fisherman brings fish in baskets for farmers.",
+      "The teacher enters the monastery, sees the monks.",
+      "The serpent bites the monkey.",
+      "Boys drag the bed for the brahmin.",
+      "Thieves enter the palace together with men.",
+      "Farmers get fish from fishermen.",
+      "Pigs go from the island to the mountain.",
+      "The king abandons the palace, the son enters the monastery.",
+      "The lion sleeps, the monkeys play.",
+      "The teacher protects his sons from the dog.",
+      "Hunters shoot deer with arrows for ministers.",
+      "Children desire rice from the uncle.",
+      "The doctor gives a garment to the hermit.",
+      "The merchant brings a goat by cart for the teacher.",
+      "Sons see the moon from the mountain.",
+      "Wise men get profit from the dhamma.",
+      "Monkeys leave the village.",
+      "The son brings a parrot for his friend from the mountain.",
+      "The doctor enters the monastery.",
+      "The jackal runs from the village to the mountain along the road.",
+      "The cart falls off the road, the child cries.",
+      "The ministers go up the stairway, the doctor comes down the stairway.",
+      "Wise men ask questions from the Buddha."
+    ]
+  }
+}

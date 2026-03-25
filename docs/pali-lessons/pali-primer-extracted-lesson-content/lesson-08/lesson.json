@@ -1,0 +1,112 @@
+{
+  "lesson_number": 8,
+  "title": "Lesson 8",
+  "topic": "Vocative case, neuter nouns",
+  "grammar": {
+    "explanations": [
+      "The vocative case is used for direct address. For masculine nouns ending in -a, the uninflected nominal base is used as the vocative singular (e.g., nara = 'O man', mātula = 'O uncle', kassaka = 'O farmer'). The case ending -ā is added to form the vocative plural (e.g., narā = 'O men', mātulā = 'O uncles', kassakā = 'O farmers').",
+      "Neuter nouns ending in -a follow a declension similar to masculine nouns ending in -a, with the key differences in the nominative, accusative, and vocative cases. The nominative and accusative singular both use the ending -aṃ (e.g., phalaṃ). The vocative singular uses the uninflected base (e.g., phala). In the plural, the nominative has the forms phalā and phalāni, the accusative has phale and phalāni, and the vocative has phalāni. The rest of the declension is similar to that of masculine nouns ending in -a."
+    ],
+    "tables": [
+      {
+        "title": "Vocative case of masculine nouns ending in -a",
+        "rows": [
+          ["", "Singular", "Plural"],
+          ["nara", "nara (O man)", "narā (O men)"],
+          ["mātula", "mātula (O uncle)", "mātulā (O uncles)"],
+          ["kassaka", "kassaka (O farmer)", "kassakā (O farmers)"]
+        ]
+      },
+      {
+        "title": "Full paradigm: Nara (man) - masculine noun ending in -a",
+        "rows": [
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "naro", "narā"],
+          ["Acc.", "naraṃ", "nare"],
+          ["Ins.", "narena", "narehi (narebhi)"],
+          ["Abl.", "narā, naramhā, narasmā", "narehi (narebhi)"],
+          ["Dat.", "narāya, narassa", "narānaṃ"],
+          ["Gen.", "narassa", "narānaṃ"],
+          ["Loc.", "nare, naramhi, narasmiṃ", "naresu"],
+          ["Voc.", "nara", "narā"]
+        ]
+      },
+      {
+        "title": "Full paradigm: Phala (fruit) - neuter noun ending in -a",
+        "rows": [
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "phalaṃ", "phalā, phalāni"],
+          ["Acc.", "phalaṃ", "phale, phalāni"],
+          ["Voc.", "phala", "phalāni"]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Upāsako pupphāni āharati.",
+      "Araññe migā vasanti, rukkhesu makkaṭā caranti.",
+      "Goṇā tiṇaṃ khādanti.",
+      "Manussā nayanehi passanti.",
+      "Samaṇo vihārasmiṃ āsane nisīdati.",
+      "Rukkhamhā paṇṇāni patanti.",
+      "Vāṇijā gāmamhā khīraṃ nagaraṃ haranti.",
+      "Bhūpālo kumārena saddhiṃ uyyāne carati.",
+      "Kassako khettamhi kuddālena āvāṭe khaṇati.",
+      "Mātulo puttassa bhaṇḍāni dadāti.",
+      "Upāsakā samaṇānaṃ dānaṃ dadanti, sīlāni rakkhanti.",
+      "Dārakā mittehi saddhiṃ udakasmiṃ kīḷanti.",
+      "Kassakā vāṇijehi vatthāni labhanti.",
+      "Kumāro uyyānamhā mātulassa kusumāni āharati.",
+      "Brāhmaṇassa ajā goṇehi saha vane āhiṇḍanti, tiṇāni khādanti.",
+      "Sīho vanasmiṃ rukkhamūle nisīdati.",
+      "Rajakā udakena āsanāni dhovanti.",
+      "Amacco dūtena saddhiṃ rathena araññaṃ pavisati.",
+      "Yācakassa putto udakena paṇṇāni dhovati.",
+      "Vāṇijā bhaṇḍāni nagaramhā gāmaṃ āharanti.",
+      "Tathāgatassa sāvakā asappurisānaṃ putte anusāsanti.",
+      "Upāsakā udakena pupphāni āsiñcanti.",
+      "Kumāro pattaṃ bhindati, mātulo akkosati.",
+      "Luddakassa putto migassa kāyaṃ hatthena phusati.",
+      "Goṇo khette pāsāṇamhā uṭṭhahati.",
+      "Rajakassa putto sāṭake mañcasmiṃ nikkhipati.",
+      "Sugatassa sāvako vihārassa dvāraṃ vivarati.",
+      "Vejjassa dārakā gehe naccanti.",
+      "Paṇḍito asappurisaṃ ovadati.",
+      "Coro ācariyassa sakaṭaṃ pabbatasmiṃ pajahati."
+    ],
+    "english_to_pali": [
+      "Children play in the water with the dog.",
+      "The wicked man breaks leaves from the tree.",
+      "Kings go in vehicles to the park with their ministers.",
+      "Merchants set out from the city with goods.",
+      "Virtuous men give alms to monks.",
+      "Disciples of the Buddha assemble in the park with lay devotees.",
+      "The thief gets down from the tree in the forest.",
+      "Wicked men hit the monkeys on the trees with stones.",
+      "The doctor's horse eats grass with the ox on the road.",
+      "Jackals live in forests, dogs live in villages.",
+      "Brahmins sit on seats in the house of the wise man.",
+      "The sailor opens the doors of his house.",
+      "The sons of fishermen dance with friends in the park.",
+      "The merchant puts fish in baskets.",
+      "The world gets light from the sun.",
+      "Sailors get up from their seats.",
+      "The doctor's friend touches the body of the dog with his foot.",
+      "The Buddha instructs his disciples in the monastery.",
+      "Boys collect flowers from the park, lay devotees sprinkle them with water.",
+      "The parrot flies into the sky from the house of the sailor.",
+      "The thief cuts a tree with a saw, the farmer scolds (him).",
+      "The wise man advises the merchant, the merchant is pleased with the wise man.",
+      "The king's messenger comes out of the sea with the sailor.",
+      "Merchants bring clothes for farmers from the city.",
+      "Gods protect virtuous men. Good men protect virtues.",
+      "Men see objects with their eyes with (the help of) the light of the sun.",
+      "Leaves from the trees fall on the road.",
+      "Lay devotees place flowers on altars (pupphāsana).",
+      "Goats drink water from pits in the field.",
+      "The lions get up from the rock at the foot of the tree (rukkhamūla)."
+    ]
+  }
+}

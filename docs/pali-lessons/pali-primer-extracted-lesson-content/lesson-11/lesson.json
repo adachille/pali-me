@@ -1,0 +1,101 @@
+{
+  "lesson_number": 11,
+  "title": "Lesson 11",
+  "topic": "Present participle (masculine and neuter)",
+  "grammar": {
+    "explanations": [
+      "Present participles are formed by adding -nta or -māna to the verbal base. They function as adjectives and agree in gender, number and case with the nouns they qualify.",
+      "In the masculine and neuter, present participles are declined like -a ending nouns. (The feminine gender of the present participle will be explained in Lesson 21.)",
+      "Examples of present participle formation: paca + nta/māna = pacanta/pacamāna (cooking); gaccha + nta/māna = gacchanta/gacchamāna (going); bhuñja + nta/māna = bhuñjanta/bhuñjamāna (eating); tiṭṭha + nta/māna = tiṭṭhanta/tiṭṭhamāna (standing); vihara + nta/māna = viharanta/viharamāna (dwelling).",
+      "The present participle can be declined in all cases to agree with the nouns they qualify."
+    ],
+    "tables": [],
+    "examples": [
+      {
+        "pali": "Bhattaṃ pacanto / pacamāno puriso hasati.",
+        "english": "The man who is cooking rice laughs. (Nom. case, singular)"
+      },
+      {
+        "pali": "Vejjo bhattaṃ pacantaṃ / pacamānaṃ purisaṃ pakkosati.",
+        "english": "The doctor calls the man who is cooking rice. (Acc. case, singular)"
+      },
+      {
+        "pali": "Vejjo bhattaṃ pacantena / pacamānena purisena saha bhāsati.",
+        "english": "The doctor speaks with the man who is cooking rice. (Inst. case, singular)"
+      },
+      {
+        "pali": "Bhattaṃ pacantā / pacamānā purisā hasanti.",
+        "english": "The men who are cooking rice laugh. (Nom. case, plural)"
+      },
+      {
+        "pali": "Vejjo bhattaṃ pacante / pacamāne purise pakkosati.",
+        "english": "The doctor calls the men who are cooking rice. (Acc. case, plural)"
+      },
+      {
+        "pali": "Vejjo bhattaṃ pacantehi / pacamānehi purisehi saha bhāsati.",
+        "english": "The doctor speaks with the men who are cooking rice. (Inst. case, plural)"
+      }
+    ]
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Pānīyaṃ yācitvā rodanto dārako mañcamhā patati.",
+      "Vatthāni labhituṃ icchanto vāṇijo āpaṇaṃ gacchati.",
+      "Upāsako padumāni ādāya vihāraṃ gacchamāno Buddhaṃ disvā pasīdati.",
+      "Sakuṇo tuṇḍena phalaṃ haranto rukkhasmā uppatati.",
+      "Cīvaraṃ pariyesantassa samaṇassa ācariyo cīvaraṃ dadāti.",
+      "Araññe āhiṇḍanto luddako dhāvantaṃ migaṃ passitvā sarena vijjhati.",
+      "Uyyāne āhiṇḍamānamhā kumāramhā brāhmaṇo padumāni yācati.",
+      "Rathena gacchamānehi amaccehi saha ācariyo hasati.",
+      "Dānaṃ dadāmānā sīlāni rakkhamānā manussā sagge uppajjanti.",
+      "Dhaññaṃ ākaṅkhantassa purisassa dhanaṃ dātuṃ vāṇijo icchati.",
+      "Goṇe hanantā rukkhe chindantā asappurisā dhanaṃ saṃharituṃ ussahanti.",
+      "Vihāraṃ upasaṅkamanto Buddho dhammaṃ bhāsamāne sāvake passati.",
+      "Rukkhamūle nisīditvā gītāni gāyantā kumārā naccituṃ ārabhanti.",
+      "Suvaṇṇaṃ labhituṃ ussahantā manussā pabbatasmiṃ āvāṭe khaṇanti.",
+      "Udakaṃ pātuṃ icchanto sīho udakaṃ pariyesamāno vanamhi carati.",
+      "Vetanaṃ labhituṃ ākaṅkhamāno naro rajakāya dussāni dhovati.",
+      "Samaṇehi bhāsantā upāsakā saccaṃ adhigantuṃ ussahanti.",
+      "Magge sayantaṃ sunakhaṃ udakena siñcitvā dārako hasati.",
+      "Sīlaṃ rakkhantā sappurisā manussalokā cavitvā devaloke uppajjanti.",
+      "Dhanaṃ saṃharituṃ ussahanto vāṇijo samuddaṃ taritvā dīpaṃ gantuṃ ārabhati.",
+      "Goṇe pariyesamāno vane āhiṇḍanto kassako sīhaṃ disvā bhāyati.",
+      "Rukkhesu nisīditvā phalāni bhuñjamānā kumārā gītaṃ gāyanti.",
+      "Cittaṃ pasīditvā dhammaṃ adhigantuṃ ussahantā narā sagge uppajjanti.",
+      "Tuṇḍena piṭakamhā macchaṃ ākaḍḍhituṃ icchanto kāko sunakhamhā bhāyati.",
+      "Khettaṃ kasitvā bījāni vaponto kassako dhaññaṃ labhituṃ ākaṅkhati.",
+      "Suriyassa ālokena locanehi rūpāni passantā manussā loke jīvanti.",
+      "Rukkhamūle nisīditvā cīvaraṃ sibbantena samaṇena saddhiṃ upāsako bhāsati.",
+      "Rukkhamūle sayantassa yācakassa kāye paṇṇāni patanti.",
+      "Vāṇijassa mūlaṃ datvā asse labhituṃ amacco ussahati.",
+      "Khīraṃ pivitvā hasamāno dārako pattaṃ mañcasmiṃ khipati."
+    ],
+    "english_to_pali": [
+      "The man washing clothes speaks with the boy going on the road.",
+      "The brahmin sees the deer coming out of the forest to drink water.",
+      "Goats in the park eat leaves falling from the trees.",
+      "Wicked men wish to see hunters killing deer.",
+      "The farmer sees birds eating seeds in his field.",
+      "Recluses who enter the city wish to worship the Buddha dwelling in the monastery.",
+      "Standing on the stairway the child sees monkeys sitting on the tree.",
+      "Boys give rice to fish moving in the water.",
+      "The sailor wishing to cross the sea asks for money from the king.",
+      "Men see with their eyes the light of the moon falling on the sea.",
+      "Lay devotees try to give robes to monks living in the monastery.",
+      "Wishing for merit virtuous men give alms to the monks and observe (rakkhanti) the precepts.",
+      "The man walks on the leaves falling from the trees in the forest.",
+      "The uncle gives a lotus to the child searching for flowers.",
+      "Having given the beggar some corn the fisherman enters the house.",
+      "The minister gives seeds to the farmers who plough their fields.",
+      "The dog tries to bite the hand of the man who strokes his body.",
+      "The Buddha's disciples question the child crying on the road.",
+      "The uncle's friend calls the boys singing songs seated under the tree.",
+      "Virtuous men give food to the monks who approach their houses.",
+      "Wise men who wish to be born in heaven practise (rakkhanti) virtue.",
+      "Seeing the jackal approaching the village the farmer tries to hit it with a stone.",
+      "Speaking the truth lay devotees try to understand the doctrine.",
+      "Having washed the bowl with water the hermit looks for drinking water.",
+      "Wise men who observe the precepts begin to understand the truth."
+    ]
+  }
+}

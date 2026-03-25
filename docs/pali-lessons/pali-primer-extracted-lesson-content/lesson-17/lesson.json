@@ -1,0 +1,128 @@
+{
+  "lesson_number": 17,
+  "title": "Lesson 17",
+  "topic": "Past tense",
+  "grammar": {
+    "explanations": [
+      "The past tense in Pali is formed by adding specific endings to the verb base. For verbs whose bases end in -a, the past tense endings are added directly to the base. An optional augment 'a-' may be prefixed to the verb form to denote the past tense; this 'a-' is not a negative prefix.",
+      "Conjugation of verbs with the base ending in -a (e.g., paca = to cook): Singular: 3rd person (So) apaci / paci = He cooked; 2nd person (Tvaṃ) apaci / paci = You cooked; 1st person (Ahaṃ) apaciṃ / paciṃ = I cooked. Plural: 3rd person (Te) apaciṃsu / paciṃsu = They cooked; 2nd person (Tumhe) apacittha / pacittha = You cooked; 1st person (Mayaṃ) apacimha / pacimha = We cooked.",
+      "Verbs whose bases end in -nā are also conjugated in the past tense in the same way as bases ending in -a.",
+      "Conjugation of verbs with the base ending in -e (e.g., core = to steal): Singular: 3rd person (So) coresi / corayi = He stole; 2nd person (Tvaṃ) coresi = You stole; 1st person (Ahaṃ) coresiṃ / corayiṃ = I stole. Plural: 3rd person (Te) coresuṃ / corayiṃsu = They stole; 2nd person (Tumhe) corayitha = You stole; 1st person (Mayaṃ) corayimha = We stole."
+    ],
+    "tables": [
+      {
+        "title": "Past tense conjugation: base ending in -a (paca = to cook)",
+        "rows": [
+          ["", "Singular", "Plural"],
+          ["3rd person", "(So) apaci, paci = He cooked", "(Te) apaciṃsu, paciṃsu = They cooked"],
+          [
+            "2nd person",
+            "(Tvaṃ) apaci, paci = You cooked",
+            "(Tumhe) apacittha, pacittha = You cooked"
+          ],
+          ["1st person", "(Ahaṃ) apaciṃ, paciṃ = I cooked", "(Mayaṃ) apacimha, pacimha = We cooked"]
+        ]
+      },
+      {
+        "title": "Past tense conjugation: base ending in -e (core = to steal)",
+        "rows": [
+          ["", "Singular", "Plural"],
+          ["3rd person", "(So) coresi, corayi = He stole", "(Te) coresuṃ, corayiṃsu = They stole"],
+          ["2nd person", "(Tvaṃ) coresi = You stole", "(Tumhe) corayitha = You stole"],
+          ["1st person", "(Ahaṃ) coresiṃ, corayiṃ = I stole", "(Mayaṃ) corayimha = We stole"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Bhūpālo dīpe cari / acari",
+        "english": "The king wandered in the island."
+      },
+      {
+        "pali": "Samaṇo dhammaṃ desesi",
+        "english": "The monk preached the dhamma."
+      },
+      {
+        "pali": "Tvaṃ bhaṇḍāni vikkiṇi",
+        "english": "You sold goods."
+      },
+      {
+        "pali": "Tvaṃ pupphāni pūjesi",
+        "english": "You offered the flowers."
+      },
+      {
+        "pali": "Ahaṃ pabbataṃ āruhiṃ",
+        "english": "I climbed the mountain."
+      },
+      {
+        "pali": "Ahaṃ dīpaṃ jālesiṃ / jālayiṃ",
+        "english": "I lit the lamp."
+      },
+      {
+        "pali": "Bhūpālā dīpesu cariṃsu / acariṃsu",
+        "english": "Kings wandered in the islands."
+      },
+      {
+        "pali": "Samaṇā dhammaṃ desesuṃ / desayiṃsu",
+        "english": "Monks preached the dhamma."
+      },
+      {
+        "pali": "Tumhe bhaṇḍāni vikkiṇittha",
+        "english": "You sold goods."
+      },
+      {
+        "pali": "Tumhe pupphāni pūjayittha",
+        "english": "You offered flowers."
+      },
+      {
+        "pali": "Mayaṃ pabbate āruhimha",
+        "english": "We climbed mountains."
+      },
+      {
+        "pali": "Mayaṃ dīpe jālayimha",
+        "english": "We lit lamps."
+      }
+    ]
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Kassako khettaṃ kasitvā nahāyituṃ udakaṃ otari.",
+      "Uggaṇhantānaṃ dārakānaṃ dātuṃ ācariyā kusumāni āhariṃsu.",
+      "Upāsakā āsanehi uṭṭhahitvā dhammaṃ desetuṃ upasaṅkamantaṃ samaṇaṃ vandiṃsu.",
+      "Nagaresu kammāni katvā vetane labhituṃ ākaṅkhamānā narā gāmehi nikkhamiṃsu.",
+      "Ācariyo āsanaṃ dussena chādetvā samaṇaṃ nisīdituṃ nimantesi.",
+      "Kumāro dvāraṃ vivaritvā rukkhamhā oruhante vānare passamāno aṭṭhāsi (stood).",
+      "Paṇḍito goṇe coretvā akusalaṃ karonte nare pakkositvā ovadi.",
+      "Yācakassa puttā rukkhehi patantāni phalāni saṃharitvā āpaṇasmiṃ vikkiṇiṃsu.",
+      "Kassako dhaññaṃ minitvā vāṇijassa vikkiṇituṃ pahiṇi.",
+      "Dhammaṃ uggaṇhitvā samaṇo bhavituṃ ākaṅkhamāno amacco ācariyaṃ pariyesamāno Buddhaṃ upasaṅkami.",
+      "Sace tumhe gāmaṃ pāpuṇeyyātha mitte olokeyyātha.",
+      "Paṇḍitamhā pañhe pucchitvā saccaṃ jānituṃ mātulo ussahi.",
+      "Pāsāṇamhi ṭhatvā ajaṃ khādantaṃ sīhaṃ disvā vānarā bhāyiṃsu.",
+      "Rukkhamūle nisīditvā gitāni gāyantānaṃ kumārānaṃ kāyesu paṇṇāni ca pupphāni ca patiṃsu.",
+      "Tumhe dhanaṃ saṃharamānā mā samuddaṃ taritvā dīpaṃ gacchatha.",
+      "Āpaṇasmiṃ bhaṇḍāni vikkiṇantassa vāṇijassa ratho atthi.",
+      "Ahaṃ puttassa dātuṃ dussaṃ sibbanto gītaṃ gāyiṃ.",
+      "Sūkarā ca sunakhā ca khette āvāṭe khaṇiṃsu.",
+      "Purisā rukkhamūle nisīditvā tāpasena bhāsamānaṃ suṇiṃsu.",
+      "Luddakena saddhiṃ vane āhiṇḍante putte āmantetvā kassakā akkosiṃsu.",
+      "Mā tvaṃ suvaṇṇapattaṃ vikkiṇitvā khagge kiṇāhi.",
+      "So bhaṇḍāni ca khettaṃ ca goṇe ca puttānaṃ daṭvā gehaṃ pahāya samaṇo bhavituṃ cintesi.",
+      "Dhammena jīvantā sappurisā mige na māresuṃ.",
+      "Ahaṃ sopānaṃ āruhiṃ, te sopānamhā oruhiṃsu.",
+      "Sahāyakā udakaṃ otaritvā nahāyantā padumāni ociniṃsu."
+    ],
+    "english_to_pali": [
+      "The child sprinkled the lotuses with water and honoured the Buddha with them.",
+      "Having received the pay the men went to the market and bought goods.",
+      "The fisherman brought fish from the sea and sold them to the farmers.",
+      "If you go to bathe wash the clothes of the children.",
+      "The parrots and the crows flew into the sky from the trees.",
+      "Do not scold the children playing under the tree with the dog.",
+      "I spoke to the people sitting in the park having assembled to see the king.",
+      "We got frightened seeing a serpent enter the house.",
+      "I gave water to my son eating rice together with his friend.",
+      "Do not do evil, do good to enter heaven after departing from the human world."
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "lesson_number": 1,
+  "title": "Lesson 1",
+  "topic": "Nominative case, present tense verbs",
+  "grammar": {
+    "explanations": [
+      "Masculine nouns ending in -a form the nominative case singular by adding the case ending -o to the nominal base. They form the nominative case plural by adding the case ending -ā to the nominal base. A noun thus inflected is used as the subject of a sentence.",
+      "In the verbs listed, bhāsa, paca, kasa etc. are verbal bases and -ti is the present tense, third person, singular termination. The present tense, third person, plural is formed by adding the termination -nti to the base."
+    ],
+    "tables": [
+      {
+        "title": "Nominative case of masculine nouns ending in -a",
+        "rows": [
+          ["Singular", "nara + o = naro"],
+          ["Singular", "mātula + o = mātulo"],
+          ["Singular", "kassaka + o = kassako"],
+          ["Plural", "nara + ā = narā"],
+          ["Plural", "mātula + ā = mātulā"],
+          ["Plural", "kassaka + ā = kassakā"]
+        ]
+      },
+      {
+        "title": "Present tense, third person verb forms",
+        "rows": [
+          ["Singular", "bhāsati - He speaks"],
+          ["Singular", "pacati - He cooks"],
+          ["Singular", "kasati - He ploughs"],
+          ["Plural", "bhāsanti - They speak"],
+          ["Plural", "pacanti - They cook"],
+          ["Plural", "kasanti - They plough"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Naro bhāsati",
+        "english": "The man speaks."
+      },
+      {
+        "pali": "Mātulo pacati",
+        "english": "The uncle cooks."
+      },
+      {
+        "pali": "Kassako kasati",
+        "english": "The farmer ploughs."
+      },
+      {
+        "pali": "Narā bhāsanti",
+        "english": "Men speak."
+      },
+      {
+        "pali": "Mātulā pacanti",
+        "english": "Uncles cook."
+      },
+      {
+        "pali": "Kassakā kasanti",
+        "english": "Farmers plough."
+      }
+    ]
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Bhūpālo bhuñjati.",
+      "Puttā sayanti.",
+      "Vāṇijā sayanti.",
+      "Buddho passati.",
+      "Kumāro dhāvati.",
+      "Mātulo kasati.",
+      "Brāhmaṇā bhāsanti.",
+      "Mittā gacchanti.",
+      "Kassakā pacanti.",
+      "Manusso chindati.",
+      "Purisā dhāvanti.",
+      "Sahāyako bhuñjati.",
+      "Tathāgato bhāsati.",
+      "Naro pacati.",
+      "Sahāyā kasanti.",
+      "Sugato āgacchati."
+    ],
+    "english_to_pali": [
+      "Sons run.",
+      "The uncle sees.",
+      "The Buddha comes.",
+      "Boys eat.",
+      "Merchants go.",
+      "The man sleeps.",
+      "Kings go.",
+      "The brahmin cuts.",
+      "Friends speak.",
+      "The farmer ploughs.",
+      "The merchant comes.",
+      "Sons cut.",
+      "Uncles speak.",
+      "The boy runs.",
+      "The friend speaks.",
+      "The Buddha sees."
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "lesson_number": 20,
+  "title": "Lesson 20",
+  "topic": "Feminine nouns ending in -i/-ī",
+  "grammar": {
+    "explanations": [
+      "Feminine nouns ending in -i are declined as shown with the example bhūmi (earth, ground). In the singular, the nominative and vocative are bhūmi, the accusative is bhūmiṃ, and the instrumental, ablative, dative, genitive, and locative all take the ending -iyā (with the locative also allowing -iyaṃ).",
+      "In the plural, the nominative and vocative take -ī or -iyo; the instrumental takes -īhi (or -ībhi); the genitive and dative take -īnaṃ; and the locative takes -īsu.",
+      "Feminine nouns ending in -ī are declined similarly, with the only exception being the nominative and vocative singular, which end in -ī rather than -i."
+    ],
+    "tables": [
+      {
+        "title": "Declension of bhūmi (f.) - Singular",
+        "rows": [
+          ["Nom.", "bhūmi"],
+          ["Voc.", "bhūmi"],
+          ["Acc.", "bhūmiṃ"],
+          ["Ins.", "bhūmiyā"],
+          ["Abl.", "bhūmiyā"],
+          ["Dat.", "bhūmiyā"],
+          ["Gen.", "bhūmiyā"],
+          ["Loc.", "bhūmiyā, bhūmiyaṃ"]
+        ]
+      },
+      {
+        "title": "Declension of bhūmi (f.) - Plural",
+        "rows": [
+          ["Nom.", "bhūmī, bhūmiyo"],
+          ["Voc.", "bhūmī, bhūmiyo"],
+          ["Ins.", "bhūmīhi, (bhūmībhi)"],
+          ["Dat./Gen.", "bhūmīnaṃ"],
+          ["Loc.", "bhūmīsu"]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Bhūpālo rājiniyā saddhiṃ nāvāya nadiṃ taranto udake carante macche olokento amaccehi saddhiṃ katheti.",
+      "Pāniyaṃ pivitvā dārikāya bhūmiyaṃ nikkhitto patto bhinno hoti.",
+      "Kassakānaṃ gāviyo aṭaviyaṃ āhiṇḍitvā khettaṃ āgamiṃsu.",
+      "Rattiyā samuddasmiṃ patitā candassa rasmiyo oloketvā taruṇiyo modiṃsu.",
+      "Upāsakā iddhiyā ākāse gacchantaṃ tāpasaṃ disvā pasannā honti.",
+      "Bhaginiyā saddhiṃ pokkharaṇiyā tīre (bank) ṭhatva so padumāni ocinituṃ vāyami.",
+      "Nāriyo vāpīsu nahāyituṃ vā (or) vatthāni dhovituṃ vā na icchiṃsu.",
+      "Yuvatiyā puṭṭhaṃ pañhaṃ vyākātuṃ asakkonto ahaṃ tāya (with her) saddhiṃ sallapituṃ ārabhiṃ.",
+      "Asappurisassa puttena kataṃ pāpakammaṃ paṭicchādetuṃ ammā na ussahi.",
+      "Bhaginiyā dussena veṭhetvā mañcasmiṃ ṭhapitaṃ bhaṇḍaṃ itthī mañjūsāyaṃ pakkhipi.",
+      "Mā tumhe magge sayantaṃ kukkuraṃ viheṭhetha.",
+      "Sappuriso amacco dhanaṃ vissajjetvā yācakānaṃ vasituṃ sālāyo gāmesu karitvā bhūpālaṃ ārocesi.",
+      "Kumāro suvaṃ hatthamhā muñcitvā taṃ uḍḍentaṃ passamāno rodanto rukkhamūle aṭṭhāsi.",
+      "Saddhāya dānaṃ dadamānā kusalaṃ karontā sappurisā puna(again) manussaloke uppajjituṃ patthenti.",
+      "Kumāro mañjūsaṃ vivaritvā sāṭakaṃ nīharitvā ammāya pesesi."
+    ],
+    "english_to_pali": [
+      "There are lotuses and fishes in ponds in the king's park.",
+      "The young women picked lotuses from the tank and kept them on the ground.",
+      "The queen spoke with her sisters who came having crossed the river by boat.",
+      "I saw the dog chasing the cow in the field.",
+      "Women and girls did not climb trees to pick fruits and flowers.",
+      "You (pl.) went to the river to bathe and got frightened hearing the peal of thunder (asanisaddaṃ).",
+      "You (pl.) do not conceal the evil committed with your friends.",
+      "If you spent money to buy clothes, inform your mother.",
+      "Send the lotuses wrapped in lotus leaves to the young girls seated in the hall.",
+      "We can explain the questions asked by the women in the assembly."
+    ]
+  }
+}

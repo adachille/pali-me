@@ -1,0 +1,90 @@
+{
+  "lesson_number": 23,
+  "title": "Lesson 23",
+  "topic": "The Causative",
+  "grammar": {
+    "explanations": [
+      "Causative verbs are formed by adding -e / -aya / -āpe / -āpaya to the root or verbal base. Sometimes the vowel in the root is strengthened when the suffixes are added. Verbal bases ending in -e / -aya invariably take the suffixes -āpe / -āpaya to form the causative.",
+      "In sentences with causative verbs the agent carrying out the action is expressed by the accusative or the instrumental case."
+    ],
+    "tables": [
+      {
+        "title": "Causative formations from roots",
+        "rows": [
+          ["pacati", "pāceti / pācayati / pacāpeti / pācāpayati"],
+          ["bhuñjati", "bhojeti / bhojāpeti"],
+          ["coreti", "corāpeti / corāpayati"],
+          ["kināti", "kiṇāpeti / kiṇāpayati"],
+          ["karoti", "kāreti / kārāpayati"],
+          ["dadāti / deti", "dāpeti / dāpayati"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Ammā bhaginiṃ bhattaṃ pacāpeti.",
+        "english": "Mother gets the sister to cook rice."
+      },
+      {
+        "pali": "Bhūpālo samaṇe ca yācake ca bhojāpesi.",
+        "english": "The king fed the recluses and beggars."
+      },
+      {
+        "pali": "Coro mittena kakacaṃ corāpetvā vanaṃ dhāvi.",
+        "english": "The thief ran having got a friend to steal a saw."
+      },
+      {
+        "pali": "Vejjo puttena āpaṇamhā khīraṃ kiṇāpesi.",
+        "english": "The doctor got his son to buy milk from the market."
+      },
+      {
+        "pali": "Upāsakā amaccena samaṇānaṃ vihāraṃ kārāpesuṃ.",
+        "english": "Lay devotees got the minister to build a monastery for the monks."
+      },
+      {
+        "pali": "Yuvati bhaginiyā ācariyassa mūlaṃ dāpetvā sippaṃ uggaṇhi.",
+        "english": "The maiden got the sister to give money to the teacher and learnt an art."
+      },
+      {
+        "pali": "Brāhmaṇo coraṃ / corena saccaṃ bhāsāpetuṃ vāyami.",
+        "english": "The brahmin tried to make the thief speak the truth."
+      }
+    ]
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Ammā samaṇehi asappurise putte anusāsāpesi.",
+      "Tumhe manusse pīḷente core āmantāpetvā ovadatha.",
+      "Vāṇijo kassakena rukkhe chindāpetvā / chedāpetvā sakaṭena nagaraṃ netvā vikkiṇi.",
+      "Samaṇo upāsake sannipātāpetvā dhammaṃ desesi.",
+      "Mātulo kumārehi pupphāni ca phalāni ca ocināpesi.",
+      "Dārikā sunakhaṃ pokkharaṇiṃ otarāpesi.",
+      "Amacco vāṇije ca kassake ca pakkosāpetvā pucchissati.",
+      "Kaññāhi āhaṭāni pupphāni vanitāyo āsiñcāpesuṃ.",
+      "Bhariyāya kātabbaṃ kammaṃ ahaṃ karomi.",
+      "Luddako mittena migaṃ vijjhitvā mārāpesi.",
+      "Brāhmaṇo ācāriyena kumāriṃ dhammaṃ uggaṇhāpesi.",
+      "Ammā dārikaṃ khīraṃ pāyetvā mañce sayāpesi.",
+      "Vāṇijā assehi bhaṇḍāni gāhāpetva vikkiṇituṃ nagaraṃ gamiṃsu.",
+      "Vanitā sahāyakena rukkhassa sākhāyo ākaḍḍhāpetvā gehaṃ nesi.",
+      "Ammā puttena gehaṃ āgataṃ samaṇaṃ vandāpesi.",
+      "Upāsakā samaṇe āsanesu nisīdāpetvā bhojāpesuṃ.",
+      "Bhaginī bhinnapattassa khaṇḍāni (pieces) āmasantī rodantī gehadvāre aṭṭhāsi.",
+      "Udakaṃ āharituṃ gacchantiyo nāriyo sallapantiyo rukkhamūlesu patitāni kusumāni oloketvā modiṃsu.",
+      "Luddako tuṇḍena phalaṃ ocinituṃ vāyamantaṃ suvaṃ sarena vijjhi.",
+      "Sappurisena kārāpitesu vihāresu samaṇā vasanti."
+    ],
+    "english_to_pali": [
+      "The wicked man gets his sons to shoot birds.",
+      "The lay devotees will get the monk to preach the doctrine.",
+      "Women get their children to honour the Buddha's disciples.",
+      "The young woman will get her sister to speak at the assembly.",
+      "The farmer caused the tree to fall into the pit.",
+      "You (pl.) will get the flowers sprinkled with water.",
+      "The king got his ministers to build a monastery.",
+      "The queen will live in the palace which the king got built.",
+      "The merchant got his wife to put the goods in boxes.",
+      "The brahmin got the Buddha's disciple to preach to his people."
+    ]
+  }
+}

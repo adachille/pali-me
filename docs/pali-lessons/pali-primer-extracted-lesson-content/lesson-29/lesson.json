@@ -1,0 +1,81 @@
+{
+  "lesson_number": 29,
+  "title": "Lesson 29",
+  "topic": "Neuter nouns ending in -i/-u",
+  "grammar": {
+    "explanations": [
+      "Neuter nouns ending in -i are declined like aṭṭhi (bone, seed). This declension is similar to the aggi declension except in the nominative, vocative, and accusative cases.",
+      "In the nominative, vocative, and accusative singular, the form is aṭṭhi; in the plural, aṭṭhī or aṭṭhīni. The remaining cases follow the aggi pattern with the stem aṭṭhi-.",
+      "Neuter nouns ending in -u are declined like cakkhu (eye). The rest of the declension is similar to the declension of garu.",
+      "Other neuter nouns ending in -i include: vāri (water), akkhi (eye), sappi (ghee), dadhi (curds), acci (flame), satthi (thigh).",
+      "Other neuter nouns ending in -u include: dhanu (bow), madhu (honey), assu (tear), jāṇu/jaṇṇu (knee), dāru (firewood), ambu (water), vasu (wealth), vatthu (ground, base, site, estate)."
+    ],
+    "tables": [
+      {
+        "title": "Declension of aṭṭhi (neuter, -i stem)",
+        "rows": [
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "aṭṭhi", "aṭṭhī, aṭṭhīni"],
+          ["Voc.", "aṭṭhi", "aṭṭhī, aṭṭhīni"],
+          ["Acc.", "aṭṭhiṃ", "aṭṭhī, aṭṭhīni"],
+          ["Ins.", "aṭṭhinā", "aṭṭhīhi, (aṭṭhībhi)"],
+          ["Abl.", "aṭṭhinā", "aṭṭhīhi, (aṭṭhībhi)"],
+          ["Dat.", "aṭṭhino, aṭṭhissa", "aṭṭhīnaṃ"],
+          ["Gen.", "aṭṭhino, aṭṭhissa", "aṭṭhīnaṃ"],
+          ["Loc.", "aṭṭhini, aṭṭhimhi, aṭṭhismiṃ", "aṭṭhīsu"]
+        ]
+      },
+      {
+        "title": "Declension of cakkhu (neuter, -u stem)",
+        "rows": [
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "cakkhu", "cakkhū, cakkhūni"],
+          ["Voc.", "cakkhu", "cakkhū, cakkhūni"],
+          ["Acc.", "cakkhuṃ", "cakkhū, cakkhūni"]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Gehaṃ pavisantaṃ ahiṃ disvā kaññā bhāyitvā assūni pavattentī rodituṃ ārabhi.",
+      "Dīpinā hatāya gāviyā aṭṭhīni bhūmiyaṃ vippakiṇṇāni honti.",
+      "Nadiyā vārinā vatthāni dhovanto pitā nahāpetuṃ puttaṃ pakkosi.",
+      "Tvaṃ sappinā ca madhunā ca sammissetvā odanaṃ bhuñjissasi.",
+      "Mayaṃ khīramhā dadhiṃ labhāma.",
+      "Bhikkhu dīpassa acciṃ olokento aniccasaññaṃ vaḍḍhento nisīdi.",
+      "Pāpakāri luddako dhanuṃ ca sare ca ādāya aṭaviṃ paviṭṭho.",
+      "Sattu amaccassa satthiṃ asīnā paharitvā aṭṭhiṃ chindi.",
+      "Ahaṃ sappinā pacitaṃ odanaṃ madhunā bhuñjituṃ na icchāmi.",
+      "Nattā hatthehi ca jaṇṇūhi ca gacchantaṃ yācakaṃ disvā anukampamāno bhojanaṃ ca vatthaṃ ca dāpesi.",
+      "Dārūni saṃharantiyo itthiyo aṭaviyaṃ āhiṇḍantī gāyiṃsu.",
+      "Ambūmhi jātāni padumāni na ambunā upalittāni honti.",
+      "Manussā nānākammāni katvā vasuṃ saṃharitvā puttadāre posetuṃ ussahanti.",
+      "Bhattā mātuyā akkhīsu assūni disvā bhariyāya kujjhi.",
+      "Pitā khettavatthūni puttānaṃ ca nattārānaṃ ca vibhajitvā vihāraṃ gantvā pabbaji.",
+      "Pakkhīhi khāditānaṃ phalānaṃ aṭṭhīni rukkhamūle patitāni honti.",
+      "Ācariyo sissānaṃ sippaṃ vācento te anukampamāno dhammena jīvituṃ anusāsi.",
+      "Bodhisatto samaṇo māraṃ parājetvā Buddho bhavi / ahosi.",
+      "Buddhaṃ passitvā dhammaṃ sotuṃ patthentā narā dhammaṃ carituṃ vāyamanti.",
+      "Sace sappurisānaṃ sabbā patthanā samijjheyyuṃ manussā loke sukhaṃ vindeyyuṃ.",
+      "Vyādhinā pīḷitā mātā assūni pavattentī dhītuyā gehaṃ āgantvā mañce sayitvā yāguṃ yāci.",
+      "Mātaraṃ anukampamānā dhītā khippaṃ yāguṃ paṭiyādetvā mātuyā mukhaṃ dhovitvā yāguṃ pāyesi.",
+      "Pitarā puṭṭhaṃ pañhaṃ bhattā sammā vibhajitvā upamāya atthaṃ vyākari / vyākāsi.",
+      "Luddako aṭaviyā bhūmiyaṃ dhaññaṃ vippakiritvā mige palobhetvā māretuṃ ussahi.",
+      "Dhaññaṃ khādantā migā āgacchantaṃ luddakaṃ disvā vegena dhāvimsu."
+    ],
+    "english_to_pali": [
+      "He saw the bones of the animals killed by the leopard in the forest.",
+      "You (pl.) will bathe in the river water.",
+      "There are tears in the eyes of the daughter who is a young girl.",
+      "The farmer sells ghee and curd to the merchants.",
+      "The flames of the lamps danced in the wind (vātena).",
+      "There is eczema on the feet of the enemy.",
+      "The bee (bhamara / madhukara) collects honey from flowers without hurting them.",
+      "The woman bringing firewood from the forest fell into the river.",
+      "Planting trees in the fields and gardens men try to collect wealth.",
+      "The husband brought a gem for the wife from the city."
+    ]
+  }
+}

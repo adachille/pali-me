@@ -1,0 +1,122 @@
+{
+  "lesson_number": 7,
+  "title": "Lesson 7",
+  "topic": "Locative case",
+  "grammar": {
+    "explanations": [
+      "The locative case is used to express the meanings 'in', 'on', or 'at'.",
+      "For masculine nouns ending in -a, the case endings -e, -mhi, or -smiṃ are added to the nominal base to form the locative singular.",
+      "The case ending -esu is added to the nominal base to form the locative plural."
+    ],
+    "tables": [
+      {
+        "title": "Locative case singular - masculine nouns ending in -a",
+        "rows": [
+          ["nara + e / mhi / smiṃ", "nare, naramhi, narasmiṃ (in / on / at the man)"],
+          ["mātula + e / mhi / smiṃ", "mātule, mātulamhi, mātulasmiṃ (in / on / at the uncle)"],
+          ["kassaka + e / mhi / smiṃ", "kassake, kassakamhi, kassakasmiṃ (in / on / at the farmer)"]
+        ]
+      },
+      {
+        "title": "Locative case plural - masculine nouns ending in -a",
+        "rows": [
+          ["nara + esu", "naresu (in / on / at men)"],
+          ["mātula + esu", "mātulesu (in / on / at uncles)"],
+          ["kassaka + esu", "kassakesu (in / on / at farmers)"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Sappo narasmiṃ patati.",
+        "english": "The snake falls on the man."
+      },
+      {
+        "pali": "Putto mātulamhi pasīdati.",
+        "english": "The son is pleased with the uncle."
+      },
+      {
+        "pali": "Vāṇijo kassakasmiṃ pasīdati.",
+        "english": "The merchant is pleased with the farmer."
+      },
+      {
+        "pali": "Sappā naresu patanti.",
+        "english": "Snakes fall on men."
+      },
+      {
+        "pali": "Puttā mātulesu pasīdanti.",
+        "english": "Sons are pleased with their uncles."
+      },
+      {
+        "pali": "Vāṇijā kassakesu pasīdanti.",
+        "english": "Merchants are pleased with farmers."
+      }
+    ]
+  },
+  "exercises": {
+    "pali_to_english": [
+      "Brāhmaṇo sahāyakena saddhiṃ rathamhi nisīdati.",
+      "Asappurisā corehi saha gāmesu caranti.",
+      "Vāṇijo kassakassa nivāse bhattaṃ pacati.",
+      "Bhūpālassa amaccā dīpesu manusse rakkhanti.",
+      "Sugatassa sāvakā vihārasmiṃ vasanti.",
+      "Makkaṭo rukkhamhā āvāṭasmiṃ patati.",
+      "Suriyassa āloko samuddamhi patati.",
+      "Kassakānaṃ goṇā gāme āhiṇḍanti.",
+      "Vejjassa dārako mañcasmiṃ sayati.",
+      "Dhīvarā samuddamhā piṭakesu macche āharanti.",
+      "Sīho pāsāṇasmiṃ tiṭṭhati, makkaṭā rukkhesu caranti.",
+      "Bhūpālassa dūto amaccena saddhiṃ samuddaṃ tarati.",
+      "Manussā loke jīvanti, devā sagge vasanti.",
+      "Migā pabbatesu dhāvanti, sakuṇā ākāse uppatanti.",
+      "Amacco khaggaṃ bhūpālassa hatthamhā ādadāti.",
+      "Ācariyo mātulassa nivāse mañcamhi puttena saha nisīdati.",
+      "Tāpasā pabbatamhi viharanti.",
+      "Upāsakā samaṇehi saddhiṃ vihāre sannipatanti.",
+      "Kākā rukkhehi uppatanti.",
+      "Buddho dhammaṃ bhāsati, sappurisā Buddhamhi pasīdanti.",
+      "Asappuriso khaggena nāvikassa dūtaṃ paharati.",
+      "Puriso sarena sakuṇaṃ vijjhati, sakuṇo rukkhamhā āvāṭasmiṃ patati.",
+      "Manussā suriyassa ālokena lokaṃ passanti.",
+      "Kassakassa goṇā magge sayanti.",
+      "Goṇassa kāyasmiṃ kāko tiṭṭhati.",
+      "Migā dīpasmiṃ pāsāṇesu nisīdanti.",
+      "Sakuṇo nāvikassa hatthamhā āvāṭasmiṃ patati.",
+      "Sappuriso nāvikena saha samuddamhā uttarati.",
+      "Kuddālo luddakassa hatthamhā āvāṭasmiṃ patati.",
+      "Suriyassa ālokena cando bhāsati."
+    ],
+    "english_to_pali": [
+      "The lion stands on the rock in the mountain.",
+      "Thieves enter the house of the teacher.",
+      "Children run from the road to the sea with friends.",
+      "Uncle's oxen wander on the road.",
+      "Birds sit on the tree.",
+      "The ox hits the goat with its foot.",
+      "Jackals live on the mountain.",
+      "The king worships the feet of the Buddha with his ministers.",
+      "The uncle sleeps on the bed with his son.",
+      "The fisherman eats rice in the house of the farmer.",
+      "The king's horses live in the island.",
+      "The virtuous man brings a lamp for the hermit.",
+      "The doctor brings a garment to the teacher's house.",
+      "The monkey plays with a dog on the rock.",
+      "The garment falls on the farmer's body.",
+      "The hunter carries arrows in a basket.",
+      "Disciples of the Buddha assemble in the monastery.",
+      "The washerman washes the garments of the ministers.",
+      "Birds fly in the sky.",
+      "The virtuous man comes out of the sea together with the sailor.",
+      "Deities are pleased with the Buddha's disciples.",
+      "Merchants cross the sea together with sailors.",
+      "The good man protects the dog from the serpent.",
+      "Crows fly from trees in the mountain.",
+      "The pig pulls a fish from the fisherman's basket.",
+      "The light of the sun falls on the men in the world.",
+      "Deities go through the sky.",
+      "Children play with the dog on the road.",
+      "The wicked man drags a monkey from the tree.",
+      "The king's messenger gets down from the horse."
+    ]
+  }
+}
