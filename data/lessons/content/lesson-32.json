@@ -12,318 +12,83 @@
       {
         "title": "Masculine gender, singular number",
         "rows": [
-          [
-            "Case",
-            "Relative",
-            "Demonstrative",
-            "Interrogative"
-          ],
-          [
-            "Nom.",
-            "yo (= he who)",
-            "so (= he, that)",
-            "ko (= who)"
-          ],
-          [
-            "Acc.",
-            "yaṃ",
-            "taṃ",
-            "kaṃ"
-          ],
-          [
-            "Ins.",
-            "yena",
-            "tena",
-            "kena"
-          ],
-          [
-            "Abl.",
-            "yamhā, yasmā",
-            "tamhā, tasmā",
-            "kasmā, kismā"
-          ],
-          [
-            "Dat.",
-            "yassa",
-            "tassa",
-            "kassa, kissa"
-          ],
-          [
-            "Gen.",
-            "yassa",
-            "tassa",
-            "kassa, kissa"
-          ],
-          [
-            "Loc.",
-            "yamhi, yasmiṃ",
-            "tamhi, tasmiṃ",
-            "kamhi, kasmiṃ, kimhi, kismiṃ"
-          ]
+          ["Case", "Relative", "Demonstrative", "Interrogative"],
+          ["Nom.", "yo (= he who)", "so (= he, that)", "ko (= who)"],
+          ["Acc.", "yaṃ", "taṃ", "kaṃ"],
+          ["Ins.", "yena", "tena", "kena"],
+          ["Abl.", "yamhā, yasmā", "tamhā, tasmā", "kasmā, kismā"],
+          ["Dat.", "yassa", "tassa", "kassa, kissa"],
+          ["Gen.", "yassa", "tassa", "kassa, kissa"],
+          ["Loc.", "yamhi, yasmiṃ", "tamhi, tasmiṃ", "kamhi, kasmiṃ, kimhi, kismiṃ"]
         ]
       },
       {
         "title": "Neuter gender, singular number",
         "rows": [
-          [
-            "Case",
-            "Relative",
-            "Demonstrative",
-            "Interrogative"
-          ],
-          [
-            "Nom.",
-            "yaṃ (= that which)",
-            "taṃ (= it, that)",
-            "kim (= which)"
-          ],
-          [
-            "Acc.",
-            "yaṃ",
-            "taṃ",
-            "kim"
-          ]
+          ["Case", "Relative", "Demonstrative", "Interrogative"],
+          ["Nom.", "yaṃ (= that which)", "taṃ (= it, that)", "kim (= which)"],
+          ["Acc.", "yaṃ", "taṃ", "kim"]
         ]
       },
       {
         "title": "Feminine gender, singular number",
         "rows": [
-          [
-            "Case",
-            "Relative",
-            "Demonstrative",
-            "Interrogative"
-          ],
-          [
-            "Nom.",
-            "yā (= she, who)",
-            "sā (= she, that)",
-            "kā (= who)"
-          ],
-          [
-            "Acc.",
-            "yaṃ",
-            "taṃ",
-            "kaṃ"
-          ],
-          [
-            "Ins.",
-            "yāya",
-            "tāya",
-            "kāya"
-          ],
-          [
-            "Abl.",
-            "yāya",
-            "tāya",
-            "kāya"
-          ],
-          [
-            "Dat.",
-            "yassā, yāya",
-            "tassā, tāya",
-            "kassā, kāya"
-          ],
-          [
-            "Gen.",
-            "yassā, yāya",
-            "tassā, tāya",
-            "kassā, kāya"
-          ],
-          [
-            "Loc.",
-            "yassaṃ, yāyaṃ",
-            "tassaṃ, tāyaṃ",
-            "kassaṃ, kāyaṃ"
-          ]
+          ["Case", "Relative", "Demonstrative", "Interrogative"],
+          ["Nom.", "yā (= she, who)", "sā (= she, that)", "kā (= who)"],
+          ["Acc.", "yaṃ", "taṃ", "kaṃ"],
+          ["Ins.", "yāya", "tāya", "kāya"],
+          ["Abl.", "yāya", "tāya", "kāya"],
+          ["Dat.", "yassā, yāya", "tassā, tāya", "kassā, kāya"],
+          ["Gen.", "yassā, yāya", "tassā, tāya", "kassā, kāya"],
+          ["Loc.", "yassaṃ, yāyaṃ", "tassaṃ, tāyaṃ", "kassaṃ, kāyaṃ"]
         ]
       },
       {
         "title": "Masculine gender, plural number",
         "rows": [
-          [
-            "Case",
-            "Relative",
-            "Demonstrative",
-            "Interrogative"
-          ],
-          [
-            "Nom.",
-            "ye (= they, who)",
-            "te (= they, those)",
-            "ke (= who)"
-          ],
-          [
-            "Acc.",
-            "ye",
-            "te",
-            "ke"
-          ],
-          [
-            "Ins.",
-            "yehi",
-            "tehi",
-            "kehi"
-          ],
-          [
-            "Abl.",
-            "yehi",
-            "tehi",
-            "kehi"
-          ],
-          [
-            "Dat.",
-            "yesaṃ (yesānaṃ)",
-            "tesaṃ (tesānaṃ)",
-            "kesaṃ (kesānaṃ)"
-          ],
-          [
-            "Gen.",
-            "yesaṃ (yesānaṃ)",
-            "tesaṃ (tesānaṃ)",
-            "kesaṃ (kesānaṃ)"
-          ],
-          [
-            "Loc.",
-            "yesu",
-            "tesu",
-            "kesu"
-          ]
+          ["Case", "Relative", "Demonstrative", "Interrogative"],
+          ["Nom.", "ye (= they, who)", "te (= they, those)", "ke (= who)"],
+          ["Acc.", "ye", "te", "ke"],
+          ["Ins.", "yehi", "tehi", "kehi"],
+          ["Abl.", "yehi", "tehi", "kehi"],
+          ["Dat.", "yesaṃ (yesānaṃ)", "tesaṃ (tesānaṃ)", "kesaṃ (kesānaṃ)"],
+          ["Gen.", "yesaṃ (yesānaṃ)", "tesaṃ (tesānaṃ)", "kesaṃ (kesānaṃ)"],
+          ["Loc.", "yesu", "tesu", "kesu"]
         ]
       },
       {
         "title": "Neuter gender, plural number",
         "rows": [
-          [
-            "Case",
-            "Relative",
-            "Demonstrative",
-            "Interrogative"
-          ],
-          [
-            "Nom.",
-            "yāni, ye (= those, which)",
-            "tāni, te (= those)",
-            "kāni, ke (= which)"
-          ],
-          [
-            "Acc.",
-            "yāni, ye",
-            "tāni, te",
-            "kāni, ke"
-          ]
+          ["Case", "Relative", "Demonstrative", "Interrogative"],
+          ["Nom.", "yāni, ye (= those, which)", "tāni, te (= those)", "kāni, ke (= which)"],
+          ["Acc.", "yāni, ye", "tāni, te", "kāni, ke"]
         ]
       },
       {
         "title": "Feminine gender, plural number",
         "rows": [
-          [
-            "Case",
-            "Relative",
-            "Demonstrative",
-            "Interrogative"
-          ],
-          [
-            "Nom.",
-            "yā, yāyo (= they, who)",
-            "tā, tāyo (= they, those)",
-            "kā, kāyo (= who)"
-          ],
-          [
-            "Acc.",
-            "yā, yāyo",
-            "tā, tāyo",
-            "kā, kāyo"
-          ],
-          [
-            "Ins.",
-            "yāhi",
-            "tāhi",
-            "kāhi"
-          ],
-          [
-            "Abl.",
-            "yāhi",
-            "tāhi",
-            "kāhi"
-          ],
-          [
-            "Dat.",
-            "yāsaṃ (yāsānaṃ)",
-            "tāsaṃ (tāsānaṃ)",
-            "kāsaṃ (kāsānaṃ)"
-          ],
-          [
-            "Gen.",
-            "yāsaṃ (yāsānaṃ)",
-            "tāsaṃ (tāsānaṃ)",
-            "kāsaṃ (kāsānaṃ)"
-          ],
-          [
-            "Loc.",
-            "yāsu",
-            "tāsu",
-            "kāsu"
-          ]
+          ["Case", "Relative", "Demonstrative", "Interrogative"],
+          ["Nom.", "yā, yāyo (= they, who)", "tā, tāyo (= they, those)", "kā, kāyo (= who)"],
+          ["Acc.", "yā, yāyo", "tā, tāyo", "kā, kāyo"],
+          ["Ins.", "yāhi", "tāhi", "kāhi"],
+          ["Abl.", "yāhi", "tāhi", "kāhi"],
+          ["Dat.", "yāsaṃ (yāsānaṃ)", "tāsaṃ (tāsānaṃ)", "kāsaṃ (kāsānaṃ)"],
+          ["Gen.", "yāsaṃ (yāsānaṃ)", "tāsaṃ (tāsānaṃ)", "kāsaṃ (kāsānaṃ)"],
+          ["Loc.", "yāsu", "tāsu", "kāsu"]
         ]
       },
       {
         "title": "Pronominal Adverbs",
         "rows": [
-          [
-            "Relative",
-            "Demonstrative",
-            "Interrogative",
-            "Meaning"
-          ],
-          [
-            "yattha",
-            "tattha",
-            "kattha",
-            "where / there / where"
-          ],
-          [
-            "yatra",
-            "tatra",
-            "kutra",
-            "where / there / where"
-          ],
-          [
-            "yato",
-            "tato",
-            "kuto",
-            "whence / thence / whence"
-          ],
-          [
-            "yathā",
-            "tathā",
-            "kathaṃ",
-            "how, in what manner / in that manner / how"
-          ],
-          [
-            "yasmā",
-            "tasmā",
-            "kasmā",
-            "because / therefore / why"
-          ],
-          [
-            "yadā",
-            "tadā",
-            "kadā",
-            "when / then / when"
-          ],
-          [
-            "yena",
-            "tena",
-            "",
-            "where / there"
-          ],
-          [
-            "yāva",
-            "tāva",
-            "",
-            "how long / so long"
-          ]
+          ["Relative", "Demonstrative", "Interrogative", "Meaning"],
+          ["yattha", "tattha", "kattha", "where / there / where"],
+          ["yatra", "tatra", "kutra", "where / there / where"],
+          ["yato", "tato", "kuto", "whence / thence / whence"],
+          ["yathā", "tathā", "kathaṃ", "how, in what manner / in that manner / how"],
+          ["yasmā", "tasmā", "kasmā", "because / therefore / why"],
+          ["yadā", "tadā", "kadā", "when / then / when"],
+          ["yena", "tena", "", "where / there"],
+          ["yāva", "tāva", "", "how long / so long"]
         ]
       }
     ],

@@ -11,18 +11,9 @@
       {
         "title": "Future Passive Participle Formation",
         "rows": [
-          [
-            "pacati",
-            "pacitabba / pacanīya"
-          ],
-          [
-            "bhuñjati",
-            "bhuñjitabba / bhojanīya"
-          ],
-          [
-            "karoti",
-            "kātabba / karaṇīya"
-          ]
+          ["pacati", "pacitabba / pacanīya"],
+          ["bhuñjati", "bhuñjitabba / bhojanīya"],
+          ["karoti", "kātabba / karaṇīya"]
         ]
       }
     ],

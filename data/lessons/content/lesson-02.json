@@ -13,35 +13,17 @@
       {
         "title": "Accusative case - Singular",
         "rows": [
-          [
-            "nara + ṃ",
-            "naraṃ"
-          ],
-          [
-            "mātula + ṃ",
-            "mātulaṃ"
-          ],
-          [
-            "kassaka + ṃ",
-            "kassakaṃ"
-          ]
+          ["nara + ṃ", "naraṃ"],
+          ["mātula + ṃ", "mātulaṃ"],
+          ["kassaka + ṃ", "kassakaṃ"]
         ]
       },
       {
         "title": "Accusative case - Plural",
         "rows": [
-          [
-            "nara + e",
-            "nare"
-          ],
-          [
-            "mātula + e",
-            "mātule"
-          ],
-          [
-            "kassaka + e",
-            "kassake"
-          ]
+          ["nara + e", "nare"],
+          ["mātula + e", "mātule"],
+          ["kassaka + e", "kassake"]
         ]
       }
     ],

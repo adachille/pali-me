@@ -11,101 +11,33 @@
       {
         "title": "Vocative case of masculine nouns ending in -a",
         "rows": [
-          [
-            "",
-            "Singular",
-            "Plural"
-          ],
-          [
-            "nara",
-            "nara (O man)",
-            "narā (O men)"
-          ],
-          [
-            "mātula",
-            "mātula (O uncle)",
-            "mātulā (O uncles)"
-          ],
-          [
-            "kassaka",
-            "kassaka (O farmer)",
-            "kassakā (O farmers)"
-          ]
+          ["", "Singular", "Plural"],
+          ["nara", "nara (O man)", "narā (O men)"],
+          ["mātula", "mātula (O uncle)", "mātulā (O uncles)"],
+          ["kassaka", "kassaka (O farmer)", "kassakā (O farmers)"]
         ]
       },
       {
         "title": "Full paradigm: Nara (man) - masculine noun ending in -a",
         "rows": [
-          [
-            "Case",
-            "Singular",
-            "Plural"
-          ],
-          [
-            "Nom.",
-            "naro",
-            "narā"
-          ],
-          [
-            "Acc.",
-            "naraṃ",
-            "nare"
-          ],
-          [
-            "Ins.",
-            "narena",
-            "narehi (narebhi)"
-          ],
-          [
-            "Abl.",
-            "narā, naramhā, narasmā",
-            "narehi (narebhi)"
-          ],
-          [
-            "Dat.",
-            "narāya, narassa",
-            "narānaṃ"
-          ],
-          [
-            "Gen.",
-            "narassa",
-            "narānaṃ"
-          ],
-          [
-            "Loc.",
-            "nare, naramhi, narasmiṃ",
-            "naresu"
-          ],
-          [
-            "Voc.",
-            "nara",
-            "narā"
-          ]
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "naro", "narā"],
+          ["Acc.", "naraṃ", "nare"],
+          ["Ins.", "narena", "narehi (narebhi)"],
+          ["Abl.", "narā, naramhā, narasmā", "narehi (narebhi)"],
+          ["Dat.", "narāya, narassa", "narānaṃ"],
+          ["Gen.", "narassa", "narānaṃ"],
+          ["Loc.", "nare, naramhi, narasmiṃ", "naresu"],
+          ["Voc.", "nara", "narā"]
         ]
       },
       {
         "title": "Full paradigm: Phala (fruit) - neuter noun ending in -a",
         "rows": [
-          [
-            "Case",
-            "Singular",
-            "Plural"
-          ],
-          [
-            "Nom.",
-            "phalaṃ",
-            "phalā, phalāni"
-          ],
-          [
-            "Acc.",
-            "phalaṃ",
-            "phale, phalāni"
-          ],
-          [
-            "Voc.",
-            "phala",
-            "phalāni"
-          ]
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "phalaṃ", "phalā, phalāni"],
+          ["Acc.", "phalaṃ", "phale, phalāni"],
+          ["Voc.", "phala", "phalāni"]
         ]
       }
     ],

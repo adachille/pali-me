@@ -13,51 +13,15 @@
       {
         "title": "Declension of dhenu (cow) - Feminine noun ending in -u",
         "rows": [
-          [
-            "Case",
-            "Singular",
-            "Plural"
-          ],
-          [
-            "Nom.",
-            "dhenu",
-            "dhenū, dhenuyo"
-          ],
-          [
-            "Voc.",
-            "dhenu",
-            "dhenū, dhenuyo"
-          ],
-          [
-            "Acc.",
-            "dhenuṃ",
-            "dhenū, dhenuyo"
-          ],
-          [
-            "Ins.",
-            "dhenuyā",
-            "dhenūhi, (dhenūbhi)"
-          ],
-          [
-            "Abl.",
-            "dhenuyā",
-            "dhenūhi, (dhenūbhi)"
-          ],
-          [
-            "Dat.",
-            "dhenuyā",
-            "dhenūnaṃ"
-          ],
-          [
-            "Gen.",
-            "dhenuyā",
-            "dhenūnaṃ"
-          ],
-          [
-            "Loc.",
-            "dhenuyā, dhenuyaṃ",
-            "dhenūsu"
-          ]
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "dhenu", "dhenū, dhenuyo"],
+          ["Voc.", "dhenu", "dhenū, dhenuyo"],
+          ["Acc.", "dhenuṃ", "dhenū, dhenuyo"],
+          ["Ins.", "dhenuyā", "dhenūhi, (dhenūbhi)"],
+          ["Abl.", "dhenuyā", "dhenūhi, (dhenūbhi)"],
+          ["Dat.", "dhenuyā", "dhenūnaṃ"],
+          ["Gen.", "dhenuyā", "dhenūnaṃ"],
+          ["Loc.", "dhenuyā, dhenuyaṃ", "dhenūsu"]
         ]
       }
     ],

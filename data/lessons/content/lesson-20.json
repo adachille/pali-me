@@ -12,63 +12,24 @@
       {
         "title": "Declension of bhūmi (f.) - Singular",
         "rows": [
-          [
-            "Nom.",
-            "bhūmi"
-          ],
-          [
-            "Voc.",
-            "bhūmi"
-          ],
-          [
-            "Acc.",
-            "bhūmiṃ"
-          ],
-          [
-            "Ins.",
-            "bhūmiyā"
-          ],
-          [
-            "Abl.",
-            "bhūmiyā"
-          ],
-          [
-            "Dat.",
-            "bhūmiyā"
-          ],
-          [
-            "Gen.",
-            "bhūmiyā"
-          ],
-          [
-            "Loc.",
-            "bhūmiyā, bhūmiyaṃ"
-          ]
+          ["Nom.", "bhūmi"],
+          ["Voc.", "bhūmi"],
+          ["Acc.", "bhūmiṃ"],
+          ["Ins.", "bhūmiyā"],
+          ["Abl.", "bhūmiyā"],
+          ["Dat.", "bhūmiyā"],
+          ["Gen.", "bhūmiyā"],
+          ["Loc.", "bhūmiyā, bhūmiyaṃ"]
         ]
       },
       {
         "title": "Declension of bhūmi (f.) - Plural",
         "rows": [
-          [
-            "Nom.",
-            "bhūmī, bhūmiyo"
-          ],
-          [
-            "Voc.",
-            "bhūmī, bhūmiyo"
-          ],
-          [
-            "Ins.",
-            "bhūmīhi, (bhūmībhi)"
-          ],
-          [
-            "Dat./Gen.",
-            "bhūmīnaṃ"
-          ],
-          [
-            "Loc.",
-            "bhūmīsu"
-          ]
+          ["Nom.", "bhūmī, bhūmiyo"],
+          ["Voc.", "bhūmī, bhūmiyo"],
+          ["Ins.", "bhūmīhi, (bhūmībhi)"],
+          ["Dat./Gen.", "bhūmīnaṃ"],
+          ["Loc.", "bhūmīsu"]
         ]
       }
     ],

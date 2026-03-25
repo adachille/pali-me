@@ -11,75 +11,27 @@
       {
         "title": "Declension of pakkhī (bird) - Singular",
         "rows": [
-          [
-            "Nom.",
-            "pakkhī"
-          ],
-          [
-            "Voc.",
-            "pakkhī"
-          ],
-          [
-            "Acc.",
-            "pakkhinaṃ / pakkhiṃ"
-          ],
-          [
-            "Ins.",
-            "pakkhinā"
-          ],
-          [
-            "Abl.",
-            "pakkhinā / pakkhimhā / pakkhismā"
-          ],
-          [
-            "Dat.",
-            "pakkhino / pakkhissa"
-          ],
-          [
-            "Gen.",
-            "pakkhino / pakkhissa"
-          ],
-          [
-            "Loc.",
-            "pakkhini / pakkhimhi / pakkhismiṃ"
-          ]
+          ["Nom.", "pakkhī"],
+          ["Voc.", "pakkhī"],
+          ["Acc.", "pakkhinaṃ / pakkhiṃ"],
+          ["Ins.", "pakkhinā"],
+          ["Abl.", "pakkhinā / pakkhimhā / pakkhismā"],
+          ["Dat.", "pakkhino / pakkhissa"],
+          ["Gen.", "pakkhino / pakkhissa"],
+          ["Loc.", "pakkhini / pakkhimhi / pakkhismiṃ"]
         ]
       },
       {
         "title": "Declension of pakkhī (bird) - Plural",
         "rows": [
-          [
-            "Nom.",
-            "pakkhī / pakkhino"
-          ],
-          [
-            "Voc.",
-            "pakkhī / pakkhino"
-          ],
-          [
-            "Acc.",
-            "pakkhī / pakkhino"
-          ],
-          [
-            "Ins.",
-            "pakkhīhi (pakkhībhi)"
-          ],
-          [
-            "Abl.",
-            "pakkhīhi (pakkhībhi)"
-          ],
-          [
-            "Dat.",
-            "pakkhīnaṃ"
-          ],
-          [
-            "Gen.",
-            "pakkhīnaṃ"
-          ],
-          [
-            "Loc.",
-            "pakkhīsu"
-          ]
+          ["Nom.", "pakkhī / pakkhino"],
+          ["Voc.", "pakkhī / pakkhino"],
+          ["Acc.", "pakkhī / pakkhino"],
+          ["Ins.", "pakkhīhi (pakkhībhi)"],
+          ["Abl.", "pakkhīhi (pakkhībhi)"],
+          ["Dat.", "pakkhīnaṃ"],
+          ["Gen.", "pakkhīnaṃ"],
+          ["Loc.", "pakkhīsu"]
         ]
       }
     ],

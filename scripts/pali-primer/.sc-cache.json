@@ -1,0 +1,907 @@
+{
+  "buddha": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "buddha",
+      "grammar": "masculine",
+      "definition": "one who has attained enlightenment; the Enlightened One",
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "buddha",
+      "grammar": null,
+      "definition": [
+        "buddha 1: masc. <b>Buddha; Awakened One</b> [√budh + ta]",
+        "buddha 2: pp. <b>awakened; woke up; understood</b> [√budh + ta]"
+      ],
+      "xr": null,
+      "dictname": "dpd",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "buddha",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='buddha'><dt><dfn>Buddha</dfn><sup>1</sup></dt><dd id='Buddha-1'><p><span class='grammar'>adjective</span></p><ol type='a' class='lower-latin'><li>understood <a class='ref' href='https://suttacentral.net/sn1.49/en/sujato#9.1'>SN.i.35</a> = <a class='ref' href='https://suttacentral.net/sn2.24/en/sujato#1.1'>SN.i.60</a> (su-dub-buddha very difficult to understand)</li><li>having attained enlightenment, wise <a class='ref' href='https://suttacentral.net/an9.42/en/sujato#1.1'>AN.iv.449</a>; <span class='ref'>Pv-a.16</span> (buddh’ ādayo), <span class='ref'>Pv-a.60</span> (= ariya). Usually applied to the Bhagavant (Gotama) <a class='ref' href='https://suttacentral.net/mn56/en/sujato#28.1'>MN.i.386</a> (one of the adj. describing Gotama to Nigaṇṭha Nāthaputta); <a class='ref' href='https://suttacentral.net/snp5.1/en/sujato#18.1'>Snp verse 993</a>. The true brāhmaṇa is buddha, e.g. <a class='ref' href='https://suttacentral.net/snp3.9/en/sujato#34.1'>Snp verse 622</a>, <a class='ref' href='https://suttacentral.net/snp3.9/en/sujato#55.1'>Snp verse 643</a>, <a class='ref' href='https://suttacentral.net/snp3.9/en/sujato#58.1'>Snp verse 646</a>.</li></ol><p class='eti'>med- pass. pp. of bujjhati, cp. Epic Sk. buddha</p></dd><dt><dfn>Buddha</dfn><sup>2</sup></dt><dd id='Buddha-2'><ol type='A' class='upper-latin'><li>one who has attained enlightenment; a man superior to all other beings, human divine, by his knowledge of the truth, a Buddha. At <a class='ref' href='https://suttacentral.net/an4.36/en/sujato#1.1'>AN.ii.38</a> the Buddha declares himself to be neither a god (deva) nor a Gandharva, nor a Yakṣa nor a man. The word Buddha is an appellative, not a proper name (na mātarā kataṁ etc., vimokkh’ antikaṁ etaṁ buddhānaṁ Bhagavantānaṁ bodhiyā mūle… paññatti <a class='ref' href='https://suttacentral.net/mnd16/pli/ms#55.1'>Mnd.458</a> & Ps; i.174<br><span class='square'>■</span> There are 2 sorts of B’s, viz <i class='term'>Pacceka-buddhas</i> or Buddhas who attain to complete enlightenment, but do not preach the way of deliverance to the world, and <i class='term'>Sammāsambuddhas</i>, who are omniscient and endowed with the 10 powers (see <i class='term'><a href='/define/bala'>bala</a></i>) and whose mission is to proclaim the saving truth to all beings (cp. <a class='ref' href='https://suttacentral.net/mil5.1.2/pli/ms#8.1'>Mil.106</a>). In this function the B’s are <i class='term'>Satthāro</i> or teachers, Masters. In his rôle of a preeminent man a Buddha is styled <i class='term'>Bhagavā</i> or Lord Buddho so Bhagavā <a class='ref' href='https://suttacentral.net/mn35/en/sujato#24.3'>MN.i.235</a>; <a class='ref' href='https://suttacentral.net/pv21/pli/ms#60.1'>Pv.21:60</a> = <span class='ref'>Dhp-a.iii.219</span>-Besides the 18 dhammā and the 10 balāni they are gifted with the 4 vesārajjāni (<a class='ref' href='https://suttacentral.net/an4.8/en/sujato#1.1'>AN.ii.9</a>, cp. <a class='ref' href='https://suttacentral.net/mil5.1.2/pli/ms#8.1'>Mil.106</a>) These teachers appear upon the earth from time to time; the approach of the birth of a B. (buddh’-uppāda) is hailed by the acclamation of the worlds, they live the houseless life and found an Order (Buddha-pamukha bhikkhu-sangha <a class='ref' href='https://suttacentral.net/snp3.7/en/sujato#33.1'>Snp.p.111</a>; <a class='ref' href='https://suttacentral.net/snp1.4/en/sujato#11.1'>Snp verse 81</a>, <a class='ref' href='https://suttacentral.net/snp2.14/en/sujato#12.1'>Snp verse 386</a>; <a class='ref' href='https://suttacentral.net/mil5.5.1/pli/ms#4.1'>Mil.212</a>; <span class='ref'>DN-a.i.242</span>; <span class='ref'>Pv-a.19</span>). The news that a B. has appeared upon earth is a cause of the greatest rejoicing: opportunity to see him is eagerly sought (<a class='ref' href='https://suttacentral.net/pli-tv-kd16/en/brahmali#4.1.10'>Vin.ii.155</a>; <a class='ref' href='https://suttacentral.net/sn10.7/en/sujato#1.1'>SN.i.210</a>; <span class='ref'>DN-a.i.248</span>). The B. is always born in a brāhmaṇa or khattiya family. It is impossible here to give all the references for the Buddhas or Buddhahood in general see e.g. <a class='ref' href='https://suttacentral.net/pli-tv-bu-vb-pj1/en/brahmali#8.1.2'>Vin.iii.24</a> sq.; <a class='ref' href='https://suttacentral.net/dhp182/en/sujato#1'>Dhp.182</a> sq., <a class='ref' href='https://suttacentral.net/dhp194/en/sujato#1'>Dhp.194</a>, <a class='ref' href='https://suttacentral.net/dhp195/en/sujato#1'>Dhp.195</a> (= sammā sambuddhā <span class='ref'>Dhp-a.iii.252</span>), <a class='ref' href='https://suttacentral.net/dhp387/en/sujato#1'>Dhp.387</a>; <span class='ref'>Ja.i.51</span>; <a class='ref' href='https://suttacentral.net/ja339/pli/ms#1.1'>Ja.iii.128</a>; <span class='ref'>Vism.442</span> (pubba-buddhā); <span class='ref'>Pv-a.20</span><br><span class='square'>■</span> The remembrance of former births a B. shares with other classes of privileged beings, only in a different (higher) degree. This faculty (in an ascending scale) is possessed by the foll. 6 classes titthiyā, pakati-sāvakā, mahā-sāvaka, agga-sāvakā pacceka-buddhā, buddhā (see <span class='ref'>Vism.411</span>)</li><li>The word Buddha is specially applied to the Buddha of the present world-age, Gotama by family-name. He is said to be the 25<sup>th</sup> of the series of former Buddhas (pubbā buddhā) <a class='ref' href='https://suttacentral.net/sn4.10/en/sujato#4.1'>SN.i.109</a>, <a class='ref' href='https://suttacentral.net/sn6.2/en/sujato#7.1'>SN.i.140</a>; <a class='ref' href='https://suttacentral.net/sn35.81/en/sujato#2.1'>SN.iv.52</a><br><span class='square'>■</span> <i>Seven</i> Buddhas are mentioned in the earlier texts & frequently referred to (cp. the 7 Rishis of the Vedic period, see also under satta, No. 7). They are Vipassī, Sikhī, Vessabhū Kakusandha, Konāgamana, Kassapa and Gotama (<a class='ref' href='https://suttacentral.net/dn14/en/sujato#1.9.1'>DN.ii.5</a>–⁠<a class='ref' href='https://suttacentral.net/dn14/en/sujato#1.12.1'>DN.ii.7</a>; <a class='ref' href='https://suttacentral.net/sn12.3/en/sujato#3.1'>SN.ii.5</a>–<a class='ref' href='https://suttacentral.net/sn12.10/en/sujato#6.1'>SN.ii.11</a>; cp. <a class='ref' href='https://suttacentral.net/thag7.5/en/sujato#5.1'>Thag.491</a>; <a class='ref' href='https://suttacentral.net/ja203/pli/ms#6.1'>Ja.ii.147</a>). They are also mentioned in an old formula against snake-bites (<a class='ref' href='https://suttacentral.net/pli-tv-kd15/en/brahmali#6.1.9'>Vin.ii.110</a>). The (allegorical) names of the predecessors of these in former ages are Dīpankara, Kondañña, Mangala Sumana, Revata, Sobhita, Anomadassī, Paduma Narada, Padumuttara, Sumedha, Sujāta, Piyadassī Atthadassī, Dhammadassī, Siddhattha, Tissa, Phussa. The typical career of a Buddha is illustrated in the life of Gotama and the legends connected with his birth, as they appear in later tradition. Before his last existence he practised the 10 perfections (pāramitā q.v.) for many ages, & finally descended from the Tusita Heaven (see Buddhavaṁsa). He was born in a khattiya family and was distinguished by the 32 signs of a great man (Mahāpurisa-lakkhaṇāni see <a class='ref' href='https://suttacentral.net/dn14/en/sujato#1.32.1'>DN.ii.17</a> sq and similar passages; cp. <a class='ref' href='https://suttacentral.net/ud5.2/en/sujato#1.1'>Ud.48</a>). His mother Māyā bore him painlessly and died seven days after his birth <a class='ref' href='https://suttacentral.net/mn122/en/sujato#26.6'>MN.iii.118</a> sq<br><span class='square'>■</span> The story of each of the 25 Buddhas is given in the Buddhavaṁsa, quoted in the introductory chapters of the Jātak’ aṭṭhakathā<br><span class='square'>■</span> Convinced that asceticism was not the way to enlightenment, he renounced austerities. He became enlightened when seated in meditation under an Assattha tree (Ficus religiosa, hence called Bodhi or Bo tree). At the supreme moment he was tempted by Māra, but vanquished the evil one. He was then ready to depart but resolved to remain in the world and preach the truth (<a class='ref' href='https://suttacentral.net/mn26/en/sujato#20.20'>MN.i.169</a>; <a class='ref' href='https://suttacentral.net/pli-tv-kd1/en/brahmali#5.7.10'>Vin.i.6</a>; a rather diff. account <a class='ref' href='https://suttacentral.net/an4.21/en/sujato#1.1'>AN.ii.20</a>) That day he knew and proclaimed himself to be the Buddha and his career as a teacher began (<a class='ref' href='https://suttacentral.net/mn26/en/sujato#25.1'>MN.i.171</a>; <a class='ref' href='https://suttacentral.net/pli-tv-kd1/en/brahmali#6.10.4'>Vin.i.9</a>; <a class='ref' href='https://suttacentral.net/snp3.7/en/sujato#23.1'>Snp verse 558</a>)<br><span class='square'>■</span> Like all the other Sammā-sambuddhas he founded an Order, converting and gladdening men by his discourses. After a long life of teaching he attained Nibbāna (nibbānaṁ adhigacchi), and passed utterly away: <a class='ref' href='https://suttacentral.net/sn10.7/en/sujato#1.1'>SN.i.210</a>; <a class='ref' href='https://suttacentral.net/dn16/en/sujato#6.7.1'>DN.ii.156</a>; <a class='ref' href='https://suttacentral.net/snp1.5/en/sujato#1.1'>Snp verse 83</a>, <a class='ref' href='https://suttacentral.net/snp3.6/en/sujato#12.1'>Snp verse 513</a> <a class='ref' href='https://suttacentral.net/snp5.19/en/sujato#3.1'>Snp verse 1133</a> sq.; <a class='ref' href='https://suttacentral.net/mil5.1.1/pli/ms#4.1'>Mil.96</a><br><span class='square'>■</span> The <i>Epithets</i> attributed to all the Buddhas are naturally assigned also to Gotama Buddha Out of the almost endless series of these we only give a few. He is adored as the highest and holiest of men (<a class='ref' href='https://suttacentral.net/sn2.3/en/sujato#1.1'>SN.i.47</a>; <a class='ref' href='https://suttacentral.net/sn22.76/en/sujato#10.1'>SN.iii.84</a>; loke anuttaro, lokassa aggo; <a class='ref' href='https://suttacentral.net/mil3.4.10/pli/ms#1.1'>Mil.70</a>) He is the supremely wise, the conqueror of the powers of darkness, the teacher of gods (devas and yakkhas and men <a class='ref' href='https://suttacentral.net/sn2.8/en/sujato#10.1'>SN.i.50</a>, <a class='ref' href='https://suttacentral.net/sn5.5/en/sujato#3.1'>SN.i.132</a>, <a class='ref' href='https://suttacentral.net/sn10.1/en/sujato#1.1'>SN.i.206</a>. <span class='ref'>SN.i.301</span>; <a class='ref' href='https://suttacentral.net/an3.36/en/sujato#17.1'>AN.i.142</a>; <a class='ref' href='https://suttacentral.net/an4.33/en/sujato#1.1'>AN.ii.33</a>; <a class='ref' href='https://suttacentral.net/an5.52/en/sujato#1.1'>AN.iii.65</a>; <a class='ref' href='https://suttacentral.net/snp1.9/en/sujato#5.1'>Snp verse 157</a> sq. He is the <i class='term'>ādicca-bandhu</i> kinsman of the sun <a class='ref' href='https://suttacentral.net/sn8.1/en/sujato#5.1'>SN.i.186</a>; and compared to a universal monarch (rājā cakkavattī) <a class='ref' href='https://suttacentral.net/an2.51/en/sujato#1.1'>AN.i.76</a>; <a class='ref' href='https://suttacentral.net/an5.133/en/sujato#3.1'>AN.iii.150</a> and to the lion (sīha) the king of the animals <a class='ref' href='https://suttacentral.net/an5.99/en/sujato#1.1'>AN.iii.122</a>. He is <i class='term'>buddha-vīra</i> <a class='ref' href='https://suttacentral.net/thag1.47/en/sujato#1.1'>Thag.47</a>; the refuge of all beings <span class='ref'>MN.ii.305</span>; <span class='ref'>DN-a.i.233</span>; <a class='ref' href='https://suttacentral.net/mil4.6/pli/ms#1.1'>Mil.95</a>; further <i class='term'><a href='/define/appaṭipuggala'>appaṭipuggala</a></i> <a class='ref' href='https://suttacentral.net/sn5.8/en/sujato#4.1'>SN.i.134</a>; his teaching leads to enlightenment, to self-conquest, to security deliverance <a class='ref' href='https://suttacentral.net/mn35/en/sujato#24.3'>MN.i.235</a>; <a class='ref' href='https://suttacentral.net/snp3.3/en/sujato#8.1'>Snp verse 454</a>, <a class='ref' href='https://suttacentral.net/snp5.1/en/sujato#18.1'>Snp verse 993</a>; <span class='ref'>DN-a.i.230</span>. He himself is not to be reborn (antima-sarīro with his last body) <a class='ref' href='https://suttacentral.net/sn10.7/en/sujato#1.1'>SN.i.210</a>; he is vimutto, freed & has come to the end of sorrow <a class='ref' href='https://suttacentral.net/an8.43/en/sujato#8.1'>AN.iv.258</a>; <a class='ref' href='https://suttacentral.net/sn22.57/en/sujato#17.1'>SN.iii.65</a>; full of compassion for all beings <a class='ref' href='https://suttacentral.net/sn1.35/en/sujato#10.1'>SN.i.25</a>, <a class='ref' href='https://suttacentral.net/sn2.10/en/sujato#1.1'>SN.i.51</a>; <a class='ref' href='https://suttacentral.net/mn86/en/sujato#6.10'>MN.ii.100</a>; he is <i class='term'>bhisakko</i> the physician <a class='ref' href='https://suttacentral.net/an8.85/en/sujato#1.1'>AN.iv.340</a>; <i class='term'>magga-ññu</i>, magga-vidū, maggakovido <a class='ref' href='https://suttacentral.net/sn22.58/en/sujato#3.1'>SN.iii.66</a><br><span class='square'>■</span> Under Buddh’ anussati (<span class='ref'>Vism.198</span> sq. we find the <i>famous formula</i> Bhagavā Arahaṁ Sammāsambuddho vijjā-caraṇa-sampanno sugato lokavidū anuttaro purisa-damma-sārathi Satthā devamanussānaṁ buddho Bhagavā (<a class='ref' href='https://suttacentral.net/dn2/en/sujato#7.1'>DN.i.49</a>≈), analysed & exegetically discussed. Here (p. 209) “Buddha” is explained with the formula as found at <a class='ref' href='https://suttacentral.net/ps1.3/pli/ms#55.1'>Ps.i.174</a>; <a class='ref' href='https://suttacentral.net/mnd16/pli/ms#50.1'>Mnd.457</a>. More explicitly with var. Epithets at the latter passage. This formula is one of the highest & most comprehensive characterisations of a Buddha, & occurs frequently in the Canon e.g. <a class='ref' href='https://suttacentral.net/mn27/en/sujato#11.1'>MN.i.179</a>; <a class='ref' href='https://suttacentral.net/sn12.41/en/sujato#5.1'>SN.ii.69</a>; <a class='ref' href='https://suttacentral.net/sn55.1/en/sujato#2.1'>SN.v.343</a><br><span class='square'>■</span> A <i>khattiya</i> by birth he is called a <i class='term'><a href='/define/brāhmaṇa'>brāhmaṇa</a></i> because he carries on the sacred tradition, and because he excels in wisdom, self-control and virtue <a class='ref' href='https://suttacentral.net/mil5.5.8/pli/ms#1.1'>Mil.225</a>.</li></ol><p><i class='term'>-ānubuddha</i> enlightened after the Enlightened one <a class='ref' href='https://suttacentral.net/thag15.1/en/sujato#7.1'>Thag.679</a>, <a class='ref' href='https://suttacentral.net/thag21.1/en/sujato#38.1'>Thag.1246</a> (trsl<sup>d</sup> “who next to our Great Waked one was awoke”). <i class='term'>-<a href='/define/ānubhāva'>ānubhāva</a></i> the majestic power of the B. <span class='ref'>Pv-a.38</span>, <span class='ref'>Pv-a.171</span>. <i class='term'>-ānussati</i> mindfulness of the B., one of the 6 anussatis (B.˚, dhamma˚, sangha˚, sīla˚ cāga˚, devatā˚) <a class='ref' href='https://suttacentral.net/dn33/en/sujato#2.2.105'>DN.iii.250</a>, <a class='ref' href='https://suttacentral.net/dn34/en/sujato#1.7.2'>DN.iii.280</a>; <span class='ref'>Vism.132</span> (where followed by upasamânussati and 4 other qualities making up the pīti-sambojjh’anga; see <i class='term'><a href='/define/anussati'>anussati</a></i>), <span class='ref'>Vism.197</span> sq. (the 10, as mentioned under anussati). <i class='term'>-<a href='/define/aṅkura'>aṅkura</a></i> a nascent (lit sprouting) Buddha, one who is destined to be a B <span class='ref'>Dhp-a.i.83</span>. <i class='term'>-<a href='/define/antara'>antara</a></i> a Buddha-interval, the period between the appearance of one Buddha & the next <a class='ref' href='https://suttacentral.net/mil2/pli/ms#1.1'>Mil.3</a>; <span class='ref'>Dhp-a.i.201</span> (the 4 last ones); <span class='ref'>Dhp-a.iv.201</span>; <span class='ref'>Pv-a.10</span>, <span class='ref'>Pv-a.14</span> <span class='ref'>Pv-a.21</span>, <span class='ref'>Pv-a.47</span>, <span class='ref'>Pv-a.191</span>. <i class='term'>-<a href='/define/ārammaṇa'>ārammaṇa</a></i> having its foundation or cause in the B., in <i>˚pīti</i> joy, caused by contemplation of a B <a class='ref' href='https://suttacentral.net/ja414/pli/ms#7.1'>Ja.iii.405</a>; <span class='ref'>Vism.143</span> (here as ubbegā-pīti). <i class='term'>-ūpaṭṭhāna</i> B<br><span class='square'>■</span> worship <span class='ref'>Dhp-a.i.101</span>; <span class='ref'>Pv-a.93</span>. <i class='term'>-<a href='/define/uppāda'>uppāda</a></i> the coming into existence of a Buddha, time or age in which a B was born (opp. buddh’ antara), a Buddha-period <span class='ref'>Ja.i.59</span> <span class='ref'>Mhbv.12</span>; <span class='ref'>Vb-a.50</span>; <span class='ref'>Thag-a.28</span>. <i class='term'>-<a href='/define/kara'>kara</a></i> making a B. bringing about Buddhahood <span class='ref'>Ja.i.20</span>. <i class='term'>-<a href='/define/kāraka'>kāraka</a></i> = ˚kara <span class='ref'>Mhbv.9</span>. <i class='term'>-<a href='/define/kāla'>kāla</a></i> the time of a B. <span class='ref'>Vism.91</span> (Buddhakālo viya pavattati it is like the time of the B.) <i class='term'>-<a href='/define/kula'>kula</a></i> Buddha-clan <span class='ref'>Snp-a.532</span> (B<br><span class='square'>■</span> pitā, ˚mātā ibid.). <i class='term'>-<a href='/define/kolāhala'>kolāhala</a></i> the announcement of a Buddha, one of the 5 kolāhalas (q.v.) <span class='ref'>Kp-a.121</span>, cp. <span class='ref'>Ja.i.48</span>. <i class='term'>-<a href='/define/khetta'>khetta</a></i> field or region of (or for the existence of) a Buddha <span class='ref'>Vism.414</span> (divided into 3 spheres: jātikkhetta, āṇākkhetta visayakkhetta, see <i class='term'><a href='/define/khetta'>khetta</a></i>). <i class='term'>-<a href='/define/gata'>gata</a></i> directed or referring to the B. <a class='ref' href='https://suttacentral.net/sn10.8/en/sujato#1.1'>SN.i.211</a> (sati); <a class='ref' href='https://suttacentral.net/dhp296/en/sujato#1'>Dhp.296</a>. <i class='term'>-<a href='/define/guṇa'>guṇa</a></i> quality of a B., virtue, character of a Buddha <span class='ref'>Ja.i.27</span>; <a class='ref' href='https://suttacentral.net/ja203/pli/ms#6.1'>Ja.ii.147</a> <span class='ref'>Bv.ii.177</span>; <span class='ref'>Mbhv.80</span>; <span class='ref'>Kp-a.121</span> (cp. App.). <i class='term'>-<a href='/define/cakkhu'>cakkhu</a></i> the eye of a Buddha, i.e. an eye (or the faculty) of complete intuition <a class='ref' href='https://suttacentral.net/pli-tv-kd1/en/brahmali#5.7.10'>Vin.i.6</a>; <span class='ref'>Thag-a.2</span>; see discussed in detail at <a class='ref' href='https://suttacentral.net/mnd14/pli/ms#64.1'>Mnd.359</a> = <span class='ref'>Cnd.235#4</span>; cp. cakkhu. <i class='term'>-<a href='/define/ñāṇa'>ñāṇa</a></i> knowledge of a B., which is boundless (cp. Saddh. 73 <i>J.P.T.S.</i> 1887, 40) <span class='ref'>Bv.i.64</span> (appameyya); x.5 (cuddasa) <i class='term'>-<a href='/define/dhamma'>dhamma</a></i> Buddhahood <a class='ref' href='https://suttacentral.net/mil6.3.1/pli/ms#9.1'>Mil.276</a>; pl. condition or attributes of a B. <span class='ref'>Ja.i.20</span>; referred to as 6 at <a class='ref' href='https://suttacentral.net/mnd7/pli/ms#16.1'>Mnd.143</a> <span class='ref'>Cnd.466</span> (bhāgī channaṁ ˚ānan ti Bhagavā), as 18 at <a class='ref' href='https://suttacentral.net/mil5.1.2/pli/ms#7.1'>Mil.105</a>, <a class='ref' href='https://suttacentral.net/mil6.3.2/pli/ms#2.1'>Mil.285</a>. Kern (<i>Manual & Grundriss;</i> iii.8, p. 63 gives (after <span class='ref'>Lal.183</span>, <span class='ref'>Lal.343</span>) the foll. 18 āveṇikadharmas (“extraordinary qualities”) as such: <span class='inline-li'>1</span> seeing all things past, <span class='inline-li'>2</span> present, <span class='inline-li'>3</span> future, <span class='inline-li'>4</span> propriety of actions of the body, <span class='inline-li'>5</span> of speech, <span class='inline-li'>6</span> of thought, <span class='inline-li'>7</span> firmness of intuition, <span class='inline-li'>8</span> of memory, <span class='inline-li'>9</span> of samādhi <span class='inline-li'>10</span> of energy, <span class='inline-li'>11</span> of emancipation, <span class='inline-li'>12</span> of wisdom <span class='inline-li'>13</span> freedom from fickleness, <span class='inline-li'>14</span> noisiness, <span class='inline-li'>15</span> confusedness <span class='inline-li'>16</span> hastiness, <span class='inline-li'>17</span> heedlessness, <span class='inline-li'>18</span> inconsiderateness <i class='term'>-<a href='/define/pañha'>pañha</a></i> the name given to one question asked by Sāriputta, which the paribbājikā Kuṇḍalakesī was unable to answer <span class='ref'>Dhp-a.ii.225</span>. <i class='term'>-<a href='/define/pasanna'>pasanna</a></i> finding one’s happiness, or believing in the B. <a class='ref' href='https://suttacentral.net/pli-tv-bu-vb-pc13/en/brahmali#3.2.1'>Vin.iv.39</a>. <i class='term'>-<a href='/define/putta'>putta</a></i> son of the B. said of bhikkhus or arahants <a class='ref' href='https://suttacentral.net/mil5.2.1/pli/ms#1.1'>Mil.143</a> cp. <a class='ref' href='https://suttacentral.net/sn22.76/en/sujato#1.1'>SN.iii.83</a>: puttā Buddhassa orasā. <i class='term'>-<a href='/define/bala'>bala</a></i> the force of a B. (iddibala & paññā˚) Bu; i.3. <i class='term'>-bījaṅkura</i> a future B. <span class='ref'>Bv.ii.71</span>. <i class='term'>-<a href='/define/bhāva'>bhāva</a></i> condition of a B. enlightenment <span class='ref'>Ja.i.14</span>, <span class='ref'>Ja.i.147</span> (abuddhabhāva un-buddhahood, of Devadatta); <span class='ref'>DN-a.i.1</span>. <i class='term'>-<a href='/define/bhūmi'>bhūmi</a></i> the ground of Buddhahood <span class='ref'>Bv.ii.175</span>. <i class='term'>-<a href='/define/manta'>manta</a></i> mystic verses of a B. <span class='ref'>DN-a.i.248</span> <i class='term'>-<a href='/define/māmaka'>māmaka</a></i> devotedly attached to the B. <span class='ref'>Dhp-a.i.206</span> (+ Dhamma˚, Sangha˚). <i class='term'>-<a href='/define/rakkhita'>rakkhita</a></i> saved by the B (Np.) <span class='ref'>Snp-a.534</span> (+ Dhamma˚). <i class='term'>-<a href='/define/rasmi'>rasmi</a></i> (pl. ˚iyo) rays shining forth from the person of the Buddha; they are of 6 colours <span class='ref'>Ja.i.501</span>; <span class='ref'>Snp-a.132</span>; <span class='ref'>Mhbv.6</span>, 15, 38; <span class='ref'>Vv-a.207</span>; <span class='ref'>Dhs-a.13</span>. <i class='term'>-<a href='/define/rūpa'>rūpa</a></i> form or figure of the B. <span class='ref'>Vism.228</span> (Mārena nimmita, cp. <span class='ref'>Divy.162</span>, <span class='ref'>Divy.166</span>; Buddha-nirmāṇa the magic figure of the B.). <i class='term'>-līḷha (& ˚līḷhā);</i> deportment ease, grace of a Buddha <span class='ref'>Ja.i.54</span>; <span class='ref'>Mhbv.39</span>; <span class='ref'>Dhp-a.i.33</span>; <span class='ref'>Dhp-a.ii.41</span>. <i class='term'>-<a href='/define/vacana'>vacana</a></i> the word (teaching) of the Buddha <a class='ref' href='https://suttacentral.net/mil2/pli/ms#52.1'>Mil.17</a>; <span class='ref'>Kp-a.13</span>; <span class='ref'>Snp-a.274</span>, <span class='ref'>Snp-a.331</span>. <i class='term'>-<a href='/define/visaya'>visaya</a></i> the sphere (of wonder), the range, scope or power of a Buddha (cp. buddha-khetta) <span class='ref'>Dhp-a.i.33</span>; <span class='ref'>Dhp-a.ii.199</span>; <span class='ref'>Snp-a.154</span>, <span class='ref'>Snp-a.228</span> <i class='term'>-<a href='/define/veneyya'>veneyya</a></i> one able to be led to enlightenment, accessible to Buddha’s teaching <span class='ref'>Snp-a.15</span>, <span class='ref'>Snp-a.331</span>. <i class='term'>-<a href='/define/sāsana'>sāsana</a></i> the teaching (instructions) of the B. <a class='ref' href='https://suttacentral.net/dhp368/en/sujato#1'>Dhp.368</a>, <a class='ref' href='https://suttacentral.net/dhp381/en/sujato#1'>Dhp.381</a> <i class='term'>-sukumāla</i> delicate, sensitive (to fatigue), as Buddhas are <span class='ref'>Dhp-a.i.5</span>.</p><p class='eti'>= buddha<sup>1</sup></p></dd></dl>",
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "buddha",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "dppn",
+      "text": "<dl class='person'><dt><dfn id='buddha'>Buddha</dfn></dt><dt>Bhagavā</dt><dt>Tathāgata</dt><dt>Siddhattha</dt><dt>Gotama</dt><dt>Sugata</dt><dt>Satthā</dt><dd><p>The Awakened one, the founder and teacher of the Buddha-dhamma. His personal name was Siddhattha Gotama, and he was a Khattiya of the Sakiyan clan. He was born in Lumbini in around 500 BCE. He was raised in Kapilavatthu, where he had a wife and child, but left home in search of the Deathless at the age of 29. After six years of fruitless effort he realized Awakening at the age of 35 at Bodhgaya, at Uruvelā on the banks of the Nerañjarā. After an initial hesitation he decided to teach the Dhamma he had found, and he did so for the next 45 years, until he passed away at the age of eighty at Kusinārā.</p><p>A Buddha is not a deity, but a person who has reached the pinnacle of wisdom and freedom. From time to time Buddha’s appear in the world, but Sddhattha is the only historical Buddha.</p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "tathāgata": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "tathāgata",
+      "grammar": "masculine",
+      "definition": [
+        "one who has gone so; the awakened one; used by Gotama (a) of Buddhas generally, including himself; (b) specifically of himself",
+        "by others (a) of Buddhas generally, including Gotama; (b) of Gotama specifically",
+        "a designation of an arahat",
+        "a creature; a sentient being"
+      ],
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "tathāgata",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='tathāgata'><dt><dfn>Tathāgata</dfn></dt><dd><p>The context shows that the word is an epithet of an Arahant, and that non-Buddhists were supposed to know what it meant. The compilers of the Nikāyas must therefore have considered the expression as pre-Buddhistic; but it has not yet been found in any pre-Buddhistic work. Mrs. Rhys Davids (Dhs. tr. 1099, quoting Chalmers <i>J.R.A.S.</i> Jan., 1898 suggests “he who has won through to the truth.” Had the early Buddhists invented a word with this meaning it would probably have been tathaṁgata, but not necessarily, for we have upadhī-karoti as well as upadhiṁ karoti<br><span class='square'>■</span> <a class='ref' href='https://suttacentral.net/dn1/en/sujato#1.27.1'>DN.i.12</a>, <a class='ref' href='https://suttacentral.net/dn1/en/sujato#2.26.1'>DN.i.27</a>, <a class='ref' href='https://suttacentral.net/dn1/en/sujato#3.72.3'>DN.i.46</a>, <a class='ref' href='https://suttacentral.net/dn2/en/sujato#41.1'>DN.i.63</a>; <a class='ref' href='https://suttacentral.net/dn15/en/sujato#31.1'>DN.ii.68</a>, <a class='ref' href='https://suttacentral.net/dn16/en/sujato#3.2.3'>DN.ii.103</a>, <a class='ref' href='https://suttacentral.net/dn16/en/sujato#3.13.1'>DN.ii.108</a> <a class='ref' href='https://suttacentral.net/dn16/en/sujato#3.38.1'>DN.ii.115</a>, <a class='ref' href='https://suttacentral.net/dn16/en/sujato#5.6.4'>DN.ii.140</a>, <a class='ref' href='https://suttacentral.net/dn16/en/sujato#5.11.1'>DN.ii.142</a>; <a class='ref' href='https://suttacentral.net/dn24/en/sujato#1.17.1'>DN.iii.14</a>, <a class='ref' href='https://suttacentral.net/dn24/en/sujato#2.6.10'>DN.iii.24</a> sq., <a class='ref' href='https://suttacentral.net/dn24/en/sujato#2.18.13'>DN.iii.32</a> sq., <a class='ref' href='https://suttacentral.net/dn28/en/sujato#19.21'>DN.iii.115</a>, <a class='ref' href='https://suttacentral.net/dn33/en/sujato#1.10.58'>DN.iii.217</a>, <a class='ref' href='https://suttacentral.net/dn33/en/sujato#3.2.43'>DN.iii.264</a> sq. <a class='ref' href='https://suttacentral.net/dn34/en/sujato#1.2.11'>DN.iii.273</a> sq.; <a class='ref' href='https://suttacentral.net/sn4.12/en/sujato#2.1'>SN.i.110</a> sq.; <a class='ref' href='https://suttacentral.net/sn16.11/en/sujato#16.1'>SN.ii.222</a> sq.; <a class='ref' href='https://suttacentral.net/sn24.12/en/sujato#1.1'>SN.iii.215</a>; <a class='ref' href='https://suttacentral.net/sn35.136/en/sujato#1.1'>SN.iv.127</a>, <a class='ref' href='https://suttacentral.net/sn44.1/en/sujato#13.1'>SN.iv.380</a> sq. <a class='ref' href='https://suttacentral.net/an3.135/en/sujato#1.1'>AN.i.286</a>; <a class='ref' href='https://suttacentral.net/an4.14/en/sujato#4.1'>AN.ii.17</a>, <a class='ref' href='https://suttacentral.net/an4.24/en/sujato#2.1'>AN.ii.25</a>, <a class='ref' href='https://suttacentral.net/an4.116/en/sujato#2.1'>AN.ii.120</a>; <a class='ref' href='https://suttacentral.net/an5.32/en/sujato#1.1'>AN.iii.35</a>, etc.; <a class='ref' href='https://suttacentral.net/snp2.1/en/sujato#16.1'>Snp verse 236</a>, <a class='ref' href='https://suttacentral.net/snp2.12/en/sujato#6.1'>Snp verse 347</a>, <a class='ref' href='https://suttacentral.net/snp3.4/en/sujato#19.1'>Snp verse 467</a> <a class='ref' href='https://suttacentral.net/snp3.7/en/sujato#22.1'>Snp verse 557</a>, <a class='ref' href='https://suttacentral.net/snp5.15/en/sujato#3.1'>Snp verse 1114</a>; <a class='ref' href='https://suttacentral.net/iti111/en/sujato#10.1'>Iti.121</a> sq.; <span class='ref'>Kp-a.196</span>; <a class='ref' href='https://suttacentral.net/ps1.1/pli/ms#525.1'>Ps.i.121</a> sq.; <span class='ref'>Ds.1099</span>, <span class='ref'>Ds.1117</span>, <span class='ref'>Ds.1234</span>; <a class='ref' href='https://suttacentral.net/vb16/pli/ms#250.1'>Vb.325</a> sq., <a class='ref' href='https://suttacentral.net/vb16/pli/ms#369.1'>Vb.340</a>, etc., etc.</p><ul class='compounds'><li><i class='term'>-balāni</i> (pl.) the supreme intellectual powers of a T. usually enumerated as a set of ten: in detail at <a class='ref' href='https://suttacentral.net/an10.21/en/sujato#1.1'>AN.v.33</a> sq = <a class='ref' href='https://suttacentral.net/ps2.9/pli/ms#25.1'>Ps.ii.174</a>; <a class='ref' href='https://suttacentral.net/mn12/en/sujato#4.1'>MN.i.69</a>; <a class='ref' href='https://suttacentral.net/sn12.20/en/sujato#5.1'>SN.ii.27</a>; <span class='ref'>Cnd.466</span>. Other sets of five at <a class='ref' href='https://suttacentral.net/an5.10/en/sujato#2.1'>AN.iii.9</a>; of six <a class='ref' href='https://suttacentral.net/an6.63/en/sujato#44.1'>AN.iii.417</a> sq. (see <i class='term'><a href='/define/bala'>bala</a></i>);</li><li><i class='term'>-<a href='/define/sāvaka'>sāvaka</a></i> a disciple of the T. <a class='ref' href='https://suttacentral.net/dn16/en/sujato#5.11.1'>DN.ii.142</a>; <a class='ref' href='https://suttacentral.net/an2.135/en/sujato#2.1'>AN.i.90</a>; <a class='ref' href='https://suttacentral.net/an4.3/en/sujato#5.1'>AN.ii.4</a>; <a class='ref' href='https://suttacentral.net/an6.30/en/sujato#2.1'>AN.iii.326</a> sq. <a class='ref' href='https://suttacentral.net/iti90/en/sujato#2.1'>Iti.88</a>; <a class='ref' href='https://suttacentral.net/snp1.4/en/sujato#13.1'>Snp.p.15</a>.</li></ul><p class='eti'>Derivation uncertain. Buddhaghosa (<span class='ref'>DN-a.i.59</span>–<span class='ref'>DN-a.i.67</span>) gives eight explanations showing that there was no fixed tradition on the point, and that he himself was in doubt.</p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "sugata": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "sugata",
+      "grammar": "adjective",
+      "definition": "faring well; happy. (masculine), the Buddha",
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "sugata",
+      "grammar": null,
+      "definition": [
+        "sugata 1: adj. <b>faring well; going well; doing well; fortunate; who has reached the destination</b>; lit. well gone [su + √gam + ta]",
+        "sugata 2: masc. <b>Accomplished One; Fortunate One; epithet of the Buddha</b>; lit. well gone [su + √gam + ta]",
+        "sugata 3: adj. <b>standard; commonly accepted; (comm) indication that a given measure is to be multiplied by three</b>; lit. well-gone [su + √gam + ta]"
+      ],
+      "xr": null,
+      "dictname": "dpd",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "sugata",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='sugata'><dt><dfn>Sugata</dfn></dt><dd><p>faring well, happy, having a happy life after death (gati): see under <i class='term'><a href='/define/gata'>gata</a></i>; cp. <span class='ref'>Vism.424</span> (s. sugati-gata). Freq. Epithet of the Buddha (see Dict. of Names).</p><ul class='compounds'><li><i class='term'>-<a href='/define/aṅgula'>aṅgula</a></i> a Buddha-inch, an inch according to the standard accepted by Buddhists <a class='ref' href='https://suttacentral.net/pli-tv-bu-vb-pc86/en/brahmali#2.2.4'>Vin.iv.168</a>.</li><li><i class='term'>-<a href='/define/ālaya'>ālaya</a></i> imitation of the Buddha <a class='ref' href='https://suttacentral.net/ja142/pli/ms#1.1'>Ja.i.490</a>, <span class='ref'>Ja.i.491</span>; <span class='ref'>Ja.ii.38</span>, <span class='ref'>Ja.ii.148</span>, <a class='ref' href='https://suttacentral.net/ja209/pli/ms#2.1'>Ja.ii.162</a> <span class='ref'>Ja.iii.112</span>.</li><li><i class='term'>-<a href='/define/ovāda'>ovāda</a></i> a discourse of the Blessed one <span class='ref'>Ja.i.119</span> <span class='ref'>Ja.i.349</span>; <span class='ref'>Ja.ii.9</span>, <span class='ref'>Ja.ii.13</span>, <span class='ref'>Ja.ii.46</span>; <a class='ref' href='https://suttacentral.net/ja406/pli/ms#4.1'>Ja.iii.368</a>.</li><li><i class='term'>-<a href='/define/vidatthi'>vidatthi</a></i> a Buddha-span, a span of the accepted length <a class='ref' href='https://suttacentral.net/pli-tv-bu-vb-ss6/en/brahmali#1.6.1'>Vin.iii.149</a>; <a class='ref' href='https://suttacentral.net/pli-tv-bu-vb-pc91/en/brahmali#2.1'>Vin.iv.173</a>.</li><li><i class='term'>-<a href='/define/vinaya'>vinaya</a></i> the discipline of the Buddha <a class='ref' href='https://suttacentral.net/an4.160/en/sujato#1.1'>AN.ii.147</a>.</li></ul><p class='eti'>su + gata</p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "manussa": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "manussa",
+      "grammar": "masculine",
+      "definition": "a human being",
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "manussa",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='manussa'><dt><dfn>Manussa</dfn></dt><dd><p>a human being, man. The popular etym. connects m. with Manu(s), the ancestor of men, e.g. <span class='ref'>Kp-a.123</span>: “Manuno apaccā ti manussā, porāṇā pana bhaṇanti ʻmana-ussannatāya manussa’; te Jambudīpakā, Aparagoyānikā, Uttarakurukā Pubbavidehakā ti catubbidhā.” Similarly with the other view of connecting it with “mind <span class='ref'>Vv-a.18</span>: “manassa ussannatāya manussā” etc. Cp also <span class='ref'>Vv-a.23</span>, where manussa-nerayika, ˚peta, ˚tiracchāna are distinguished<br><span class='square'>■</span> <a class='ref' href='https://suttacentral.net/snp1.3/en/sujato#41.1'>Snp verse 75</a>, <a class='ref' href='https://suttacentral.net/snp2.7/en/sujato#25.1'>Snp verse 307</a>, <a class='ref' href='https://suttacentral.net/snp2.10/en/sujato#3.1'>Snp verse 333</a> sq., <a class='ref' href='https://suttacentral.net/snp3.9/en/sujato#23.1'>Snp verse 611</a> sq. <a class='ref' href='https://suttacentral.net/dhp85/en/sujato#1'>Dhp.85</a>, <a class='ref' href='https://suttacentral.net/dhp188/en/sujato#1'>Dhp.188</a>, <a class='ref' href='https://suttacentral.net/dhp197/en/sujato#1'>Dhp.197</a> sq., <a class='ref' href='https://suttacentral.net/dhp321/en/sujato#1'>Dhp.321</a>; <a class='ref' href='https://suttacentral.net/mnd4/pli/ms#55.1'>Mnd.97</a> (as gati), <a class='ref' href='https://suttacentral.net/mnd14/pli/ms#4.1'>Mnd.340</a>, <a class='ref' href='https://suttacentral.net/mnd16/pli/ms#163.1'>Mnd.484</a> (˚phassa of <a class='ref' href='https://suttacentral.net/snp4.16/en/sujato#10.1'>Snp verse 964</a>); <span class='ref'>Vism.312</span>; <span class='ref'>Vb-a.455</span> (var. clans) <span class='ref'>Dhp-a.i.364</span><br><span class='square'>■</span> <i class='term'><a href='/define/amanussa'>amanussa</a></i> not human, a deva, a ghost a spirit; in compounds “haunted,” like <i class='term'>-kantāra</i> <span class='ref'>Ja.i.395</span> <i class='term'>-ṭṭhāna</i> <a class='ref' href='https://suttacentral.net/vv84/pli/ms#3.1'>Vv.84:3</a> (cp. <span class='ref'>Vv-a.334</span> where explained); <i class='term'>-sadda</i> <span class='ref'>Dhp-a.i.315</span>. See also separately <i class='term'><a href='/define/amanussa'>amanussa</a></i>.</p><ul class='compounds'><li><i class='term'>-<a href='/define/attabhāva'>attabhāva</a></i> human existence <span class='ref'>Pv-a.71</span>, <span class='ref'>Pv-a.87</span>, <span class='ref'>Pv-a.122</span>.</li><li><i class='term'>-<a href='/define/itthi'>itthi</a></i> a human woman <span class='ref'>Pv-a.48</span>, <span class='ref'>Pv-a.154</span>.</li><li><i class='term'>-<a href='/define/inda'>inda</a></i> lord of men <a class='ref' href='https://suttacentral.net/sn3.1/en/sujato#3.1'>SN.i.69</a>; <span class='ref'>Mhvs.19</span>, <span class='ref'>Mhvs.33</span>.</li><li><i class='term'>-<a href='/define/khādaka'>khādaka</a></i> man eater, cannibal (usually applied to Yakkhas) <span class='ref'>Vb-a.451</span>.</li><li><i class='term'>-<a href='/define/deva'>deva</a></i> (a) “god of men,” i.e. king <a class='ref' href='https://suttacentral.net/pv20/pli/ms#11.1'>Pv.20:11</a>; (b) men & gods (?) <span class='ref'>Vv-a.321</span> (Hardy, in note takes it as “gods of men,” i.e. brāhmaṇā).</li><li><i class='term'>-<a href='/define/dhamma'>dhamma</a></i> condition of man, human state <span class='ref'>Vv-a.24</span>. See also uttari-manussa dhamma.</li><li><i class='term'>-<a href='/define/bhūta'>bhūta</a></i> as a human, in human form <a class='ref' href='https://suttacentral.net/pv11/pli/ms#2.1'>Pv.11:2</a>; <a class='ref' href='https://suttacentral.net/pv13/pli/ms#12.1'>Pv.13:12</a>.</li><li><i class='term'>-<a href='/define/loka'>loka</a></i> the world of men <a class='ref' href='https://suttacentral.net/snp3.11/en/sujato#5.1'>Snp verse 683</a>.</li></ul><p class='eti'>fr. manus, cp. Vedic manuṣya. Connected etym. with Goth. manna = man</p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "nara": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "nara",
+      "grammar": "masculine",
+      "definition": "a man; a person; plural men; people",
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "nara",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='nara'><dt><dfn>Nara</dfn></dt><dd><p>man (in poetry esp. a brave, strong heroic man), pl. either “men” or “people” (the latter e.g. at <a class='ref' href='https://suttacentral.net/snp4.2/en/sujato#5.1'>Snp verse 776</a>, <a class='ref' href='https://suttacentral.net/snp5.8/en/sujato#6.1'>Snp verse 1082</a>; <a class='ref' href='https://suttacentral.net/pv11/pli/ms#12.1'>Pv.11:12</a>)<br><span class='square'>■</span> <a class='ref' href='https://suttacentral.net/an3.29/en/sujato#8.1'>AN.i.130</a> <a class='ref' href='https://suttacentral.net/an4.4/en/sujato#3.1'>AN.ii.5</a>; <a class='ref' href='https://suttacentral.net/an5.45/en/sujato#8.1'>AN.iii.53</a>; <a class='ref' href='https://suttacentral.net/snp1.3/en/sujato#5.1'>Snp verse 39</a>, <a class='ref' href='https://suttacentral.net/snp1.6/en/sujato#7.1'>Snp verse 96</a>, <a class='ref' href='https://suttacentral.net/snp1.7/en/sujato#4.1'>Snp verse 116</a>, <a class='ref' href='https://suttacentral.net/snp2.9/en/sujato#6.1'>Snp verse 329</a>, <a class='ref' href='https://suttacentral.net/snp3.8/en/sujato#18.1'>Snp verse 591</a>, <a class='ref' href='https://suttacentral.net/snp3.10/en/sujato#28.1'>Snp verse 676</a>, <a class='ref' href='https://suttacentral.net/snp4.11/en/sujato#4.1'>Snp verse 865</a> etc. <a class='ref' href='https://suttacentral.net/dhp47/en/sujato#1'>Dhp.47</a>, <a class='ref' href='https://suttacentral.net/dhp48/en/sujato#1'>Dhp.48</a>, <a class='ref' href='https://suttacentral.net/dhp262/en/sujato#1'>Dhp.262</a>, <a class='ref' href='https://suttacentral.net/dhp309/en/sujato#1'>Dhp.309</a>, <a class='ref' href='https://suttacentral.net/dhp341/en/sujato#1'>Dhp.341</a>; <a class='ref' href='https://suttacentral.net/ja389/pli/ms#1.1'>Ja.iii.295</a>; <a class='ref' href='https://suttacentral.net/mnd1/pli/ms#43.1'>Mnd.12</a> = <span class='ref'>Cnd.335</span> (definition); <span class='ref'>Vv-a.42</span> (popular etymology: narati netī ti naro puriso, i.e. a “leading” man); <span class='ref'>Pv-a.116</span> = <a class='ref' href='https://suttacentral.net/dhp125/en/sujato#1'>Dhp.125</a>.</p><ul class='compounds'><li><i class='term'>-ādhama</i> vilest of men <a class='ref' href='https://suttacentral.net/snp2.2/en/sujato#8.1'>Snp verse 246</a>;</li><li><i class='term'>-āsabha</i> “man-bull”, i.e. lord of men <a class='ref' href='https://suttacentral.net/snp3.11/en/sujato#6.1'>Snp verse 684</a>, <a class='ref' href='https://suttacentral.net/snp5.1/en/sujato#21.1'>Snp verse 996</a>;</li><li><i class='term'>-<a href='/define/inda'>inda</a></i> “man-lord”, i.e. king <a class='ref' href='https://suttacentral.net/snp4.9/en/sujato#2.1'>Snp verse 836</a>; <span class='ref'>Ja.i.151</span>;</li><li><i class='term'>-<a href='/define/uttama'>uttama</a></i> best of men (Ep. of the Buddha) <a class='ref' href='https://suttacentral.net/sn1.34/en/sujato#5.1'>SN.i.23</a>; <a class='ref' href='https://suttacentral.net/dn30/en/sujato#1.5.1'>DN.iii.147</a>; <a class='ref' href='https://suttacentral.net/snp5.1/en/sujato#46.1'>Snp verse 1021</a>;</li><li><i class='term'>-<a href='/define/deva'>deva</a></i> god-man or man-god (pl.), gods, also epithet of the B. “king of men” <a class='ref' href='https://suttacentral.net/sn1.10/en/sujato#1.1'>SN.i.5</a>; <a class='ref' href='https://suttacentral.net/pv38/pli/ms#50.1'>Pv.38:50</a>;</li><li><i class='term'>-<a href='/define/nārī'>nārī</a></i> (pl.) men & women, appl. to male & female angelic servants (of the Yakkhas) <a class='ref' href='https://suttacentral.net/vv32/pli/ms#4.1'>Vv.32:4</a>, <a class='ref' href='https://suttacentral.net/vv33/pli/ms#7.1'>Vv.33:7</a> <a class='ref' href='https://suttacentral.net/vv53/pli/ms#8.1'>Vv.53:8</a>; <a class='ref' href='https://suttacentral.net/pv23/pli/ms#2.1'>Pv.23:2</a>;</li><li><i class='term'>-<a href='/define/vīra'>vīra</a></i> a hero (?), a skilled man (?) <a class='ref' href='https://suttacentral.net/thag16.2/en/sujato#11.1'>Thag.736</a> (<i class='term'>naravīrakata</i> “by human skill & wit” Mrs. Rh D.).</li><li><i class='term'>-<a href='/define/sīha'>sīha</a></i> lion of men <span class='ref'>Ja.i.89</span>.</li></ul><p class='eti'>Ved. nara, cp. nṛtu; Idg. <i class='term'>*ner</i> to be strong or valiant = Gr. <span class='at'>ἀνήρ, ἀγ ήνωρ</span> (valiant), <span class='at'>δρώψ (*νρώψ)</span>; Lat neriosus (muscuḷar), Nero (Sabinian, cp. Oscan ner Lat. vir); Oir. nert</p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "purisa": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "purisa",
+      "grammar": "masculine",
+      "definition": "a male; a man",
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "purisa",
+      "grammar": null,
+      "definition": [
+        "purisa 1: masc. <b>man; male; person</b>",
+        "purisa 2: masc. <b>servant; labourer</b>; lit. man",
+        "purisa 3: adj. <b>male; masculine</b>",
+        "purisa 4: masc. World Soul (in Sāṁkhya system) [purisa]",
+        "purisa 5: masc. <b>(gram) grammatical person; 3rd 2nd 1st person</b>"
+      ],
+      "xr": null,
+      "dictname": "dpd",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "purisa",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='purisa'><dt><dfn>Purisa</dfn></dt><dd><p>man (as representative of the male sex, contrasted to <i class='term'><a href='/define/itthi'>itthi</a></i> woman, e.g. at <a class='ref' href='https://suttacentral.net/an5.178/en/sujato#1.1'>AN.iii.209</a>; <a class='ref' href='https://suttacentral.net/an8.17/en/sujato#1.1'>AN.iv.197</a>; <span class='ref'>Ja.i.90</span>; <a class='ref' href='https://suttacentral.net/ja516/pli/ms#41.1'>Ja.v.72</a>; <span class='ref'>Pv-a.51</span>). Definitions of the C. are “puriso nāma manussa-puriso na yakkho na peto etc.” (i.e. man <span class='at'>κα ̓τ ἐςοξήν</span>) <a class='ref' href='https://suttacentral.net/pli-tv-bi-vb-pc11/en/brahmali#2.1.9'>Vin.iv.269</a> (the same expl<sup>n</sup> for purisa-puggala at <a class='ref' href='https://suttacentral.net/pli-tv-bi-vb-pj5/en/brahmali#2.1.1'>Vin.iv.214</a>); “seṭṭh’ aṭṭhena puri setī ti puriso ti satto vuccati” <span class='ref'>Vv-a.42</span>–</p><ol type='1' class='decimal'><li>man <a class='ref' href='https://suttacentral.net/dn2/en/sujato#36.1'>DN.i.61</a> (p. kassaka “free man”); <a class='ref' href='https://suttacentral.net/dn14/en/sujato#1.18.1'>DN.ii.13</a>; <a class='ref' href='https://suttacentral.net/sn11.6/en/sujato#3.1'>SN.i.225</a>; <a class='ref' href='https://suttacentral.net/an1.277/en/sujato#1.1'>AN.i.28</a> <a class='ref' href='https://suttacentral.net/an3.26/en/sujato#4.1'>AN.i.126</a>; <a class='ref' href='https://suttacentral.net/an4.113/en/sujato#4.1'>AN.ii.115</a>; <a class='ref' href='https://suttacentral.net/an5.136/en/sujato#4.1'>AN.iii.156</a>; <a class='ref' href='https://suttacentral.net/snp1.6/en/sujato#13.1'>Snp verse 102</a>, <a class='ref' href='https://suttacentral.net/snp1.6/en/sujato#23.1'>Snp verse 112</a>, <a class='ref' href='https://suttacentral.net/snp2.8/en/sujato#1.1'>Snp verse 316</a>, <a class='ref' href='https://suttacentral.net/snp3.12/en/sujato#28.1'>Snp verse 740</a>, <a class='ref' href='https://suttacentral.net/snp4.6/en/sujato#3.1'>Snp verse 806</a> and passim; <a class='ref' href='https://suttacentral.net/dhp117/en/sujato#1'>Dhp.117</a>, <a class='ref' href='https://suttacentral.net/dhp152/en/sujato#1'>Dhp.152</a>, <a class='ref' href='https://suttacentral.net/dhp248/en/sujato#1'>Dhp.248</a>; <a class='ref' href='https://suttacentral.net/mnd6/pli/ms#39.1'>Mnd.124</a>; <span class='ref'>Pv-a.3</span>, <span class='ref'>Pv-a.4</span>, <span class='ref'>Pv-a.165</span> <span class='ref'>Pv-a.187</span>; <span class='ref'>Vv-a.13</span> (majjhima˚, paṭhama˚, as t.t. g.?) <i class='term'>uttama˚</i>; <a class='ref' href='https://suttacentral.net/sn21.4/en/sujato#2.1'>SN.ii.278</a>; <a class='ref' href='https://suttacentral.net/sn22.56/en/sujato#11.1'>SN.iii.61</a>, <a class='ref' href='https://suttacentral.net/sn22.118/en/sujato#1.1'>SN.iii.166</a>; <a class='ref' href='https://suttacentral.net/sn44.1/en/sujato#13.1'>SN.iv.380</a>; <a class='ref' href='https://suttacentral.net/iti97/en/sujato#5.1'>Iti.97</a>; <i class='term'>mahā˚</i> <a class='ref' href='https://suttacentral.net/sn47.10/en/sujato#11.1'>SN.v.158</a>; <a class='ref' href='https://suttacentral.net/an4.34/en/sujato#4.1'>AN.ii.35</a>; <a class='ref' href='https://suttacentral.net/an5.192/en/sujato#1.1'>AN.iii.223</a>; <a class='ref' href='https://suttacentral.net/an8.30/en/sujato#1.1'>AN.iv.229</a> (see also under mahā) <i class='term'><a href='/define/sappurisa'>sappurisa</a></i> (q.v.). Var. Epithets of the Buddha e.g. at <a class='ref' href='https://suttacentral.net/sn1.38/en/sujato#2.1'>SN.i.28</a> sq<br><span class='square'>■</span> <i class='term'>Kāpurisa</i> a contemptible man; <i class='term'><a href='/define/kimpurisa'>kimpurisa</a></i> a wild man of the woods (“whatever man”), f. <i class='term'>kimpurisī</i> <a class='ref' href='https://suttacentral.net/ja527/pli/ms#6.1'>Ja.v.215</a><br><span class='square'>■</span> <i class='term'><a href='/define/purisa'>purisa</a></i> as “a man, some one, somebody” as character or hero in var. <i>similes</i>, e.g. angārakāsuyaṁ khipanaka˚ <span class='ref'>Vism.489</span>; asucimhi patita <span class='ref'>Vism.465</span>; āgantuka˚ <span class='ref'>Vb-a.23</span>; dubbala <span class='ref'>Vism.533</span>; papāte <i>patanto</i> <span class='ref'>Vb-a.23</span> (cannot be a help to others; similarly with <i>patita</i> at <span class='ref'>Vb-a.170</span> = <span class='ref'>Vism.559</span>); bhikkhusanghaṁ disvā <span class='ref'>Vism.333</span>; maṇḍapa-lagga <span class='ref'>Vism.339</span> sq. lakuṇṭaka-pāda & dīghapāda <span class='ref'>Vb-a.26</span>; cp. the foll. of a man pleasing the king <span class='ref'>Vb-a.442</span> sq.; a man wishing to perform a long journey in <i>one</i> day <span class='ref'>Vism.244</span>; a man breathing when exhausted <span class='ref'>Vism.274</span>. Frequently elsewhere</li><li>an attendant, servant, waiter <a class='ref' href='https://suttacentral.net/pli-tv-kd22/en/brahmali#1.4.12'>Vin.ii.297</a>; <a class='ref' href='https://suttacentral.net/dn2/en/sujato#34.1'>DN.i.60</a> (dāsa +), <a class='ref' href='https://suttacentral.net/dn2/en/sujato#69.1'>DN.i.72</a> (id.); <span class='ref'>Ja.i.385</span> (dāsa˚); <a class='ref' href='https://suttacentral.net/ja542/pli/ms#177.1'>Ja.vi.462</a>. Cp porisa, posa.</li></ol><ul class='compounds'><li><i class='term'>-<a href='/define/atthika'>atthika</a></i> one who seeks a servant <a class='ref' href='https://suttacentral.net/pli-tv-kd22/en/brahmali#1.4.12'>Vin.ii.297</a>.</li><li><i class='term'>-anta = purisādhama</i> <a class='ref' href='https://suttacentral.net/snp3.10/en/sujato#16.1'>Snp verse 664</a> (anta = Sk. antya; <span class='ref'>Snp-a.479</span> explains by antimapurisa).</li><li><i class='term'>-antaragatā</i> touched by a man (lit. gone in by…), a woman who has sexual intercourse, a woman in intercourse with a man <a class='ref' href='https://suttacentral.net/dn8/en/sujato#14.1'>DN.i.166</a> (cp. <i>Dial.</i> i.228); <a class='ref' href='https://suttacentral.net/mn12/en/sujato#42.1'>MN.i.77</a>; <a class='ref' href='https://suttacentral.net/an3.156/en/sujato#1.1'>AN.i.295</a>; <a class='ref' href='https://suttacentral.net/an4.198/en/sujato#1.1'>AN.ii.206</a>; <a class='ref' href='https://suttacentral.net/pli-tv-bi-vb-pc65/en/brahmali#1.9'>Vin.iv.322</a> <a class='ref' href='https://suttacentral.net/pp2.4/pli/ms#109.1'>Pp.55</a> (= he does not accept food, lest their intercourse should be broken: rati antarāyo hoti <span class='ref'>Pp-a.231</span>); <span class='ref'>DN-a.i.79</span> (= itthi, as opp. to kumārikā). Cp. pumaṁ gata <a class='ref' href='https://suttacentral.net/ja523/pli/ms#6.1'>Ja.v.154</a>.</li><li><i class='term'>-allu</i> (& ālu) Name of certain monstrous beings living in the wilderness <a class='ref' href='https://suttacentral.net/ja536/pli/ms#1.1'>Ja.v.416</a> (= vaḷavā-mukhayakkhinī, a y. with the face of a mare), <a class='ref' href='https://suttacentral.net/ja536/pli/ms#10.1'>Ja.v.418</a>; <a class='ref' href='https://suttacentral.net/ja547/pli/ms#407.1'>Ja.vi.537</a> (˚ālu = vaḷavā-m-pekkhī C.).</li><li><i class='term'>-<a href='/define/ājañña'>ājañña</a></i> “a noble steed of a man,” a thorough-bred or remarkable man <a class='ref' href='https://suttacentral.net/sn22.79/en/sujato#15.1'>SN.iii.91</a>; <a class='ref' href='https://suttacentral.net/an11.9/en/sujato#3.1'>AN.v.325</a> sq., <a class='ref' href='https://suttacentral.net/snp3.6/en/sujato#48.1'>Snp verse 544</a>; <a class='ref' href='https://suttacentral.net/dhp193/en/sujato#1'>Dhp.193</a>; as <i>-ājāneyya</i> at <span class='ref'>Dhp-a.i.310</span> <i>-ājāniya</i> at <a class='ref' href='https://suttacentral.net/an3.141/en/sujato#4.1'>AN.i.290</a>; <a class='ref' href='https://suttacentral.net/an4.113/en/sujato#4.1'>AN.ii.115</a>; <a class='ref' href='https://suttacentral.net/an9.22/en/sujato#1.1'>AN.iv.397</a> sq.; <a class='ref' href='https://suttacentral.net/an11.9/en/sujato#2.1'>AN.v.324</a>.</li><li><i class='term'>-āda</i> a bad man (“man-eater”) a wild man, cannibal <a class='ref' href='https://suttacentral.net/ja513/pli/ms#6.1'>Ja.v.25</a> (cp. puruṣāda <span class='ref'>Jtm.31#41</span>); <i>˚ādaka</i> <a class='ref' href='https://suttacentral.net/ja513/pli/ms#20.1'>Ja.v.30</a>.</li><li><i class='term'>-ādhama</i> a wicked man <a class='ref' href='https://suttacentral.net/dhp78/en/sujato#1'>Dhp.78</a>; <a class='ref' href='https://suttacentral.net/ja530/pli/ms#37.1'>Ja.v.268</a>.</li><li><i class='term'>-<a href='/define/indriya'>indriya</a></i> male faculty masculinity <a class='ref' href='https://suttacentral.net/sn48.21/en/sujato#1.1'>SN.v.204</a>; <a class='ref' href='https://suttacentral.net/an7.51/en/sujato#1.1'>AN.iv.57</a>; <span class='ref'>Ds.634</span>, <span class='ref'>Ds.715</span>, <span class='ref'>Ds.839</span>, <span class='ref'>Ds.972</span> <span class='ref'>Vism.447</span>, <span class='ref'>Vism.492</span>.</li><li><i class='term'>-<a href='/define/uttama'>uttama</a></i> “the highest of men,” an excellent man <a class='ref' href='https://suttacentral.net/an10.11/en/sujato#3.1'>AN.v.16</a>, <a class='ref' href='https://suttacentral.net/an11.9/en/sujato#3.1'>AN.v.325</a> sq.; <a class='ref' href='https://suttacentral.net/snp3.6/en/sujato#48.1'>Snp verse 544</a>; <a class='ref' href='https://suttacentral.net/dhp78/en/sujato#1'>Dhp.78</a>; <span class='ref'>Dhp-a.ii.188</span>.</li><li><i class='term'>-<a href='/define/usabha'>usabha</a></i> (purisusabha) “a bull of a man,” a very strong man <a class='ref' href='https://suttacentral.net/pli-tv-bu-vb-pj1/en/brahmali#10.21.3'>Vin.iii.39</a>.</li><li><i class='term'>-<a href='/define/kathā'>kathā</a></i> talk about men <a class='ref' href='https://suttacentral.net/dn1/en/sujato#1.17.1'>DN.i.8</a>.</li><li><i class='term'>-<a href='/define/kāra'>kāra</a></i> manliness <a class='ref' href='https://suttacentral.net/dn2/en/sujato#17.1'>DN.i.53</a> (cp. <span class='ref'>DN-a.i.161</span>); <a class='ref' href='https://suttacentral.net/mil5.1.1/pli/ms#4.1'>Mil.96</a></li><li><i class='term'>-<a href='/define/thāma'>thāma</a></i> manly strength <a class='ref' href='https://suttacentral.net/dn2/en/sujato#17.1'>DN.i.53</a>; <a class='ref' href='https://suttacentral.net/sn12.21/en/sujato#1.1'>SN.ii.28</a>; <a class='ref' href='https://suttacentral.net/an4.114/en/sujato#9.1'>AN.ii.118</a> <a class='ref' href='https://suttacentral.net/an8.13/en/sujato#2.1'>AN.iv.190</a>.</li><li><i class='term'>-dammasārathi</i> guide of men who have to be restrained, epithet of the Buddha <span class='eti'>[cp. BSk. puruṣa-damyasārathi <span class='ref'>Divy.54</span> and passim]</span> <a class='ref' href='https://suttacentral.net/sn12.41/en/sujato#5.1'>SN.ii.69</a>; <a class='ref' href='https://suttacentral.net/an3.59/en/sujato#9.1'>AN.i.168</a>, <a class='ref' href='https://suttacentral.net/an3.70/en/sujato#4.1'>AN.i.207</a> <a class='ref' href='https://suttacentral.net/an4.51/en/sujato#7.1'>AN.ii.56</a>, <a class='ref' href='https://suttacentral.net/an4.111/en/sujato#1.1'>AN.ii.112</a>, <a class='ref' href='https://suttacentral.net/an4.160/en/sujato#1.1'>AN.ii.147</a>; <a class='ref' href='https://suttacentral.net/snp3.7/en/sujato#1.1'>Snp.p.103</a> (= vicitrehi vinayan’ ûpāyehi purisadamme sāretī ti <span class='ref'>Snp-a.443</span>); <a class='ref' href='https://suttacentral.net/iti84/en/sujato#2.1'>Iti.79</a>; <a class='ref' href='https://suttacentral.net/pp2.4/pli/ms#114.1'>Pp.57</a>; <span class='ref'>Vism.207</span>; <span class='ref'>Thag-a.178</span>.</li><li><i class='term'>-<a href='/define/dosā'>dosā</a></i> (pl.) faults or defects in a man eight are discussed in detail at <a class='ref' href='https://suttacentral.net/an8.13/en/sujato#2.1'>AN.iv.190</a> sq.; <a class='ref' href='https://suttacentral.net/ps1.1/pli/ms#562.1'>Ps.i.130</a> eighteen at <a class='ref' href='https://suttacentral.net/ja547/pli/ms#441.1'>Ja.vi.542</a>, <a class='ref' href='https://suttacentral.net/ja547/pli/ms#474.1'>Ja.vi.548</a>.</li><li><i class='term'>-<a href='/define/dhorayha'>dhorayha</a></i> a human beast of burden <a class='ref' href='https://suttacentral.net/sn1.38/en/sujato#8.1'>SN.i.29</a>.</li><li><i class='term'>-<a href='/define/parakkama'>parakkama</a></i> manly energy <a class='ref' href='https://suttacentral.net/dn2/en/sujato#17.1'>DN.i.53</a>; <a class='ref' href='https://suttacentral.net/sn12.21/en/sujato#1.1'>SN.ii.28</a>.</li><li><i class='term'>-<a href='/define/puggala'>puggala</a></i> a man, a human character <a class='ref' href='https://suttacentral.net/dn24/en/sujato#1.5.8'>DN.iii.5</a> <a class='ref' href='https://suttacentral.net/dn33/en/sujato#1.11.104'>DN.iii.227</a> (eight); <a class='ref' href='https://suttacentral.net/sn11.3/en/sujato#10.1'>SN.i.220</a> (8); <a class='ref' href='https://suttacentral.net/sn12.41/en/sujato#5.1'>SN.ii.69</a>, <a class='ref' href='https://suttacentral.net/sn12.51/en/sujato#7.1'>SN.ii.82</a>, <a class='ref' href='https://suttacentral.net/sn16.7/en/sujato#1.1'>SN.ii.206</a>; <a class='ref' href='https://suttacentral.net/sn40.10/en/sujato#9.1'>SN.iv.272</a> sq. <a class='ref' href='https://suttacentral.net/iti90/en/sujato#2.1'>Iti.88</a> (8) (explained at <span class='ref'>Vism.219</span>); <a class='ref' href='https://suttacentral.net/an1.313/en/sujato#1.1'>AN.i.32</a>, <a class='ref' href='https://suttacentral.net/an3.29/en/sujato#8.1'>AN.i.130</a>, <a class='ref' href='https://suttacentral.net/an3.60/en/sujato#19.1'>AN.i.173</a>, <a class='ref' href='https://suttacentral.net/an3.65/en/sujato#3.1'>AN.i.189</a> <a class='ref' href='https://suttacentral.net/an4.33/en/sujato#3.1'>AN.ii.34</a>, <a class='ref' href='https://suttacentral.net/an4.51/en/sujato#7.1'>AN.ii.56</a>; <a class='ref' href='https://suttacentral.net/an5.32/en/sujato#5.1'>AN.iii.36</a>, <a class='ref' href='https://suttacentral.net/an6.44/en/sujato#4.1'>AN.iii.349</a>; <a class='ref' href='https://suttacentral.net/an9.27/en/sujato#8.1'>AN.iv.407</a> (8); <a class='ref' href='https://suttacentral.net/an10.75/en/sujato#6.1'>AN.v.139</a>, <a class='ref' href='https://suttacentral.net/an10.92/en/sujato#3.1'>AN.v.183</a> (8), <a class='ref' href='https://suttacentral.net/an11.11/en/sujato#4.1'>AN.v.330</a> (8); <a class='ref' href='https://suttacentral.net/pli-tv-bi-vb-pj5/en/brahmali#1.16'>Vin.iv.212</a> sq. (= male); <span class='ref'>Vb-a.497</span>;</li><li><i class='term'>-<a href='/define/bhava'>bhava</a></i> state of being a man, manhood, virility <a class='ref' href='https://suttacentral.net/ja338/pli/ms#2.1'>Ja.iii.124</a>; <span class='ref'>Ds.634</span> <span class='ref'>Ds.415</span>, <span class='ref'>Ds.839</span>; <span class='ref'>Pv-a.63</span>.</li><li><i class='term'>-<a href='/define/bhūmi'>bhūmi</a></i> man’s stage, as “eight stages of a prophet’s existence” (<i>Dial.</i> i.72) at <a class='ref' href='https://suttacentral.net/dn2/en/sujato#20.1'>DN.i.54</a> in detail at <span class='ref'>DN-a.i.162</span>, <span class='ref'>DN-a.i.163</span>.</li><li><i class='term'>-<a href='/define/medha'>medha</a></i> man-sacrifice human sacrifice <a class='ref' href='https://suttacentral.net/sn3.9/en/sujato#1.1'>SN.i.76</a>; <a class='ref' href='https://suttacentral.net/an4.38/en/sujato#5.1'>AN.ii.42</a>; <a class='ref' href='https://suttacentral.net/an8.1/en/sujato#4.1'>AN.iv.151</a>; <a class='ref' href='https://suttacentral.net/iti27/en/sujato#5.1'>Iti.21</a>; <a class='ref' href='https://suttacentral.net/snp2.7/en/sujato#21.1'>Snp verse 303</a></li><li><i class='term'>-yugāni</i> (pl.) (4) pairs of men <a class='ref' href='https://suttacentral.net/sn40.10/en/sujato#9.1'>SN.iv.272</a> sq.; <a class='ref' href='https://suttacentral.net/an3.70/en/sujato#7.1'>AN.i.208</a> <a class='ref' href='https://suttacentral.net/an4.33/en/sujato#3.1'>AN.ii.34</a>, <a class='ref' href='https://suttacentral.net/an4.51/en/sujato#7.1'>AN.ii.56</a>; <a class='ref' href='https://suttacentral.net/an5.32/en/sujato#5.1'>AN.iii.36</a>; <a class='ref' href='https://suttacentral.net/an9.27/en/sujato#8.1'>AN.iv.407</a>; <a class='ref' href='https://suttacentral.net/an11.11/en/sujato#4.1'>AN.v.330</a>; <a class='ref' href='https://suttacentral.net/dn24/en/sujato#1.5.8'>DN.iii.5</a>, <a class='ref' href='https://suttacentral.net/dn33/en/sujato#1.11.104'>DN.iii.227</a>; <a class='ref' href='https://suttacentral.net/iti90/en/sujato#2.1'>Iti.88</a>; in verse <a class='ref' href='https://suttacentral.net/vv44/pli/ms#21.1'>Vv.44:21</a>; explained <span class='ref'>Vism.219</span> (see under <i class='term'><a href='/define/yuga'>yuga</a></i>).</li><li><i class='term'>-<a href='/define/lakkhaṇa'>lakkhaṇa</a></i> (lucky) marks on a man <a class='ref' href='https://suttacentral.net/dn1/en/sujato#1.21.1'>DN.i.9</a>.</li><li><i class='term'>-<a href='/define/liṅga'>liṅga</a></i> (see also pullinga) a man’s characteristic, membrum virile <a class='ref' href='https://suttacentral.net/pli-tv-bu-vb-pj1/en/brahmali#10.5.1'>Vin.iii.35</a>; <span class='ref'>Ds.634</span>, <span class='ref'>Ds.715</span>, <span class='ref'>Ds.839</span>; <span class='ref'>Tikp.50</span>; <span class='ref'>Vism.184</span>.</li><li><i class='term'>-<a href='/define/viriya'>viriya</a></i> manly vigour <a class='ref' href='https://suttacentral.net/sn12.21/en/sujato#1.1'>SN.ii.28</a>.</li><li><i class='term'>-<a href='/define/vyañjana'>vyañjana</a></i> the membrum virile (= ˚linga) <a class='ref' href='https://suttacentral.net/pli-tv-kd20/en/brahmali#13.1.16'>Vin.ii.269</a>.</li></ul><p class='eti'>according to Geiger, Gr. § 30<sup>3</sup> the base is *pūrṣa, from which the Vedic form puruṣa, and the Prk<br><span class='square'>■</span> P. form purisa. The further contraction *pussa *possa yielded <i class='term'><a href='/define/posa'>posa</a></i> (q.v.). From the Prk. form puliśa (Māgadhī) we get <i class='term'><a href='/define/pulla'>pulla</a></i></p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "kassaka": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "kassaka",
+      "grammar": "masculine",
+      "definition": "a plowman; a cultivator, a farmer",
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "kassaka",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='kassaka'><dt><dfn>Kassaka</dfn></dt><dd><p>a husbandman, cultivator, peasant, farmer, ploughman <a class='ref' href='https://suttacentral.net/dn2/en/sujato#36.1'>DN.i.61</a> (k˚ gahapatiko kārakārako rāsi-vaḍḍhako); <a class='ref' href='https://suttacentral.net/an3.93/en/sujato#2.1'>AN.i.241</a>; <a class='ref' href='https://suttacentral.net/an3.81/en/sujato#1.1'>AN.i.229</a>, <a class='ref' href='https://suttacentral.net/an3.91/en/sujato#6.1'>AN.i.239</a> (the three duties of a farmer); <a class='ref' href='https://suttacentral.net/sn7.11/en/sujato#1.1'>SN.i.172</a> = <a class='ref' href='https://suttacentral.net/snp1.4/en/sujato#5.1'>Snp verse 76</a>; <a class='ref' href='https://suttacentral.net/sn22.101/en/sujato#6.1'>SN.iii.155</a> (variant reading for T. kasaka) <a class='ref' href='https://suttacentral.net/sn42.6/en/sujato#7.1'>SN.iv.314</a>; <a class='ref' href='https://suttacentral.net/pli-tv-bu-vb-pc50/en/brahmali#2.1.9'>Vin.iv.108</a>; Bdhd 96; <span class='ref'>DN-a.i.170</span>; often in <i>similes</i>, e.g. <a class='ref' href='https://suttacentral.net/pv1/pli/ms#1.1'>Pv.1:1</a>; <a class='ref' href='https://suttacentral.net/pv21/pli/ms#68.1'>Pv.21:68</a> (likeness to the doer of good works); <span class='ref'>Vism.152</span>, <span class='ref'>Vism.284</span>, <span class='ref'>Vism.320</span>. <i class='term'>-<a href='/define/vaṇṇa'>vaṇṇa</a></i> (under) the disguise of a peasant <a class='ref' href='https://suttacentral.net/sn4.19/en/sujato#2.1'>SN.i.115</a> (of Māra).</p><p class='eti'>fr. kasati</p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "brāhmaṇa": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "brāhmaṇa",
+      "grammar": "masculine",
+      "definition": "a man of the Brahman caste",
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "brāhmaṇa",
+      "grammar": null,
+      "definition": [
+        "brāhmaṇa 1: masc. <b>Brahman; priest; man of the Brahman caste</b> [√brah + ma + *aṇa]",
+        "brāhmaṇa 2: masc. <b>arahant; awakened being; saint; paragon</b> [√brah + ma + *aṇa]",
+        "brāhmaṇa 3: masc. <b>monk; sage; holy man</b> [√brah + ma + *aṇa]",
+        "brāhmaṇa 4: masc. <b>in reference to MN49 Brahmanimantanikasutta</b> [√brah + ma + *aṇa]"
+      ],
+      "xr": null,
+      "dictname": "dpd",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "brāhmaṇa",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='brāhmaṇa'><dt><dfn>Brāhmaṇa</dfn><sup>1</sup></dt><dd id='Brāhmaṇa-1'><p>a member of the Brahman caste; a Br teacher. In the Buddhist terminology also used for a man leading a pure, sinless & ascetic life, often even syn. with arahant<br><span class='square'>■</span> On brāhmaṇas as a caste & their representation in the Jātaka collection see Fick; <i>Sociale Gliederung;</i> esp. ch. 8, pp. 117–⁠162<br><span class='square'>■</span> Var fanciful etymologies, consisting of a word-play, in P definitions are e.g. “sattannaṁ dhammānaṁ bāhitattā br.” (like def. of bhikkhu) <a class='ref' href='https://suttacentral.net/mnd4/pli/ms#12.1'>Mnd.86</a> = <span class='ref'>Cnd.464#a</span> (cp <a class='ref' href='https://suttacentral.net/snp3.6/en/sujato#19.1'>Snp verse 519</a>); ye keci bho-vādikā <a class='ref' href='https://suttacentral.net/mnd10/pli/ms#127.1'>Mnd.249</a> = <span class='ref'>Cnd.464#b</span> brahā-sukhavihāra-jhāna-jhāyin <a class='ref' href='https://suttacentral.net/mil5.5.8/pli/ms#7.1'>Mil.226</a>; pāpaṁ bāhesuṁ <a class='ref' href='https://suttacentral.net/dn27/en/sujato#22.1'>DN.iii.94</a>; bāhita-pāpattā br. <span class='ref'>Dhp-a.iii.84</span> ariyā bāhita-pāpattā br. <span class='ref'>DN-a.i.244</span><br><span class='square'>■</span> pl. <i class='term'>brāhmaṇāse</i> <a class='ref' href='https://suttacentral.net/snp5.8/en/sujato#3.1'>Snp verse 1079</a> sq<br><span class='square'>■</span> Var. references in the Canon to all meanings of the term: <a class='ref' href='https://suttacentral.net/dn3/en/sujato#1.9.1'>DN.i.90</a>, <a class='ref' href='https://suttacentral.net/dn3/en/sujato#1.18.1'>DN.i.94</a>, <a class='ref' href='https://suttacentral.net/dn3/en/sujato#2.7.1'>DN.i.104</a>, <a class='ref' href='https://suttacentral.net/dn4/en/sujato#10.1'>DN.i.119</a> sq., <a class='ref' href='https://suttacentral.net/dn5/en/sujato#11.1'>DN.i.136</a> (mahāsālā), <a class='ref' href='https://suttacentral.net/dn6/en/sujato#1.1'>DN.i.150</a> (˚dūta), <a class='ref' href='https://suttacentral.net/dn13/en/sujato#30.5'>DN.i.247</a>; <a class='ref' href='https://suttacentral.net/dn25/en/sujato#10.15'>DN.iii.44</a> sq., <a class='ref' href='https://suttacentral.net/dn26/en/sujato#5.1'>DN.iii.61</a>, <a class='ref' href='https://suttacentral.net/dn27/en/sujato#6.1'>DN.iii.83</a> sq., <a class='ref' href='https://suttacentral.net/dn27/en/sujato#22.1'>DN.iii.94</a> sq. (origin of), <a class='ref' href='https://suttacentral.net/dn30/en/sujato#1.5.1'>DN.iii.147</a> , <a class='ref' href='https://suttacentral.net/dn30/en/sujato#2.15.6'>DN.iii.170</a> , <a class='ref' href='https://suttacentral.net/dn33/en/sujato#3.1.84'>DN.iii.258</a> (˚mahāsālā), <a class='ref' href='https://suttacentral.net/dn33/en/sujato#3.3.60'>DN.iii.270</a> ; <a class='ref' href='https://suttacentral.net/mn38/en/sujato#40.1'>MN.i.271</a> (˚karaṇā dhammā), <a class='ref' href='https://suttacentral.net/mn39/en/sujato#21.7'>MN.i.280</a>; <a class='ref' href='https://suttacentral.net/mn84/en/sujato#1.1'>MN.ii.84</a>, <a class='ref' href='https://suttacentral.net/mn93/en/sujato#4.8'>MN.ii.148</a>, <a class='ref' href='https://suttacentral.net/mn95/en/sujato#34.1'>MN.ii.177</a>; <a class='ref' href='https://suttacentral.net/mn114/en/sujato#50.1'>MN.iii.60</a>, <a class='ref' href='https://suttacentral.net/mn145/en/sujato#8.1'>MN.iii.270</a> (a bhikkhu addressed as br.); <a class='ref' href='https://suttacentral.net/sn2.3/en/sujato#1.1'>SN.i.47</a>, <a class='ref' href='https://suttacentral.net/sn2.17/en/sujato#2.1'>SN.i.54</a>, <a class='ref' href='https://suttacentral.net/sn3.21/en/sujato#2.1'>SN.i.94</a> sq., <a class='ref' href='https://suttacentral.net/sn3.24/en/sujato#1.1'>SN.i.99</a> (˚kumāra), <a class='ref' href='https://suttacentral.net/sn4.20/en/sujato#3.1'>SN.i.117</a>, <a class='ref' href='https://suttacentral.net/sn4.25/en/sujato#5.1'>SN.i.125</a> , <a class='ref' href='https://suttacentral.net/sn7.1/en/sujato#1.1'>SN.i.160</a> sq.; <a class='ref' href='https://suttacentral.net/sn12.47/en/sujato#4.1'>SN.ii.77</a> , <a class='ref' href='https://suttacentral.net/sn19.11/en/sujato#1.1'>SN.ii.259</a> ; <a class='ref' href='https://suttacentral.net/sn35.228/en/sujato#1.1'>SN.iv.157</a> ; <a class='ref' href='https://suttacentral.net/sn48.3/en/sujato#1.1'>SN.v.194</a> ; <a class='ref' href='https://suttacentral.net/an2.37/en/sujato#1.1'>AN.i.66</a>, <a class='ref' href='https://suttacentral.net/an3.14/en/sujato#2.1'>AN.i.110</a>, <a class='ref' href='https://suttacentral.net/an3.58/en/sujato#1.1'>AN.i.163</a> (tevijjā); <a class='ref' href='https://suttacentral.net/an3.58/en/sujato#13.1'>AN.i.166</a>; <a class='ref' href='https://suttacentral.net/an4.184/en/sujato#10.1'>AN.ii.176</a>; <a class='ref' href='https://suttacentral.net/an5.190/en/sujato#2.1'>AN.iii.221</a> sq. (brāhmaṇa-vagga) <a class='ref' href='https://suttacentral.net/iti68/en/sujato#3.1'>Iti.57</a> sq., <a class='ref' href='https://suttacentral.net/iti71/en/sujato#2.1'>Iti.60</a>, <a class='ref' href='https://suttacentral.net/iti98/en/sujato#2.1'>Iti.98</a>, <a class='ref' href='https://suttacentral.net/iti99/en/sujato#7.1'>Iti.101</a>; <a class='ref' href='https://suttacentral.net/ja362/pli/ms#1.1'>Ja.iii.194</a>; <a class='ref' href='https://suttacentral.net/ja440/pli/ms#1.1'>Ja.iv.9</a>; <a class='ref' href='https://suttacentral.net/ja547/pli/ms#264.1'>Ja.vi.521</a> sq.; <a class='ref' href='https://suttacentral.net/vb17/pli/ms#323.1'>Vb.393</a> sq. For br. with the meaning “arahant” see also: <a class='ref' href='https://suttacentral.net/pli-tv-kd1/en/brahmali#2.2.5'>Vin.i.3</a>; <a class='ref' href='https://suttacentral.net/pli-tv-kd16/en/brahmali#4.3.3'>Vin.ii.156</a> (br. parinibbuta); <a class='ref' href='https://suttacentral.net/thag2.10/en/sujato#2.1'>Thag.140</a>, <a class='ref' href='https://suttacentral.net/thag3.1/en/sujato#3.1'>Thag.221</a> (brahma-bandhu pure āsiṁ, idāni kho ‘mhi brāhmaṇo) <a class='ref' href='https://suttacentral.net/dhp383/en/sujato#1'>Dhp.383</a> sq.; Snp passim (e.g. v. <a class='ref' href='https://suttacentral.net/snp1.7/en/sujato#30.1'>Snp verse 142</a> kammanā hoti brāhmaṇo; <a class='ref' href='https://suttacentral.net/snp2.7/en/sujato#2.1'>Snp verse 284</a> sq.); <a class='ref' href='https://suttacentral.net/ja487/pli/ms#6.1'>Ja.iv.302</a> sq.; <a class='ref' href='https://suttacentral.net/mil5.5.8/pli/ms#1.1'>Mil.225</a>. Ten kinds of Br. are pronounced to be <i class='term'>apetā brahmaññā</i> degraded fr. brahmanship <a class='ref' href='https://suttacentral.net/ja495/pli/ms#1.1'>Ja.iv.361</a> sq. Diff. schools of br. teachers are enumerated at <a class='ref' href='https://suttacentral.net/dn13/en/sujato#9.1'>DN.i.237</a> sq. (Tevijja Sutta)<br><span class='square'>■</span> brāhmaṇānaṁ pubbakā isayo mantānaṁ kattāro “the ten inspired Seers of old times, who composed the Vedic hymns”; their names are Aṭṭhaka Vāmaka, Vāmadeva, Vessāmitta, Yamataggi, Angirasa Bhāradvāja, Vāseṭṭha, Kassapa, Bhagu <a class='ref' href='https://suttacentral.net/pli-tv-kd6/en/brahmali#34.21.5'>Vin.i.245</a>; <a class='ref' href='https://suttacentral.net/dn3/en/sujato#2.7.1'>DN.i.104</a>; <a class='ref' href='https://suttacentral.net/an5.192/en/sujato#3.1'>AN.iii.224</a>; <a class='ref' href='https://suttacentral.net/an7.52/en/sujato#5.1'>AN.iv.61</a>; cp. <span class='ref'>Vv-a.265</span><br><span class='square'>■</span> f. <i class='term'>brāhmaṇī</i> (n. or adj.) the wife of a brāhmaṇa <a class='ref' href='https://suttacentral.net/dn9/en/sujato#34.17'>DN.i.193</a>; <span class='ref'>Ja.v.127</span> (of a purohita or high priest); <span class='ref'>Dhp-a.i.33</span>; <span class='ref'>Dhp-a.iv.176</span>; <span class='ref'>Pv-a.55</span> <span class='ref'>Pv-a.61</span>, <span class='ref'>Pv-a.64</span>. Freq. in combination <i class='term'>brāhmaṇī pajā</i> this generation of brāhmaṇas, e.g. <a class='ref' href='https://suttacentral.net/dn13/en/sujato#37.6'>DN.i.249</a>; <a class='ref' href='https://suttacentral.net/an3.105/en/sujato#1.1'>AN.i.260</a>; <a class='ref' href='https://suttacentral.net/an4.22/en/sujato#4.1'>AN.ii.23</a> (see <i class='term'><a href='/define/pajā'>pajā</a></i>).</p><ul class='compounds'><li><i class='term'>-ibbhā</i> Brahmins & Vaiśyas <a class='ref' href='https://suttacentral.net/ja545/pli/ms#53.1'>Ja.vi.228</a> sq.</li><li><i class='term'>-<a href='/define/kumārikā'>kumārikā</a></i> a brahmin young girl <span class='ref'>Ja.iii.93</span>.</li><li><i class='term'>-<a href='/define/kula'>kula</a></i> a br. clan or family <span class='ref'>Ja.ii.85</span>, <span class='ref'>Ja.ii.394</span>, <span class='ref'>Ja.ii.411</span>; <a class='ref' href='https://suttacentral.net/ja347/pli/ms#3.1'>Ja.iii.147</a>, <a class='ref' href='https://suttacentral.net/ja403/pli/ms#1.1'>Ja.iii.352</a>; <span class='ref'>Pv-a.21</span>, <span class='ref'>Pv-a.61</span></li><li><i class='term'>-gahapatikā</i> priests & laymen (“clerk & yeoman Rh. D. in S.B.E. xi.258) <a class='ref' href='https://suttacentral.net/dn17/en/sujato#1.21.1'>DN.ii.178</a>; <a class='ref' href='https://suttacentral.net/dn30/en/sujato#1.7.1'>DN.iii.148</a>, <a class='ref' href='https://suttacentral.net/dn30/en/sujato#1.16.1'>DN.iii.153</a>, <a class='ref' href='https://suttacentral.net/dn30/en/sujato#2.15.6'>DN.iii.170</a> sq. <a class='ref' href='https://suttacentral.net/sn2.23/en/sujato#10.1'>SN.i.59</a>, <a class='ref' href='https://suttacentral.net/sn7.22/en/sujato#1.1'>SN.i.184</a>; <a class='ref' href='https://suttacentral.net/an3.14/en/sujato#2.1'>AN.i.110</a>; <a class='ref' href='https://suttacentral.net/pli-tv-kd1/en/brahmali#21.4.3'>Vin.i.35</a>; <span class='ref'>Ja.i.83</span>.</li><li><i class='term'>-<a href='/define/gāma'>gāma</a></i> a br village <a class='ref' href='https://suttacentral.net/pli-tv-kd5/en/brahmali#13.9.8'>Vin.i.197</a>; <a class='ref' href='https://suttacentral.net/dn3/en/sujato#1.1.1'>DN.i.87</a>, <a class='ref' href='https://suttacentral.net/dn5/en/sujato#1.1'>DN.i.127</a>; <a class='ref' href='https://suttacentral.net/sn4.13/en/sujato#4.1'>SN.i.111</a>; <span class='ref'>Ja.ii.368</span>; <span class='ref'>Ja.iii.293</span> <span class='ref'>Ja.iv.276</span>.</li><li><i class='term'>-<a href='/define/dhamma'>dhamma</a></i> duty of a br.; see on contrast between Brahmaṇic & Buddhist view <a class='ref' href='https://suttacentral.net/ja487/pli/ms#4.1'>Ja.iv.301</a> sq., cp also <span class='ref'>Snp-a.312</span>–<span class='ref'>Snp-a.325</span> (br- dhammika-sutta) & Fick, loc. cit. 124;</li><li><i class='term'>-<a href='/define/putta'>putta</a></i> son of a br. <span class='ref'>Pv-a.62</span>.</li><li><i class='term'>-<a href='/define/bhojana'>bhojana</a></i> giving food (alms) to brahmans <a class='ref' href='https://suttacentral.net/pli-tv-kd1/en/brahmali#24.7.11'>Vin.i.44</a></li><li><i class='term'>-māṇava</i> a young brahmin <span class='ref'>Ja.iv.391</span></li><li><i class='term'>-rūpa</i> (in) form of a brahmin <span class='ref'>Pv-a.63</span></li><li><i class='term'>-vaḍḍhakī</i> a brahmin carpenter <a class='ref' href='https://suttacentral.net/ja474/pli/ms#12.1'>Ja.iv.207</a></li><li><i class='term'>-vaṇṇin</i> having the appearance of a brahmin <a class='ref' href='https://suttacentral.net/cp10/pli/ms#10.1'>Cp.10.10</a></li><li><i class='term'>-vācanaka</i> a brahmin disputation some sort of elocution show <span class='ref'>Ja.i.318</span> <span class='ref'>Ja.iv.391</span></li><li><i class='term'>-vāṭaka</i> circle of brahmins <span class='ref'>Dhp-a.iv.177</span> (<span class='grammatical-term'>variant reading</span> ˚vādaka)</li><li><i class='term'>-vāṇija</i> a brahmin merchant <span class='ref'>Pv-a.113</span></li><li><i class='term'>-sacca</i> a brahmanic (i.e. standard, holy) truth <a class='ref' href='https://suttacentral.net/an4.184/en/sujato#10.1'>AN.ii.176</a> (where the Buddha sets forth 4 such brahmin saccāni, different from the usual 4 ariyasaccāni)</li></ul><p class='eti'>fr. brahma; cp. Vedic brāhmaṇa, der. fr. brahmán</p></dd><dt><dfn>Brāhmaṇa</dfn><sup>2</sup></dt><dd id='Brāhmaṇa-2'><p><span class='grammar'>neuter</span> state of a true brahman, “holiness supreme” <a class='ref' href='https://suttacentral.net/thag12.2/en/sujato#12.1'>Thag.631</a>.</p><p class='eti'>for brahmañña</p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "putta": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "putta",
+      "grammar": "masculine",
+      "definition": "a son; a child",
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "putta",
+      "grammar": null,
+      "definition": [
+        "putta 1: masc. <b>son; child</b>",
+        "putta 2: masc. <b>(used to form diminutives) young man; descendent; son of</b>",
+        "putta 3: nt. <b>son; child</b>"
+      ],
+      "xr": null,
+      "dictname": "dpd",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "putta",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='putta'><dt><dfn>Putta</dfn></dt><dd><ol type='1' class='decimal'><li>a son <a class='ref' href='https://suttacentral.net/sn10.7/en/sujato#1.1'>SN.i.210</a>; <a class='ref' href='https://suttacentral.net/snp1.3/en/sujato#1.1'>Snp verse 35</a>, <a class='ref' href='https://suttacentral.net/snp1.3/en/sujato#4.1'>Snp verse 38</a>, <a class='ref' href='https://suttacentral.net/snp1.3/en/sujato#26.1'>Snp verse 60</a>, <a class='ref' href='https://suttacentral.net/snp3.7/en/sujato#22.1'>Snp verse 557</a>, <a class='ref' href='https://suttacentral.net/snp4.10/en/sujato#11.1'>Snp verse 858</a>; <a class='ref' href='https://suttacentral.net/dhp62/en/sujato#1'>Dhp.62</a>, <a class='ref' href='https://suttacentral.net/dhp84/en/sujato#1'>Dhp.84</a> <a class='ref' href='https://suttacentral.net/dhp228/en/sujato#1'>Dhp.228</a>, <a class='ref' href='https://suttacentral.net/dhp345/en/sujato#1'>Dhp.345</a>; <a class='ref' href='https://suttacentral.net/ja488/pli/ms#2.1'>Ja.iv.309</a>; <span class='ref'>Vism.645</span> (simile of 3 sons); <span class='ref'>Pv-a.25</span>, <span class='ref'>Pv-a.63</span>, <span class='ref'>Pv-a.73</span> sq.; <span class='ref'>DN-a.i.157</span> (dāsaka˚). Four kinds of sons are distinguished in the old Cy. viz. <i class='term'><a href='/define/atraja'>atraja</a></i> p., <i class='term'>khettaja dinnaka, antevāsika</i>, or born of oneself, born on one’s land, given to one, i.e. adopted, one living with one as a pupil. Thus at <a class='ref' href='https://suttacentral.net/mnd10/pli/ms#117.1'>Mnd.247</a>; <span class='ref'>Cnd.448</span>; <a class='ref' href='https://suttacentral.net/ja7/pli/ms#1.1'>Ja.i.135</a>. Good and bad sons in regard to lineage are represented at <span class='ref'>Ja.vi.380</span><br><span class='square'>■</span> Metaph. “sons of the Buddha” <a class='ref' href='https://suttacentral.net/sn8.7/en/sujato#7.1'>SN.i.192</a> <a class='ref' href='https://suttacentral.net/thag21.1/en/sujato#29.1'>Thag.1237</a> (sabbe Bhagavato puttā); <a class='ref' href='https://suttacentral.net/iti99/en/sujato#7.1'>Iti.101</a> (me tumhe puttā orasā mukhato jātā dhammajā), <a class='ref' href='https://suttacentral.net/ja371/pli/ms#1.1'>Ja.iii.211</a><br><span class='square'>■</span> The parable of a woman eating her sons is given as a punishment in the Peta condition at <a class='ref' href='https://suttacentral.net/pv6/pli/ms'>Pv.6</a> (& <a class='ref' href='https://suttacentral.net/pv7/pli/ms'>Pv.7</a>); pl. <i class='term'>puttāni</i> <a class='ref' href='https://suttacentral.net/pv6/pli/ms#3.1'>Pv.6:3</a><br><span class='square'>■</span> aputta-bhāvaṁ karoti to disinherit formally <a class='ref' href='https://suttacentral.net/ja537/pli/ms#16.1'>Ja.v.468</a>.</li><li>(in general) child, descendant, sometimes pleonastic like E. ˚man, ˚son in names see <i class='term'><a href='/define/putta'>putta</a></i>-dāra; so esp. in later literature, like ludda˚ hunter’s son = hunter <span class='ref'>Ja.ii.154</span>; ayya˚ = ayya, i.e. gentleman, lord <a class='ref' href='https://suttacentral.net/ja519/pli/ms#24.1'>Ja.v.94</a>; <span class='ref'>Pv-a.66</span>. See also rāja˚<br><span class='square'>■</span> Of a girl <a class='ref' href='https://suttacentral.net/thig16.1/en/sujato#17.1'>Thig.464</a><br><span class='square'>■</span> mātucchā˚ & mātula˚ cousin (from mother’s side), pitucchā˚ id (fr. father’s side). On putta in N. Pāṭali˚ see <i class='term'><a href='/define/puṭa'>puṭa</a></i><br><span class='square'>■</span> f. puttī see rāja˚.</li></ol><ul class='compounds'><li><i class='term'>-<a href='/define/jīva'>jīva</a></i> Name of a tree: Putranjiva Roxburghii <a class='ref' href='https://suttacentral.net/ja547/pli/ms#341.1'>Ja.vi.530</a></li><li><i class='term'>-dāra</i> child & wife (i.e. wife & children, family) <a class='ref' href='https://suttacentral.net/dn26/en/sujato#10.1'>DN.iii.66</a> <a class='ref' href='https://suttacentral.net/dn31/en/sujato#27.1'>DN.iii.189</a>, <a class='ref' href='https://suttacentral.net/dn31/en/sujato#34.1'>DN.iii.192</a>; <a class='ref' href='https://suttacentral.net/sn3.20/en/sujato#2.1'>SN.i.92</a>; <a class='ref' href='https://suttacentral.net/an4.61/en/sujato#10.1'>AN.ii.67</a>; <a class='ref' href='https://suttacentral.net/pv38/pli/ms#48.1'>Pv.38:48</a> (sa˚ together with his family); <span class='ref'>Ja.iii.467</span> (kiṁ ˚ena what shall I do with a family?); <a class='ref' href='https://suttacentral.net/ja537/pli/ms#28.1'>Ja.v.478</a>. They are hindrances to the development of spiritual life: see Nd ii.under āsiṁsanti & palibodha;</li><li><i class='term'>-<a href='/define/phala'>phala</a></i> a son as fruit (of the womb) <a class='ref' href='https://suttacentral.net/ja532/pli/ms#74.1'>Ja.v.330</a></li><li><i class='term'>-<a href='/define/maṁsa'>maṁsa</a></i> the flesh of one’s children (sons) a metaphor probably distorted fr. <i class='term'>pūta˚</i>; rotten flesh. The metaphor is often alluded to in the kasiṇa-kammaṭṭhāna, and usually coupled with the akkha-bbhañjana (& vaṇapaticchādana)-simile, e.g. <span class='ref'>Vism.32</span>, <span class='ref'>Vism.45</span>; <span class='ref'>Dhp-a.i.375</span>; <span class='ref'>Snp-a.58</span>, <span class='ref'>Snp-a.342</span>. Besides at <a class='ref' href='https://suttacentral.net/sn12.63/en/sujato#1.1'>SN.ii.98</a> (in full); <a class='ref' href='https://suttacentral.net/thag6.12/en/sujato#5.1'>Thag.445</a> (˚ūpamā); <a class='ref' href='https://suttacentral.net/thag1.2/en/sujato#1.1'>Thag.2</a>, <a class='ref' href='https://suttacentral.net/thag3.1/en/sujato#3.1'>Thag.221</a>.</li><li><i class='term'>-<a href='/define/mata'>mata</a></i> a woman whose sons (children are dead <a class='ref' href='https://suttacentral.net/mn76/en/sujato#53.1'>MN.i.524</a>.</li></ul><p class='eti'>Vedic putra, Idg. *putlo = Lat. pullus (*putslos) young of an animal, fr. pōu, cp. Gr. <span class='at'>παυς, παίς</span> child Lat. puer, pubes, Av. pupra, Lith. putýtis (young animal or bird), Cymr. wyr grandchild; also Sk. pota(ka young animal and base pu-in pumaṁs, puṁs “man”.</p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "mātula": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "mātula",
+      "grammar": "masculine",
+      "definition": "maternal uncle",
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "mātula",
+      "grammar": null,
+      "definition": [
+        "mātula: masc. <b>mother's brother; maternal uncle</b> [mātar + ula]",
+        "mātulā: fem. <b>name of Magadhan town</b>; lit. maternal aunt [mātar + ula + ā]"
+      ],
+      "xr": null,
+      "dictname": "dpd",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "mātula",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='mātula'><dt><dfn>Mātula</dfn></dt><dd><p>a mother’s brother an uncle <span class='ref'>Ja.i.225</span>; <span class='ref'>Dhp-a.i.15</span>; <span class='ref'>Pv-a.58</span>, <span class='ref'>Pv-a.60</span>.</p><ul class='compounds'><li><i class='term'>-dhītā</i> (the complement of mātucchā-putta) uncle’s daughter, female first cousin (from mother’s brother’s side) <span class='ref'>Ja.ii.119</span>; <span class='ref'>Dhp-a.iii.290</span>; <span class='ref'>Pv-a.55</span>.</li></ul><p class='eti'>cp. Epic Sk. mātula & semantically Lat. matruus, i.e. one who belongs to the mother</p></dd></dl>",
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "mātula",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "dppn",
+      "text": "<dl class='place'><dt><dfn>Mātula</dfn></dt><dt>Matula</dt><dd><p>A village in Māgadha, where the Buddha stayed and where he preached the Cakkavattisīhanāda Sutta. <a class='ref' href='https://suttacentral.net/an5.50/en/sujato#1.1'>AN.iii.58</a></p></dd><dd class='info'><span class='location'>Māgadha</span><span class='precision'>3</span><span class='type'>town</span></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "kumāra": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "kumāra",
+      "grammar": "masculine",
+      "definition": [
+        "a child; a boy, a youth; a son; (pi) boys; children",
+        "a prince; especially the heir apparent"
+      ],
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "kumāra",
+      "grammar": null,
+      "definition": [
+        "kumāra 1: masc. <b>youngster; young boy</b> [√kumār + a]",
+        "kumāra 2: masc. <b>prince</b> [√kumār + a]"
+      ],
+      "xr": null,
+      "dictname": "dpd",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "kumāra",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='kumāra'><dt><dfn>Kumāra</dfn></dt><dd><p>a young boy, son <a class='ref' href='https://suttacentral.net/snp3.11/en/sujato#7.1'>Snp verse 685</a> sq. (kuhiṁ kumāro aham api daṭthukāmo: w. ref. to the child Gotama); <a class='ref' href='https://suttacentral.net/pv30/pli/ms#2.1'>Pv.30:2</a>; <span class='ref'>Pv-a.39</span>, <span class='ref'>Pv-a.41</span> (= māṇava) daharo kumāro <a class='ref' href='https://suttacentral.net/mn78/en/sujato#4.1'>MN.ii.24</a>, <a class='ref' href='https://suttacentral.net/mn80/en/sujato#15.1'>MN.ii.44</a><br><span class='square'>■</span> a son of (-˚) rāja˚ <span class='ref'>Pv-a.163</span>; khattiya˚, brāhmaṇa˚ Bdhd 84; deva˚ <span class='ref'>Ja.iii.392</span> yakkha˚ Bdhd 84.</p><ul class='compounds'><li><i class='term'>-<a href='/define/kīḷā'>kīḷā</a></i> the amusement of a boy <span class='ref'>Ja.i.137</span>;</li><li><i class='term'>-pañhā</i> questions suitable for a boy <a class='ref' href='https://suttacentral.net/kp3/pli/ms#.1'>Kp.3</a>.;</li><li><i class='term'>-<a href='/define/lakkhaṇa'>lakkhaṇa</a></i> divination by means of a young male child (+ kumāri˚) <a class='ref' href='https://suttacentral.net/dn1/en/sujato#1.21.1'>DN.i.9</a>.</li></ul><p class='eti'>Vedic kumāra</p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "vāṇija": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "vāṇija",
+      "grammar": "masculine",
+      "definition": "a merchant; trader",
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "vāṇija",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='vāṇija'><dt><dfn>Vāṇija</dfn></dt><dd><p>a merchant, trader <a class='ref' href='https://suttacentral.net/pli-tv-bu-vb-pj1/en/brahmali#1.8.10'>Vin.iii.6</a> (<i class='term'>assa˚</i>;) <a class='ref' href='https://suttacentral.net/snp3.9/en/sujato#26.1'>Snp verse 614</a>, <a class='ref' href='https://suttacentral.net/snp3.9/en/sujato#63.1'>Snp verse 651</a>, <a class='ref' href='https://suttacentral.net/snp5.1/en/sujato#39.1'>Snp verse 1014</a>; <a class='ref' href='https://suttacentral.net/ja523/pli/ms#21.1'>Ja.v.156</a> (so read for va˚); <a class='ref' href='https://suttacentral.net/pv10/pli/ms#6.1'>Pv.10:6</a> <span class='ref'>Davs.i.58</span>; <span class='ref'>Kp-a.224</span>; <span class='ref'>Snp-a.251</span>; <span class='ref'>Pv-a.47</span>, <span class='ref'>Pv-a.48</span>, <span class='ref'>Pv-a.100</span>, <span class='ref'>Pv-a.191</span> <span class='ref'>Pv-a.215</span>, <span class='ref'>Pv-a.271</span>. On similes with v. see <i>J.P.T.S.</i> 1907, 134. <small class='ascii'>Vanijaka = vanija</small></p><p class='eti'>fr. vaṇij (vaṇik): see <i class='term'><a href='/define/vaṇijjā'>vaṇijjā</a></i>; lit. son of a merchant; Vedic vāṇija</p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "bhūpāla": [],
+  "sahāya": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "sahāya",
+      "grammar": "masculine",
+      "definition": "a friend; an ally",
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "sahāya",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='sahāya'><dt><dfn>Sahāya</dfn></dt><dd><p>companion, friend <a class='ref' href='https://suttacentral.net/dn16/en/sujato#1.7.4'>DN.ii.78</a>; <a class='ref' href='https://suttacentral.net/mn13/en/sujato#8.1'>MN.i.86</a>; <a class='ref' href='https://suttacentral.net/sn41.3/en/sujato#7.1'>SN.iv.288</a>; <a class='ref' href='https://suttacentral.net/pp2.3/pli/ms#45.1'>Pp.36</a>; <a class='ref' href='https://suttacentral.net/snp1.3/en/sujato#1.1'>Snp verse 35</a>, <a class='ref' href='https://suttacentral.net/snp1.3/en/sujato#11.1'>Snp verse 45</a> sq.; <a class='ref' href='https://suttacentral.net/ja157/pli/ms#2.1'>Ja.ii.29</a>; <i class='term'>--kicca</i> assistance (?) <a class='ref' href='https://suttacentral.net/ja533/pli/ms#1.1'>Ja.v.339</a>; <i class='term'>--matta</i> companion <a class='ref' href='https://suttacentral.net/ja453/pli/ms#3.1'>Ja.iv.76</a>; <i class='term'>--sampadā</i> the good luck of having companions <a class='ref' href='https://suttacentral.net/snp1.3/en/sujato#13.1'>Snp verse 47</a>; <i class='term'>adiṭṭha-˚</i>; a friend who has not yet been seen personally <span class='ref'>Ja.i.377</span>; <span class='ref'>Ja.iii.364</span>; <i class='term'>bahu-˚</i>; having many friends <a class='ref' href='https://suttacentral.net/pli-tv-kd16/en/brahmali#4.7.1'>Vin.ii.158</a>; nāhaṁ ettha sahāyo bhavis-sāmi I am not a party to that <span class='ref'>Ja.iii.46</span>; asahāya <a class='ref' href='https://suttacentral.net/mil5.5.8/pli/ms#1.1'>Mil.225</a>.</p><p class='eti'>cp. Epic Sk. sahāya, fr. saha + <i class='term'><a href='/define/i'>i</a></i></p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "sahāyaka": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "sahāyaka",
+      "grammar": "masculine",
+      "definition": "a friend; an ally",
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "sahāyaka",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='sahāyaka'><dt><dfn>Sahāyaka</dfn></dt><dd><p><span class='grammar'>adjective</span> f. ˚yikā companion, ally, friend <a class='ref' href='https://suttacentral.net/pli-tv-kd1/en/brahmali#7.15.5'>Vin.i.18</a>; <a class='ref' href='https://suttacentral.net/dn16/en/sujato#6.5.1'>DN.ii.155</a>; <a class='ref' href='https://suttacentral.net/an4.74/en/sujato#1.1'>AN.ii.79</a>, <a class='ref' href='https://suttacentral.net/an4.191/en/sujato#2.1'>AN.ii.186</a>; <a class='ref' href='https://suttacentral.net/ja17/pli/ms#1.1'>Ja.i.165</a>; <a class='ref' href='https://suttacentral.net/ja157/pli/ms#2.1'>Ja.ii.29</a>; <a class='ref' href='https://suttacentral.net/ja523/pli/ms#37.1'>Ja.v.159</a> <span class='ref'>Ja.vi.256</span> (gihī sahāyakā, read gihisahāyakā <span class='eti'>[?]</span>).</p><p class='eti'>fr. last</p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "mitta": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "mitta",
+      "grammar": "masculine & neuter",
+      "definition": "a friend",
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "mitta",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='mitta'><dt><dfn>Mitta</dfn></dt><dd><p><span class='grammar'>masculine neuter</span> friend. Usually m., although <i>nt.</i> occurs in meaning “friend,” in sg. (<a class='ref' href='https://suttacentral.net/ne37/pli/ms#335.1'>Ne.164</a>) & pl. (<a class='ref' href='https://suttacentral.net/snp1.10/en/sujato#10.1'>Snp verse 185</a> <a class='ref' href='https://suttacentral.net/snp1.10/en/sujato#12.1'>Snp verse 187</a>); in meaning “friendship” at <span class='ref'>Ja.vi.375</span> (= mittabhāva C.). The half-scientific, half-popular etym. of mitta, as given at <span class='ref'>Vb-a.108</span>, is “mettāyantī ti mittā minantī ti vā m.; sabba-guyhesu anto pakkhipantī ti attho” (the latter: “they enclose in all that is hidden”)-Two kinds of friends are distinguished at <span class='ref'>Cnd.510</span> (in exegesis of <a class='ref' href='https://suttacentral.net/snp1.3/en/sujato#3.1'>Snp verse 37</a> & <a class='ref' href='https://suttacentral.net/snp1.3/en/sujato#41.1'>Snp verse 75</a>), viz.; <i class='term'>āgārika˚</i>; (a house-or lay-friend) and <i class='term'>anāgārika˚</i>; (a homeless-or clericalfriend). The former is possessed of all ordinary qualities of kindness and love, the latter of special virtues of mind & heart<br><span class='square'>■</span> A friend who acts as a sort of Mentor or spiritual adviser, is called a; <i class='term'>kalyāṇa-mitta</i> (see under <i class='term'><a href='/define/kalyāṇa'>kalyāṇa</a></i>)<br><span class='square'>■</span> Mitta is often combined with similar terms devoting relationship or friendship, e.g. with <i class='term'>amaccā</i> colleagues and <i class='term'>ñāti-sālohita˚</i>; blood-relations, in ster phrase at <a class='ref' href='https://suttacentral.net/pli-tv-kd15/en/brahmali#20.5.4'>Vin.ii.126</a>; <a class='ref' href='https://suttacentral.net/an3.74/en/sujato#5.1'>AN.i.222</a>; <a class='ref' href='https://suttacentral.net/snp3.7/en/sujato#2.1'>Snp.p.104</a>; <span class='ref'>Pv-a.28</span>; cp <i class='term'>ñāti-mittā</i> relatives & friends <a class='ref' href='https://suttacentral.net/pv5/pli/ms#9.1'>Pv.5:9</a>; <i class='term'><a href='/define/suhada'>suhada</a></i> (“dear heart”) <a class='ref' href='https://suttacentral.net/dn31/en/sujato#21.1'>DN.iii.187</a> (four types, cp. m. paṭirūpaka) <i class='term'><a href='/define/suhajja'>suhajja</a></i> one who is dear to one’s heart <span class='ref'>Pv-a.191</span>; <i class='term'><a href='/define/sahāya'>sahāya</a></i> companion <span class='ref'>Pv-a.86</span>. The neut. form occurs for kind things <a class='ref' href='https://suttacentral.net/dn31/en/sujato#26.1'>DN.iii.188</a>; <a class='ref' href='https://suttacentral.net/sn1.52/en/sujato#2.1'>SN.i.37</a><br><span class='square'>■</span> Opp. <i class='term'><a href='/define/sapatta'>sapatta</a></i> enemy <span class='ref'>Pv-a.13</span>; <i class='term'><a href='/define/amitta'>amitta</a></i> a sham friend or enemy <a class='ref' href='https://suttacentral.net/snp3.7/en/sujato#26.1'>Snp verse 561</a> (= paccatthika <span class='ref'>Snp-a.455</span>); <a class='ref' href='https://suttacentral.net/dn31/en/sujato#14.17'>DN.iii.185</a>. <i class='term'>pāpa-mitta</i> bad friend <span class='ref'>Pv-a.5</span><br><span class='square'>■</span> For refs. see e.g. <a class='ref' href='https://suttacentral.net/snp1.3/en/sujato#24.1'>Snp verse 58</a>, <a class='ref' href='https://suttacentral.net/snp2.3/en/sujato#3.1'>Snp verse 255</a>, <a class='ref' href='https://suttacentral.net/snp2.7/en/sujato#14.1'>Snp verse 296</a>, <a class='ref' href='https://suttacentral.net/snp2.11/en/sujato#4.1'>Snp verse 338</a>; <a class='ref' href='https://suttacentral.net/dhp78/en/sujato#1'>Dhp.78</a>, <a class='ref' href='https://suttacentral.net/dhp375/en/sujato#1'>Dhp.375</a>.</p><ul class='compounds'><li><i class='term'>-ābhirādhin</i> one who pleases his friends <a class='ref' href='https://suttacentral.net/ja483/pli/ms#16.1'>Ja.iv.274</a> (= mittesu adubbhamāno C.)</li><li><i class='term'>-ddu</i> <span class='eti'>[cp. Sk. mitra-druha one who injures or betrays his friends</span> <a class='ref' href='https://suttacentral.net/sn11.6/en/sujato#3.1'>SN.i.225</a>; <a class='ref' href='https://suttacentral.net/snp2.2/en/sujato#6.1'>Snp verse 244</a>; <a class='ref' href='https://suttacentral.net/ja482/pli/ms#8.1'>Ja.iv.260</a>; also in foll. forms:<br><span class='square'>■</span> <i class='term'>-dubbha</i> <a class='ref' href='https://suttacentral.net/pv21/pli/ms#3.1'>Pv.21:3</a> (same passage at <a class='ref' href='https://suttacentral.net/ja493/pli/ms#7.1'>Ja.iv.352</a>; <a class='ref' href='https://suttacentral.net/ja528/pli/ms#29.1'>Ja.v.240</a>; <a class='ref' href='https://suttacentral.net/ja546/pli/ms#229.1'>Ja.vi.310</a>, <span class='ref'>Ja.vi.375</span>);<br><span class='square'>■</span> <i class='term'>-dūbha</i> <a class='ref' href='https://suttacentral.net/ja493/pli/ms#7.1'>Ja.iv.352</a>; <a class='ref' href='https://suttacentral.net/ja546/pli/ms#229.1'>Ja.vi.310</a>;<br><span class='square'>■</span> <i class='term'>-dūbhin</i> <span class='eti'>[cp. Sk. ˚drohin]</span> <a class='ref' href='https://suttacentral.net/ja482/pli/ms#1.1'>Ja.iv.257</a> <a class='ref' href='https://suttacentral.net/ja519/pli/ms#34.1'>Ja.v.97</a> (˚kamma); <span class='ref'>Ja.vi.375</span>; <span class='ref'>Dhp-a.ii.23</span>.</li><li><i class='term'>-<a href='/define/paṭirūpaka'>paṭirūpaka</a></i> a false friend, one pretending to be a friend <a class='ref' href='https://suttacentral.net/dn31/en/sujato#14.17'>DN.iii.185</a> (four types: añña-d-atthu-hara, vacī-parama, anuppiyabhāṇin apāya-sahāya, i.e. one who takes anything one who is a great talker, one who flatters, one who is a spendthrift companion.)</li><li><i class='term'>-<a href='/define/bandhava'>bandhava</a></i> a relation in friendship, one who is one’s relative as a friend <span class='ref'>Cnd.455</span> (where <a class='ref' href='https://suttacentral.net/mnd1/pli/ms#38.1'>Mnd.11</a> has manta-bandhava).</li><li><i class='term'>-<a href='/define/bheda'>bheda</a></i> see <i class='term'><a href='/define/mithu'>mithu</a></i>-bheda</li><li><i class='term'>-<a href='/define/vaṇṇa'>vaṇṇa</a></i> pretence of friendship, a sham friendship <a class='ref' href='https://suttacentral.net/pv43/pli/ms#6.1'>Pv.43:6</a> (= mitta-rūpa, m- paṭirūpatā <span class='ref'>Pv-a.268</span>).</li></ul><p class='eti'>cp. Vedic mitra, m. & nt., friend; Av. mipro, friend</p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "bhāsati": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "bhāsati",
+      "grammar": "bhās + a",
+      "definition": "says; speaks; shines",
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "bhāsati",
+      "grammar": null,
+      "definition": [
+        "bhāsati 1.1: pr. <b>speaks; talks (about); says</b> [√bhās + a + ti]",
+        "bhāsati 1.2: pr. <b>speaks (for); talks (on behalf of); (comm) speaks (with)</b> [√bhās + a + ti]",
+        "bhāsati 1.3: pr. <b>(of verse) recites; utters</b>; lit. speaks [√bhās + a + ti]",
+        "bhāsati 2.1: pr. <b>shines; radiates</b> [√bhās + a + ti]",
+        "bhāsati 2.2: pr. <b>illuminates; lights up</b> [√bhās + a + ti]"
+      ],
+      "xr": null,
+      "dictname": "dpd",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "bhāsati",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='bhāsati'><dt><dfn>Bhāsati</dfn><sup>1</sup></dt><dd id='Bhāsati-1'><p>to speak, to say, to speak to, to call <a class='ref' href='https://suttacentral.net/mn34/en/sujato#11.1'>MN.i.227</a>, <a class='ref' href='https://suttacentral.net/snp1.9/en/sujato#6.1'>Snp verse 158</a> <a class='ref' href='https://suttacentral.net/snp3.7/en/sujato#27.1'>Snp verse 562</a>, <a class='ref' href='https://suttacentral.net/snp3.11/en/sujato#44.1'>Snp verse 722</a>; <a class='ref' href='https://suttacentral.net/dhp1/en/sujato#1'>Dhp.1</a>, <a class='ref' href='https://suttacentral.net/dhp246/en/sujato#1'>Dhp.246</a>, <a class='ref' href='https://suttacentral.net/dhp258/en/sujato#1'>Dhp.258</a>; also <i class='term'>bhāsate</i> <a class='ref' href='https://suttacentral.net/snp3.3/en/sujato#6.1'>Snp verse 452</a><br><abbr title='potential'>pot</abbr> <i class='declined-term'>bhāseyya</i> <a class='ref' href='https://suttacentral.net/pli-tv-kd17/en/brahmali#3.1.14'>Vin.ii.189</a>; <a class='ref' href='https://suttacentral.net/snp3.3/en/sujato#5.1'>Snp verse 451</a>, <a class='ref' href='https://suttacentral.net/snp4.14/en/sujato#16.1'>Snp verse 930</a>; <span class='ref'>Snp-a.468</span> (for udīraye <a class='ref' href='https://suttacentral.net/dhp408/en/sujato#1'>Dhp.408</a>); <i class='term'>bhāse</i> <a class='ref' href='https://suttacentral.net/dhp102/en/sujato#1'>Dhp.102</a>; <a class='ref' href='https://suttacentral.net/snp2.14/en/sujato#26.1'>Snp verse 400</a>; & <i class='term'>bhāsaye</i> <a class='ref' href='https://suttacentral.net/an4.47/en/sujato#2.1'>AN.ii.51</a>; <a class='ref' href='https://suttacentral.net/ja537/pli/ms#121.1'>Ja.v.509</a> (with gloss katheyya for joteyya = bhāseyya)-Aor. <i class='term'>abhāsi</i> <a class='ref' href='https://suttacentral.net/pli-tv-bu-vb-pc22/en/brahmali#1.1'>Vin.iv.54</a>; <span class='ref'>Pv-a.6</span>, <span class='ref'>Pv-a.17</span>, <span class='ref'>Pv-a.23</span>, <span class='ref'>Pv-a.69</span>; 1<sup>st</sup> sg also <i class='term'>abhāsissaṁ</i> (Cond.) <a class='ref' href='https://suttacentral.net/pv6/pli/ms#8.1'>Pv.6:8</a> (= abhāsiṁ <span class='ref'>Pv-a.34</span>) imper. pres. <i class='term'><a href='/define/bhāsa'>bhāsa</a></i> <a class='ref' href='https://suttacentral.net/snp2.12/en/sujato#5.1'>Snp verse 346</a>; ppr. bhāsamāne <a class='ref' href='https://suttacentral.net/an4.47/en/sujato#2.1'>AN.ii.51</a>; <a class='ref' href='https://suttacentral.net/ja537/pli/ms#121.1'>Ja.v.509</a>; <a class='ref' href='https://suttacentral.net/snp3.2/en/sujato#2.1'>Snp verse 426</a>; <a class='ref' href='https://suttacentral.net/dhp19/en/sujato#1'>Dhp.19</a>; <a class='ref' href='https://suttacentral.net/ja484/pli/ms#14.1'>Ja.iv.281</a> (perhaps better with variant reading as hasamāna); <a class='ref' href='https://suttacentral.net/ja515/pli/ms#21.1'>Ja.v.63</a>; & <i class='term'>bhāsanto</i> <a class='ref' href='https://suttacentral.net/snp3.6/en/sujato#47.1'>Snp verse 543</a><br><abbr title='gerundive'>grd</abbr> <i class='declined-term'><a href='/define/bhāsitabba'>bhāsitabba</a></i> <a class='ref' href='https://suttacentral.net/an7.68/en/sujato#7.1'>AN.iv.115</a>; <span class='ref'>Vism.127</span><br><span class='square'>■</span> Med. ind. pres 2<sup>nd</sup> sg. <i class='term'>bhāsase</i> <a class='ref' href='https://suttacentral.net/vv34/pli/ms#2.1'>Vv.34:2</a>; imper. pres. 2<sup>nd</sup> sg. <i class='term'>bhāsassu</i> <a class='ref' href='https://suttacentral.net/mn99/en/sujato#7.1'>MN.ii.199</a><br><span class='square'>■</span> An apparent ger. form <i class='term'>abhāsiya</i> <a class='ref' href='https://suttacentral.net/iti70/en/sujato#3.1'>Iti.59</a>, <a class='ref' href='https://suttacentral.net/iti71/en/sujato#2.1'>Iti.60</a> (micchā vācaṁ abhāsiya) is problematic. It may be an old misspelling for ca bhāsiya, as a positive form is required by the sense. The vv.ll. however do not suggest anything else but abhāsiya; the editor of It suggests pa˚<br><span class='square'>■</span> Cp. <i class='term'>anu, o˚, samanu˚</i>.</p><p class='eti'><i class='term'>bhāṣ</i>; <span class='ref'>Dhtp.317</span>: vacane; <span class='ref'>Dhtm.467</span>; <i class='term'>vācāya</i></p></dd><dt><dfn>Bhāsati</dfn><sup>2</sup></dt><dd id='Bhāsati-2'><p>to shine, shine forth, fill with splendour <a class='ref' href='https://suttacentral.net/snp3.11/en/sujato#41.1'>Snp verse 719</a> (2<sup>nd</sup> sg. fut. bhāsihi = bhāsissasi pakāsessasi <span class='ref'>Snp-a.499</span>). Usually with prep prefix <i class='term'><a href='/define/pa˚'>pa˚</a></i>; (so read at <a class='ref' href='https://suttacentral.net/pv10/pli/ms#9.1'>Pv.10:9</a> for ca bh.). Cp. <i class='term'>o˚, vi˚</i>.</p><p class='eti'><i class='term'>bhās</i> <span class='ref'>Dhtm.467</span>: dittiyaṁ</p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "pacati": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "pacati",
+      "grammar": "pac + a",
+      "definition": "cooks",
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "pacati",
+      "grammar": null,
+      "definition": ["pacati: pr. <b>cooks; bakes; boils; roasts</b> [√pac + a + ti]"],
+      "xr": null,
+      "dictname": "dpd",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "pacati",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='pacati'><dt><dfn>Pacati</dfn></dt><dd><p>to cook, boil, roast <a class='ref' href='https://suttacentral.net/pli-tv-bi-vb-pc6/en/brahmali#2.2.1'>Vin.iv.264</a>; fig. torment in purgatory (trs. and intrs.): Niraye pacitvā after roasting in N. <a class='ref' href='https://suttacentral.net/sn16.13/en/sujato#4.1'>SN.ii.225</a>, <span class='ref'>Pv-a.10</span>, <span class='ref'>Pv-a.14</span><br><abbr title='present participle'>ppr</abbr> pacanto tormenting, gen. pacato (+ Caus. pācayato) <a class='ref' href='https://suttacentral.net/dn2/en/sujato#15.1'>DN.i.52</a> (explained at <span class='ref'>DN-a.i.159</span>, where read pacato for paccato, by pare daṇḍena pīḷentassa)<br><abbr title='past participle'>pp</abbr> <i class='declined-term'><a href='/define/pakka'>pakka</a></i> (q.v.). Caus. <i class='term'>pacāpeti & pāceti;</i> (q.v.)<br><abbr title='passive'>pass</abbr> <i class='declined-term'><a href='/define/paccati'>paccati</a></i> to be roasted or tormented (q.v.).</p><p class='eti'>Ved. pacati, Idg. <i class='term'>*peqṷō</i>, Av. pac-; Obulg. peka to fry, roast, Lith, kepū bake, Gr. <span class='at'>πέσσω</span> cook, <span class='at'>πέπων</span> ripe</p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "kasati": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "kasati",
+      "grammar": "present3 singular",
+      "definition": "hurts, injures",
+      "xr": "kasati",
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "kasati",
+      "grammar": null,
+      "definition": ["kasati: pr. <b>ploughs; tills; turns the soil</b> [√kas + a + ti]"],
+      "xr": null,
+      "dictname": "dpd",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "kasati",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='kasati'><dt><dfn>Kasati</dfn></dt><dd><p>to till, to plough <a class='ref' href='https://suttacentral.net/sn7.11/en/sujato#1.1'>SN.i.172</a>, <a class='ref' href='https://suttacentral.net/sn7.11/en/sujato#6.1'>SN.i.173</a> = <a class='ref' href='https://suttacentral.net/snp1.4/en/sujato#9.1'>Snp verse 80</a>; <a class='ref' href='https://suttacentral.net/thag10.1/en/sujato#5.1'>Thag.531</a>; <span class='ref'>Ja.i.57</span>; <span class='ref'>Ja.ii.165</span>; <span class='ref'>Ja.vi.365</span><br><span class='square'>■</span> kassate (3rd sing med.) <a class='ref' href='https://suttacentral.net/thag10.1/en/sujato#4.1'>Thag.530</a><br><abbr title='past participle'>pp</abbr> kattha (q.v.) Caus. ii. <i class='term'>kasāpeti</i> <a class='ref' href='https://suttacentral.net/mil3.4.5/pli/ms#1.1'>Mil.66</a>, <a class='ref' href='https://suttacentral.net/mil3.7.3/pli/ms#3.1'>Mil.82</a>; <span class='ref'>Dhp-a.i.224</span>.</p><p class='eti'><i class='term'>kṛṣ</i> or <i class='term'>karṣ</i></p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "bhuñjati": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "bhuñjati",
+      "grammar": "bhuj + ṁ-a",
+      "definition": "eats; enjoys",
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "bhuñjati",
+      "grammar": null,
+      "definition": [
+        "bhuñjati 1: pr. <b>eats; consumes</b> [√bhuj + ṁa + ti]",
+        "bhuñjati 2: pr. <b>(of sensual pleasures) uses; enjoys; partakes (of); indulges (in)</b> [√bhuj + ṁa + ti]",
+        "bhuñjati 3: pr. <b>receives revenue (from); lives at the expense (of)</b> [√bhuj + ṁa + ti]",
+        "bhuñjatī: fem. <b>name of a female deity; attendant of king Vessavaṇa</b>"
+      ],
+      "xr": null,
+      "dictname": "dpd",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "bhuñjati",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='bhuñjatibhuj'><dt><dfn>Bhuñjati</dfn><sup>1</sup></dt><dd id='Bhuñjati-1'><p>to eat (in general), to enjoy, make use of, take advantage of, use <a class='ref' href='https://suttacentral.net/snp1.6/en/sujato#13.1'>Snp verse 102</a>, <a class='ref' href='https://suttacentral.net/snp2.2/en/sujato#2.1'>Snp verse 240</a>, <a class='ref' href='https://suttacentral.net/snp2.4/en/sujato#3.1'>Snp verse 259</a>, <a class='ref' href='https://suttacentral.net/snp3.9/en/sujato#31.1'>Snp verse 619</a>; <a class='ref' href='https://suttacentral.net/dhp324/en/sujato#1'>Dhp.324</a> <a class='ref' href='https://suttacentral.net/pp2.4/pli/ms#109.1'>Pp.55</a>.<br><abbr title='potential'>pot</abbr> <i class='declined-term'>bhuñjeyya</i> <a class='ref' href='https://suttacentral.net/snp2.14/en/sujato#26.1'>Snp verse 400</a>; <a class='ref' href='https://suttacentral.net/dhp308/en/sujato#1'>Dhp.308</a>, 2<sup>nd</sup> pl <i class='term'>bhuñjetha</i> <a class='ref' href='https://suttacentral.net/dhp70/en/sujato#1'>Dhp.70</a>; <span class='ref'>Mhvs.25</span>, <span class='ref'>Mhvs.113</span>.<br><abbr title='imperative'>imper</abbr> 2<sup>nd</sup> med <i class='term'>bhuñjassa</i> <a class='ref' href='https://suttacentral.net/sn45.159/en/sujato#2.1'>SN.v.53</a>; 3<sup>rd</sup> act. bhuñjatu <a class='ref' href='https://suttacentral.net/sn6.3/en/sujato#3.1'>SN.i.141</a>; <a class='ref' href='https://suttacentral.net/snp3.4/en/sujato#31.1'>Snp verse 479</a> bhuñjassu <a class='ref' href='https://suttacentral.net/snp3.1/en/sujato#17.1'>Snp verse 421</a>;<br><abbr title='present participle'>ppr</abbr> <i class='declined-term'>bhuñjanto</i> <span class='ref'>Ja.iii.277</span>: <i class='term'><a href='/define/bhuñjamāna'>bhuñjamāna</a></i> <a class='ref' href='https://suttacentral.net/thag1.12/en/sujato#1.1'>Thag.12</a>; <a class='ref' href='https://suttacentral.net/snp2.2/en/sujato#2.1'>Snp verse 240</a>.<br><abbr title='future'>fut</abbr> 1<sup>st</sup> sg. <i class='term'><a href='/define/bhokkhaṁ'>bhokkhaṁ</a></i> <span class='eti'>[Sk bhoksyāmi]</span> <a class='ref' href='https://suttacentral.net/ja459/pli/ms#7.1'>Ja.iv.117</a>.<br><abbr title='aorist'>aor</abbr> 1<sup>st</sup> sg. <i class='term'>bhuñjiṁ Miln</i> 47 3<sup>rd</sup> sg. <i class='term'><a href='/define/bhuñji'>bhuñji</a></i> <span class='ref'>Ja.iv.370</span>; 3<sup>rd</sup> pl. <i class='term'>abhuñjiṁsu</i> <a class='ref' href='https://suttacentral.net/thag16.10/en/sujato#3.1'>Thag.922</a> <i class='term'>abhuñjisuṁ</i> <span class='ref'>Mhvs.7</span>, <span class='ref'>Mhvs.25</span>.<br><abbr title='gerund'>ger</abbr> <i class='declined-term'><a href='/define/bhutvā'>bhutvā</a></i> <a class='ref' href='https://suttacentral.net/ja316/pli/ms#1.1'>Ja.iii.53</a> (= bhuñjitvā C.); <span class='ref'>Dhp-a.i.182</span>; <i class='term'>bhutvāna</i> <a class='ref' href='https://suttacentral.net/snp1.7/en/sujato#16.1'>Snp verse 128</a>.<br><abbr title='gerundive'>grd</abbr> <i class='declined-term'><a href='/define/bhuñjitabba'>bhuñjitabba</a></i> <span class='ref'>Mhvs.5</span>, <span class='ref'>Mhvs.127</span>.<br><abbr title='infinitive'>inf</abbr> <i class='declined-term'>bhottuñ</i>: see <i class='term'>ava</i>˚.<br><abbr title='past participle'>pp</abbr> <i class='declined-term'><a href='/define/bhutta'>bhutta</a></i><br><abbr title='causative'>caus</abbr> <i class='declined-term'><a href='/define/bhojeti'>bhojeti</a></i> (q.v.). Cp. bhoga bhojana, bhojanīya, bhojja; also Desid. pp. bubbhukkhita; & ābhuñjati.</p><p class='eti'>(bhuj) to Lat. fruor, frūx = E. fruit, frugal etc.; Goth. brūkjan = As. brūkan = Ger. brauchen. The <span class='ref'>Dhtp.379</span> (& <span class='ref'>Dhtm.613</span>) explains <i class='term'>bhuj</i> by “pālan ajjhohāresu,” i.e. eating & drinking for the purpose of living</p></dd><dt><dfn>Bhuñjati</dfn><sup>2</sup></dt><dd id='Bhuñjati-2'><p>to clean, purify cleanse: see <i class='term'><a href='/define/bhuja'>bhuja</a></i><sup>2</sup> and bhujissa, also bhoja & bhojaka.</p><p class='eti'>bhuj to purify, cleanse, sift, not given in this meaning by the Dhātupāṭha. Cp. Av. buxti purification <i class='term'>buj</i> to clean, also Lat. fungor (to get through or rid of, cp. E. function), Goth. us-baugjan to sweep; P paribhuñjati 2, paribhojaniya & vinibbhujati. See Kern, <cite>Toevoegselen</cite> p. 104, s. v. bhujissa</p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "sayati": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "sayati",
+      "grammar": "si + a",
+      "definition": "sleeps; lies down",
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "sayati",
+      "grammar": null,
+      "definition": ["sayati: pr. <b>lies down; rests; sleeps</b> [√sī + a + ti]"],
+      "xr": null,
+      "dictname": "dpd",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "sayati",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='sayatiśī'><dt><dfn>Sayati</dfn><sup>1</sup> <span class='eti'>[śī]</span></dt><dd><p>to lie down: see <i class='term'><a href='/define/seti'>seti</a></i>. Caus. ii. <i class='term'><a href='/define/sayāpeti'>sayāpeti</a></i> ibid.</p></dd><dt><dfn>Sayati</dfn><sup>2</sup> <span class='eti'>[śri</span></dt><dd><p>which is given in meaning <i class='term'><a href='/define/sevā'>sevā</a></i> at <span class='ref'>Dhtp.289</span>] to lean on; to be supported etc.: only in pp. <i class='term'><a href='/define/sita'>sita</a></i>, and in prep. cpd. <i class='term'><a href='/define/nissayati'>nissayati</a></i>.</p></dd></dl>",
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "sayati",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='sayati'><dt><dfn>Seti & sayati</dfn></dt><dd><p>to lie down, to sleep; (applied) to be in a condition, to dwell, behave etc<br><abbr title='present'>pres</abbr> <i class='declined-term'><a href='/define/seti'>seti</a></i> <a class='ref' href='https://suttacentral.net/sn1.70/en/sujato#1.1'>SN.i.41</a>, <a class='ref' href='https://suttacentral.net/sn2.3/en/sujato#1.1'>SN.i.47</a>, <a class='ref' href='https://suttacentral.net/sn9.2/en/sujato#1.1'>SN.i.198</a> (kiṁ sesi why do you lie asleep? Cp. <a class='ref' href='https://suttacentral.net/pv18/pli/ms#1.1'>Pv.18:1</a>); <a class='ref' href='https://suttacentral.net/ja10/pli/ms#1.1'>Ja.i.141</a>; <a class='ref' href='https://suttacentral.net/dhp79/en/sujato#1'>Dhp.79</a> <a class='ref' href='https://suttacentral.net/dhp168/en/sujato#1'>Dhp.168</a>; <a class='ref' href='https://suttacentral.net/snp1.11/en/sujato#8.1'>Snp verse 200</a>; <span class='ref'>Vv-a.42</span>; <i class='term'><a href='/define/sayati'>sayati</a></i> <a class='ref' href='https://suttacentral.net/pli-tv-kd1/en/brahmali#29.1.8'>Vin.i.57</a>; <a class='ref' href='https://suttacentral.net/ja165/pli/ms#1.1'>Ja.ii.53</a>; <span class='ref'>DN-a.i.261</span>.<br><abbr title='potential'>pot</abbr> <i class='declined-term'>sayeyya</i> <a class='ref' href='https://suttacentral.net/pv15/pli/ms'>Pv.15</a>,<sup>9</sup> & <i class='term'>saye</i> <a class='ref' href='https://suttacentral.net/iti111/en/sujato#7.1'>Iti.120</a>.<br><abbr title='present participle'>ppr</abbr> <i class='declined-term'><a href='/define/sayaṁ'>sayaṁ</a></i> <a class='ref' href='https://suttacentral.net/iti86/en/sujato#3.1'>Iti.82</a>, <a class='ref' href='https://suttacentral.net/iti110/en/sujato#7.1'>Iti.117</a>; <a class='ref' href='https://suttacentral.net/snp1.11/en/sujato#1.1'>Snp verse 193</a>; <i class='term'><a href='/define/sayāna'>sayāna</a></i> (med.) <a class='ref' href='https://suttacentral.net/dn3/en/sujato#1.9.1'>DN.i.90</a>; <a class='ref' href='https://suttacentral.net/dn22/en/sujato#2.11'>DN.ii.292</a>; <a class='ref' href='https://suttacentral.net/mn10/en/sujato#6.1'>MN.i.57</a>; <a class='ref' href='https://suttacentral.net/iti110/en/sujato#7.1'>Iti.117</a>; <a class='ref' href='https://suttacentral.net/snp5.19/en/sujato#15.1'>Snp verse 1145</a>; & <i class='term'><a href='/define/semāna'>semāna</a></i> <a class='ref' href='https://suttacentral.net/dn14/en/sujato#2.6.1'>DN.ii.24</a>; <a class='ref' href='https://suttacentral.net/mn13/en/sujato#17.1'>MN.i.88</a>; <a class='ref' href='https://suttacentral.net/sn4.23/en/sujato#1.1'>SN.i.121</a>; <a class='ref' href='https://suttacentral.net/ja23/pli/ms#1.1'>Ja.i.180</a>; also <i class='term'><a href='/define/sayamāna'>sayamāna</a></i> <a class='ref' href='https://suttacentral.net/thag1.95/en/sujato#1.1'>Thag.95</a><br><abbr title='future'>fut</abbr> <i class='declined-term'>sessati</i> <a class='ref' href='https://suttacentral.net/sn3.14/en/sujato#1.1'>SN.i.83</a>; <a class='ref' href='https://suttacentral.net/snp4.16/en/sujato#16.1'>Snp verse 970</a>; <span class='ref'>Dhp-a.i.320</span><br><abbr title='aorist'>aor</abbr> <i class='declined-term'>sesi</i> <a class='ref' href='https://suttacentral.net/ja516/pli/ms#10.1'>Ja.v.70</a> <i class='term'><a href='/define/settha'>settha</a></i> <a class='ref' href='https://suttacentral.net/snp4.16/en/sujato#16.1'>Snp verse 970</a>; <i class='term'><a href='/define/sayi'>sayi</a></i> <span class='ref'>Ja.vi.197</span>, <i class='term'>asayittha</i> <span class='ref'>Ja.i.335</span><br><abbr title='infinitive'>inf</abbr> <i class='declined-term'>sayituṁ</i> <span class='ref'>Pv-a.157</span>;<br><abbr title='gerund'>ger</abbr> <i class='declined-term'><a href='/define/sayitvā'>sayitvā</a></i> <a class='ref' href='https://suttacentral.net/ja177/pli/ms#1.1'>Ja.ii.77</a><br><abbr title='past participle'>pp</abbr> <i class='declined-term'><a href='/define/sayita'>sayita</a></i> (q.v.)<br><abbr title='causative 2'>caus 2</abbr> <i class='declined-term'><a href='/define/sayāpeti'>sayāpeti</a></i> to make lie down, to bed on a couch etc. <span class='ref'>Ja.i.245</span>; <a class='ref' href='https://suttacentral.net/ja537/pli/ms#3.1'>Ja.v.461</a>; <span class='ref'>Mhvs.31</span>, <span class='ref'>Mhvs.35</span>; <span class='ref'>Pv-a.104</span><br><abbr title='past participle'>pp</abbr> <i class='declined-term'>sayāpita<br><span class='square'>■</span> sukhaṁ seti</i> to be at ease or happy <a class='ref' href='https://suttacentral.net/sn10.8/en/sujato#7.1'>SN.i.212</a>; <a class='ref' href='https://suttacentral.net/ja528/pli/ms#37.1'>Ja.v.242</a> (raṭṭhaṁ i.e. is prosperous); opp <i class='term'><a href='/define/dukkhaṁ'>dukkhaṁ</a></i> s. to be miserable <a class='ref' href='https://suttacentral.net/an3.35/en/sujato#2.1'>AN.i.137</a>.</p><p class='eti'><i class='term'>śī</i>, Vedic śete & śayate; cp. Av. saēte = Gr. <span class='at'>κεϊται</span> to lie, <span class='at'>ὠ κεανός</span> (“ocean”) = Sk. ā-śayānah, <span class='at'>κοιμάω</span> to put to sleep; Ags. hāēman to marry; also Lat cīvis = citizen. The Dhtp simply defines as <i class='term'>saya</i> (374).</p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "passati": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "passati",
+      "grammar": "dis + a; dis is changed to pas",
+      "definition": "sees; finds; understands",
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "passati",
+      "grammar": null,
+      "definition": [
+        "passati 1: pr. <b>sees</b> [√dis + a + ti]",
+        "passati 2: pr. <b>understands; gets</b>; lit. sees [√dis + a + ti]",
+        "passati 3: pr. <b>finds; encounters; meets with</b>; lit. sees [√dis + a + ti]",
+        "passati 4: pr. <b>looks at; observes; examines; inspects</b>; lit. sees [√dis + a + ti]"
+      ],
+      "xr": null,
+      "dictname": "dpd",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "passati",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='passati'><dt><dfn>Passati</dfn></dt><dd><ol type='1' class='decimal'><li>to see-Pres. <i class='term'><a href='/define/passati'>passati</a></i> <a class='ref' href='https://suttacentral.net/pli-tv-kd9/en/brahmali#4.9.8'>Vin.i.322</a>; <a class='ref' href='https://suttacentral.net/sn3.1/en/sujato#3.1'>SN.i.69</a> <a class='ref' href='https://suttacentral.net/sn5.5/en/sujato#3.1'>SN.i.132</a>, <a class='ref' href='https://suttacentral.net/sn9.2/en/sujato#1.1'>SN.i.198</a>; <a class='ref' href='https://suttacentral.net/sn12.22/en/sujato#3.1'>SN.ii.29</a>; <a class='ref' href='https://suttacentral.net/snp2.7/en/sujato#31.1'>Snp verse 313</a>, <a class='ref' href='https://suttacentral.net/snp3.9/en/sujato#59.1'>Snp verse 647</a>, <a class='ref' href='https://suttacentral.net/snp4.15/en/sujato#19.1'>Snp verse 953</a>, <a class='ref' href='https://suttacentral.net/snp5.6/en/sujato#3.1'>Snp verse 1063</a>, <a class='ref' href='https://suttacentral.net/snp5.19/en/sujato#12.1'>Snp verse 1142</a> (cp. <span class='ref'>Cnd.428</span>); <a class='ref' href='https://suttacentral.net/pv2/pli/ms#3.1'>Pv.2:3</a>; <a class='ref' href='https://suttacentral.net/mil5.5.4/pli/ms#2.1'>Mil.218</a>; <span class='ref'>Pv-a.11</span>, <span class='ref'>Pv-a.102</span>; 1<sup>st</sup> pl. <i class='term'>passāma</i> <a class='ref' href='https://suttacentral.net/snp1.4/en/sujato#5.1'>Snp verse 76</a>, <a class='ref' href='https://suttacentral.net/snp1.9/en/sujato#1.1'>Snp verse 153</a>, <a class='ref' href='https://suttacentral.net/snp1.9/en/sujato#14.1'>Snp verse 164</a>; <a class='ref' href='https://suttacentral.net/pv10/pli/ms#1.1'>Pv.10:1</a> (as future); imper. sg. <i class='term'><a href='/define/passa'>passa</a></i> <a class='ref' href='https://suttacentral.net/snp3.2/en/sujato#11.1'>Snp verse 435</a>, <a class='ref' href='https://suttacentral.net/snp3.8/en/sujato#7.1'>Snp verse 580</a>, <a class='ref' href='https://suttacentral.net/snp3.8/en/sujato#15.1'>Snp verse 588</a>, <a class='ref' href='https://suttacentral.net/snp3.12/en/sujato#51.1'>Snp verse 756</a>; <a class='ref' href='https://suttacentral.net/ja38/pli/ms#1.1'>Ja.i.223</a>; <span class='ref'>Ja.ii.159</span>; <a class='ref' href='https://suttacentral.net/pv13/pli/ms#16.1'>Pv.13:16</a>, <a class='ref' href='https://suttacentral.net/pv13/pli/ms#19.1'>Pv.13:19</a> <span class='ref'>Pv-a.38</span>; pl. <i class='term'>passatha</i> <a class='ref' href='https://suttacentral.net/sn12.19/en/sujato#6.1'>SN.ii.25</a>; <a class='ref' href='https://suttacentral.net/snp1.9/en/sujato#26.1'>Snp verse 176</a> sq., <a class='ref' href='https://suttacentral.net/snp4.2/en/sujato#6.1'>Snp verse 777</a>, & <i class='term'>passavho</i> (cp. Sk. paśyadhvaṁ) <a class='ref' href='https://suttacentral.net/snp5.1/en/sujato#23.1'>Snp verse 998</a><br><abbr title='present participle'>ppr</abbr> <i class='declined-term'>passaṁ</i> (see Geiger, <cite>Pali Grammar</cite> § 97#2) <a class='ref' href='https://suttacentral.net/mn77/en/sujato#9.13'>MN.ii.9</a>; <a class='ref' href='https://suttacentral.net/snp3.12/en/sujato#26.1'>Snp verse 739</a>, <a class='ref' href='https://suttacentral.net/snp4.9/en/sujato#3.1'>Snp verse 837</a>, <a class='ref' href='https://suttacentral.net/snp4.13/en/sujato#15.1'>Snp verse 909</a>; <i class='term'>passanto</i> <span class='ref'>Ja.iii.52</span>; <span class='ref'>Pv-a.5</span>, <span class='ref'>Pv-a.6</span>; f. <i class='term'>passantī</i> <a class='ref' href='https://suttacentral.net/sn9.3/en/sujato#4.1'>SN.i.199</a><br><abbr title='gerundive'>grd</abbr> <i class='declined-term'><a href='/define/passitabba'>passitabba</a></i> <span class='ref'>Ja.iv.390</span> (a˚)<br><abbr title='future'>fut</abbr> <i class='declined-term'>passissati</i> <a class='ref' href='https://suttacentral.net/pv16/pli/ms#6.1'>Pv.16:6</a> <span class='ref'>Pv-a.6</span><br><abbr title='aorist'>aor</abbr> <i class='declined-term'><a href='/define/passi'>passi</a></i> <span class='ref'>Ja.ii.103</span>, <span class='ref'>Ja.ii.111</span>; <a class='ref' href='https://suttacentral.net/ja386/pli/ms#1.1'>Ja.iii.278</a>, <a class='ref' href='https://suttacentral.net/ja401/pli/ms#7.1'>Ja.iii.341</a>.</li><li>to recognise, realise, know: only in combination with jānāti (pres. jānāti passati; ppr. jānaṁ passaṁ): see <i class='term'><a href='/define/jānāti'>jānāti</a></i> 11.</li><li>to find <a class='ref' href='https://suttacentral.net/snp5.16/en/sujato#3.1'>Snp verse 1118</a> (= vindati paṭilabhati <span class='ref'>Cnd.428#b</span>); <a class='ref' href='https://suttacentral.net/ja316/pli/ms#4.1'>Ja.iii.55</a>; <a class='ref' href='https://suttacentral.net/pv21/pli/ms#9.1'>Pv.21:9</a><br><span class='square'>■</span> Cp. vi˚.</li></ol><p class='eti'>Vedic paśyati & *spaśati (aor. aspaṣṭa, Caus. spāśayati etc.); cp. Av. spasyeiti, Gr. <span class='at'>σκέπτομαι</span>, (E “scepsis”); Lat. species etc.; Ohg. spehon = Ger spāhen (E. spy)<br><span class='square'>■</span> The paradigm pass˚, which in literary Sk. is restricted to the pres. stem <i class='term'>(paś)</i> interchanges with the paradigm dakkh˚ & dass˚; <i class='term'>(dṛś)</i>: see <i class='term'><a href='/define/dassati'>dassati</a></i><sup>1</sup></p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "chindati": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "chindati",
+      "grammar": "present 3 singular",
+      "definition": [
+        "cuts; chops; cuts off; cuts out; inscribes",
+        "cuts down; destroys; removes",
+        "crosses (water)"
+      ],
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "chindati",
+      "grammar": null,
+      "definition": [
+        "chindati 1: pr. <b>cuts off; severs</b> [√chid + ṁa + ti]",
+        "chindati 2: pr. <b>cuts up; slices up</b> [√chid + ṁa + ti]",
+        "chindati 3: pr. <b>(of a tree) cuts down; fells (something at)</b> [√chid + ṁa + ti]",
+        "chindati 4: pr. <b>cuts across; breasts; fords</b> [√chid + ṁa + ti]",
+        "chindati 5: pr. <b>breaks into; burgles</b>; lit. cuts [√chid + ṁa + ti]",
+        "chindati 6: pr. destroys [√chid]"
+      ],
+      "xr": null,
+      "dictname": "dpd",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "chindati",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='chindati'><dt><dfn>Chindati</dfn></dt><dd><p>to cut off, to destroy, to remove, both <i>lit.</i> (bandhanaṁ, pāsaṁ, pasibbakaṁ, jīvaṁ, gīvaṁ, sīsaṁ hatthapāde, etc.) and <i>fig.</i> (taṇhaṁ, mohaṁ, āsavā saṁyojanāni, vicikicchaṁ, vanathaṁ, etc.) Freq. in similes: see <i>J.P.T.S.</i> 1907, 88</p><h3>Forms</h3><ol type='1' class='decimal'><li><i class='term'>chid</i>: aor <i class='term'>acchidā</i> <a class='ref' href='https://suttacentral.net/snp2.12/en/sujato#16.1'>Snp verse 357</a>, as acchidaṁ <a class='ref' href='https://suttacentral.net/mn79/en/sujato#17.1'>MN.ii.35</a>, acchidda <a class='ref' href='https://suttacentral.net/dhp351/en/sujato#1'>Dhp.351</a> (cp. agamā); Pass. pres. <i class='term'><a href='/define/chijjati'>chijjati</a></i> (Sk. chidyate) <a class='ref' href='https://suttacentral.net/dhp284/en/sujato#1'>Dhp.284</a>; <a class='ref' href='https://suttacentral.net/iti78/en/sujato#1.1'>Iti.70</a>; <span class='ref'>Ja.i.167</span>; <a class='ref' href='https://suttacentral.net/thag18.1/en/sujato#5.1'>Thag.1055</a> = <a class='ref' href='https://suttacentral.net/mil7.5.6/pli/ms#1.1'>Mil.395</a>; <a class='ref' href='https://suttacentral.net/mil3.2.1/pli/ms#1.1'>Mil.40</a>; aor chijji <a class='ref' href='https://suttacentral.net/ja358/pli/ms#4.1'>Ja.iii.181</a> (dvidhā ch. broke in two)<br><abbr title='future'>fut</abbr> <i class='declined-term'>chijjissati</i> <span class='ref'>Ja.i.336</span><br><abbr title='gerund'>ger</abbr> <i class='declined-term'><a href='/define/chijjitvā'>chijjitvā</a></i> <span class='ref'>Ja.i.202</span>; <a class='ref' href='https://suttacentral.net/ja460/pli/ms#1.1'>Ja.iv.120</a><br><abbr title='past participle'>pp</abbr> <i class='declined-term'>chijjita</i> <a class='ref' href='https://suttacentral.net/ja410/pli/ms#1.1'>Ja.iii.389</a>; see also <i class='term'><a href='/define/chida'>chida</a></i>, chidda, chinna.</li><li><i class='term'>chind</i>: Act. pres. <i class='term'><a href='/define/chindati'>chindati</a></i> <a class='ref' href='https://suttacentral.net/sn6.8/en/sujato#2.1'>SN.i.149</a> = <a class='ref' href='https://suttacentral.net/an10.89/en/sujato#16.1'>AN.v.174</a>; <a class='ref' href='https://suttacentral.net/snp3.10/en/sujato#9.1'>Snp verse 657</a>; <span class='ref'>Pv-a.4</span>, <span class='ref'>Pv-a.114</span>; <span class='ref'>Vv-a.123</span><br><abbr title='imperative'>imper</abbr> chinda <a class='ref' href='https://suttacentral.net/snp2.12/en/sujato#5.1'>Snp verse 346</a>; <a class='ref' href='https://suttacentral.net/ja206/pli/ms#1.1'>Ja.ii.153</a>; <i class='term'>chindatha</i> <a class='ref' href='https://suttacentral.net/dhp283/en/sujato#1'>Dhp.283</a><br><abbr title='potential'>pot</abbr> chinde <a class='ref' href='https://suttacentral.net/dhp370/en/sujato#1'>Dhp.370</a><br><abbr title='present participle'>ppr</abbr> <i class='declined-term'><a href='/define/chindamāna'>chindamāna</a></i> <span class='ref'>Ja.i.70</span>, <a class='ref' href='https://suttacentral.net/ja40/pli/ms#1.1'>Ja.i.233</a><br><abbr title='future'>fut</abbr> <i class='declined-term'>chindissati</i> <span class='ref'>Dhp-a.ii.258</span><br><abbr title='aorist'>aor</abbr> <i class='declined-term'><a href='/define/acchindi'>acchindi</a></i> <a class='ref' href='https://suttacentral.net/pli-tv-kd1/en/brahmali#63.5.5'>Vin.i.88</a> & chindi <span class='ref'>Ja.i.140</span><br><abbr title='gerund'>ger</abbr> <i class='declined-term'><a href='/define/chinditvā'>chinditvā</a></i> <span class='ref'>Ja.i.222</span>, <span class='ref'>Ja.i.254</span>, <a class='ref' href='https://suttacentral.net/ja73/pli/ms#1.1'>Ja.i.326</a>; <a class='ref' href='https://suttacentral.net/ja206/pli/ms#2.1'>Ja.ii.155</a>.<br><abbr title='infinitive'>inf</abbr> <i class='declined-term'>chindituṁ</i> <a class='ref' href='https://suttacentral.net/pli-tv-kd6/en/brahmali#14.5.12'>Vin.i.206</a>; <span class='ref'>Pv-a.253</span><br><abbr title='gerundive'>grd</abbr> <i class='declined-term'><a href='/define/chindiya'>chindiya</a></i> <span class='ref'>Ja.ii.139</span> (duc˚)<br><abbr title='causative'>caus</abbr> <i class='declined-term'>chindāpeti</i> <span class='ref'>Ja.ii.104</span>, <a class='ref' href='https://suttacentral.net/ja186/pli/ms#1.1'>Ja.ii.106</a>; <span class='ref'>Vism.190</span> (rājāno core ch.)</li><li><i class='term'>ched</i>: fut. <i class='term'>checchati</i> (Sk chetsyati) <a class='ref' href='https://suttacentral.net/mn64/en/sujato#5.11'>MN.i.434</a>; <a class='ref' href='https://suttacentral.net/dhp350/en/sujato#1'>Dhp.350</a>; <a class='ref' href='https://suttacentral.net/mil7.4.9/pli/ms#2.1'>Mil.391</a><br><abbr title='aorist'>aor</abbr> <i class='declined-term'><a href='/define/acchecchi'>acchecchi</a></i> (Sk. acchaitsīt) <a class='ref' href='https://suttacentral.net/sn1.20/en/sujato#23.1'>SN.i.12</a>; <a class='ref' href='https://suttacentral.net/an4.257/en/sujato#3.1'>AN.ii.249</a>; <a class='ref' href='https://suttacentral.net/snp2.12/en/sujato#14.1'>Snp verse 355</a> = <a class='ref' href='https://suttacentral.net/thag21.1/en/sujato#67.2'>Thag.1275</a>; <span class='ref'>Ja.vi.261</span>. <i class='term'>acchejji</i> (variant reading of acchecchi) is read at <a class='ref' href='https://suttacentral.net/sn36.2/en/sujato#2.1'>SN.iv.205</a>, <a class='ref' href='https://suttacentral.net/sn36.4/en/sujato#4.1'>SN.iv.207</a>, <a class='ref' href='https://suttacentral.net/sn44.9/en/sujato#3.1'>SN.iv.399</a>; <a class='ref' href='https://suttacentral.net/sn56.35/en/sujato#1.1'>SN.v.441</a>; <a class='ref' href='https://suttacentral.net/an5.200/en/sujato#4.1'>AN.iii.246</a>, <a class='ref' href='https://suttacentral.net/an6.103/en/sujato#1.1'>AN.iii.444</a>; <a class='ref' href='https://suttacentral.net/iti53/en/sujato#1.1'>Iti.47</a><br><abbr title='infinitive'>inf</abbr> <i class='declined-term'>chetuṁ</i> <a class='ref' href='https://suttacentral.net/ja475/pli/ms#1.1'>Ja.iv.208</a>; <a class='ref' href='https://suttacentral.net/pv38/pli/ms#28.1'>Pv.38:28</a>, & chettuṁ <a class='ref' href='https://suttacentral.net/snp1.2/en/sujato#11.1'>Snp verse 28</a><br><abbr title='gerund'>ger</abbr> <i class='declined-term'><a href='/define/chetvā'>chetvā</a></i> <a class='ref' href='https://suttacentral.net/snp1.3/en/sujato#32.1'>Snp verse 66</a>, <a class='ref' href='https://suttacentral.net/snp3.6/en/sujato#49.1'>Snp verse 545</a>, <a class='ref' href='https://suttacentral.net/snp3.9/en/sujato#34.1'>Snp verse 622</a>; <a class='ref' href='https://suttacentral.net/dhp283/en/sujato#1'>Dhp.283</a>, <a class='ref' href='https://suttacentral.net/dhp369/en/sujato#1'>Dhp.369</a>; <span class='ref'>Ja.i.255</span>; <span class='ref'>Cnd.245</span> & <i class='term'><a href='/define/chetvāna'>chetvāna</a></i> <a class='ref' href='https://suttacentral.net/snp1.3/en/sujato#10.1'>Snp verse 44</a>; <a class='ref' href='https://suttacentral.net/dhp346/en/sujato#1'>Dhp.346</a>; <a class='ref' href='https://suttacentral.net/ja411/pli/ms#6.1'>Ja.iii.396</a><br><abbr title='gerundive'>grd</abbr> <i class='declined-term'>chetabba</i> <a class='ref' href='https://suttacentral.net/pli-tv-kd15/en/brahmali#6.1.9'>Vin.ii.110</a>, & <i class='term'><a href='/define/chejja'>chejja</a></i> (often combined w. bhejja, torture & maiming, as punishments) <a class='ref' href='https://suttacentral.net/pli-tv-bu-vb-pj2/en/brahmali#3.20'>Vin.iii.47</a> (+ bh˚); <a class='ref' href='https://suttacentral.net/ja536/pli/ms#62.1'>Ja.v.444</a> (id.), <a class='ref' href='https://suttacentral.net/ja547/pli/ms#397.1'>Ja.vi.536</a>; <a class='ref' href='https://suttacentral.net/mil3.7.5/pli/ms#2.1'>Mil.83</a>, <a class='ref' href='https://suttacentral.net/mil6.4.2/pli/ms#51.1'>Mil.359</a>. Also <i class='term'><a href='/define/chejja'>chejja</a></i> in neg acchejja <span class='ref'>SN.vi.226</span><br><abbr title='causative'>caus</abbr> <i class='declined-term'>chedeti</i> <a class='ref' href='https://suttacentral.net/pli-tv-kd1/en/brahmali#25.23.2'>Vin.i.50</a>, & <i class='term'><a href='/define/chedāpeti'>chedāpeti</a></i> ib.; <a class='ref' href='https://suttacentral.net/ja465/pli/ms#1.1'>Ja.iv.154</a>. See also cheda, chedana.</li></ol><p class='eti'>Vedic <i class='term'>chid</i> in 3 forms viz. <span class='inline-li'>1</span> (Perf.) base <i class='term'>chid</i>; <span class='inline-li'>2</span> Act. (pres.) base w. nasal infix. <i class='term'>chind</i>; <span class='inline-li'>3</span> Med (denom). base w. guṇa <i class='term'>ched</i>. Cp. the analagous formations of <i class='term'>cit</i> under cinteti<br><span class='square'>■</span> Idg.* <i class='term'>sk(h)eid</i>, Gr. <span class='at'>σξίζω</span> (E. schism); Lat. scindo (E. scissors); Ohg scīzan; Ags. scītan; cp. also Goth. skaidan, Ohg. sceidan Root <i class='term'>chid</i> is defined at <span class='ref'>Dhtp.382</span>, <span class='ref'>Dhtp.406</span> as “dvedhākaraṇa”</p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "gacchati": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "gacchati",
+      "grammar": "present 3 singular",
+      "definition": [
+        "of people, animals, rivers, roads etc.) goes; moves, walks; goes away, leaves; goes to (+ accusative or santike/santikaṁ etc.); often with absolutive, eg. ādāya ~ati, gahetvā ~ati, goes with, takes; pahāya ~ati, goes off without, leaves behind",
+        "goes to another existence, another birth etc.",
+        "follows a course; follows a future course",
+        "goes to an activity; goes to do something",
+        "goes to in a sexual intercourse; has intercourse with",
+        "goes to a state of condition; undergoes, reaches; obtains",
+        "relies on",
+        "Note: the first person present is sometimes used to express an immediate or near future sense: I am going; I am going to go; we are about to go"
+      ],
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "gacchati",
+      "grammar": null,
+      "definition": [
+        "gacchati 1: pr. <b>goes; walks; moves; wanders around; travels</b> [√gam + a + ti]",
+        "gacchati 2: pr. <b>becomes</b>; lit. goes [√gam + a + ti]"
+      ],
+      "xr": null,
+      "dictname": "dpd",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "gacchati",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='gacchati'><dt><dfn>Gacchati</dfn></dt><dd><p>The three formations (described below in the etymology) are represented in Pāli as follows.</p><ol class='little'><li>gacch˚, in<br><abbr title='present'>pres</abbr> gacchati;<br><abbr title='imperative'>imper</abbr> gaccha & gacchāhi;<br><abbr title='potential'>pot</abbr> gacche (<a class='ref' href='https://suttacentral.net/dhp46/en/sujato#1'>Dhp.46</a>, <a class='ref' href='https://suttacentral.net/dhp224/en/sujato#1'>Dhp.224</a>) & gaccheyya;<br><abbr title='present participle'>ppr</abbr> gacchanto,<br><abbr title='medium'>med</abbr> gacchamāna;<br><abbr title='future'>fut</abbr> (second) gacchissati;<br><abbr title='aorist'>aor</abbr> agacchi (<span class='ref'>Vv-a.307</span> variant reading agañchi)</li><li>gam˚ in three variations; viz<ol class='little'><li><i>gam˚</i>, in<br><abbr title='present causative'>pres. caus</abbr> gameti;<br><abbr title='future'>fut</abbr> gamissati;<br><abbr title='aorist'>aor</abbr> 3 sg. agamā (<a class='ref' href='https://suttacentral.net/snp3.1/en/sujato#4.1'>Snp verse 408</a>, <a class='ref' href='https://suttacentral.net/snp5.1/en/sujato#1.1'>Snp verse 976</a>; <a class='ref' href='https://suttacentral.net/vv79/pli/ms#7.1'>Vv.79:7</a>; <span class='ref'>Mhvs.vii.9</span>), agamāsi & gami (<a class='ref' href='https://suttacentral.net/pv20/pli/ms#6.1'>Pv.20:6</a>) 1 pl. agamiṁhase (<a class='ref' href='https://suttacentral.net/pv15/pli/ms#10.1'>Pv.15:10</a>), pl agamuṁ (<a class='ref' href='https://suttacentral.net/snp2.7/en/sujato#8.1'>Snp verse 290</a>), agamaṁsu & gamiṁsu; prohib. mā gami;<br><abbr title='gerund'>ger</abbr> gamya (verse 31);<br><abbr title='gerundive'>grd</abbr> gamanīya (<span class='ref'>Kp-a.223</span>)<br><span class='square'>■</span> See also der. gama, gamana, gāmika, gāmin</li><li><i>gan˚</i>, in<br><abbr title='aorist'>aor</abbr> agañchi (on this form see Trenckner <i>Notes</i>, p. 71 sq)<br><span class='square'>■</span> In n’āgañchi <a class='ref' href='https://suttacentral.net/ja360/pli/ms#3.1'>Ja.iii.190</a> it belongs to ā + gam); pres<br><abbr title='aorist'>aor</abbr> gañchisi (<a class='ref' href='https://suttacentral.net/snp3.10/en/sujato#17.1'>Snp verse 665</a>);<br><abbr title='infinitive'>inf</abbr> gantuṁ<br><abbr title='gerund'>ger</abbr> gantvā;<br><abbr title='gerundive'>grd</abbr> gantabba.<br><span class='square'>■</span> See also der. gantar.</li><li><i>ga˚</i>, in<br><abbr title='past participle'>pp</abbr> gata.<br><span class='square'>■</span> See also ga, gati, gatta.</li></ol></li><li>gā˚ in<br><abbr title='preterite'>pret</abbr> agā (<a class='ref' href='https://suttacentral.net/pv15/pli/ms#22.1'>Pv.15:22</a>),<br><abbr title='aorist'>aor</abbr> 3rd pl. agū (= Sk. ˚uḥ), in ajjhagū, anvagū (q.v.)</li></ol><h3>Meanings and Use</h3><ol type='1' class='decimal'><li>to go, to be in motion, to move, to go on (opp. to stand still, tiṭṭhati). Freq in combination with tiṭṭhati nisīdati seyyaṁ kappeti “to go to stand, sit down & lie down,” to denote all positions and every kind of behaviour; Cnd. s.v. gacchati. evaṁ kāle gacchante, as time went on <span class='ref'>Ja.iii.52</span>, or evaṁ g˚ kāle (<span class='ref'>Pv-a.54</span>, <span class='ref'>Pv-a.75</span>) or gacchante gacchante kāle <span class='ref'>Dhp-a.i.319</span>; gacchati = paleti <span class='ref'>Pv-a.56</span>; vemakoṭi gantvā pahari (whilst moving) <span class='ref'>Dhp-a.iii.176</span>.</li><li>to go, to walk (opp. to run, dhāvati) <span class='ref'>Dhp-a.i.389</span>.</li><li>to go away, to go out, to go forth (opp. to stay, or to come āgacchati): agamāsi he went <a class='ref' href='https://suttacentral.net/pv20/pli/ms#6.1'>Pv.20:6</a>; yo maṁ icchati anvetu yo vā n’ icchati gacchatu “who wants me may come, who does not may go” <a class='ref' href='https://suttacentral.net/snp3.7/en/sujato#29.1'>Snp verse 564</a>; āgacchantānañ ca gacchantānañ ca pamāṇaṁ n’ atthi “there was no end of all who came & went” <a class='ref' href='https://suttacentral.net/ja198/pli/ms#1.1'>Ja.ii.133</a>; gacchāma “let us go” <span class='ref'>Ja.i.263</span>; gaccha dāni go away now! <a class='ref' href='https://suttacentral.net/ja208/pli/ms#1.1'>Ja.ii.160</a> gaccha re muṇḍaka <span class='ref'>Vism.343</span>; gacchāhi go then <span class='ref'>Ja.i.151</span>, <span class='ref'>Ja.i.222</span>; mā gami do not go away! <span class='ref'>Ja.iv.2</span>; pl. mā gamittha <span class='ref'>Ja.i.263</span>; gacchanto on his way <span class='ref'>Ja.i.255</span>, <a class='ref' href='https://suttacentral.net/ja56/pli/ms#1.1'>Ja.i.278</a> agamaṁsu they went away <span class='ref'>Ja.iv.3</span>; gantukāma anxious to go <span class='ref'>Ja.i.222</span>, <span class='ref'>Ja.i.292</span>; kattha gamissasi where are you going? (opp. agacchasi) <span class='ref'>Dhp-a.iii.173</span>; kahaṁ gacchissatha id. <span class='ref'>Ja.ii.128</span>; kuhiṁ gamissati where is he going <a class='ref' href='https://suttacentral.net/snp3.1/en/sujato#7.1'>Snp verse 411</a>, <a class='ref' href='https://suttacentral.net/snp3.1/en/sujato#8.1'>Snp verse 412</a>.</li><li>with acc. or substitute: to go to, to have access to, to arrive or get at (with the aim of the movement or the object of the intention); hence fig to come to know, to experience, to realize<ol type='a' class='lower-latin'><li>with <i>acc.</i> of direction: Rājagahaṁ gami he went to R <a class='ref' href='https://suttacentral.net/pv20/pli/ms#6.1'>Pv.20:6</a>; Devadaha-nagaraṁ gantuṁ <span class='ref'>Ja.i.52</span>; gacchām ahaṁ Kusināraṁ I shall go to K. <a class='ref' href='https://suttacentral.net/dn16/en/sujato#4.20.1'>DN.ii.128</a>; Suvaṇṇabhūmiṁ gacchanti they intended to go (“were going” to S. <span class='ref'>Ja.iii.188</span>; migavaṁ g. to go hunting <span class='ref'>Ja.i.149</span>; janapadaṁ gamissāma <span class='ref'>Ja.ii.129</span>; paradāraṁ g. to approach another man’s wife <a class='ref' href='https://suttacentral.net/dhp246/en/sujato#1'>Dhp.246</a></li><li>with <i>adverbs</i> of direction or purpose (atthāya): santikaṁ (or santike) gacchati to go near a person (in gen.), pitu s. gacchāma <span class='ref'>Dhp-a.iii.172</span>; devāna santike gacche <a class='ref' href='https://suttacentral.net/dhp224/en/sujato#1'>Dhp.224</a> santikaṁ also <a class='ref' href='https://suttacentral.net/ja12/pli/ms#1.1'>Ja.i.152</a>: <span class='ref'>Ja.ii.159</span>, etc. Kathaṁ tattha gamissāmi how shall I get there? <span class='ref'>Ja.i.159</span>; <span class='ref'>Ja.ii.159</span>; tattha agamāsi he went there <a class='ref' href='https://suttacentral.net/ja208/pli/ms#1.1'>Ja.ii.160</a>. dukkhānubhavanatthāya gacchamānā “going away for the purpose of undergoing suffering” <span class='ref'>Ja.iv.3</span>; vohāratthāya gacchāmi I am going out (= fut.) on business <a class='ref' href='https://suttacentral.net/ja198/pli/ms#1.1'>Ja.ii.133</a><br><span class='square'>■</span> Similarly (fig.) in foll. expressions (op. “to go to Heaven,” etc. = to live or experience a heavenly life, op. next); Nirayaṁ gamissati <span class='ref'>Ja.vi.368</span>; saggaṁ lokaṁ g. <a class='ref' href='https://suttacentral.net/ja12/pli/ms#1.1'>Ja.i.152</a>; gacche pāram apārato <a class='ref' href='https://suttacentral.net/snp5.18/en/sujato#7.1'>Snp verse 1129</a>, in this sense interpreted at <span class='ref'>Cnd.223</span> as adhigacchati phusati sacchikaroti, to experience-Sometimes with <i>double acc.:</i> Bhagavantaṁ saraṇaṁ gacchāmi “I entrust myself to Bh.” <a class='ref' href='https://suttacentral.net/pli-tv-kd1/en/brahmali#7.6.1'>Vin.i.16</a>-Cp. also phrases as atthangacchati to go home, to set, to disappear; antarā-gacchati to come between, to obstruct.</li></ol></li><li><i>to go</i> as a stronger expression for <i>to be</i>, i.e. to behave, to have existence, to fare (cp. Ger. es geht gut, Fr. cela <i>va</i> bien = it <i>is</i> good). Here belongs gati “existence,” as mode of existing, element, sphere of being, and out of this use is developed the periphrastic use of <i>gam˚</i>, which places it on the same level with the verb “to be” (see b)<ol type='a' class='lower-latin'><li>sugatiṁ gamissasi you will go to the state of well-being, i.e. Heaven <a class='ref' href='https://suttacentral.net/pli-tv-kd17/en/brahmali#3.11.6'>Vin.ii.195</a>; <a class='ref' href='https://suttacentral.net/iti83/en/sujato#3.1'>Iti.77</a>; opp. duggatiṁ gacchanti <a class='ref' href='https://suttacentral.net/dhp317/en/sujato#1'>Dhp.317</a>–<a class='ref' href='https://suttacentral.net/dhp319/en/sujato#1'>Dhp.319</a> maggaṁ na jānanti yena gacchanti subbatā (which will fall to their share) <a class='ref' href='https://suttacentral.net/snp3.2/en/sujato#17.1'>Snp verse 441</a>; gamissanti yattha gantvā na socare “they will go where one sorrows not” <a class='ref' href='https://suttacentral.net/snp3.2/en/sujato#21.1'>Snp verse 445</a>; <a class='ref' href='https://suttacentral.net/vv51/pli/ms#4.1'>Vv.51:4</a>; yan ca karoti… tañ ca ādāya gacchati “whatever a man does that he will take with him <a class='ref' href='https://suttacentral.net/sn3.20/en/sujato#4.1'>SN.i.93</a></li><li><i>periphrastic</i> (w. ger. of governing verb) nagaraṁ pattharitvā gaccheyya “would spread through the town” <span class='ref'>Ja.i.62</span>; pariṇāmaṁ gaccheyya “could be digested” <a class='ref' href='https://suttacentral.net/dn16/en/sujato#4.13.1'>DN.ii.127</a>; sīhacammaṁ ādāya agamaṁsu “they took the lion’s skin away with them” <a class='ref' href='https://suttacentral.net/ja189/pli/ms#1.1'>Ja.ii.110</a> itthiṁ pahāya gamissati shall leave the woman alone <span class='ref'>Ja.vi.348</span>; sve gahetvā gamissāmi “I shall come for it tomorrow” <a class='ref' href='https://suttacentral.net/mil3.2.6/pli/ms#5.1'>Mil.48</a>.</li></ol></li></ol><p class='eti'>Vedic gacchati, a desiderative (future) formation from <i class='term'>*gṷem</i> “I am intent upon going,” i.e. I go, with the foll. bases <span class='inline-li'>1</span> Future-present *gṷemskéti → *gaścati → Sk. gacchati = Gr. <span class='at'>βάσκω</span> (to <span class='at'>βαινω</span>). In meaning cp. i, Sk. emi, Gr. <span class='at'>εἰμι</span> “I shall go” & in form also Sk. pṛcchati = Lat. porsco “I want to know,” Vedic icchati “to desire.” <span class='inline-li'>2</span> Present *gṷemi̯o = Sk. gamati = Gr. <span class='at'>βαίνω</span>, Lat. venio, Goth. qiman, Ohg koman, E. come; and non-present formations as Osk kúmbened, Sk. gata = Lat. ventus; gantu = (ad) ventus <span class='inline-li'>3</span> *gṷā, which is correlated to *stā, in Pret. Sk ágām, Gr. <span class='at'>ε ̓́βην</span>, cp. <span class='at'>β ̈ημα</span></p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "āgacchati": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "āgacchati",
+      "grammar": "present 3 singular",
+      "definition": "comes, comes near; comes back, returns; reaches, attains; is recorded, is handed down by tradition",
+      "xr": "āgacchati",
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "āgacchati",
+      "grammar": null,
+      "definition": [
+        "āgacchati 1: pr. <b>comes (to); arrives (at)</b>; lit. comes here [ā + √gam + a + ti]",
+        "āgacchati 2: pr. <b>comes along; approaches</b>; lit. comes here [ā + √gam + a + ti]",
+        "āgacchati 3: pr. <b>comes back; returns (to)</b>; lit. comes here [ā + √gam + a + ti]",
+        "āgacchati 4: pr. <b>comes out; flows out</b>; lit. comes here [ā + √gam + a + ti]",
+        "āgacchati 5: pr. <b>happens; befalls; occurs (to)</b>; lit. comes here [ā + √gam + a + ti]"
+      ],
+      "xr": null,
+      "dictname": "dpd",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "āgacchati",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='āgacchati'><dt><dfn>Āgacchati</dfn></dt><dd><p>to come to or towards, approach, go back, arive etc.</p><h3>I. <i>Forms</i></h3><p>(same arrangement as under gacchati):</p><ol type='1' class='decimal'><li>√ <i class='term'>gacch</i>:<br><abbr title='present'>pres</abbr> āgacchati <a class='ref' href='https://suttacentral.net/dn8/en/sujato#1.1'>DN.i.161</a>; <a class='ref' href='https://suttacentral.net/ja206/pli/ms#1.1'>Ja.ii.153</a>; <a class='ref' href='https://suttacentral.net/pv36/pli/ms#51.1'>Pv.36:51</a><br><abbr title='future'>fut</abbr> āgacchissati <a class='ref' href='https://suttacentral.net/ja316/pli/ms#1.1'>Ja.iii.53</a>;<br><abbr title='aorist'>aor</abbr> āgacchi <a class='ref' href='https://suttacentral.net/pv25/pli/ms#3.1'>Pv.25:3</a>; <span class='ref'>Pv-a.64</span></li><li>√ <i class='term'>gam</i>:<br><abbr title='aorist'>aor</abbr> āgamāsi <span class='ref'>Pv-a.81</span>, āgamā <a class='ref' href='https://suttacentral.net/dn3/en/sujato#2.16.1'>DN.i.108</a>; <a class='ref' href='https://suttacentral.net/ja339/pli/ms#1.1'>Ja.iii.128</a>, and pl. āgamiṁsu <span class='ref'>Ja.i.118</span>;<br><abbr title='future'>fut</abbr> āgamissati <span class='ref'>Vv-a.3</span>; <span class='ref'>Pv-a.122</span>;<br><abbr title='gerund'>ger</abbr> āgamma (q.v.) & āgantvā <span class='ref'>Ja.i.151</span>; <a class='ref' href='https://suttacentral.net/mil2/pli/ms#43.1'>Mil.14</a>;<br><abbr title='causative'>caus</abbr> āgameti (q.v.)</li><li>√ <i class='term'>gā</i>:<br><abbr title='aorist'>aor</abbr> āgā <a class='ref' href='https://suttacentral.net/snp4.9/en/sujato#7.1'>Snp verse 841</a>; <a class='ref' href='https://suttacentral.net/pv12/pli/ms#3.1'>Pv.12:3</a> (= āgacchi <span class='ref'>Pv-a.64</span>)</li></ol><p><abbr title='past participle'>pp</abbr> <i class='declined-term'><a href='/define/āgata'>āgata</a></i> (q.v.).</p><h3>II. <i>Meanings</i></h3><ol type='1' class='decimal'><li>to come to, approach, arrive <a class='ref' href='https://suttacentral.net/dn3/en/sujato#2.16.1'>DN.i.108</a>; <a class='ref' href='https://suttacentral.net/pv11/pli/ms#3.1'>Pv.11:3</a>; <a class='ref' href='https://suttacentral.net/pv25/pli/ms#3.1'>Pv.25:3</a>; <a class='ref' href='https://suttacentral.net/mil2/pli/ms#43.1'>Mil.14</a>; to return, to come back (cp āgata) <span class='ref'>Pv-a.81</span>, <span class='ref'>Pv-a.122</span></li><li>to come into, to result, deserve (cp. āgama<sup>2</sup>) <a class='ref' href='https://suttacentral.net/dn8/en/sujato#1.1'>DN.i.161</a> (gārayhaṁ ṭhānaṁ deserve blame come to be blamed); <a class='ref' href='https://suttacentral.net/pv36/pli/ms#51.1'>Pv.36:51</a> (get to, be a profit to upakappati <span class='ref'>Pv-a.241</span>)</li><li>to come by, to come out to (be understood as), to refer or be referred to, to be meant or understood (cp. āgata 3 & āgama 3) <span class='ref'>Ja.i.118</span> (tīṇi piṭakāni āgamiṁsu); <span class='ref'>Snp-a.321</span>; <span class='ref'>Vv-a.3</span>. See also <i class='term'><a href='/define/āgamma'>āgamma</a></i>.</li></ol><p class='eti'>ā + gacchati, <i class='term'>gam</i></p></dd></dl>",
+      "pronunciation": null
+    }
+  ],
+  "dhāvati": [
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "dhāvati",
+      "grammar": "present 3 singular",
+      "definition": "runs; streams; rushes; runs around",
+      "xr": null,
+      "dictname": "ncped",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "dhāvati",
+      "grammar": null,
+      "definition": [
+        "dhāvati 1: pr. <b>runs; races; sprints; flies (to)</b> [√dhāv + a + ti]",
+        "dhāvati 2: pr. <b>runs away; flees</b> [√dhāv + a + ti]"
+      ],
+      "xr": null,
+      "dictname": "dpd",
+      "text": null,
+      "pronunciation": null
+    },
+    {
+      "from": "pli",
+      "to": "en",
+      "entry": "dhāvati",
+      "grammar": null,
+      "definition": null,
+      "xr": null,
+      "dictname": "pts",
+      "text": "<dl id='dhāvati'><dt><dfn>Dhāvati</dfn></dt><dd><ol type='1' class='decimal'><li>to run run away, run quickly <a class='ref' href='https://suttacentral.net/snp4.15/en/sujato#5.1'>Snp verse 939</a> (cp. <a class='ref' href='https://suttacentral.net/mnd15/pli/ms#76.1'>Mnd.419</a>); <a class='ref' href='https://suttacentral.net/dhp344/en/sujato#1'>Dhp.344</a>; <a class='ref' href='https://suttacentral.net/ja67/pli/ms#1.1'>Ja.i.308</a>; <span class='ref'>Ja.vi.332</span>; <a class='ref' href='https://suttacentral.net/mnd15/pli/ms#9.1'>Mnd.405</a> = <span class='ref'>Cnd.304#iii.</span>; <a class='ref' href='https://suttacentral.net/pv51/pli/ms#1.1'>Pv.51:1</a> = palāyati <span class='ref'>Pv-a.284#2</span>; <span class='ref'>Dhp-a.i.389</span> (opp. gacchati); <span class='ref'>Pv-a.4</span>; <span class='ref'>Sdhp.378</span>.</li><li>to clean etc.: see <i class='term'><a href='/define/dhovati'>dhovati</a></i>; cp dhavala & dhārā<sup>2</sup>.</li></ol><p class='eti'>Sk. dhāvati & dhāvate 1 to flow, run etc.; cp. Gr. <span class='at'>χέω</span> (both meanings); Ags. déaw = E. dew; Ohg tou = Ger. tau; cp. also dhārā & dhunāti 2 to clean (by running water) etc. = P. <i class='term'><a href='/define/dhovati'>dhovati</a></i>, q.v.</p></dd></dl>",
+      "pronunciation": null
+    }
+  ]
+}

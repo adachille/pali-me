@@ -16,63 +16,24 @@
       {
         "title": "Declension of pacantī (Singular)",
         "rows": [
-          [
-            "Nom.",
-            "pacantī"
-          ],
-          [
-            "Voc.",
-            "pacantī"
-          ],
-          [
-            "Acc.",
-            "pacantiṃ"
-          ],
-          [
-            "Ins.",
-            "pacantiyā"
-          ],
-          [
-            "Abl.",
-            "pacantiyā"
-          ],
-          [
-            "Dat.",
-            "pacantiyā"
-          ],
-          [
-            "Gen.",
-            "pacantiyā"
-          ],
-          [
-            "Loc.",
-            "pacantiyā, pacantiyaṃ"
-          ]
+          ["Nom.", "pacantī"],
+          ["Voc.", "pacantī"],
+          ["Acc.", "pacantiṃ"],
+          ["Ins.", "pacantiyā"],
+          ["Abl.", "pacantiyā"],
+          ["Dat.", "pacantiyā"],
+          ["Gen.", "pacantiyā"],
+          ["Loc.", "pacantiyā, pacantiyaṃ"]
         ]
       },
       {
         "title": "Declension of pacantī (Plural)",
         "rows": [
-          [
-            "Nom.",
-            "pacantī, pacantiyo"
-          ],
-          [
-            "Voc.",
-            "pacantī, pacantiyo"
-          ],
-          [
-            "Ins.",
-            "pacantīhi (pacantībhi)"
-          ],
-          [
-            "Dat./Gen.",
-            "pacantīnaṃ"
-          ],
-          [
-            "Loc.",
-            "pacantīsu"
-          ]
+          ["Nom.", "pacantī, pacantiyo"],
+          ["Voc.", "pacantī, pacantiyo"],
+          ["Ins.", "pacantīhi (pacantībhi)"],
+          ["Dat./Gen.", "pacantīnaṃ"],
+          ["Loc.", "pacantīsu"]
         ]
       }
     ],

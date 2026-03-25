@@ -11,76 +11,24 @@
       {
         "title": "Declension of garu (teacher) - masculine noun ending in -u",
         "rows": [
-          [
-            "Case",
-            "Singular",
-            "Plural"
-          ],
-          [
-            "Nom.",
-            "garu",
-            "garū, garavo"
-          ],
-          [
-            "Voc.",
-            "garu",
-            "garū, garavo"
-          ],
-          [
-            "Acc.",
-            "garuṃ",
-            "garū, garavo"
-          ],
-          [
-            "Ins.",
-            "garunā",
-            "garūhi (garūbhi)"
-          ],
-          [
-            "Abl.",
-            "garunā",
-            "garūhi (garūbhi)"
-          ],
-          [
-            "Dat.",
-            "garuno, garussa",
-            "garūnaṃ"
-          ],
-          [
-            "Gen.",
-            "garuno, garussa",
-            "garūnaṃ"
-          ],
-          [
-            "Loc.",
-            "garumhi, garusmiṃ",
-            "garūsu"
-          ]
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "garu", "garū, garavo"],
+          ["Voc.", "garu", "garū, garavo"],
+          ["Acc.", "garuṃ", "garū, garavo"],
+          ["Ins.", "garunā", "garūhi (garūbhi)"],
+          ["Abl.", "garunā", "garūhi (garūbhi)"],
+          ["Dat.", "garuno, garussa", "garūnaṃ"],
+          ["Gen.", "garuno, garussa", "garūnaṃ"],
+          ["Loc.", "garumhi, garusmiṃ", "garūsu"]
         ]
       },
       {
         "title": "Declension of vidū (wise man) - masculine noun ending in -ū",
         "rows": [
-          [
-            "Case",
-            "Singular",
-            "Plural"
-          ],
-          [
-            "Nom.",
-            "vidū",
-            "vidū, viduno"
-          ],
-          [
-            "Voc.",
-            "vidū",
-            "vidū, viduno"
-          ],
-          [
-            "Acc.",
-            "viduṃ",
-            "vidū, viduno"
-          ]
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "vidū", "vidū, viduno"],
+          ["Voc.", "vidū", "vidū, viduno"],
+          ["Acc.", "viduṃ", "vidū, viduno"]
         ]
       }
     ],

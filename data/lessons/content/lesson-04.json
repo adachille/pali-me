@@ -12,35 +12,17 @@
       {
         "title": "Ablative case singular",
         "rows": [
-          [
-            "nara + ā / mhā / smā",
-            "narā / naramhā / narasmā (From the man)"
-          ],
-          [
-            "mātula + ā / mhā / smā",
-            "mātulā / mātulamhā / mātulasmā (From the uncle)"
-          ],
-          [
-            "kassaka + ā / mhā / smā",
-            "kassakā / kassakamhā / kassakasmā (From the farmer)"
-          ]
+          ["nara + ā / mhā / smā", "narā / naramhā / narasmā (From the man)"],
+          ["mātula + ā / mhā / smā", "mātulā / mātulamhā / mātulasmā (From the uncle)"],
+          ["kassaka + ā / mhā / smā", "kassakā / kassakamhā / kassakasmā (From the farmer)"]
         ]
       },
       {
         "title": "Ablative case plural",
         "rows": [
-          [
-            "nara + ehi",
-            "narehi (narebhi) (From men)"
-          ],
-          [
-            "mātula + ehi",
-            "mātulehi (mātulebhi) (From uncles)"
-          ],
-          [
-            "kassaka + ehi",
-            "kassakehi (kassakebhi) (From farmers)"
-          ]
+          ["nara + ehi", "narehi (narebhi) (From men)"],
+          ["mātula + ehi", "mātulehi (mātulebhi) (From uncles)"],
+          ["kassaka + ehi", "kassakehi (kassakebhi) (From farmers)"]
         ]
       }
     ],

@@ -11,59 +11,23 @@
       {
         "title": "Nominative case of masculine nouns ending in -a",
         "rows": [
-          [
-            "Singular",
-            "nara + o = naro"
-          ],
-          [
-            "Singular",
-            "mātula + o = mātulo"
-          ],
-          [
-            "Singular",
-            "kassaka + o = kassako"
-          ],
-          [
-            "Plural",
-            "nara + ā = narā"
-          ],
-          [
-            "Plural",
-            "mātula + ā = mātulā"
-          ],
-          [
-            "Plural",
-            "kassaka + ā = kassakā"
-          ]
+          ["Singular", "nara + o = naro"],
+          ["Singular", "mātula + o = mātulo"],
+          ["Singular", "kassaka + o = kassako"],
+          ["Plural", "nara + ā = narā"],
+          ["Plural", "mātula + ā = mātulā"],
+          ["Plural", "kassaka + ā = kassakā"]
         ]
       },
       {
         "title": "Present tense, third person verb forms",
         "rows": [
-          [
-            "Singular",
-            "bhāsati - He speaks"
-          ],
-          [
-            "Singular",
-            "pacati - He cooks"
-          ],
-          [
-            "Singular",
-            "kasati - He ploughs"
-          ],
-          [
-            "Plural",
-            "bhāsanti - They speak"
-          ],
-          [
-            "Plural",
-            "pacanti - They cook"
-          ],
-          [
-            "Plural",
-            "kasanti - They plough"
-          ]
+          ["Singular", "bhāsati - He speaks"],
+          ["Singular", "pacati - He cooks"],
+          ["Singular", "kasati - He ploughs"],
+          ["Plural", "bhāsanti - They speak"],
+          ["Plural", "pacanti - They cook"],
+          ["Plural", "kasanti - They plough"]
         ]
       }
     ],

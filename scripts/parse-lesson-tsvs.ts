@@ -11,7 +11,7 @@ import * as path from "path";
 
 const LESSONS_SOURCE = path.resolve(
   __dirname,
-  "../docs/pali-lessons/pali-primer-extracted-lesson-content",
+  "../docs/pali-lessons/pali-primer-extracted-lesson-content"
 );
 const OUTPUT_DIR = path.resolve(__dirname, "../data/lessons/content");
 const TOTAL_LESSONS = 32;
@@ -80,11 +80,11 @@ for (let i = 1; i <= TOTAL_LESSONS; i++) {
   // Write JSON
   const outPath = path.join(OUTPUT_DIR, `lesson-${num}.json`);
   fs.writeFileSync(outPath, JSON.stringify(combined, null, 2) + "\n");
-  console.log(`Generated lesson-${num}.json (${vocabulary.length} vocab, ${exercises.length} exercises)`);
-
-  lessonImports.push(
-    `import lesson${num} from "./lesson-${num}.json";`,
+  console.log(
+    `Generated lesson-${num}.json (${vocabulary.length} vocab, ${exercises.length} exercises)`
   );
+
+  lessonImports.push(`import lesson${num} from "./lesson-${num}.json";`);
 }
 
 // Generate index.ts

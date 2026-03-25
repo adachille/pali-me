@@ -11,35 +11,17 @@
       {
         "title": "Instrumental case singular",
         "rows": [
-          [
-            "nara + ena",
-            "narena (by means of the man)"
-          ],
-          [
-            "mātula + ena",
-            "mātulena (with the uncle)"
-          ],
-          [
-            "kassaka + ena",
-            "kassakena (through the farmer)"
-          ]
+          ["nara + ena", "narena (by means of the man)"],
+          ["mātula + ena", "mātulena (with the uncle)"],
+          ["kassaka + ena", "kassakena (through the farmer)"]
         ]
       },
       {
         "title": "Instrumental case plural",
         "rows": [
-          [
-            "nara + ehi",
-            "narehi (narebhi)"
-          ],
-          [
-            "mātula + ehi",
-            "mātulehi (mātulebhi)"
-          ],
-          [
-            "kassaka + ehi",
-            "kassakehi (kassakebhi)"
-          ]
+          ["nara + ehi", "narehi (narebhi)"],
+          ["mātula + ehi", "mātulehi (mātulebhi)"],
+          ["kassaka + ehi", "kassakehi (kassakebhi)"]
         ]
       }
     ],

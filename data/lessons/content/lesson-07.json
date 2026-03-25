@@ -12,35 +12,17 @@
       {
         "title": "Locative case singular - masculine nouns ending in -a",
         "rows": [
-          [
-            "nara + e / mhi / smiṃ",
-            "nare, naramhi, narasmiṃ (in / on / at the man)"
-          ],
-          [
-            "mātula + e / mhi / smiṃ",
-            "mātule, mātulamhi, mātulasmiṃ (in / on / at the uncle)"
-          ],
-          [
-            "kassaka + e / mhi / smiṃ",
-            "kassake, kassakamhi, kassakasmiṃ (in / on / at the farmer)"
-          ]
+          ["nara + e / mhi / smiṃ", "nare, naramhi, narasmiṃ (in / on / at the man)"],
+          ["mātula + e / mhi / smiṃ", "mātule, mātulamhi, mātulasmiṃ (in / on / at the uncle)"],
+          ["kassaka + e / mhi / smiṃ", "kassake, kassakamhi, kassakasmiṃ (in / on / at the farmer)"]
         ]
       },
       {
         "title": "Locative case plural - masculine nouns ending in -a",
         "rows": [
-          [
-            "nara + esu",
-            "naresu (in / on / at men)"
-          ],
-          [
-            "mātula + esu",
-            "mātulesu (in / on / at uncles)"
-          ],
-          [
-            "kassaka + esu",
-            "kassakesu (in / on / at farmers)"
-          ]
+          ["nara + esu", "naresu (in / on / at men)"],
+          ["mātula + esu", "mātulesu (in / on / at uncles)"],
+          ["kassaka + esu", "kassakesu (in / on / at farmers)"]
         ]
       }
     ],

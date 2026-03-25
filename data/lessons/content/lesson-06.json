@@ -12,35 +12,17 @@
       {
         "title": "Genitive case singular",
         "rows": [
-          [
-            "nara + ssa",
-            "narassa (of the man)"
-          ],
-          [
-            "mātula + ssa",
-            "mātulassa (of the uncle)"
-          ],
-          [
-            "kassaka + ssa",
-            "kassakassa (of the farmer)"
-          ]
+          ["nara + ssa", "narassa (of the man)"],
+          ["mātula + ssa", "mātulassa (of the uncle)"],
+          ["kassaka + ssa", "kassakassa (of the farmer)"]
         ]
       },
       {
         "title": "Genitive case plural",
         "rows": [
-          [
-            "nara + ānaṃ",
-            "narānaṃ (of the men)"
-          ],
-          [
-            "mātula + ānaṃ",
-            "mātulānaṃ (of the uncles)"
-          ],
-          [
-            "kassaka + ānaṃ",
-            "kassakānaṃ (of the farmers)"
-          ]
+          ["nara + ānaṃ", "narānaṃ (of the men)"],
+          ["mātula + ānaṃ", "mātulānaṃ (of the uncles)"],
+          ["kassaka + ānaṃ", "kassakānaṃ (of the farmers)"]
         ]
       }
     ],

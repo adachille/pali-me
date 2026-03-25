@@ -11,30 +11,12 @@
       {
         "title": "Optative conjugation of base 'paca' (to cook)",
         "rows": [
-          [
-            "Singular 3rd",
-            "(So) paceyya = If he would cook"
-          ],
-          [
-            "Singular 2nd",
-            "(Tvaṃ) paceyyāsi = If you would cook"
-          ],
-          [
-            "Singular 1st",
-            "(Ahaṃ) paceyyāmi = If I would cook"
-          ],
-          [
-            "Plural 3rd",
-            "(Te) paceyyuṃ = If they would cook"
-          ],
-          [
-            "Plural 2nd",
-            "(Tumhe) paceyyātha = If you would cook"
-          ],
-          [
-            "Plural 1st",
-            "(Mayaṃ) paceyyāma = If we would cook"
-          ]
+          ["Singular 3rd", "(So) paceyya = If he would cook"],
+          ["Singular 2nd", "(Tvaṃ) paceyyāsi = If you would cook"],
+          ["Singular 1st", "(Ahaṃ) paceyyāmi = If I would cook"],
+          ["Plural 3rd", "(Te) paceyyuṃ = If they would cook"],
+          ["Plural 2nd", "(Tumhe) paceyyātha = If you would cook"],
+          ["Plural 1st", "(Mayaṃ) paceyyāma = If we would cook"]
         ]
       }
     ],
