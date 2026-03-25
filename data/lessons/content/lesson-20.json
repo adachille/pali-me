@@ -1,0 +1,233 @@
+{
+  "lesson_number": 20,
+  "title": "Lesson 20",
+  "topic": "Feminine nouns ending in -i/-ī",
+  "grammar": {
+    "explanations": [
+      "Feminine nouns ending in -i are declined as shown with the example bhūmi (earth, ground). In the singular, the nominative and vocative are bhūmi, the accusative is bhūmiṃ, and the instrumental, ablative, dative, genitive, and locative all take the ending -iyā (with the locative also allowing -iyaṃ).",
+      "In the plural, the nominative and vocative take -ī or -iyo; the instrumental takes -īhi (or -ībhi); the genitive and dative take -īnaṃ; and the locative takes -īsu.",
+      "Feminine nouns ending in -ī are declined similarly, with the only exception being the nominative and vocative singular, which end in -ī rather than -i."
+    ],
+    "tables": [
+      {
+        "title": "Declension of bhūmi (f.) - Singular",
+        "rows": [
+          ["Nom.", "bhūmi"],
+          ["Voc.", "bhūmi"],
+          ["Acc.", "bhūmiṃ"],
+          ["Ins.", "bhūmiyā"],
+          ["Abl.", "bhūmiyā"],
+          ["Dat.", "bhūmiyā"],
+          ["Gen.", "bhūmiyā"],
+          ["Loc.", "bhūmiyā, bhūmiyaṃ"]
+        ]
+      },
+      {
+        "title": "Declension of bhūmi (f.) - Plural",
+        "rows": [
+          ["Nom.", "bhūmī, bhūmiyo"],
+          ["Voc.", "bhūmī, bhūmiyo"],
+          ["Ins.", "bhūmīhi, (bhūmībhi)"],
+          ["Dat./Gen.", "bhūmīnaṃ"],
+          ["Loc.", "bhūmīsu"]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "vocabulary": [
+    {
+      "pali": "aṅguli",
+      "english": "finger",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "aṭavi",
+      "english": "forest",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "ratti",
+      "english": "night",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "doṇi",
+      "english": "boat",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "yuvati",
+      "english": "maiden",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "yaṭṭhi",
+      "english": "walking stick",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "asani",
+      "english": "thunderbolt",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "nāḷi",
+      "english": "unit of measure",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "rasmi",
+      "english": "ray",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "iddhi",
+      "english": "psychic power",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "sammajjani",
+      "english": "broom",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "nadī",
+      "english": "river",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "nārī / itthī",
+      "english": "woman",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "taruṇī",
+      "english": "young woman",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "bhaginī",
+      "english": "sister",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "vāpī",
+      "english": "tank",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "pokkharaṇī",
+      "english": "pond",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "kadalī",
+      "english": "banana",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "brāhmaṇī",
+      "english": "brahmin woman",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "gāvī",
+      "english": "cow",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "rājinī / devī",
+      "english": "queen",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "kumārī",
+      "english": "girl",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "vyākaroti",
+      "english": "explains",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pattheti",
+      "english": "aspires",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "vissajjeti",
+      "english": "spends",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "āroceti",
+      "english": "informs",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "muñcati",
+      "english": "releases",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "nīhareti",
+      "english": "takes out",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "peseti",
+      "english": "sends",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "paṭiccādeti",
+      "english": "conceals",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "veṭheti",
+      "english": "wraps",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "viheṭheti",
+      "english": "harasses",
+      "type": "verb",
+      "gender": ""
+    }
+  ],
+  "exercises": []
+}

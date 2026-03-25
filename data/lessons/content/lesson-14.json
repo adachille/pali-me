@@ -1,0 +1,59 @@
+{
+  "lesson_number": 14,
+  "title": "Lesson 14",
+  "topic": "The Future Tense",
+  "grammar": {
+    "explanations": [
+      "The future tense is formed by adding -ssa to the root or verbal base with, or in some cases without, the connecting vowel -i-. The terminations are the same as those in the present tense.",
+      "Attention may be paid to the following irregular future forms: gacchati → gamissati (he will go), āgacchati → āgamissati (he will come), dadāti → dadissati / dassati (he will give), tiṭṭhati → ṭhassati (he will stand), karoti → karissati (he will do)."
+    ],
+    "tables": [
+      {
+        "title": "Future Tense - Base paca (to cook)",
+        "rows": [
+          ["Singular 3rd", "(So) pacissati = He will cook"],
+          ["Singular 2nd", "(Tvaṃ) pacissasi = You will cook"],
+          ["Singular 1st", "(Ahaṃ) pacissāmi = I will cook"],
+          ["Plural 3rd", "(Te) pacissanti = They will cook"],
+          ["Plural 2nd", "(Tumhe) pacissatha = You will cook"],
+          ["Plural 1st", "(Mayaṃ) pacissāma = We will cook"]
+        ]
+      },
+      {
+        "title": "Future Tense - Base kiṇā (to buy)",
+        "rows": [
+          ["Singular 3rd", "(So) kiṇissati"],
+          ["Singular 2nd", "(Tvaṃ) kiṇissasi"],
+          ["Singular 1st", "(Ahaṃ) kiṇissāmi"],
+          ["Plural 3rd", "(Te) kiṇissanti"],
+          ["Plural 2nd", "(Tumhe) kiṇissatha"],
+          ["Plural 1st", "(Mayaṃ) kiṇissāma"]
+        ]
+      },
+      {
+        "title": "Future Tense - Base core (to steal)",
+        "rows": [
+          ["Singular 3rd", "(So) coressati"],
+          ["Singular 2nd", "(Tvaṃ) coressasi"],
+          ["Singular 1st", "(Ahaṃ) coressāmi"],
+          ["Plural 3rd", "(Te) coressanti"],
+          ["Plural 2nd", "(Tumhe) coressatha"],
+          ["Plural 1st", "(Mayaṃ) coressāma"]
+        ]
+      },
+      {
+        "title": "Irregular Future Forms",
+        "rows": [
+          ["gacchati", "gamissati = he will go"],
+          ["āgacchati", "āgamissati = he will come"],
+          ["dadāti", "dadissati / dassati = he will give"],
+          ["tiṭṭhati", "ṭhassati = he will stand"],
+          ["karoti", "karissati = he will do"]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "vocabulary": [],
+  "exercises": []
+}

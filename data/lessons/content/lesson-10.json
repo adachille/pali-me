@@ -1,0 +1,44 @@
+{
+  "lesson_number": 10,
+  "title": "Lesson 10",
+  "topic": "The Infinitive",
+  "grammar": {
+    "explanations": [
+      "The suffix -tuṃ is added to the root of the verb or the verbal base with or sometimes without the connecting vowel -i- to form the infinitive.",
+      "Examples of infinitive formation: pac + i + tuṃ = pacituṃ (to cook); khād + i + tuṃ = khādituṃ (to eat); gam + tuṃ = gantuṃ (to go); dā + tuṃ = dātuṃ (to give); ṭhā + tuṃ = ṭhātuṃ (to stand); pā + tuṃ = pātuṃ / pivituṃ (to drink)."
+    ],
+    "tables": [
+      {
+        "title": "Infinitive Formation Examples",
+        "rows": [
+          ["pac + i + tuṃ", "pacituṃ", "to cook"],
+          ["khād + i + tuṃ", "khādituṃ", "to eat"],
+          ["gam + tuṃ", "gantuṃ", "to go"],
+          ["dā + tuṃ", "dātuṃ", "to give"],
+          ["ṭhā + tuṃ", "ṭhātuṃ", "to stand"],
+          ["pā + tuṃ", "pātuṃ / pivituṃ", "to drink"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Kassako khettaṃ kasituṃ icchati.",
+        "english": "The farmer wishes to plough the field."
+      },
+      {
+        "pali": "Dārako phalāni khādituṃ rukkhaṃ āruhati.",
+        "english": "The child climbs the tree to eat fruits."
+      },
+      {
+        "pali": "Manussā samaṇehi pañhe pucchituṃ vihāraṃ āgacchanti.",
+        "english": "Men come to the monastery to ask questions from the recluses."
+      },
+      {
+        "pali": "Kumārā kīḷituṃ mittehi saha samuddaṃ gacchanti.",
+        "english": "Boys go to the sea with friends to play."
+      }
+    ]
+  },
+  "vocabulary": [],
+  "exercises": []
+}

@@ -1,0 +1,83 @@
+{
+  "lesson_number": 15,
+  "title": "Lesson 15",
+  "topic": "Optative / Potential mood",
+  "grammar": {
+    "explanations": [
+      "The optative expresses mainly probability and advice, and ideas such as those conveyed by if, might, would, etc. It is formed by adding -eyya to the verbal base before terminations.",
+      "It should be observed that the terminations of the second and first persons are similar to those of the present tense."
+    ],
+    "tables": [
+      {
+        "title": "Optative conjugation of base 'paca' (to cook)",
+        "rows": [
+          ["Singular 3rd", "(So) paceyya = If he would cook"],
+          ["Singular 2nd", "(Tvaṃ) paceyyāsi = If you would cook"],
+          ["Singular 1st", "(Ahaṃ) paceyyāmi = If I would cook"],
+          ["Plural 3rd", "(Te) paceyyuṃ = If they would cook"],
+          ["Plural 2nd", "(Tumhe) paceyyātha = If you would cook"],
+          ["Plural 1st", "(Mayaṃ) paceyyāma = If we would cook"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Sace so bhattaṃ paceyya, ahaṃ bhuñjeyyāmi.",
+        "english": "If he would cook rice I will eat."
+      },
+      {
+        "pali": "Sace tvaṃ iccheyyāsi, ahaṃ coraṃ puccheyyāmi.",
+        "english": "If you would like, I will question the thief."
+      },
+      {
+        "pali": "Yadi ahaṃ nagare vihareyyāmi, so pi nagaraṃ āgaccheyya.",
+        "english": "If I dwell in the city, he too would come to the city."
+      },
+      {
+        "pali": "Sace te bhattaṃ paceyyuṃ, mayaṃ bhuñjeyyāma.",
+        "english": "If they cook rice we will eat."
+      },
+      {
+        "pali": "Sace tumhe iccheyyātha, mayaṃ core puccheyyāma.",
+        "english": "If you so wish, we will question the thieves."
+      },
+      {
+        "pali": "Yadi mayaṃ nagare vihareyyāma, te pi nagaraṃ āgaccheyyuṃ.",
+        "english": "If we dwell in the city, they too will come to the city."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "pali": "sace / yadi",
+      "english": "if",
+      "type": "indeclinable",
+      "gender": ""
+    },
+    {
+      "pali": "ca",
+      "english": "and",
+      "type": "indeclinable",
+      "gender": ""
+    },
+    {
+      "pali": "pi",
+      "english": "too, also",
+      "type": "indeclinable",
+      "gender": ""
+    },
+    {
+      "pali": "na",
+      "english": "not",
+      "type": "indeclinable",
+      "gender": ""
+    },
+    {
+      "pali": "viya",
+      "english": "like, similar",
+      "type": "indeclinable",
+      "gender": ""
+    }
+  ],
+  "exercises": []
+}

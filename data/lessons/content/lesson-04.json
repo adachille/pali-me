@@ -1,0 +1,203 @@
+{
+  "lesson_number": 4,
+  "title": "Lesson 4",
+  "topic": "Ablative case",
+  "grammar": {
+    "explanations": [
+      "This lesson continues the declension of masculine nouns ending in -a, focusing on the ablative case.",
+      "Case endings -ā, -mhā, or -smā are added to the nominal base to form the ablative singular.",
+      "Case ending -ehi is added to the nominal base to form the ablative plural. The ending -ebhi is an archaic form that is also used."
+    ],
+    "tables": [
+      {
+        "title": "Ablative case singular",
+        "rows": [
+          ["nara + ā / mhā / smā", "narā / naramhā / narasmā (From the man)"],
+          ["mātula + ā / mhā / smā", "mātulā / mātulamhā / mātulasmā (From the uncle)"],
+          ["kassaka + ā / mhā / smā", "kassakā / kassakamhā / kassakasmā (From the farmer)"]
+        ]
+      },
+      {
+        "title": "Ablative case plural",
+        "rows": [
+          ["nara + ehi", "narehi (narebhi) (From men)"],
+          ["mātula + ehi", "mātulehi (mātulebhi) (From uncles)"],
+          ["kassaka + ehi", "kassakehi (kassakebhi) (From farmers)"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Yācako naramhā bhattaṃ yācati.",
+        "english": "The beggar asks for rice from the man."
+      },
+      {
+        "pali": "Putto mātulamhā pañhaṃ pucchati.",
+        "english": "The son asks a question from the uncle."
+      },
+      {
+        "pali": "Kassako rukkhasmā patati.",
+        "english": "The farmer falls from the tree."
+      },
+      {
+        "pali": "Yācakā narehi bhattaṃ yācanti.",
+        "english": "Beggars ask for rice from men."
+      },
+      {
+        "pali": "Puttā mātulehi pañhe pucchanti.",
+        "english": "Sons ask questions from uncles."
+      },
+      {
+        "pali": "Kassakā rukkhehi patanti.",
+        "english": "Farmers fall from trees."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "pali": "dhīvara",
+      "english": "fisherman",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "maccha",
+      "english": "fish",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "piṭaka",
+      "english": "basket",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "amacca",
+      "english": "minister",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "upāsaka",
+      "english": "lay devotee",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "pāsāda",
+      "english": "palace",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "dāraka",
+      "english": "child",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sāṭaka",
+      "english": "garment",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "rajaka",
+      "english": "washerman",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sappa",
+      "english": "serpent",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "pañha",
+      "english": "question",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "suka / suva",
+      "english": "parrot",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sopāna",
+      "english": "stairway",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sūkara / varāha",
+      "english": "pig",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "patati",
+      "english": "falls",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "dhovati",
+      "english": "washes",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "icchati",
+      "english": "wishes, desires",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "ḍasati",
+      "english": "bites",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pucchati",
+      "english": "questions",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pakkosati",
+      "english": "calls, summons",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "khādati",
+      "english": "eats",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "hanati",
+      "english": "kills",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "otarati",
+      "english": "descends",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "nikkhamati",
+      "english": "leaves, sets out",
+      "type": "verb",
+      "gender": ""
+    }
+  ],
+  "exercises": []
+}

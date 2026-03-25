@@ -1,0 +1,174 @@
+{
+  "lesson_number": 30,
+  "title": "Lesson 30",
+  "topic": "Adjectives ending in -vantu/-mantu",
+  "grammar": {
+    "explanations": [
+      "Attributive adjectives ending in -vantu and -mantu can be declined in all three genders. They agree with the nouns they qualify in gender, number and case.",
+      "In the masculine gender, the adjective guṇavantu (virtuous) is declined as follows. Note the similarities of this declension to the declension of the present participle masculine gender ending in -nta. Adjectives ending in -mantu are declined as cakkhumā, cakkhumanto etc.",
+      "In the neuter gender, only the nominative and accusative forms differ from the masculine: singular ojavantaṃ and plural ojavantāni. The rest is similar to the declension of masculine adjectives ending in -vantu and -mantu.",
+      "The feminine forms of adjectives ending in -vantu are guṇavatī / guṇavantī, and for -mantu they are cakkhumatī / cakkhumantī. These feminine forms are declined like kumārī, i.e. feminine nouns ending in -ī."
+    ],
+    "tables": [
+      {
+        "title": "Masculine Gender: guṇavantu (virtuous) - Singular",
+        "rows": [
+          ["Nom.", "guṇavā, guṇavanto"],
+          ["Voc.", "guṇavā, guṇava, guṇavanta"],
+          ["Acc.", "guṇavantaṃ"],
+          ["Ins.", "guṇavatā, guṇavantena"],
+          ["Abl.", "guṇavatā, guṇavantamhā, guṇavantasmā"],
+          ["Dat.", "guṇavato, guṇavantassa"],
+          ["Gen.", "guṇavato, guṇavantassa"],
+          ["Loc.", "guṇavati, guṇavante, guṇavantamhi, guṇavantasmiṃ"]
+        ]
+      },
+      {
+        "title": "Masculine Gender: guṇavantu (virtuous) - Plural",
+        "rows": [
+          ["Nom.", "guṇavanto, guṇavantā"],
+          ["Voc.", "guṇavanto, guṇavantā"],
+          ["Acc.", "guṇavanto, guṇavante"],
+          ["Ins.", "guṇavantehi (guṇavantebhi)"],
+          ["Abl.", "guṇavantehi (guṇavantebhi)"],
+          ["Dat.", "guṇavataṃ, guṇavantānaṃ"],
+          ["Gen.", "guṇavataṃ, guṇavantānaṃ"],
+          ["Loc.", "guṇavantesu"]
+        ]
+      },
+      {
+        "title": "Neuter Gender: ojavantu (nourishing) - Singular and Plural",
+        "rows": [
+          ["Nom. Sg.", "ojavantaṃ"],
+          ["Acc. Sg.", "ojavantaṃ"],
+          ["Nom. Pl.", "ojavantāni"],
+          ["Acc. Pl.", "ojavantāni"]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "vocabulary": [
+    {
+      "pali": "dhanavantu",
+      "english": "rich",
+      "type": "adjective",
+      "gender": ""
+    },
+    {
+      "pali": "Bhagavantu",
+      "english": "the Fortunate One, the Buddha",
+      "type": "adjective",
+      "gender": "m"
+    },
+    {
+      "pali": "yasavantu",
+      "english": "famous",
+      "type": "adjective",
+      "gender": ""
+    },
+    {
+      "pali": "kulavantu",
+      "english": "of good family",
+      "type": "adjective",
+      "gender": ""
+    },
+    {
+      "pali": "sotavantu",
+      "english": "attentive, having ears",
+      "type": "adjective",
+      "gender": ""
+    },
+    {
+      "pali": "sīlavantu",
+      "english": "virtuous",
+      "type": "adjective",
+      "gender": ""
+    },
+    {
+      "pali": "saddhāvantu",
+      "english": "devoted",
+      "type": "adjective",
+      "gender": ""
+    },
+    {
+      "pali": "satimantu",
+      "english": "mindful",
+      "type": "adjective",
+      "gender": ""
+    },
+    {
+      "pali": "cakkhumantu",
+      "english": "having eyes",
+      "type": "adjective",
+      "gender": ""
+    },
+    {
+      "pali": "balavantu",
+      "english": "powerful",
+      "type": "adjective",
+      "gender": ""
+    },
+    {
+      "pali": "paññavantu",
+      "english": "wise",
+      "type": "adjective",
+      "gender": ""
+    },
+    {
+      "pali": "puññavantu",
+      "english": "fortunate, meritorious",
+      "type": "adjective",
+      "gender": ""
+    },
+    {
+      "pali": "phalavantu",
+      "english": "fruitful",
+      "type": "adjective",
+      "gender": ""
+    },
+    {
+      "pali": "himavantu",
+      "english": "Himalayas, possessor of snow",
+      "type": "adjective",
+      "gender": "m"
+    },
+    {
+      "pali": "vaṇṇavantu",
+      "english": "colourful",
+      "type": "adjective",
+      "gender": ""
+    },
+    {
+      "pali": "bhānumantu",
+      "english": "sun, radiant",
+      "type": "adjective",
+      "gender": "m"
+    },
+    {
+      "pali": "buddhimantu",
+      "english": "intelligent",
+      "type": "adjective",
+      "gender": ""
+    },
+    {
+      "pali": "bandhumantu",
+      "english": "having relations",
+      "type": "adjective",
+      "gender": ""
+    },
+    {
+      "pali": "guṇavantu",
+      "english": "virtuous",
+      "type": "adjective",
+      "gender": ""
+    },
+    {
+      "pali": "ojavantu",
+      "english": "nourishing",
+      "type": "adjective",
+      "gender": ""
+    }
+  ],
+  "exercises": []
+}

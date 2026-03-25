@@ -1,0 +1,180 @@
+{
+  "lesson_number": 5,
+  "title": "Lesson 5",
+  "topic": "Dative case",
+  "grammar": {
+    "explanations": [
+      "This lesson continues the declension of masculine nouns ending in -a, covering the dative case.",
+      "The dative case expresses the meaning 'for' or 'to' in relation to the noun.",
+      "The case endings -āya or -ssa are added to the nominal base to form the dative singular.",
+      "The case ending -ānaṃ is added to the nominal base to form the dative plural."
+    ],
+    "tables": [
+      {
+        "title": "Dative case singular",
+        "rows": [
+          ["nara + āya / ssa", "narāya / narassa (for or to the man)"],
+          ["mātula + āya / ssa", "mātulāya / mātulassa (for or to the uncle)"],
+          ["kassaka + āya / ssa", "kassakāya / kassakassa (for or to the farmer)"]
+        ]
+      },
+      {
+        "title": "Dative case plural",
+        "rows": [
+          ["nara + ānaṃ", "narānaṃ (for or to men)"],
+          ["mātula + ānaṃ", "mātulānaṃ (for or to uncles)"],
+          ["kassaka + ānaṃ", "kassakānaṃ (for or to farmers)"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Dhīvaro narāya macchaṃ āharati.",
+        "english": "The fisherman brings a fish for the man."
+      },
+      {
+        "pali": "Putto mātulassa odanaṃ dadāti.",
+        "english": "The son gives rice to the uncle."
+      },
+      {
+        "pali": "Vāṇijo kassakassa ajaṃ dadāti.",
+        "english": "The merchant gives a goat to the farmer."
+      },
+      {
+        "pali": "Dhīvarā narānaṃ macche āharanti.",
+        "english": "Fishermen bring fish for men."
+      },
+      {
+        "pali": "Puttā mātulānaṃ odanaṃ dadanti.",
+        "english": "Sons give rice to uncles."
+      },
+      {
+        "pali": "Vāṇijā kassakānaṃ aje dadanti.",
+        "english": "Merchants give goats to farmers."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "pali": "tāpasa",
+      "english": "hermit",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "ācariya",
+      "english": "teacher",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "vejja",
+      "english": "doctor",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sīha",
+      "english": "lion",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "luddaka",
+      "english": "hunter",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "aja",
+      "english": "goat",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "vānara / makkaṭa",
+      "english": "monkey",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "lābha",
+      "english": "profit",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "mañca",
+      "english": "bed",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "kuddāla",
+      "english": "hoe",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "rodati",
+      "english": "cries",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "hasati",
+      "english": "laughs",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "labhati",
+      "english": "gets, receives",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pavisati",
+      "english": "enters",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "dadāti",
+      "english": "gives",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "ādadāti",
+      "english": "takes",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "kīḷati",
+      "english": "plays",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "nahāyati",
+      "english": "bathes",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "ākaḍḍhati",
+      "english": "drags",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pajahati",
+      "english": "gives up, abandons",
+      "type": "verb",
+      "gender": ""
+    }
+  ],
+  "exercises": []
+}

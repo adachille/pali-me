@@ -1,0 +1,85 @@
+{
+  "lesson_number": 19,
+  "title": "Lesson 19",
+  "topic": "Past participle",
+  "grammar": {
+    "explanations": [
+      "Past participles are mostly formed by adding -ta to the root with or without the connecting vowel -i-. Examples: pacati → pac + i + ta = pacita (cooked); bhāsati → bhās + i + ta = bhāsita (spoken); yācati → yāc + i + ta = yācita (begged); deseti → dis' + i + ta = desita (preached); pūjeti → pūj + i + ta = pūjita (honoured); gacchati → gam + ta = gata (gone); hanati → han + ta = hata (killed); nayati/neti → nī + ta = nīta (led).",
+      "The past participle is also formed from some roots by adding -na. Examples: chindati → chid + na = chinna (cut); bhindati → bhid + na = bhinna (broken); nisīdati → ni + sad + na = nisinna (seated); tarati → tṛ + na = tiṇṇa (crossed).",
+      "Past participles have a passive meaning when they are formed from transitive verbs, but from intransitive verbs they have an active meaning. They are declined in the three genders, as -a ending nouns in the masculine and the neuter, and -ā ending nouns in the feminine.",
+      "Pacati, chindati, nimanteti are transitive verbs. Therefore: pacito odano = the rice that is cooked (passive meaning); chinnaṃ paṇṇaṃ = the leaf that is cut (passive meaning); nimantitā kaññā = the girl who is invited (passive meaning).",
+      "But gacchati, patati, tiṭṭhati are intransitive verbs. Therefore: manusso gato (hoti) = the man has gone (active meaning); pupphaṃ patitaṃ (hoti) = the flower has fallen (active meaning); kaññā ṭhitā (hoti) = the girl has stood (active meaning)."
+    ],
+    "tables": [
+      {
+        "title": "Past participle forms",
+        "rows": [
+          ["kasati", "kasita, kaṭṭha"],
+          ["pucchati", "pucchita, puṭṭha"],
+          ["pacati", "pacita, pakka"],
+          ["ḍasati", "daṭṭha"],
+          ["phusati", "phuṭṭha"],
+          ["pavisati", "paviṭṭha"],
+          ["āmasati", "āmasita, āmaṭṭha"],
+          ["labhati", "laddha, labhita"],
+          ["ārabhati", "āraddha"],
+          ["bhavati", "bhūta"],
+          ["bhuñjati", "bhuñjita, bhutta"],
+          ["vapati", "vutta"],
+          ["vasati", "vuttha"],
+          ["āsiñcati", "āsitta"],
+          ["khipati", "khitta"],
+          ["dhovati", "dhovita, dhota"],
+          ["pajahati", "pahīna"],
+          ["vivarati", "vivaṭa"],
+          ["pivati", "pīta"],
+          ["cavati", "cuta"],
+          ["hanati", "hata"],
+          ["nikkhamati", "nikkhanta"],
+          ["jānāti", "ñāta"],
+          ["suṇāti", "suta"],
+          ["mināti", "mita"],
+          ["gaṇhāti", "gahita"],
+          ["kiṇāti", "kīta"],
+          ["pāpuṇāti", "patta"],
+          ["karoti", "kata"],
+          ["tiṭṭhati", "ṭhita"],
+          ["harati", "haṭa"],
+          ["kujjhati", "kuddha"],
+          ["dadāti", "dinna"],
+          ["pasīdati", "pasanna"],
+          ["passati", "diṭṭha"],
+          ["muñcati", "mutta"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Upāsakehi vihāraṃ paviṭṭho Buddho diṭṭho hoti.",
+        "english": "The Buddha who entered the monastery was seen by the lay devotees."
+      },
+      {
+        "pali": "Te Buddhena desitaṃ dhammaṃ suṇiṃsu.",
+        "english": "They listened to the dhamma preached by the Buddha."
+      },
+      {
+        "pali": "Dārikāya āhaṭāni bhaṇḍāni ammā piṭakesu pakkhipi.",
+        "english": "The mother put in baskets the goods brought by the girl."
+      },
+      {
+        "pali": "Vānijo patitassa rukkhassa sākhāyo chindi.",
+        "english": "The merchant cut the branches of the fallen tree."
+      },
+      {
+        "pali": "Mayaṃ udakena āsittehi pupphehi Buddhaṃ pūjema.",
+        "english": "We may worship the Buddha with flowers sprinkled with water."
+      },
+      {
+        "pali": "Kassakena kasite khette sūkaro sayati.",
+        "english": "A pig sleeps in the field ploughed by the farmer."
+      }
+    ]
+  },
+  "vocabulary": [],
+  "exercises": []
+}

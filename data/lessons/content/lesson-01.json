@@ -1,0 +1,311 @@
+{
+  "lesson_number": 1,
+  "title": "Lesson 1",
+  "topic": "Nominative case, present tense verbs",
+  "grammar": {
+    "explanations": [
+      "Masculine nouns ending in -a form the nominative case singular by adding the case ending -o to the nominal base. They form the nominative case plural by adding the case ending -ā to the nominal base. A noun thus inflected is used as the subject of a sentence.",
+      "In the verbs listed, bhāsa, paca, kasa etc. are verbal bases and -ti is the present tense, third person, singular termination. The present tense, third person, plural is formed by adding the termination -nti to the base."
+    ],
+    "tables": [
+      {
+        "title": "Nominative case of masculine nouns ending in -a",
+        "rows": [
+          ["Singular", "nara + o = naro"],
+          ["Singular", "mātula + o = mātulo"],
+          ["Singular", "kassaka + o = kassako"],
+          ["Plural", "nara + ā = narā"],
+          ["Plural", "mātula + ā = mātulā"],
+          ["Plural", "kassaka + ā = kassakā"]
+        ]
+      },
+      {
+        "title": "Present tense, third person verb forms",
+        "rows": [
+          ["Singular", "bhāsati - He speaks"],
+          ["Singular", "pacati - He cooks"],
+          ["Singular", "kasati - He ploughs"],
+          ["Plural", "bhāsanti - They speak"],
+          ["Plural", "pacanti - They cook"],
+          ["Plural", "kasanti - They plough"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Naro bhāsati",
+        "english": "The man speaks."
+      },
+      {
+        "pali": "Mātulo pacati",
+        "english": "The uncle cooks."
+      },
+      {
+        "pali": "Kassako kasati",
+        "english": "The farmer ploughs."
+      },
+      {
+        "pali": "Narā bhāsanti",
+        "english": "Men speak."
+      },
+      {
+        "pali": "Mātulā pacanti",
+        "english": "Uncles cook."
+      },
+      {
+        "pali": "Kassakā kasanti",
+        "english": "Farmers plough."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "pali": "Buddha / Tathāgata / Sugata",
+      "english": "the Buddha",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "manussa",
+      "english": "man, human being",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "nara / purisa",
+      "english": "man, person",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "kassaka",
+      "english": "farmer",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "brāhmaṇa",
+      "english": "brahmin",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "putta",
+      "english": "son",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "mātula",
+      "english": "uncle",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "kumāra",
+      "english": "boy",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "vāṇija",
+      "english": "merchant",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "bhūpāla",
+      "english": "king",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sahāya / sahāyaka / mitta",
+      "english": "friend",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "bhāsati",
+      "english": "speaks",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pacati",
+      "english": "cooks",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "kasati",
+      "english": "ploughs",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "bhuñjati",
+      "english": "eats",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "sayati",
+      "english": "sleeps",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "passati",
+      "english": "sees",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "chindati",
+      "english": "cuts",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "gacchati",
+      "english": "goes",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "āgacchati",
+      "english": "comes",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "dhāvati",
+      "english": "runs",
+      "type": "verb",
+      "gender": ""
+    }
+  ],
+  "exercises": [
+    {
+      "pali": "Bhūpālo bhuñjati.",
+      "english": "The king eats."
+    },
+    {
+      "pali": "Puttā sayanti.",
+      "english": "Sons sleep."
+    },
+    {
+      "pali": "Vāṇijā sayanti.",
+      "english": "Merchants sleep."
+    },
+    {
+      "pali": "Buddho passati.",
+      "english": "The Buddha sees."
+    },
+    {
+      "pali": "Kumāro dhāvati.",
+      "english": "The boy runs."
+    },
+    {
+      "pali": "Mātulo kasati.",
+      "english": "The uncle ploughs."
+    },
+    {
+      "pali": "Brāhmaṇā bhāsanti.",
+      "english": "Brahmins speak."
+    },
+    {
+      "pali": "Mittā gacchanti.",
+      "english": "Friends go."
+    },
+    {
+      "pali": "Kassakā pacanti.",
+      "english": "Farmers cook."
+    },
+    {
+      "pali": "Manusso chindati.",
+      "english": "The man cuts."
+    },
+    {
+      "pali": "Purisā dhāvanti.",
+      "english": "Men run."
+    },
+    {
+      "pali": "Sahāyako bhuñjati.",
+      "english": "The friend eats."
+    },
+    {
+      "pali": "Tathāgato bhāsati.",
+      "english": "The Buddha speaks."
+    },
+    {
+      "pali": "Naro pacati.",
+      "english": "The man cooks."
+    },
+    {
+      "pali": "Sahāyā kasanti.",
+      "english": "Friends plough."
+    },
+    {
+      "pali": "Sugato āgacchati.",
+      "english": "The Buddha comes."
+    },
+    {
+      "pali": "Puttā dhāvanti.",
+      "english": "Sons run."
+    },
+    {
+      "pali": "Mātulo passati.",
+      "english": "The uncle sees."
+    },
+    {
+      "pali": "Kumārā bhuñjanti.",
+      "english": "Boys eat."
+    },
+    {
+      "pali": "Vāṇijā gacchanti.",
+      "english": "Merchants go."
+    },
+    {
+      "pali": "Naro sayati.",
+      "english": "The man sleeps."
+    },
+    {
+      "pali": "Bhūpālā gacchanti.",
+      "english": "Kings go."
+    },
+    {
+      "pali": "Brāhmaṇo chindati.",
+      "english": "The brahmin cuts."
+    },
+    {
+      "pali": "Mittā bhāsanti.",
+      "english": "Friends speak."
+    },
+    {
+      "pali": "Kassako kasati.",
+      "english": "The farmer ploughs."
+    },
+    {
+      "pali": "Vāṇijo āgacchati.",
+      "english": "The merchant comes."
+    },
+    {
+      "pali": "Puttā chindanti.",
+      "english": "Sons cut."
+    },
+    {
+      "pali": "Mātulā bhāsanti.",
+      "english": "Uncles speak."
+    },
+    {
+      "pali": "Kumāro dhāvati.",
+      "english": "The boy runs."
+    },
+    {
+      "pali": "Mitto bhāsati.",
+      "english": "The friend speaks."
+    }
+  ]
+}

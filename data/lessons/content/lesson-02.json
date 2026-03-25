@@ -1,0 +1,405 @@
+{
+  "lesson_number": 2,
+  "title": "Lesson 2",
+  "topic": "Accusative case",
+  "grammar": {
+    "explanations": [
+      "Declension of masculine nouns ending in -a (continued): Accusative case.",
+      "The case ending -ṃ is added to the nominal base to form the accusative singular number.",
+      "The case ending -e is added to the nominal base to form the accusative plural number.",
+      "A noun thus inflected is used as the object of a sentence. The goal of motion is also expressed by the accusative case."
+    ],
+    "tables": [
+      {
+        "title": "Accusative case - Singular",
+        "rows": [
+          ["nara + ṃ", "naraṃ"],
+          ["mātula + ṃ", "mātulaṃ"],
+          ["kassaka + ṃ", "kassakaṃ"]
+        ]
+      },
+      {
+        "title": "Accusative case - Plural",
+        "rows": [
+          ["nara + e", "nare"],
+          ["mātula + e", "mātule"],
+          ["kassaka + e", "kassake"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Putto naraṃ passati.",
+        "english": "The son sees the man."
+      },
+      {
+        "pali": "Brāhmaṇo mātulaṃ rakkhati.",
+        "english": "The brahmin protects the uncle."
+      },
+      {
+        "pali": "Vāṇijo kassakaṃ paharati.",
+        "english": "The merchant hits the farmer."
+      },
+      {
+        "pali": "Puttā nare passanti.",
+        "english": "Sons see men."
+      },
+      {
+        "pali": "Brāhmaṇā mātule rakkhanti.",
+        "english": "Brahmins protect uncles."
+      },
+      {
+        "pali": "Vāṇijā kassake paharanti.",
+        "english": "Merchants hit farmers."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "pali": "dhamma",
+      "english": "the doctrine, truth",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "bhatta",
+      "english": "rice",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "odana",
+      "english": "cooked rice",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "gāma",
+      "english": "village",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "suriya",
+      "english": "sun",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "canda",
+      "english": "moon",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "kukkura / sunakha / soṇa",
+      "english": "dog",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "vihāra",
+      "english": "monastery",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "patta",
+      "english": "bowl",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "āvāṭa",
+      "english": "pit",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "pabbata",
+      "english": "mountain",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "yācaka",
+      "english": "beggar",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sigāla",
+      "english": "jackal",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "rukkha",
+      "english": "tree",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "harati",
+      "english": "carries, takes away",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "āharati",
+      "english": "brings",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "āruhati",
+      "english": "climbs, ascends",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "oruhati",
+      "english": "descends",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "yācati",
+      "english": "begs",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "khaṇati",
+      "english": "digs",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "vijjhati",
+      "english": "shoots",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "paharati",
+      "english": "hits, strikes",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "rakkhati",
+      "english": "protects",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "vandati",
+      "english": "worships, salutes",
+      "type": "verb",
+      "gender": ""
+    }
+  ],
+  "exercises": [
+    {
+      "pali": "Tathāgato dhammaṃ bhāsati.",
+      "english": "The Buddha speaks the doctrine."
+    },
+    {
+      "pali": "Brāhmaṇā odanaṃ bhuñjanti.",
+      "english": "Brahmins eat cooked rice."
+    },
+    {
+      "pali": "Manusso suriyaṃ passati.",
+      "english": "The man sees the sun."
+    },
+    {
+      "pali": "Kumārā sigāle paharanti.",
+      "english": "Boys hit jackals."
+    },
+    {
+      "pali": "Yācakā bhattaṃ yācanti.",
+      "english": "Beggars beg rice."
+    },
+    {
+      "pali": "Kassakā āvāṭe khaṇanti.",
+      "english": "Farmers dig pits."
+    },
+    {
+      "pali": "Mitto gāmaṃ āgacchati.",
+      "english": "The friend comes to the village."
+    },
+    {
+      "pali": "Bhūpālo manusse rakkhati.",
+      "english": "The king protects men."
+    },
+    {
+      "pali": "Puttā pabbataṃ gacchanti.",
+      "english": "Sons go to the mountain."
+    },
+    {
+      "pali": "Kumāro Buddhaṃ vandati.",
+      "english": "The boy worships the Buddha."
+    },
+    {
+      "pali": "Vāṇijā patte āharanti.",
+      "english": "Merchants bring bowls."
+    },
+    {
+      "pali": "Puriso vihāraṃ gacchati.",
+      "english": "The man goes to the monastery."
+    },
+    {
+      "pali": "Kukkurā pabbataṃ dhāvanti.",
+      "english": "Dogs run to the mountain."
+    },
+    {
+      "pali": "Sigālā gāmaṃ āgacchanti.",
+      "english": "Jackals come to the village."
+    },
+    {
+      "pali": "Brāhmaṇā sahāyake āharanti.",
+      "english": "Brahmins bring friends."
+    },
+    {
+      "pali": "Bhūpālā sugataṃ vandanti.",
+      "english": "Kings worship the Buddha."
+    },
+    {
+      "pali": "Yācakā sayanti.",
+      "english": "Beggars sleep."
+    },
+    {
+      "pali": "Mittā sunakhe haranti.",
+      "english": "Friends take away dogs."
+    },
+    {
+      "pali": "Putto candaṃ passati.",
+      "english": "The son sees the moon."
+    },
+    {
+      "pali": "Kassako gāmaṃ dhāvati.",
+      "english": "The farmer runs to the village."
+    },
+    {
+      "pali": "Vāṇijā rukkhe chindanti.",
+      "english": "Merchants cut trees."
+    },
+    {
+      "pali": "Naro sigālaṃ vijjhati.",
+      "english": "The man shoots the jackal."
+    },
+    {
+      "pali": "Kumāro odanaṃ bhuñjati.",
+      "english": "The boy eats cooked rice."
+    },
+    {
+      "pali": "Yācako soṇaṃ paharati.",
+      "english": "The beggar hits the dog."
+    },
+    {
+      "pali": "Sahāyakā pabbate āruhanti.",
+      "english": "Friends climb mountains."
+    },
+    {
+      "pali": "Narā vihāraṃ gacchanti.",
+      "english": "Men go to the monastery."
+    },
+    {
+      "pali": "Kassakā pabbate āruhanti.",
+      "english": "Farmers climb mountains."
+    },
+    {
+      "pali": "Brāhmaṇo odanaṃ bhuñjati.",
+      "english": "The brahmin eats rice."
+    },
+    {
+      "pali": "Buddho kumāre passati.",
+      "english": "The Buddha sees the boys."
+    },
+    {
+      "pali": "Mātulā patte haranti.",
+      "english": "Uncles take away bowls."
+    },
+    {
+      "pali": "Putto kukkuraṃ rakkhati.",
+      "english": "The son protects the dog."
+    },
+    {
+      "pali": "Bhūpālo Buddhaṃ vandati.",
+      "english": "The king worships the Buddha."
+    },
+    {
+      "pali": "Vāṇijo kumāraṃ āharati.",
+      "english": "The merchant brings a boy."
+    },
+    {
+      "pali": "Mittā brāhmaṇaṃ vandanti.",
+      "english": "Friends salute the brahmin."
+    },
+    {
+      "pali": "Yācakā bhattaṃ yācanti.",
+      "english": "Beggars beg rice."
+    },
+    {
+      "pali": "Vāṇijā sigāle vijjhanti.",
+      "english": "Merchants shoot jackals."
+    },
+    {
+      "pali": "Kumārā pabbataṃ āruhanti.",
+      "english": "Boys climb the mountain."
+    },
+    {
+      "pali": "Kassako gāmaṃ dhāvati.",
+      "english": "The farmer runs to the village."
+    },
+    {
+      "pali": "Vāṇijo odanaṃ pacati.",
+      "english": "The merchant cooks rice."
+    },
+    {
+      "pali": "Puttā mātulaṃ vandanti.",
+      "english": "Sons worship the uncle."
+    },
+    {
+      "pali": "Bhūpālā manusse rakkhanti.",
+      "english": "Kings protect men."
+    },
+    {
+      "pali": "Buddho vihāraṃ āgacchati.",
+      "english": "The Buddha comes to the monastery."
+    },
+    {
+      "pali": "Narā oruhanti.",
+      "english": "The men descend."
+    },
+    {
+      "pali": "Kassakā āvāṭe khaṇanti.",
+      "english": "Farmers dig pits."
+    },
+    {
+      "pali": "Vāṇijo dhāvati.",
+      "english": "The merchant runs."
+    },
+    {
+      "pali": "Kukkuro candaṃ passati.",
+      "english": "The dog sees the moon."
+    },
+    {
+      "pali": "Kumārā rukkhe āruhanti.",
+      "english": "Boys climb trees."
+    },
+    {
+      "pali": "Brāhmaṇo pattaṃ āharati.",
+      "english": "The brahmin brings the bowl."
+    },
+    {
+      "pali": "Yācako sayati.",
+      "english": "The beggar sleeps."
+    },
+    {
+      "pali": "Bhūpālo Buddhaṃ passati.",
+      "english": "The king sees the Buddha."
+    }
+  ]
+}
