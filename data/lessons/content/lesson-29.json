@@ -1,0 +1,263 @@
+{
+  "lesson_number": 29,
+  "title": "Lesson 29",
+  "topic": "Neuter nouns ending in -i/-u",
+  "grammar": {
+    "explanations": [
+      "Neuter nouns ending in -i are declined like aṭṭhi (bone, seed). This declension is similar to the aggi declension except in the nominative, vocative, and accusative cases.",
+      "In the nominative, vocative, and accusative singular, the form is aṭṭhi; in the plural, aṭṭhī or aṭṭhīni. The remaining cases follow the aggi pattern with the stem aṭṭhi-.",
+      "Neuter nouns ending in -u are declined like cakkhu (eye). The rest of the declension is similar to the declension of garu.",
+      "Other neuter nouns ending in -i include: vāri (water), akkhi (eye), sappi (ghee), dadhi (curds), acci (flame), satthi (thigh).",
+      "Other neuter nouns ending in -u include: dhanu (bow), madhu (honey), assu (tear), jāṇu/jaṇṇu (knee), dāru (firewood), ambu (water), vasu (wealth), vatthu (ground, base, site, estate)."
+    ],
+    "tables": [
+      {
+        "title": "Declension of aṭṭhi (neuter, -i stem)",
+        "rows": [
+          [
+            "Case",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "Nom.",
+            "aṭṭhi",
+            "aṭṭhī, aṭṭhīni"
+          ],
+          [
+            "Voc.",
+            "aṭṭhi",
+            "aṭṭhī, aṭṭhīni"
+          ],
+          [
+            "Acc.",
+            "aṭṭhiṃ",
+            "aṭṭhī, aṭṭhīni"
+          ],
+          [
+            "Ins.",
+            "aṭṭhinā",
+            "aṭṭhīhi, (aṭṭhībhi)"
+          ],
+          [
+            "Abl.",
+            "aṭṭhinā",
+            "aṭṭhīhi, (aṭṭhībhi)"
+          ],
+          [
+            "Dat.",
+            "aṭṭhino, aṭṭhissa",
+            "aṭṭhīnaṃ"
+          ],
+          [
+            "Gen.",
+            "aṭṭhino, aṭṭhissa",
+            "aṭṭhīnaṃ"
+          ],
+          [
+            "Loc.",
+            "aṭṭhini, aṭṭhimhi, aṭṭhismiṃ",
+            "aṭṭhīsu"
+          ]
+        ]
+      },
+      {
+        "title": "Declension of cakkhu (neuter, -u stem)",
+        "rows": [
+          [
+            "Case",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "Nom.",
+            "cakkhu",
+            "cakkhū, cakkhūni"
+          ],
+          [
+            "Voc.",
+            "cakkhu",
+            "cakkhū, cakkhūni"
+          ],
+          [
+            "Acc.",
+            "cakkhuṃ",
+            "cakkhū, cakkhūni"
+          ]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "vocabulary": [
+    {
+      "pali": "aṭṭhi",
+      "english": "bone, seed",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "vāri",
+      "english": "water",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "akkhi",
+      "english": "eye",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "sappi",
+      "english": "ghee",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "dadhi",
+      "english": "curds",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "acci",
+      "english": "flame",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "satthi",
+      "english": "thigh",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "cakkhu",
+      "english": "eye",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "dhanu",
+      "english": "bow",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "madhu",
+      "english": "honey",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "assu",
+      "english": "tear",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "jāṇu / jaṇṇu",
+      "english": "knee",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "dāru",
+      "english": "firewood",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "ambu",
+      "english": "water",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "vasu",
+      "english": "wealth",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "vatthu",
+      "english": "ground, base, site, estate",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "anukampati",
+      "english": "feels compassionate",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "vāceti",
+      "english": "teaches",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "sammisseti",
+      "english": "mixes",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pabbajati",
+      "english": "renounces, becomes ordained",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "vippakirati",
+      "english": "scatters (pp. vippakiṇṇa)",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "parājeti",
+      "english": "defeats",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "anugacchati",
+      "english": "follows",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pattheti",
+      "english": "aspires, hopes",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "samijjhati",
+      "english": "fulfils, succeeds",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pavatteti",
+      "english": "sets in motion",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "(assūni) pavatteti",
+      "english": "sheds tears",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "vibhajati",
+      "english": "distributes, analyses",
+      "type": "verb",
+      "gender": ""
+    }
+  ],
+  "exercises": []
+}

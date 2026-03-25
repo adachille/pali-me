@@ -1,0 +1,149 @@
+{
+  "lesson_number": 31,
+  "title": "Lesson 31",
+  "topic": "Personal pronouns",
+  "grammar": {
+    "explanations": [
+      "The first personal pronoun is based on the stem 'amha'. It declines differently in singular and plural forms across all cases.",
+      "The second personal pronoun is based on the stem 'tumha'. It likewise has distinct singular and plural forms across all cases.",
+      "Several cases of these pronouns have multiple alternative forms (e.g., Dative singular of amha: mama, mayhaṃ, mamaṃ, me). The shorter forms (me, no, te, vo) are enclitic and typically cannot stand at the beginning of a sentence."
+    ],
+    "tables": [
+      {
+        "title": "First personal pronoun (amha) - Singular",
+        "rows": [
+          [
+            "Nominative",
+            "ahaṃ (= I)"
+          ],
+          [
+            "Accusative",
+            "maṃ, mamaṃ (= me)"
+          ],
+          [
+            "Instrumental",
+            "mayā, me"
+          ],
+          [
+            "Ablative",
+            "mayā"
+          ],
+          [
+            "Dative",
+            "mama, mayhaṃ, mamaṃ, me"
+          ],
+          [
+            "Genitive",
+            "mama, mayhaṃ, mamaṃ, me"
+          ],
+          [
+            "Locative",
+            "mayi"
+          ]
+        ]
+      },
+      {
+        "title": "First personal pronoun (amha) - Plural",
+        "rows": [
+          [
+            "Nominative",
+            "mayaṃ, amhe (= we)"
+          ],
+          [
+            "Accusative",
+            "amhe, amhākaṃ, no (= us)"
+          ],
+          [
+            "Instrumental",
+            "amhehi, no"
+          ],
+          [
+            "Ablative",
+            "amhehi"
+          ],
+          [
+            "Dative",
+            "amhaṃ, amhākaṃ, no"
+          ],
+          [
+            "Genitive",
+            "amhaṃ, amhākaṃ, no"
+          ],
+          [
+            "Locative",
+            "amhesu"
+          ]
+        ]
+      },
+      {
+        "title": "Second personal pronoun (tumha) - Singular",
+        "rows": [
+          [
+            "Nominative",
+            "tvaṃ, tuvaṃ (= you)"
+          ],
+          [
+            "Accusative",
+            "taṃ, tavaṃ, tuvaṃ"
+          ],
+          [
+            "Instrumental",
+            "tvayā, tayā, te"
+          ],
+          [
+            "Ablative",
+            "tvayā, tayā"
+          ],
+          [
+            "Dative",
+            "tava, tuyhaṃ, te"
+          ],
+          [
+            "Genitive",
+            "tava, tuyhaṃ, te"
+          ],
+          [
+            "Locative",
+            "tvayi, tayi"
+          ]
+        ]
+      },
+      {
+        "title": "Second personal pronoun (tumha) - Plural",
+        "rows": [
+          [
+            "Nominative",
+            "tumhe (= you)"
+          ],
+          [
+            "Accusative",
+            "tumhe, tumhākaṃ, vo"
+          ],
+          [
+            "Instrumental",
+            "tumhehi, vo"
+          ],
+          [
+            "Ablative",
+            "tumhehi, vo"
+          ],
+          [
+            "Dative",
+            "tumhaṃ, tumhākaṃ, vo"
+          ],
+          [
+            "Genitive",
+            "tumhaṃ, tumhākaṃ, vo"
+          ],
+          [
+            "Locative",
+            "tumhesu"
+          ]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "vocabulary": [],
+  "exercises": []
+}

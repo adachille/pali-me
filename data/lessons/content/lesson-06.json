@@ -1,0 +1,76 @@
+{
+  "lesson_number": 6,
+  "title": "Lesson 6",
+  "topic": "Genitive case",
+  "grammar": {
+    "explanations": [
+      "This lesson continues the declension of masculine nouns ending in -a, focusing on the genitive case. The inflections of the genitive case are very similar to those of the dative case.",
+      "The case ending -ssa is added to the nominal base to form the genitive singular.",
+      "The case ending -ānaṃ is added to form the genitive plural."
+    ],
+    "tables": [
+      {
+        "title": "Genitive case singular",
+        "rows": [
+          [
+            "nara + ssa",
+            "narassa (of the man)"
+          ],
+          [
+            "mātula + ssa",
+            "mātulassa (of the uncle)"
+          ],
+          [
+            "kassaka + ssa",
+            "kassakassa (of the farmer)"
+          ]
+        ]
+      },
+      {
+        "title": "Genitive case plural",
+        "rows": [
+          [
+            "nara + ānaṃ",
+            "narānaṃ (of the men)"
+          ],
+          [
+            "mātula + ānaṃ",
+            "mātulānaṃ (of the uncles)"
+          ],
+          [
+            "kassaka + ānaṃ",
+            "kassakānaṃ (of the farmers)"
+          ]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Narassa putto bhattaṃ yācati.",
+        "english": "The man's son asks for rice."
+      },
+      {
+        "pali": "Mātulassa sahāyako rathaṃ āharati.",
+        "english": "The uncle's friend brings the vehicle."
+      },
+      {
+        "pali": "Kassakassa sūkaro dīpaṃ dhāvati.",
+        "english": "The farmer's pig runs to the island."
+      },
+      {
+        "pali": "Narānaṃ puttā bhattaṃ yācanti.",
+        "english": "Sons of the men ask for rice."
+      },
+      {
+        "pali": "Mātulānaṃ sahāyakā rathe āharanti.",
+        "english": "Uncles' friends bring vehicles."
+      },
+      {
+        "pali": "Kassakānaṃ sūkarā dīpe dhāvanti.",
+        "english": "Farmers' pigs run to the islands."
+      }
+    ]
+  },
+  "vocabulary": [],
+  "exercises": []
+}

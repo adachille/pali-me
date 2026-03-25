@@ -1,0 +1,108 @@
+{
+  "lesson_number": 21,
+  "title": "Lesson 21",
+  "topic": "Present participle (feminine)",
+  "grammar": {
+    "explanations": [
+      "This lesson is a continuation of Lesson 11 and should be studied together with that lesson. It was learnt in Lesson 11 that -nta / -māna are added to the base of verbs which end in -a, to form the present participle masculine and neuter genders. e.g.: paca + nta = pacanta; paca + māna = pacamāna. They are declined like -a ending nouns in these two genders.",
+      "With verbs whose base ends in -e / -aya, -nta is usually added to the base ending in -e; and -māna is added to the base ending in -aya. e.g.: core + nta = corenta; coraya + māna = corayamāna.",
+      "With verbs whose base ends in -nā both -nta / -māna are generally added, but the -nā is shortened to -na. e.g.: kiṇā + nta = kiṇanta; kiṇā + māna = kiṇamāna; suṇā + nta = suṇanta; suṇā + māna = suṇamāna.",
+      "Present participles ending in -nta occur more frequently in Pāli literature than those ending in -māna.",
+      "The present participle feminine gender is formed by adding -ntī / -mānā to the verbal base. e.g.: paca + ntī = pacantī; paca + mānā = pacamānā; core + ntī = corentī; coraya + mānā = corayamānā; kiṇā + ntī = kiṇantī; kiṇā + mānā = kiṇamānā.",
+      "When -ntī is added, the present participle feminine is declined like feminine nouns ending in -ī. When -mānā is added it is declined like feminine nouns ending in -ā.",
+      "Similarly, the present participle can be declined in all cases to agree in gender, number and case with the nouns they qualify."
+    ],
+    "tables": [
+      {
+        "title": "Declension of pacantī (Singular)",
+        "rows": [
+          [
+            "Nom.",
+            "pacantī"
+          ],
+          [
+            "Voc.",
+            "pacantī"
+          ],
+          [
+            "Acc.",
+            "pacantiṃ"
+          ],
+          [
+            "Ins.",
+            "pacantiyā"
+          ],
+          [
+            "Abl.",
+            "pacantiyā"
+          ],
+          [
+            "Dat.",
+            "pacantiyā"
+          ],
+          [
+            "Gen.",
+            "pacantiyā"
+          ],
+          [
+            "Loc.",
+            "pacantiyā, pacantiyaṃ"
+          ]
+        ]
+      },
+      {
+        "title": "Declension of pacantī (Plural)",
+        "rows": [
+          [
+            "Nom.",
+            "pacantī, pacantiyo"
+          ],
+          [
+            "Voc.",
+            "pacantī, pacantiyo"
+          ],
+          [
+            "Ins.",
+            "pacantīhi (pacantībhi)"
+          ],
+          [
+            "Dat./Gen.",
+            "pacantīnaṃ"
+          ],
+          [
+            "Loc.",
+            "pacantīsu"
+          ]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Ammā bhattaṃ pacantī kaññāya saddhiṃ katheti.",
+        "english": "Cooking rice the mother speaks with the girl."
+      },
+      {
+        "pali": "Kaññā bhattaṃ pacantiṃ ammaṃ passati.",
+        "english": "The girl sees the mother cooking rice."
+      },
+      {
+        "pali": "Kaññā bhattaṃ pacantiyā ammāya udakaṃ deti.",
+        "english": "The girl gives water to the mother cooking rice."
+      },
+      {
+        "pali": "Bhattaṃ pacantiyo ammāyo kaññāhi saddhiṃ kathenti.",
+        "english": "Cooking rice mothers speak with girls."
+      },
+      {
+        "pali": "Kaññāyo bhattaṃ pacantiyo ammāyo passanti.",
+        "english": "Girls see mothers cooking rice."
+      },
+      {
+        "pali": "Kaññāyo bhattaṃ pacantīnaṃ ammānaṃ udakaṃ denti.",
+        "english": "Girls give water to mothers cooking rice."
+      }
+    ]
+  },
+  "vocabulary": [],
+  "exercises": []
+}

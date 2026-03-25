@@ -1,0 +1,140 @@
+{
+  "lesson_number": 9,
+  "title": "Lesson 9",
+  "topic": "Gerund / Absolutive",
+  "grammar": {
+    "explanations": [
+      "The suffix -tvā is added to the root of the verb or verbal base with or sometimes without the connecting vowel -i- to form the gerund, absolutive or the indeclinable participle. Examples: pac + i + tvā = pacitvā (having cooked); khād + i + tvā = khāditvā (having eaten); gam + tvā = gantvā (having gone); han + tvā = hantvā (having killed).",
+      "The suffix -ya is sometimes added to roots with a prefix. Examples: ā + gam + ya = āgamma (with assimilation) = having come; ā + dā + ya = ādāya = having taken; ā + ruh + ya = āruyha (with metathesis) = having climbed; ava + ruh + ya = oruyha (with metathesis) = having descended.",
+      "The root is the simplest element of a verb without prefixes, suffixes or terminations. These are normally given in Sanskrit in grammars by Western scholars. The base is formed by adding a suffix to the root before a termination. E.g. pac is the root; paca is the base. khād is the root; khāda is the base. bhuj is the root; bhuñja is the base. gam is the root; gaccha is the base.",
+      "Attention may be paid to the following irregular or alternative gerund forms: bhuñjati - bhuñjitvā, bhutvā; āgacchati - āgantvā, āgamma; hanati - hanitvā, hantvā; dadāti - daditvā, datvā; nahāyati - nahāyitvā, nahātvā; tiṭṭhati - ṭhatvā; nikkhamati - nikkhamitvā, nikkhamma; pajahati - pajahitvā, pahāya; passati - passitvā; but disvā is more commonly used from the root dṛś to see, instead of passitvā; uṭṭhahati - uṭṭhahitvā, uṭṭhāya."
+    ],
+    "tables": [
+      {
+        "title": "Gerund formation with -tvā",
+        "rows": [
+          [
+            "pac + i + tvā",
+            "pacitvā",
+            "having cooked"
+          ],
+          [
+            "khād + i + tvā",
+            "khāditvā",
+            "having eaten"
+          ],
+          [
+            "gam + tvā",
+            "gantvā",
+            "having gone"
+          ],
+          [
+            "han + tvā",
+            "hantvā",
+            "having killed"
+          ]
+        ]
+      },
+      {
+        "title": "Gerund formation with -ya (prefixed roots)",
+        "rows": [
+          [
+            "ā + gam + ya",
+            "āgamma (with assimilation)",
+            "having come"
+          ],
+          [
+            "ā + dā + ya",
+            "ādāya",
+            "having taken"
+          ],
+          [
+            "ā + ruh + ya",
+            "āruyha (with metathesis)",
+            "having climbed"
+          ],
+          [
+            "ava + ruh + ya",
+            "oruyha (with metathesis)",
+            "having descended"
+          ]
+        ]
+      },
+      {
+        "title": "Alternative gerund forms",
+        "rows": [
+          [
+            "bhuñjati",
+            "bhuñjitvā, bhutvā",
+            "having eaten"
+          ],
+          [
+            "āgacchati",
+            "āgantvā, āgamma",
+            "having come"
+          ],
+          [
+            "hanati",
+            "hanitvā, hantvā",
+            "having killed"
+          ],
+          [
+            "dadāti",
+            "daditvā, datvā",
+            "having given"
+          ],
+          [
+            "nahāyati",
+            "nahāyitvā, nahātvā",
+            "having bathed"
+          ],
+          [
+            "tiṭṭhati",
+            "ṭhatvā",
+            "having stood"
+          ],
+          [
+            "nikkhamati",
+            "nikkhamitvā, nikkhamma",
+            "having gone out"
+          ],
+          [
+            "pajahati",
+            "pajahitvā, pahāya",
+            "having abandoned"
+          ],
+          [
+            "passati",
+            "passitvā; disvā (more common)",
+            "having seen"
+          ],
+          [
+            "uṭṭhahati",
+            "uṭṭhahitvā, uṭṭhāya",
+            "having risen"
+          ]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Kassako khettamhā āgantvā bhattaṃ bhuñjati.",
+        "english": "The farmer, having come from the field, eats rice."
+      },
+      {
+        "pali": "Vānarā rukkhaṃ āruyha phalāni khādanti.",
+        "english": "Having climbed the tree, monkeys eat fruits."
+      },
+      {
+        "pali": "Dārako bhattaṃ yācitvā rodati.",
+        "english": "Having asked for rice, the child cries."
+      },
+      {
+        "pali": "Samaṇo Buddhaṃ passitvā vandati.",
+        "english": "Having seen the Buddha, the recluse worships (him)."
+      }
+    ]
+  },
+  "vocabulary": [],
+  "exercises": []
+}

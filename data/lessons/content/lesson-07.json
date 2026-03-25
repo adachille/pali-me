@@ -1,0 +1,233 @@
+{
+  "lesson_number": 7,
+  "title": "Lesson 7",
+  "topic": "Locative case",
+  "grammar": {
+    "explanations": [
+      "The locative case is used to express the meanings 'in', 'on', or 'at'.",
+      "For masculine nouns ending in -a, the case endings -e, -mhi, or -smiṃ are added to the nominal base to form the locative singular.",
+      "The case ending -esu is added to the nominal base to form the locative plural."
+    ],
+    "tables": [
+      {
+        "title": "Locative case singular - masculine nouns ending in -a",
+        "rows": [
+          [
+            "nara + e / mhi / smiṃ",
+            "nare, naramhi, narasmiṃ (in / on / at the man)"
+          ],
+          [
+            "mātula + e / mhi / smiṃ",
+            "mātule, mātulamhi, mātulasmiṃ (in / on / at the uncle)"
+          ],
+          [
+            "kassaka + e / mhi / smiṃ",
+            "kassake, kassakamhi, kassakasmiṃ (in / on / at the farmer)"
+          ]
+        ]
+      },
+      {
+        "title": "Locative case plural - masculine nouns ending in -a",
+        "rows": [
+          [
+            "nara + esu",
+            "naresu (in / on / at men)"
+          ],
+          [
+            "mātula + esu",
+            "mātulesu (in / on / at uncles)"
+          ],
+          [
+            "kassaka + esu",
+            "kassakesu (in / on / at farmers)"
+          ]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Sappo narasmiṃ patati.",
+        "english": "The snake falls on the man."
+      },
+      {
+        "pali": "Putto mātulamhi pasīdati.",
+        "english": "The son is pleased with the uncle."
+      },
+      {
+        "pali": "Vāṇijo kassakasmiṃ pasīdati.",
+        "english": "The merchant is pleased with the farmer."
+      },
+      {
+        "pali": "Sappā naresu patanti.",
+        "english": "Snakes fall on men."
+      },
+      {
+        "pali": "Puttā mātulesu pasīdanti.",
+        "english": "Sons are pleased with their uncles."
+      },
+      {
+        "pali": "Vāṇijā kassakesu pasīdanti.",
+        "english": "Merchants are pleased with farmers."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "pali": "nāvika",
+      "english": "sailor",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "ākāsa",
+      "english": "sky",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "samudda",
+      "english": "ocean, sea",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "deva / sura",
+      "english": "deity, god",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "loka",
+      "english": "world",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "āloka",
+      "english": "light",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sakuṇa",
+      "english": "bird",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "kāka",
+      "english": "crow",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "nivāsa",
+      "english": "house",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sappurisa",
+      "english": "virtuous man",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "asappurisa",
+      "english": "wicked man",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "kāya",
+      "english": "body",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "dūta",
+      "english": "messenger",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "goṇa",
+      "english": "ox, bull",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "āhiṇḍati",
+      "english": "wanders",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "carati",
+      "english": "walks",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "nisīdati",
+      "english": "sits",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "sannipatati",
+      "english": "assembles",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "viharati",
+      "english": "dwells",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "vasati",
+      "english": "lives",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "jīvati",
+      "english": "lives",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "tiṭṭhati",
+      "english": "stands",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "uppatati",
+      "english": "flies, jumps up",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "tarati",
+      "english": "crosses (water)",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "uttarati",
+      "english": "comes out (of water)",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pasīdati",
+      "english": "becomes glad, is pleased with",
+      "type": "verb",
+      "gender": ""
+    }
+  ],
+  "exercises": []
+}

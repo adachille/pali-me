@@ -1,0 +1,253 @@
+{
+  "lesson_number": 11,
+  "title": "Lesson 11",
+  "topic": "Present participle (masculine and neuter)",
+  "grammar": {
+    "explanations": [
+      "Present participles are formed by adding -nta or -māna to the verbal base. They function as adjectives and agree in gender, number and case with the nouns they qualify.",
+      "In the masculine and neuter, present participles are declined like -a ending nouns. (The feminine gender of the present participle will be explained in Lesson 21.)",
+      "Examples of present participle formation: paca + nta/māna = pacanta/pacamāna (cooking); gaccha + nta/māna = gacchanta/gacchamāna (going); bhuñja + nta/māna = bhuñjanta/bhuñjamāna (eating); tiṭṭha + nta/māna = tiṭṭhanta/tiṭṭhamāna (standing); vihara + nta/māna = viharanta/viharamāna (dwelling).",
+      "The present participle can be declined in all cases to agree with the nouns they qualify."
+    ],
+    "tables": [],
+    "examples": [
+      {
+        "pali": "Bhattaṃ pacanto / pacamāno puriso hasati.",
+        "english": "The man who is cooking rice laughs. (Nom. case, singular)"
+      },
+      {
+        "pali": "Vejjo bhattaṃ pacantaṃ / pacamānaṃ purisaṃ pakkosati.",
+        "english": "The doctor calls the man who is cooking rice. (Acc. case, singular)"
+      },
+      {
+        "pali": "Vejjo bhattaṃ pacantena / pacamānena purisena saha bhāsati.",
+        "english": "The doctor speaks with the man who is cooking rice. (Inst. case, singular)"
+      },
+      {
+        "pali": "Bhattaṃ pacantā / pacamānā purisā hasanti.",
+        "english": "The men who are cooking rice laugh. (Nom. case, plural)"
+      },
+      {
+        "pali": "Vejjo bhattaṃ pacante / pacamāne purise pakkosati.",
+        "english": "The doctor calls the men who are cooking rice. (Acc. case, plural)"
+      },
+      {
+        "pali": "Vejjo bhattaṃ pacantehi / pacamānehi purisehi saha bhāsati.",
+        "english": "The doctor speaks with the men who are cooking rice. (Inst. case, plural)"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "pali": "āpaṇa",
+      "english": "shop, bazaar",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "puñña",
+      "english": "merit",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "pāpa",
+      "english": "evil, sin",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "kamma",
+      "english": "deed, action",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "kusala",
+      "english": "good",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "akusala",
+      "english": "evil",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "dhana",
+      "english": "wealth",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "dhañña",
+      "english": "corn",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "bīja",
+      "english": "seed",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "dussa",
+      "english": "cloth",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "cīvara",
+      "english": "robe",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "mūla",
+      "english": "root, money",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "rukkhamūla",
+      "english": "foot of a tree",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "tuṇḍa",
+      "english": "beak",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "vetana",
+      "english": "wage, pay",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "paduma",
+      "english": "lotus",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "gīta",
+      "english": "song",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "suvaṇṇa / hirañña",
+      "english": "gold",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "sacca",
+      "english": "truth",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "pānīya",
+      "english": "drinking water",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "citta",
+      "english": "mind",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "pariyesati",
+      "english": "searches, seeks",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "ārabhati",
+      "english": "begins",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "ussahati",
+      "english": "tries",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "upasaṅkamati",
+      "english": "approaches",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "adhigacchati",
+      "english": "understands, attains",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "gāyati",
+      "english": "sings",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "āmasati",
+      "english": "touches, strokes",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "bhāyati",
+      "english": "fears",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "cavati",
+      "english": "departs, dies",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "uppajjati",
+      "english": "is born",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "khipati",
+      "english": "throws",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "vapati",
+      "english": "sows",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "ākaṅkhati",
+      "english": "hopes",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "sibbati",
+      "english": "sews",
+      "type": "verb",
+      "gender": ""
+    }
+  ],
+  "exercises": []
+}

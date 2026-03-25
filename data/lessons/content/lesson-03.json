@@ -1,0 +1,178 @@
+{
+  "lesson_number": 3,
+  "title": "Lesson 3",
+  "topic": "Instrumental case",
+  "grammar": {
+    "explanations": [
+      "The instrumental case is formed by adding the case ending -ena to the nominal base to produce the instrumental singular. The case ending -ehi is added to form the instrumental plural; -ebhi is another archaic case ending that is sometimes used instead. A noun inflected in the instrumental case expresses the idea 'by', 'with', or 'through'.",
+      "The indeclinables saddhiṃ and saha, both meaning 'with', are also used with the instrumental case. They are not normally used with nouns denoting things."
+    ],
+    "tables": [
+      {
+        "title": "Instrumental case singular",
+        "rows": [
+          [
+            "nara + ena",
+            "narena (by means of the man)"
+          ],
+          [
+            "mātula + ena",
+            "mātulena (with the uncle)"
+          ],
+          [
+            "kassaka + ena",
+            "kassakena (through the farmer)"
+          ]
+        ]
+      },
+      {
+        "title": "Instrumental case plural",
+        "rows": [
+          [
+            "nara + ehi",
+            "narehi (narebhi)"
+          ],
+          [
+            "mātula + ehi",
+            "mātulehi (mātulebhi)"
+          ],
+          [
+            "kassaka + ehi",
+            "kassakehi (kassakebhi)"
+          ]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Samaṇo narena saddhiṃ gāmaṃ gacchati.",
+        "english": "The monk goes to the village with the man."
+      },
+      {
+        "pali": "Putto mātulena saha candaṃ passati.",
+        "english": "The son sees the moon with his uncle."
+      },
+      {
+        "pali": "Kassako kakacena rukkhaṃ chindati.",
+        "english": "The farmer cuts the tree with a saw."
+      },
+      {
+        "pali": "Samaṇā narehi saddhiṃ gāmaṃ gacchanti.",
+        "english": "Monks go to the village with men."
+      },
+      {
+        "pali": "Puttā mātulehi saha candaṃ passanti.",
+        "english": "Sons see the moon with uncles."
+      },
+      {
+        "pali": "Kassakā kakacehi rukkhe chindanti.",
+        "english": "Farmers cut trees with saws."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "pali": "ratha",
+      "english": "vehicle, chariot",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sakaṭa",
+      "english": "cart",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "hattha",
+      "english": "hand",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "pāda",
+      "english": "foot",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "magga",
+      "english": "path",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "dīpa",
+      "english": "island, lamp",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sāvaka",
+      "english": "disciple",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "samaṇa",
+      "english": "recluse, monk",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sagga",
+      "english": "heaven",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "assa",
+      "english": "horse",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "miga",
+      "english": "deer",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sara",
+      "english": "arrow",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "pāsāṇa",
+      "english": "rock, stone",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "kakaca",
+      "english": "saw",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "khagga",
+      "english": "sword",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "cora",
+      "english": "thief",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "paṇḍita",
+      "english": "wise man",
+      "type": "noun",
+      "gender": "m"
+    }
+  ],
+  "exercises": []
+}

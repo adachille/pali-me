@@ -1,0 +1,297 @@
+{
+  "lesson_number": 8,
+  "title": "Lesson 8",
+  "topic": "Vocative case, neuter nouns",
+  "grammar": {
+    "explanations": [
+      "The vocative case is used for direct address. For masculine nouns ending in -a, the uninflected nominal base is used as the vocative singular (e.g., nara = 'O man', mātula = 'O uncle', kassaka = 'O farmer'). The case ending -ā is added to form the vocative plural (e.g., narā = 'O men', mātulā = 'O uncles', kassakā = 'O farmers').",
+      "Neuter nouns ending in -a follow a declension similar to masculine nouns ending in -a, with the key differences in the nominative, accusative, and vocative cases. The nominative and accusative singular both use the ending -aṃ (e.g., phalaṃ). The vocative singular uses the uninflected base (e.g., phala). In the plural, the nominative has the forms phalā and phalāni, the accusative has phale and phalāni, and the vocative has phalāni. The rest of the declension is similar to that of masculine nouns ending in -a."
+    ],
+    "tables": [
+      {
+        "title": "Vocative case of masculine nouns ending in -a",
+        "rows": [
+          [
+            "",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "nara",
+            "nara (O man)",
+            "narā (O men)"
+          ],
+          [
+            "mātula",
+            "mātula (O uncle)",
+            "mātulā (O uncles)"
+          ],
+          [
+            "kassaka",
+            "kassaka (O farmer)",
+            "kassakā (O farmers)"
+          ]
+        ]
+      },
+      {
+        "title": "Full paradigm: Nara (man) - masculine noun ending in -a",
+        "rows": [
+          [
+            "Case",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "Nom.",
+            "naro",
+            "narā"
+          ],
+          [
+            "Acc.",
+            "naraṃ",
+            "nare"
+          ],
+          [
+            "Ins.",
+            "narena",
+            "narehi (narebhi)"
+          ],
+          [
+            "Abl.",
+            "narā, naramhā, narasmā",
+            "narehi (narebhi)"
+          ],
+          [
+            "Dat.",
+            "narāya, narassa",
+            "narānaṃ"
+          ],
+          [
+            "Gen.",
+            "narassa",
+            "narānaṃ"
+          ],
+          [
+            "Loc.",
+            "nare, naramhi, narasmiṃ",
+            "naresu"
+          ],
+          [
+            "Voc.",
+            "nara",
+            "narā"
+          ]
+        ]
+      },
+      {
+        "title": "Full paradigm: Phala (fruit) - neuter noun ending in -a",
+        "rows": [
+          [
+            "Case",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "Nom.",
+            "phalaṃ",
+            "phalā, phalāni"
+          ],
+          [
+            "Acc.",
+            "phalaṃ",
+            "phale, phalāni"
+          ],
+          [
+            "Voc.",
+            "phala",
+            "phalāni"
+          ]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "vocabulary": [
+    {
+      "pali": "nayana / locana",
+      "english": "eye",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "udaka / jala",
+      "english": "water",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "arañña / vana",
+      "english": "forest",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "puppha / kusuma",
+      "english": "flower",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "geha / ghara",
+      "english": "house",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "āsana",
+      "english": "seat",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "paṇṇa",
+      "english": "leaf",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "tiṇa",
+      "english": "grass",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "khīra",
+      "english": "milk",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "nagara",
+      "english": "city, town",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "uyyāna",
+      "english": "park",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "khetta",
+      "english": "field",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "bhaṇḍa",
+      "english": "goods",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "sīla",
+      "english": "virtue, precept",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "dāna",
+      "english": "alms, charity",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "rūpa",
+      "english": "object",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "dvāra",
+      "english": "door",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "vattha",
+      "english": "cloth",
+      "type": "noun",
+      "gender": "n"
+    },
+    {
+      "pali": "vivarati",
+      "english": "opens",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "naccati",
+      "english": "dances",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "nikkhipati",
+      "english": "puts",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "uṭṭhahati",
+      "english": "gets up",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "phusati",
+      "english": "touches",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "anusāsati",
+      "english": "instructs",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "ovadati",
+      "english": "advises",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "saṃharati",
+      "english": "collects",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "āsiñcati",
+      "english": "sprinkles",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "akkosati",
+      "english": "scolds",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "bhindati",
+      "english": "breaks",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pibati / pivati",
+      "english": "drinks",
+      "type": "verb",
+      "gender": ""
+    }
+  ],
+  "exercises": []
+}

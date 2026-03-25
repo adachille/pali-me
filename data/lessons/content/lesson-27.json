@@ -1,0 +1,218 @@
+{
+  "lesson_number": 27,
+  "title": "Lesson 27",
+  "topic": "Masculine nouns ending in -u/-ū",
+  "grammar": {
+    "explanations": [
+      "Masculine nouns ending in -u are declined according to the pattern of 'garu' (teacher). The nominative, vocative, and accusative singular all take the base form 'garu', while the accusative singular adds -ṃ. The instrumental and ablative singular take -nā. The dative and genitive singular have two forms: -no and -ssa. The locative singular takes -mhi or -smiṃ. In the plural, the nominative, vocative, and accusative take -ū or -avo. The instrumental and ablative plural take -ūhi (or -ūbhi). The dative and genitive plural take -ūnaṃ. The locative plural takes -ūsu.",
+      "Masculine nouns ending in -ū are declined similarly to the -u declension. Using 'vidū' (wise man) as a model, the nominative, vocative, and accusative singular all take the base form 'vidū', while the accusative singular adds -ṃ (viduṃ). The plural nominative, vocative, and accusative take -ū or -uno. The remaining cases follow the same pattern as the garu declension."
+    ],
+    "tables": [
+      {
+        "title": "Declension of garu (teacher) - masculine noun ending in -u",
+        "rows": [
+          [
+            "Case",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "Nom.",
+            "garu",
+            "garū, garavo"
+          ],
+          [
+            "Voc.",
+            "garu",
+            "garū, garavo"
+          ],
+          [
+            "Acc.",
+            "garuṃ",
+            "garū, garavo"
+          ],
+          [
+            "Ins.",
+            "garunā",
+            "garūhi (garūbhi)"
+          ],
+          [
+            "Abl.",
+            "garunā",
+            "garūhi (garūbhi)"
+          ],
+          [
+            "Dat.",
+            "garuno, garussa",
+            "garūnaṃ"
+          ],
+          [
+            "Gen.",
+            "garuno, garussa",
+            "garūnaṃ"
+          ],
+          [
+            "Loc.",
+            "garumhi, garusmiṃ",
+            "garūsu"
+          ]
+        ]
+      },
+      {
+        "title": "Declension of vidū (wise man) - masculine noun ending in -ū",
+        "rows": [
+          [
+            "Case",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "Nom.",
+            "vidū",
+            "vidū, viduno"
+          ],
+          [
+            "Voc.",
+            "vidū",
+            "vidū, viduno"
+          ],
+          [
+            "Acc.",
+            "viduṃ",
+            "vidū, viduno"
+          ]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "vocabulary": [
+    {
+      "pali": "bhikkhu",
+      "english": "monk",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "bandhu",
+      "english": "relation",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "taru",
+      "english": "tree",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "bahu",
+      "english": "arm",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sindhu",
+      "english": "sea",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "pharasu",
+      "english": "axe",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "pasu",
+      "english": "beast",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "ākhu",
+      "english": "rat",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "ucchu",
+      "english": "sugar cane",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "veḷu",
+      "english": "bamboo",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "kaṃacchu",
+      "english": "spoon",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sattu",
+      "english": "enemy",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "setu",
+      "english": "bridge",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "ketu",
+      "english": "banner",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "susu",
+      "english": "young one",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "pabhū",
+      "english": "eminent person",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sabbaññū",
+      "english": "omniscient one",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "viññū",
+      "english": "wise man",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "vadaññū",
+      "english": "philanthropist",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "atthaññū",
+      "english": "benevolent man",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "mattaññū",
+      "english": "moderate or abstemious man",
+      "type": "noun",
+      "gender": "m"
+    }
+  ],
+  "exercises": []
+}

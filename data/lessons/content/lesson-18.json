@@ -1,0 +1,320 @@
+{
+  "lesson_number": 18,
+  "title": "Lesson 18",
+  "topic": "Feminine nouns ending in -ā",
+  "grammar": {
+    "explanations": [
+      "Feminine nouns ending in -ā are declined according to the pattern of vanitā (woman). Most nouns ending in -ā are feminine.",
+      "In the singular, the nominative ends in -ā, the vocative in -e, the accusative in -aṃ, and the instrumental, ablative, dative, genitive, and locative all share the ending -āya (with an optional -āyaṃ for the locative).",
+      "In the plural, the nominative/vocative takes -ā or -āyo, the accusative takes -ā or -āyo, the instrumental takes -āhi (or -ābhi), the dative/genitive takes -ānaṃ, and the locative takes -āsu."
+    ],
+    "tables": [
+      {
+        "title": "Declension of vanitā (woman) - Singular",
+        "rows": [
+          [
+            "Nom.",
+            "vanitā"
+          ],
+          [
+            "Voc.",
+            "vanite"
+          ],
+          [
+            "Acc.",
+            "vanitaṃ"
+          ],
+          [
+            "Ins.",
+            "vanitāya"
+          ],
+          [
+            "Abl.",
+            "vanitāya"
+          ],
+          [
+            "Dat.",
+            "vanitāya"
+          ],
+          [
+            "Gen.",
+            "vanitāya"
+          ],
+          [
+            "Loc.",
+            "vanitāya, vanitāyaṃ"
+          ]
+        ]
+      },
+      {
+        "title": "Declension of vanitā (woman) - Plural",
+        "rows": [
+          [
+            "Nom./Voc.",
+            "vanitā, vanitāyo"
+          ],
+          [
+            "Acc.",
+            "vanitā, vanitāyo"
+          ],
+          [
+            "Ins.",
+            "vanitāhi (vanitābhi)"
+          ],
+          [
+            "Dat./Gen.",
+            "vanitānaṃ"
+          ],
+          [
+            "Loc.",
+            "vanitāsu"
+          ]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "vocabulary": [
+    {
+      "pali": "vanitā",
+      "english": "woman",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "kaññā / dārikā",
+      "english": "girl",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "gaṅgā",
+      "english": "river Ganges",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "nāvā",
+      "english": "ship",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "ammā",
+      "english": "mother",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "paññā",
+      "english": "wisdom",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "sālā",
+      "english": "hall",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "bhariyā",
+      "english": "wife",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "sabhā",
+      "english": "assembly",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "kathā",
+      "english": "speech",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "latā",
+      "english": "creeper",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "guhā",
+      "english": "cave",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "chāyā",
+      "english": "shadow",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "vālukā",
+      "english": "sand",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "mañjūsā",
+      "english": "box",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "mālā",
+      "english": "garland",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "surā",
+      "english": "liquor",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "sākhā",
+      "english": "branch",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "devatā",
+      "english": "deity",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "parisā",
+      "english": "retinue",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "saddhā",
+      "english": "faith, devotion",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "gīvā",
+      "english": "neck",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "jivhā",
+      "english": "tongue",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "pipāsā",
+      "english": "thirst",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "khudā",
+      "english": "hunger",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "sakkoti",
+      "english": "can, is able",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "parivāreti",
+      "english": "accompanies, surrounds",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "nivāreti",
+      "english": "prevents",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "anubandhati",
+      "english": "follows, chases after",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "kujjhati",
+      "english": "gets angry",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "namassati",
+      "english": "salutes, worships",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "poseti",
+      "english": "brings up, nourishes",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "vāyamati",
+      "english": "tries",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "nilīyati",
+      "english": "hides",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "sallapati",
+      "english": "engages in conversation",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "modati",
+      "english": "is happy, enjoys",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "sukhaṃ vindati",
+      "english": "experiences joy",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "dukkhaṃ vindati",
+      "english": "experiences suffering",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "paṭiyādeti",
+      "english": "prepares",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pakkhipati",
+      "english": "puts, places, deposits",
+      "type": "verb",
+      "gender": ""
+    }
+  ],
+  "exercises": []
+}

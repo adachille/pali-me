@@ -1,0 +1,117 @@
+{
+  "lesson_number": 17,
+  "title": "Lesson 17",
+  "topic": "Past tense",
+  "grammar": {
+    "explanations": [
+      "The past tense in Pali is formed by adding specific endings to the verb base. For verbs whose bases end in -a, the past tense endings are added directly to the base. An optional augment 'a-' may be prefixed to the verb form to denote the past tense; this 'a-' is not a negative prefix.",
+      "Conjugation of verbs with the base ending in -a (e.g., paca = to cook): Singular: 3rd person (So) apaci / paci = He cooked; 2nd person (Tvaṃ) apaci / paci = You cooked; 1st person (Ahaṃ) apaciṃ / paciṃ = I cooked. Plural: 3rd person (Te) apaciṃsu / paciṃsu = They cooked; 2nd person (Tumhe) apacittha / pacittha = You cooked; 1st person (Mayaṃ) apacimha / pacimha = We cooked.",
+      "Verbs whose bases end in -nā are also conjugated in the past tense in the same way as bases ending in -a.",
+      "Conjugation of verbs with the base ending in -e (e.g., core = to steal): Singular: 3rd person (So) coresi / corayi = He stole; 2nd person (Tvaṃ) coresi = You stole; 1st person (Ahaṃ) coresiṃ / corayiṃ = I stole. Plural: 3rd person (Te) coresuṃ / corayiṃsu = They stole; 2nd person (Tumhe) corayitha = You stole; 1st person (Mayaṃ) corayimha = We stole."
+    ],
+    "tables": [
+      {
+        "title": "Past tense conjugation: base ending in -a (paca = to cook)",
+        "rows": [
+          [
+            "",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "3rd person",
+            "(So) apaci, paci = He cooked",
+            "(Te) apaciṃsu, paciṃsu = They cooked"
+          ],
+          [
+            "2nd person",
+            "(Tvaṃ) apaci, paci = You cooked",
+            "(Tumhe) apacittha, pacittha = You cooked"
+          ],
+          [
+            "1st person",
+            "(Ahaṃ) apaciṃ, paciṃ = I cooked",
+            "(Mayaṃ) apacimha, pacimha = We cooked"
+          ]
+        ]
+      },
+      {
+        "title": "Past tense conjugation: base ending in -e (core = to steal)",
+        "rows": [
+          [
+            "",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "3rd person",
+            "(So) coresi, corayi = He stole",
+            "(Te) coresuṃ, corayiṃsu = They stole"
+          ],
+          [
+            "2nd person",
+            "(Tvaṃ) coresi = You stole",
+            "(Tumhe) corayitha = You stole"
+          ],
+          [
+            "1st person",
+            "(Ahaṃ) coresiṃ, corayiṃ = I stole",
+            "(Mayaṃ) corayimha = We stole"
+          ]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Bhūpālo dīpe cari / acari",
+        "english": "The king wandered in the island."
+      },
+      {
+        "pali": "Samaṇo dhammaṃ desesi",
+        "english": "The monk preached the dhamma."
+      },
+      {
+        "pali": "Tvaṃ bhaṇḍāni vikkiṇi",
+        "english": "You sold goods."
+      },
+      {
+        "pali": "Tvaṃ pupphāni pūjesi",
+        "english": "You offered the flowers."
+      },
+      {
+        "pali": "Ahaṃ pabbataṃ āruhiṃ",
+        "english": "I climbed the mountain."
+      },
+      {
+        "pali": "Ahaṃ dīpaṃ jālesiṃ / jālayiṃ",
+        "english": "I lit the lamp."
+      },
+      {
+        "pali": "Bhūpālā dīpesu cariṃsu / acariṃsu",
+        "english": "Kings wandered in the islands."
+      },
+      {
+        "pali": "Samaṇā dhammaṃ desesuṃ / desayiṃsu",
+        "english": "Monks preached the dhamma."
+      },
+      {
+        "pali": "Tumhe bhaṇḍāni vikkiṇittha",
+        "english": "You sold goods."
+      },
+      {
+        "pali": "Tumhe pupphāni pūjayittha",
+        "english": "You offered flowers."
+      },
+      {
+        "pali": "Mayaṃ pabbate āruhimha",
+        "english": "We climbed mountains."
+      },
+      {
+        "pali": "Mayaṃ dīpe jālayimha",
+        "english": "We lit lamps."
+      }
+    ]
+  },
+  "vocabulary": [],
+  "exercises": []
+}

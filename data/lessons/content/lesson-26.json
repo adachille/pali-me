@@ -1,0 +1,181 @@
+{
+  "lesson_number": 26,
+  "title": "Lesson 26",
+  "topic": "Masculine nouns ending in -ī",
+  "grammar": {
+    "explanations": [
+      "Masculine nouns ending in -ī are declined as shown by the paradigm 'pakkhī' (bird).",
+      "This declension differs from the aggi declension only in the nominative, vocative and accusative cases. The rest agrees with it, the only exception being 'pakkhini' in the locative singular, for which there is no corresponding form in the aggi declension."
+    ],
+    "tables": [
+      {
+        "title": "Declension of pakkhī (bird) - Singular",
+        "rows": [
+          [
+            "Nom.",
+            "pakkhī"
+          ],
+          [
+            "Voc.",
+            "pakkhī"
+          ],
+          [
+            "Acc.",
+            "pakkhinaṃ / pakkhiṃ"
+          ],
+          [
+            "Ins.",
+            "pakkhinā"
+          ],
+          [
+            "Abl.",
+            "pakkhinā / pakkhimhā / pakkhismā"
+          ],
+          [
+            "Dat.",
+            "pakkhino / pakkhissa"
+          ],
+          [
+            "Gen.",
+            "pakkhino / pakkhissa"
+          ],
+          [
+            "Loc.",
+            "pakkhini / pakkhimhi / pakkhismiṃ"
+          ]
+        ]
+      },
+      {
+        "title": "Declension of pakkhī (bird) - Plural",
+        "rows": [
+          [
+            "Nom.",
+            "pakkhī / pakkhino"
+          ],
+          [
+            "Voc.",
+            "pakkhī / pakkhino"
+          ],
+          [
+            "Acc.",
+            "pakkhī / pakkhino"
+          ],
+          [
+            "Ins.",
+            "pakkhīhi (pakkhībhi)"
+          ],
+          [
+            "Abl.",
+            "pakkhīhi (pakkhībhi)"
+          ],
+          [
+            "Dat.",
+            "pakkhīnaṃ"
+          ],
+          [
+            "Gen.",
+            "pakkhīnaṃ"
+          ],
+          [
+            "Loc.",
+            "pakkhīsu"
+          ]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "vocabulary": [
+    {
+      "pali": "hatthī / karī",
+      "english": "elephant",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sāmī",
+      "english": "lord, husband",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "seṭṭhī",
+      "english": "banker",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sukhī",
+      "english": "one who is happy",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "mantī",
+      "english": "minister",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sikhī",
+      "english": "peacock",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "pāṇī",
+      "english": "living being",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "dāṭhī",
+      "english": "tusker",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "dīghajīvī",
+      "english": "one with long life",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "balī",
+      "english": "powerful one",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "vaḍḍhakī",
+      "english": "carpenter",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "sārathī",
+      "english": "charioteer",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "kuṭṭhī",
+      "english": "leper",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "pāpakārī",
+      "english": "evil doer",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "pakkhī",
+      "english": "bird",
+      "type": "noun",
+      "gender": "m"
+    }
+  ],
+  "exercises": []
+}

@@ -1,0 +1,201 @@
+{
+  "lesson_number": 24,
+  "title": "Lesson 24",
+  "topic": "Feminine nouns ending in -u",
+  "grammar": {
+    "explanations": [
+      "Feminine nouns ending in -u are declined similarly to the noun 'dhenu' (cow). The declension shows distinct singular and plural forms across all cases.",
+      "In the singular, the nominative and vocative are 'dhenu'; the accusative adds -ṃ to give 'dhenuṃ'; the instrumental, ablative, dative, genitive, and locative all take the suffix -yā, giving 'dhenuyā', with the locative also allowing the form 'dhenuyaṃ'.",
+      "In the plural, the nominative, vocative, and accusative take either -ū or -yo, giving 'dhenū' or 'dhenuyo'; the instrumental and ablative take -hi (or optionally -bhi), giving 'dhenūhi' or 'dhenūbhi'; the dative and genitive take -naṃ, giving 'dhenūnaṃ'; and the locative takes -su, giving 'dhenūsu'.",
+      "Other feminine nouns declined in the same pattern include: yāgu (gruel), kāsu (pit), vijju (lightning), rajju (rope), daddu (eczema), kaṇeru (cow-elephant), dhātu (element, relic), sassu (mother-in-law), and vadhu (daughter-in-law)."
+    ],
+    "tables": [
+      {
+        "title": "Declension of dhenu (cow) - Feminine noun ending in -u",
+        "rows": [
+          [
+            "Case",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "Nom.",
+            "dhenu",
+            "dhenū, dhenuyo"
+          ],
+          [
+            "Voc.",
+            "dhenu",
+            "dhenū, dhenuyo"
+          ],
+          [
+            "Acc.",
+            "dhenuṃ",
+            "dhenū, dhenuyo"
+          ],
+          [
+            "Ins.",
+            "dhenuyā",
+            "dhenūhi, (dhenūbhi)"
+          ],
+          [
+            "Abl.",
+            "dhenuyā",
+            "dhenūhi, (dhenūbhi)"
+          ],
+          [
+            "Dat.",
+            "dhenuyā",
+            "dhenūnaṃ"
+          ],
+          [
+            "Gen.",
+            "dhenuyā",
+            "dhenūnaṃ"
+          ],
+          [
+            "Loc.",
+            "dhenuyā, dhenuyaṃ",
+            "dhenūsu"
+          ]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "vocabulary": [
+    {
+      "pali": "dhenu",
+      "english": "cow",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "yāgu",
+      "english": "gruel",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "kāsu",
+      "english": "pit",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "vijju",
+      "english": "lightning",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "rajju",
+      "english": "rope",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "daddu",
+      "english": "eczema",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "kaṇeru",
+      "english": "cow-elephant",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "dhātu",
+      "english": "element, relic",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "sassu",
+      "english": "mother-in-law",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "vadhu",
+      "english": "daughter-in-law",
+      "type": "noun",
+      "gender": "f"
+    },
+    {
+      "pali": "thaketi",
+      "english": "shuts, closes",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "nāseti",
+      "english": "destroys",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "sammajjati",
+      "english": "sweeps",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "obhāseti",
+      "english": "illuminates",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "bhajati",
+      "english": "keeps company",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "bandhati",
+      "english": "ties",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "vibhajati",
+      "english": "divides, distributes",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "bhañjati",
+      "english": "breaks",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "māpeti",
+      "english": "builds, creates",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "vihiṃsati",
+      "english": "harms",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "chaḍḍeti",
+      "english": "throws",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pattharati",
+      "english": "spreads",
+      "type": "verb",
+      "gender": ""
+    }
+  ],
+  "exercises": []
+}

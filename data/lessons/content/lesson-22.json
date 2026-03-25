@@ -1,0 +1,46 @@
+{
+  "lesson_number": 22,
+  "title": "Lesson 22",
+  "topic": "Future passive participle",
+  "grammar": {
+    "explanations": [
+      "The future passive participle, or the potential participle as it is sometimes called, is formed by adding -tabba / -anīya to the base of the verb; -tabba is mostly added with the connecting vowel -i-. These participles are declined like a-ending nouns in the masculine and neuter genders, and like ā-ending nouns in the feminine. They express ideas such as 'must,' 'should be' and 'fit to be.'",
+      "Examples of formation: pacati → pacitabba / pacanīya; bhuñjati → bhuñjitabba / bhojanīya; karoti → kātabba / karaṇīya."
+    ],
+    "tables": [
+      {
+        "title": "Future Passive Participle Formation",
+        "rows": [
+          [
+            "pacati",
+            "pacitabba / pacanīya"
+          ],
+          [
+            "bhuñjati",
+            "bhuñjitabba / bhojanīya"
+          ],
+          [
+            "karoti",
+            "kātabba / karaṇīya"
+          ]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "Ammā pacitabbaṃ / pacanīyaṃ taṇḍulaṃ piṭake ṭhapesi.",
+        "english": "The mother kept the (raw) rice which is to be cooked in the basket."
+      },
+      {
+        "pali": "Dārikāya bhuñjitabbaṃ / bhojanīyaṃ odanaṃ ahaṃ na bhuñjissāmi.",
+        "english": "I will not eat the rice which should be eaten by the girl."
+      },
+      {
+        "pali": "Kassakena kātabbaṃ / karaṇīyaṃ kammaṃ kātuṃ tvaṃ icchasi.",
+        "english": "You wish to do the work that should be done by the farmer."
+      }
+    ]
+  },
+  "vocabulary": [],
+  "exercises": []
+}

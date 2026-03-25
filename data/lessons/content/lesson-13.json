@@ -1,0 +1,411 @@
+{
+  "lesson_number": 13,
+  "title": "Lesson 13",
+  "topic": "Present tense (continued)",
+  "grammar": {
+    "explanations": [
+      "Verbs which have the base ending in -e are conjugated somewhat differently from what has been learnt so far. They can have two verbal bases, one ending in -e, the other ending in -aya, as in coreti and corayati.",
+      "Gerunds and infinitives from verbs with bases ending in -e are formed retaining the -e in the base. For example, gerunds: desetvā, cintetvā, pūjetvā, pūretvā, etc.; infinitives: desetuṃ, cintetuṃ, pūjetuṃ, pūretuṃ, etc.",
+      "Verbs which have the base ending in -nā are conjugated as shown with the base kiṇā (to buy). Some verbs similarly conjugated are: vikkiṇāti, suṇāti, mināti, gaṇhāti, uggaṇhāti, jānāti, jināti, pāpuṇāti/pappoti, ocināti, pahiṇāti.",
+      "It should be observed that the present tense verbal terminations remain constant. Only the vikaraṇa suffix, or the conjugational sign in between the root and the termination, shows variation.",
+      "Special attention should be paid to the gerunds and infinitives of jānāti, suṇāti, pāpuṇāti/pappoti, and gaṇhāti, which have irregular forms.",
+      "The two verbs bhavati/hoti (to be) and karoti (to do) occur frequently in the language. Their gerunds are bhavitvā/hutvā and katvā respectively; their infinitives are bhavituṃ/hotuṃ and kātuṃ respectively.",
+      "The verb atthi (to be, from root as) and karoti (to do, from root kṛ) are special verbs of frequent occurrence and are conjugated as shown in the tables."
+    ],
+    "tables": [
+      {
+        "title": "Present Tense Active Voice: base core (to steal) - coreti",
+        "rows": [
+          [
+            "",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "3rd",
+            "(So) coreti",
+            "(Te) corenti"
+          ],
+          [
+            "2nd",
+            "(Tvaṃ) coresi",
+            "(Tumhe) coretha"
+          ],
+          [
+            "1st",
+            "(Ahaṃ) coremi",
+            "(Mayaṃ) corema"
+          ]
+        ]
+      },
+      {
+        "title": "Present Tense Active Voice: base coraya (to steal) - corayati",
+        "rows": [
+          [
+            "",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "3rd",
+            "(So) corayati",
+            "(Te) corayanti"
+          ],
+          [
+            "2nd",
+            "(Tvaṃ) corayasi",
+            "(Tumhe) corayatha"
+          ],
+          [
+            "1st",
+            "(Ahaṃ) corayāmi",
+            "(Mayaṃ) corayāma"
+          ]
+        ]
+      },
+      {
+        "title": "Present Tense Active Voice: base kiṇā (to buy)",
+        "rows": [
+          [
+            "",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "3rd",
+            "(So) kiṇāti",
+            "(Te) kiṇanti"
+          ],
+          [
+            "2nd",
+            "(Tvaṃ) kiṇāsi",
+            "(Tumhe) kiṇātha"
+          ],
+          [
+            "1st",
+            "(Ahaṃ) kiṇāmi",
+            "(Mayaṃ) kiṇāma"
+          ]
+        ]
+      },
+      {
+        "title": "Special forms: gerunds and infinitives",
+        "rows": [
+          [
+            "Present Tense",
+            "Gerund/Absolutive",
+            "Infinitive"
+          ],
+          [
+            "jānāti",
+            "ñatvā / jānitvā",
+            "ñātuṃ"
+          ],
+          [
+            "suṇāti",
+            "sutvā / suṇitvā",
+            "sotuṃ / suṇituṃ"
+          ],
+          [
+            "pāpuṇāti / pappoti",
+            "patvā / pāpuṇitvā",
+            "pāpuṇituṃ / pappotuṃ"
+          ],
+          [
+            "gaṇhāti",
+            "gahetvā / gaṇhitvā",
+            "gahetuṃ / gaṇhituṃ"
+          ]
+        ]
+      },
+      {
+        "title": "Conjugation of atthi (to be)",
+        "rows": [
+          [
+            "",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "3rd",
+            "atthi",
+            "santi"
+          ],
+          [
+            "2nd",
+            "asi",
+            "attha"
+          ],
+          [
+            "1st",
+            "asmi / amhi",
+            "asma / amha"
+          ]
+        ]
+      },
+      {
+        "title": "Conjugation of karoti (to do)",
+        "rows": [
+          [
+            "",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "3rd",
+            "karoti",
+            "karonti"
+          ],
+          [
+            "2nd",
+            "karosi",
+            "karotha"
+          ],
+          [
+            "1st",
+            "karomi",
+            "karoma"
+          ]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "vocabulary": [
+    {
+      "pali": "coreti / corayati",
+      "english": "steals",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "deseti",
+      "english": "preaches",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "cinteti",
+      "english": "thinks",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pūjeti",
+      "english": "honours, offers",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pūreti",
+      "english": "fills",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pīḷeti",
+      "english": "oppresses",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "katheti",
+      "english": "speaks",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "uḍḍeti",
+      "english": "flies",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "udeti",
+      "english": "(sun or moon) rises",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "ropeti",
+      "english": "plants",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "manteti",
+      "english": "discusses, takes counsel",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "āmanteti",
+      "english": "addresses",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "nimanteti",
+      "english": "invites",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "oloketi",
+      "english": "looks at",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "jāleti",
+      "english": "kindles",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "chādeti",
+      "english": "covers",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "māreti",
+      "english": "kills",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "neti",
+      "english": "leads, takes away",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "āneti",
+      "english": "brings",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "ṭhapeti",
+      "english": "keeps",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pāteti",
+      "english": "fells",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pāleti",
+      "english": "rules, governs",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "parivajjeti",
+      "english": "avoids",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "obhāseti",
+      "english": "illuminates",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "deti / dadāti",
+      "english": "gives",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "kiṇāti",
+      "english": "buys",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "vikkiṇāti",
+      "english": "sells",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "suṇāti",
+      "english": "hears",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "mināti",
+      "english": "measures",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "gaṇhāti",
+      "english": "takes",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "uggaṇhāti",
+      "english": "learns",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "jānāti",
+      "english": "knows",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "jināti",
+      "english": "wins",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pāpuṇāti / pappoti",
+      "english": "reaches",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "ocināti",
+      "english": "picks, collects",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "pahiṇāti",
+      "english": "sends",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "bhavati / hoti",
+      "english": "to be",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "karoti",
+      "english": "to do",
+      "type": "verb",
+      "gender": ""
+    },
+    {
+      "pali": "atthi",
+      "english": "to be (is)",
+      "type": "verb",
+      "gender": ""
+    }
+  ],
+  "exercises": []
+}

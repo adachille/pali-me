@@ -1,0 +1,212 @@
+{
+  "lesson_number": 25,
+  "title": "Lesson 25",
+  "topic": "Masculine nouns ending in -i",
+  "grammar": {
+    "explanations": [
+      "This lesson introduces the declension of masculine nouns ending in -i, using 'aggi' (fire) as the model.",
+      "In the singular, the nominative and vocative are both 'aggi'. The accusative adds -ṃ to give 'aggiṃ'. The instrumental and ablative share the form 'agginā', though the ablative also has alternative forms 'aggimhā' and 'aggismā'. The dative and genitive share the forms 'aggino' or 'aggissa'. The locative is 'aggimhi' or 'aggismiṃ'.",
+      "In the plural, the nominative, vocative, and accusative all share the forms 'aggī' or 'aggayo'. The instrumental and ablative share 'aggīhi' (with an alternative 'aggībhi'). The dative and genitive share 'aggīnaṃ'. The locative is 'aggīsu'."
+    ],
+    "tables": [
+      {
+        "title": "Declension of aggi (fire) - Masculine noun ending in -i",
+        "rows": [
+          [
+            "Case",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "Nom.",
+            "aggi",
+            "aggī / aggayo"
+          ],
+          [
+            "Voc.",
+            "aggi",
+            "aggī / aggayo"
+          ],
+          [
+            "Acc.",
+            "aggiṃ",
+            "aggī / aggayo"
+          ],
+          [
+            "Ins.",
+            "agginā",
+            "aggīhi (aggībhi)"
+          ],
+          [
+            "Abl.",
+            "agginā / aggimhā / aggismā",
+            "aggīhi (aggībhi)"
+          ],
+          [
+            "Dat.",
+            "aggino / aggissa",
+            "aggīnaṃ"
+          ],
+          [
+            "Gen.",
+            "aggino / aggissa",
+            "aggīnaṃ"
+          ],
+          [
+            "Loc.",
+            "aggimhi / aggismiṃ",
+            "aggīsu"
+          ]
+        ]
+      }
+    ],
+    "examples": []
+  },
+  "vocabulary": [
+    {
+      "pali": "aggi",
+      "english": "fire",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "muni / isi",
+      "english": "sage",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "kavi",
+      "english": "poet",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "ari",
+      "english": "enemy",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "bhūpati",
+      "english": "king",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "pati",
+      "english": "husband, master",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "gahapati",
+      "english": "householder",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "adhipati",
+      "english": "lord, leader",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "atithi",
+      "english": "guest",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "vyādhi",
+      "english": "illness",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "udadhi",
+      "english": "ocean",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "nidhi",
+      "english": "(hidden) treasure",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "vīhi",
+      "english": "paddy",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "kapi",
+      "english": "monkey",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "ahi",
+      "english": "serpent",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "dīpi",
+      "english": "leopard",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "ravi",
+      "english": "sun",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "giri",
+      "english": "mountain",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "maṇi",
+      "english": "gem",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "asi",
+      "english": "sword",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "rāsi",
+      "english": "heap",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "pāṇi",
+      "english": "hand",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "kucchi",
+      "english": "belly",
+      "type": "noun",
+      "gender": "m"
+    },
+    {
+      "pali": "muṭṭhi",
+      "english": "fist, hammer",
+      "type": "noun",
+      "gender": "m"
+    }
+  ],
+  "exercises": []
+}

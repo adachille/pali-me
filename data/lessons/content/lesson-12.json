@@ -1,0 +1,66 @@
+{
+  "lesson_number": 12,
+  "title": "Lesson 12",
+  "topic": "Verb conjugation - Present tense",
+  "grammar": {
+    "explanations": [
+      "So far only the present tense, active voice, third person singular and plural have been introduced. This lesson gives the conjugation in full.",
+      "The present tense active voice is conjugated as follows. In the singular: third person (So) pacati = He cooks; second person (Tvaṃ) pacasi = You cook; first person (Ahaṃ) pacāmi = I cook. In the plural: third person (Te) pacanti = They cook; second person (Tumhe) pacatha = You cook; first person (Mayaṃ) pacāma = We cook."
+    ],
+    "tables": [
+      {
+        "title": "Present Tense, Active Voice - pacati (to cook)",
+        "rows": [
+          [
+            "Person",
+            "Singular",
+            "Plural"
+          ],
+          [
+            "3rd",
+            "(So) pacati = He cooks",
+            "(Te) pacanti = They cook"
+          ],
+          [
+            "2nd",
+            "(Tvaṃ) pacasi = You cook",
+            "(Tumhe) pacatha = You cook"
+          ],
+          [
+            "1st",
+            "(Ahaṃ) pacāmi = I cook",
+            "(Mayaṃ) pacāma = We cook"
+          ]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "pali": "So bhattaṃ pacati",
+        "english": "He cooks rice."
+      },
+      {
+        "pali": "Tvaṃ bhattaṃ pacasi",
+        "english": "You (sg.) cook rice."
+      },
+      {
+        "pali": "Ahaṃ bhattaṃ pacāmi",
+        "english": "I cook rice."
+      },
+      {
+        "pali": "Te bhattaṃ pacanti",
+        "english": "They cook rice."
+      },
+      {
+        "pali": "Tumhe bhattaṃ pacatha",
+        "english": "You (pl.) cook rice."
+      },
+      {
+        "pali": "Mayaṃ bhattaṃ pacāma",
+        "english": "We cook rice."
+      }
+    ]
+  },
+  "vocabulary": [],
+  "exercises": []
+}
