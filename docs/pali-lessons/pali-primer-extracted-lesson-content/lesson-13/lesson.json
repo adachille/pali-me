@@ -16,156 +16,56 @@
       {
         "title": "Present Tense Active Voice: base core (to steal) - coreti",
         "rows": [
-          [
-            "",
-            "Singular",
-            "Plural"
-          ],
-          [
-            "3rd",
-            "(So) coreti",
-            "(Te) corenti"
-          ],
-          [
-            "2nd",
-            "(Tvaṃ) coresi",
-            "(Tumhe) coretha"
-          ],
-          [
-            "1st",
-            "(Ahaṃ) coremi",
-            "(Mayaṃ) corema"
-          ]
+          ["", "Singular", "Plural"],
+          ["3rd", "(So) coreti", "(Te) corenti"],
+          ["2nd", "(Tvaṃ) coresi", "(Tumhe) coretha"],
+          ["1st", "(Ahaṃ) coremi", "(Mayaṃ) corema"]
         ]
       },
       {
         "title": "Present Tense Active Voice: base coraya (to steal) - corayati",
         "rows": [
-          [
-            "",
-            "Singular",
-            "Plural"
-          ],
-          [
-            "3rd",
-            "(So) corayati",
-            "(Te) corayanti"
-          ],
-          [
-            "2nd",
-            "(Tvaṃ) corayasi",
-            "(Tumhe) corayatha"
-          ],
-          [
-            "1st",
-            "(Ahaṃ) corayāmi",
-            "(Mayaṃ) corayāma"
-          ]
+          ["", "Singular", "Plural"],
+          ["3rd", "(So) corayati", "(Te) corayanti"],
+          ["2nd", "(Tvaṃ) corayasi", "(Tumhe) corayatha"],
+          ["1st", "(Ahaṃ) corayāmi", "(Mayaṃ) corayāma"]
         ]
       },
       {
         "title": "Present Tense Active Voice: base kiṇā (to buy)",
         "rows": [
-          [
-            "",
-            "Singular",
-            "Plural"
-          ],
-          [
-            "3rd",
-            "(So) kiṇāti",
-            "(Te) kiṇanti"
-          ],
-          [
-            "2nd",
-            "(Tvaṃ) kiṇāsi",
-            "(Tumhe) kiṇātha"
-          ],
-          [
-            "1st",
-            "(Ahaṃ) kiṇāmi",
-            "(Mayaṃ) kiṇāma"
-          ]
+          ["", "Singular", "Plural"],
+          ["3rd", "(So) kiṇāti", "(Te) kiṇanti"],
+          ["2nd", "(Tvaṃ) kiṇāsi", "(Tumhe) kiṇātha"],
+          ["1st", "(Ahaṃ) kiṇāmi", "(Mayaṃ) kiṇāma"]
         ]
       },
       {
         "title": "Special forms: gerunds and infinitives",
         "rows": [
-          [
-            "Present Tense",
-            "Gerund/Absolutive",
-            "Infinitive"
-          ],
-          [
-            "jānāti",
-            "ñatvā / jānitvā",
-            "ñātuṃ"
-          ],
-          [
-            "suṇāti",
-            "sutvā / suṇitvā",
-            "sotuṃ / suṇituṃ"
-          ],
-          [
-            "pāpuṇāti / pappoti",
-            "patvā / pāpuṇitvā",
-            "pāpuṇituṃ / pappotuṃ"
-          ],
-          [
-            "gaṇhāti",
-            "gahetvā / gaṇhitvā",
-            "gahetuṃ / gaṇhituṃ"
-          ]
+          ["Present Tense", "Gerund/Absolutive", "Infinitive"],
+          ["jānāti", "ñatvā / jānitvā", "ñātuṃ"],
+          ["suṇāti", "sutvā / suṇitvā", "sotuṃ / suṇituṃ"],
+          ["pāpuṇāti / pappoti", "patvā / pāpuṇitvā", "pāpuṇituṃ / pappotuṃ"],
+          ["gaṇhāti", "gahetvā / gaṇhitvā", "gahetuṃ / gaṇhituṃ"]
         ]
       },
       {
         "title": "Conjugation of atthi (to be)",
         "rows": [
-          [
-            "",
-            "Singular",
-            "Plural"
-          ],
-          [
-            "3rd",
-            "atthi",
-            "santi"
-          ],
-          [
-            "2nd",
-            "asi",
-            "attha"
-          ],
-          [
-            "1st",
-            "asmi / amhi",
-            "asma / amha"
-          ]
+          ["", "Singular", "Plural"],
+          ["3rd", "atthi", "santi"],
+          ["2nd", "asi", "attha"],
+          ["1st", "asmi / amhi", "asma / amha"]
         ]
       },
       {
         "title": "Conjugation of karoti (to do)",
         "rows": [
-          [
-            "",
-            "Singular",
-            "Plural"
-          ],
-          [
-            "3rd",
-            "karoti",
-            "karonti"
-          ],
-          [
-            "2nd",
-            "karosi",
-            "karotha"
-          ],
-          [
-            "1st",
-            "karomi",
-            "karoma"
-          ]
+          ["", "Singular", "Plural"],
+          ["3rd", "karoti", "karonti"],
+          ["2nd", "karosi", "karotha"],
+          ["1st", "karomi", "karoma"]
         ]
       }
     ],

@@ -71,6 +71,7 @@ Both Vocab Practice and Exercise Practice navigate to `app/study/[id]` with the 
 ### Static Lesson Data
 
 Bundle lesson content as static assets in `data/lessons/`:
+
 - `data/lessons/types.ts` — TypeScript types
 - `data/lessons/index.ts` — exports all 32 lessons
 - `data/lessons/content/` — lesson JSON files and parsed TSV data
@@ -96,6 +97,7 @@ CREATE TABLE lesson_progress (
 ### Item Type Mapping
 
 TSV vocab types map to existing ItemType:
+
 - `noun` / `verb` / `adjective` → `"word"`
 - `indeclinable` → `"particle"`
 
@@ -103,23 +105,23 @@ Gender from TSV stored in the `notes` field (e.g., `"Gender: m"`).
 
 ## New/Modified Files
 
-| Action | File |
-|--------|------|
-| New | `data/lessons/types.ts` |
-| New | `data/lessons/index.ts` |
-| New | `data/lessons/content/` (lesson JSONs + parsed TSVs) |
-| New | `scripts/parse-lesson-tsvs.ts` |
-| Modify | `db/schema.ts` (add lesson_progress table) |
-| Modify | `db/types.ts` (add lesson progress types) |
-| Modify | `db/database.ts` (migration v2→v3) |
-| New | `db/repositories/lessonRepository.ts` |
-| Modify | `app/(tabs)/_layout.tsx` (4 tabs) |
-| Modify | `app/(tabs)/index.tsx` (rewrite as lesson map) |
-| New | `app/(tabs)/practice.tsx` (moved deck list) |
-| New | `app/lesson/_layout.tsx` |
-| New | `app/lesson/[number].tsx` (learn screen) |
-| New | `components/lessons/LessonSection.tsx` |
-| New | `components/lessons/LessonNode.tsx` |
+| Action | File                                                 |
+| ------ | ---------------------------------------------------- |
+| New    | `data/lessons/types.ts`                              |
+| New    | `data/lessons/index.ts`                              |
+| New    | `data/lessons/content/` (lesson JSONs + parsed TSVs) |
+| New    | `scripts/parse-lesson-tsvs.ts`                       |
+| Modify | `db/schema.ts` (add lesson_progress table)           |
+| Modify | `db/types.ts` (add lesson progress types)            |
+| Modify | `db/database.ts` (migration v2→v3)                   |
+| New    | `db/repositories/lessonRepository.ts`                |
+| Modify | `app/(tabs)/_layout.tsx` (4 tabs)                    |
+| Modify | `app/(tabs)/index.tsx` (rewrite as lesson map)       |
+| New    | `app/(tabs)/practice.tsx` (moved deck list)          |
+| New    | `app/lesson/_layout.tsx`                             |
+| New    | `app/lesson/[number].tsx` (learn screen)             |
+| New    | `components/lessons/LessonSection.tsx`               |
+| New    | `components/lessons/LessonNode.tsx`                  |
 
 ## Testing
 

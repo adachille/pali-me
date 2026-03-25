@@ -13,51 +13,23 @@
       {
         "title": "Past tense conjugation: base ending in -a (paca = to cook)",
         "rows": [
-          [
-            "",
-            "Singular",
-            "Plural"
-          ],
-          [
-            "3rd person",
-            "(So) apaci, paci = He cooked",
-            "(Te) apaciṃsu, paciṃsu = They cooked"
-          ],
+          ["", "Singular", "Plural"],
+          ["3rd person", "(So) apaci, paci = He cooked", "(Te) apaciṃsu, paciṃsu = They cooked"],
           [
             "2nd person",
             "(Tvaṃ) apaci, paci = You cooked",
             "(Tumhe) apacittha, pacittha = You cooked"
           ],
-          [
-            "1st person",
-            "(Ahaṃ) apaciṃ, paciṃ = I cooked",
-            "(Mayaṃ) apacimha, pacimha = We cooked"
-          ]
+          ["1st person", "(Ahaṃ) apaciṃ, paciṃ = I cooked", "(Mayaṃ) apacimha, pacimha = We cooked"]
         ]
       },
       {
         "title": "Past tense conjugation: base ending in -e (core = to steal)",
         "rows": [
-          [
-            "",
-            "Singular",
-            "Plural"
-          ],
-          [
-            "3rd person",
-            "(So) coresi, corayi = He stole",
-            "(Te) coresuṃ, corayiṃsu = They stole"
-          ],
-          [
-            "2nd person",
-            "(Tvaṃ) coresi = You stole",
-            "(Tumhe) corayitha = You stole"
-          ],
-          [
-            "1st person",
-            "(Ahaṃ) coresiṃ, corayiṃ = I stole",
-            "(Mayaṃ) corayimha = We stole"
-          ]
+          ["", "Singular", "Plural"],
+          ["3rd person", "(So) coresi, corayi = He stole", "(Te) coresuṃ, corayiṃsu = They stole"],
+          ["2nd person", "(Tvaṃ) coresi = You stole", "(Tumhe) corayitha = You stole"],
+          ["1st person", "(Ahaṃ) coresiṃ, corayiṃ = I stole", "(Mayaṃ) corayimha = We stole"]
         ]
       }
     ],

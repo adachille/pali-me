@@ -13,26 +13,10 @@
       {
         "title": "Imperative mood - Base: paca (to cook)",
         "rows": [
-          [
-            "",
-            "Singular",
-            "Plural"
-          ],
-          [
-            "3rd person",
-            "(So) pacatu = Let him cook",
-            "(Te) pacantu = Let them cook"
-          ],
-          [
-            "2nd person",
-            "(Tvaṃ) paca / pacāhi = You cook",
-            "(Tumhe) pacatha = You cook"
-          ],
-          [
-            "1st person",
-            "(Ahaṃ) pacāmi = Let me cook",
-            "(Mayaṃ) pacāma = Let us cook"
-          ]
+          ["", "Singular", "Plural"],
+          ["3rd person", "(So) pacatu = Let him cook", "(Te) pacantu = Let them cook"],
+          ["2nd person", "(Tvaṃ) paca / pacāhi = You cook", "(Tumhe) pacatha = You cook"],
+          ["1st person", "(Ahaṃ) pacāmi = Let me cook", "(Mayaṃ) pacāma = Let us cook"]
         ]
       }
     ],

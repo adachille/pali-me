@@ -11,26 +11,10 @@
       {
         "title": "Present Tense, Active Voice - pacati (to cook)",
         "rows": [
-          [
-            "Person",
-            "Singular",
-            "Plural"
-          ],
-          [
-            "3rd",
-            "(So) pacati = He cooks",
-            "(Te) pacanti = They cook"
-          ],
-          [
-            "2nd",
-            "(Tvaṃ) pacasi = You cook",
-            "(Tumhe) pacatha = You cook"
-          ],
-          [
-            "1st",
-            "(Ahaṃ) pacāmi = I cook",
-            "(Mayaṃ) pacāma = We cook"
-          ]
+          ["Person", "Singular", "Plural"],
+          ["3rd", "(So) pacati = He cooks", "(Te) pacanti = They cook"],
+          ["2nd", "(Tvaṃ) pacasi = You cook", "(Tumhe) pacatha = You cook"],
+          ["1st", "(Ahaṃ) pacāmi = I cook", "(Mayaṃ) pacāma = We cook"]
         ]
       }
     ],

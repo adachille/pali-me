@@ -13,96 +13,36 @@
       {
         "title": "Masculine Gender: guṇavantu (virtuous) - Singular",
         "rows": [
-          [
-            "Nom.",
-            "guṇavā, guṇavanto"
-          ],
-          [
-            "Voc.",
-            "guṇavā, guṇava, guṇavanta"
-          ],
-          [
-            "Acc.",
-            "guṇavantaṃ"
-          ],
-          [
-            "Ins.",
-            "guṇavatā, guṇavantena"
-          ],
-          [
-            "Abl.",
-            "guṇavatā, guṇavantamhā, guṇavantasmā"
-          ],
-          [
-            "Dat.",
-            "guṇavato, guṇavantassa"
-          ],
-          [
-            "Gen.",
-            "guṇavato, guṇavantassa"
-          ],
-          [
-            "Loc.",
-            "guṇavati, guṇavante, guṇavantamhi, guṇavantasmiṃ"
-          ]
+          ["Nom.", "guṇavā, guṇavanto"],
+          ["Voc.", "guṇavā, guṇava, guṇavanta"],
+          ["Acc.", "guṇavantaṃ"],
+          ["Ins.", "guṇavatā, guṇavantena"],
+          ["Abl.", "guṇavatā, guṇavantamhā, guṇavantasmā"],
+          ["Dat.", "guṇavato, guṇavantassa"],
+          ["Gen.", "guṇavato, guṇavantassa"],
+          ["Loc.", "guṇavati, guṇavante, guṇavantamhi, guṇavantasmiṃ"]
         ]
       },
       {
         "title": "Masculine Gender: guṇavantu (virtuous) - Plural",
         "rows": [
-          [
-            "Nom.",
-            "guṇavanto, guṇavantā"
-          ],
-          [
-            "Voc.",
-            "guṇavanto, guṇavantā"
-          ],
-          [
-            "Acc.",
-            "guṇavanto, guṇavante"
-          ],
-          [
-            "Ins.",
-            "guṇavantehi (guṇavantebhi)"
-          ],
-          [
-            "Abl.",
-            "guṇavantehi (guṇavantebhi)"
-          ],
-          [
-            "Dat.",
-            "guṇavataṃ, guṇavantānaṃ"
-          ],
-          [
-            "Gen.",
-            "guṇavataṃ, guṇavantānaṃ"
-          ],
-          [
-            "Loc.",
-            "guṇavantesu"
-          ]
+          ["Nom.", "guṇavanto, guṇavantā"],
+          ["Voc.", "guṇavanto, guṇavantā"],
+          ["Acc.", "guṇavanto, guṇavante"],
+          ["Ins.", "guṇavantehi (guṇavantebhi)"],
+          ["Abl.", "guṇavantehi (guṇavantebhi)"],
+          ["Dat.", "guṇavataṃ, guṇavantānaṃ"],
+          ["Gen.", "guṇavataṃ, guṇavantānaṃ"],
+          ["Loc.", "guṇavantesu"]
         ]
       },
       {
         "title": "Neuter Gender: ojavantu (nourishing) - Singular and Plural",
         "rows": [
-          [
-            "Nom. Sg.",
-            "ojavantaṃ"
-          ],
-          [
-            "Acc. Sg.",
-            "ojavantaṃ"
-          ],
-          [
-            "Nom. Pl.",
-            "ojavantāni"
-          ],
-          [
-            "Acc. Pl.",
-            "ojavantāni"
-          ]
+          ["Nom. Sg.", "ojavantaṃ"],
+          ["Acc. Sg.", "ojavantaṃ"],
+          ["Nom. Pl.", "ojavantāni"],
+          ["Acc. Pl.", "ojavantāni"]
         ]
       }
     ],

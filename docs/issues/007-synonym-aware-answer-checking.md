@@ -85,12 +85,12 @@ Pali diacritics are a common source of input errors. A lightweight approach:
 
 ## New/Modified Files
 
-| Action | File |
-|--------|------|
-| New | `utils/synonymMap.ts` (build synonym lookup from vocab data) |
-| New | `utils/answerChecker.ts` (token-level matching with synonyms + diacritics) |
-| New | `utils/__tests__/answerChecker.test.ts` |
-| Modify | Study answer evaluation logic (exact file depends on 006 implementation) |
+| Action | File                                                                       |
+| ------ | -------------------------------------------------------------------------- |
+| New    | `utils/synonymMap.ts` (build synonym lookup from vocab data)               |
+| New    | `utils/answerChecker.ts` (token-level matching with synonyms + diacritics) |
+| New    | `utils/__tests__/answerChecker.test.ts`                                    |
+| Modify | Study answer evaluation logic (exact file depends on 006 implementation)   |
 
 ## Testing
 

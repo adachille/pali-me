@@ -12,51 +12,15 @@
       {
         "title": "Declension of aggi (fire) - Masculine noun ending in -i",
         "rows": [
-          [
-            "Case",
-            "Singular",
-            "Plural"
-          ],
-          [
-            "Nom.",
-            "aggi",
-            "aggī / aggayo"
-          ],
-          [
-            "Voc.",
-            "aggi",
-            "aggī / aggayo"
-          ],
-          [
-            "Acc.",
-            "aggiṃ",
-            "aggī / aggayo"
-          ],
-          [
-            "Ins.",
-            "agginā",
-            "aggīhi (aggībhi)"
-          ],
-          [
-            "Abl.",
-            "agginā / aggimhā / aggismā",
-            "aggīhi (aggībhi)"
-          ],
-          [
-            "Dat.",
-            "aggino / aggissa",
-            "aggīnaṃ"
-          ],
-          [
-            "Gen.",
-            "aggino / aggissa",
-            "aggīnaṃ"
-          ],
-          [
-            "Loc.",
-            "aggimhi / aggismiṃ",
-            "aggīsu"
-          ]
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "aggi", "aggī / aggayo"],
+          ["Voc.", "aggi", "aggī / aggayo"],
+          ["Acc.", "aggiṃ", "aggī / aggayo"],
+          ["Ins.", "agginā", "aggīhi (aggībhi)"],
+          ["Abl.", "agginā / aggimhā / aggismā", "aggīhi (aggībhi)"],
+          ["Dat.", "aggino / aggissa", "aggīnaṃ"],
+          ["Gen.", "aggino / aggissa", "aggīnaṃ"],
+          ["Loc.", "aggimhi / aggismiṃ", "aggīsu"]
         ]
       }
     ],

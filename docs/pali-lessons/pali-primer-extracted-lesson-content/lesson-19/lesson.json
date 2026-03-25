@@ -14,150 +14,42 @@
       {
         "title": "Past participle forms",
         "rows": [
-          [
-            "kasati",
-            "kasita, kaṭṭha"
-          ],
-          [
-            "pucchati",
-            "pucchita, puṭṭha"
-          ],
-          [
-            "pacati",
-            "pacita, pakka"
-          ],
-          [
-            "ḍasati",
-            "daṭṭha"
-          ],
-          [
-            "phusati",
-            "phuṭṭha"
-          ],
-          [
-            "pavisati",
-            "paviṭṭha"
-          ],
-          [
-            "āmasati",
-            "āmasita, āmaṭṭha"
-          ],
-          [
-            "labhati",
-            "laddha, labhita"
-          ],
-          [
-            "ārabhati",
-            "āraddha"
-          ],
-          [
-            "bhavati",
-            "bhūta"
-          ],
-          [
-            "bhuñjati",
-            "bhuñjita, bhutta"
-          ],
-          [
-            "vapati",
-            "vutta"
-          ],
-          [
-            "vasati",
-            "vuttha"
-          ],
-          [
-            "āsiñcati",
-            "āsitta"
-          ],
-          [
-            "khipati",
-            "khitta"
-          ],
-          [
-            "dhovati",
-            "dhovita, dhota"
-          ],
-          [
-            "pajahati",
-            "pahīna"
-          ],
-          [
-            "vivarati",
-            "vivaṭa"
-          ],
-          [
-            "pivati",
-            "pīta"
-          ],
-          [
-            "cavati",
-            "cuta"
-          ],
-          [
-            "hanati",
-            "hata"
-          ],
-          [
-            "nikkhamati",
-            "nikkhanta"
-          ],
-          [
-            "jānāti",
-            "ñāta"
-          ],
-          [
-            "suṇāti",
-            "suta"
-          ],
-          [
-            "mināti",
-            "mita"
-          ],
-          [
-            "gaṇhāti",
-            "gahita"
-          ],
-          [
-            "kiṇāti",
-            "kīta"
-          ],
-          [
-            "pāpuṇāti",
-            "patta"
-          ],
-          [
-            "karoti",
-            "kata"
-          ],
-          [
-            "tiṭṭhati",
-            "ṭhita"
-          ],
-          [
-            "harati",
-            "haṭa"
-          ],
-          [
-            "kujjhati",
-            "kuddha"
-          ],
-          [
-            "dadāti",
-            "dinna"
-          ],
-          [
-            "pasīdati",
-            "pasanna"
-          ],
-          [
-            "passati",
-            "diṭṭha"
-          ],
-          [
-            "muñcati",
-            "mutta"
-          ]
+          ["kasati", "kasita, kaṭṭha"],
+          ["pucchati", "pucchita, puṭṭha"],
+          ["pacati", "pacita, pakka"],
+          ["ḍasati", "daṭṭha"],
+          ["phusati", "phuṭṭha"],
+          ["pavisati", "paviṭṭha"],
+          ["āmasati", "āmasita, āmaṭṭha"],
+          ["labhati", "laddha, labhita"],
+          ["ārabhati", "āraddha"],
+          ["bhavati", "bhūta"],
+          ["bhuñjati", "bhuñjita, bhutta"],
+          ["vapati", "vutta"],
+          ["vasati", "vuttha"],
+          ["āsiñcati", "āsitta"],
+          ["khipati", "khitta"],
+          ["dhovati", "dhovita, dhota"],
+          ["pajahati", "pahīna"],
+          ["vivarati", "vivaṭa"],
+          ["pivati", "pīta"],
+          ["cavati", "cuta"],
+          ["hanati", "hata"],
+          ["nikkhamati", "nikkhanta"],
+          ["jānāti", "ñāta"],
+          ["suṇāti", "suta"],
+          ["mināti", "mita"],
+          ["gaṇhāti", "gahita"],
+          ["kiṇāti", "kīta"],
+          ["pāpuṇāti", "patta"],
+          ["karoti", "kata"],
+          ["tiṭṭhati", "ṭhita"],
+          ["harati", "haṭa"],
+          ["kujjhati", "kuddha"],
+          ["dadāti", "dinna"],
+          ["pasīdati", "pasanna"],
+          ["passati", "diṭṭha"],
+          ["muñcati", "mutta"]
         ]
       }
     ],

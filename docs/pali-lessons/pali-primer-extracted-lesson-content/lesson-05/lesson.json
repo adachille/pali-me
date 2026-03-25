@@ -13,35 +13,17 @@
       {
         "title": "Dative case singular",
         "rows": [
-          [
-            "nara + āya / ssa",
-            "narāya / narassa (for or to the man)"
-          ],
-          [
-            "mātula + āya / ssa",
-            "mātulāya / mātulassa (for or to the uncle)"
-          ],
-          [
-            "kassaka + āya / ssa",
-            "kassakāya / kassakassa (for or to the farmer)"
-          ]
+          ["nara + āya / ssa", "narāya / narassa (for or to the man)"],
+          ["mātula + āya / ssa", "mātulāya / mātulassa (for or to the uncle)"],
+          ["kassaka + āya / ssa", "kassakāya / kassakassa (for or to the farmer)"]
         ]
       },
       {
         "title": "Dative case plural",
         "rows": [
-          [
-            "nara + ānaṃ",
-            "narānaṃ (for or to men)"
-          ],
-          [
-            "mātula + ānaṃ",
-            "mātulānaṃ (for or to uncles)"
-          ],
-          [
-            "kassaka + ānaṃ",
-            "kassakānaṃ (for or to farmers)"
-          ]
+          ["nara + ānaṃ", "narānaṃ (for or to men)"],
+          ["mātula + ānaṃ", "mātulānaṃ (for or to uncles)"],
+          ["kassaka + ānaṃ", "kassakānaṃ (for or to farmers)"]
         ]
       }
     ],

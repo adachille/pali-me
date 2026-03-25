@@ -11,30 +11,12 @@
       {
         "title": "Causative formations from roots",
         "rows": [
-          [
-            "pacati",
-            "pāceti / pācayati / pacāpeti / pācāpayati"
-          ],
-          [
-            "bhuñjati",
-            "bhojeti / bhojāpeti"
-          ],
-          [
-            "coreti",
-            "corāpeti / corāpayati"
-          ],
-          [
-            "kināti",
-            "kiṇāpeti / kiṇāpayati"
-          ],
-          [
-            "karoti",
-            "kāreti / kārāpayati"
-          ],
-          [
-            "dadāti / deti",
-            "dāpeti / dāpayati"
-          ]
+          ["pacati", "pāceti / pācayati / pacāpeti / pācāpayati"],
+          ["bhuñjati", "bhojeti / bhojāpeti"],
+          ["coreti", "corāpeti / corāpayati"],
+          ["kināti", "kiṇāpeti / kiṇāpayati"],
+          ["karoti", "kāreti / kārāpayati"],
+          ["dadāti / deti", "dāpeti / dāpayati"]
         ]
       }
     ],

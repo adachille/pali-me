@@ -14,76 +14,24 @@
       {
         "title": "Declension of aṭṭhi (neuter, -i stem)",
         "rows": [
-          [
-            "Case",
-            "Singular",
-            "Plural"
-          ],
-          [
-            "Nom.",
-            "aṭṭhi",
-            "aṭṭhī, aṭṭhīni"
-          ],
-          [
-            "Voc.",
-            "aṭṭhi",
-            "aṭṭhī, aṭṭhīni"
-          ],
-          [
-            "Acc.",
-            "aṭṭhiṃ",
-            "aṭṭhī, aṭṭhīni"
-          ],
-          [
-            "Ins.",
-            "aṭṭhinā",
-            "aṭṭhīhi, (aṭṭhībhi)"
-          ],
-          [
-            "Abl.",
-            "aṭṭhinā",
-            "aṭṭhīhi, (aṭṭhībhi)"
-          ],
-          [
-            "Dat.",
-            "aṭṭhino, aṭṭhissa",
-            "aṭṭhīnaṃ"
-          ],
-          [
-            "Gen.",
-            "aṭṭhino, aṭṭhissa",
-            "aṭṭhīnaṃ"
-          ],
-          [
-            "Loc.",
-            "aṭṭhini, aṭṭhimhi, aṭṭhismiṃ",
-            "aṭṭhīsu"
-          ]
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "aṭṭhi", "aṭṭhī, aṭṭhīni"],
+          ["Voc.", "aṭṭhi", "aṭṭhī, aṭṭhīni"],
+          ["Acc.", "aṭṭhiṃ", "aṭṭhī, aṭṭhīni"],
+          ["Ins.", "aṭṭhinā", "aṭṭhīhi, (aṭṭhībhi)"],
+          ["Abl.", "aṭṭhinā", "aṭṭhīhi, (aṭṭhībhi)"],
+          ["Dat.", "aṭṭhino, aṭṭhissa", "aṭṭhīnaṃ"],
+          ["Gen.", "aṭṭhino, aṭṭhissa", "aṭṭhīnaṃ"],
+          ["Loc.", "aṭṭhini, aṭṭhimhi, aṭṭhismiṃ", "aṭṭhīsu"]
         ]
       },
       {
         "title": "Declension of cakkhu (neuter, -u stem)",
         "rows": [
-          [
-            "Case",
-            "Singular",
-            "Plural"
-          ],
-          [
-            "Nom.",
-            "cakkhu",
-            "cakkhū, cakkhūni"
-          ],
-          [
-            "Voc.",
-            "cakkhu",
-            "cakkhū, cakkhūni"
-          ],
-          [
-            "Acc.",
-            "cakkhuṃ",
-            "cakkhū, cakkhūni"
-          ]
+          ["Case", "Singular", "Plural"],
+          ["Nom.", "cakkhu", "cakkhū, cakkhūni"],
+          ["Voc.", "cakkhu", "cakkhū, cakkhūni"],
+          ["Acc.", "cakkhuṃ", "cakkhū, cakkhūni"]
         ]
       }
     ],

@@ -12,63 +12,24 @@
       {
         "title": "Declension of vanitā (woman) - Singular",
         "rows": [
-          [
-            "Nom.",
-            "vanitā"
-          ],
-          [
-            "Voc.",
-            "vanite"
-          ],
-          [
-            "Acc.",
-            "vanitaṃ"
-          ],
-          [
-            "Ins.",
-            "vanitāya"
-          ],
-          [
-            "Abl.",
-            "vanitāya"
-          ],
-          [
-            "Dat.",
-            "vanitāya"
-          ],
-          [
-            "Gen.",
-            "vanitāya"
-          ],
-          [
-            "Loc.",
-            "vanitāya, vanitāyaṃ"
-          ]
+          ["Nom.", "vanitā"],
+          ["Voc.", "vanite"],
+          ["Acc.", "vanitaṃ"],
+          ["Ins.", "vanitāya"],
+          ["Abl.", "vanitāya"],
+          ["Dat.", "vanitāya"],
+          ["Gen.", "vanitāya"],
+          ["Loc.", "vanitāya, vanitāyaṃ"]
         ]
       },
       {
         "title": "Declension of vanitā (woman) - Plural",
         "rows": [
-          [
-            "Nom./Voc.",
-            "vanitā, vanitāyo"
-          ],
-          [
-            "Acc.",
-            "vanitā, vanitāyo"
-          ],
-          [
-            "Ins.",
-            "vanitāhi (vanitābhi)"
-          ],
-          [
-            "Dat./Gen.",
-            "vanitānaṃ"
-          ],
-          [
-            "Loc.",
-            "vanitāsu"
-          ]
+          ["Nom./Voc.", "vanitā, vanitāyo"],
+          ["Acc.", "vanitā, vanitāyo"],
+          ["Ins.", "vanitāhi (vanitābhi)"],
+          ["Dat./Gen.", "vanitānaṃ"],
+          ["Loc.", "vanitāsu"]
         ]
       }
     ],
