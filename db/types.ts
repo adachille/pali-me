@@ -147,6 +147,39 @@ export type DeckItem = {
 };
 
 // ============================================================================
+// Lesson Progress Types
+// ============================================================================
+
+/**
+ * Valid node types for lesson progression
+ */
+export type LessonNodeType = "learn" | "vocab_practice" | "exercise_practice";
+
+/**
+ * Raw row structure from the lesson_progress table (as stored in SQLite)
+ */
+export type LessonProgressRow = {
+  id: number;
+  lesson_number: number;
+  node_type: string;
+  completed: number;
+  deck_id: number | null;
+  completed_at: string | null;
+};
+
+/**
+ * Application-level LessonProgress type with proper typing and conversions
+ */
+export type LessonProgress = {
+  id: number;
+  lessonNumber: number;
+  nodeType: LessonNodeType;
+  completed: boolean;
+  deckId: number | null;
+  completedAt: Date | null;
+};
+
+// ============================================================================
 // Study Card Types (for study session)
 // ============================================================================
 

@@ -18,13 +18,21 @@ export type {
   DeckInsert,
   DeckItemRow,
   DeckItem,
+  LessonNodeType,
+  LessonProgressRow,
+  LessonProgress,
 } from "./types";
 
 // Export schema version and constants
 export { SCHEMA_VERSION, DEFAULT_DECK_ID } from "./schema";
 
 // Export repositories
-export { itemRepository, deckRepository, studyRepository } from "./repositories";
+export {
+  itemRepository,
+  deckRepository,
+  studyRepository,
+  lessonRepository,
+} from "./repositories";
 
 // Export utility functions
 export { comparePali, normalizeForSort } from "./utils/sortUtils";

@@ -9,6 +9,7 @@ import {
   CREATE_STUDY_STATES_TABLE,
   INSERT_DEFAULT_DECK,
   MIGRATION_ADD_STUDY_DIRECTION,
+  MIGRATION_CREATE_LESSON_PROGRESS,
   SCHEMA_VERSION,
 } from "./schema";
 
@@ -83,6 +84,14 @@ async function runMigrations(db: SQLiteDatabase, currentVersion: number): Promis
     await db.execAsync(MIGRATION_ADD_STUDY_DIRECTION);
     version = 2;
     console.log("[DB] Migration 1 -> 2 completed");
+  }
+
+  // Migration from version 2 to version 3: Create lesson_progress table
+  if (version === 2) {
+    console.log("[DB] Running migration 2 -> 3: Create lesson_progress table");
+    await db.execAsync(MIGRATION_CREATE_LESSON_PROGRESS);
+    version = 3;
+    console.log("[DB] Migration 2 -> 3 completed");
   }
 
   // Update the database version
