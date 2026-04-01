@@ -32,7 +32,7 @@ This separation means:
 ## Tab Restructure
 
 - **Learn** (new primary tab, replaces Home) — scrollable lesson map
-- **Practice** (renamed from Home) — existing deck list for freeform study
+- **My Decks** (renamed from Home) — existing deck list for freeform study
 - **Library** — unchanged
 - **Settings** — unchanged
 
@@ -125,7 +125,7 @@ No `deck_id` — lesson content lives in static data, not the deck system.
 | New    | `db/repositories/lessonRepository.ts`                |
 | Modify | `app/(tabs)/_layout.tsx` (4 tabs)                    |
 | Modify | `app/(tabs)/index.tsx` (rewrite as lesson map)       |
-| New    | `app/(tabs)/practice.tsx` (moved deck list)          |
+| New    | `app/(tabs)/my-decks.tsx` (moved deck list)          |
 | New    | `app/lesson/_layout.tsx`                             |
 | New    | `app/lesson/[number].tsx` (learn screen)             |
 | New    | `app/lesson-study/_layout.tsx`                       |
@@ -137,4 +137,4 @@ No `deck_id` — lesson content lives in static data, not the deck system.
 
 1. Existing tests still pass
 2. Manual flow: Learn tab → Lesson 1 Learn → Complete → practice nodes unlock → quiz vocab/exercises → all nodes done → Lesson 2 unlocks
-3. Practice tab unchanged — only user-created decks
+3. My Decks tab unchanged — only user-created decks

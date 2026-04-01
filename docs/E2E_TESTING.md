@@ -347,7 +347,7 @@ appId: host.exp.Exponent
 
 ### Element Not Found Errors
 
-**Problem:** `Element with id 'home-screen' not found`
+**Problem:** `Element with id 'learn-screen' not found`
 
 **Solutions:**
 

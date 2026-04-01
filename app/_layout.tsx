@@ -28,6 +28,8 @@ function RootLayoutContent() {
             <Stack.Screen name="(tabs)" />
             <Stack.Screen name="item" />
             <Stack.Screen name="deck" />
+            <Stack.Screen name="lesson" />
+            <Stack.Screen name="lesson-study" />
           </Stack>
         </SQLiteProvider>
       </Suspense>

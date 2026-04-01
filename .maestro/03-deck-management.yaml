@@ -7,6 +7,10 @@ appId: host.exp.Exponent
 - runFlow:
     01-launch-app.yaml
 
+# Navigate to My Decks tab (app opens on Learn tab)
+- tapOn:
+    id: "tab-my-decks"
+
 # TEST 1: Create a new deck
 - tapOn:
     id: "create-deck-fab"
@@ -52,7 +56,7 @@ appId: host.exp.Exponent
 
 # Go back to deck and add item
 - tapOn:
-    id: "tab-home"
+    id: "tab-my-decks"
 - tapOn:
     id: "deck-card-name-renamed-deck"
 - assertVisible:
@@ -74,7 +78,7 @@ appId: host.exp.Exponent
     id: "deck-form-delete"
 - tapOn: "Delete"
 - assertVisible:
-    id: "home-screen"
+    id: "my-decks-screen"
 - assertNotVisible: "Renamed Deck"
 
 # Cleanup: delete the test item
