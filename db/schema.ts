@@ -121,7 +121,7 @@ export const MIGRATION_ADD_STUDY_DIRECTION = `
  * Lesson progress table - tracks completion state for lesson nodes
  *
  * Each lesson can have up to 3 nodes: learn, vocab_practice, exercise_practice
- * The deck_id links practice nodes to their auto-created decks
+ * Lesson content is studied via a dedicated lesson study screen
  */
 export const CREATE_LESSON_PROGRESS_TABLE = `
   CREATE TABLE IF NOT EXISTS lesson_progress (
@@ -129,10 +129,8 @@ export const CREATE_LESSON_PROGRESS_TABLE = `
     lesson_number INTEGER NOT NULL,
     node_type TEXT NOT NULL,
     completed INTEGER NOT NULL DEFAULT 0,
-    deck_id INTEGER,
     completed_at TEXT,
-    UNIQUE(lesson_number, node_type),
-    FOREIGN KEY (deck_id) REFERENCES decks(id) ON DELETE SET NULL
+    UNIQUE(lesson_number, node_type)
   )
 `;
 

@@ -163,7 +163,6 @@ export type LessonProgressRow = {
   lesson_number: number;
   node_type: string;
   completed: number;
-  deck_id: number | null;
   completed_at: string | null;
 };
 
@@ -175,7 +174,6 @@ export type LessonProgress = {
   lessonNumber: number;
   nodeType: LessonNodeType;
   completed: boolean;
-  deckId: number | null;
   completedAt: Date | null;
 };
 
