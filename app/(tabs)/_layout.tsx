@@ -31,7 +31,7 @@ export default function TabLayout() {
           title: "Learn",
           tabBarButtonTestID: "tab-learn",
           tabBarAccessibilityLabel: "tab-learn",
-          tabBarIcon: ({ color, size }) => <Ionicons name="book" size={size} color={color} />,
+          tabBarIcon: ({ color, size }) => <Icon name="lotus" size={size} color={color} />,
         }}
       />
       <Tabs.Screen
@@ -40,7 +40,7 @@ export default function TabLayout() {
           title: "My Decks",
           tabBarButtonTestID: "tab-my-decks",
           tabBarAccessibilityLabel: "tab-my-decks",
-          tabBarIcon: ({ color, size }) => <Icon name="lotus" size={size} color={color} />,
+          tabBarIcon: ({ color, size }) => <Ionicons name="book" size={size} color={color} />,
         }}
       />
       <Tabs.Screen

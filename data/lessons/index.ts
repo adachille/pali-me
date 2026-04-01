@@ -10,6 +10,8 @@ export type {
 } from "./types";
 
 export { LESSONS } from "./content";
+export { buildNodes, getPrerequisites } from "./progression";
+export type { NodeInfo } from "./progression";
 
 import { LESSONS } from "./content";
 import type { LessonContent } from "./types";
