@@ -1,10 +1,10 @@
-import { useMemo, useState } from "react";
-import { ActivityIndicator, Pressable, StyleSheet, Text, View } from "react-native";
+import { Icon } from "@/components/common/Icon";
+import type { AppColors, ThemeMode } from "@/theme";
+import { useTheme } from "@/theme";
 import { showAlert, showConfirm } from "@/utils/alert";
 import { useSQLiteContext } from "expo-sqlite";
-import { useTheme } from "@/theme";
-import type { AppColors, ThemeMode } from "@/theme";
-import { Icon } from "@/components/common/Icon";
+import { useMemo, useState } from "react";
+import { ActivityIndicator, Pressable, StyleSheet, Text, View } from "react-native";
 
 import { exportDatabaseAsJson, importDatabaseFromJson } from "@/db/repositories/exportRepository";
 
@@ -16,11 +16,6 @@ export default function SettingsScreen() {
   const [isImporting, setIsImporting] = useState(false);
 
   const themeModes: ThemeMode[] = ["light", "dark", "system"];
-  const themeModeLabels: Record<ThemeMode, string> = {
-    light: "Light",
-    dark: "Dark",
-    system: "System",
-  };
 
   const handleExport = async () => {
     setIsExporting(true);

@@ -24,6 +24,7 @@ Lesson vocabulary and exercises are **not** stored as items/decks. They are fund
 - **Deck study is spaced repetition** — due-based scheduling, user-managed content
 
 This separation means:
+
 - No auto-created decks cluttering the deck list
 - No "if this is a lesson deck, don't allow editing" guard rails
 - Lesson study screen is its own self-contained flow

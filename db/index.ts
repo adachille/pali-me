@@ -27,12 +27,7 @@ export type {
 export { SCHEMA_VERSION, DEFAULT_DECK_ID } from "./schema";
 
 // Export repositories
-export {
-  itemRepository,
-  deckRepository,
-  studyRepository,
-  lessonRepository,
-} from "./repositories";
+export { itemRepository, deckRepository, studyRepository, lessonRepository } from "./repositories";
 
 // Export utility functions
 export { comparePali, normalizeForSort } from "./utils/sortUtils";

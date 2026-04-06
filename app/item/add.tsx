@@ -1,11 +1,11 @@
-import { useMemo, useState } from "react";
-import { KeyboardAvoidingView, Platform, StyleSheet, View } from "react-native";
+import { ItemForm } from "@/components/items";
+import { itemRepository, useSQLiteContext, type ItemInsert } from "@/db";
+import type { AppColors } from "@/theme";
+import { useTheme } from "@/theme";
 import { showAlert } from "@/utils/alert";
 import { useRouter } from "expo-router";
-import { useSQLiteContext, itemRepository, type ItemInsert } from "@/db";
-import { ItemForm } from "@/components/items";
-import { useTheme } from "@/theme";
-import type { AppColors } from "@/theme";
+import { useMemo, useState } from "react";
+import { KeyboardAvoidingView, Platform, StyleSheet } from "react-native";
 
 export default function AddItemScreen() {
   const db = useSQLiteContext();
