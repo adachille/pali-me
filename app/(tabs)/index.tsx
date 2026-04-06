@@ -3,8 +3,8 @@ import { LESSONS, buildNodes } from "@/data/lessons";
 import type { LessonContent, NodeType } from "@/data/lessons/types";
 import { lessonRepository, useSQLiteContext } from "@/db";
 import type { LessonProgress } from "@/db/types";
-import { useTheme } from "@/theme";
 import type { AppColors } from "@/theme";
+import { useTheme } from "@/theme";
 import { useFocusEffect } from "@react-navigation/native";
 import { useRouter } from "expo-router";
 import { useCallback, useMemo, useRef, useState } from "react";
@@ -97,6 +97,7 @@ export default function LearnScreen() {
         data={LESSONS}
         renderItem={renderItem}
         keyExtractor={(item) => String(item.lesson_number)}
+        contentContainerStyle={styles.listContent}
         onContentSizeChange={handleContentSizeChange}
         onScrollToIndexFailed={() => {
           // Fallback: just scroll to beginning
@@ -112,6 +113,9 @@ function makeStyles(colors: AppColors) {
     container: {
       flex: 1,
       backgroundColor: colors.background,
+    },
+    listContent: {
+      paddingBottom: 16,
     },
     loadingContainer: {
       flex: 1,

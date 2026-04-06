@@ -1,9 +1,9 @@
-import { Ionicons } from "@expo/vector-icons";
-import { Pressable, StyleSheet, Text, View } from "react-native";
-import { useTheme } from "@/theme";
 import type { NodeState, NodeType } from "@/data/lessons/types";
-import { useMemo } from "react";
 import type { AppColors } from "@/theme";
+import { useTheme } from "@/theme";
+import { Ionicons } from "@expo/vector-icons";
+import { useMemo } from "react";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 
 type Props = {
   state: NodeState;
@@ -43,7 +43,7 @@ export function LessonNode({ state, type, label, onPress }: Props) {
           </Text>
         )}
       </Pressable>
-      <Text style={[styles.label, state === "locked" && styles.labelLocked]} numberOfLines={1}>
+      <Text style={styles.label} numberOfLines={1}>
         {label}
       </Text>
     </View>
@@ -71,7 +71,7 @@ function makeStyles(colors: AppColors) {
       backgroundColor: colors.primary,
     },
     circleCompleted: {
-      backgroundColor: colors.primary,
+      backgroundColor: colors.gold,
     },
     circlePressed: {
       backgroundColor: colors.primaryDark,

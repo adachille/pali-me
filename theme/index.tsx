@@ -1,6 +1,6 @@
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from "react";
 import { useColorScheme, type ColorSchemeName } from "react-native";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const THEME_STORAGE_KEY = "@theme_mode";
 
@@ -23,7 +23,9 @@ const lightColors = {
   secondaryDark: "#1976D2",
   error: "#f44336",
   errorSurface: "#ffebee",
-  tabBarActive: "#007AFF",
+  gold: "#F2CA46",
+  goldDark: "#F57F17",
+  tabBarActive: "#4CAF50",
   placeholder: "#999999",
 };
 
@@ -44,7 +46,9 @@ const darkColors = {
   secondaryDark: "#1E88E5",
   error: "#EF5350",
   errorSurface: "#3B1515",
-  tabBarActive: "#60A5FA",
+  gold: "#FFB300",
+  goldDark: "#FF8F00",
+  tabBarActive: "#4CAF50",
   placeholder: "#555555",
 };
 

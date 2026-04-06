@@ -1,9 +1,9 @@
-import { StyleSheet, Text, View } from "react-native";
-import { useTheme } from "@/theme";
+import type { LessonContent, NodeState, NodeType } from "@/data/lessons/types";
 import type { AppColors } from "@/theme";
-import type { LessonContent, NodeType, NodeState } from "@/data/lessons/types";
-import { LessonNode } from "./LessonNode";
+import { useTheme } from "@/theme";
 import { useMemo } from "react";
+import { StyleSheet, Text, View } from "react-native";
+import { LessonNode } from "./LessonNode";
 
 type NodeInfo = {
   type: NodeType;
@@ -43,10 +43,11 @@ export function LessonMapItem({ lesson, nodes, onNodePress }: Props) {
 function makeStyles(colors: AppColors) {
   return StyleSheet.create({
     container: {
-      paddingHorizontal: 20,
-      paddingVertical: 16,
-      borderBottomWidth: StyleSheet.hairlineWidth,
-      borderBottomColor: colors.border,
+      marginHorizontal: 16,
+      marginTop: 12,
+      backgroundColor: colors.surface,
+      borderRadius: 12,
+      padding: 16,
     },
     title: {
       fontSize: 18,
