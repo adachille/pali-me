@@ -10,8 +10,13 @@ import type { AppColors } from "@/theme";
 import { useTheme } from "@/theme";
 import { useFocusEffect } from "@react-navigation/native";
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
-import { useCallback, useMemo, useState } from "react";
+import { type ReactNode, useCallback, useMemo, useState } from "react";
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+
+type LessonSection = {
+  key: string;
+  content: ReactNode;
+};
 
 export default function LessonScreen() {
   const { number } = useLocalSearchParams<{ number: string }>();
@@ -53,25 +58,44 @@ export default function LessonScreen() {
     );
   }
 
+  const sections: LessonSection[] = [];
+  if (lesson.vocabulary.length > 0) {
+    sections.push({
+      key: "vocabulary",
+      content: <VocabSection vocab={lesson.vocabulary} styles={styles} />,
+    });
+  }
+  if (lesson.grammar.explanations.length > 0) {
+    sections.push({
+      key: "grammar",
+      content: <GrammarSection lesson={lesson} styles={styles} />,
+    });
+  }
+  if (lesson.grammar.tables.length > 0) {
+    sections.push({
+      key: "tables",
+      content: <TablesSection tables={lesson.grammar.tables} styles={styles} colors={colors} />,
+    });
+  }
+  if (lesson.grammar.examples.length > 0) {
+    sections.push({
+      key: "examples",
+      content: <ExamplesSection examples={lesson.grammar.examples} styles={styles} />,
+    });
+  }
+
   return (
     <>
       <Stack.Screen options={{ title: lesson.title }} />
       <ScrollView style={styles.container} contentContainerStyle={styles.content}>
         <Text style={styles.topic}>Topic: {lesson.topic}</Text>
 
-        {lesson.vocabulary.length > 0 && <VocabSection vocab={lesson.vocabulary} styles={styles} />}
-
-        {lesson.grammar.explanations.length > 0 && (
-          <GrammarSection lesson={lesson} styles={styles} />
-        )}
-
-        {lesson.grammar.tables.length > 0 && (
-          <TablesSection tables={lesson.grammar.tables} styles={styles} colors={colors} />
-        )}
-
-        {lesson.grammar.examples.length > 0 && (
-          <ExamplesSection examples={lesson.grammar.examples} styles={styles} />
-        )}
+        {sections.map((section, index) => (
+          <View key={section.key}>
+            {index > 0 && <SectionDivider styles={styles} />}
+            {section.content}
+          </View>
+        ))}
 
         <View style={styles.buttonContainer}>
           {isCompleted ? (
@@ -198,6 +222,16 @@ function ExamplesSection({
   );
 }
 
+function SectionDivider({ styles }: { styles: ReturnType<typeof makeStyles> }) {
+  return (
+    <View style={styles.sectionDividerContainer}>
+      <View style={styles.sectionDividerLine} />
+      <View style={styles.sectionDividerDot} />
+      <View style={styles.sectionDividerLine} />
+    </View>
+  );
+}
+
 // ============================================================================
 // Styles
 // ============================================================================
@@ -238,6 +272,25 @@ function makeStyles(colors: AppColors) {
       fontWeight: "700",
       color: colors.text,
       marginBottom: 12,
+    },
+    sectionDividerContainer: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 10,
+      marginBottom: 24,
+    },
+    sectionDividerLine: {
+      flex: 1,
+      height: StyleSheet.hairlineWidth,
+      backgroundColor: colors.border,
+      opacity: 0.7,
+    },
+    sectionDividerDot: {
+      width: 6,
+      height: 6,
+      borderRadius: 3,
+      backgroundColor: colors.primary,
+      opacity: 0.9,
     },
 
     // Vocabulary
