@@ -235,13 +235,19 @@ function makeStyles(colors: AppColors) {
       backgroundColor: colors.primaryDark,
     },
     importButton: {
-      backgroundColor: colors.secondary,
+      backgroundColor: colors.primary + 25, // Reduce opacity to 25% to primary color
+      borderWidth: 1,
+      borderColor: colors.primary,
     },
     importButtonPressed: {
-      backgroundColor: colors.secondaryDark,
+      backgroundColor: colors.primaryDark + 25,
+      borderWidth: 1,
+      borderColor: colors.primaryDark,
     },
     buttonDisabled: {
       backgroundColor: colors.textTertiary,
+      borderWidth: 1,
+      borderColor: colors.textTertiary,
     },
     buttonText: {
       color: "#fff",
