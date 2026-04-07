@@ -5,7 +5,7 @@
 appId: host.exp.Exponent
 
 ---
-# Verify the app is running and home screen is visible
+# Verify the app is running and learn screen is visible
 - launchApp
 - runFlow:
     when:
@@ -13,5 +13,5 @@ appId: host.exp.Exponent
     commands:
       - tapOn: "Pocket Pali"
 - assertVisible:
-    id: "home-screen"
+    id: "learn-screen"
 

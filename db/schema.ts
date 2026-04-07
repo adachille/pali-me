@@ -3,7 +3,7 @@
 /**
  * Current database schema version
  */
-export const SCHEMA_VERSION = 2;
+export const SCHEMA_VERSION = 3;
 
 // ============================================================================
 // Items Table
@@ -116,3 +116,25 @@ export const DEFAULT_DECK_ID = 1;
 export const MIGRATION_ADD_STUDY_DIRECTION = `
   ALTER TABLE decks ADD COLUMN study_direction TEXT DEFAULT 'random'
 `;
+
+/**
+ * Lesson progress table - tracks completion state for lesson nodes
+ *
+ * Each lesson can have up to 3 nodes: learn, vocab_practice, exercise_practice
+ * Lesson content is studied via a dedicated lesson study screen
+ */
+export const CREATE_LESSON_PROGRESS_TABLE = `
+  CREATE TABLE IF NOT EXISTS lesson_progress (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    lesson_number INTEGER NOT NULL,
+    node_type TEXT NOT NULL,
+    completed INTEGER NOT NULL DEFAULT 0,
+    completed_at TEXT,
+    UNIQUE(lesson_number, node_type)
+  )
+`;
+
+/**
+ * Migration 2 -> 3: Create lesson_progress table
+ */
+export const MIGRATION_CREATE_LESSON_PROGRESS = CREATE_LESSON_PROGRESS_TABLE;

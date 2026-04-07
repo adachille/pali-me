@@ -28,10 +28,19 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home",
-          tabBarButtonTestID: "tab-home",
-          tabBarAccessibilityLabel: "tab-home",
+          title: "Learn",
+          tabBarButtonTestID: "tab-learn",
+          tabBarAccessibilityLabel: "tab-learn",
           tabBarIcon: ({ color, size }) => <Icon name="lotus" size={size} color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="my-decks"
+        options={{
+          title: "My Decks",
+          tabBarButtonTestID: "tab-my-decks",
+          tabBarAccessibilityLabel: "tab-my-decks",
+          tabBarIcon: ({ color, size }) => <Ionicons name="book" size={size} color={color} />,
         }}
       />
       <Tabs.Screen
