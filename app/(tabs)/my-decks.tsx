@@ -5,7 +5,7 @@ import { useTheme } from "@/theme";
 import type { AppColors } from "@/theme";
 import { useFocusEffect } from "@react-navigation/native";
 import { useRouter } from "expo-router";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { ActivityIndicator, Pressable, StyleSheet, Text, View } from "react-native";
 
 export default function MyDecksScreen() {
@@ -34,17 +34,14 @@ export default function MyDecksScreen() {
     }
   }, [db, searchQuery, sortOption]);
 
-  // Reload decks when screen comes into focus
+  // Reload when the screen is focused (returning from other screens) and when
+  // search/sort changes (loadDecks identity updates; React Navigation re-runs
+  // the effect while focused).
   useFocusEffect(
     useCallback(() => {
       loadDecks();
     }, [loadDecks])
   );
-
-  // Also reload when search query or sort option changes
-  useEffect(() => {
-    loadDecks();
-  }, [loadDecks]);
 
   const handleSearchChange = useCallback((query: string) => {
     setSearchQuery(query);
