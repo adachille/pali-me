@@ -81,6 +81,7 @@ export default function LessonStudyScreen() {
     setItems(shuffleArray(allItems));
   }, [allItems]);
 
+  // Handle keyboard visibility
   useEffect(() => {
     const showEvent = Platform.OS === "ios" ? "keyboardWillShow" : "keyboardDidShow";
     const hideEvent = Platform.OS === "ios" ? "keyboardWillHide" : "keyboardDidHide";
