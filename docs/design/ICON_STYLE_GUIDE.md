@@ -64,15 +64,6 @@ Represents growth, nature, and the calm of forest monasteries.
 | `primaryLight`   | `#A5D6A7` | `#A5D6A7` | Subtle highlights                         |
 | `primarySurface` | `#E8F5E9` | `#1B3A1F` | Background tints                          |
 
-### Secondary — Blue
-
-Used sparingly for links and secondary actions.
-
-| Token           | Light     | Dark      |
-| --------------- | --------- | --------- |
-| `secondary`     | `#2196F3` | `#42A5F5` |
-| `secondaryDark` | `#1976D2` | `#1E88E5` |
-
 ### Neutrals
 
 | Token           | Light     | Dark      | Usage                      |
