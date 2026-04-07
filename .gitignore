@@ -57,3 +57,4 @@ PR_DESCRIPTION.md
 .env
 pali-primer-extracted-texts/
 src-pdfs/
+vocabulary-enriched.tsv
