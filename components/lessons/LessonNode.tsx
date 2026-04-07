@@ -87,8 +87,5 @@ function makeStyles(colors: AppColors) {
       color: colors.textSecondary,
       textAlign: "center",
     },
-    labelLocked: {
-      color: colors.border,
-    },
   });
 }

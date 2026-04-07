@@ -3,9 +3,9 @@
 // This module knows which nodes a lesson has and what each node depends on.
 // It delegates the "are prerequisites met?" check to lessonRepository.getNodeState.
 
-import type { LessonContent, NodeType, NodeState } from "./types";
-import type { LessonProgress, LessonNodeType } from "@/db/types";
 import { getNodeState } from "@/db/repositories/lessonRepository";
+import type { LessonNodeType, LessonProgress } from "@/db/types";
+import type { LessonContent, NodeState, NodeType } from "./types";
 
 export type NodeInfo = {
   type: NodeType;
