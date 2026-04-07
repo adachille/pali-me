@@ -1,4 +1,4 @@
-import type { LessonContent, NodeState, NodeType } from "@/data/lessons/types";
+import type { LessonContent, LessonNodeType, NodeState } from "@/data/lessons/types";
 import type { AppColors } from "@/theme";
 import { useTheme } from "@/theme";
 import { useMemo } from "react";
@@ -6,7 +6,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { LessonNode } from "./LessonNode";
 
 type NodeInfo = {
-  type: NodeType;
+  type: LessonNodeType;
   state: NodeState;
   label: string;
 };
@@ -14,7 +14,7 @@ type NodeInfo = {
 type Props = {
   lesson: LessonContent;
   nodes: NodeInfo[];
-  onNodePress: (type: NodeType) => void;
+  onNodePress: (type: LessonNodeType) => void;
 };
 
 export function LessonMapItem({ lesson, nodes, onNodePress }: Props) {

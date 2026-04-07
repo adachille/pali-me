@@ -2,7 +2,7 @@
 
 import type { SQLiteDatabase } from "expo-sqlite";
 import type { LessonProgressRow, LessonProgress, LessonNodeType } from "../types";
-import type { NodeState, NodeType } from "@/data/lessons/types";
+import type { NodeState } from "@/data/lessons/types";
 import { parseSqliteDate } from "../utils";
 
 // ============================================================================
@@ -60,7 +60,7 @@ export async function getProgress(
 export function getNodeState(
   allProgress: LessonProgress[],
   lessonNumber: number,
-  nodeType: NodeType,
+  nodeType: LessonNodeType,
   prerequisites: Array<{ lessonNumber: number; nodeType: LessonNodeType }>
 ): NodeState {
   const isCompleted = (ln: number, nt: string) =>

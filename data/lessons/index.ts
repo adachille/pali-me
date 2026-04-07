@@ -5,7 +5,7 @@ export type {
   LessonGrammar,
   GrammarTable,
   GrammarExample,
-  NodeType,
+  LessonNodeType,
   NodeState,
 } from "./types";
 

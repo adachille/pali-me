@@ -1,6 +1,6 @@
 import { LessonMapItem } from "@/components/lessons";
 import { LESSONS, buildNodes } from "@/data/lessons";
-import type { LessonContent, NodeType } from "@/data/lessons/types";
+import type { LessonContent, LessonNodeType } from "@/data/lessons/types";
 import { lessonRepository, useSQLiteContext } from "@/db";
 import type { LessonProgress } from "@/db/types";
 import type { AppColors } from "@/theme";
@@ -49,7 +49,7 @@ export default function LearnScreen() {
   }, [allNodes]);
 
   const handleNodePress = useCallback(
-    (lessonNumber: number, nodeType: NodeType) => {
+    (lessonNumber: number, nodeType: LessonNodeType) => {
       if (nodeType === "learn") {
         router.push(`/lesson/${lessonNumber}` as `/lesson/${string}`);
       } else {

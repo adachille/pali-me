@@ -26,6 +26,9 @@ export type LessonContent = {
   exercises: LessonExerciseItem[];
 };
 
-export type NodeType = "learn" | "vocab_practice" | "exercise_practice";
+/**
+ * Lesson map node kinds (aligned with lesson_progress.node_type in SQLite).
+ */
+export type LessonNodeType = "learn" | "vocab_practice" | "exercise_practice";
 
 export type NodeState = "locked" | "available" | "completed";

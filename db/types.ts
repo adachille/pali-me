@@ -1,5 +1,9 @@
 // TypeScript type definitions for SQLite database tables
 
+import type { LessonNodeType } from "@/data/lessons/types";
+
+export type { LessonNodeType };
+
 // ============================================================================
 // Item Types
 // ============================================================================
@@ -149,11 +153,6 @@ export type DeckItem = {
 // ============================================================================
 // Lesson Progress Types
 // ============================================================================
-
-/**
- * Valid node types for lesson progression
- */
-export type LessonNodeType = "learn" | "vocab_practice" | "exercise_practice";
 
 /**
  * Raw row structure from the lesson_progress table (as stored in SQLite)

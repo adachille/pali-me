@@ -4,11 +4,11 @@
 // It delegates the "are prerequisites met?" check to lessonRepository.getNodeState.
 
 import { getNodeState } from "@/db/repositories/lessonRepository";
-import type { LessonNodeType, LessonProgress } from "@/db/types";
-import type { LessonContent, NodeState, NodeType } from "./types";
+import type { LessonProgress } from "@/db/types";
+import type { LessonContent, LessonNodeType, NodeState } from "./types";
 
 export type NodeInfo = {
-  type: NodeType;
+  type: LessonNodeType;
   state: NodeState;
   label: string;
 };
@@ -21,7 +21,7 @@ export type NodeInfo = {
  */
 export function getPrerequisites(
   lesson: LessonContent,
-  nodeType: NodeType,
+  nodeType: LessonNodeType,
   prevLesson: LessonContent | undefined
 ): { lessonNumber: number; nodeType: LessonNodeType }[] {
   if (nodeType !== "learn") {

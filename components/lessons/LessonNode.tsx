@@ -1,4 +1,4 @@
-import type { NodeState, NodeType } from "@/data/lessons/types";
+import type { LessonNodeType, NodeState } from "@/data/lessons/types";
 import type { AppColors } from "@/theme";
 import { useTheme } from "@/theme";
 import { Ionicons } from "@expo/vector-icons";
@@ -7,7 +7,7 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 
 type Props = {
   state: NodeState;
-  type: NodeType;
+  type: LessonNodeType;
   label: string;
   onPress: () => void;
 };
