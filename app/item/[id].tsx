@@ -7,12 +7,12 @@ import {
   Text,
   View,
 } from "react-native";
-import { showAlert, showConfirm } from "@/utils/alert";
+import { showAlert, showConfirm } from "@/src/utils/alert";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { useSQLiteContext, itemRepository, type Item, type ItemInsert } from "@/db";
-import { ItemForm } from "@/components/items";
-import { useTheme } from "@/theme";
-import type { AppColors } from "@/theme";
+import { useSQLiteContext, itemRepository, type Item, type ItemInsert } from "@/src/db";
+import { ItemForm } from "@/src/components/items";
+import { useTheme } from "@/src/theme";
+import type { AppColors } from "@/src/theme";
 
 export default function EditItemScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();

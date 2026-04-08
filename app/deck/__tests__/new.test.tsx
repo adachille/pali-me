@@ -19,7 +19,7 @@ jest.mock("expo-sqlite", () => ({
 
 // Mock deckRepository
 const mockCreate = jest.fn();
-jest.mock("@/db", () => ({
+jest.mock("@/src/db", () => ({
   deckRepository: {
     create: (...args: unknown[]) => mockCreate(...args),
   },

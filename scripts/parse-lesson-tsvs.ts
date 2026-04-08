@@ -1,7 +1,7 @@
 /**
  * Build script: parses lesson.json + vocabulary.tsv + exercises.tsv
  * from docs/pali-lessons/pali-primer-extracted-lesson-content/
- * and outputs bundled JSON files to data/lessons/content/
+ * and outputs bundled JSON files to src/data/lessons/content/
  *
  * Run: npx tsx scripts/parse-lesson-tsvs.ts
  */
@@ -13,7 +13,7 @@ const LESSONS_SOURCE = path.resolve(
   __dirname,
   "../docs/pali-lessons/pali-primer-extracted-lesson-content"
 );
-const OUTPUT_DIR = path.resolve(__dirname, "../data/lessons/content");
+const OUTPUT_DIR = path.resolve(__dirname, "../src/data/lessons/content");
 const TOTAL_LESSONS = 32;
 
 type VocabItem = { pali: string; english: string; type: string; gender: string };

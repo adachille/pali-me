@@ -1,10 +1,10 @@
-import { LessonMapItem } from "@/components/lessons";
-import { LESSONS, buildNodes } from "@/data/lessons";
-import type { LessonContent, LessonNodeType } from "@/data/lessons/types";
-import { lessonRepository, useSQLiteContext } from "@/db";
-import type { LessonProgress } from "@/db/types";
-import type { AppColors } from "@/theme";
-import { useTheme } from "@/theme";
+import { LessonMapItem } from "@/src/components/lessons";
+import { LESSONS, buildNodes } from "@/src/data/lessons";
+import type { LessonContent, LessonNodeType } from "@/src/data/lessons/types";
+import { lessonRepository, useSQLiteContext } from "@/src/db";
+import type { LessonProgress } from "@/src/db/types";
+import type { AppColors } from "@/src/theme";
+import { useTheme } from "@/src/theme";
 import { useFocusEffect } from "@react-navigation/native";
 import { useRouter } from "expo-router";
 import { useCallback, useMemo, useRef, useState } from "react";

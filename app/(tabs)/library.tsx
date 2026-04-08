@@ -1,7 +1,7 @@
-import { ItemList } from "@/components/items";
-import { itemRepository, useSQLiteContext, type Item } from "@/db";
-import { useTheme } from "@/theme";
-import type { AppColors } from "@/theme";
+import { ItemList } from "@/src/components/items";
+import { itemRepository, useSQLiteContext, type Item } from "@/src/db";
+import { useTheme } from "@/src/theme";
+import type { AppColors } from "@/src/theme";
 import { useFocusEffect } from "@react-navigation/native";
 import { useRouter } from "expo-router";
 import { useCallback, useEffect, useMemo, useState } from "react";

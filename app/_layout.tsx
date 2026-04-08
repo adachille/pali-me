@@ -3,9 +3,9 @@ import { Stack } from "expo-router";
 import { SQLiteProvider } from "expo-sqlite";
 import { StatusBar } from "expo-status-bar";
 import { View, Text, StyleSheet } from "react-native";
-import { migrateDbIfNeeded } from "@/db";
-import { useTheme, ThemeProvider } from "@/theme";
-import type { AppColors } from "@/theme";
+import { migrateDbIfNeeded } from "@/src/db";
+import { useTheme, ThemeProvider } from "@/src/theme";
+import type { AppColors } from "@/src/theme";
 
 function LoadingView() {
   const { colors } = useTheme();

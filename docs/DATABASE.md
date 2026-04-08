@@ -342,7 +342,7 @@ import {
 
 ### Using the Repository Layer
 
-The recommended way to interact with the database is through the repository layer in `db/repositories/`:
+The recommended way to interact with the database is through the repository layer in `src/db/repositories/`:
 
 #### Item Repository
 
@@ -476,10 +476,10 @@ function MyComponent() {
 
 ### Type Conversions
 
-The repository layer handles row-to-model conversion internally using `parseSqliteDate()` from `db/utils.ts`:
+The repository layer handles row-to-model conversion internally using `parseSqliteDate()` from `src/db/utils.ts`:
 
 ```typescript
-import { parseSqliteDate } from "@/db/utils";
+import { parseSqliteDate } from "@/src/db/utils";
 
 function rowToItem(row: ItemRow): Item {
   return {
@@ -499,7 +499,7 @@ function rowToItem(row: ItemRow): Item {
 
 **Current Version**: 2
 
-Migrations run automatically on app startup via `migrateDbIfNeeded()` in [db/database.ts](../db/database.ts).
+Migrations run automatically on app startup via `migrateDbIfNeeded()` in [src/db/database.ts](../src/db/database.ts).
 
 ### Migration History
 
@@ -512,13 +512,13 @@ Migrations run automatically on app startup via `migrateDbIfNeeded()` in [db/dat
 
 To add a migration (e.g., version 2 → 3):
 
-1. **Update schema version** in [db/schema.ts](../db/schema.ts):
+1. **Update schema version** in [src/db/schema.ts](../src/db/schema.ts):
 
    ```typescript
    export const SCHEMA_VERSION = 3;
    ```
 
-2. **Add migration SQL** in [db/schema.ts](../db/schema.ts):
+2. **Add migration SQL** in [src/db/schema.ts](../src/db/schema.ts):
 
    ```typescript
    export const MIGRATION_ADD_NEW_FIELD = `
@@ -526,7 +526,7 @@ To add a migration (e.g., version 2 → 3):
    `;
    ```
 
-3. **Add migration logic** in [db/database.ts](../db/database.ts):
+3. **Add migration logic** in [src/db/database.ts](../src/db/database.ts):
 
    ```typescript
    if (version === 2) {
@@ -537,7 +537,7 @@ To add a migration (e.g., version 2 → 3):
    }
    ```
 
-4. **Update types** in [db/types.ts](../db/types.ts) if schema changed
+4. **Update types** in [src/db/types.ts](../src/db/types.ts) if schema changed
 
 ### Migration Best Practices
 
@@ -555,7 +555,7 @@ The app supports full database export and import via JSON files, accessible from
 Exports all 4 tables (`items`, `study_states`, `decks`, `deck_items`) as a JSON file and opens the system share dialog.
 
 ```typescript
-import { exportDatabaseAsJson } from "@/db/repositories/exportRepository";
+import { exportDatabaseAsJson } from "@/src/db/repositories/exportRepository";
 
 const filepath = await exportDatabaseAsJson(db);
 ```
@@ -580,7 +580,7 @@ const filepath = await exportDatabaseAsJson(db);
 Opens a document picker for the user to select a JSON export file, validates the schema version, then replaces all existing data.
 
 ```typescript
-import { importDatabaseFromJson } from "@/db/repositories/exportRepository";
+import { importDatabaseFromJson } from "@/src/db/repositories/exportRepository";
 
 const result = await importDatabaseFromJson(db);
 // result: { itemsImported, studyStatesImported, decksImported, deckItemsImported } | null
@@ -596,7 +596,7 @@ const result = await importDatabaseFromJson(db);
 ## File Structure
 
 ```
-db/
+src/db/
 ├── index.ts              # Main exports, single import point
 ├── types.ts              # TypeScript type definitions
 ├── schema.ts             # SQL schema definitions, constants, and migration SQL

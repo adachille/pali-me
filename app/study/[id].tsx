@@ -1,4 +1,4 @@
-import { Icon } from "@/components/common/Icon";
+import { Icon } from "@/src/components/common/Icon";
 import {
   AnswerInput,
   FeedbackDisplay,
@@ -6,11 +6,11 @@ import {
   StudyCompletion,
   StudyProgress,
   StudySettingsModal,
-} from "@/components/study";
-import { deckRepository, studyRepository, useSQLiteContext } from "@/db";
-import type { DeckStudyDirection, StudyCard as StudyCardType } from "@/db/types";
-import type { AppColors } from "@/theme";
-import { useTheme } from "@/theme";
+} from "@/src/components/study";
+import { deckRepository, studyRepository, useSQLiteContext } from "@/src/db";
+import type { DeckStudyDirection, StudyCard as StudyCardType } from "@/src/db/types";
+import type { AppColors } from "@/src/theme";
+import { useTheme } from "@/src/theme";
 import { Ionicons } from "@expo/vector-icons";
 import * as Haptics from "expo-haptics";
 import { useLocalSearchParams, useNavigation, useRouter } from "expo-router";
@@ -24,7 +24,7 @@ import {
   Text,
   View,
 } from "react-native";
-import { showConfirm } from "@/utils/alert";
+import { showConfirm } from "@/src/utils/alert";
 
 /**
  * Normalizes an answer for comparison

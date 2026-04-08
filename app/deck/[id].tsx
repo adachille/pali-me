@@ -1,14 +1,14 @@
-import { Icon } from "@/components/common/Icon";
-import { AddItemsModal, DeckFormModal, DeckItemList } from "@/components/decks";
-import { DEFAULT_DECK_ID, deckRepository, useSQLiteContext, type Item } from "@/db";
-import type { DeckWithCount } from "@/db/repositories/deckRepository";
-import { useTheme } from "@/theme";
-import type { AppColors } from "@/theme";
+import { Icon } from "@/src/components/common/Icon";
+import { AddItemsModal, DeckFormModal, DeckItemList } from "@/src/components/decks";
+import { DEFAULT_DECK_ID, deckRepository, useSQLiteContext, type Item } from "@/src/db";
+import type { DeckWithCount } from "@/src/db/repositories/deckRepository";
+import { useTheme } from "@/src/theme";
+import type { AppColors } from "@/src/theme";
 import { useFocusEffect } from "@react-navigation/native";
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ActivityIndicator, Pressable, StyleSheet, Text, View } from "react-native";
-import { showAlert, showConfirm } from "@/utils/alert";
+import { showAlert, showConfirm } from "@/src/utils/alert";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 export default function DeckDetailScreen() {

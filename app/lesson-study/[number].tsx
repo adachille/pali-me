@@ -1,10 +1,10 @@
-import { AnswerInput, FeedbackDisplay, StudyProgress } from "@/components/study";
-import { getLessonByNumber } from "@/data/lessons";
-import { lessonRepository, useSQLiteContext } from "@/db";
-import type { LessonNodeType } from "@/db/types";
-import type { AppColors } from "@/theme";
-import { useTheme } from "@/theme";
-import { showConfirm } from "@/utils/alert";
+import { AnswerInput, FeedbackDisplay, StudyProgress } from "@/src/components/study";
+import { getLessonByNumber } from "@/src/data/lessons";
+import { lessonRepository, useSQLiteContext } from "@/src/db";
+import type { LessonNodeType } from "@/src/db/types";
+import type { AppColors } from "@/src/theme";
+import { useTheme } from "@/src/theme";
+import { showConfirm } from "@/src/utils/alert";
 import * as Haptics from "expo-haptics";
 import { Stack, useLocalSearchParams, useNavigation, useRouter } from "expo-router";
 import { useCallback, useEffect, useMemo, useState } from "react";

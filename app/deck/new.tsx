@@ -1,6 +1,6 @@
-import { deckRepository, useSQLiteContext } from "@/db";
-import { useTheme } from "@/theme";
-import type { AppColors } from "@/theme";
+import { deckRepository, useSQLiteContext } from "@/src/db";
+import { useTheme } from "@/src/theme";
+import type { AppColors } from "@/src/theme";
 import { useRouter } from "expo-router";
 import { useMemo, useState } from "react";
 import {
@@ -13,7 +13,7 @@ import {
   TextInput,
   View,
 } from "react-native";
-import { showConfirm } from "@/utils/alert";
+import { showConfirm } from "@/src/utils/alert";
 
 export default function NewDeckScreen() {
   const db = useSQLiteContext();
