@@ -109,12 +109,12 @@ export function useTheme(): {
   themeMode: ThemeMode;
   setThemeMode: (mode: ThemeMode) => void;
 } {
+  const colorScheme = useColorScheme();
   const context = useContext(ThemeContext);
   if (context) {
     return context;
   }
   // Fallback for when ThemeProvider is not available (e.g., tests)
-  const colorScheme = useColorScheme();
   const colors = colorScheme === "dark" ? darkColors : lightColors;
   return {
     colors,
