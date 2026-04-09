@@ -27,7 +27,7 @@ const mockGetItemsInDeck = jest.fn();
 const mockDeleteDeck = jest.fn();
 const mockRemoveItemFromDeck = jest.fn();
 
-jest.mock("@/db", () => ({
+jest.mock("@/src/db", () => ({
   DEFAULT_DECK_ID: 1,
   deckRepository: {
     getById: (...args: unknown[]) => mockGetById(...args),
@@ -39,7 +39,7 @@ jest.mock("@/db", () => ({
 }));
 
 // Mock deck components
-jest.mock("@/components/decks", () => {
+jest.mock("@/src/components/decks", () => {
   const { View, Pressable, Text } = jest.requireActual("react-native");
   return {
     AddItemsModal: ({ visible }: { visible: boolean }) =>

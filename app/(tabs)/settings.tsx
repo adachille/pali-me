@@ -1,12 +1,15 @@
-import { Icon } from "@/components/common/Icon";
-import type { AppColors, ThemeMode } from "@/theme";
-import { useTheme } from "@/theme";
-import { showAlert, showConfirm } from "@/utils/alert";
+import { Icon } from "@/src/components/common/Icon";
+import type { AppColors, ThemeMode } from "@/src/theme";
+import { useTheme } from "@/src/theme";
+import { showAlert, showConfirm } from "@/src/utils/alert";
 import { useSQLiteContext } from "expo-sqlite";
 import { useMemo, useState } from "react";
 import { ActivityIndicator, Pressable, StyleSheet, Text, View } from "react-native";
 
-import { exportDatabaseAsJson, importDatabaseFromJson } from "@/db/repositories/exportRepository";
+import {
+  exportDatabaseAsJson,
+  importDatabaseFromJson,
+} from "@/src/db/repositories/exportRepository";
 
 export default function SettingsScreen() {
   const db = useSQLiteContext();

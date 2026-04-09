@@ -68,18 +68,18 @@ The router is configured with:
 
 The app uses SQLite via `expo-sqlite` for local data storage:
 
-- **db/schema.ts** - Database schema definitions with 4 main tables:
+- **src/db/schema.ts** - Database schema definitions with 4 main tables:
   - `items` - Pali learning items (words, prefixes, suffixes)
   - `study_states` - Spaced repetition state per item/direction
   - `decks` - Named collections of items
   - `deck_items` - Many-to-many join table
-- **db/database.ts** - Database initialization and migrations
-- **db/types.ts** - TypeScript types for database entities
-- **db/repositories/itemRepository.ts** - CRUD operations for items (search, create, update, delete)
-- **db/repositories/deckRepository.ts** - CRUD for decks and deck-item associations (create, update, delete decks; add/remove cards)
-- **db/repositories/studyRepository.ts** - Study session logic (get due/all cards for a deck, record reviews, update spaced repetition state)
-- **db/repositories/exportRepository.ts** - JSON export/import of all database tables (used by Settings screen)
-- **db/utils.ts** - Utility for parsing SQLite datetime strings into JS Date objects (handles UTC timezone)
+- **src/db/database.ts** - Database initialization and migrations
+- **src/db/types.ts** - TypeScript types for database entities
+- **src/db/repositories/itemRepository.ts** - CRUD operations for items (search, create, update, delete)
+- **src/db/repositories/deckRepository.ts** - CRUD for decks and deck-item associations (create, update, delete decks; add/remove cards)
+- **src/db/repositories/studyRepository.ts** - Study session logic (get due/all cards for a deck, record reviews, update spaced repetition state)
+- **src/db/repositories/exportRepository.ts** - JSON export/import of all database tables (used by Settings screen)
+- **src/db/utils.ts** - Utility for parsing SQLite datetime strings into JS Date objects (handles UTC timezone)
 - See `docs/DATABASE.md` for detailed database documentation
 
 ### Testing
@@ -115,13 +115,13 @@ pnpm test --testPathPattern="path/to/tests" 2>&1 | tail -15
 
 ### TypeScript
 
-- Path alias `@/*` maps to project root for imports
+- Path alias `@/*` maps to project root for imports (e.g., `@/src/db` resolves to `./src/db`)
 - Strict mode enabled
 - Uses Expo's TypeScript base configuration
 
 ### Components
 
-Reusable UI components in `components/items/`:
+Reusable UI components in `src/components/items/`:
 
 - **ItemCard** - Display card for an item in the library list
 - **ItemForm** - Form for creating/editing items (used by add and edit screens)
@@ -129,7 +129,7 @@ Reusable UI components in `components/items/`:
 - **ItemTypePicker** - Picker for item type (word, prefix, suffix)
 - **EmptyState** - Placeholder when no items exist or search returns no results
 
-Reusable UI components in `components/decks/`:
+Reusable UI components in `src/components/decks/`:
 
 - **DeckCard** - Display card for a deck in the deck list
 - **DeckList** - Scrollable list of decks
@@ -139,7 +139,7 @@ Reusable UI components in `components/decks/`:
 - **DeckSortPicker** - Picker for deck sort order
 - **AddItemsModal** - Modal for searching and adding items to a deck
 
-Reusable UI components in `components/study/`:
+Reusable UI components in `src/components/study/`:
 
 - **StudyCard** - Displays the current flashcard (prompt and answer)
 - **AnswerInput** - Text input for typing study answers

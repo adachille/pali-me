@@ -41,7 +41,7 @@ app/
 │   └── __tests__/
 │       ├── [id].test.tsx           # Edit item screen tests
 │       └── add.test.tsx            # Add item screen tests
-components/
+src/components/
 ├── items/
 │   └── __tests__/
 │       ├── EmptyState.test.tsx
@@ -62,7 +62,7 @@ components/
         ├── StudyCompletion.test.tsx # Session completion screen tests
         ├── StudyProgress.test.tsx   # Progress bar tests
         └── StudySettingsModal.test.tsx # Study settings modal tests
-db/
+src/db/
 └── repositories/
     └── __tests__/
         ├── itemRepository.test.ts  # Item repository unit tests

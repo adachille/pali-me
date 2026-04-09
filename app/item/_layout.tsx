@@ -1,5 +1,5 @@
 import { Stack } from "expo-router";
-import { StackLayout } from "@/components/common/StackLayout";
+import { StackLayout } from "@/src/components/common/StackLayout";
 
 export default function ItemLayout() {
   return (

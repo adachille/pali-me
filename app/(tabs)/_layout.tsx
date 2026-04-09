@@ -1,7 +1,7 @@
-import { Icon } from "@/components/common/Icon";
+import { Icon } from "@/src/components/common/Icon";
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
-import { useTheme } from "@/theme";
+import { useTheme } from "@/src/theme";
 
 export default function TabLayout() {
   const { colors, colorScheme } = useTheme();

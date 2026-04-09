@@ -1,8 +1,8 @@
-import { ItemForm } from "@/components/items";
-import { itemRepository, useSQLiteContext, type ItemInsert } from "@/db";
-import type { AppColors } from "@/theme";
-import { useTheme } from "@/theme";
-import { showAlert } from "@/utils/alert";
+import { ItemForm } from "@/src/components/items";
+import { itemRepository, useSQLiteContext, type ItemInsert } from "@/src/db";
+import type { AppColors } from "@/src/theme";
+import { useTheme } from "@/src/theme";
+import { showAlert } from "@/src/utils/alert";
 import { useRouter } from "expo-router";
 import { useMemo, useState } from "react";
 import { KeyboardAvoidingView, Platform, StyleSheet } from "react-native";

@@ -1,13 +1,13 @@
-import { getLessonByNumber } from "@/data/lessons";
+import { getLessonByNumber } from "@/src/data/lessons";
 import type {
   GrammarExample,
   GrammarTable,
   LessonContent,
   LessonVocabItem,
-} from "@/data/lessons/types";
-import { lessonRepository, useSQLiteContext } from "@/db";
-import type { AppColors } from "@/theme";
-import { useTheme } from "@/theme";
+} from "@/src/data/lessons/types";
+import { lessonRepository, useSQLiteContext } from "@/src/db";
+import type { AppColors } from "@/src/theme";
+import { useTheme } from "@/src/theme";
 import { useFocusEffect } from "@react-navigation/native";
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { type ReactNode, useCallback, useMemo, useState } from "react";

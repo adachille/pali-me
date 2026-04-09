@@ -1,8 +1,8 @@
-import { DeckList } from "@/components/decks";
-import { deckRepository, useSQLiteContext } from "@/db";
-import type { DeckWithCount, SortOption } from "@/db/repositories/deckRepository";
-import { useTheme } from "@/theme";
-import type { AppColors } from "@/theme";
+import { DeckList } from "@/src/components/decks";
+import { deckRepository, useSQLiteContext } from "@/src/db";
+import type { DeckWithCount, SortOption } from "@/src/db/repositories/deckRepository";
+import { useTheme } from "@/src/theme";
+import type { AppColors } from "@/src/theme";
 import { useFocusEffect } from "@react-navigation/native";
 import { useRouter } from "expo-router";
 import { useCallback, useMemo, useState } from "react";
