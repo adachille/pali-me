@@ -61,7 +61,7 @@ export function getNodeState(
   allProgress: LessonProgress[],
   lessonNumber: number,
   nodeType: LessonNodeType,
-  prerequisites: Array<{ lessonNumber: number; nodeType: LessonNodeType }>
+  prerequisites: { lessonNumber: number; nodeType: LessonNodeType }[]
 ): NodeState {
   const isCompleted = (ln: number, nt: string) =>
     allProgress.some((p) => p.lessonNumber === ln && p.nodeType === nt && p.completed);

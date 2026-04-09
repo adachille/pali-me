@@ -6,7 +6,10 @@ import { useSQLiteContext } from "expo-sqlite";
 import { useMemo, useState } from "react";
 import { ActivityIndicator, Pressable, StyleSheet, Text, View } from "react-native";
 
-import { exportDatabaseAsJson, importDatabaseFromJson } from "@/src/db/repositories/exportRepository";
+import {
+  exportDatabaseAsJson,
+  importDatabaseFromJson,
+} from "@/src/db/repositories/exportRepository";
 
 export default function SettingsScreen() {
   const db = useSQLiteContext();
